@@ -1,0 +1,96 @@
+---
+// src/layouts/BaseLayout.astro
+import '../styles/styles.css'; // Import global styles
+
+// Define props for dynamic title and description
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { title, description } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content={description}>
+    <title>{title}</title>
+    <!-- Preload fonts for better performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Astro will handle CSS bundling, this is imported above -->
+    <!-- <link rel="stylesheet" href="/styles.css"> -->
+    <script is:inline src="/scripts/main.js"></script> <!-- Link main JS -->
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="/" class="nav__logo">
+                <!-- Update image path -->
+                <img src="/images/brand/logo.webp" alt="The Good Side" width="140" height="32">
+            </a>
+            <button class="nav__toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav__menu">
+                <!-- Update links to use root-relative paths -->
+                <li><a href="/palvelut">Palvelut</a></li>
+                <li><a href="/references">Referenssit</a></li>
+                <li><a href="/blog">Blogi</a></li>
+                <li><a href="/#materiaalit">Materiaalit</a></li>
+                <li><a href="/#hinnat">Hinnat</a></li>
+                <li><a href="/contact" class="btn btn--primary">Ota yhteyttä</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page-specific content will be injected here -->
+        <slot />
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo">
+                        <img src="/images/brand/logo.webp" alt="The Good Side" width="140" height="32">
+                    </a>
+                    <p>Autamme tuotetiimejä rakentamaan menestyvää SaaS-liiketoimintaa.</p>
+                    <p>&copy; {new Date().getFullYear()} The Good Side Oy. Kaikki oikeudet pidätetään.</p>
+                </div>
+                <div class="footer__links">
+                    <h4>Sivusto</h4>
+                    <ul>
+                        <li><a href="/">Etusivu</a></li>
+                        <li><a href="/palvelut">Palvelut</a></li>
+                        <li><a href="/references">Referenssit</a></li>
+                        <li><a href="/blog">Blogi</a></li>
+                        <li><a href="/contact">Ota yhteyttä</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4>Seuraa meitä</h4>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/company/thegoodsideoy/" target="_blank">LinkedIn</a></li>
+                        <!-- Add other social links if needed -->
+                    </ul>
+                </div>
+                <div class="footer__contact">
+                    <h4>Ota yhteyttä</h4>
+                    <p>info@goodside.fi</p>
+                    <!-- Add address or phone if needed -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html> 
