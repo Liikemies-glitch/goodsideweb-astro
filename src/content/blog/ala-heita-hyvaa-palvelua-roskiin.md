@@ -1,0 +1,17 @@
+---
+title: Älä heitä hyvää palvelua roskiin
+pubDate: '2024-09-13T06:04:50.000Z'
+description: >-
+  Onko aina pakko laittaa kaikki vanha roskiin ja aloittaa kaikki tyhjästä?
+  Kävin viikonloppuna Designmuseon..
+author: moretagoy
+tags: []
+heroImage: images/ala-heita-hyvaa-palvelua-roskiin/featured.png
+heroImageAlt: Älä heitä hyvää palvelua roskiin
+---
+
+Kävin viikonloppuna Designmuseon [FIX: huolla ja korjaa](https://www.designmuseum.fi/fi/exhibitions/fix-huolla-ja-korjaa/) -näyttelyssä. Se sai minut palaamaan omaan kirjoitukseeni [eettisestä muotoilusta](https://goodside.fi/eettinen-muotoilu/), joten tässä aiheesta lisää ajatuksia. Kyseinen näyttely nosti esille erilaisista kulmista meidän kuluttamista ja sitä, miten voisimme pidentää käyttötavaroiden elinkaarta. Samaan aikaan on viimeinen vuosi puhuttu [Right to repair](https://www.europarl.europa.eu/news/en/press-room/20240419IPR20590/right-to-repair-making-repair-easier-and-more-appealing-to-consumers) -laista kulutuseletroniikan alalla, jossa tavoitteena on saama valmistajat suostumaan siihen että heidän tuotteitaan olisi helpompi korjata jatkossa. Varsinkin Applen tuotteita on ollut monessa tapauksessa hankala korjata, tai varaosat maksavat niin paljon ettei korjaaminen ole kannattavaa. Tavoitteena on, että kaikkien laitteiden elinkaarta voisi jatkaa korjattuna, eikä hyviä laitteita tarvitsisi heti laittaa kaatopaikalle tai kierrätykseen.
+
+### Miten tämä liittyy softakehitykseen?
+
+Täysin samalla tavalla voisimme suhtautua ohjelmistokehitykseen ja siihen liittyviin projekteihin. Onko aina pakko laittaa kaikki vanha roskiin ja aloittaa kaikki tyhjästä? Viimeisten vuosien aikana on ollut yllättävän monta sellaista kertaa, että palvelukehityksessä heitetään isojakin kokonaisuuksia roskiin. Jäin miettimään, että mistä tämä ilmiö johtuu. **Jos suunniteltaisiin pidemmän aikavälin kehittämistä, olisi oikeampi suunta kaikessa.** Kirjoitin tarkoituksella oikeampi, sillä kukaan ei täysin osaa ennustaa tulevaa, mutta jonkinlainen pohjantähti meille pitäisi olla kaikessa tekemisessä. **Teknologiakiima ohjaa vaihtamaan liian herkästi toiseen.** Sanotaan, että joka aamu syntyy uusi JavaScript -kirjasto. Tämä on sinänsä lähellä totuutta ja monessa tapauksessa halutaan juosta kaiken uuden perässä joka ohjaa siihen että suurin osa asioista tehdään uusiksi, vain uusiksi tekemisen ilosta. **Uusi ihminen uudessa roolissa haluaa päteä.** Tämä on todella yleinen syy ja toisaalta ymmärrettävää. Onhan meillä kaikilla suosikkimme ja varsinkin uuden duunin alussa puhutaan paljon ensimmäisistä sadasta päivästä. Halutaan osoittaa että asioita muuttuu ja muutosta syntyy. **Harjoitetaan huonoa suunnittelua.** Huonoilla suunnitelmilla ei saa koskaan hyvää lopputulosta. Kun palveluista suunnitellaan sellaisia, että ne itsessään tukevat elinkaaren eri vaiheita niin arkkitehtuurin, rakenteen kuin käyttöliittymän kannalta - voidaan tehdä isojakin muutoksia ilman että kaikkea olemassa olevaa tarvitsee vaihtaa. Oletko itse törmännyt yllä oleviin teemoihin ja miten itse varmistat että palvelusi elinkaari on riittävän pitkä? Lue myös [Eettinen muotoilu](https://goodside.fi/eettinen-muotoilu/) -kirjoitukseni.   **Janne Gylling** janne@goodside.fi 044 750 4444

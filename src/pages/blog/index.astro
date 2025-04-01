@@ -1,188 +1,225 @@
-<!DOCTYPE html>
-<html lang="fi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Good Side Blog | Blogi</title>
-    <meta name="description" content="Lue uusimmat artikkelit digitaalisesta tuotekehityksestä, käyttäjäkokemuksesta ja kasvuliiketoiminnasta.">
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="/blog/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Header/Navigation -->
-    <header class="header">
-        <nav class="nav container">
-            <div class="nav__left">
-                <a href="/" class="nav__logo">
-                    <img src="/images/brand/logo.webp" alt="The Good Side" width="140" height="32">
-                </a>
-            </div>
-            <div class="nav__right">
-                <button class="nav__toggle" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav__menu">
-                    <li><a href="/palvelut.html">Palvelut</a></li>
-                    <li><a href="/references.html">Referenssit</a></li>
-                    <li><a href="/blog">Blogi</a></li>
-                    <li><a href="/#materiaalit">Materiaalit</a></li>
-                    <li><a href="/#hinnat">Hinnat</a></li>
-                    <li><a href="/contact.html" class="btn btn--primary">Ota yhteyttä</a></li>
-                </ul>
-                <div class="blog-nav__controls">
-                    <button class="theme-toggle" aria-label="Vaihda teemaa">
-                        <svg class="theme-toggle__icon" viewBox="0 0 24 24">
-                            <path class="sun" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
-                            <path class="moon" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </nav>
+---
+// --- NOTE FOR NEXT SESSION ---
+// We are encountering persistent TypeScript errors below, specifically:
+// - "Property 'data' does not exist on type 'never'"
+// - "Type '"blog"' does not satisfy the constraint 'never'."
+// This happens despite defining the 'blog' collection in src/content/config.ts
+// and explicitly typing variables with CollectionEntry<'blog'>.
+// Attempts to fix (simplifying getCollection, explicit types on sort/map) failed.
+// Next steps:
+// 1. Restart the Astro dev server (npm run dev) & potentially the IDE.
+// 2. If errors persist, investigate further (check Astro/TS versions, look for conflicts).
+// 3. Proceed with creating src/pages/blog/[...slug].astro.
+// --- END NOTE ---
+
+// src/pages/blog/index.astro
+import { getCollection, type CollectionEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
+
+// 1. Fetch all published blog posts
+const allPosts = await getCollection('blog');
+
+// 2. Sort posts by publication date (newest first)
+const sortedPosts = allPosts.sort((a: CollectionEntry<'blog'>, b: CollectionEntry<'blog'>) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const pageTitle = "Blogi | The Good Side";
+const pageDescription = "Lue The Good Side -blogin viimeisimmät artikkelit tuotestrategiasta, SaaSista, designista ja muotoilusta.";
+---
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <section class="blog-index container">
+    <header class="blog-index__header">
+      <h1 class="section__title">Blogi</h1>
+      <p class="section__subtitle">Viimeisimmät artikkelit tuotestrategiasta, SaaSista, designista ja muotoilusta.</p>
     </header>
 
-    <!-- Blog Specific Controls -->
-    <div class="blog-controls-container container">
-        <section class="hero hero--small">
-            <div class="hero__content">
-                <h1 class="hero__title">Blogi</h1>
-                <p class="hero__subtitle">Artikkeleita digitaalisesta tuotekehityksestä, käyttäjäkokemuksesta ja kasvuliiketoiminnasta.</p>
-            </div>
-        </section>
-        <div class="blog-filters">
-            <div class="search-container">
-                <input type="search" id="blog-search" placeholder="Etsi artikkeleita..." aria-label="Etsi artikkeleita">
-                <svg class="search-icon" viewBox="0 0 24 24">
-                    <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                </svg>
-            </div>
-            <div class="filter-tags" id="filter-tags">
-                <button class="filter-tag active" data-category="all">Kaikki</button>
-                <button class="filter-tag" data-category="ux">Käyttäjäkokemus</button>
-                <button class="filter-tag" data-category="product">Tuotekehitys</button>
-                <button class="filter-tag" data-category="growth">Kasvu</button>
-                <button class="filter-tag" data-category="ai">Tekoäly</button>
-            </div>
-        </div>
-    </div>
-
-    <main class="blog-grid" id="blog-grid">
-        <!-- Articles will be dynamically inserted here -->
-    </main>
-
-    <div class="loading-spinner" id="loading-spinner">
-        <div class="spinner"></div>
-    </div>
-
-    <template id="article-template">
+    <div class="blog-index__grid">
+      {sortedPosts.map((post: CollectionEntry<'blog'>) => (
         <article class="blog-card">
-            <a href="" class="blog-card__link">
-                <div class="blog-card__image">
-                    <img src="" alt="" loading="lazy">
+          <a href={`/blog/${post.slug}/`} class="blog-card__link">
+            {post.data.heroImage && (
+              <div class="blog-card__image-container">
+                 <Image
+                  src={post.data.heroImage}
+                  alt={post.data.heroImageAlt || post.data.title}
+                  widths={[200, 400]}
+                  sizes="(max-width: 768px) 100vw, 400px"
+                  format="webp"
+                  class="blog-card__image"
+                />
+              </div>
+            )}
+            <div class="blog-card__content">
+              {post.data.tags && post.data.tags.length > 0 && (
+                <div class="blog-card__tags">
+                  {post.data.tags.map((tag: string) => (
+                    <span class="tag">{tag}</span>
+                  ))}
                 </div>
-                <div class="blog-card__category"></div>
-                <div class="blog-card__content">
-                    <h3 class="blog-card__title"></h3>
-                    <p class="blog-card__excerpt"></p>
-                    <div class="blog-card__meta">
-                        <time datetime=""></time>
-                        <span class="blog-card__read-time"></span>
-                    </div>
-                </div>
-            </a>
+              )}
+              <h3 class="blog-card__title">{post.data.title}</h3>
+              <p class="blog-card__excerpt">{post.data.description || 'Lue artikkeli...'}</p>
+               <p class="blog-card__date">
+                {new Date(post.data.pubDate).toLocaleDateString('fi-FI', { year: 'numeric', month: 'long', day: 'numeric' })}
+              </p>
+              <span class="blog-card__readmore">Lue lisää -></span>
+            </div>
+          </a>
         </article>
-    </template>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__grid">
-                <div class="footer__brand">
-                    <a href="/" class="footer__logo">The Good Side</a>
-                    <p class="footer__tagline">Autamme tuotetiimejä rakentamaan menestyvää SaaS-liiketoimintaa yhdistämällä tuotestrategian, designin ja markkinoinnin.</p>
-                    <div class="footer__social">
-                        <a href="https://www.linkedin.com/" class="social-link" aria-label="LinkedIn">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M19 3C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19ZM18.5 18.5V13.2C18.5 12.3354 18.1565 11.5062 17.5452 10.8948C16.9338 10.2835 16.1046 9.94 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17C14.6813 12.17 15.0374 12.3175 15.2999 12.5801C15.5625 12.8426 15.71 13.1987 15.71 13.57V18.5H18.5ZM6.88 8.56C7.32556 8.56 7.75288 8.383 8.06794 8.06794C8.383 7.75288 8.56 7.32556 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19C6.43178 5.19 6.00193 5.36805 5.68499 5.68499C5.36805 6.00193 5.19 6.43178 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56ZM8.27 18.5V10.13H5.5V18.5H8.27Z" fill="currentColor"/>
-                            </svg>
-                        </a>
-                        <a href="https://twitter.com/" class="social-link" aria-label="Twitter">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M19.633 7.997C19.646 8.172 19.646 8.346 19.646 8.52C19.646 13.845 15.593 19.981 8.186 19.981C5.904 19.981 3.784 19.32 2 18.172C2.324 18.209 2.636 18.222 2.973 18.222C4.856 18.222 6.589 17.586 7.974 16.501C6.203 16.464 4.719 15.304 4.207 13.708C4.456 13.745 4.706 13.77 4.968 13.77C5.329 13.77 5.692 13.72 6.029 13.633C4.182 13.259 2.799 11.638 2.799 9.68V9.63C3.336 9.929 3.959 10.116 4.619 10.141C3.534 9.419 2.823 8.184 2.823 6.787C2.823 6.039 3.022 5.353 3.371 4.755C5.354 7.198 8.335 8.795 11.677 8.97C11.615 8.67 11.577 8.359 11.577 8.047C11.577 5.834 13.373 4.026 15.61 4.026C16.781 4.026 17.842 4.517 18.579 5.303C19.479 5.124 20.34 4.779 21.104 4.32C20.805 5.27 20.168 6.039 19.333 6.53C20.144 6.434 20.93 6.208 21.652 5.896C21.104 6.678 20.419 7.378 19.633 7.997Z" fill="currentColor"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="footer__links">
-                    <h3>Palvelut</h3>
-                    <ul>
-                        <li><a href="/#solutions">Tuotepositiointi</a></li>
-                        <li><a href="/#solutions">Käyttäjäpolut</a></li>
-                        <li><a href="/#solutions">Käyttöliittymäsuunnittelu</a></li>
-                    </ul>
-                </div>
-                <div class="footer__links">
-                    <h3>Yritys</h3>
-                    <ul>
-                        <li><a href="/blog">Blogi</a></li>
-                        <li><a href="/#testimonials">Asiakastarinat</a></li>
-                        <li><a href="/#faq">UKK</a></li>
-                        <li><a href="/contact.html">Ota yhteyttä</a></li>
-                    </ul>
-                </div>
-                <div class="footer__links">
-                    <ul>
-                        <li>
-                            <strong>The Good Side Oy</strong><br>
-                            <a href="https://maps.google.com" target="_blank" rel="noopener" class="footer__contact-link">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path d="M10 10.8334C11.3807 10.8334 12.5 9.71407 12.5 8.33335C12.5 6.95264 11.3807 5.83335 10 5.83335C8.61929 5.83335 7.5 6.95264 7.5 8.33335C7.5 9.71407 8.61929 10.8334 10 10.8334Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M10 17.5C12.5 14.1667 15 11.0153 15 8.33333C15 5.11167 12.7617 2.5 10 2.5C7.23833 2.5 5 5.11167 5 8.33333C5 11.0153 7.5 14.1667 10 17.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                Innovation Home Tampere
-                            </a>
-                        </li>
-                        <li style="margin: 1rem 0;"><hr style="border: none; border-top: 1px solid var(--border-color);"></li>
-                        <li>
-                            <strong>Mikki Aalto-Ylevä</strong>
-                        </li>
-                        <li>
-                            <a href="mailto:mikki@goodside.fi" class="footer__contact-link">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path d="M2.5 6.66669L9.0755 11.0502C9.63533 11.4235 10.3647 11.4235 10.9245 11.0502L17.5 6.66669M4.16667 15.8334H15.8333C16.7538 15.8334 17.5 15.0872 17.5 14.1667V5.83335C17.5 4.91288 16.7538 4.16669 15.8333 4.16669H4.16667C3.24619 4.16669 2.5 4.91288 2.5 5.83335V14.1667C2.5 15.0872 3.24619 15.8334 4.16667 15.8334Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                mikki@goodside.fi
-                            </a>
-                        </li>
-                        <li>
-                            <a href="tel:+35840869888" class="footer__contact-link">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path d="M2.5 4.16669C2.5 3.24621 3.24619 2.50002 4.16667 2.50002H7.02C7.85072 2.50002 8.57625 3.10002 8.73958 3.91669L9.62 7.50002C9.76667 8.22502 9.365 8.96669 8.68333 9.24169L6.87083 10.0417C7.88417 12.0717 9.51167 13.6992 11.5417 14.7125L12.3417 12.9C12.6167 12.2184 13.3583 11.8167 14.0833 11.9634L17.6667 12.8434C18.4833 13.0067 19.0833 13.7325 19.0833 14.5634V17.5C19.0833 18.4205 18.3372 19.1667 17.4167 19.1667H16.6667C8.94333 19.1667 2.5 12.7234 2.5 5.00002V4.16669Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                040 8698 887
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer__bottom">
-                <div class="footer__legal">
-                    <p>&copy; 2025 The Good Side Oy. Kaikki oikeudet pidätetään.</p>
-                    <nav class="footer__legal-nav">
-                        <a href="/tietosuoja">Tietosuoja</a> &nbsp;•&nbsp; <a href="/kayttoehdot">Käyttöehdot</a> &nbsp;•&nbsp; <a href="/saavutettavuus">Saavutettavuus</a>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </footer>
+<style>
+  .blog-index {
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xxl);
+  }
 
-    <!-- Scripts -->
-    <script src="../main.js"></script>
-    <script src="/blog/blog.js"></script>
-</body>
-</html>
+  .blog-index__header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .blog-index__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+  }
+
+  .blog-card {
+    background: var(--background);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; /* Make cards equal height within grid row */
+  }
+
+   [data-theme="dark"] .blog-card {
+       background: var(--secondary-color);
+       box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
+   }
+
+
+  .blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(255, 0, 55, 0.15);
+  }
+
+   [data-theme="dark"] .blog-card:hover {
+       box-shadow: 0 8px 25px rgba(255, 0, 55, 0.25);
+   }
+
+  .blog-card__link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure link takes full card height */
+  }
+
+  .blog-card__image-container {
+      width: 100%;
+      aspect-ratio: 16 / 9; /* Maintain aspect ratio */
+      background-color: var(--light-background); /* Placeholder background */
+      overflow: hidden;
+  }
+
+   [data-theme="dark"] .blog-card__image-container {
+       background-color: #2a2a2a;
+   }
+
+  .blog-card__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+  }
+
+  .blog-card:hover .blog-card__image {
+    transform: scale(1.05);
+  }
+
+  .blog-card__content {
+    padding: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allows content to fill space */
+  }
+
+  .blog-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .tag { /* Reusing tag style from BlogPostLayout */
+    display: inline-block;
+    padding: 4px 12px;
+    background: rgba(255, 0, 55, 0.1);
+    color: var(--primary-color);
+    border-radius: 100px;
+    font-size: 0.75rem; /* Slightly smaller tag */
+    font-weight: 500;
+  }
+
+  .blog-card__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.3;
+    color: var(--secondary-color);
+    /* Limit title lines (optional) */
+    /* display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden; */
+  }
+
+  [data-theme="dark"] .blog-card__title {
+     color: var(--light-background);
+  }
+
+
+  .blog-card__excerpt {
+    font-size: 0.95rem;
+    color: var(--light-text);
+    line-height: 1.5;
+    margin-bottom: var(--spacing-md);
+    flex-grow: 1; /* Pushes date and readmore down */
+    /* Limit excerpt lines (optional) */
+    /* display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden; */
+  }
+
+  [data-theme="dark"] .blog-card__excerpt {
+      color: #ccc; /* Lighter text for dark mode */
+  }
+
+  .blog-card__date {
+      font-size: 0.8rem;
+      color: var(--light-text);
+      margin-bottom: var(--spacing-sm);
+      margin-top: auto; /* Push to bottom if excerpt is short */
+  }
+
+  [data-theme="dark"] .blog-card__date {
+      color: #aaa;
+  }
+
+
+  .blog-card__readmore {
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-top: auto; /* Push to bottom */
+    align-self: flex-start; /* Align left */
+  }
+
+</style>

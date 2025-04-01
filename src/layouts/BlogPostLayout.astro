@@ -1,0 +1,249 @@
+---
+// src/layouts/BlogPostLayout.astro
+import BaseLayout from './BaseLayout.astro';
+import { Image } from 'astro:assets'; // Import Astro's Image component
+
+// Get frontmatter data passed from the dynamic page
+const { frontmatter } = Astro.props;
+
+// Determine the title and description for SEO, using fallbacks
+const pageTitle = frontmatter.seoTitle || frontmatter.title; // Use SEO title if available, otherwise main title
+const pageDescription = frontmatter.description || 'Lue artikkeli The Good Side blogista.'; // Use frontmatter description or a generic fallback
+
+// Format the publication date
+const formattedDate = new Date(frontmatter.pubDate).toLocaleDateString('fi-FI', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <article class="blog-post container">
+    <!-- Optional Hero Image -->
+    {frontmatter.heroImage && (
+      <div class="blog-post__hero">
+        <Image
+          src={frontmatter.heroImage}
+          alt={frontmatter.heroImageAlt || frontmatter.title}
+          widths={[400, 800, 1200]}
+          sizes="(max-width: 800px) 100vw, 800px"
+          loading="eager"
+          format="webp"
+        />
+      </div>
+    )}
+
+    <!-- Post Header -->
+    <header class="blog-post__header">
+      <h1 class="blog-post__title">{frontmatter.title}</h1>
+      <p class="blog-post__meta">
+        Julkaistu {formattedDate}
+        {frontmatter.author && ` | Kirjoittaja: ${frontmatter.author}`}
+      </p>
+      {frontmatter.tags && frontmatter.tags.length > 0 && (
+        <div class="blog-post__tags">
+          {frontmatter.tags.map((tag: string) => (
+            <span class="tag">{tag}</span>
+          ))}
+        </div>
+      )}
+    </header>
+
+    <!-- Main Content -->
+    <div class="blog-post__content">
+      <slot /> {/* The Markdown content will be injected here */}
+    </div>
+
+  </article>
+</BaseLayout>
+
+<style>
+  .blog-post {
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xxl);
+    max-width: 800px; /* Limit content width for readability */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .blog-post__hero {
+    margin-bottom: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .blog-post__hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .blog-post__header {
+    margin-bottom: var(--spacing-xl);
+    text-align: center; /* Center align header elements */
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: var(--spacing-lg);
+  }
+
+  .blog-post__title {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-sm);
+    color: var(--secondary-color); /* Use a darker color for title */
+  }
+
+  [data-theme="dark"] .blog-post__title {
+     color: var(--background);
+  }
+
+
+  .blog-post__meta {
+    font-size: 0.9rem;
+    color: var(--light-text);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .blog-post__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    justify-content: center; /* Center tags */
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 4px 12px;
+    background: rgba(255, 0, 55, 0.1); /* Lighter primary background */
+    color: var(--primary-color); /* Primary text color */
+    border-radius: 100px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  .blog-post__content {
+    font-size: 1.1rem; /* Slightly larger base font size for readability */
+    line-height: 1.7;
+    color: var(--text-color);
+  }
+
+   [data-theme="dark"] .blog-post__content {
+     color: var(--light-background);
+  }
+
+
+  .blog-post__content :global(h2),
+  .blog-post__content :global(h3),
+  .blog-post__content :global(h4),
+  .blog-post__content :global(h5),
+  .blog-post__content :global(h6) {
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.3;
+    color: var(--secondary-color);
+  }
+
+  [data-theme="dark"] .blog-post__content :global(h2),
+  [data-theme="dark"] .blog-post__content :global(h3),
+  [data-theme="dark"] .blog-post__content :global(h4),
+  [data-theme="dark"] .blog-post__content :global(h5),
+  [data-theme="dark"] .blog-post__content :global(h6) {
+     color: var(--background);
+  }
+
+  .blog-post__content :global(h2) { font-size: 2rem; }
+  .blog-post__content :global(h3) { font-size: 1.6rem; }
+  .blog-post__content :global(h4) { font-size: 1.3rem; }
+
+  .blog-post__content :global(p) {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .blog-post__content :global(a) {
+    color: var(--primary-color);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    transition: color 0.3s ease;
+  }
+
+  .blog-post__content :global(a:hover) {
+    color: #E6004C; /* Darker primary */
+  }
+
+  .blog-post__content :global(ul),
+  .blog-post__content :global(ol) {
+    margin-left: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .blog-post__content :global(li) {
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .blog-post__content :global(blockquote) {
+    border-left: 4px solid var(--primary-color);
+    padding-left: var(--spacing-md);
+    margin: var(--spacing-lg) 0;
+    font-style: italic;
+    color: var(--light-text);
+  }
+
+   [data-theme="dark"] .blog-post__content :global(blockquote) {
+     color: var(--light-background);
+     border-left-color: #E6004C;
+   }
+
+  .blog-post__content :global(img) {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    margin: var(--spacing-md) 0;
+    display: block; /* Center images if they are block */
+    margin-left: auto;
+    margin-right: auto;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .blog-post__content :global(code):not(pre > code) {
+    background-color: rgba(0,0,0,0.05);
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-size: 0.9em;
+  }
+
+  [data-theme="dark"] .blog-post__content :global(code):not(pre > code) {
+      background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .blog-post__content :global(pre) {
+    background-color: #f5f5f5;
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    overflow-x: auto;
+    margin-bottom: var(--spacing-md);
+    font-size: 0.9rem;
+     box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+  }
+
+ [data-theme="dark"] .blog-post__content :global(pre) {
+      background-color: #2a2a2a; /* Darker background for code blocks in dark mode */
+       box-shadow: inset 0 1px 3px rgba(255,255,255,0.1);
+  }
+
+  .blog-post__content :global(pre code) {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .blog-post__title {
+      font-size: 2.2rem;
+    }
+    .blog-post__content {
+      font-size: 1rem;
+    }
+  }
+</style> 
