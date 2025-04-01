@@ -737,19 +737,49 @@ h1, h2, h3, h4, h5, h6 {
 
 .problem-solution-cards .row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-xl);
+    /* Problem | Arrow | Solution */
+    grid-template-columns: 1fr auto 1fr;
+    gap: var(--spacing-lg); /* Adjust gap as needed */
+    align-items: center; /* Vertically align items */
     margin-bottom: var(--spacing-xl);
 }
 
-.problem-solution-cards .row:last-child {
-    margin-bottom: 0;
+.problem-solution-cards .arrow {
+    /* No absolute positioning needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 2rem;
+    transition: all 0.3s ease;
+    /* Ensure it takes its grid space */
+    grid-column: 2; /* Explicitly place in the middle column */
 }
 
+/* Add content via pseudo-element */
+.problem-solution-cards .arrow::before {
+    content: '→'; /* Default arrow for desktop */
+}
+
+.problem-solution-cards .row:hover .arrow {
+    transform: scale(1.2); /* Simpler hover effect */
+}
+
+/* Ensure cards are in the correct columns */
 .problem-solution-cards .fit-content {
+    grid-column: 1;
     background-color: var(--secondary-color);
     padding: var(--spacing-xl);
     border-radius: 20px;
+    height: 100%;
+}
+
+.problem-solution-cards .solution-content {
+    grid-column: 3;
+    background-color: white;
+    padding: var(--spacing-xl);
+    border-radius: 20px;
+    border: 2px solid var(--primary-color);
     height: 100%;
 }
 
@@ -764,14 +794,6 @@ h1, h2, h3, h4, h5, h6 {
     color: rgba(255, 255, 255, 0.9);
     font-size: 1.125rem;
     line-height: 1.6;
-}
-
-.problem-solution-cards .solution-content {
-    background-color: white;
-    padding: var(--spacing-xl);
-    border-radius: 20px;
-    border: 2px solid var(--primary-color);
-    height: 100%;
 }
 
 .problem-solution-cards .solution-content h4 {
@@ -789,8 +811,35 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
     .problem-solution-cards .row {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-lg);
+        grid-template-columns: 1fr; /* Single column */
+        gap: var(--spacing-lg); /* Space between stacked items */
+    }
+
+    /* Explicitly order the items for mobile */
+    .problem-solution-cards .fit-content { 
+        grid-row: 1; 
+        grid-column: 1; /* Reset column */
+    }
+    
+    .problem-solution-cards .arrow {
+        grid-row: 2; /* Arrow appears after the first card */
+        grid-column: 1; /* Reset column */
+        margin: var(--spacing-md) auto; /* Spacing */
+        transform: none; /* Reset any desktop transforms */
+    }
+    
+    .problem-solution-cards .solution-content { 
+        grid-row: 3; 
+        grid-column: 1; /* Reset column */
+    }
+
+    /* Change arrow content for mobile */
+    .problem-solution-cards .arrow::before {
+        content: '↓';
+    }
+
+    .problem-solution-cards .row:hover .arrow {
+        transform: scale(1.2); /* Keep mobile hover */
     }
 
     .problem-solution-cards .fit-content,
