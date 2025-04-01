@@ -723,275 +723,88 @@ h1, h2, h3, h4, h5, h6 {
 .problem-solution-cards {
     padding: var(--spacing-xxl) 0;
     background-color: var(--background);
-    position: relative;
-    overflow: hidden;
-}
-
-.problem-solution-cards::before {
-    content: '';
-    position: absolute;
-    width: 1000px;
-    height: 1000px;
-    background: linear-gradient(45deg, rgba(255, 0, 84, 0.03), rgba(20, 18, 31, 0.03));
-    border-radius: 50%;
-    top: -300px;
-    right: -300px;
-    z-index: 0;
-}
-
-.problem-solution-cards::after {
-    content: '';
-    position: absolute;
-    width: 800px;
-    height: 800px;
-    background: linear-gradient(45deg, rgba(20, 18, 31, 0.03), rgba(255, 0, 84, 0.03));
-    border-radius: 50%;
-    bottom: -200px;
-    left: -200px;
-    z-index: 0;
 }
 
 .problem-solution-cards .container {
-    position: relative;
-    z-index: 1;
+    max-width: var(--container-width);
+    margin: 0 auto;
 }
 
 .problem-solution-cards .section__header {
     text-align: center;
-    max-width: 800px;
-    margin: 0 auto var(--spacing-xl);
-}
-
-.problem-solution-cards .section__title {
-    font-size: 2.5rem;
-    line-height: 1.2;
-    margin-bottom: var(--spacing-md);
-    background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin-bottom: var(--spacing-xl);
 }
 
 .problem-solution-cards .row {
-    display: flex;
-    margin-bottom: var(--spacing-xxl);
-    position: relative;
-    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: var(--spacing-xl);
-    transition: all 0.3s ease;
-}
-
-.problem-solution-cards .row:hover {
-    transform: translateY(-5px);
+    margin-bottom: var(--spacing-xl);
 }
 
 .problem-solution-cards .row:last-child {
     margin-bottom: 0;
 }
 
-.problem-solution-cards .col-sm-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
-.problem-solution-cards .col-md-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-    display: flex;
-    align-items: center;
-}
-
-.justify-content-start {
-    justify-content: flex-start;
-}
-
-.justify-content-end {
-    justify-content: flex-end;
-}
-
-.fit-padding {
-    padding: var(--spacing-lg);
-}
-
-.fit-content {
-    padding: var(--spacing-xl);
+.problem-solution-cards .fit-content {
     background-color: var(--secondary-color);
+    padding: var(--spacing-xl);
     border-radius: 20px;
+    height: 100%;
+}
+
+.problem-solution-cards .fit-content h3 {
     color: white;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    box-shadow: 0 20px 40px rgba(20, 18, 31, 0.1);
-}
-
-.fit-content::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.fit-content:hover::before {
-    opacity: 1;
-}
-
-.fit-content h4 {
     font-size: 1.5rem;
-    color: white;
     margin-bottom: var(--spacing-md);
-    position: relative;
+    line-height: 1.3;
 }
 
-.fit-content p {
+.problem-solution-cards .fit-content p {
+    color: rgba(255, 255, 255, 0.9);
     font-size: 1.125rem;
     line-height: 1.6;
-    color: rgba(255, 255, 255, 0.9);
-    position: relative;
 }
 
-.solution-content {
+.problem-solution-cards .solution-content {
+    background-color: white;
     padding: var(--spacing-xl);
     border-radius: 20px;
-    background: white;
     border: 2px solid var(--primary-color);
     height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    box-shadow: 0 20px 40px rgba(255, 0, 84, 0.1);
 }
 
-.solution-content::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, rgba(255, 0, 84, 0.05), rgba(255, 0, 84, 0));
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.solution-content:hover::before {
-    opacity: 1;
-}
-
-.solution-content h4 {
-    font-size: 1.5rem;
+.problem-solution-cards .solution-content h4 {
     color: var(--secondary-color);
+    font-size: 1.5rem;
     margin-bottom: var(--spacing-md);
-    position: relative;
+    line-height: 1.3;
 }
 
-.solution-content p {
+.problem-solution-cards .solution-content p {
+    color: var(--light-text);
     font-size: 1.125rem;
     line-height: 1.6;
-    color: var(--light-text);
-    position: relative;
-}
-
-.arrow-placement {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.css-arrow {
-    width: 40px;
-    height: 40px;
-    position: relative;
-    transition: all 0.3s ease;
-}
-
-.css-arrow::before {
-    content: '→';
-    position: absolute;
-    font-size: 2.5rem;
-    color: var(--primary-color);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: all 0.3s ease;
-}
-
-.problem-solution-cards .row:hover .css-arrow::before {
-    transform: translate(-50%, -50%) scale(1.2);
 }
 
 @media (max-width: 768px) {
     .problem-solution-cards .row {
-        flex-direction: column;
-        margin-bottom: var(--spacing-xl);
-        min-height: auto;
+        grid-template-columns: 1fr;
         gap: var(--spacing-lg);
     }
-    
-    .problem-solution-cards .col-md-6 {
-        flex: 0 0 100%;
-        max-width: 100%;
+
+    .problem-solution-cards .fit-content,
+    .problem-solution-cards .solution-content {
+        padding: var(--spacing-lg);
     }
-    
-    .arrow-placement {
-        position: relative;
-        left: auto;
-        top: auto;
-        transform: none;
-        margin: var(--spacing-md) auto;
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .css-arrow {
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .css-arrow::before {
-        content: '↓';
-        font-size: 2.5rem;
-        position: static;
-        transform: none;
-    }
-    
-    .problem-solution-cards .row:hover .css-arrow::before {
-        transform: scale(1.2);
-    }
-    
-    .fit-content h4,
-    .solution-content h4 {
+
+    .problem-solution-cards .fit-content h3,
+    .problem-solution-cards .solution-content h4 {
         font-size: 1.25rem;
     }
-    
-    .fit-content p,
-    .solution-content p {
+
+    .problem-solution-cards .fit-content p,
+    .problem-solution-cards .solution-content p {
         font-size: 1rem;
     }
 }
