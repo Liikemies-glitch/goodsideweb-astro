@@ -146,7 +146,7 @@ const pageDescription = "Kiihdytä SaaS-liiketoimintasi kasvua The Good Side:n p
         transition: all 0.25s ease-in-out;
         font-size: var(--font-size-base); /* Slightly larger font */
         font-family: inherit; /* Inherit font from parent */
-        text-align: center;
+        text-align: left; /* Align text to the left */
         position: relative; /* For potential pseudo-elements */
         top: 1px; /* Align with bottom border */
     }
@@ -156,7 +156,7 @@ const pageDescription = "Kiihdytä SaaS-liiketoimintasi kasvua The Good Side:n p
     }
 
     .service-tabs .tab-button.active {
-        font-weight: 600;
+        /* font-weight: 600; */ /* Removed to prevent size change */
         color: var(--color-primary);
         border-bottom-color: var(--color-primary);
         /* Make active tab background match content area for seamless look */
