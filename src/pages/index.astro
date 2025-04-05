@@ -1,8 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
 
 const pageTitle = "The Good Side | SaaS-tuotetiimien strategiakumppani";
 const pageDescription = "The Good Side - Autamme tuotetiimejä rakentamaan menestyvää SaaS-liiketoimintaa yhdistämällä tuotestrategian, designin ja markkinoinnin toimivaksi kokonaisuudeksi.";
+
+// Fetch latest 6 blog posts
+const latestPosts = (await getCollection('blog'))
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+    .slice(0, 6);
 ---
 <BaseLayout title={pageTitle} description={pageDescription}>
     <!-- Hero Section -->
@@ -424,6 +431,56 @@ const pageDescription = "The Good Side - Autamme tuotetiimejä rakentamaan menes
                     </div>
                     <p class="faq-answer">Isommissa projekteissa voimme sopia kiinteän kuukausibudjetin tai projektikohtaisen hinnoittelun. Tuntihintamme on 100€/tunti (pienemmille yrityksille 85€/tunti), mutta räätälöimme aina hinnoittelun projektin laajuuden ja tarpeiden mukaan. Teemme selkeän projektisuunnitelman, jossa määrittelemme tarvittavat resurssit ja aikataulun.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Preview Section -->
+    <section class="blog-preview" id="latest-posts">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title">Tuoreimmat ajatuksemme</h2>
+            </div>
+            <div class="blog-grid">
+                {latestPosts.map(post => (
+                    <article class="blog-card">
+                        <a href={`/blog/${post.slug}/`} class="blog-card__link">
+                            {post.data.heroImage && (
+                               <div class="blog-card__image-container">
+                                 <Image
+                                   src={post.data.heroImage}
+                                   alt={post.data.heroImageAlt || post.data.title}
+                                   width={800}
+                                   height={450}
+                                   format="webp"
+                                   quality={80}
+                                   loading="lazy"
+                                   decoding="async"
+                                   class="blog-card__image"
+                                 />
+                               </div>
+                            )}
+                            <div class="blog-card__content">
+                                 {post.data.tags && post.data.tags.length > 0 && (
+                                    <div class="blog-card__tags">
+                                        {post.data.tags.map(tag => (
+                                            <span class="tag">{tag}</span>
+                                        ))}
+                                    </div>
+                                 )}
+                                <h3 class="blog-card__title">{post.data.title}</h3>
+                                <p class="blog-card__excerpt">{post.data.description || 'Lue artikkeli...'}</p>
+                                <p class="blog-card__date">
+                                    {new Date(post.data.pubDate).toLocaleDateString('fi-FI', { year: 'numeric', month: 'long', day: 'numeric' })}
+                                </p>
+                                <span class="blog-card__readmore">Lue lisää -></span>
+                            </div>
+                        </a>
+                    </article>
+                ))}
+            </div>
+            <div style="text-align: center; margin-top: var(--spacing-lg);">
+                <a href="/blog" class="btn btn--secondary">Lue kaikki kirjoitukset -></a>
             </div>
         </div>
     </section>
