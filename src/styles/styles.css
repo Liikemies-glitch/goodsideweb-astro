@@ -330,7 +330,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero__title {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: var(--spacing-md);
@@ -357,7 +357,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
     .hero__title {
-        font-size: 2.5rem;
+        font-size: 3rem;
         line-height: 1.1;
     }
     
@@ -1389,16 +1389,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact-grid {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: var(--spacing-xl);
     align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+/* Apply two columns on larger screens */
+/* Commenting out the two-column layout for contact page */
+/* @media (min-width: 769px) {
+    .contact-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+} */
 
 .contact-content {
     max-width: 800px;
-    margin: 0 auto;
     text-align: left;
+    margin: 0 auto;
 }
 
 .contact-content h1 {
@@ -1477,6 +1487,7 @@ h1, h2, h3, h4, h5, h6 {
     .contact-booking {
         margin: 0 calc(var(--spacing-md) * -1);
         border-radius: 0;
+        max-width: none;
     }
 }
 
