@@ -1,0 +1,36 @@
+/* Base Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* The rest of the original CSS content should follow */
+
+/* Schedule Meeting Section */
+.schedule-meeting {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--color-background-alt); /* Or choose a suitable background */
+}
+
+.schedule-meeting .section__header {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.schedule-meeting__embed {
+    /* Placeholder styling */
+    /* You might adjust this when you embed the actual Cal.com widget */
+    max-width: 900px; /* Adjust width as needed */
+    margin: 0 auto;
+}
+
+/* Responsive adjustments if necessary */
+@media (max-width: 768px) {
+    .schedule-meeting {
+        padding: var(--spacing-lg) 0;
+    }
+} 

@@ -12,7 +12,7 @@ const pageDescription = "The Good Side - Autamme tuotetiimejä rakentamaan menes
                 <h1 class="hero__title">Jos DIY-menetelmä<br>skaalautuisi, olisit jo<br>markkinajohtaja.</h1>
                 <p class="hero__subtitle">Autamme tuotetiimejä rakentamaan menestyvää SaaS-liiketoimintaa yhdistämällä tuotestrategian, designin ja markkinoinnin toimivaksi kokonaisuudeksi. Tämän todistavat yli kymmenen menestyvää asiakastamme.</p>
                 <div class="hero__cta">
-                    <a href="#schedule-demo" class="btn btn--primary">Sovi tapaaminen -></a>
+                    <a href="#schedule-meeting" class="btn btn--primary">Sovi tapaaminen -></a>
                     <a href="#" class="btn btn--secondary">Lataa DIY-Opas -></a>
                 </div>
             </div>
@@ -306,6 +306,33 @@ const pageDescription = "The Good Side - Autamme tuotetiimejä rakentamaan menes
                 </div>
             </div>
             <p class="pricing__note" style="text-align: center; margin-top: var(--spacing-lg);">*Alle viisi miljoonaa euroa vaihtaville pienille yrityksille tarjoamme palveluitamme alennettuun hintaan 85 €/tunti.</p>
+        </div>
+    </section>
+
+    <!-- Schedule Meeting Section -->
+    <section class="schedule-meeting" id="schedule-meeting">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Varaa tapaaminen</h2>
+                <p class="section__subtitle">Varaa aika ja katsotaan miten voimme auttaa tiimiäsi menestymään</p>
+            </div>
+            <div class="schedule-meeting__embed">
+                <!-- Cal.com embed start -->
+                <div style="width:100%;height:100%;overflow:scroll" id="cal-inline-index"></div>
+                <script type="text/javascript" is:inline>
+                    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+                    Cal("init", "kartoitustapaaminen", {origin:"https://cal.com"});
+
+                    Cal.ns.kartoitustapaaminen("inline", {
+                        elementOrSelector:"#cal-inline-index", // Use the new ID here
+                        config: {"layout":"month_view"},
+                        calLink: "aaltoyleva/kartoitustapaaminen",
+                    });
+
+                    Cal.ns.kartoitustapaaminen("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+                </script>
+                <!-- Cal.com embed end -->
+            </div>
         </div>
     </section>
 
