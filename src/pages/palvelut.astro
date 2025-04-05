@@ -50,7 +50,11 @@ const pageDescription = "Kiihdytä SaaS-liiketoimintasi kasvua The Good Side:n p
                             </div>
                             <div class="content-block">
                                 <h4>Mittari:</h4>
-                                <p>Markkinaosuuden kasvu, konversioasteet, asiakaspalaute.</p>
+                                <p class="metric-description">
+                                    <span class="metric-item"><span class="metric-icon">📈</span> Markkinaosuuden kasvu</span>
+                                    <span class="metric-item"><span class="metric-icon">🎯</span> konversioasteet</span>
+                                    <span class="metric-item"><span class="metric-icon">💬</span> asiakaspalaute</span>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -73,7 +77,11 @@ const pageDescription = "Kiihdytä SaaS-liiketoimintasi kasvua The Good Side:n p
                             </div>
                             <div class="content-block">
                                 <h4>Mittari:</h4>
-                                <p>Tehtävien onnistumisprosentti, käytetty aika, konversioasteet poluittain.</p>
+                                <p class="metric-description">
+                                    <span class="metric-item"><span class="metric-icon">✅</span> Tehtävien onnistumisprosentti</span>
+                                    <span class="metric-item"><span class="metric-icon">⏱️</span> käytetty aika</span>
+                                    <span class="metric-item"><span class="metric-icon">➡️</span> konversioasteet poluittain</span>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -96,7 +104,11 @@ const pageDescription = "Kiihdytä SaaS-liiketoimintasi kasvua The Good Side:n p
                             </div>
                             <div class="content-block">
                                 <h4>Mittari:</h4>
-                                <p>Käytettävyystestien tulokset (SUS), virheiden määrä, käyttäjäpalaute.</p>
+                                <p class="metric-description">
+                                    <span class="metric-item"><span class="metric-icon">📊</span> Käytettävyystestien tulokset (SUS)</span>
+                                    <span class="metric-item"><span class="metric-icon">🐞</span> virheiden määrä</span>
+                                    <span class="metric-item"><span class="metric-icon">💬</span> käyttäjäpalaute</span>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -116,8 +128,10 @@ const pageDescription = "Kiihdytä SaaS-liiketoimintasi kasvua The Good Side:n p
         margin: 4rem auto; /* Added more margin */
         /* Use a more distinct background, or fallback if variables are too similar */
         background-color: var(--color-bg-surface, #ffffff); /* White surface */
-        border: 1px solid var(--color-border-subtle, #e0e0e0); /* Subtle border */
-        border-radius: var(--border-radius-lg); /* Slightly larger radius */
+        /* Changed border color to primary brand color */
+        border: 1px solid var(--color-primary); 
+        /* Increased border radius for more rounding */
+        border-radius: 20px; 
         padding: 0; /* Remove padding, handle internally */
         box-shadow: var(--shadow-lg); /* Enhanced shadow */
         overflow: hidden; /* Contain child elements */
@@ -161,6 +175,9 @@ const pageDescription = "Kiihdytä SaaS-liiketoimintasi kasvua The Good Side:n p
         border-bottom-color: var(--color-primary);
         /* Make active tab background match content area for seamless look */
         background-color: var(--color-bg-surface, #ffffff);
+        /* Added top border radius to active tab */
+        border-top-left-radius: var(--border-radius-md, 6px); 
+        border-top-right-radius: var(--border-radius-md, 6px);
     }
 
     .service-content {
@@ -208,6 +225,31 @@ const pageDescription = "Kiihdytä SaaS-liiketoimintasi kasvua The Good Side:n p
         color: var(--color-text-secondary);
         font-size: var(--font-size-base); /* Larger paragraph text */
         line-height: var(--line-height-relaxed); /* More relaxed line height */
+    }
+
+    /* Styles for metric items spacing */
+    .metric-item:not(:last-child) {
+        margin-right: 1.5em; /* Add space between items, adjust as needed */
+    }
+
+    /* Styles for metric icons */
+    .metric-icon {
+        margin-right: 0.4em; /* Space between icon and text */
+        display: inline-block; /* Ensure margin is applied */
+    }
+
+    /* Ensure metric description stays on one line on wider screens */
+    @media (min-width: 768px) {
+        .metric-description {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Make the last content block (metric) span full width */
+        .content-grid .content-block:last-child {
+            grid-column: 1 / -1; /* Span all columns */
+        }
     }
 
     /* Clean up previous commented styles */
