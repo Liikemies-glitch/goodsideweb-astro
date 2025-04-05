@@ -2,338 +2,511 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BackgroundPaths from '../components/BackgroundPaths.tsx';
 
-const pageTitle = "Palvelut - The Good Side";
-const pageDescription = "Kiihdytä SaaS-liiketoimintasi kasvua The Good Side:n palveluilla. Keskitymme ratkaisemaan yleisimmät kasvun esteet";
+const pageTitle = "SaaS-suunnittelun palvelut - The Good Side";
+const pageDescription = "Luomme poikkeuksellisia digitaalisia kokemuksia, jotka auttavat SaaS-yrityksiä erottumaan, sitouttamaan käyttäjiä ja kasvamaan.";
 ---
 <BaseLayout title={pageTitle} description={pageDescription}>
     <BackgroundPaths client:load />
 
-    <!-- Hero Section for Palvelut -->
-    <section class="contact-hero" style="padding-top: 4rem; padding-bottom: 1rem; background-color: var(--color-bg-secondary); min-height: auto;">
+    <!-- Uusi sisältö alkaa -->
+    <section class="saas-hero" style="padding-top: 4rem; padding-bottom: 3rem; text-align: center;">
         <div class="container">
-            <div class="contact-content">
-                <h1>Keskitymme ratkaisemaan yleisimmät kasvun esteet</h1>
-                <p class="contact-description">Autamme tuotetiimejä rakentamaan menestyvää SaaS-liiketoimintaa yhdistämällä tuotestrategian, designin ja markkinoinnin toimivaksi kokonaisuudeksi.</p>
+             <span class="tag" style="margin-bottom: 1rem;">Palvelumme</span>
+            <h1>SaaS-suunnittelun huippuosaamista</h1>
+            <p class="large-paragraph" style="max-width: 700px; margin: 1rem auto 3rem auto;">Luomme poikkeuksellisia digitaalisia kokemuksia, jotka auttavat SaaS-yrityksiä erottumaan, sitouttamaan käyttäjiä ja kasvamaan.</p>
+        </div>
+    </section>
+
+    <!-- Osaamisalueet (korvaa vanhan tabi-osion) -->
+     <section class="expertise-section" style="padding-bottom: 4rem;">
+        <div class="container">
+            <!-- Tähän tulee tabi-navigaatio tai suoraan kortit -->
+             <div class="tabs-placeholder" style="margin-bottom: 3rem; text-align: center;">
+                 <!-- Päivitetyt tabi-napit attribuuteilla -->
+                <button class="tab-button-style" data-tab="ui-ux">UI/UX-suunnittelu</button>
+                <button class="tab-button-style active" data-tab="kayttajapolut">Käyttäjäpolut</button>
+                <button class="tab-button-style" data-tab="positiointi">Tuotepositiointi</button>
+            </div>
+
+            {/* Uusi kontti tabi-sisällöille */}
+            <div class="tab-content-area">
+
+                {/* Tab 1: UI/UX-suunnittelu (Sisältö 1. kuvasta) */}
+                <div id="ui-ux" class="tab-pane">
+                    <div class="expertise-cards-grid">
+                        {/* Kortti 1: Kojelautasuunnittelu */}
+                        <div class="card">
+                            <div class="card-icon"> {/* Icon placeholder: Grid */} <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg> </div>
+                            <h4>Kojelautasuunnittelu</h4>
+                            <p>Intuitiiviset kojelaudat, jotka tekevät monimutkaisesta datasta helposti ymmärrettävää ja käytettävää.</p>
+                            <ul>
+                                <li>Datavisualisointi</li>
+                                <li>Käyttäjäkeskeiset asettelut</li>
+                                <li>Mukautettavat widgetit</li>
+                            </ul>
+                            <a href="#" class="card-link">Lue lisää →</a>
+                        </div>
+                        {/* Kortti 2: Käyttäjäkokemus */}
+                        <div class="card">
+                            <div class="card-icon"> {/* Icon placeholder: Bolt */} <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> </div>
+                            <h4>Käyttäjäkokemus</h4>
+                            <p>Sujuvat kokemukset, jotka ilahduttavat käyttäjiä ja vähentävät poistumista SaaS-tuotteestasi.</p>
+                            <ul>
+                                <li>Käyttäjäpolkujen kartoitus</li>
+                                <li>Käytettävyystestaus</li>
+                                <li>Vuorovaikutussuunnittelu</li>
+                            </ul>
+                            <a href="#" class="card-link">Lue lisää →</a>
+                        </div>
+                        {/* Kortti 3: UI-suunnittelujärjestelmät */}
+                        <div class="card">
+                            <div class="card-icon"> {/* Icon placeholder: Layers */} <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg> </div>
+                            <h4>UI-suunnittelujärjestelmät</h4>
+                            <p>Skaalautuvat suunnittelujärjestelmät, jotka varmistavat yhdenmukaisuuden ja nopeuttavat kehitystä.</p>
+                            <ul>
+                                <li>Komponenttikirjastot</li>
+                                <li>Suunnittelutokenien hallinta</li>
+                                <li>Dokumentaatio</li>
+                            </ul>
+                            <a href="#" class="card-link">Lue lisää →</a>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Tab 2: Käyttäjäpolut (Olemassa oleva sisältö) */}
+                <div id="kayttajapolut" class="tab-pane active">
+                    <div class="expertise-cards-grid">
+                        {/* Kortti 1: Käyttäjätutkimus */}
+                        <div class="card">
+                            <div class="card-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> </div>
+                            <h4>Käyttäjätutkimus</h4>
+                            <p>Syvällinen ymmärrys käyttäjistäsi laadullisten ja määrällisten tutkimusmenetelmien avulla.</p>
+                            <ul>
+                                <li>Käyttäjähaastattelut</li>
+                                <li>Käyttäytymisanalyysi</li>
+                                <li>Käytettävyystestaus</li>
+                            </ul>
+                            <a href="#" class="card-link">Lue lisää →</a>
+                        </div>
+                        {/* Kortti 2: Persoonien kehittäminen */}
+                        <div class="card">
+                            <div class="card-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26a8 8 0 1 0-11.48 0H4"/><path d="M16 18L22 12"/><path d="M13.23 14.87a6 6 0 0 0 8.1-8.1"/><path d="M2 20a4 4 0 0 0 4 0"/></svg> </div>
+                            <h4>Persoonien kehittäminen</h4>
+                            <p>Yksityiskohtaiset käyttäjäpersoonat, jotka ohjaavat tuotepäätöksiä ja ominaisuuksien priorisointia.</p>
+                            <ul>
+                                <li>Demografinen profilointi</li>
+                                <li>Käyttäytymismallit</li>
+                                <li>Tavoitteet ja kipupisteet</li>
+                            </ul>
+                            <a href="#" class="card-link">Lue lisää →</a>
+                        </div>
+                        {/* Kortti 3: Polkukartoitus */}
+                        <div class="card">
+                            <div class="card-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg> </div>
+                            <h4>Polkukartoitus</h4>
+                            <p>Visualisoidut käyttäjäpolut, jotka tunnistavat mahdollisuudet parantamiseen ja innovointiin.</p>
+                            <ul>
+                                <li>Kosketuspisteiden analyysi</li>
+                                <li>Tunnekartoitus</li>
+                                <li>Mahdollisuuksien tunnistaminen</li>
+                            </ul>
+                            <a href="#" class="card-link">Lue lisää →</a>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Tab 3: Tuotepositiointi (Sisältö uudesta kuvasta) */}
+                <div id="positiointi" class="tab-pane">
+                    <div class="expertise-cards-grid">
+                        {/* Kortti 1: Markkinaerottautuminen */}
+                        <div class="card">
+                             <div class="card-icon"> {/* Icon placeholder: Map Pin */} <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> </div>
+                            <h4>Markkinaerottautuminen</h4>
+                            <p>Strateginen positiointi, joka auttaa SaaS-tuotettasi erottumaan kilpailluilla markkinoilla.</p>
+                             <ul>
+                                <li>Kilpailija-analyysi</li>
+                                <li>Ainutlaatuiset myyntiargumentit</li>
+                                <li>Markkinamahdollisuuksien kartoitus</li>
+                            </ul>
+                            <a href="#" class="card-link">Lue lisää →</a>
+                        </div>
+                        {/* Kortti 2: Arvolupaus */}
+                        <div class="card">
+                             <div class="card-icon"> {/* Icon placeholder: Wand */} <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72Z"/><path d="m14 7 3 3"/><path d="M5 6v4"/><path d="M19 14v4"/><path d="M10 2v2"/><path d="M7 8H3"/><path d="M14 19h-4"/><path d="M11 3v4"/><path d="M3 11h4"/></svg> </div>
+                            <h4>Arvolupaus</h4>
+                            <p>Selkeät, vakuuttavat arvolupaukset, jotka resonoivat kohderyhmäsi kanssa.</p>
+                             <ul>
+                                <li>Hyötyjen artikulointi</li>
+                                <li>Ongelma-ratkaisu -kehystäminen</li>
+                                <li>ROI:n osoittaminen</li>
+                            </ul>
+                            <a href="#" class="card-link">Lue lisää →</a>
+                        </div>
+                         {/* Kortti 3: Viestintäkehys */}
+                         <div class="card">
+                             <div class="card-icon"> {/* Icon placeholder: Grid */} <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg> </div>
+                            <h4>Viestintäkehys</h4>
+                            <p>Johdonmukainen viestintä, joka välittää tuotteesi arvon kaikissa kosketuspisteissä.</p>
+                             <ul>
+                                <li>Ydinviestintä</li>
+                                <li>Ominaisuuksien positiointi</li>
+                                <li>Kohderyhmäkohtaiset narratiivit</li>
+                            </ul>
+                            <a href="#" class="card-link">Lue lisää →</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-
-            <!-- Service Details / Tabs Placeholder -->
-            <div class="service-details">
-                <!-- Tab Navigation -->
-                <div class="service-tabs">
-                    <button class="tab-button active" data-tab="tuotepositiointi">Tehokas tuotepositiointi</button>
-                    <button class="tab-button" data-tab="kayttajapolut">Optimoidut käyttäjäpolut</button>
-                    <button class="tab-button" data-tab="kayttoliittyma">Käyttöliittymät ja käyttäjäkokemus</button>
-                </div>
-
-                <!-- Tab Content Area -->
-                <div class="service-content">
-                    <!-- Content for Tuotepositiointi -->
-                    <div id="tuotepositiointi" class="tab-pane active">
-                        <div class="content-grid">
-                            <div class="content-block">
-                                <h4>Ongelma</h4>
-                                <p>Kasvustrategian toteutus ontuu resurssipulan tai epäselvän suunnan vuoksi. Tuote ei erotu kilpailijoista.</p>
-                            </div>
-                            <div class="content-block">
-                                <h4>Ratkaisu</h4>
-                                <p>Kirkastamme ydinviestimme ja kohderyhmänne. Yhdistämme tuotestrategian, designin ja markkinoinnin tukemaan positiointia.</p>
-                            </div>
-                            <div class="content-block">
-                                <h4>Hyödyt</h4>
-                                <p>Selkeämpi markkina-asema, tehokkaampi myynti ja markkinointi, parempi asiakasymmärrys.</p>
-                            </div>
-                            <div class="content-block">
-                                <h4>Mittarit</h4>
-                                <p class="metric-description">
-                                    <span class="metric-item"><span class="metric-icon">📈</span> Konversioasteet</span>
-                                    <span class="metric-item"><span class="metric-icon">🎯</span> Markkinaosuuden kehitys</span>
-                                    <span class="metric-item"><span class="metric-icon">💬</span> Positiivinen word-of-mouth</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Content for Käyttäjäpolut -->
-                     <div id="kayttajapolut" class="tab-pane">
-                        <div class="content-grid">
-                            <div class="content-block">
-                                <h4>Ongelma</h4>
-                                <p>Asiakkaat eksyvät tai turhautuvat monimutkaisiin prosesseihin. Konversioprosentit jäävät alhaisiksi kriittisissä vaiheissa.</p>
-                            </div>
-                            <div class="content-block">
-                                <h4>Ratkaisu</h4>
-                                <p>Analysoimme ja visualisoimme nykyiset käyttäjäpolut. Suunnittelemme ja testaamme intuitiivisempia ja tehokkaampia polkuja.</p>
-                            </div>
-                            <div class="content-block">
-                                <h4>Hyödyt</h4>
-                                <p>Parempi käyttäjäkokemus, korkeammat konversiot, vähentynyt asiakaspoistuma.</p>
-                            </div>
-                            <div class="content-block">
-                                <h4>Mittarit</h4>
-                                <p class="metric-description">
-                                    <span class="metric-item"><span class="metric-icon">✅</span> Tehtävien onnistumisprosentti</span>
-                                    <span class="metric-item"><span class="metric-icon">⏱️</span> käytetty aika</span>
-                                    <span class="metric-item"><span class="metric-icon">➡️</span> konversioasteet poluittain</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Content for Käyttöliittymät -->
-                    <div id="kayttoliittyma" class="tab-pane">
-                        <div class="content-grid">
-                            <div class="content-block">
-                                <h4>Ongelma</h4>
-                                <p>Käyttöliittymä on vanhentunut, sekava tai ei vastaa käyttäjien tarpeita. Huono käytettävyys heikentää asiakastyytyväisyyttä.</p>
-                            </div>
-                            <div class="content-block">
-                                <h4>Ratkaisu</h4>
-                                <p>Modernisoimme käyttöliittymän designin ja parannamme käytettävyyttä käyttäjätutkimuksen ja parhaiden käytäntöjen pohjalta.</p>
-                            </div>
-                            <div class="content-block">
-                                <h4>Hyödyt</h4>
-                                <p>Parantunut käytettävyys ja estetiikka, lisääntynyt käyttäjätyytyväisyys ja sitoutuminen.</p>
-                            </div>
-                            <div class="content-block">
-                                <h4>Mittarit</h4>
-                                <p class="metric-description">
-                                    <span class="metric-item"><span class="metric-icon">📊</span> Käytettävyystestien tulokset (SUS)</span>
-                                    <span class="metric-item"><span class="metric-icon">🐞</span> virheiden määrä</span>
-                                    <span class="metric-item"><span class="metric-icon">💬</span> käyttäjäpalaute</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+     {/* ADDED Menestystarinoita-osio */}
+    <section class="testimonial-section" style="background-color: var(--color-bg-secondary); padding: 4rem 0;">
+        <div class="container testimonial-container">
+             <div class="testimonial-content">
+                 <h2>Menestystarinoita</h2>
+                <blockquote class="testimonial-quote">
+                    <p>"Suunnittelutiimi muutti monimutkaisen SaaS-alustamme intuitiiviseksi, kauniiksi kokemukseksi. Käyttäjien sitoutuminen kasvoi 47% ja konversioasteemme kaksinkertaistui kolmen kuukauden sisällä julkaisusta."</p>
+                    <footer class="testimonial-author">
+                        <span class="author-avatar">JD</span> {/* Placeholder Avatar */}
+                        <span class="author-info">
+                            Jaana Dahl<br/>
+                            Toimitusjohtaja, SaaSCo
+                        </span>
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="testimonial-image-grid">
+                 <div class="testimonial-image-placeholder"> <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: var(--color-text-secondary);"><path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 8L12 3L7 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 3V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> </div>
+                 <div class="testimonial-image-placeholder"> <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: var(--color-text-secondary);"><path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 8L12 3L7 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 3V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> </div>
+                 <div class="testimonial-image-placeholder"> <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: var(--color-text-secondary);"><path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 8L12 3L7 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 3V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> </div>
+                 <div class="testimonial-image-placeholder"> <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: var(--color-text-secondary);"><path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 8L12 3L7 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 3V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> </div>
             </div>
         </div>
     </section>
-
-    <!-- Add other sections as needed -->
-
-</BaseLayout>
 
 <style>
-    .service-details {
-        max-width: 900px;
-        margin: 0% auto 4rem auto;
-        background-color: var(--color-bg-surface, #ffffff); /* White surface */
-        border: 1px solid var(--color-primary); 
-        border-radius: 20px; 
-        padding: 0; /* Remove padding, handle internally */
-        box-shadow: 0 6px 25px rgba(255, 0, 84, 0.12);
-        overflow: hidden; /* Contain child elements */
+     /* Yleiset päivitykset */
+    .large-paragraph {
+        font-size: var(--font-size-lg);
+        color: var(--color-text-secondary);
+        line-height: var(--line-height-relaxed);
     }
 
-    .service-tabs {
+    /* REMOVED .badge styles */
+    /*
+    .badge {
+        background-color: var(--color-bg-accent); 
+        color: var(--color-text-on-accent); 
+        padding: var(--spacing-xs) var(--spacing-md);
+        border-radius: var(--border-radius-full);
+        font-size: var(--font-size-sm);
+        font-weight: 500;
+    }
+    */
+
+     /* Tabi-nappien tyyli (yksinkertaistettu esimerkki) */
+     .tabs-placeholder {
         display: flex;
-        /* Changed background to match the main content surface */
-        background-color: var(--color-bg-surface, #ffffff);
-        border-bottom: 1px solid var(--color-border-subtle, #e0e0e0); /* Separator line */
-        margin-bottom: 0; /* Remove margin */
-        padding: var(--spacing-sm) var(--spacing-lg) 0; /* Padding for tabs */
-        gap: var(--spacing-md); /* More gap */
+        justify-content: center;
+        gap: var(--spacing-sm);
+        border-bottom: 1px solid var(--color-border-subtle);
+        margin-bottom: 3rem;
     }
-
-    .service-tabs .tab-button {
-        padding: var(--spacing-md) var(--spacing-md);
+    .tab-button-style {
+        padding: var(--spacing-sm) var(--spacing-lg);
         background: none;
         border: none;
         border-bottom: 3px solid transparent;
         cursor: pointer;
         font-weight: 500;
-        /* Changed color to primary and adjusted opacity for non-active */
-        color: var(--color-primary);
-        opacity: 0.7; /* Dim non-active tabs slightly */
-        border-radius: 0;
-        margin-bottom: -1px;
-        transition: all 0.25s ease-in-out;
-        /* Increased font size */
+        color: var(--color-text-secondary);
+        transition: all 0.2s ease;
         font-size: var(--font-size-md);
-        font-family: inherit;
-        text-align: left;
-        position: relative;
-        top: 1px;
+         margin-bottom: -1px; /* Nosta napit viivan päälle */
     }
-
-    .service-tabs .tab-button:hover {
-        /* Keep primary color on hover, increase opacity */
+    .tab-button-style.active {
         color: var(--color-primary);
-        opacity: 1;
-    }
-
-    .service-tabs .tab-button.active {
-        /* Keep primary color, ensure full opacity */
-        color: var(--color-primary);
-        opacity: 1;
         border-bottom-color: var(--color-primary);
-        background-color: var(--color-bg-surface, #ffffff);
-        border-top-left-radius: var(--border-radius-md, 6px);
-        border-top-right-radius: var(--border-radius-md, 6px);
+    }
+     .tab-button-style:hover:not(.active) {
+         color: var(--color-primary);
+          opacity: 1;
+     }
+
+
+    /* Osaamiskorttien gridi */
+    .expertise-cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: var(--spacing-xl);
     }
 
-    .service-content {
-        padding: var(--spacing-xl) var(--spacing-lg) var(--spacing-lg); /* More padding */
-        /* Content background should match the card surface */
-        background-color: var(--color-bg-surface, #ffffff);
+    /* Kortin tyylit */
+    .card {
+        background-color: var(--color-bg-surface);
+        border: 1px solid var(--color-border-subtle);
+        border-radius: var(--border-radius-lg);
+        padding: var(--spacing-xl);
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+         display: flex;
+        flex-direction: column;
     }
 
-    .service-content .tab-pane {
-        display: none; /* Hide inactive tabs */
-        padding: 0; /* Remove padding here, handled by service-content */
-        animation: fadeIn 0.4s ease-in-out; /* Add fade-in animation */
+     .card:hover {
+        box-shadow: var(--shadow-lg);
+         transform: translateY(-4px);
     }
 
+     .card-icon {
+        margin-bottom: var(--spacing-md);
+        width: 48px; /* Increased size slightly */
+        height: 48px;
+        background-color: var(--color-primary-light);
+        border-radius: var(--border-radius-md);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-primary);
+    }
+
+     .card h4 {
+        font-size: var(--font-size-xl);
+        font-weight: 600;
+        margin-bottom: var(--spacing-sm);
+        color: var(--color-text-primary);
+    }
+
+     .card p {
+        color: var(--color-text-secondary);
+        line-height: var(--line-height-normal);
+        flex-grow: 1; /* Pusketaan linkki alas */
+         margin-bottom: var(--spacing-lg);
+    }
+
+     .card ul {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: var(--spacing-lg);
+        color: var(--color-text-secondary);
+    }
+
+    .card li {
+        position: relative;
+        padding-left: 1.5em; /* Tilaa ikonille */
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .card li::before {
+        content: '•'; /* Korvaa tällä tai SVG-ikoni */
+        position: absolute;
+        left: 0;
+        color: var(--color-primary); /* Käytä teeman väriä */
+        font-weight: bold;
+    }
+
+     .card-link {
+        color: var(--color-primary);
+        font-weight: 500;
+        text-decoration: none;
+        transition: color 0.2s ease;
+         align-self: flex-start; /* Estää linkkiä venymästä */
+    }
+
+    .card-link:hover {
+        text-decoration: underline;
+    }
+
+     /* ADDED Testimonial section styles */
+     .testimonial-section {
+        /* Background set inline */
+     }
+     .testimonial-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+        gap: var(--spacing-xxl);
+        align-items: center;
+     }
+     .testimonial-content h2 {
+        font-size: var(--font-size-xxl);
+        margin-bottom: var(--spacing-lg);
+        color: var(--color-text-primary);
+     }
+     .testimonial-quote {
+        margin: 0;
+        padding-left: var(--spacing-lg);
+        border-left: 4px solid var(--color-primary);
+     }
+      .testimonial-quote p {
+        font-size: var(--font-size-lg);
+        font-style: italic;
+        color: var(--color-text-secondary);
+        line-height: var(--line-height-relaxed);
+        margin-bottom: var(--spacing-lg);
+     }
+     .testimonial-author {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-md);
+     }
+     .author-avatar {
+        width: 48px;
+        height: 48px;
+        border-radius: var(--border-radius-full);
+        background-color: var(--color-border-subtle); /* Placeholder bg */
+        color: var(--color-text-secondary); /* Placeholder text color */
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: var(--font-size-md);
+     }
+      .author-info {
+         font-size: var(--font-size-base);
+         color: var(--color-text-primary);
+         line-height: var(--line-height-tight);
+     }
+      .author-info br + span { /* Assuming second line is title */
+         color: var(--color-text-secondary);
+         font-size: var(--font-size-sm);
+      }
+
+      .testimonial-image-grid {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 1fr 1fr;
+         gap: var(--spacing-lg);
+         aspect-ratio: 1 / 1; /* Maintain square aspect ratio for the grid */
+         max-width: 450px; /* Limit max size */
+         margin: 0 auto; /* Center if it becomes smaller than column */
+      }
+      .testimonial-image-placeholder {
+         background-color: var(--color-bg-surface); /* Lighter background */
+         border: 1px dashed var(--color-border-subtle); /* Dashed border */
+         border-radius: var(--border-radius-lg);
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+
+
+     /* Responsiivisuus */
+     @media (max-width: 992px) {
+         /* Adjust testimonial grid for tablets */
+         .testimonial-container {
+             gap: var(--spacing-xl);
+         }
+          .testimonial-image-grid {
+             /* Maybe make it smaller or adjust */
+         }
+     }
+
+     @media (max-width: 768px) {
+        .expertise-cards-grid {
+            grid-template-columns: 1fr; /* Yksi sarake mobiilissa */
+        }
+        .tabs-placeholder {
+             /* Salli vieritys, jos tabit eivät mahdu */
+             overflow-x: auto;
+             justify-content: flex-start;
+             padding-bottom: var(--spacing-sm);
+         }
+         .testimonial-container {
+             grid-template-columns: 1fr; /* Stack testimonial content and image grid */
+         }
+         .testimonial-content {
+             margin-bottom: var(--spacing-xl); /* Add space below content when stacked */
+         }
+         .testimonial-image-grid {
+              max-width: 100%; /* Allow grid to take full width */
+              /* Adjust aspect ratio or placeholder size if needed for mobile */
+         }
+     }
+
+    /* Poistetaan vanhat, tarpeettomat tyylit */
+    /* .service-details, .service-tabs, .service-content, jne. poistettu */
+    /* .metric-item, .metric-icon, etc. poistettu */
+
+    /* Lisätään/varmistetaan tab-pane -tyylit */
+    .tab-content-area .tab-pane {
+        display: none; /* Piilota oletuksena */
+        animation: fadeIn 0.4s ease-in-out;
+    }
+    .tab-content-area .tab-pane.active {
+        display: block; /* Näytä aktiivinen tabi */
+    }
      @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(10px); }
+        from { opacity: 0; transform: translateY(5px); }
         to { opacity: 1; transform: translateY(0); }
     }
 
-    .service-content .tab-pane.active {
-        display: block; /* Show active tab */
+    /* Lisätään palvelut-sivun hero-otsikon tyylit */
+    .saas-hero h1 {
+        font-size: clamp(3rem, 5vw, 4.5rem); /* Sama kuin contact.astro */
+        line-height: 1; /* Sama kuin contact.astro */
+        margin-bottom: var(--spacing-lg); /* Sama kuin contact.astro */
+        font-weight: 600; /* Sama kuin contact.astro */
+        background: linear-gradient(45deg, var(--secondary-color), var(--primary-color)); /* Sama kuin contact.astro */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center; /* Muutettu keskelle */
+        margin-top: var(--spacing-sm); /* Lisätään vähän marginaalia ylös */
     }
-
-    .content-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusted minmax */
-        gap: var(--spacing-xl); /* Increased gap */
-    }
-
-    .content-block h4 {
-        font-weight: 600;
-        margin-bottom: var(--spacing-sm); /* More space */
-        color: var(--color-text-primary);
-        font-size: var(--font-size-md); /* Larger subheading */
-    }
-
-    .content-block p {
-        color: var(--color-text-secondary);
-        font-size: var(--font-size-base); /* Larger paragraph text */
-        line-height: var(--line-height-relaxed); /* More relaxed line height */
-    }
-
-    /* Styles for metric items spacing */
-    .metric-item:not(:last-child) {
-        margin-right: 1.5em; /* Add space between items, adjust as needed */
-    }
-
-    /* Styles for metric icons */
-    .metric-icon {
-        margin-right: 0.1em; /* Reduced space between icon and text */
-        display: inline-block; /* Ensure margin is applied */
-    }
-
-    /* Ensure metric description stays on one line on wider screens */
-    @media (min-width: 768px) {
-        .metric-description {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        /* Make the last content block (metric) span full width */
-        .content-grid .content-block:last-child {
-            grid-column: 1 / -1; /* Span all columns */
-        }
-    }
-
-    /* Mobile styles for metrics & tabs */
-    @media (max-width: 767px) {
-        /* Removed padding rule for .logo-wall__title as the element is removed */
-
-        .service-tabs {
-            overflow-x: auto;  /* Enable horizontal scrolling */
-            white-space: nowrap; /* Prevent tabs from wrapping */
-            /* Optional: Add some padding to the right if needed for scrollbar or visual space */
-            /* padding-right: var(--spacing-md); */
-        }
-
-        .service-tabs .tab-button {
-            flex-shrink: 0; /* Prevent buttons from shrinking */
-        }
-
-        .metric-item {
-            display: block; /* Each metric on its own line */
-            margin-right: 0; /* Remove horizontal spacing */
-            margin-bottom: var(--spacing-sm); /* Add vertical spacing */
-        }
-
-        .metric-item:last-child {
-            margin-bottom: 0; /* No bottom margin for the last item */
-        }
-    }
-
-    /* Clean up previous commented styles */
-
-    /* Add more specific styles if needed */
-
-    /* Force alignment for hero title and subtitle - REMOVED as we use contact styles now */
-    /*
-    .hero__content .hero__title,
-    .hero__content .hero__subtitle {
-        margin-left: 0;
-        padding-left: 0;
-    }
-    */
 
 </style>
 
-<script>
- // Basic tab functionality
- document.addEventListener('DOMContentLoaded', () => {
-     const tabButtons = document.querySelectorAll('.service-tabs .tab-button') satisfies NodeListOf<HTMLButtonElement>;
-     const tabPanes = document.querySelectorAll('.service-content .tab-pane') satisfies NodeListOf<HTMLElement>;
-     const initiallyActiveButton = document.querySelector('.service-tabs .tab-button.active') as HTMLButtonElement | null; // Get initially active button
+</BaseLayout>
 
-     const activateTab = (button: HTMLButtonElement) => {
-        // Deactivate all first
-        tabButtons.forEach(btn => btn.classList.remove('active'));
-        tabPanes.forEach(pane => {
-            pane.classList.remove('active');
-            // pane.style.display = 'none'; // Let CSS handle display via active class
+{/* Lisätään JavaScript tabi-toiminnallisuudelle */}
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const tabContainer = document.querySelector('.expertise-section .container');
+        if (!tabContainer) return;
+
+        const tabButtons = tabContainer.querySelectorAll('.tabs-placeholder .tab-button-style') satisfies NodeListOf<HTMLButtonElement>;
+        const tabPanes = tabContainer.querySelectorAll('.tab-content-area .tab-pane') satisfies NodeListOf<HTMLElement>;
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetTabId = button.dataset.tab;
+                if (!targetTabId) return;
+
+                // Päivitä nappien tila
+                tabButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                    if (btn === button) {
+                        btn.classList.add('active');
+                    }
+                });
+
+                // Päivitä paneelien tila
+                tabPanes.forEach(pane => {
+                    if (pane.id === targetTabId) {
+                        pane.classList.add('active');
+                    } else {
+                        pane.classList.remove('active');
+                    }
+                });
+            });
         });
 
-        // Activate clicked button
-        button.classList.add('active');
+        // Varmista, että initial state on oikein (vaikka Astro hoitaa SSR)
+        // Tämä on lisävarmistus client-puolella
+        const initiallyActiveButton = tabContainer.querySelector('.tabs-placeholder .tab-button-style.active') as HTMLElement;
+        const initialTargetId = initiallyActiveButton?.dataset.tab;
 
-        // Activate corresponding pane
-        const tabId = button.getAttribute('data-tab');
-        if (tabId) {
-            const activePane = document.getElementById(tabId);
-            if (activePane) {
-                activePane.classList.add('active');
-                // activePane.style.display = 'block'; // Let CSS handle display via active class
-            }
+        if (initialTargetId) {
+            tabPanes.forEach(pane => {
+                 if (pane.id === initialTargetId) {
+                    if (!pane.classList.contains('active')) {
+                         pane.classList.add('active'); // Varmista aktiivinen luokka
+                    }
+                 } else {
+                    if (pane.classList.contains('active')) {
+                         pane.classList.remove('active'); // Varmista, ettei muita ole aktiivisena
+                     }
+                 }
+            });
         }
-     };
-
-
-     tabButtons.forEach(button => {
-         button.addEventListener('click', () => {
-             activateTab(button);
-         });
-     });
-
-     // Initial activation - Ensure the initially active pane has the class
-     if (initiallyActiveButton) {
-         const initialPaneId = initiallyActiveButton.getAttribute('data-tab');
-         if (initialPaneId) {
-              const initialPane = document.getElementById(initialPaneId);
-              if(initialPane && !initialPane.classList.contains('active')) {
-                  // Ensure the correct pane is marked active if JS runs after initial render
-                  tabPanes.forEach(pane => pane.classList.remove('active'));
-                  initialPane.classList.add('active');
-                  // initialPane.style.display = 'block'; // Let CSS handle display
-              }
-          }
-     } else if (tabButtons.length > 0) {
-         // Fallback: activate the first tab if none marked active in HTML
-         activateTab(tabButtons[0]);
-     }
- });
-</script> 
+    });
+</script>
