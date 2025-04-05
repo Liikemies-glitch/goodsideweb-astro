@@ -18,8 +18,8 @@ const pageDescription = "Kiihdytä SaaS-liiketoimintasi kasvua The Good Side:n p
     <!-- Services Section -->
     <section class="services" style="padding-top: 0; padding-bottom: 4rem;">
         <div class="container" style="padding-left: 0; padding-right: 0;">
-            <!-- Added back the subtitle using index page style -->
-            <h2 class="logo-wall__title" style="text-align: left; margin-bottom: var(--spacing-xl); padding-left: 0; padding-right: 0;">Keskitymme ratkaisemaan yleisimmät kasvun esteet.</h2>
+            <!-- Removed inline padding from h2 -->
+            <h2 class="logo-wall__title" style="text-align: left; margin-bottom: var(--spacing-xl);">Keskitymme ratkaisemaan yleisimmät kasvun esteet SaaS-polullasi.</h2>
 
             <!-- Service Details / Tabs Placeholder -->
             <div class="service-details">
@@ -244,8 +244,14 @@ const pageDescription = "Kiihdytä SaaS-liiketoimintasi kasvua The Good Side:n p
         }
     }
 
-    /* Mobile styles for metrics */
+    /* Mobile styles for metrics & tabs */
     @media (max-width: 767px) {
+        /* Added padding for the subtitle/logo wall title */
+        .logo-wall__title {
+            padding-left: var(--spacing-md);
+            padding-right: var(--spacing-md);
+        }
+
         .service-tabs {
             overflow-x: auto;  /* Enable horizontal scrolling */
             white-space: nowrap; /* Prevent tabs from wrapping */
