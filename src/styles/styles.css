@@ -924,20 +924,32 @@ h1, h2, h3, h4, h5, h6 {
     white-space: nowrap;
 }
 
+/* Add keyframes for the color cycle animation */
+@keyframes color-cycle {
+    0%, 100% {
+        color: var(--secondary-color);
+    }
+    50% {
+        color: var(--primary-color);
+    }
+}
+
 .pricing-card__price {
     font-size: 2.5rem;
     font-weight: 600;
-    color: var(--secondary-color);
-    margin-bottom: 0;
+    /* color: var(--secondary-color); Original color set in keyframes */
+    padding-top: var(--spacing-sm);
     line-height: 1;
     white-space: nowrap;
+    /* Apply the color cycle animation */
+    animation: color-cycle 3s ease-in-out infinite alternate;
 }
 
 .pricing-card p {
     color: var(--light-text);
     line-height: 1.5;
     margin-bottom: var(--spacing-md);
-    font-size: 0.875rem;
+    font-size: 1.125rem;
     flex-grow: 1;
 }
 
@@ -953,7 +965,7 @@ h1, h2, h3, h4, h5, h6 {
 .pricing__note {
     text-align: center;
     color: var(--light-text);
-    font-size: 0.875rem;
+    font-size: 1.125rem;
     margin-top: var(--spacing-xl);
     max-width: 600px;
     margin-left: auto;
