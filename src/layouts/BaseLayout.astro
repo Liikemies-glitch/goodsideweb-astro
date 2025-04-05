@@ -42,7 +42,7 @@ const { title, description } = Astro.props;
                 <!-- Update links to use root-relative paths -->
                 <li><a href="/palvelut">Palvelut</a></li>
                 <li><a href="/references">Referenssit</a></li>
-                <li><a href="/blogi">Blogi</a></li>
+                <li><a href="/blog">Blogi</a></li>
                 <li><a href="/#materiaalit">Materiaalit</a></li>
                 <li><a href="/#hinnat">Hinnat</a></li>
                 <li><a href="/contact" class="btn btn--primary">Ota yhteyttä</a></li>
@@ -50,7 +50,7 @@ const { title, description } = Astro.props;
         </nav>
     </header>
 
-    <main>
+    <main style="padding-top: 5rem;">
         <!-- Page-specific content will be injected here -->
         <slot />
     </main>
@@ -72,7 +72,7 @@ const { title, description } = Astro.props;
                         <li><a href="/">Etusivu</a></li>
                         <li><a href="/palvelut">Palvelut</a></li>
                         <li><a href="/references">Referenssit</a></li>
-                        <li><a href="/blogi">Blogi</a></li>
+                        <li><a href="/blog">Blogi</a></li>
                         <li><a href="/contact">Ota yhteyttä</a></li>
                     </ul>
                 </div>

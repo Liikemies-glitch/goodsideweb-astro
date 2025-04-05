@@ -1,0 +1,20 @@
+---
+// src/pages/blog/[slug].astro
+import { getCollection, type CollectionEntry } from 'astro:content';
+import BlogPostLayout from '../../layouts/BlogPostLayout.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post: CollectionEntry<'blog'>) => ({
+    params: { slug: post.slug },
+    props: { post }, // Pass the full post object as a prop
+  }));
+}
+
+// Get the specific post data passed from getStaticPaths
+const { post } = Astro.props;
+const { Content } = await post.render(); // Get the rendered Markdown/MDX content
+---
+<BlogPostLayout post={post}>
+  <Content />
+</BlogPostLayout> 

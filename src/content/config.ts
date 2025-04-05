@@ -5,6 +5,7 @@ const blogCollection = defineCollection({
   type: 'content', // 'content' for Markdown/MDX files
   schema: ({ image }) => z.object({
     title: z.string(),
+    seoTitle: z.string().optional(),
     pubDate: z.coerce.date(),
     description: z.string(),
     author: z.string(),

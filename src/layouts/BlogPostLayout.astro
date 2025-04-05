@@ -2,16 +2,20 @@
 // src/layouts/BlogPostLayout.astro
 import BaseLayout from './BaseLayout.astro';
 import { Image } from 'astro:assets'; // Import Astro's Image component
+import type { CollectionEntry } from 'astro:content'; // Import type for better type checking
 
-// Get frontmatter data passed from the dynamic page
-const { frontmatter } = Astro.props;
+// Get the post object passed from the dynamic page
+interface Props {
+	post: CollectionEntry<'blog'>;
+}
+const { post } = Astro.props;
 
 // Determine the title and description for SEO, using fallbacks
-const pageTitle = frontmatter.seoTitle || frontmatter.title; // Use SEO title if available, otherwise main title
-const pageDescription = frontmatter.description || 'Lue artikkeli The Good Side blogista.'; // Use frontmatter description or a generic fallback
+const pageTitle = post.data.seoTitle || post.data.title; // Use SEO title if available, otherwise main title
+const pageDescription = post.data.description || 'Lue artikkeli The Good Side blogista.'; // Use frontmatter description or a generic fallback
 
 // Format the publication date
-const formattedDate = new Date(frontmatter.pubDate).toLocaleDateString('fi-FI', {
+const formattedDate = new Date(post.data.pubDate).toLocaleDateString('fi-FI', {
   year: 'numeric',
   month: 'long',
   day: 'numeric',
@@ -20,11 +24,11 @@ const formattedDate = new Date(frontmatter.pubDate).toLocaleDateString('fi-FI', 
 <BaseLayout title={pageTitle} description={pageDescription}>
   <article class="blog-post container">
     <!-- Hero Image with WebP and fallback -->
-    {frontmatter.heroImage && (
+    {post.data.heroImage && (
       <div class="blog-post__hero">
         <Image
-          src={frontmatter.heroImage}
-          alt={frontmatter.heroImageAlt || frontmatter.title}
+          src={post.data.heroImage}
+          alt={post.data.heroImageAlt || post.data.title}
           width={1200}
           height={630}
           widths={[400, 800, 1200]}
@@ -39,14 +43,14 @@ const formattedDate = new Date(frontmatter.pubDate).toLocaleDateString('fi-FI', 
 
     <!-- Post Header -->
     <header class="blog-post__header">
-      <h1 class="blog-post__title">{frontmatter.title}</h1>
+      <h1 class="blog-post__title">{post.data.title}</h1>
       <p class="blog-post__meta">
         Julkaistu {formattedDate}
-        {frontmatter.author && ` | Kirjoittaja: ${frontmatter.author}`}
+        {post.data.author && ` | Kirjoittaja: ${post.data.author}`}
       </p>
-      {frontmatter.tags && frontmatter.tags.length > 0 && (
+      {post.data.tags && post.data.tags.length > 0 && (
         <div class="blog-post__tags">
-          {frontmatter.tags.map((tag: string) => (
+          {post.data.tags.map((tag: string) => (
             <span class="tag">{tag}</span>
           ))}
         </div>
