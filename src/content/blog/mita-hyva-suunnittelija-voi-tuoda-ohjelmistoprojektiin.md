@@ -7,7 +7,7 @@ description: >-
 author: moretagoy
 tags:
   - Design
-heroImage: images/mita-hyva-suunnittelija-voi-tuoda-ohjelmistoprojektiin/featured.png
+heroImage: ../../assets/blog/images/mita-hyva-suunnittelija-voi-tuoda-ohjelmistoprojektiin/featured.webp
 heroImageAlt: Mitä hyvä suunnittelija voi tuoda ohjelmistoprojektiin
 ---
 

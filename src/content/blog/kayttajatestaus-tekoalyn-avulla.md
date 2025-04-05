@@ -7,7 +7,7 @@ description: >-
 author: moretagoy
 tags:
   - UXR
-heroImage: images/kayttajatestaus-tekoalyn-avulla/featured.png
+heroImage: ../../assets/blog/images/kayttajatestaus-tekoalyn-avulla/featured.webp
 heroImageAlt: Käyttäjätestaus tekoälyn avulla
 ---
 

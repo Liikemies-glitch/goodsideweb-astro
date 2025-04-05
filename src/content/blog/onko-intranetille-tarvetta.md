@@ -6,7 +6,7 @@ description: >-
   välittää tärkeät tiedot ja ilmoitukset kaikille työntekijöille.
 author: moretagoy
 tags: []
-heroImage: images/onko-intranetille-tarvetta/featured.png
+heroImage: ../../assets/blog/images/onko-intranetille-tarvetta/featured.webp
 heroImageAlt: Onko intranetille tarvetta?
 ---
 

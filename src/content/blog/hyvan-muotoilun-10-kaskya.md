@@ -1,12 +1,11 @@
 ---
-title: Hyvän muotoilun 10 käskyä
-pubDate: '2024-08-12T16:18:25.000Z'
-description: >-
-  Se luo positiivisia kokemuksia käyttäjilleen ja tekee heidän elämästään
-  helpompaa ja miellyttävämpää.
+title: "Hyvän muotoilun 10 käskyä"
+description: "Perusperiaatteet hyvästä muotoilusta"
+pubDate: "2025-04-01"
+heroImage: ../../assets/blog/images/hyvan-muotoilun-10-kaskya/featured.webp
+category: "design"
+tags: ["design", "muotoilu", "periaatteet"]
 author: moretagoy
-tags: []
-heroImage: images/hyvan-muotoilun-10-kaskya/featured.png
 heroImageAlt: Hyvän muotoilun 10 käskyä
 ---
 

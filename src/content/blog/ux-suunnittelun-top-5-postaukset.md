@@ -10,7 +10,7 @@ tags:
   - Käyttökokemus
   - UX
   - UXR
-heroImage: images/ux-suunnittelun-top-5-postaukset/featured.png
+heroImage: ../../assets/blog/images/ux-suunnittelun-top-5-postaukset/featured.webp
 heroImageAlt: UX-suunnittelun mikroblogi TOP 5 postaukset
 ---
 

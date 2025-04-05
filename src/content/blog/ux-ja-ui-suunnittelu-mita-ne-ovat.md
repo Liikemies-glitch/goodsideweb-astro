@@ -1,9 +1,10 @@
 ---
 title: UX ja UI suunnittelu – mitä ne ovat?
 pubDate: '2024-07-04T01:31:11.000Z'
+description: Selkeä opas UX- ja UI-suunnittelun eroihin ja yhtäläisyyksiin. Artikkeli avaa molempien suunnittelualojen keskeiset tehtävät, tavoitteet ja merkityksen digitaalisten palveluiden kehittämisessä.
 author: moretagoy
 tags: []
-heroImage: images/ux-ja-ui-suunnittelu-mita-ne-ovat/featured.png
+heroImage: ../../assets/blog/images/ux-ja-ui-suunnittelu-mita-ne-ovat/featured.webp
 heroImageAlt: UX ja UI suunnittelu – mitä ne ovat?
 ---
 

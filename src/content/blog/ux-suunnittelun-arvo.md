@@ -8,7 +8,7 @@ description: >-
 seoTitle: UX&#x2d;suunnittelun arvo mikroblogi
 author: mikki
 tags: []
-heroImage: images/ux-suunnittelun-arvo/featured.png
+heroImage: ../../assets/blog/images/ux-suunnittelun-arvo/featured.webp
 heroImageAlt: UX-suunnittelun arvo
 ---
 

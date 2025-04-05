@@ -6,7 +6,7 @@ description: >-
   niiden muotoilu keskittyy aina käytettävyyteen ja kestävyyteen.
 author: moretagoy
 tags: []
-heroImage: images/designin-tulee-olla-kaiken-ytimessa-v-2/featured.png
+heroImage: ../../assets/blog/images/designin-tulee-olla-kaiken-ytimessa-v-2/featured.webp
 heroImageAlt: Designin tulee olla kaiken ytimessä v.2
 ---
 

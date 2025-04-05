@@ -8,7 +8,7 @@ description: >-
 author: moretagoy
 tags:
   - Palvelumuotoilu
-heroImage: images/palvelumuotoilua-kiintealla-kuukausihinnalla/featured.png
+heroImage: ../../assets/blog/images/palvelumuotoilua-kiintealla-kuukausihinnalla/featured.webp
 heroImageAlt: Palvelumuotoilua kiinteällä kuukausihinnalla
 ---
 

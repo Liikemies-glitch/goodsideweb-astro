@@ -7,7 +7,7 @@ description: >-
   niiden välillä.
 author: moretagoy
 tags: []
-heroImage: images/mika-on-vaikeinta-ux-suunnittelussa/featured.png
+heroImage: ../../assets/blog/images/mika-on-vaikeinta-ux-suunnittelussa/featured.webp
 heroImageAlt: Mikä on vaikeinta UX-suunnittelussa?
 ---
 

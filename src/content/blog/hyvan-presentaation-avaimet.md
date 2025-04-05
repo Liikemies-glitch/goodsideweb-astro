@@ -6,7 +6,7 @@ description: >-
   vaikuttavan ja selkeän.
 author: moretagoy
 tags: []
-heroImage: images/hyvan-presentaation-avaimet/featured.png
+heroImage: ../../assets/blog/images/hyvan-presentaation-avaimet/featured.webp
 heroImageAlt: Hyvän presentaation avaimet
 ---
 

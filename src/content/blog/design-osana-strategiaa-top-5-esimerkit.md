@@ -8,7 +8,7 @@ author: moretagoy
 tags:
   - Design
   - Käyttökokemus
-heroImage: images/design-osana-strategiaa-top-5-esimerkit/featured.png
+heroImage: ../../assets/blog/images/design-osana-strategiaa-top-5-esimerkit/featured.webp
 heroImageAlt: Design osana strategiaa – Top 5 esimerkit
 ---
 
@@ -32,8 +32,8 @@ Airbnb:n menestys pohjautuu pitkälti design-ajatteluun. Perustajat, joilla on t
 
 ## 5\. Nike – Tarinoita designin kautta
 
-Nike yhdistää designin ja tarinankerronnan tavalla, joka puhuttelee asiakkaita tunnetasolla. Brändin strategia kiteytyy heidän sloganissaan “Just Do It”, joka näkyy kaikessa tuotemuotoilusta markkinointikampanjoihin. Jokainen tuote ei ole vain urheiluvaruste, vaan osa tarinaa, joka inspiroi ja motivoi. Nike on myös ollut edelläkävijä digitaalisessa designissa, esimerkiksi Nike+ -sovelluksellaan, joka yhdistää fyysiset tuotteet digipalveluihin. Tämä lähestymistapa on vahvistanut heidän asemaansa kokonaisvaltaisena urheilubrändinä.
+Nike yhdistää designin ja tarinankerronnan tavalla, joka puhuttelee asiakkaita tunnetasolla. Brändin strategia kiteytyy heidän sloganissaan "Just Do It", joka näkyy kaikessa tuotemuotoilusta markkinointikampanjoihin. Jokainen tuote ei ole vain urheiluvaruste, vaan osa tarinaa, joka inspiroi ja motivoi. Nike on myös ollut edelläkävijä digitaalisessa designissa, esimerkiksi Nike+ -sovelluksellaan, joka yhdistää fyysiset tuotteet digipalveluihin. Tämä lähestymistapa on vahvistanut heidän asemaansa kokonaisvaltaisena urheilubrändinä.
 
 ### Design strategiana luo erottuvuutta
 
-Design-ajattelun hyödyntäminen osana strategiaa on johtanut näille yrityksille merkittäviin kilpailuetuja. Olipa kyse tuotteiden suunnittelusta, asiakaskokemuksen optimoinnista tai yrityksen brändi-identiteetin rakentamisesta, design voi olla ratkaiseva tekijä menestyksen ja epäonnistumisen välillä. Tulevaisuuden menestyjät ovat niitä, jotka osaavat yhdistää luovuuden, teknologian ja strategisen ajattelun tavalla, joka tuottaa sekä arvoa asiakkaille että kestävää kasvua yritykselle. Miten sinun yrityksesi voisi hyödyntää designia osana strategiaansa?   **Janne Gylling** janne@goodside.fi 044 750 4444
+Design-ajattelun hyödyntäminen osana strategiaa on johtanut näille yrityksille merkittäviin kilpailuetuja. Olipa kyse tuotteiden suunnittelusta, asiakaskokemuksen optimoinnista tai yrityksen brändi-identiteetin rakentamisesta, design voi olla ratkaiseva tekijä menestyksen ja epäonnistumisen välillä. Tulevaisuuden menestyjät ovat niitä, jotka osaavat yhdistää luovuuden, teknologian ja strategisen ajattelun tavalla, joka tuottaa sekä arvoa asiakkaille että kestävää kasvua yritykselle. Miten sinun yrityksesi voisi hyödyntää designia osana strategiaansa?   **Janne Gylling** janne@goodside.fi 044 750 4444

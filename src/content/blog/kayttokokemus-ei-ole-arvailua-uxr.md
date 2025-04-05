@@ -8,7 +8,7 @@ author: moretagoy
 tags:
   - Käyttökokemus
   - UXR
-heroImage: images/kayttokokemus-ei-ole-arvailua-uxr/featured.png
+heroImage: ../../assets/blog/images/kayttokokemus-ei-ole-arvailua-uxr/featured.webp
 heroImageAlt: Käyttökokemus ei ole arvailua - UXR
 ---
 

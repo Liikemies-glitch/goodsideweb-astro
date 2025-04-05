@@ -8,7 +8,7 @@ description: >-
 author: moretagoy
 tags:
   - Palvelumuotoilu
-heroImage: images/verkkopalvelun-konseptointi/featured.png
+heroImage: ../../assets/blog/images/verkkopalvelun-konseptointi/featured.webp
 heroImageAlt: Verkkopalvelun konseptointi
 ---
 

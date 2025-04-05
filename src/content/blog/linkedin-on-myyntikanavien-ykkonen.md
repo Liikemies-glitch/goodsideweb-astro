@@ -8,15 +8,15 @@ description: >-
 seoTitle: LinkedIn on tehokkain B2B&#x2d;myyntikanava
 author: mikki
 tags: []
-heroImage: images/linkedin-on-myyntikanavien-ykkonen/featured.jpg
+heroImage: ../../assets/blog/images/linkedin-on-myyntikanavien-ykkonen/featured.jpg
 heroImageAlt: Kaikki paitsi LinkedIn on turhaa
 ---
 
-![](images/linkedin-on-myyntikanavien-ykkonen/artikkelikuva-2.webp)   Myynnin data-analyysi vahvisti LinkedInin ylivoimaisuuden myyntikanaviemme joukossa niin liidien määrässä, konversiossa kuin euroissa mitattuna. LinkedIn-liidit konvertoituvat kaupaksi yhtä todennäköisesti kuin suorat yhteydenotot tutuilta. Tässä artikkelissa avaan yksityiskohtaisesti, miten tein analyysin ja mitä työkaluja käytin. Lukuaika: 5 minuuttia.
+![](/images/blog/linkedin-on-myyntikanavien-ykkonen/artikkelikuva-2.webp)   Myynnin data-analyysi vahvisti LinkedInin ylivoimaisuuden myyntikanaviemme joukossa niin liidien määrässä, konversiossa kuin euroissa mitattuna. LinkedIn-liidit konvertoituvat kaupaksi yhtä todennäköisesti kuin suorat yhteydenotot tutuilta. Tässä artikkelissa avaan yksityiskohtaisesti, miten tein analyysin ja mitä työkaluja käytin. Lukuaika: 5 minuuttia.
 
 ## CRM datan validointi
 
-Ensimmäinen steppi oli selvittää, että mistä kanavasta tulevat kaupat konvertoituvat parhaiten kaupaksi. Tätä varten tarvittiin lista voitetuista kaupoista ja tieto, että mitä kanavaa pitkin myyntimahdollisuus oli syntynyt. Otin listan voitetuista kaupoista ulos HubSpotista ja kirjasin kunkin myyntimahdollisuuden kohdalle käsin tiedot myyntikanavasta. Tää tieto mulla oli päässä, olinhan ollut jokaisessa myyntimahdollisuudessa jollain tavalla itse mukana. ![](images/linkedin-on-myyntikanavien-ykkonen/blogikuva-1-myyntidata.webp) On enemmän poikkeus kun sääntö, että CRM-järjestelmään merkataan kaupan loppusumma "vähä sinneppäin -hengessä" eli mäkin aloitin tarkistamalla, että HubSpottiin merkatut eurot on oikeasti linjassa sen kans mitä on tehty ja laskutettu. Ennen tarkistusta, käydään läpi meidän myyntikanavat:
+Ensimmäinen steppi oli selvittää, että mistä kanavasta tulevat kaupat konvertoituvat parhaiten kaupaksi. Tätä varten tarvittiin lista voitetuista kaupoista ja tieto, että mitä kanavaa pitkin myyntimahdollisuus oli syntynyt. Otin listan voitetuista kaupoista ulos HubSpotista ja kirjasin kunkin myyntimahdollisuuden kohdalle käsin tiedot myyntikanavasta. Tää tieto mulla oli päässä, olinhan ollut jokaisessa myyntimahdollisuudessa jollain tavalla itse mukana. ![](/images/blog/linkedin-on-myyntikanavien-ykkonen/blogikuva-1-myyntidata.webp) On enemmän poikkeus kun sääntö, että CRM-järjestelmään merkataan kaupan loppusumma "vähä sinneppäin -hengessä" eli mäkin aloitin tarkistamalla, että HubSpottiin merkatut eurot on oikeasti linjassa sen kans mitä on tehty ja laskutettu. Ennen tarkistusta, käydään läpi meidän myyntikanavat:
 
 -   **LinkedIn -** tarve on tunnistettu LinkedInissä
 -   **WhatsApp -** tarve on tunnistettu WhatsApissa
@@ -26,15 +26,15 @@ Ensimmäinen steppi oli selvittää, että mistä kanavasta tulevat kaupat konve
 -   **Suorat inbound yhteydenotot -** tarpeesta kerrotaan suoraan asiantuntijalle tai myyjälle suoralla yhteydenotolla privaatisti
 -   **Muu -** kaikki muut liidit, myös ne joiden alkuperä on hämärän peitossa
 
-Vertailin keskenään myyntidataa toteutuneeseen liikevaihtoon kanavakohtaisesti. Kun huomasin, että erot näissä selittyy sillä, että kaupat on tehty hiljattain mutta niitä ei ole vielä laskutettu, pystyin päättelemään, että HubSpottiin merkattu euro ennustaa aika kivasti sitä me todellisuudessa tullaan laskuttamaan.   ![](images/linkedin-on-myyntikanavien-ykkonen/kuva-2-laskutetut-eurot-1.webp)  
+Vertailin keskenään myyntidataa toteutuneeseen liikevaihtoon kanavakohtaisesti. Kun huomasin, että erot näissä selittyy sillä, että kaupat on tehty hiljattain mutta niitä ei ole vielä laskutettu, pystyin päättelemään, että HubSpottiin merkattu euro ennustaa aika kivasti sitä me todellisuudessa tullaan laskuttamaan.   ![](/images/blog/linkedin-on-myyntikanavien-ykkonen/kuva-2-laskutetut-eurot-1.webp)  
 
 ## Historiallisesta datasta tulevaisuuden näkymiin
 
-Tässä kohtaa näytti jo siltä, että LinkedIn dominoi. En kuitenkaan halunnut tehdä tän datan perusteella vielä päätelmiä koska tiesin meidän ottaneen kylmäsoitot ja meilit valikoimaan vasta paljon sen jälkeen kun olimme aloittaneet ponnistelut LinkedInissä. Saadakseni näkymän tulevaan mun oli katsottava myyntiputkea laajemmasta näkökulmasta eikä pelkästään toteutuneiden kauppojen ja toteutuneiden eurojen kautta.   ![](images/linkedin-on-myyntikanavien-ykkonen/kanavatieto.webp)   Aloin siis tarkastelemaan kaikkien tarjousten, eli potentiaalisten kauppojen dataa. Myyntimahdollisuuksia oli kertynyt syyskuusta 2024 tähän päivään mitattaessa yli sata.
+Tässä kohtaa näytti jo siltä, että LinkedIn dominoi. En kuitenkaan halunnut tehdä tän datan perusteella vielä päätelmiä koska tiesin meidän ottaneen kylmäsoitot ja meilit valikoimaan vasta paljon sen jälkeen kun olimme aloittaneet ponnistelut LinkedInissä. Saadakseni näkymän tulevaan mun oli katsottava myyntiputkea laajemmasta näkökulmasta eikä pelkästään toteutuneiden kauppojen ja toteutuneiden eurojen kautta.   ![](/images/blog/linkedin-on-myyntikanavien-ykkonen/kanavatieto.webp)   Aloin siis tarkastelemaan kaikkien tarjousten, eli potentiaalisten kauppojen dataa. Myyntimahdollisuuksia oli kertynyt syyskuusta 2024 tähän päivään mitattaessa yli sata.
 
 ## Datan jalostaminen ja työkalujen valinta
 
-Jotta sain jokaiselle myyntimahdollisuudelle tiedon myyntikanavasta mun piti tehdä uusi attribuutti HubSpotiin ja kirjata tää tieto jokaiselle myyntimahdollisuudelle. Tää oli kohtalaisen helppo ja nopea homma koska oon ite tehnyt noista 90% niin tiedän mistä ne on tulleet.   ![](images/linkedin-on-myyntikanavien-ykkonen/kuva-3-kanavadata.webp)   Lopulta kun data oli kunnossa, koitin ensin muodostaa siitä raportteja HubSpotilla. Törmäsin ongelmiin raportointinäkymän käytössä sekä kuukausitilaukseni laajuudessa, joten päätin kokeilla datan visualisointiin jotain toista työkalua, ja päädyin ottamaan datan ulos .csv muodossa ja heittämään sen Google Sheetille.
+Jotta sain jokaiselle myyntimahdollisuudelle tiedon myyntikanavasta mun piti tehdä uusi attribuutti HubSpotiin ja kirjata tää tieto jokaiselle myyntimahdollisuudelle. Tää oli kohtalaisen helppo ja nopea homma koska oon ite tehnyt noista 90% niin tiedän mistä ne on tulleet.   ![](/images/blog/linkedin-on-myyntikanavien-ykkonen/kuva-3-kanavadata.webp)   Lopulta kun data oli kunnossa, koitin ensin muodostaa siitä raportteja HubSpotilla. Törmäsin ongelmiin raportointinäkymän käytössä sekä kuukausitilaukseni laajuudessa, joten päätin kokeilla datan visualisointiin jotain toista työkalua, ja päädyin ottamaan datan ulos .csv muodossa ja heittämään sen Google Sheetille.
 
 ## Tekoäly apuna datan analysoinnissa
 
@@ -47,7 +47,7 @@ Nyt mulla oli edessäni dataa. Mä tiesin, että kun koskettelen sitä oikeasta 
 -   Keskiarvo / voitettu (€)
 -   Pipeline kokonaisarvo (€)
 
-  ![](images/linkedin-on-myyntikanavien-ykkonen/interaktiivinen-taulukko.gif)  
+  ![](/images/blog/linkedin-on-myyntikanavien-ykkonen/interaktiivinen-taulukko.gif)  
 
 ## Ensihavainnot datasta
 
@@ -71,7 +71,7 @@ LinkedIn-liidit konvertoituvat kaupaksi yhtä todennäköisesti kuin suorat yhte
 -   Avg Value / Won (€) 10 073
 -   Pipeline total Value (€) 666 600
 
-Pyysin tekoäly vielä laskemaan mahdollisuuksien winraten huomioimalla vain klosatut myyntimahdollisuudet, jonka jälkeen sain todellisen winraten osaksi taulukkoa. Samalla data myös paljasti sen, että myös kylmämaileilla rakennetaan toimivaa pipelinee ja data vihjailee kanavaan liittyvistä positiivisista trendeistä.   ![](images/linkedin-on-myyntikanavien-ykkonen/datakuva-4-1.webp)  
+Pyysin tekoäly vielä laskemaan mahdollisuuksien winraten huomioimalla vain klosatut myyntimahdollisuudet, jonka jälkeen sain todellisen winraten osaksi taulukkoa. Samalla data myös paljasti sen, että myös kylmämaileilla rakennetaan toimivaa pipelinee ja data vihjailee kanavaan liittyvistä positiivisista trendeistä.   ![](/images/blog/linkedin-on-myyntikanavien-ykkonen/datakuva-4-1.webp)  
 
 ## Kylmäsoitto on nimenomaan kylmä
 

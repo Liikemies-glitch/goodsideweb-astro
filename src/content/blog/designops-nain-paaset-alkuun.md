@@ -1,11 +1,12 @@
 ---
 title: DesignOps - näin pääset alkuun
 pubDate: '2024-07-20T08:36:32.000Z'
+description: Kattava opas DesignOps-kyvykkyyden kehittämiseen ja muotoiluprosessien tehostamiseen organisaatiossasi.
 author: moretagoy
 tags:
   - Design
   - DesignOps
-heroImage: images/designops-nain-paaset-alkuun/featured.png
+heroImage: ../../assets/blog/images/designops-nain-paaset-alkuun/featured.webp
 heroImageAlt: DesignOps - näin pääset alkuun
 ---
 

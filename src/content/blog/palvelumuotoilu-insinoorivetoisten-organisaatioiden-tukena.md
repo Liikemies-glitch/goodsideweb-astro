@@ -6,7 +6,7 @@ description: >-
   yhdistää tekninen asiantuntemus käyttäjälähtöiseen suunnitteluun.
 author: moretagoy
 tags: []
-heroImage: images/palvelumuotoilu-insinoorivetoisten-organisaatioiden-tukena/featured.png
+heroImage: ../../assets/blog/images/palvelumuotoilu-insinoorivetoisten-organisaatioiden-tukena/featured.webp
 heroImageAlt: Palvelumuotoilu insinöörivetoisten organisaatioiden tukena
 ---
 

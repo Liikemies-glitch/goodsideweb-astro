@@ -7,7 +7,7 @@ description: >-
 author: moretagoy
 tags:
   - Design
-heroImage: images/dieter-rams-ja-10-hyvan-muotoilun-periaatetta/featured.png
+heroImage: ../../assets/blog/images/dieter-rams-ja-10-hyvan-muotoilun-periaatetta/featured.webp
 heroImageAlt: Dieter Rams ja 10 hyvän muotoilun periaatetta
 ---
 

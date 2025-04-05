@@ -1,10 +1,11 @@
 ---
 title: UX-suunnittelu – kaikki paitsi käytettävyys on turhaa
 pubDate: '2024-11-15T06:38:43.000Z'
+description: Käytettävyys on UX-suunnittelun kulmakivi, joka määrittää ohjelmiston menestyksen. Artikkeli avaa käytettävyyden merkitystä ja sen vaikutusta käyttäjätyytyväisyyteen ja liiketoiminnan tuloksiin.
 author: moretagoy
 tags:
   - Käyttökokemus
-heroImage: images/ux-suunnittelu-kaikki-paitsi-kaytettavyys-on-turhaa/featured.png
+heroImage: ../../assets/blog/images/ux-suunnittelu-kaikki-paitsi-kaytettavyys-on-turhaa/featured.webp
 heroImageAlt: UX-suunnittelu – kaikki paitsi käytettävyys on turhaa
 ---
 

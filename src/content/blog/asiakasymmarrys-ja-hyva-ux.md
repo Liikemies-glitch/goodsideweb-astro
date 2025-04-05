@@ -9,7 +9,7 @@ author: moretagoy
 tags:
   - UX
   - UXR
-heroImage: images/asiakasymmarrys-ja-hyva-ux/featured.png
+heroImage: ../../assets/blog/images/asiakasymmarrys-ja-hyva-ux/featured.webp
 heroImageAlt: Asiakasymmärrys ja hyvä UX
 ---
 

@@ -7,7 +7,7 @@ description: >-
 seoTitle: 'Konversio&#x2d;optimointi: 6 avainkohtaa'
 author: moretagoy
 tags: []
-heroImage: images/nain-kasvatat-konversiota-yli-200-prosenttia/featured.png
+heroImage: ../../assets/blog/images/nain-kasvatat-konversiota-yli-200-prosenttia/featured.webp
 heroImageAlt: Näin kasvatat konversiota yli 200%
 ---
 

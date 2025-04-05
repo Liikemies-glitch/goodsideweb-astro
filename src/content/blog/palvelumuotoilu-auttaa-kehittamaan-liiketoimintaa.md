@@ -7,7 +7,7 @@ description: >-
 author: moretagoy
 tags:
   - Palvelumuotoilu
-heroImage: images/palvelumuotoilu-auttaa-kehittamaan-liiketoimintaa/featured.png
+heroImage: ../../assets/blog/images/palvelumuotoilu-auttaa-kehittamaan-liiketoimintaa/featured.webp
 heroImageAlt: Palvelumuotoilu auttaa kehittämään liiketoimintaa
 ---
 

@@ -7,7 +7,7 @@ description: >-
 author: moretagoy
 tags:
   - Asiakaskokemus
-heroImage: images/ohjelmistohankkeen-asiakaskokemus/featured.png
+heroImage: ../../assets/blog/images/ohjelmistohankkeen-asiakaskokemus/featured.webp
 heroImageAlt: Ohjelmistohankkeen asiakaskokemus
 ---
 

@@ -7,7 +7,7 @@ description: >-
 author: moretagoy
 tags:
   - UX
-heroImage: images/kayttoliittymasuunnittelu-10-huomiota/featured.png
+heroImage: ../../assets/blog/images/kayttoliittymasuunnittelu-10-huomiota/featured.webp
 heroImageAlt: Käyttöliittymäsuunnittelu - 10 huomiota
 ---
 

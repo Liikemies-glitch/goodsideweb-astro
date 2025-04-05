@@ -8,7 +8,7 @@ description: >-
 seoTitle: 'Konversio&#x2d;optimointi: Enemmän kauppaa verkossa'
 author: mikki
 tags: []
-heroImage: images/konversio-optimointi-mita-se-on/featured.png
+heroImage: ../../assets/blog/images/konversio-optimointi-mita-se-on/featured.webp
 heroImageAlt: 'Konversio-optimointi: Näin kasvatat verkkosivujesi tehoa ja myyntiä'
 ---
 
@@ -16,7 +16,7 @@ Verkkosivut ovat yrityksesi digitaalinen näyteikkuna, joka on avoinna vuorokaud
 
 * * *
 
-![](images/konversio-optimointi-mita-se-on/mikki-goodside-300x300.png) _Moro!_  _Mun nimeni on [Mikki](https://www.linkedin.com/in/mikkiaaltoyleva/). Olen yksi The Good Side Oy:n perustajista. Mä loin tän artikkelin_ _tekoälyavusteisesti ja olen tarkastanut, että faktat on kohdillaan__._ _Toivottavasti löydät etsimäsi._
+![](/images/blog/konversio-optimointi-mita-se-on/mikki-goodside-300x300.png) _Moro!_  _Mun nimeni on [Mikki](https://www.linkedin.com/in/mikkiaaltoyleva/). Olen yksi The Good Side Oy:n perustajista. Mä loin tän artikkelin_ _tekoälyavusteisesti ja olen tarkastanut, että faktat on kohdillaan__._ _Toivottavasti löydät etsimäsi._
 
 * * *
 
@@ -44,7 +44,7 @@ Konversio-optimoinnin hyödyt ovat merkittäviä:
 4.  Datapohjainen päätöksenteko: Optimointi perustuu dataan ja testaukseen, mikä vähentää arvailua ja "mutu-tuntumaa" päätöksenteossa. Tämä johtaa parempiin ja perusteltuihin päätöksiin sivuston kehittämisessä.
 5.  Kilpailuetu: Tehokkaasti optimoitu sivusto voi antaa merkittävän edun kilpailijoihin nähden, erityisesti jos he eivät vielä hyödynnä konversio-optimointia.
 
-![](images/konversio-optimointi-mita-se-on/konversio-optimoitu-verkkokauppa.png)
+![](/images/blog/konversio-optimointi-mita-se-on/konversio-optimoitu-verkkokauppa.png)
 
 ## **Tehokkaat konversio-optimoinnin strategiat**
 
@@ -72,7 +72,7 @@ Konversio-optimointi perustuu dataan ja analytiikkaan. Tärkeimpiä mitattavia a
 5.  Klikkausprosentti (CTR): Seuraa, mitkä elementit ja CTA:t saavat eniten klikkauksia. Tämä auttaa ymmärtämään, mitkä elementit ovat tehokkaimpia konversioiden aikaansaamisessa.
 6.  Lomakkeiden täyttöaste: Jos sivustollasi on lomakkeita, seuraa kuinka moni aloittaa niiden täyttämisen ja kuinka moni vie prosessin loppuun asti.
 
-![](images/konversio-optimointi-mita-se-on/konversio-optimoitu-kauppa-tuottaa-enemman.png)
+![](/images/blog/konversio-optimointi-mita-se-on/konversio-optimoitu-kauppa-tuottaa-enemman.png)
 
 ## **Yleisimmät haasteet ja niiden ratkaiseminen**
 

@@ -6,7 +6,7 @@ description: >-
   siihen, kuinka nämä innovaatiot esitetään käyttäjille.
 author: moretagoy
 tags: []
-heroImage: images/designin-tulee-olla-kaiken-ytimessa/featured.jpg
+heroImage: ../../assets/blog/images/designin-tulee-olla-kaiken-ytimessa/featured.jpg
 heroImageAlt: Designin tulee olla kaiken ytimessä
 ---
 

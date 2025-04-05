@@ -7,7 +7,7 @@ description: >-
 seoTitle: 'Digitalisaation megatrendit 2024: Tekoäly ja VUI'
 author: mikki
 tags: []
-heroImage: images/digitalisaation-megatrendit-muokkaavat-liiketoimintaa/featured.png
+heroImage: ../../assets/blog/images/digitalisaation-megatrendit-muokkaavat-liiketoimintaa/featured.webp
 heroImageAlt: Digitalisaation megatrendit muokkaavat liiketoimintaa
 ---
 

@@ -7,7 +7,7 @@ description: >-
   ja työntekijöiden aktiivista osallistamista viestintäprosessiin.
 author: moretagoy
 tags: []
-heroImage: images/nain-kehitat-sisaista-viestintaa/featured.png
+heroImage: ../../assets/blog/images/nain-kehitat-sisaista-viestintaa/featured.webp
 heroImageAlt: Näin kehität sisäistä viestintää
 ---
 

@@ -6,7 +6,7 @@ description: >-
   käyttöliittymän.
 author: moretagoy
 tags: []
-heroImage: images/yksinkertainen-kayttoliittyma-top5-asiaa/featured.jpg
+heroImage: ../../assets/blog/images/yksinkertainen-kayttoliittyma-top5-asiaa/featured.jpg
 heroImageAlt: Yksinkertainen käyttöliittymä - TOP5 asiaa
 ---
 

@@ -1,16 +1,12 @@
 ---
-title: >-
-  Insinöörilähtöisyys on kuin ylisuojeleva isä, joka suojelee lastaan ampiaisen
-  pistoksilta pukemalla hänet märkäpukuun
-pubDate: '2024-08-07T11:59:56.000Z'
-description: >-
-  Onko insinöörilähtöisyys uhka SaaS&#x2d;yritykselle? Tutustu, miten
-  insinöörimäinen ajattelu voi vaikuttaa käyttäjäkokemukseen ja
-  bisnesmenestykseen.
+title: "Insinöörilähtöisyys: Uhka vai mahdollisuus muotoilulle?"
+description: "Teknologiavetoinen kehitys voi joskus sivuuttaa käyttäjäkokemuksen. Miten insinöörilähtöisyys vaikuttaa muotoiluun ja miten design ja teknologia voivat toimia paremmin yhdessä?"
+pubDate: "2023-10-15"
+heroImage: ../../assets/blog/images/insinoorilahtoisyys-uhka-vai-mahdollisuus/featured.webp
+category: "design"
+tags: ["design", "insinöörilähtoisyys", "kehitys"]
 seoTitle: 'Insinöörilähtöisyys: uhka vai mahdollisuus?'
 author: mikki
-tags: []
-heroImage: images/insinoorilahtoisyys-uhka-vai-mahdollisuus/featured.png
 heroImageAlt: >-
   Insinöörilähtöisyys on kuin ylisuojeleva isä, joka suojelee lastaan ampiaisen
   pistoksilta pukemalla hänet märkäpukuun
@@ -36,4 +32,5 @@ On oikeasti olemassa todella vähän sellaisia tilanteista, joissa kannattaa sov
 
 ## **Insinöörilähtöisyys vs. bisnesäly: kumpi vie voiton?**
 
-Onko siis insinöörilähtöisyys ongelma liiketoiminnassa? Varmaa on, että maailma on aina täynnä hyviä konsepteja, jotka ovat hyviä vain siihen asti, että joku muu suunnittelee ne paremmin. Maailma esimerkiksi oli pitkään täynnä menestyviä deittailualustoja kunnes tuli Tinder. Maailma oli täynnä kukoistavia "soita ja tilaa pizza kotiin" konsepteja, kunnes tuli Wolt. Ja maailma oli täynnä kukoistavia Symbian pohjaisia älypuhelimia kunnes tuli iOs ja Android. Maailman parhaat konseptit tehdään muutenkin intohimon ja asenteen voimalla eikä niinkään siksi, että markkinatilanne sitä edellyttää. Hyvä tuote ja siten hyvä liiketoiminta on siis enemmän kiinni oikeasta asenteesta kuin vallitsevasta kilpailutilanteesta.   **Mikki Aalto-Ylevä** 040 869 8887 mikki@goodside.fi
+Onko siis insinöörilähtöisyys ongelma liiketoiminnassa? Varmaa on, että maailma on aina täynnä hyviä konsepteja, jotka ovat hyviä vain siihen asti, että joku muu suunnittelee ne paremmin. Maailma esimerkiksi oli pitkään täynnä menestyviä deittailualustoja kunnes tuli Tinder. Maailma oli täynnä kukoistavia "soita ja tilaa pizza kotiin" konsepteja, kunnes tuli Wolt. Ja maailma oli täynnä kukoistavia Symbian pohjaisia älypuhelimia kunnes tuli iOs ja Android. Maailman parhaat konseptit tehdään muutenkin intohimon ja asenteen voimalla eikä niinkään siksi, että markkinatilanne sitä edellyttää. Hyvä tuote ja siten hyvä liiketoiminta on siis enemmän kiinni oikeasta asenteesta kuin vallitsevasta kilpailutilanteesta.  
+**Mikki Aalto-Ylevä** 040 869 8887 mikki@goodside.fi

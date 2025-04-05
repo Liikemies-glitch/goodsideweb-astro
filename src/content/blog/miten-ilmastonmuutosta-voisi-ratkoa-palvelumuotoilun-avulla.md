@@ -1,15 +1,17 @@
 ---
-title: Miten ilmastonmuutosta voisi ratkoa palvelumuotoilun avulla
-pubDate: '2024-06-22T18:29:21.000Z'
+title: "Miten ilmastonmuutosta voisi ratkoa palvelumuotoilun avulla?"
+pubDate: "2024-08-01T10:30:00.000Z"
 description: >-
-  Ilmastonmuutoksen ratkominen vaatii käyttäytymisen muutosta, innovatiivisia
-  ratkaisuja ja laajaa yhteistyötä yhteiskunnan eri osa&#x2d;alueilla.
-author: moretagoy
+  Palvelumuotoilu tarjoaa työkaluja ja menetelmiä, joilla voidaan kehittää
+  kestävämpiä ja ilmastoystävällisempiä palveluja ja ratkaisuja.
+seoTitle: "Palvelumuotoilu ilmastonmuutoksen ratkaisemisessa"
+author: mikki
 tags:
-  - Palvelumuotoilu
-heroImage: >-
-  images/miten-ilmastonmuutosta-voisi-ratkoa-palvelumuotoilun-avulla/featured.png
-heroImageAlt: Miten ilmastonmuutosta voisi ratkoa palvelumuotoilun avulla
+  - "palvelumuotoilu"
+  - "ilmastonmuutos"
+  - "kestävä kehitys"
+heroImage: ../../assets/blog/images/miten-ilmastonmuutosta-voisi-ratkoa-palvelumuotoilun-avulla/featured.webp
+heroImageAlt: "Kuvitus maapallosta ja vihreistä ratkaisuista"
 ---
 
 Ilmastonmuutos on yksi aikamme suurimmista globaaleista haasteista, ja sen ratkaiseminen vaatii laaja-alaista yhteistyötä yhteiskunnan kaikilla tasoilla. **Palvelumuotoilu** voi olla avainasemassa, kun pyritään luomaan käyttäjäystävällisiä ja kestäviä ratkaisuja, jotka vastaavat ympäristöön kohdistuviin haasteisiin. Palvelumuotoilun perusperiaatteet, kuten asiakaslähtöisyys, iteratiivinen kehitys ja käyttäjien osallistaminen, ovat työkaluja, joiden avulla voidaan kehittää konkreettisia ja vaikuttavia ratkaisuja ilmastonmuutoksen hillitsemiseksi ja sopeutumiseksi sen vaikutuksiin.

@@ -7,7 +7,7 @@ description: >-
   minimoida.
 author: moretagoy
 tags: []
-heroImage: images/tekoalyn-kayttamisen-haasteet/featured.png
+heroImage: ../../assets/blog/images/tekoalyn-kayttamisen-haasteet/featured.webp
 heroImageAlt: Tekoälyn käyttämisen haasteet
 ---
 

@@ -9,11 +9,11 @@ author: moretagoy
 tags:
   - Käyttökokemus
   - UX
-heroImage: images/kayttoliittymasuunnittelun-sietamaton-keveys/featured.png
+heroImage: ../../assets/blog/images/kayttoliittymasuunnittelun-sietamaton-keveys/featured.webp
 heroImageAlt: Käyttöliittymäsuunnittelun sietämätön keveys
 ---
 
-Kirjoitin alkuviikosta siitä, miten meillä [suunnittelijoilla on vastuu](https://goodside.fi/eettinen-muotoilu/) siitä minkälaisia palveluita suunnittelemme ja suostumme suunnittelemaan. ChatGPT on varmasti palveluna meille monelle tuttu ja törmäsin tänään heidän hienoon esimerkkiin siitä, miten käyttäjää voi yrittää ohjata haluttuun suuntaan. Alla oleva kuva on heidän palveluun siirtymisestä. ![](images/kayttoliittymasuunnittelun-sietamaton-keveys/Screenshot-2024-08-09-at-13.12.51-1024x529.png) **Muutama huomio näkymästä**
+Kirjoitin alkuviikosta siitä, miten meillä [suunnittelijoilla on vastuu](https://goodside.fi/eettinen-muotoilu/) siitä minkälaisia palveluita suunnittelemme ja suostumme suunnittelemaan. ChatGPT on varmasti palveluna meille monelle tuttu ja törmäsin tänään heidän hienoon esimerkkiin siitä, miten käyttäjää voi yrittää ohjata haluttuun suuntaan. Alla oleva kuva on heidän palveluun siirtymisestä. ![](/images/blog/kayttoliittymasuunnittelun-sietamaton-keveys/Screenshot-2024-08-09-at-13.12.51-1024x529.png) **Muutama huomio näkymästä**
 
 -   Tässä kyseisessä näkymässä luodaan mielikuva, että sinun tulee käyttäjänä nyt valita yksi esillä olevista valinnoista ja se kaikista kallein vaihtoehto on jopa valmiiksi valittuna
 -   Koko sivun tarkoitus on siis rekrytoida maksavia asiakkaita palveluun

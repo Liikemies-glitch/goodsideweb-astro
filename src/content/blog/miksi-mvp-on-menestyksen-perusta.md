@@ -7,7 +7,7 @@ description: >-
 seoTitle: 'MVP: Tehokkaasti markkinoille'
 author: mikki
 tags: []
-heroImage: images/miksi-mvp-on-menestyksen-perusta/featured.png
+heroImage: ../../assets/blog/images/miksi-mvp-on-menestyksen-perusta/featured.webp
 heroImageAlt: Miksi MVP eli minimum viable product on menestyksen perusta
 ---
 

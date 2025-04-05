@@ -6,7 +6,7 @@ description: >-
   voi toimia tukena niin..
 author: moretagoy
 tags: []
-heroImage: images/miten-tekoalya-voi-hyodyntaa-osana-ideointia/featured.png
+heroImage: ../../assets/blog/images/miten-tekoalya-voi-hyodyntaa-osana-ideointia/featured.webp
 heroImageAlt: Miten tekoälyä voi hyödyntää osana ideointia?
 ---
 

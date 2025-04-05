@@ -7,7 +7,7 @@ description: >-
   tasa&#x2d;arvoisesti.
 author: moretagoy
 tags: []
-heroImage: images/saavutettavuusvaatimukset-digipalveluissa/featured.png
+heroImage: ../../assets/blog/images/saavutettavuusvaatimukset-digipalveluissa/featured.webp
 heroImageAlt: Saavutettavuusvaatimukset digipalveluissa
 ---
 

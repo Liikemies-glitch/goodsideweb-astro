@@ -1,15 +1,17 @@
 ---
-title: 'Käytettävyys ja ergonomia: Sujuvan ja terveellisen työskentelyn perusta'
-pubDate: '2024-06-21T13:39:42.000Z'
+title: "Käytettävyys ja Ergonomia: Sujuvan ja terveellisen työskentelyn perusta"
+pubDate: "2024-07-16T08:00:00.000Z"
 description: >-
-  Yritysten ja organisaatioiden tulisi jatkuvasti arvioida käytettävyyden ja
-  ergonomian tasoa, sillä niiden kehittäminen on pitkäaikainen investointi
-  työntekijöiden hyvinvointiin ja liiketoiminnan tehokkuuteen.
-author: moretagoy
-tags: []
-heroImage: >-
-  images/kaytettavyys-ja-ergonomia-sujuvan-ja-terveellisen-tyoskentelyn-perusta/featured.png
-heroImageAlt: 'Käytettävyys ja ergonomia: Sujuvan ja terveellisen työskentelyn perusta'
+  Käytettävyys ja ergonomia ovat keskeisiä tekijöitä, jotka vaikuttavat
+  työntekijöiden tehokkuuteen, hyvinvointiin ja tyytyväisyyteen.
+seoTitle: "Käytettävyys ja Ergonomia Työpaikalla"
+author: mikki
+tags:
+  - "käytettävyys"
+  - "ergonomia"
+  - "työhyvinvointi"
+heroImage: ../../assets/blog/images/kaytettavyys-ja-ergonomia-sujuvan-ja-terveellisen-tyoskentelyn-perusta/featured.webp
+heroImageAlt: "Ergonominen työtuoli ja -pöytä"
 ---
 
 Nykypäivän digitaalisessa ja fyysisessä työympäristössä käytettävyys ja ergonomia ovat keskeisiä tekijöitä, jotka vaikuttavat työn tuottavuuteen, käyttäjäkokemukseen ja hyvinvointiin. Niillä on merkittävä rooli niin ohjelmistojen ja laitteiden suunnittelussa kuin työtilojen ja työkalujen muotoilussa. Hyvin suunnitellut työympäristöt ja helppokäyttöiset työkalut tekevät työstä sujuvampaa ja parantavat sekä työntekijöiden fyysistä että henkistä hyvinvointia.

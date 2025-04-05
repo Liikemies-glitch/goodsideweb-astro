@@ -8,7 +8,7 @@ seoTitle: Palvelumuotoilun tärkeys tuotekehityksessä
 author: mikki
 tags:
   - Palvelumuotoilu
-heroImage: images/palvelumuotoilu-miksi-tarkeaa-tuoteomistajalle/featured.png
+heroImage: ../../assets/blog/images/palvelumuotoilu-miksi-tarkeaa-tuoteomistajalle/featured.webp
 heroImageAlt: 'Palvelumuotoilu: Miksi se on tärkeää jokaiselle tuoteomistajalle'
 ---
 

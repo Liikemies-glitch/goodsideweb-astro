@@ -1,11 +1,12 @@
 ---
 title: Käytettävyys ohjelmistokehityksessä
 pubDate: '2024-11-15T06:31:53.000Z'
+description: Käytettävyys on olennainen osa ohjelmistokehitystä. Se varmistaa, että sovellukset ovat helppokäyttöisiä, tehokkaita ja vastaavat käyttäjien tarpeita.
 author: moretagoy
 tags:
   - Käyttökokemus
   - UXR
-heroImage: images/kaytettavyys-ohjelmistokehityksessa/featured.png
+heroImage: ../../assets/blog/images/kaytettavyys-ohjelmistokehityksessa/featured.webp
 heroImageAlt: Käytettävyys ohjelmistokehityksessä
 ---
 

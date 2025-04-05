@@ -1,15 +1,18 @@
 ---
 title: Autamme SaaS-yrityksiä laajentumaan kansainvälisille markkinoille
-pubDate: '2024-10-30T14:11:59.000Z'
+pubDate: '2024-08-29T04:55:00.000Z'
 description: >-
-  SaaS&#x2d;tuotesuunnitteluun erikoistunut UI/UX&#x2d;suunnittelutoimisto The
-  Good Side pyrkii edistämään yritysten kasvua
-author: moretagoy
+  Autamme SaaS-yrityksiä laajentumaan kansainvälisille markkinoille
+  tarjoamalla skaalautuvia UI/UX-suunnitteluratkaisuja ja design system -palveluita.
+seoTitle: Kansainvälinen kasvu ja UI/UX-suunnittelu SaaS-yrityksille
+author: mikki
 tags:
-  - Design
-heroImage: >-
-  images/autamme-saas-yrityksia-laajentumaan-kansainvalisille-markkinoille/featured.png
-heroImageAlt: Autamme SaaS-yrityksiä laajentumaan kansainvälisille markkinoille
+  - SaaS
+  - kansainvälistyminen
+  - UI/UX
+  - design system
+heroImage: ../../assets/blog/images/autamme-saas-yrityksia-laajentumaan-kansainvalisille-markkinoille/featured.webp
+heroImageAlt: Kansainvälistyminen ja UI/UX suunnittelu
 ---
 
 > Koitin näiden ensimmäisten kuukausien jälkeen hahmottaa, että mitä me teemme ja minkälaisia projekteja sekä asiakkuuksia meillä on. Kun refeluvat odottavat vielä viimeistä leimaa, tässä hieman ajatusta siitä mihin keskitymme.

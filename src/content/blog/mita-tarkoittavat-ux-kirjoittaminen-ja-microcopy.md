@@ -8,7 +8,7 @@ seoTitle: Mitä ovat UX&#x2d;kirjoittaminen ja microcopy
 author: mikki
 tags:
   - UX
-heroImage: images/mita-tarkoittavat-ux-kirjoittaminen-ja-microcopy/featured.png
+heroImage: ../../assets/blog/images/mita-tarkoittavat-ux-kirjoittaminen-ja-microcopy/featured.webp
 heroImageAlt: UX-kirjoittaminen ja microcopy osana käyttäjäkokemusta
 ---
 
@@ -16,7 +16,7 @@ Jokainen kirjoitettu sana vaikuttaa käyttäjäkokemukseen. Laadukas UX-kirjoitt
 
 * * *
 
-![](images/mita-tarkoittavat-ux-kirjoittaminen-ja-microcopy/mikki-goodside-300x300.png) _Moro!_  _Mun nimeni on [Mikki](https://www.linkedin.com/in/mikkiaaltoyleva/). Olen yksi The Good Side Oy:n perustajista. Mä loin tän artikkelin_ _tekoälyavusteisesti ja olen tarkastanut, että faktat on kohdillaan__._ _Toivottavasti löydät etsimäsi._
+![](/images/blog/mita-tarkoittavat-ux-kirjoittaminen-ja-microcopy/mikki-goodside-300x300.png) _Moro!_  _Mun nimeni on [Mikki](https://www.linkedin.com/in/mikkiaaltoyleva/). Olen yksi The Good Side Oy:n perustajista. Mä loin tän artikkelin_ _tekoälyavusteisesti ja olen tarkastanut, että faktat on kohdillaan__._ _Toivottavasti löydät etsimäsi._
 
 * * *
 
@@ -30,7 +30,7 @@ UX-kirjoittaminen on käyttäjäkokemuksen suunnittelua tekstin avulla. Se katta
 
 Microcopy tarkoittaa lyhyitä tekstejä käyttöliittymässä, kuten navigaatiossa, painikkeissa ja lomakkeissa. Nämä pienet tekstinpätkät ohjaavat käyttäjää ja voivat ratkaista esimerkiksi sen, onnistuuko verkkokaupan ostos vai ei. Hyvin suunniteltu microcopy vastaa käyttäjän kysymyksiin ennen kuin niitä syntyy, selkeyttää käyttäjän polkua sivustolla ja auttaa ongelmatilanteissa. Parhaimmillaan se voi jopa yllättää ja ilahduttaa käyttäjää positiivisesti.
 
-![](images/mita-tarkoittavat-ux-kirjoittaminen-ja-microcopy/Esimerkki-hyvasta-microcopysta-png.webp)
+![](/images/blog/mita-tarkoittavat-ux-kirjoittaminen-ja-microcopy/Esimerkki-hyvasta-microcopysta-png.webp)
 
 _[Kuvan lähde.](https://uxloc.medium.com/what-is-microcopy-928b15e1e229)_
 
@@ -38,7 +38,7 @@ Microcopyn merkitys korostuu erityisesti käyttäjäpolun kriittisissä vaiheiss
 
 ## **Microcopyn hiominen kannattaa**
 
-Microcopyn kirjoittamisessa on tärkeää käyttää brändin ääntä johdonmukaisesti koko sivustolla. Tämä luo ammattimaisen vaikutelman riippumatta siitä, onko brändin tyyli asiallinen vai humoristinen. Selkeys on avainasemassa: käytä yksinkertaista kieltä, jota kaikki ymmärtävät, ja vältä teknistä jargonia. Puhuttele käyttäjää suoraan kuin keskustelisit hänen kanssaan. Henkilökohtainen sävy tekee kokemuksesta miellyttävämmän. Pyri ytimekkyyteen, sillä käyttäjien pitäisi ymmärtää toimintavaihtoehdot yhdellä silmäyksellä. Tämä ei kuitenkaan tarkoita, että kaiken pitäisi olla äärimmäisen lyhyttä. Joskus hieman pidempi mutta selkeämpi ilmaisu toimii paremmin kuin liian tiivis muotoilu. Esimerkiksi "Lähetä"-painikkeen sijaan voi olla parempi käyttää "Lähetä lomake" -tekstiä, jos se auttaa käyttäjää ymmärtämään toiminnon paremmin. Vältä liiallista painostusta käyttämällä pehmeämpiä ilmaisuja, kun se on mahdollista. Sen sijaan, että pyydät käyttäjää "Ostamaan nyt", voit tarjota vaihtoehdon "Lisää ostoskoriin". Tämä antaa käyttäjälle tunteen kontrollista ja vähentää painetta välittömään sitoutumiseen. Tasapainota luovuus ja tuttuus hyödyntämällä yleisesti tunnettuja termejä tärkeissä toiminnoissa. Vaikka brändin ääni olisi leikkisä, on tärkeää käyttää yleisesti tunnistettavia termejä, kuten "Kirjaudu sisään" tai "Luo tili", kriittisissä toiminnoissa. Tämä varmistaa, että käyttäjät löytävät etsimänsä toiminnot nopeasti ja vaivattomasti. ![](images/mita-tarkoittavat-ux-kirjoittaminen-ja-microcopy/toimiva-microcopy-esimerkki-1333x1000.webp)
+Microcopyn kirjoittamisessa on tärkeää käyttää brändin ääntä johdonmukaisesti koko sivustolla. Tämä luo ammattimaisen vaikutelman riippumatta siitä, onko brändin tyyli asiallinen vai humoristinen. Selkeys on avainasemassa: käytä yksinkertaista kieltä, jota kaikki ymmärtävät, ja vältä teknistä jargonia. Puhuttele käyttäjää suoraan kuin keskustelisit hänen kanssaan. Henkilökohtainen sävy tekee kokemuksesta miellyttävämmän. Pyri ytimekkyyteen, sillä käyttäjien pitäisi ymmärtää toimintavaihtoehdot yhdellä silmäyksellä. Tämä ei kuitenkaan tarkoita, että kaiken pitäisi olla äärimmäisen lyhyttä. Joskus hieman pidempi mutta selkeämpi ilmaisu toimii paremmin kuin liian tiivis muotoilu. Esimerkiksi "Lähetä"-painikkeen sijaan voi olla parempi käyttää "Lähetä lomake" -tekstiä, jos se auttaa käyttäjää ymmärtämään toiminnon paremmin. Vältä liiallista painostusta käyttämällä pehmeämpiä ilmaisuja, kun se on mahdollista. Sen sijaan, että pyydät käyttäjää "Ostamaan nyt", voit tarjota vaihtoehdon "Lisää ostoskoriin". Tämä antaa käyttäjälle tunteen kontrollista ja vähentää painetta välittömään sitoutumiseen. Tasapainota luovuus ja tuttuus hyödyntämällä yleisesti tunnettuja termejä tärkeissä toiminnoissa. Vaikka brändin ääni olisi leikkisä, on tärkeää käyttää yleisesti tunnistettavia termejä, kuten "Kirjaudu sisään" tai "Luo tili", kriittisissä toiminnoissa. Tämä varmistaa, että käyttäjät löytävät etsimänsä toiminnot nopeasti ja vaivattomasti. ![](/images/blog/mita-tarkoittavat-ux-kirjoittaminen-ja-microcopy/toimiva-microcopy-esimerkki-1333x1000.webp)
 
 ## **UX-kirjoittaminen luo arvoa alusta loppuun**
 
@@ -46,7 +46,7 @@ UX-kirjoittamisen arvo ei ole mitattavissa sanojen määrässä vaan niiden vaik
 
 ## **UX-kirjoittamisen ja microcopyn tärkeimmät elementit**
 
-![](images/mita-tarkoittavat-ux-kirjoittaminen-ja-microcopy/Esimerkki-hyvasta-UX-kirjoittamisesta-png.webp)
+![](/images/blog/mita-tarkoittavat-ux-kirjoittaminen-ja-microcopy/Esimerkki-hyvasta-UX-kirjoittamisesta-png.webp)
 
 _[Kuvan lähde.](https://uxloc.medium.com/what-is-microcopy-928b15e1e229)_
 

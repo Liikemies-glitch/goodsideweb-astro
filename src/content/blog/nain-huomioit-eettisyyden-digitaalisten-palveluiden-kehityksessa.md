@@ -1,15 +1,17 @@
 ---
-title: Näin huomioit eettisyyden digitaalisten palveluiden kehityksessä
-pubDate: '2024-09-12T08:28:33.000Z'
+title: "Näin huomioit eettisyyden digitaalisten palveluiden kehityksessä"
+pubDate: "2024-07-18T14:00:00.000Z"
 description: >-
-  Eettisen digitaalisen palvelun rakentaminen tarkoittaa käyttäjien ja
-  yhteiskunnan hyvinvoinnin asettamista etusijalle kaikissa kehityksen
-  vaiheissa.
-author: moretagoy
-tags: []
-heroImage: >-
-  images/nain-huomioit-eettisyyden-digitaalisten-palveluiden-kehityksessa/featured.jpeg
-heroImageAlt: Näin huomioit eettisyyden digitaalisten palveluiden kehityksessä
+  Eettisyys digitaalisten palveluiden kehityksessä on yhä tärkeämpää. Lue,
+  miten voit varmistaa, että palvelusi ovat vastuullisia ja käyttäjäystävällisiä.
+seoTitle: "Eettisyys Digitaalisten Palveluiden Kehityksessä"
+author: mikki
+tags:
+  - "eettisyys"
+  - "digitaaliset palvelut"
+  - "vastuullisuus"
+heroImage: ../../assets/blog/images/nain-huomioit-eettisyyden-digitaalisten-palveluiden-kehityksessa/featured.webp
+heroImageAlt: "Symbolinen kuva eettisyydestä ja teknologiasta"
 ---
 
 Eettisyys digitaalisen palvelun kehittämisessä tarkoittaa huomion kiinnittämistä palvelun vaikutuksiin käyttäjiin, yhteiskuntaan ja ympäristöön. Eettisesti rakennettu digitaalinen palvelu ottaa huomioon käyttäjien oikeudet, yksityisyyden, hyvinvoinnin ja yhdenvertaisuuden. Tässä on keskeisiä asioita, jotka on hyvä huomioida:

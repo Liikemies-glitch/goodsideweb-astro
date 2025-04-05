@@ -8,7 +8,7 @@ description: >-
 author: moretagoy
 tags:
   - UX
-heroImage: images/ux-suunnittelun-lait/featured.png
+heroImage: ../../assets/blog/images/ux-suunnittelun-lait/featured.webp
 heroImageAlt: UX suunnittelun lait
 ---
 

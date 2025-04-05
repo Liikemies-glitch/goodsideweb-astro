@@ -8,7 +8,7 @@ description: >-
 author: moretagoy
 tags:
   - Palvelumuotoilu
-heroImage: images/mita-hyotya-on-palvelumuotoilusta/featured.png
+heroImage: ../../assets/blog/images/mita-hyotya-on-palvelumuotoilusta/featured.webp
 heroImageAlt: Mitä hyötyä on palvelumuotoilusta?
 ---
 

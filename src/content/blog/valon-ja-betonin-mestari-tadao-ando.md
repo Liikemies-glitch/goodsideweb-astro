@@ -1,10 +1,11 @@
 ---
 title: Valon ja betonin mestari - Tadao Ando
 pubDate: '2024-07-03T11:13:47.000Z'
+description: Syvällinen katsaus Tadao Andon minimalistiseen arkkitehtuuriin, jossa betoni, valo ja zen-filosofia yhdistyvät ainutlaatuiseksi kokonaisuudeksi. Tutustumme itseoppinut mestarin visioon ja hänen vaikutukseensa moderniin arkkitehtuuriin.
 author: moretagoy
 tags:
   - Design
-heroImage: images/valon-ja-betonin-mestari-tadao-ando/featured.jpeg
+heroImage: ../../assets/blog/images/valon-ja-betonin-mestari-tadao-ando/featured.jpeg
 heroImageAlt: Valon ja betonin mestari - Tadao Ando
 ---
 

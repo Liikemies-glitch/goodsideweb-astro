@@ -1,13 +1,12 @@
 ---
-title: UI/UX-suunnittelua kiinteään hintaan
-pubDate: '2024-06-24T12:35:07.000Z'
-description: >-
-  Tutustu, miten meidän palvelumme todella toimii ja miksi asiantunteva
-  suunnittelija voi olla ratkaiseva tekijä projektin onnistumisessa.
+title: "Suunnittelua kiinteään hintaan: Riskit ja hyödyt"
+description: "Kiinteähintainen suunnitteluprojekti voi houkutella ennustettavuudellaan, mutta se sisältää myös riskejä. Milloin kiinteä hinta toimii ja milloin joustavampi malli on parempi?"
+pubDate: 2023-11-20
+heroImage: ../../assets/blog/images/suunnittelua-kiinteaan-hintaan/featured.webp
+category: "design"
+tags: ["design", "hinnoittelu", "palvelut"]
 seoTitle: UI/UX suunnittelua kiinteään hintaan
 author: moretagoy
-tags: []
-heroImage: images/suunnittelua-kiinteaan-hintaan/featured.png
 heroImageAlt: UI/UX-suunnittelua kiinteään hintaan
 ---
 

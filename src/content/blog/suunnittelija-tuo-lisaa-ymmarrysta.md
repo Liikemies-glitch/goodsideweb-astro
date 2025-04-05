@@ -7,7 +7,7 @@ description: >-
 author: moretagoy
 tags:
   - Käyttökokemus
-heroImage: images/suunnittelija-tuo-lisaa-ymmarrysta/featured.png
+heroImage: ../../assets/blog/images/suunnittelija-tuo-lisaa-ymmarrysta/featured.webp
 heroImageAlt: Suunnittelija tuo lisää ymmärrystä
 ---
 

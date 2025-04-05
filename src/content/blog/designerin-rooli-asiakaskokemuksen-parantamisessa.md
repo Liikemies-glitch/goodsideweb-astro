@@ -1,13 +1,11 @@
 ---
-title: Designerin rooli asiakaskokemuksen parantamisessa ja brändin identiteetissä
-pubDate: '2024-07-30T05:08:17.000Z'
-description: >-
-  Designerin työ parantaa asiakaskokemusta ja vahvistaa brändin identiteettiä.
-  Hyvin toteutettu design luo sujuvampia ja muistettavampia kokemuksia.
-seoTitle: Designerin rooli asiakaskokemuksessa ja brändissä
+title: "Designerin rooli asiakaskokemuksen parantamisessa"
+description: "Miten designerit vaikuttavat asiakaskokemukseen"
+pubDate: "2025-04-01"
+heroImage: ../../assets/blog/images/designerin-rooli-asiakaskokemuksen-parantamisessa/featured.webp
+category: "design"
+tags: ["design", "asiakaskokemus", "ux"]
 author: mikki
-tags: []
-heroImage: images/designerin-rooli-asiakaskokemuksen-parantamisessa/featured.png
 heroImageAlt: Designerin rooli asiakaskokemuksen parantamisessa ja brändin identiteetissä
 ---
 

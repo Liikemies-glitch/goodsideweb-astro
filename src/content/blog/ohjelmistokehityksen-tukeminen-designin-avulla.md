@@ -8,7 +8,7 @@ author: moretagoy
 tags:
   - Design
   - DesignOps
-heroImage: images/ohjelmistokehityksen-tukeminen-designin-avulla/featured.png
+heroImage: ../../assets/blog/images/ohjelmistokehityksen-tukeminen-designin-avulla/featured.webp
 heroImageAlt: Ohjelmistokehityksen tukeminen designin avulla
 ---
 

@@ -7,7 +7,7 @@ description: >-
 author: moretagoy
 tags:
   - UX
-heroImage: images/mobiilisovelluksen-ui-ux-suunnittelu/featured.png
+heroImage: ../../assets/blog/images/mobiilisovelluksen-ui-ux-suunnittelu/featured.webp
 heroImageAlt: Mobiilisovelluksen UI/UX suunnittelu
 ---
 

@@ -8,7 +8,7 @@ description: >-
 seoTitle: Avaimet digipalvelun uudistamiseen
 author: moretagoy
 tags: []
-heroImage: images/digipalvelun-uudistaminen/featured.png
+heroImage: ../../assets/blog/images/digipalvelun-uudistaminen/featured.webp
 heroImageAlt: Digipalvelun uudistaminen
 ---
 

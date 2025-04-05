@@ -8,7 +8,7 @@ author: moretagoy
 tags:
   - Käyttökokemus
   - UX
-heroImage: images/kayttoliittymasuunnittelu-kayttokokemuksen-avain/featured.png
+heroImage: ../../assets/blog/images/kayttoliittymasuunnittelu-kayttokokemuksen-avain/featured.webp
 heroImageAlt: Käyttöliittymäsuunnittelu – käyttökokemuksen avain
 ---
 

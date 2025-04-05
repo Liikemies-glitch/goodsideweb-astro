@@ -9,7 +9,7 @@ tags:
   - Design
   - Käyttökokemus
   - UX
-heroImage: images/designin-yhtenaisyys-muutosten-keskella/featured.png
+heroImage: ../../assets/blog/images/designin-yhtenaisyys-muutosten-keskella/featured.webp
 heroImageAlt: Designin yhtenäisyys muutosten keskellä
 ---
 

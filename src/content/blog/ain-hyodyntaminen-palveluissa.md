@@ -7,7 +7,7 @@ description: >-
   hyödyntämistä.
 author: moretagoy
 tags: []
-heroImage: images/ain-hyodyntaminen-palveluissa/featured.png
+heroImage: ../../assets/blog/images/ain-hyodyntaminen-palveluissa/featured.webp
 heroImageAlt: AI:n hyödyntäminen palveluissa
 ---
 

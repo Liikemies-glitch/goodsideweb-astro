@@ -1,12 +1,12 @@
 ---
 title: Aloittamisen vaikeus
-pubDate: '2024-08-04T06:19:52.000Z'
+pubDate: '2024-07-22T00:00:00.000Z'
 description: >-
-  Kun ymmärrämme, että muutoksen käynnistäminen vaatii ulkopuolista apua, kuinka
-  harvoin olemmekaan valmiita hankkimaan sitä.
+  Miten aloittaa suunnitteluprojekti?
 author: moretagoy
-tags: []
-heroImage: images/aloittamisen-vaikeus/featured.png
+tags:
+  - design
+heroImage: ../../assets/blog/images/aloittamisen-vaikeus/featured.webp
 heroImageAlt: Aloittamisen vaikeus
 ---
 
@@ -30,4 +30,5 @@ Viimeisen vuosikymmenen aikana noin 80% projekteistani on pitänyt sisällään 
 
 ## Aloita muutos itsestäsi
 
-Huomasin illan ajatustyön aikana palaavani monta kertaa siihen "_miksi vasta nyt_" -ajatukseen. Mikä on estänyt minua tekemästä jotain asiaa tai miksi olen viivytellyt turhaan tiettyjen asioiden edistämistä. Juuri tällä hetkellä ei ole mitään esteitä tehdä asioita. Juuri tällä hetkellä kaikki on käytännössä mahdollista aloittaa, kokeilla ja testata. Takeita onnistumiselle ei ole, mutta jos ei koskaan aloita yrittämistä, elämä valuu ohi jossittelun aikana. Seuraava vuosi on itselläni aikaa tehdä, kokeilla, onnistua, epäonnistua ja kokeilla uudestaan. Siinä ajassa ehdin tehdä kaiken sen mikä juuri tällä hetkellä mietityttää. Kirjoitan tämän kirjoituksen tänne talteen, teidän kaikkien luettavaksi ja lupan kirjoittaa tähän jatkoa tasan vuoden kuluttua. Silloin avaan ääneen kaiken sen, mitä aion nyt seuraavaksi tehdä.   **Janne Gylling** janne@goodside.fi 044 750 4444
+Huomasin illan ajatustyön aikana palaavani monta kertaa siihen "_miksi vasta nyt_" -ajatukseen. Mikä on estänyt minua tekemästä jotain asiaa tai miksi olen viivytellyt turhaan tiettyjen asioiden edistämistä. Juuri tällä hetkellä ei ole mitään esteitä tehdä asioita. Juuri tällä hetkellä kaikki on käytännössä mahdollista aloittaa, kokeilla ja testata. Takeita onnistumiselle ei ole, mutta jos ei koskaan aloita yrittämistä, elämä valuu ohi jossittelun aikana. Seuraava vuosi on itselläni aikaa tehdä, kokeilla, onnistua, epäonnistua ja kokeilla uudestaan. Siinä ajassa ehdin tehdä kaiken sen mikä juuri tällä hetkellä mietityttää. Kirjoitan tämän kirjoituksen tänne talteen, teidän kaikkien luettavaksi ja lupan kirjoittaa tähän jatkoa tasan vuoden kuluttua. Silloin avaan ääneen kaiken sen, mitä aion nyt seuraavaksi tehdä.  
+**Janne Gylling** janne@goodside.fi 044 750 4444

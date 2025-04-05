@@ -7,7 +7,7 @@ description: >-
 author: moretagoy
 tags:
   - UX
-heroImage: images/saas-yrityksen-kansainvalistyminen-ja-ux/featured.png
+heroImage: ../../assets/blog/images/saas-yrityksen-kansainvalistyminen-ja-ux/featured.webp
 heroImageAlt: SaaS-yrityksen kansainvälistyminen ja UX
 ---
 

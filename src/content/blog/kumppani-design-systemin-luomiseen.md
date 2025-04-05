@@ -8,7 +8,7 @@ author: moretagoy
 tags:
   - DesignOps
   - UX
-heroImage: images/kumppani-design-systemin-luomiseen/featured.png
+heroImage: ../../assets/blog/images/kumppani-design-systemin-luomiseen/featured.webp
 heroImageAlt: Kumppani Design Systemin luomiseen
 ---
 

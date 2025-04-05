@@ -7,7 +7,7 @@ description: >-
 seoTitle: Suunnittelijan rooli ja identiteetti
 author: mikki
 tags: []
-heroImage: images/suunnittelijan-rooli-digitaalisessa-maailmassa/featured.png
+heroImage: ../../assets/blog/images/suunnittelijan-rooli-digitaalisessa-maailmassa/featured.webp
 heroImageAlt: Suunnittelijan rooli ja identiteetti digitaalisessa maailmassa
 ---
 

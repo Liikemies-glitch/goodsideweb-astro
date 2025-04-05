@@ -6,7 +6,7 @@ description: >-
   suunnittelujärjestelmä parantaa laatua ja säästää aikaa
 author: mikki
 tags: []
-heroImage: images/design-system-tuotekehityksen-selkarankana/featured.png
+heroImage: ../../assets/blog/images/design-system-tuotekehityksen-selkarankana/featured.webp
 heroImageAlt: Design system tuotekehityksen selkärankana
 ---
 
@@ -23,7 +23,7 @@ Design system on muodostunut keskeiseksi osaksi nykyaikaista digitaalista tuotek
 
 ## **Design systemin määritelmä ja historia**
 
-Design system on kattava kokoelma uudelleenkäytettäviä komponentteja, sääntöjä ja ohjeistuksia, joita käytetään ja kehitetään yhtenäisten periaatteiden mukaisesti. Sen juuret ulottuvat 1960-luvulle, jolloin yhtenäisten brändiohjeiden kehittäminen yleistyi. Nykyaikaisen Design systemin konsepti alkoi muotoutua 2010-luvulla, kun digitaalisten tuotteiden monimutkaisuus ja laajuus kasvoivat räjähdysmäisesti. Design system ei ole vain staattinen kokoelma ohjeita, vaan elävä ja kehittyvä kokonaisuus, joka mukautuu organisaation ja sen tuotteiden tarpeisiin. Se toimii siltana suunnittelijoiden, kehittäjien ja muiden sidosryhmien välillä, luoden yhteisen kielen ja ymmärryksen tuotekehitysprosessiin. ![](images/design-system-tuotekehityksen-selkarankana/Mika-on-design-system-300x300.jpeg)
+Design system on kattava kokoelma uudelleenkäytettäviä komponentteja, sääntöjä ja ohjeistuksia, joita käytetään ja kehitetään yhtenäisten periaatteiden mukaisesti. Sen juuret ulottuvat 1960-luvulle, jolloin yhtenäisten brändiohjeiden kehittäminen yleistyi. Nykyaikaisen Design systemin konsepti alkoi muotoutua 2010-luvulla, kun digitaalisten tuotteiden monimutkaisuus ja laajuus kasvoivat räjähdysmäisesti. Design system ei ole vain staattinen kokoelma ohjeita, vaan elävä ja kehittyvä kokonaisuus, joka mukautuu organisaation ja sen tuotteiden tarpeisiin. Se toimii siltana suunnittelijoiden, kehittäjien ja muiden sidosryhmien välillä, luoden yhteisen kielen ja ymmärryksen tuotekehitysprosessiin. ![](/images/blog/design-system-tuotekehityksen-selkarankana/Mika-on-design-system-300x300.jpeg)
 
 ## **Design systemin sisältö**
 
@@ -62,7 +62,7 @@ Design systemin implementointi tuo merkittäviä etuja eri sidosryhmille:
 -   Yhtenäinen ja sujuva käyttökokemus: Johdonmukainen toiminnallisuus ja ulkoasu kaikissa tuotteissa ja palveluissa tekevät käytöstä intuitiivista.
 -   Parempi saavutettavuus: Systemaattinen lähestymistapa mahdollistaa saavutettavuuden huomioimisen kaikissa komponenteissa.
 
-![](images/design-system-tuotekehityksen-selkarankana/Mitka-ovat-design-systemin-hyodyt.jpeg)
+![](/images/blog/design-system-tuotekehityksen-selkarankana/Mitka-ovat-design-systemin-hyodyt.jpeg)
 
 ## **Design systemin implementointi**
 
@@ -96,7 +96,7 @@ Design systemien rooli tulee todennäköisesti kasvamaan entisestään tulevaisu
 
 ### **Miten Design system eroaa tyylioppaasta (style guide)?**
 
-Design system on laajempi kokonaisuus kuin tyyliopas. Tyyliopas keskittyy yleensä vain visuaalisiin elementteihin, kuten väreihin, typografiaan ja logojen käyttöön. Design system puolestaan sisältää tyyliohjeiden lisäksi uudelleenkäytettäviä komponentteja, suunnitteluperiaatteita, koodipohjan ja kattavan dokumentaation. Se on kokonaisvaltainen järjestelmä, joka ohjaa sekä suunnittelua että kehitystä.
+Design system on laajempi kokonaisuus kuin tyyliopas. Tyyliopas keskittyy yleensä vain visuaalisiin elementteihin, kuten väreihin, typografiaan ja logojen käytöön. Design system puolestaan sisältää tyyliohjeiden lisäksi uudelleenkäytettäviä komponentteja, suunnitteluperiaatteita, koodipohjan ja kattavan dokumentaation. Se on kokonaisvaltainen järjestelmä, joka ohjaa sekä suunnittelua että kehitystä.
 
 ### **Kuinka kauan Design systemin luominen tyypillisesti kestää?**
 
@@ -104,7 +104,7 @@ Design systemin luomisen kesto vaihtelee organisaation koon, tuotteen monimutkai
 
 ### **Voiko Design systemiä käyttää sekä web- että mobiilisovelluksissa?**
 
-\[caption id="attachment\_521" align="aligncenter" width="1024"\]![](images/design-system-tuotekehityksen-selkarankana/mika-on-design-system.png) Tuotekehitystiimi luomassa Design Systemiä\[/caption\] Kyllä, hyvin suunniteltu Design system on alustariippumaton ja sitä voidaan soveltaa sekä web- että mobiilisovelluksissa. Itse asiassa yksi Design systemin keskeisistä eduista on sen kyky varmistaa yhtenäinen käyttökokemus eri alustojen välillä. Komponentit suunnitellaan yleensä responsiivisiksi, jotta ne mukautuvat eri näyttökokoihin ja laitetyyppeihin. Joissakin tapauksissa voi olla tarpeen luoda alustaspesifisiä variaatioita tietyistä komponenteista, mutta perusperiaatteet ja visuaalinen tyyli pysyvät samoina.
+\[caption id="attachment\_521" align="aligncenter" width="1024"\]![](/images/blog/design-system-tuotekehityksen-selkarankana/mika-on-design-system.png) Tuotekehitystiimi luomassa Design Systemiä\[/caption\] Kyllä, hyvin suunniteltu Design system on alustariippumaton ja sitä voidaan soveltaa sekä web- että mobiilisovelluksissa. Itse asiassa yksi Design systemin keskeisistä eduista on sen kyky varmistaa yhtenäinen käyttökokemus eri alustojen välillä. Komponentit suunnitellaan yleensä responsiivisiksi, jotta ne mukautuvat eri näyttökokoihin ja laitetyyppeihin. Joissakin tapauksissa voi olla tarpeen luoda alustaspesifisiä variaatioita tietyistä komponenteista, mutta perusperiaatteet ja visuaalinen tyyli pysyvät samoina.
 
 ## **Yhteenveto**
 

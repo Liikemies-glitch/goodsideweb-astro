@@ -7,7 +7,7 @@ description: >-
 author: moretagoy
 tags:
   - Palvelumuotoilu
-heroImage: images/design-thinking-empatia-mahdollistaa-asiakaskeskeisyyden/featured.png
+heroImage: ../../assets/blog/images/design-thinking-empatia-mahdollistaa-asiakaskeskeisyyden/featured.webp
 heroImageAlt: 'Design Thinking: empatia mahdollistaa asiakaskeskeisyyden'
 ---
 

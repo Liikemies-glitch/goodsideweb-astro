@@ -9,7 +9,7 @@ author: moretagoy
 tags:
   - Käyttökokemus
   - UX
-heroImage: images/kayttoliittymasuunnittelu-osana-kasvua/featured.png
+heroImage: ../../assets/blog/images/kayttoliittymasuunnittelu-osana-kasvua/featured.webp
 heroImageAlt: Käyttöliittymäsuunnittelu osana kasvua
 ---
 

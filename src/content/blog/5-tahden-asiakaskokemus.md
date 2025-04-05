@@ -1,13 +1,13 @@
 ---
 title: 5 tähden asiakaskokemus
-pubDate: '2024-08-23T17:45:45.000Z'
+pubDate: 2024-08-23T17:45:45.000Z
 description: >-
   5 tähden asiakaskokemus syntyy, kun yritys ei tyydy ainoastaan täyttämään
   asiakkaan odotuksia, vaan se pyrkii ylittämään ne.
 author: moretagoy
 tags:
   - Asiakaskokemus
-heroImage: images/5-tahden-asiakaskokemus/featured.png
+heroImage: ../../assets/blog/images/5-tahden-asiakaskokemus/featured.webp
 heroImageAlt: 5 tähden asiakaskokemus
 ---
 

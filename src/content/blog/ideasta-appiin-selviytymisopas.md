@@ -7,7 +7,7 @@ description: >-
 seoTitle: 'Ideasta sovellukseksi: Miten edetä ilman softaosaamista?'
 author: mikki
 tags: []
-heroImage: images/ideasta-appiin-selviytymisopas/featured.png
+heroImage: ../../assets/blog/images/ideasta-appiin-selviytymisopas/featured.webp
 heroImageAlt: 'Ideasta appiin: Selviytymisopas, kun osaat bisneksen mutta et bittiä'
 ---
 
@@ -15,7 +15,7 @@ Oletko herännyt keskellä yötä mielessäsi loistava bisnesidea? Sellainen, jo
 
 * * *
 
-![](images/ideasta-appiin-selviytymisopas/mikki-goodside-300x300.png) _Moro!_  _Mun nimeni on [Mikki](https://www.linkedin.com/in/mikkiaaltoyleva/). Olen yksi The Good Side Oy:n perustajista. Mä loin tän artikkelin_ _tekoälyavusteisesti eräästä [LinkedIn-keskustelusta](https://www.linkedin.com/feed/update/urn:li:activity:7231712735481233409?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7231712735481233409%2C7231743693899071488%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287231743693899071488%2Curn%3Ali%3Aactivity%3A7231712735481233409%29)__. Mukavia lukuhetkiä._
+![](/images/blog/ideasta-appiin-selviytymisopas/mikki-goodside-300x300.png) _Moro!_  _Mun nimeni on [Mikki](https://www.linkedin.com/in/mikkiaaltoyleva/). Olen yksi The Good Side Oy:n perustajista. Mä loin tän artikkelin_ _tekoälyavusteisesti eräästä [LinkedIn-keskustelusta](https://www.linkedin.com/feed/update/urn:li:activity:7231712735481233409?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7231712735481233409%2C7231743693899071488%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287231743693899071488%2Curn%3Ali%3Aactivity%3A7231712735481233409%29)__. Mukavia lukuhetkiä._
 
 * * *
 
@@ -49,7 +49,7 @@ Entä jos löytäisitkin huippuosaavan freelance-koodarin ja -suunnittelijan, jo
 
 Älä kuitenkaan odota ihmeitä - varaudu silti laittamaan ainakin 30 000 - 40 000 euroa peliin ennen kuin ensimmäinen kaupallinen versio on kasassa.
 
-![](images/ideasta-appiin-selviytymisopas/naisyrittaja-uusi-liiketoimintakonsepti.png)
+![](/images/blog/ideasta-appiin-selviytymisopas/naisyrittaja-uusi-liiketoimintakonsepti.png)
 
 ### 4\. Prototyyppi ensin
 

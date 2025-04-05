@@ -6,7 +6,7 @@ description: >-
   mutta.. Lue koko juttu tästä!
 author: moretagoy
 tags: []
-heroImage: images/ux-suunnittelu-alihankintana/featured.png
+heroImage: ../../assets/blog/images/ux-suunnittelu-alihankintana/featured.webp
 heroImageAlt: UX suunnittelu alihankintana
 ---
 

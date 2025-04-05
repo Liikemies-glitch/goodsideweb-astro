@@ -7,7 +7,7 @@ description: >-
 seoTitle: 'Digipalvelun Budjetointi: Tärkeät huomiot'
 author: moretagoy
 tags: []
-heroImage: images/digiprojektin-budjetointi/featured.png
+heroImage: ../../assets/blog/images/digiprojektin-budjetointi/featured.webp
 heroImageAlt: Digiprojektin budjetointi
 ---
 

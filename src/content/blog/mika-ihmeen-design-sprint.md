@@ -8,7 +8,7 @@ description: >-
 seoTitle: 'Design Sprint: Viikossa ideasta innovaatioon'
 author: mikki
 tags: []
-heroImage: images/mika-ihmeen-design-sprint/featured.png
+heroImage: ../../assets/blog/images/mika-ihmeen-design-sprint/featured.webp
 heroImageAlt: 'Design Sprint: Viikon matka ideasta innovaatioon'
 ---
 
@@ -29,7 +29,7 @@ Hyppää suoraan sinua kiinnostavaan sisältöön:
 
 ## **Design Sprintin määritelmä ja tarkoitus**
 
-Design Sprint on Jake Knappin ja hänen kollegoidensa Googlella kehittämä innovatiivinen lähestymistapa tuotekehitykseen. Se on viiden päivän intensiivinen prosessi, joka tiivistää perinteisesti kuukausia kestävän tuotekehitystyön yhteen työviikkoon. Design Sprintin tarkoituksena on nopeasti ideoida, prototypoida ja testata uusia tuotteita tai palveluita, minimoiden samalla riskejä ja maksimoiden oppimista. Design Sprint yhdistää elementtejä liiketoimintastrategiasta, innovaatiosta, käyttäytymistieteistä ja muotoiluajattelusta. Sen tavoitteena on auttaa tiimejä ratkaisemaan monimutkaisia ongelmia ja validoimaan ideoita ennen mittavien resurssien sijoittamista varsinaiseen tuotekehitykseen. Tämä lähestymistapa on erityisen hyödyllinen tilanteissa, joissa panokset ovat korkeat, aikataulu on tiukka tai ongelma on erityisen monimutkainen. Design Sprint perustuu ajatukseen, että paras tapa oppia ja kehittää on tekemällä ja testaamalla nopeasti. Sen sijaan, että käytettäisiin kuukausia suunnitteluun ja kehitykseen ilman varmuutta lopputuloksen toimivuudesta, Design Sprint mahdollistaa nopean palautteen saamisen ja oppimisen jo prosessin varhaisessa vaiheessa. ![](images/mika-ihmeen-design-sprint/design-sprint-brainstormaus-kaynnissa.png)
+Design Sprint on Jake Knappin ja hänen kollegoidensa Googlella kehittämä innovatiivinen lähestymistapa tuotekehitykseen. Se on viiden päivän intensiivinen prosessi, joka tiivistää perinteisesti kuukausia kestävän tuotekehitystyön yhteen työviikkoon. Design Sprintin tarkoituksena on nopeasti ideoida, prototypoida ja testata uusia tuotteita tai palveluita, minimoiden samalla riskejä ja maksimoiden oppimista. Design Sprint yhdistää elementtejä liiketoimintastrategiasta, innovaatiosta, käyttäytymistieteistä ja muotoiluajattelusta. Sen tavoitteena on auttaa tiimejä ratkaisemaan monimutkaisia ongelmia ja validoimaan ideoita ennen mittavien resurssien sijoittamista varsinaiseen tuotekehitykseen. Tämä lähestymistapa on erityisen hyödyllinen tilanteissa, joissa panokset ovat korkeat, aikataulu on tiukka tai ongelma on erityisen monimutkainen. Design Sprint perustuu ajatukseen, että paras tapa oppia ja kehittää on tekemällä ja testaamalla nopeasti. Sen sijaan, että käytettäisiin kuukausia suunnitteluun ja kehitykseen ilman varmuutta lopputuloksen toimivuudesta, Design Sprint mahdollistaa nopean palautteen saamisen ja oppimisen jo prosessin varhaisessa vaiheessa. ![](/images/blog/mika-ihmeen-design-sprint/design-sprint-brainstormaus-kaynnissa.png)
 
 ## **Design Sprintin vaiheet**
 
@@ -63,7 +63,7 @@ Design Sprint on huomattavasti strukturoidumpi ja tavoitteellisempi kuin perinte
 
 ### **Voiko Design Sprintiä toteuttaa etänä?**
 
-Kyllä, Design Sprint voidaan toteuttaa myös etänä tai hybridimallina. Tämä vaatii huolellista suunnittelua ja oikeiden digitaalisten työkalujen käyttöä, kuten virtuaalisia valkotauluja ja videoneuvottelualustoja. Etätoteutuksessa on kiinnitettävä erityistä huomiota osallistujien sitoutumiseen ja energiatason ylläpitämiseen koko prosessin ajan. ![](images/mika-ihmeen-design-sprint/design-sprint-kaynnissa.png)
+Kyllä, Design Sprint voidaan toteuttaa myös etänä tai hybridimallina. Tämä vaatii huolellista suunnittelua ja oikeiden digitaalisten työkalujen käyttöä, kuten virtuaalisia valkotauluja ja videoneuvottelualustoja. Etätoteutuksessa on kiinnitettävä erityistä huomiota osallistujien sitoutumiseen ja energiatason ylläpitämiseen koko prosessin ajan. ![](/images/blog/mika-ihmeen-design-sprint/design-sprint-kaynnissa.png)
 
 ## **Yhteenveto**
 

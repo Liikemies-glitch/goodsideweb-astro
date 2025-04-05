@@ -8,7 +8,7 @@ description: >-
 author: moretagoy
 tags:
   - Käyttökokemus
-heroImage: images/kayttokokemus-varmistaa-asiakastyytyvaisyyden/featured.png
+heroImage: ../../assets/blog/images/kayttokokemus-varmistaa-asiakastyytyvaisyyden/featured.webp
 heroImageAlt: Käyttökokemus varmistaa asiakastyytyväisyyden
 ---
 

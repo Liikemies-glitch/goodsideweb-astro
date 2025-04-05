@@ -8,7 +8,7 @@ author: moretagoy
 tags:
   - Design
   - DesignOps
-heroImage: images/designops-muotoiluosaamisen-kumppani/featured.png
+heroImage: ../../assets/blog/images/designops-muotoiluosaamisen-kumppani/featured.webp
 heroImageAlt: DesignOps - muotoiluosaamisen kumppani
 ---
 
@@ -16,7 +16,7 @@ heroImageAlt: DesignOps - muotoiluosaamisen kumppani
 
 ## Mikä on DesignOps?
 
-DesignOps on periaatteessa muotoiluprosessien “toiminnanohjaus”. Se keskittyy suunnittelutiimien hallintaan, suunnitteluprosessien virtaviivaistamiseen ja muotoiluun liittyvien työkalujen sekä resurssien tehokkaaseen hyödyntämiseen. Sen tavoitteena on parantaa muotoilutiimien toimintaa ja helpottaa niiden yhteistyötä muiden organisaation osastojen kanssa. DesignOpsin tarkoitus on poistaa esteitä, jotka hidastavat tai estävät suunnittelijoiden työn etenemistä. Se luo puitteet ja rakenteet, jotka tukevat muotoiluprosessia, ja sen painopiste on usein kolmessa keskeisessä osa-alueessa:
+DesignOps on periaatteessa muotoiluprosessien "toiminnanohjaus". Se keskittyy suunnittelutiimien hallintaan, suunnitteluprosessien virtaviivaistamiseen ja muotoiluun liittyvien työkalujen sekä resurssien tehokkaaseen hyödyntämiseen. Sen tavoitteena on parantaa muotoilutiimien toimintaa ja helpottaa niiden yhteistyötä muiden organisaation osastojen kanssa. DesignOpsin tarkoitus on poistaa esteitä, jotka hidastavat tai estävät suunnittelijoiden työn etenemistä. Se luo puitteet ja rakenteet, jotka tukevat muotoiluprosessia, ja sen painopiste on usein kolmessa keskeisessä osa-alueessa:
 
 1.  Ihmiset: Tiimin jäsenten roolit, vastuut ja osaamisen kehittäminen.
 2.  Prosessit: Muotoiluprosessien optimointi, suunnittelukäytäntöjen määrittäminen ja dokumentointi.

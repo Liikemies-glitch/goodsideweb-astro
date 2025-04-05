@@ -7,7 +7,7 @@ description: >-
 seoTitle: Eettisen muotoilun tärkeys
 author: moretagoy
 tags: []
-heroImage: images/eettinen-muotoilu/featured.png
+heroImage: ../../assets/blog/images/eettinen-muotoilu/featured.webp
 heroImageAlt: Eettinen muotoilu
 ---
 
@@ -19,7 +19,7 @@ Yksi käyttäliittymäsuunnittelun teemoista on ns. "**dark ux**", eli suunnitel
 
 ## Eettinen muotoilu yhteiskunnassa
 
-Hyvin samanlaisia asioita on käytössä myös reaalimaailmassa. On puhuttu jo pitkään termistä "**hostile architecture**", jossa kaupunkin yleisiä tiloja suunnitellaan siten, että jonkin käyttäjäryhmän tilankäyttöä halutaan rajoittaa. Tästä hyvänä esimerkkinä useassa kaupungissa käytetty suunnittelumalli puistonpenkeissä. Alla olevassa kuvassa käsinojat ovat laitettu estämään penkillä nukkuminen, jolloin kodittomat henkilöt eivät voi hyödyntää kyseistä paikkaa. Googlettamalla tuota termiä, löydät helposti monta vastaavaa esimerkkiä. ![](images/eettinen-muotoilu/Screenshot-2024-08-07-at-10.02.04-1024x377.png)
+Hyvin samanlaisia asioita on käytössä myös reaalimaailmassa. On puhuttu jo pitkään termistä "**hostile architecture**", jossa kaupunkin yleisiä tiloja suunnitellaan siten, että jonkin käyttäjäryhmän tilankäyttöä halutaan rajoittaa. Tästä hyvänä esimerkkinä useassa kaupungissa käytetty suunnittelumalli puistonpenkeissä. Alla olevassa kuvassa käsinojat ovat laitettu estämään penkillä nukkuminen, jolloin kodittomat henkilöt eivät voi hyödyntää kyseistä paikkaa. Googlettamalla tuota termiä, löydät helposti monta vastaavaa esimerkkiä. ![](/images/blog/eettinen-muotoilu/Screenshot-2024-08-07-at-10.02.04-1024x377.png)
 
 ## Suunnittelijan valta ja vastuu
 

@@ -1,13 +1,14 @@
 ---
 title: Design-velan korko ampaisi
 pubDate: '2025-02-05T08:43:22.000Z'
+description: Tekoälyn myötä teknisen toteutuksen nopeutuminen on kääntänyt design-velan dynamiikan päälaelleen. Kun aiemmin design-velkaa otettiin teknisten rajoitteiden ja resurssipulan takia, nyt tekninen toteutus on niin nopeaa, että design-velka syntyy ennemminkin huonoista suunnittelupäätöksistä.
 author: mikki
 tags: []
-heroImage: images/design-velan-korko/featured.jpg
+heroImage: ../../assets/blog/images/design-velan-korko/featured.jpg
 heroImageAlt: Design-velan korko ampaisi
 ---
 
-![](images/design-velan-korko/analog-clocks.svg)
+![](/images/blog/design-velan-korko/analog-clocks.svg)
 
 # Design-velan korkoprosentti on nyt korkeamalla kuin koskaan aiemmin
 

@@ -7,7 +7,7 @@ description: >-
   liiketoimintaa.
 author: moretagoy
 tags: []
-heroImage: images/kayttoliittymasuunnittelun-tarkeys/featured.png
+heroImage: ../../assets/blog/images/kayttoliittymasuunnittelun-tarkeys/featured.webp
 heroImageAlt: Käyttöliittymäsuunnittelu ja sen tärkeys
 ---
 

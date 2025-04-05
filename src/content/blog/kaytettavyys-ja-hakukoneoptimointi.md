@@ -7,7 +7,7 @@ description: >-
 seoTitle: 'UX ja SEO: Yhteinen tavoite'
 author: moretagoy
 tags: []
-heroImage: images/kaytettavyys-ja-hakukoneoptimointi/featured.png
+heroImage: ../../assets/blog/images/kaytettavyys-ja-hakukoneoptimointi/featured.webp
 heroImageAlt: Käytettävyys ja hakukoneoptimointi
 ---
 

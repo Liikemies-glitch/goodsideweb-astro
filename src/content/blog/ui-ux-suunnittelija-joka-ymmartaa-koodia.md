@@ -8,7 +8,7 @@ author: moretagoy
 tags:
   - Design
   - Käyttökokemus
-heroImage: images/ui-ux-suunnittelija-joka-ymmartaa-koodia/featured.png
+heroImage: ../../assets/blog/images/ui-ux-suunnittelija-joka-ymmartaa-koodia/featured.webp
 heroImageAlt: UI/UX suunnittelija joka ymmärtää koodia
 ---
 

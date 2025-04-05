@@ -7,7 +7,7 @@ description: >-
 author: moretagoy
 tags:
   - Palvelumuotoilu
-heroImage: images/palvelumuotoilun-avulla-uutta-liiketoimintaa/featured.png
+heroImage: ../../assets/blog/images/palvelumuotoilun-avulla-uutta-liiketoimintaa/featured.webp
 heroImageAlt: Palvelumuotoilun avulla uutta liiketoimintaa
 ---
 

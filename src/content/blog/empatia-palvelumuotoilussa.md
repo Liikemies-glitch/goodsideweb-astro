@@ -8,7 +8,7 @@ description: >-
 author: moretagoy
 tags:
   - Palvelumuotoilu
-heroImage: images/empatia-palvelumuotoilussa/featured.png
+heroImage: ../../assets/blog/images/empatia-palvelumuotoilussa/featured.webp
 heroImageAlt: Empatia palvelumuotoilussa
 ---
 

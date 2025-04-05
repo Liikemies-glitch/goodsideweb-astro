@@ -7,7 +7,7 @@ description: >-
 author: moretagoy
 tags:
   - Design
-heroImage: images/viisi-arkkitehtia-jotka-muuttavat-maailmaa/featured.jpg
+heroImage: ../../assets/blog/images/viisi-arkkitehtia-jotka-muuttavat-maailmaa/featured.jpg
 heroImageAlt: Viisi arkkitehtiä jotka muuttavat maailmaa
 ---
 

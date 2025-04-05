@@ -1,9 +1,10 @@
 ---
 title: Käyttöjärjestelmien sota
 pubDate: '2024-06-29T15:44:52.000Z'
+description: Kattava vertailu Android- ja iOS-käyttöjärjestelmien välillä - avoimuudesta tietoturvaan ja käyttöliittymästä ekosysteemeihin. Artikkeli avaa molempien alustojen vahvuudet ja heikkoudet.
 author: moretagoy
 tags: []
-heroImage: images/kayttojarjestelmien-sota/featured.jpg
+heroImage: ../../assets/blog/images/kayttojarjestelmien-sota/featured.jpg
 heroImageAlt: Käyttöjärjestelmien sota
 ---
 

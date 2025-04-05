@@ -1,10 +1,11 @@
 ---
 title: Käyttöliittymäsuunnittelu ja hyvä UX
 pubDate: '2024-10-08T06:24:52.000Z'
+description: Opas hyvän käyttöliittymäsuunnittelun periaatteisiin - selkeydestä käytettävyyteen ja käyttäjien osallistamiseen. Artikkeli avaa konkreettisesti hyvän ja huonon käyttöliittymän erot.
 author: moretagoy
 tags:
   - UX
-heroImage: images/kayttoliittymasuunnittelu-ja-hyva-ux/featured.png
+heroImage: ../../assets/blog/images/kayttoliittymasuunnittelu-ja-hyva-ux/featured.webp
 heroImageAlt: Käyttöliittymäsuunnittelu ja hyvä UX
 ---
 

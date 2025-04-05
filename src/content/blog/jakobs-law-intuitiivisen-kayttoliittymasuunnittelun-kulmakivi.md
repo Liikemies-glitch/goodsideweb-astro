@@ -1,23 +1,24 @@
 ---
-title: 'Jakob''s Law: Intuitiivisen käyttöliittymäsuunnittelun kulmakivi'
-pubDate: '2024-06-01T09:05:04.000Z'
+title: "Jakob's Law: Intuitiivisen käyttöliittymäsuunnittelun kulmakivi"
+pubDate: "2024-07-15T11:00:00.000Z"
 description: >-
-  Opi hyödyntämään Jakob’s Law:ta luodaksesi intuitiivisia käyttöliittymiä.
-  Tutustu periaatteisiin, haasteisiin ja tulevaisuuden näkymiin
-  UX&#x2d;suunnittelussa.
-seoTitle: Jakob’s Law ja intuitiiviset käyttöliittymät
+  Jakob's Law on keskeinen periaate käyttöliittymäsuunnittelussa, joka korostaa
+  tuttujen suunnittelumallien merkitystä käyttäjäkokemuksen parantamisessa.
+seoTitle: "Jakob's Law: Miksi tutut suunnittelumallit ovat tärkeitä UX:ssä"
 author: mikki
-tags: []
-heroImage: >-
-  images/jakobs-law-intuitiivisen-kayttoliittymasuunnittelun-kulmakivi/featured.png
-heroImageAlt: 'Jakob''s Law: Intuitiivisen käyttöliittymäsuunnittelun kulmakivi'
+tags:
+  - "käyttöliittymäsuunnittelu"
+  - "UX"
+  - "Jakob's Law"
+heroImage: ../../assets/blog/images/jakobs-law-intuitiivisen-kayttoliittymasuunnittelun-kulmakivi/featured.webp
+heroImageAlt: "Esimerkki Jakob's Law -periaatteesta verkkosivustolla"
 ---
 
 Digitaalisten tuotteiden ja palveluiden maailmassa yksi termi nousee jatkuvasti esiin: intuitiivinen. Mutta mitä tarkoittaa, kun jokin on intuitiivista? Ja miksi se on niin tärkeää? Vastaus piilee syvällä ihmisen psykologiassa ja käyttäytymisessä, ja sen ymmärtämiseen Jakob's Law tarjoaa arvokkaan näkökulman.
 
 * * *
 
-![](images/jakobs-law-intuitiivisen-kayttoliittymasuunnittelun-kulmakivi/mikki-goodside-300x300.png) _Moro!_  _Mun nimeni on [Mikki](https://www.linkedin.com/in/mikkiaaltoyleva/). Olen yksi The Good Side Oy:n perustajista. Mä loin tän artikkelin_ _tekoälyavusteisesti ja olen tarkastanut, että faktat on kohdillaan__._ _Toivottavasti löydät etsimäsi._
+![](/images/blog/jakobs-law-intuitiivisen-kayttoliittymasuunnittelun-kulmakivi/mikki-goodside-300x300.png) _Moro!_  _Mun nimeni on [Mikki](https://www.linkedin.com/in/mikkiaaltoyleva/). Olen yksi The Good Side Oy:n perustajista. Mä loin tän artikkelin_ _tekoälyavusteisesti ja olen tarkastanut, että faktat on kohdillaan__._ _Toivottavasti löydät etsimäsi._
 
 * * *
 
@@ -39,7 +40,7 @@ Aloita suunnitteluprosessi tutkimalla ja analysoimalla, miten käyttäjät ovat 
 
 Ihmisillä on olemassa olevia mentaalimalleja siitä, miten asiat toimivat, ja intuitiivinen suunnittelu hyödyntää näitä malleja tehokkaasti. Esimerkiksi liukusäädin on intuitiivinen tapa säätää äänenvoimakkuutta, koska se vastaa fyysisen maailman vastineita. Tunnistamalla ja hyödyntämällä näitä mentaalimalleja voit luoda käyttöliittymiä, jotka tuntuvat käyttäjistä luonnollisilta ja helpoilta ymmärtää.
 
-![](images/jakobs-law-intuitiivisen-kayttoliittymasuunnittelun-kulmakivi/intuitiivinen-pelikayttoliittyma.png)
+![](/images/blog/jakobs-law-intuitiivisen-kayttoliittymasuunnittelun-kulmakivi/intuitiivinen-pelikayttoliittyma.png)
 
 Johdonmukaisuus on avainasemassa intuitiivisen käyttöliittymän suunnittelussa. Varmista, että käyttöliittymäsi elementit toimivat yhtenäisesti läpi koko sovelluksen. Jos painike toimii tietyllä tavalla yhdessä osassa, sen tulisi toimia samoin kaikkialla. Tämä johdonmukaisuus vähentää käyttäjän kognitiivista kuormitusta ja tekee sovelluksen käytöstä sujuvampaa.
 
@@ -61,7 +62,7 @@ Vaikka digitaalinen maailma kehittyy jatkuvasti, Jakob's Law:n periaate pysyy re
 
 Tulevaisuudessa Jakob's Law:n soveltaminen voi tarkoittaa yhä enemmän eri aistien ja vuorovaikutustapojen huomioimista. Intuitiivinen suunnittelu voi laajentua koskemaan myös sitä, miten käyttöliittymät mukautuvat yksilöllisiin tarpeisiin ja mieltymyksiin.
 
-![](images/jakobs-law-intuitiivisen-kayttoliittymasuunnittelun-kulmakivi/scifi-kayttoliittyma-intuitiivinen.png)
+![](/images/blog/jakobs-law-intuitiivisen-kayttoliittymasuunnittelun-kulmakivi/scifi-kayttoliittyma-intuitiivinen.png)
 
 ## Lopuksi
 

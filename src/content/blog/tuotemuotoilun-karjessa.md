@@ -1,14 +1,11 @@
 ---
-title: Tuotemuotoilun kärjessä
-pubDate: '2024-07-29T16:00:55.000Z'
-description: >-
-  Nämä suunnittelijat ovat kukin jättäneet pysyvän jäljen tuotesuunnittelun
-  historiaan.
+title: "Tuotemuotoilun kärjessä: Tulevaisuuden trendit"
+pubDate: 2023-11-01
+heroImage: ../../assets/blog/images/tuotemuotoilun-karjessa/featured.webp
+description: "Tuotemuotoilu kehittyy jatkuvasti teknologian ja käyttäjien odotusten myötä. Mitkä ovat tärkeimmät trendit, jotka muokkaavat alaa tulevaisuudessa?"
+category: "design"
+tags: ["design", "tuotemuotoilu", "kehitys"]
 author: moretagoy
-tags:
-  - Design
-heroImage: images/tuotemuotoilun-karjessa/featured.png
-heroImageAlt: Tuotemuotoilun kärjessä
 ---
 
 Historiassa on ollut useita merkittäviä tuotesuunnittelijoita, jotka ovat muokanneet niin teollista muotoilua kuin arkipäivän esineitä ja teknologiaa. Nämä suunnittelijat ovat vaikuttaneet vahvasti muotoilun estetiikkaan, käytettävyyteen ja tuotekehitykseen. Tässä ovat tunnetuimpia tuotesuunnittelijoita, jotka ovat jättäneet pysyvän jäljen muotoilun maailmaan:

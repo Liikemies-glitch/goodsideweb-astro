@@ -9,7 +9,7 @@ author: mikki
 tags:
   - Käyttökokemus
   - UXR
-heroImage: images/tekoalynatiivi-kayttajatutkimus/featured.png
+heroImage: ../../assets/blog/images/tekoalynatiivi-kayttajatutkimus/featured.webp
 heroImageAlt: Tekoälynatiivi käyttäjätutkimus modernisoi ihmiskeskeisen muotoilun
 ---
 
@@ -17,7 +17,7 @@ Nykyajan nopeatempoisessa liiketoimintaympäristössä perinteiset akateemiset k
 
 * * *
 
-![](images/tekoalynatiivi-kayttajatutkimus/mikki-goodside-300x300.png) _Moro!_  _Mun nimeni on [Mikki Aalto-Ylevä](https://www.linkedin.com/in/mikkiaaltoyleva/). Olen yksi The Good Side Oy:n perustajista. Mä loin tän artikkelin_ _tekoälyavusteisesti eräästä [LinkedIn-postauksesta](https://www.linkedin.com/posts/mikkiaaltoyleva_uxr-tekoaeulynatiivi-kaeuyttaeujaeututkimus-activity-7250401293251268609-ky06?utm_source=share&utm_medium=member_desktop)__. Mukavia lukuhetkiä._
+![](/images/blog/tekoalynatiivi-kayttajatutkimus/mikki-goodside-300x300.png) _Moro!_  _Mun nimeni on [Mikki Aalto-Ylevä](https://www.linkedin.com/in/mikkiaaltoyleva/). Olen yksi The Good Side Oy:n perustajista. Mä loin tän artikkelin_ _tekoälyavusteisesti eräästä [LinkedIn-postauksesta](https://www.linkedin.com/posts/mikkiaaltoyleva_uxr-tekoaeulynatiivi-kaeuyttaeujaeututkimus-activity-7250401293251268609-ky06?utm_source=share&utm_medium=member_desktop)__. Mukavia lukuhetkiä._
 
 * * *
 
@@ -41,7 +41,7 @@ Ratkaisuna edellä mainittuihin ongelmiin on suositeltu tekoälyavusteisia käyt
 
 ### **Käytännön kokemuksia tekoälynatiivista käyttäjätutkimuksesta**
 
-Tekoälynatiivien käyttäjätutkimusmenetelmien tehokkuus on saanut positiivista palautetta alan ammattilaisilta. Eräs kokenut UX Designer kansainvälistyvästä organisaatiosta totesi menetelmien nopeuttavan ja helpottavan testitilanteiden fasilitointia huomattavasti. Tämä palaute kuvastaa hyvin sitä, miten tekoälynatiivit menetelmät voivat tehostaa käyttäjätutkimuksen käytännön toteutusta. ![](images/tekoalynatiivi-kayttajatutkimus/Microcopyt-testissa-png-e1728213322864.webp)
+Tekoälynatiivien käyttäjätutkimusmenetelmien tehokkuus on saanut positiivista palautetta alan ammattilaisilta. Eräs kokenut UX Designer kansainvälistyvästä organisaatiosta totesi menetelmien nopeuttavan ja helpottavan testitilanteiden fasilitointia huomattavasti. Tämä palaute kuvastaa hyvin sitä, miten tekoälynatiivit menetelmät voivat tehostaa käyttäjätutkimuksen käytännön toteutusta. ![](/images/blog/tekoalynatiivi-kayttajatutkimus/Microcopyt-testissa-png-e1728213322864.webp)
 
 ### **Tekoälynatiivi käyttäjätutkimus yhdistää nopeuden ja laadun**
 
@@ -57,7 +57,7 @@ Tekoälynatiivien käyttäjätutkimusmenetelmien yleistyminen on vasta alkuvaihe
 
 ## **Tekoälynatiivien menetelmien käyttöönotto ja vaikutukset**
 
-Tekoälynatiivien käyttäjätutkimusmenetelmien käyttöönotto vaatii organisaatioilta uudenlaista ajattelua ja valmiutta omaksua uusia työkaluja. Tämä voi aluksi kohdata vastustusta perinteisiin menetelmiin tottuneissa organisaatioissa. On kuitenkin tärkeää ymmärtää, että tekoälynatiivit menetelmät eivät korvaa inhimillistä asiantuntemusta, vaan pikemminkin tehostavat ja tukevat sitä. ![](images/tekoalynatiivi-kayttajatutkimus/design-sprint-brainstormaus-kaynnissa.png)
+Tekoälynatiivien käyttäjätutkimusmenetelmien käyttöönotto vaatii organisaatioilta uudenlaista ajattelua ja valmiutta omaksua uusia työkaluja. Tämä voi aluksi kohdata vastustusta perinteisiin menetelmiin tottuneissa organisaatioissa. On kuitenkin tärkeää ymmärtää, että tekoälynatiivit menetelmät eivät korvaa inhimillistä asiantuntemusta, vaan pikemminkin tehostavat ja tukevat sitä. ![](/images/blog/tekoalynatiivi-kayttajatutkimus/design-sprint-brainstormaus-kaynnissa.png)
 
 ### **Tekoälynatiivien menetelmien vaikutus UX-ammattilaisten rooliin**
 

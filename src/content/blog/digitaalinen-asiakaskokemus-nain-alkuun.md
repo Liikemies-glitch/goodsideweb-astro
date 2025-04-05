@@ -1,14 +1,11 @@
 ---
-title: Digitaalinen asiakaskokemus - näin alkuun
-pubDate: '2024-06-29T17:03:43.000Z'
-description: >-
-  Digitaalisen asiakaskokemuksen kehittäminen vaatii syvällistä ymmärrystä
-  asiakkaista, saavutettavia ja käytettäviä ratkaisuja, personoitua sisältöä..
+title: "Digitaalinen asiakaskokemus: Näin pääset alkuun"
+pubDate: 2023-08-15
+heroImage: ../../assets/blog/images/digitaalinen-asiakaskokemus-nain-alkuun/featured.webp
+description: "Digitaalinen asiakaskokemus on enemmän kuin verkkosivusto. Se kattaa kaikki digitaaliset kosketuspisteet. Miten aloittaa sen kehittäminen ja mitä ottaa huomioon?"
+category: "design"
+tags: ["design", "asiakaskokemus", "digitaalinen"]
 author: moretagoy
-tags:
-  - Asiakaskokemus
-heroImage: images/digitaalinen-asiakaskokemus-nain-alkuun/featured.png
-heroImageAlt: Digitaalinen asiakaskokemus - näin alkuun
 ---
 
 Digitaalisen asiakaskokemuksen kehittäminen on elintärkeää nykyaikaisessa liiketoiminnassa, ja se voi merkittävästi vaikuttaa asiakastyytyväisyyteen ja asiakasuskollisuuteen. Tässä ovat **viisi tärkeintä asiaa**, jotka on syytä ottaa huomioon digitaalisen asiakaskokemuksen kehittämisessä:

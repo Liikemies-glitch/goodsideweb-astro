@@ -8,7 +8,7 @@ description: >-
 author: moretagoy
 tags:
   - Palvelumuotoilu
-heroImage: images/design-thinking-prosessi-joka-sytyttaa-luovuuden-liekin/featured.png
+heroImage: ../../assets/blog/images/design-thinking-prosessi-joka-sytyttaa-luovuuden-liekin/featured.webp
 heroImageAlt: 'Design Thinking: prosessi, joka sytyttää luovuuden liekin'
 ---
 

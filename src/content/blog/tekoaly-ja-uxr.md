@@ -7,7 +7,7 @@ description: >-
 author: moretagoy
 tags:
   - UXR
-heroImage: images/tekoaly-ja-uxr/featured.png
+heroImage: ../../assets/blog/images/tekoaly-ja-uxr/featured.webp
 heroImageAlt: Tekoäly ja UXR
 ---
 

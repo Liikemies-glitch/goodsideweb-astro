@@ -7,7 +7,7 @@ description: >-
 author: moretagoy
 tags:
   - Palvelumuotoilu
-heroImage: images/mita-on-palvelumuotoilu/featured.png
+heroImage: ../../assets/blog/images/mita-on-palvelumuotoilu/featured.webp
 heroImageAlt: Mitä on palvelumuotoilu?
 ---
 

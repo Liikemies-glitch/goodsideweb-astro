@@ -8,7 +8,7 @@ description: >-
 author: moretagoy
 tags:
   - Design
-heroImage: images/ui-suunnittelijan-tyokalupakki/featured.png
+heroImage: ../../assets/blog/images/ui-suunnittelijan-tyokalupakki/featured.webp
 heroImageAlt: UI-suunnittelijan työkalupakki
 ---
 
@@ -58,7 +58,7 @@ Työkalu, jota käytetään komponenttien kehittämiseen ja dokumentoimiseen des
 
 [https://storybook.js.org/](https://storybook.js.org/)
 
-![](images/ui-suunnittelijan-tyokalupakki/coolors-1400x795.webp)
+![](/images/blog/ui-suunnittelijan-tyokalupakki/coolors-1400x795.webp)
 
 ## **Coolors**
 

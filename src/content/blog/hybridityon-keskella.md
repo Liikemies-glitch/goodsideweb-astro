@@ -1,12 +1,11 @@
 ---
-title: Hybridityön keskellä
-pubDate: '2024-07-30T09:25:24.000Z'
-description: >-
-  Kun aamulla ei tarvitse matkustaa työpaikalle kuin viisi metriä, voi aamulla
-  nukkua huomattavasti pidempään.
+title: "Hybridityön keskellä: Kuinka suunnitella toimiva toimisto?"
+description: "Hybridityö on tullut jäädäkseen. Se tarjoaa joustavuutta, mutta asettaa uusia haasteita toimiston suunnittelulle. Miten luoda tila, joka palvelee sekä etä- että lähityöntekijöitä?"
+pubDate: "2025-04-01"
+heroImage: ../../assets/blog/images/hybridityon-keskella/featured.webp
+category: "työelämä"
+tags: ["hybridityö", "työelämä", "etätyö"]
 author: moretagoy
-tags: []
-heroImage: images/hybridityon-keskella/featured.png
 heroImageAlt: Hybridityön keskellä
 ---
 
@@ -42,4 +41,5 @@ Oma työarki on nyt tässä hetkessä todella helppoa. Voisin periaatteessa asua
 
 ### Yhteenveto
 
-Olisi tavallaan hullua luopua tästä tilasta jossa nyt on. Arjessa on hyvää tasapainoa työn ja vapaa-ajan välillä. Liikkuminen ja oma jaksaminen on helpompi toteuttaa kun työpäivän mitta ei veny turhien matkojen takia.   **Janne Gylling** janne@goodside.fi 044 750 4444
+Olisi tavallaan hullua luopua tästä tilasta jossa nyt on. Arjessa on hyvää tasapainoa työn ja vapaa-ajan välillä. Liikkuminen ja oma jaksaminen on helpompi toteuttaa kun työpäivän mitta ei veny turhien matkojen takia.  
+**Janne Gylling** janne@goodside.fi 044 750 4444

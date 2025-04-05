@@ -6,7 +6,7 @@ description: >-
   vuorovaikutukseen, selkeisiin tavoitteisiin ja suunnitelmallisuuteen.
 author: moretagoy
 tags: []
-heroImage: images/hyvan-kehityskeskustelun-malli/featured.png
+heroImage: ../../assets/blog/images/hyvan-kehityskeskustelun-malli/featured.webp
 heroImageAlt: Hyvän kehityskeskustelun malli
 ---
 

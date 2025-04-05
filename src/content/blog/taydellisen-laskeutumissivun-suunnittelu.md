@@ -6,7 +6,7 @@ description: >-
   kävijöitä ja ohjaamaan heidät suorittamaan tietty toimenpide..
 author: moretagoy
 tags: []
-heroImage: images/taydellisen-laskeutumissivun-suunnittelu/featured.png
+heroImage: ../../assets/blog/images/taydellisen-laskeutumissivun-suunnittelu/featured.webp
 heroImageAlt: Täydellisen laskeutumissivun suunnittelu
 ---
 

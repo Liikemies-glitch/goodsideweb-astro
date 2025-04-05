@@ -7,7 +7,7 @@ description: >-
 author: moretagoy
 tags:
   - UX
-heroImage: images/jakob-nielsen-ja-kaytettavyyden-periaatteet/featured.png
+heroImage: ../../assets/blog/images/jakob-nielsen-ja-kaytettavyyden-periaatteet/featured.webp
 heroImageAlt: Jakob Nielsen ja käytettävyyden periaatteet
 ---
 

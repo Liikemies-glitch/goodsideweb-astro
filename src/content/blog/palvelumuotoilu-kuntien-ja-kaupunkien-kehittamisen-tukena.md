@@ -1,9 +1,10 @@
 ---
 title: Palvelumuotoilu kuntien ja kaupunkien kehittämisen tukena
 pubDate: '2024-06-21T13:06:47.000Z'
+description: Palvelumuotoilu auttaa kuntia ja kaupunkeja kehittämään palveluitaan käyttäjälähtöisesti ja tehokkaasti. Se tuo uusia näkökulmia julkisten palveluiden suunnitteluun.
 author: moretagoy
 tags: []
-heroImage: images/palvelumuotoilu-kuntien-ja-kaupunkien-kehittamisen-tukena/featured.png
+heroImage: ../../assets/blog/images/palvelumuotoilu-kuntien-ja-kaupunkien-kehittamisen-tukena/featured.webp
 heroImageAlt: Palvelumuotoilu kuntien ja kaupunkien kehittämisen tukena
 ---
 

@@ -8,7 +8,7 @@ description: >-
   visuaalisiin elementteihin.
 author: moretagoy
 tags: []
-heroImage: images/visuaalisen-suunnittelijan-palkkaaminen/featured.png
+heroImage: ../../assets/blog/images/visuaalisen-suunnittelijan-palkkaaminen/featured.webp
 heroImageAlt: Visuaalisen suunnittelijan palkkaaminen
 ---
 

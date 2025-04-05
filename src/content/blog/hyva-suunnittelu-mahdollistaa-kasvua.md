@@ -9,7 +9,7 @@ author: moretagoy
 tags:
   - Käyttökokemus
   - UX
-heroImage: images/hyva-suunnittelu-mahdollistaa-kasvua/featured.png
+heroImage: ../../assets/blog/images/hyva-suunnittelu-mahdollistaa-kasvua/featured.webp
 heroImageAlt: Hyvä suunnittelu mahdollistaa kasvua
 ---
 

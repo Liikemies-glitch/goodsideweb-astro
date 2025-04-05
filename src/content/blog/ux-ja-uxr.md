@@ -8,7 +8,7 @@ author: moretagoy
 tags:
   - UX
   - UXR
-heroImage: images/ux-ja-uxr/featured.png
+heroImage: ../../assets/blog/images/ux-ja-uxr/featured.webp
 heroImageAlt: UX ja UXR
 ---
 

@@ -1,15 +1,18 @@
 ---
-title: 'Design Thinking: menestyvien organisaatioiden salainen ainesosa'
-pubDate: '2024-10-13T07:21:21.000Z'
+title: "Design Thinking: Menestyvien organisaatioiden salainen ainesosa"
+pubDate: "2024-07-15T07:15:00.000Z"
 description: >-
-  Design thinking on selvästi ollut keskeinen tekijä monien menestyvien
-  yritysten, kuten Applen, Googlen ja Airbnb:n, matkassa.
-author: moretagoy
+  Tutustu Design Thinking -prosessiin ja sen rooliin menestyvien organisaatioiden
+  strategiassa. Lue, miten asiakaslähtöisyys, luovuus ja iteratiivinen kehitys
+  voivat viedä organisaatiosi uudelle tasolle.
+seoTitle: "Design Thinking: Menestyvien organisaatioiden salaisuus"
+author: mikki
 tags:
-  - Palvelumuotoilu
-heroImage: >-
-  images/design-thinking-menestyvien-organisaatioiden-salainen-ainesosa/featured.jpg
-heroImageAlt: 'Design Thinking: menestyvien organisaatioiden salainen ainesosa'
+  - "design thinking"
+  - "innovaatio"
+  - "strategia"
+heroImage: ../../assets/blog/images/design-thinking-menestyvien-organisaatioiden-salainen-ainesosa/featured.webp
+heroImageAlt: "Design Thinking -prosessi kuvitettuna"
 ---
 
 #### Monet maailman menestyneimmistä yrityksistä, kuten Apple, ovat saavuttaneet ikonisen asemansa ymmärtämällä, että menestys ei tule vain teknologiasta tai tuotteista.

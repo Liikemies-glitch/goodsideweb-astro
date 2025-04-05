@@ -9,7 +9,7 @@ seoTitle: Design Ops ja visuaalinen yhtenäisyys
 author: moretagoy
 tags:
   - DesignOps
-heroImage: images/design-ops/featured.png
+heroImage: ../../assets/blog/images/designops-muotoiluosaamisen-kumppani/featured.webp
 heroImageAlt: Design Ops
 ---
 
@@ -17,11 +17,11 @@ Törmäsin verkossa aikanaan ajatukseen Design Ops -palvelusta. Ryhmä joka pit�
 
 > Ehkä yleisin syy siihen, että yrityksen visuaalisuus lähtee ns. lapasesta, on se, että jokainen suunnittelija haluaa tehdä vähän oman näköistä jälkeä.
 
-Kuka teidän organisaatiossa vastaa jokaisesta ulos- ja sisään näkyvästä visuaalisesta ratkaisusta? Onko jollain henkilöllä ”kaikkivaltiaan” voima tehdä päätöksiä ja yliajaa suunnitteluun liittyviä ratkaisuja? Jony Ive avasi jo vuosia sitten Applen ajatusmaailmaa ja sitä miten he suhtautuvat designiin.
+Kuka teidän organisaatiossa vastaa jokaisesta ulos- ja sisään näkyvästä visuaalisesta ratkaisusta? Onko jollain henkilöllä "kaikkivaltiaan" voima tehdä päätöksiä ja yliajaa suunnitteluun liittyviä ratkaisuja? Jony Ive avasi jo vuosia sitten Applen ajatusmaailmaa ja sitä miten he suhtautuvat designiin.
 
 ## Universal Guideline
 
-Helpoin tapa rajata ja hallita, on rakentaa selkeä universal guideline, eli ohjeisto jossa on määritelty yrityksen visuaalinen logiikka. Todella hieno malli siitä on visuaaliseen ja digitaalisen muotoon tehty [Uberin uudistus](https://www.cssdesignawards.com/sites/uber-2018-rebrand-case-study/33697/). Uber on määritellyt jo sillä tarkkuudella elementtien muodot, painotukset ja liikkeet, että yksittäisen suunnittelijan ei tarvitse edes ajatella. Näin jokainen tuotos on linjassa ja se luo hallitun yhtenäisen tavan käsitellä yrityksen visuaalisuutta.
+Helpoin tapa rajata ja hallita, on rakentaa selkeä universal guideline, eli ohjeisto jossa on määritelty yrityksen visuaalinen logiikka. Todella hieno malli siitä on visuaaliseen ja digitaalisen muotoon tehty [Uberin uudistus](https://www.cssdesignawards.com/sites/uber-2018-rebrand-case-study/33697/). Uber on määritellyt jo sillä tarkkuudella elementtien muodot, painotukset ja liikkeet, että yksittäisen suunnittelijan ei tarvitse edes ajatella. Näin jokainen tuotos on linjassa ja se luo hallitun yhtenäisen tavan käsitellä yrityksen visuaalisuutta.
 
 ## Design as a Service
 

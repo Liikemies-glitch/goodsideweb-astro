@@ -8,7 +8,7 @@ description: >-
 author: moretagoy
 tags:
   - UX
-heroImage: images/prototyypin-testaaminen/featured.png
+heroImage: ../../assets/blog/images/prototyypin-testaaminen/featured.webp
 heroImageAlt: Prototyypin testaaminen
 ---
 

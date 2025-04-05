@@ -7,7 +7,7 @@ description: >-
 author: moretagoy
 tags:
   - Design
-heroImage: images/suunnittele-kuin-jony-ive/featured.png
+heroImage: ../../assets/blog/images/suunnittele-kuin-jony-ive/featured.webp
 heroImageAlt: Suunnittele kuin Jony Ive
 ---
 

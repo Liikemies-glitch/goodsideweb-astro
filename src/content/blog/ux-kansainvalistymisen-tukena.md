@@ -7,7 +7,7 @@ description: >-
 author: moretagoy
 tags:
   - UX
-heroImage: images/ux-kansainvalistymisen-tukena/featured.png
+heroImage: ../../assets/blog/images/ux-kansainvalistymisen-tukena/featured.webp
 heroImageAlt: UX kansainvälistymisen tukena
 ---
 

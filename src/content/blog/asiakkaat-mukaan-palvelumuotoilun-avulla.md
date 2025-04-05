@@ -8,7 +8,7 @@ description: >-
 author: moretagoy
 tags:
   - Palvelumuotoilu
-heroImage: images/asiakkaat-mukaan-palvelumuotoilun-avulla/featured.png
+heroImage: ../../assets/blog/images/asiakkaat-mukaan-palvelumuotoilun-avulla/featured.webp
 heroImageAlt: Asiakkaat mukaan palvelumuotoilun avulla
 ---
 

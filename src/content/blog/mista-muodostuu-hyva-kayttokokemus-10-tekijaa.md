@@ -6,7 +6,7 @@ description: >-
   tehokkaan ja helppokäyttöisen kokemuksen.
 author: moretagoy
 tags: []
-heroImage: images/mista-muodostuu-hyva-kayttokokemus-10-tekijaa/featured.png
+heroImage: ../../assets/blog/images/mista-muodostuu-hyva-kayttokokemus-10-tekijaa/featured.webp
 heroImageAlt: Mistä muodostuu hyvä käyttökokemus? 10 tekijää
 ---
 

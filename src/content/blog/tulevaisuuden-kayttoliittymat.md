@@ -7,7 +7,7 @@ description: >-
 seoTitle: 'Auton käyttöliittymä: Käytettävyys &#038; turvallisuus'
 author: moretagoy
 tags: []
-heroImage: images/tulevaisuuden-kayttoliittymat/featured.png
+heroImage: ../../assets/blog/images/tulevaisuuden-kayttoliittymat/featured.webp
 heroImageAlt: Tulevaisuuden käyttöliittymät
 ---
 

@@ -7,7 +7,7 @@ description: >-
 author: moretagoy
 tags:
   - Asiakaskokemus
-heroImage: images/rakenna-palveluita-kuten-netflix/featured.png
+heroImage: ../../assets/blog/images/rakenna-palveluita-kuten-netflix/featured.webp
 heroImageAlt: Rakenna palveluita kuten Netflix
 ---
 

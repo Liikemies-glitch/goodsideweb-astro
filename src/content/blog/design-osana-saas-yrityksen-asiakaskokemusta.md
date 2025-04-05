@@ -10,7 +10,7 @@ tags:
   - Design
   - Käyttökokemus
   - UX
-heroImage: images/design-osana-saas-yrityksen-asiakaskokemusta/featured.png
+heroImage: ../../assets/blog/images/design-osana-saas-yrityksen-asiakaskokemusta/featured.webp
 heroImageAlt: Design osana SaaS-yrityksen asiakaskokemusta
 ---
 

@@ -7,7 +7,7 @@ description: >-
 author: moretagoy
 tags:
   - Palvelumuotoilu
-heroImage: images/palvelupolun-visualisointi/featured.png
+heroImage: ../../assets/blog/images/palvelupolun-visualisointi/featured.webp
 heroImageAlt: Palvelupolun visualisointi
 ---
 

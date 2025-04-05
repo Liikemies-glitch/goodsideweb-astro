@@ -6,7 +6,7 @@ description: >-
   suunnittelijaksi?
 author: moretagoy
 tags: []
-heroImage: images/ux-suunnittelun-salainen-arkku/featured.png
+heroImage: ../../assets/blog/images/ux-suunnittelun-salainen-arkku/featured.webp
 heroImageAlt: UX-suunnittelun salainen arkku
 ---
 

@@ -7,7 +7,7 @@ description: >-
 author: moretagoy
 tags:
   - Design
-heroImage: images/konversio-optimointi-ja-top5-vinkit/featured.png
+heroImage: ../../assets/blog/images/konversio-optimointi-ja-top5-vinkit/featured.webp
 heroImageAlt: Konversio-optimointi ja TOP5 vinkit
 ---
 

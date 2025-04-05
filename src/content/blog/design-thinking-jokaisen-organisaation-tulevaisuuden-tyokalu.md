@@ -1,17 +1,18 @@
 ---
-title: 'Design Thinking: jokaisen organisaation tulevaisuuden työkalu'
-pubDate: '2024-07-13T07:05:10.000Z'
+title: "Design Thinking: Jokaisen organisaation tulevaisuuden työkalu"
+pubDate: "2024-07-15T07:15:00.000Z"
 description: >-
-  Organisaatiot, jotka omaksuvat design thinkingin osaksi päivittäistä
-  toimintaansa, pystyvät vastaamaan paremmin käyttäjien ja markkinoiden
-  vaatimuksiin, parantamaan sisäistä yhteistyötä ja luomaan innovaatioita, jotka
-  kestävät aikaa.
-author: moretagoy
+  Tutustu Design Thinking -prosessiin ja sen rooliin organisaatioiden
+  tulevaisuuden menestyksessä. Lue, miten innovatiiviset ratkaisut syntyvät
+  asiakaslähtöisyyden ja luovan yhteistyön avulla.
+seoTitle: "Design Thinking: Organisaation tulevaisuuden työkalu"
+author: mikki
 tags:
-  - Palvelumuotoilu
-heroImage: >-
-  images/design-thinking-jokaisen-organisaation-tulevaisuuden-tyokalu/featured.png
-heroImageAlt: 'Design Thinking: jokaisen organisaation tulevaisuuden työkalu'
+  - "design thinking"
+  - "innovaatio"
+  - "asiakaslähtöisyys"
+heroImage: ../../assets/blog/images/design-thinking-jokaisen-organisaation-tulevaisuuden-tyokalu/featured.webp
+heroImageAlt: "Design Thinking prosessikaavio"
 ---
 
 Design thinking on viime vuosina noussut suosituksi lähestymistavaksi ongelmanratkaisuun ja innovaation luomiseen. Se on erityisen arvokas, koska sen avulla yritykset voivat keskittyä käyttäjälähtöisiin ratkaisuihin ja löytää luovia, käytännönläheisiä tapoja kehittää tuotteita, palveluja ja prosesseja. Vaikka design thinking on perinteisesti yhdistetty muotoilijoihin ja tuotekehitystiimeihin, mielestäni se on työkalu, jonka jokaisen organisaation tulisi ottaa osaksi arkea.

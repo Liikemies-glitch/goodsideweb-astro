@@ -6,7 +6,7 @@ description: >-
   kehittämistä.
 author: moretagoy
 tags: []
-heroImage: images/mita-on-ux-kirjoittaminen/featured.png
+heroImage: ../../assets/blog/images/mita-on-ux-kirjoittaminen/featured.webp
 heroImageAlt: Mitä on UX kirjoittaminen?
 ---
 

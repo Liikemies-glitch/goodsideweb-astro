@@ -7,11 +7,11 @@ description: >-
 author: moretagoy
 tags:
   - UX
-heroImage: images/miten-tuotetaan-maailmanluokan-ux/featured.png
+heroImage: ../../assets/blog/images/miten-tuotetaan-maailmanluokan-ux/featured.webp
 heroImageAlt: Miten tuotetaan maailmanluokan UX?
 ---
 
-Jos klikkasit tätä artikkelia, sinulla on ehkä palvelu, josta tiedät ettei se ole ihan timanttisessa kunnossa. Ehkä aika on ajanut siitä ohi, tai pyörittelet edelleen sitä versiota joka koitettiin saada nopeasti valmiiksi. Ehkä ei ole ollut budjettia jatkokehittää, tai projektista puuttui kaikkiaan suunnittelija. Kaikki nämä ovat niitä syitä, joista keskustelemme asiakkaidemme kanssa. En halua rakentaa sinulle mitään tarinaa siitä miten mystisen prosessin kautta saat parannettua omaa palveluasi. Prosessi jonka kautta itse aina ajattelen UX-kehityshankkeita, on miljoonaan kertaan käytetty "**tupla timantti**". Tästä on piirretty yhtä monta versiota kuin on tekijöitä, mutta perusajatus on aina sama. ![](images/miten-tuotetaan-maailmanluokan-ux/goodside-doublediamond-1024x598.jpeg)  
+Jos klikkasit tätä artikkelia, sinulla on ehkä palvelu, josta tiedät ettei se ole ihan timanttisessa kunnossa. Ehkä aika on ajanut siitä ohi, tai pyörittelet edelleen sitä versiota joka koitettiin saada nopeasti valmiiksi. Ehkä ei ole ollut budjettia jatkokehittää, tai projektista puuttui kaikkiaan suunnittelija. Kaikki nämä ovat niitä syitä, joista keskustelemme asiakkaidemme kanssa. En halua rakentaa sinulle mitään tarinaa siitä miten mystisen prosessin kautta saat parannettua omaa palveluasi. Prosessi jonka kautta itse aina ajattelen UX-kehityshankkeita, on miljoonaan kertaan käytetty "**tupla timantti**". Tästä on piirretty yhtä monta versiota kuin on tekijöitä, mutta perusajatus on aina sama. ![](/images/blog/miten-tuotetaan-maailmanluokan-ux/goodside-doublediamond-1024x598.jpeg)  
 
 ### Havainnoi ja ymmärrä
 

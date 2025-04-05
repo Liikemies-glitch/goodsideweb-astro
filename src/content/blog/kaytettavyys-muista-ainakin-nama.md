@@ -7,7 +7,7 @@ description: >-
 author: moretagoy
 tags:
   - UXR
-heroImage: images/kaytettavyys-muista-ainakin-nama/featured.png
+heroImage: ../../assets/blog/images/kaytettavyys-muista-ainakin-nama/featured.webp
 heroImageAlt: Käytettävyys - muista ainakin nämä
 ---
 

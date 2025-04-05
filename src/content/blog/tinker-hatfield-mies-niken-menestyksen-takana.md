@@ -7,7 +7,7 @@ description: >-
 author: moretagoy
 tags:
   - Design
-heroImage: images/tinker-hatfield-mies-niken-menestyksen-takana/featured.png
+heroImage: ../../assets/blog/images/tinker-hatfield-mies-niken-menestyksen-takana/featured.webp
 heroImageAlt: Tinker Hatfield – mies Niken menestyksen takana
 ---
 

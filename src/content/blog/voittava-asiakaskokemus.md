@@ -1,15 +1,11 @@
 ---
-title: Voittava asiakaskokemus
-pubDate: '2024-09-29T15:28:44.000Z'
-description: >-
-  Asiakaslähtöisyys on voittavan asiakaskokemuksen perusta. Yrityksen on
-  ymmärrettävä asiakkaidensa tarpeet, toiveet, haasteet ja motiivit
-  syvällisesti.
+title: "Kohti voittavaa asiakaskokemusta"
+pubDate: 2022-12-08T09:56:00+02:00
+heroImage: ../../assets/blog/images/voittava-asiakaskokemus/featured.webp
+description: "Asiakaskokemus on kilpailuvaltti. Miten luodaan kokemus, joka ei vain tyydytä, vaan ilahduttaa ja sitouttaa asiakkaan? UX-suunnittelu ja palvelumuotoilu ovat avainasemassa."
+category: "design"
+tags: ["design", "asiakaskokemus", "ux"]
 author: moretagoy
-tags:
-  - Asiakaskokemus
-heroImage: images/voittava-asiakaskokemus/featured.png
-heroImageAlt: Voittava asiakaskokemus
 ---
 
 Voittava asiakaskokemus syntyy useiden tekijöiden yhteisvaikutuksesta, jotka kaikki liittyvät siihen, miten yritys tai organisaatio onnistuu vastaamaan asiakkaiden odotuksiin ja ylittämään ne. Tässä keskeiset elementit, joista voittava asiakaskokemus muodostuu:
