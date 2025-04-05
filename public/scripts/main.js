@@ -9,6 +9,27 @@ document.addEventListener('DOMContentLoaded', () => {
             menuToggle.classList.toggle('active');
         });
     }
+
+    // FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-question-wrapper');
+
+    faqItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const parentItem = item.closest('.faq-item');
+            const toggle = item.querySelector('.faq-toggle');
+
+            if (parentItem) {
+                parentItem.classList.toggle('open');
+
+                // Optional: Change toggle text content (+/-)
+                if (parentItem.classList.contains('open')) {
+                    // toggle.textContent = '-'; // Uncomment if you prefer minus sign
+                } else {
+                    // toggle.textContent = '+'; // Uncomment if you prefer minus sign
+                }
+            } 
+        });
+    });
 });
 
 // Smooth scroll for anchor links within the same page

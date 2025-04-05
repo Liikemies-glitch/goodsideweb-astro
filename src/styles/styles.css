@@ -1021,49 +1021,60 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
-.faq__item {
-    border-bottom: 1px solid var(--border-color);
-    padding: var(--spacing-xs) 0;
+.faq-items {
+    max-width: 800px; /* Limit width for readability */
+    margin: 0 auto;
 }
 
-.faq__item summary {
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 1.125rem;
-    color: var(--secondary-color);
-    padding: var(--spacing-xs) var(--spacing-xs) var(--spacing-xs) 0;
-    position: relative;
-    list-style: none;
-    padding-right: 2rem;
-    line-height: 1.3;
+.faq-item {
+    padding: 0; 
+    border-bottom: 1px solid var(--color-border, #e0e0e0); 
+    margin-bottom: 0; /* Remove margin between items */
 }
 
-.faq__item summary::-webkit-details-marker {
-    display: none;
+/* Style for the clickable question area */
+.faq-question-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm) 0; /* Reduced padding */
+    cursor: pointer; 
 }
 
-.faq__item summary::after {
-    content: '+';
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--primary-color);
+.faq-question {
+    font-size: 1.1rem;
+    font-weight: 500; /* Medium weight */
+    color: var(--color-text-dark, #333); /* Darker text */
+    margin-right: var(--spacing-md);
+}
+
+.faq-toggle {
     font-size: 1.5rem;
-    transition: transform 0.3s ease;
+    font-weight: bold;
+    color: #DC3545; /* Red color like the image */
+    transition: transform 0.2s ease-in-out;
+    user-select: none; /* Prevent text selection */
 }
 
-.faq__item[open] summary::after {
-    transform: translateY(-50%) rotate(45deg);
+.faq-answer {
+    padding: 0 0 var(--spacing-sm) 0; /* Reduced padding */
+    color: var(--color-text-light, #666);
+    display: none; 
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
-.faq__item p {
-    color: var(--light-text);
-    line-height: 1.4;
-    padding: var(--spacing-xs) var(--spacing-xs) var(--spacing-xs) 0;
-    margin: 0;
-    font-size: 0.9375rem;
+/* Styles for the open state */
+.faq-item.open .faq-answer {
+    display: block; /* Show answer when open */
 }
+
+.faq-item.open .faq-toggle {
+    transform: rotate(45deg); /* Rotate plus to 'x' or minus */
+    /* Or change content to '-': */
+    /* content: '-'; */
+}
+
 /* Footer Styles */
 .footer {
     background-color: var(--background);
@@ -1827,4 +1838,72 @@ h1, h2, h3, h4, h5, h6 {
 .services-page .feature-card {
     max-width: 1200px;
     margin: 0 auto;
-} 
+}
+
+/* FAQ Section Styles */
+.faq-section {
+    padding: var(--spacing-xl) 0;
+    /* background-color: #fff; /* Or keep parent background */
+}
+
+.faq-section .section__header {
+    /* Centering is handled inline in index.astro */
+    margin-bottom: var(--spacing-xl); /* More space before items */
+}
+
+.faq-items {
+    max-width: 800px; /* Limit width for readability */
+    margin: 0 auto;
+}
+
+.faq-item {
+    /* Removed display: flex; justify-content: space-between; */
+    padding: 0; /* Reset padding, apply to inner elements */
+    border-bottom: 1px solid var(--color-border, #e0e0e0); /* Add border */
+    margin-bottom: 0; /* Remove margin between items */
+}
+
+/* Style for the clickable question area */
+.faq-question-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm) 0; /* Reduced padding */
+    cursor: pointer; /* Indicate it's interactive */
+}
+
+.faq-question {
+    font-size: 1.1rem;
+    font-weight: 500; /* Medium weight */
+    color: var(--color-text-dark, #333); /* Darker text */
+    margin-right: var(--spacing-md);
+}
+
+.faq-toggle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #DC3545; /* Red color like the image */
+    transition: transform 0.2s ease-in-out;
+    user-select: none; /* Prevent text selection */
+}
+
+.faq-answer {
+    padding: 0 0 var(--spacing-sm) 0; /* Reduced padding */
+    color: var(--color-text-light, #666);
+    display: none; /* Hidden by default */
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Styles for the open state */
+.faq-item.open .faq-answer {
+    display: block; /* Show answer when open */
+}
+
+.faq-item.open .faq-toggle {
+    transform: rotate(45deg); /* Rotate plus to 'x' or minus */
+    /* Or change content to '-': */
+    /* content: '-'; */
+}
+
+/* Ensure a newline follows */ 
