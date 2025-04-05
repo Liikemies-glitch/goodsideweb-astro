@@ -6,14 +6,16 @@ import React from 'react';
 function FloatingPaths({ position }: { position: number }) {
   const paths = Array.from({ length: 36 }, (_, i) => ({
     id: i,
-    d: `M-${380 - i * 5 * position} -${189 + i * 6}C-${
-      380 - i * 5 * position
-    } -${189 + i * 6} -${312 - i * 5 * position} ${216 - i * 6} ${
-      152 - i * 5 * position
-    } ${343 - i * 6}C${616 - i * 5 * position} ${470 - i * 6} ${
-      684 - i * 5 * position
-    } ${875 - i * 6} ${684 - i * 5 * position} ${875 - i * 6}`,
+    d: `M-${380 - i * 2 * position} -${89 + i * 6}C-${
+      380 - i * 2 * position
+    } -${89 + i * 6} -${312 - i * 2 * position} ${116 - i * 6} ${
+      152 - i * 2 * position
+    } ${243 - i * 6}C${616 - i * 2 * position} ${370 - i * 6} ${
+      684 - i * 2 * position
+    } ${775 - i * 6} ${684 - i * 2 * position} ${775 - i * 6}`,
     width: 0.5 + i * 0.03,
+    color: `hsl(261, 55%, ${10 + i * 0.57}%)`,
+    opacity: 0.1 + i * 0.015
   }))
 
   return (
@@ -24,13 +26,13 @@ function FloatingPaths({ position }: { position: number }) {
           <motion.path
             key={path.id}
             d={path.d}
-            stroke="currentColor"
+            stroke={path.color}
             strokeWidth={path.width}
-            strokeOpacity={0.05 + path.id * 0.02}
+            strokeOpacity={path.opacity}
             initial={{ pathLength: 0.3, opacity: 0 }}
             animate={{
               pathLength: 1,
-              opacity: [0, 0.4, 0],
+              opacity: [0, path.opacity * 0.6, 0],
               pathOffset: [0, 1, 0],
             }}
             transition={{
