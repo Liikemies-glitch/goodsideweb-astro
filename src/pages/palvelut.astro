@@ -18,7 +18,7 @@ const pageDescription = "Luomme poikkeuksellisia digitaalisia kokemuksia, jotka 
     </section>
 
     <!-- Osaamisalueet (korvaa vanhan tabi-osion) -->
-     <section class="expertise-section" style="padding-bottom: 4rem;">
+     <section class="expertise-section">
         <div class="container">
             <!-- Tähän tulee tabi-navigaatio tai suoraan kortit -->
              <div class="tabs-placeholder" style="margin-bottom: 3rem; text-align: center;">
@@ -268,7 +268,7 @@ const pageDescription = "Luomme poikkeuksellisia digitaalisia kokemuksia, jotka 
         display: flex;
         align-items: center;
         justify-content: center;
-        color: var(--color-primary);
+        color: var(--primary-color);
     }
 
      .card h4 {
@@ -307,7 +307,7 @@ const pageDescription = "Luomme poikkeuksellisia digitaalisia kokemuksia, jotka 
     }
 
      .card-link {
-        color: var(--color-primary);
+        color: var(--primary-color);
         font-weight: 500;
         text-decoration: none;
         transition: color 0.2s ease;
@@ -452,6 +452,20 @@ const pageDescription = "Luomme poikkeuksellisia digitaalisia kokemuksia, jotka 
         -webkit-text-fill-color: transparent;
         text-align: center; /* Muutettu keskelle */
         margin-top: var(--spacing-sm); /* Lisätään vähän marginaalia ylös */
+    }
+
+    /* Lisätään tyylit expertise-sectionille */
+    .expertise-section {
+        background-color: rgba(255, 255, 255, 0.5); /* Valkoinen tausta 50% läpinäkyvyydellä */
+        border-radius: var(--border-radius-lg, 12px); /* Pyöristetyt kulmat */
+        padding: var(--spacing-xl) 0; /* Sisäinen pystytila */
+        margin-bottom: var(--spacing-xl); /* Ulkoinen marginaali alas */
+         /* Lisätään varmuuden vuoksi, jos sectionille ei ole jo max-widthia */
+        max-width: calc(var(--container-width) + 2 * var(--spacing-md)); /* container + padding */
+        margin-left: auto; 
+        margin-right: auto;
+         /* Lisätään pieni varjo */
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     }
 
 </style>
