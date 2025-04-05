@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 const pageTitle = "Palvelut - The Good Side";
-const pageDescription = "Kiihdytä SaaS-liiketoimintasi kasvua The Good Side:n palveluilla. Keskitymme ratkaisemaan yleisimmät kasvun esteet SaaS-polullasi.";
+const pageDescription = "Kiihdytä SaaS-liiketoimintasi kasvua The Good Side:n palveluilla. Keskitymme ratkaisemaan yleisimmät kasvun esteet";
 ---
 <BaseLayout title={pageTitle} description={pageDescription}>
     <!-- Hero Section for Palvelut (using contact styles) -->
@@ -19,7 +19,7 @@ const pageDescription = "Kiihdytä SaaS-liiketoimintasi kasvua The Good Side:n p
     <section class="services" style="padding-top: 0; padding-bottom: 4rem;">
         <div class="container" style="padding-left: 0; padding-right: 0;">
             <!-- Added back the subtitle using index page style -->
-            <h2 class="logo-wall__title" style="text-align: left; margin-bottom: var(--spacing-xl); padding-left: 0; padding-right: 0;">Keskitymme ratkaisemaan yleisimmät kasvun esteet SaaS-polullasi.</h2>
+            <h2 class="logo-wall__title" style="text-align: left; margin-bottom: var(--spacing-xl); padding-left: 0; padding-right: 0;">Keskitymme ratkaisemaan yleisimmät kasvun esteet.</h2>
 
             <!-- Service Details / Tabs Placeholder -->
             <div class="service-details">
@@ -34,26 +34,25 @@ const pageDescription = "Kiihdytä SaaS-liiketoimintasi kasvua The Good Side:n p
                 <div class="service-content">
                     <!-- Content for Tuotepositiointi -->
                     <div id="tuotepositiointi" class="tab-pane active">
-                        <h3 class="tab-title">Tehokas tuotepositiointi</h3>
                         <div class="content-grid">
                             <div class="content-block">
-                                <h4>Ongelma:</h4>
+                                <h4>Ongelma</h4>
                                 <p>Kasvustrategian toteutus ontuu resurssipulan tai epäselvän suunnan vuoksi. Tuote ei erotu kilpailijoista.</p>
                             </div>
                             <div class="content-block">
-                                <h4>Ratkaisu:</h4>
+                                <h4>Ratkaisu</h4>
                                 <p>Kirkastamme ydinviestimme ja kohderyhmänne. Yhdistämme tuotestrategian, designin ja markkinoinnin tukemaan positiointia.</p>
                             </div>
                             <div class="content-block">
-                                <h4>Hyödyt:</h4>
+                                <h4>Hyödyt</h4>
                                 <p>Selkeämpi markkina-asema, tehokkaampi myynti ja markkinointi, parempi asiakasymmärrys.</p>
                             </div>
                             <div class="content-block">
-                                <h4>Mittari:</h4>
+                                <h4>Mittarit</h4>
                                 <p class="metric-description">
-                                    <span class="metric-item"><span class="metric-icon">📈</span> Markkinaosuuden kasvu</span>
-                                    <span class="metric-item"><span class="metric-icon">🎯</span> konversioasteet</span>
-                                    <span class="metric-item"><span class="metric-icon">💬</span> asiakaspalaute</span>
+                                    <span class="metric-item"><span class="metric-icon">📈</span> Konversioasteet</span>
+                                    <span class="metric-item"><span class="metric-icon">🎯</span> Markkinaosuuden kehitys</span>
+                                    <span class="metric-item"><span class="metric-icon">💬</span> Positiivinen word-of-mouth</span>
                                 </p>
                             </div>
                         </div>
@@ -61,22 +60,21 @@ const pageDescription = "Kiihdytä SaaS-liiketoimintasi kasvua The Good Side:n p
 
                     <!-- Content for Käyttäjäpolut -->
                      <div id="kayttajapolut" class="tab-pane">
-                        <h3 class="tab-title">Optimoidut käyttäjäpolut</h3>
-                         <div class="content-grid">
+                        <div class="content-grid">
                             <div class="content-block">
-                                <h4>Ongelma:</h4>
+                                <h4>Ongelma</h4>
                                 <p>Asiakkaat eksyvät tai turhautuvat monimutkaisiin prosesseihin. Konversioprosentit jäävät alhaisiksi kriittisissä vaiheissa.</p>
                             </div>
                             <div class="content-block">
-                                <h4>Ratkaisu:</h4>
+                                <h4>Ratkaisu</h4>
                                 <p>Analysoimme ja visualisoimme nykyiset käyttäjäpolut. Suunnittelemme ja testaamme intuitiivisempia ja tehokkaampia polkuja.</p>
                             </div>
                             <div class="content-block">
-                                <h4>Hyödyt:</h4>
+                                <h4>Hyödyt</h4>
                                 <p>Parempi käyttäjäkokemus, korkeammat konversiot, vähentynyt asiakaspoistuma.</p>
                             </div>
                             <div class="content-block">
-                                <h4>Mittari:</h4>
+                                <h4>Mittarit</h4>
                                 <p class="metric-description">
                                     <span class="metric-item"><span class="metric-icon">✅</span> Tehtävien onnistumisprosentti</span>
                                     <span class="metric-item"><span class="metric-icon">⏱️</span> käytetty aika</span>
@@ -88,22 +86,21 @@ const pageDescription = "Kiihdytä SaaS-liiketoimintasi kasvua The Good Side:n p
 
                     <!-- Content for Käyttöliittymät -->
                     <div id="kayttoliittyma" class="tab-pane">
-                       <h3 class="tab-title">Käyttöliittymät ja käyttäjäkokemus</h3>
-                         <div class="content-grid">
+                        <div class="content-grid">
                             <div class="content-block">
-                                <h4>Ongelma:</h4>
+                                <h4>Ongelma</h4>
                                 <p>Käyttöliittymä on vanhentunut, sekava tai ei vastaa käyttäjien tarpeita. Huono käytettävyys heikentää asiakastyytyväisyyttä.</p>
                             </div>
                             <div class="content-block">
-                                <h4>Ratkaisu:</h4>
+                                <h4>Ratkaisu</h4>
                                 <p>Modernisoimme käyttöliittymän designin ja parannamme käytettävyyttä käyttäjätutkimuksen ja parhaiden käytäntöjen pohjalta.</p>
                             </div>
                             <div class="content-block">
-                                <h4>Hyödyt:</h4>
+                                <h4>Hyödyt</h4>
                                 <p>Parantunut käytettävyys ja estetiikka, lisääntynyt käyttäjätyytyväisyys ja sitoutuminen.</p>
                             </div>
                             <div class="content-block">
-                                <h4>Mittari:</h4>
+                                <h4>Mittarit</h4>
                                 <p class="metric-description">
                                     <span class="metric-item"><span class="metric-icon">📊</span> Käytettävyystestien tulokset (SUS)</span>
                                     <span class="metric-item"><span class="metric-icon">🐞</span> virheiden määrä</span>
@@ -126,21 +123,19 @@ const pageDescription = "Kiihdytä SaaS-liiketoimintasi kasvua The Good Side:n p
     .service-details {
         max-width: 900px;
         margin: 4rem auto; /* Added more margin */
-        /* Use a more distinct background, or fallback if variables are too similar */
         background-color: var(--color-bg-surface, #ffffff); /* White surface */
-        /* Changed border color to primary brand color */
         border: 1px solid var(--color-primary); 
-        /* Increased border radius for more rounding */
         border-radius: 20px; 
         padding: 0; /* Remove padding, handle internally */
-        box-shadow: var(--shadow-lg); /* Enhanced shadow */
+        /* Changed shadow to magenta glow similar to pricing cards */
+        box-shadow: 0 6px 25px rgba(255, 0, 84, 0.12);
         overflow: hidden; /* Contain child elements */
     }
 
     .service-tabs {
         display: flex;
-        /* Slightly different background for tab bar */
-        background-color: var(--color-bg-muted, #f7f7f7); /* Muted background */
+        /* Changed background to match the main content surface */
+        background-color: var(--color-bg-surface, #ffffff);
         border-bottom: 1px solid var(--color-border-subtle, #e0e0e0); /* Separator line */
         margin-bottom: 0; /* Remove margin */
         padding: var(--spacing-sm) var(--spacing-lg) 0; /* Padding for tabs */
@@ -148,35 +143,39 @@ const pageDescription = "Kiihdytä SaaS-liiketoimintasi kasvua The Good Side:n p
     }
 
     .service-tabs .tab-button {
-        padding: var(--spacing-md) var(--spacing-md); /* Increased horizontal padding */
+        padding: var(--spacing-md) var(--spacing-md);
         background: none;
         border: none;
-        border-bottom: 3px solid transparent; /* Indicator space */
+        border-bottom: 3px solid transparent;
         cursor: pointer;
         font-weight: 500;
-        color: var(--color-text-secondary);
-        border-radius: 0; /* Remove radius */
-        margin-bottom: -1px; /* Overlap bottom border */
+        /* Changed color to primary and adjusted opacity for non-active */
+        color: var(--color-primary);
+        opacity: 0.7; /* Dim non-active tabs slightly */
+        border-radius: 0;
+        margin-bottom: -1px;
         transition: all 0.25s ease-in-out;
-        font-size: var(--font-size-base); /* Slightly larger font */
-        font-family: inherit; /* Inherit font from parent */
-        text-align: left; /* Align text to the left */
-        position: relative; /* For potential pseudo-elements */
-        top: 1px; /* Align with bottom border */
+        /* Increased font size */
+        font-size: var(--font-size-md);
+        font-family: inherit;
+        text-align: left;
+        position: relative;
+        top: 1px;
     }
 
     .service-tabs .tab-button:hover {
+        /* Keep primary color on hover, increase opacity */
         color: var(--color-primary);
+        opacity: 1;
     }
 
     .service-tabs .tab-button.active {
-        /* font-weight: 600; */ /* Removed to prevent size change */
+        /* Keep primary color, ensure full opacity */
         color: var(--color-primary);
+        opacity: 1;
         border-bottom-color: var(--color-primary);
-        /* Make active tab background match content area for seamless look */
         background-color: var(--color-bg-surface, #ffffff);
-        /* Added top border radius to active tab */
-        border-top-left-radius: var(--border-radius-md, 6px); 
+        border-top-left-radius: var(--border-radius-md, 6px);
         border-top-right-radius: var(--border-radius-md, 6px);
     }
 
@@ -199,13 +198,6 @@ const pageDescription = "Kiihdytä SaaS-liiketoimintasi kasvua The Good Side:n p
 
     .service-content .tab-pane.active {
         display: block; /* Show active tab */
-    }
-
-    .tab-title {
-        font-size: var(--font-size-xl); /* Larger title */
-        margin-bottom: var(--spacing-lg);
-        color: var(--color-text-primary);
-        font-weight: 600;
     }
 
     .content-grid {
@@ -234,7 +226,7 @@ const pageDescription = "Kiihdytä SaaS-liiketoimintasi kasvua The Good Side:n p
 
     /* Styles for metric icons */
     .metric-icon {
-        margin-right: 0.4em; /* Space between icon and text */
+        margin-right: 0.1em; /* Reduced space between icon and text */
         display: inline-block; /* Ensure margin is applied */
     }
 
@@ -249,6 +241,30 @@ const pageDescription = "Kiihdytä SaaS-liiketoimintasi kasvua The Good Side:n p
         /* Make the last content block (metric) span full width */
         .content-grid .content-block:last-child {
             grid-column: 1 / -1; /* Span all columns */
+        }
+    }
+
+    /* Mobile styles for metrics */
+    @media (max-width: 767px) {
+        .service-tabs {
+            overflow-x: auto;  /* Enable horizontal scrolling */
+            white-space: nowrap; /* Prevent tabs from wrapping */
+            /* Optional: Add some padding to the right if needed for scrollbar or visual space */
+            /* padding-right: var(--spacing-md); */
+        }
+
+        .service-tabs .tab-button {
+            flex-shrink: 0; /* Prevent buttons from shrinking */
+        }
+
+        .metric-item {
+            display: block; /* Each metric on its own line */
+            margin-right: 0; /* Remove horizontal spacing */
+            margin-bottom: var(--spacing-sm); /* Add vertical spacing */
+        }
+
+        .metric-item:last-child {
+            margin-bottom: 0; /* No bottom margin for the last item */
         }
     }
 
