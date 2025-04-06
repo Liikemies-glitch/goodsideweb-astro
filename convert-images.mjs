@@ -2,7 +2,7 @@ import sharp from 'sharp';
 import fs from 'fs';
 import path from 'path';
 
-const directoryPath = path.join('public', 'images', 'testimonials');
+const directoryPath = path.join('public', 'images', 'references');
 const outputDirectory = directoryPath; // Output to the same directory
 
 // Ensure output directory exists (it should, but good practice)
@@ -17,7 +17,10 @@ fs.readdir(directoryPath, (err, files) => {
 
     files.forEach(file => {
         // Process only jpg files (case-insensitive)
-        if (path.extname(file).toLowerCase() === '.jpg') {
+        // if (path.extname(file).toLowerCase() === '.jpg') {
+        // Process jpg or png files (case-insensitive)
+        const extension = path.extname(file).toLowerCase();
+        if (extension === '.jpg' || extension === '.png') {
             const inputFilePath = path.join(directoryPath, file);
             const outputFileName = path.basename(file, path.extname(file)) + '.webp';
             const outputFilePath = path.join(outputDirectory, outputFileName);

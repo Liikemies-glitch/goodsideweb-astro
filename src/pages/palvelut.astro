@@ -167,55 +167,59 @@ const pageDescription = "Luomme poikkeuksellisia digitaalisia kokemuksia, jotka 
                  <div class="section__header">
                      <h2 class="section__title">Menestystarinoita</h2>
                  </div>
-                 {/* Card 1 (Eemel.com) - REWRITTEN with results after footer */}
-                 <div class="testimonial-card">
-                    <div class="testimonial-card-content">
-                        <h3>Erinomaista UX-suunnittelua aikataulussa</h3>
-                        <blockquote class="testimonial-quote">
-                             <p>The employees of The Goodside handled the task brilliantly, and the outcome of the UX design work was excellent. Everything was done on schedule, as agreed, and in an honest and straightforward manner.</p>
-                        </blockquote>
-                        <footer class="testimonial-author">
-                            <img src="/images/testimonials/jarkko.webp" alt="Jarkko Kähkönen" class="author-image" />
-                            <span class="author-info">
-                                Jarkko Kähkönen<br/>
-                                Founder CEO, Eemel.com
-                            </span>
-                        </footer>
-                        {/* Results Section START - After Footer */}
-                        <div class="testimonial-results">
-                            <h4 class="results-heading">Tulokset:</h4>
-                            <div class="metric-item">
-                                <div class="metric-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="5" x2="5" y2="19" /><circle cx="6.5" cy="6.5" r="2.5" /><circle cx="17.5" cy="17.5" r="2.5" /></svg>
-                                </div>
-                                <div class="metric-details">
-                                    <span class="metric-label">Media Budget ROI</span>
-                                    <span class="metric-change positive">+622% ROI</span>
-                                </div>
-                            </div>
-                            <div class="metric-item">
-                                <div class="metric-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5" /><polyline points="5 12 12 5 19 12" /></svg>
-                                </div>
-                                <div class="metric-details">
-                                    <span class="metric-label">ARR Increase</span>
-                                    <span class="metric-change positive">+46%</span>
-                                </div>
-                            </div>
-                        </div>
-                        {/* Results Section END */}
-                    </div>
-                    <div class="testimonial-card-image-area">
-                        <img src="/images/references/eemel.png" alt="Eemel.com referenssikuva" style="width: 100%; height: auto; display: block; border-radius: var(--border-radius-md); object-fit: contain;" />
-                    </div>
+                 {/* Card 2 (Eemel.com) - Moved First */}
+                  <div class="testimonial-card">
+                     <div class="testimonial-card-content">
+                         <blockquote class="testimonial-quote">
+                              <p>"The employees of The Goodside handled the task brilliantly, and the outcome of the UX design work was excellent. Everything was done on schedule, as agreed, and in an honest and straightforward manner".</p>
+                         </blockquote>
+                         {/* MOVE author footer here */}
+                          <footer class="testimonial-author">
+                              <img src="/images/testimonials/jarkko.webp" alt="Jarkko Kähkönen" class="author-image" />
+                             <span class="author-info">
+                                  Jarkko Kähkönen<br/>
+                                  Founder CEO, Eemel.com
+                              </span>
+                          </footer>
+                         {/* Results Section for Eemel.com - Simplified */}
+                         <div class="testimonial-results">
+                              {/* Metric 1: Media Budget ROI - SIMPLIFIED */}
+                             <div class="metric-item">
+                                 <div class="metric-icon">
+                                     {/* Changed icon to Percentage */}
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="5" x2="5" y2="19" /><circle cx="6.5" cy="6.5" r="2.5" /><circle cx="17.5" cy="17.5" r="2.5" /></svg>
+                                 </div>
+                                 <div class="metric-details">
+                                     <span class="metric-label">Media Budget ROI</span>
+                                     {/* Removed value and sub spans */}
+                                     <span class="metric-change positive">+622% ROI</span>
+                                 </div>
+                             </div>
+                              {/* Metric 3: ARR Increase - Kept as is */}
+                              <div class="metric-item">
+                                 <div class="metric-icon">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5" /><polyline points="5 12 12 5 19 12" /></svg>
+                                 </div>
+                                 <div class="metric-details">
+                                     <span class="metric-label">ARR Increase</span>
+                                     <span class="metric-change positive">+46%</span>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     {/* Replace placeholder SVG with actual image for Eemel.com */}
+                     <div class="testimonial-card-image-area">
+                           {/* <svg width=\"100%\" height=\"100%\" viewBox=\"0 0 16 9\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"placeholder-title-2\" style=\"display: block; border-radius: var(--border-radius-md);\"><title id=\"placeholder-title-2\">Referenssikuvan paikkamerkki</title><rect width=\"16\" height=\"9\" fill=\"#e2e8f0\"></rect></svg> */}
+                           <img src="/images/references/eemel.webp" alt="Eemel.com referenssikuva" style="width: 100%; height: auto; display: block; border-radius: var(--border-radius-md); object-fit: contain;" />
+                     </div>
                  </div>
-                 {/* Card 2 (Anna-Mari) - Remains the same */}
+                {/* Card 1 (Anna-Mari) - Moved Second */}
                  <div class="testimonial-card">
                     <div class="testimonial-card-content">
-                        <h3>Luottamusta herättävä testijakso</h3>
                         <blockquote class="testimonial-quote">
-                            <p>Goodside tarjosi design palvelulleen testijakson yhden tuotealueemme uudistamiseksi. Kokeilujakson aikana pääsin tutustumaan palveluun käytännössä. Olin erittäin tyytyväinen, sillä kokeilu erotti Goodsiden selvästi kilpailijoista ja rakensi luottamusta. Goodsiden asiakaspalvelu on ensiluokkaista - koin tulleeni kuulluksi ja sain pelkällä kokeilulla kehitysprojektiani tehokkaasti eteenpäin.</p>
+                            <p>"Goodside tarjosi design palvelulleen testijakson yhden tuotealueemme uudistamiseksi. Kokeilujakson aikana pääsin tutustumaan palveluun käytännössä. Olin erittäin tyytyväinen, sillä kokeilu erotti Goodsiden selvästi kilpailijoista ja rakensi luottamusta. Goodsiden asiakaspalvelu on ensiluokkaista - koin tulleeni kuulluksi ja sain pelkällä kokeilulla kehitysprojektiani tehokkaasti eteenpäin".</p>
                         </blockquote>
+                        {/* MOVE author footer here */}
                          <footer class="testimonial-author">
                              <img src="/images/testimonials/Anna-mari.webp" alt="Anna-Mari Jääskeläinen" class="author-image" />
                             <span class="author-info">
@@ -223,18 +227,45 @@ const pageDescription = "Luomme poikkeuksellisia digitaalisia kokemuksia, jotka 
                                 Product Owner, Seppo.io
                             </span>
                         </footer>
-                    </div>
-                    <div class="testimonial-card-image-area">
-                         <svg width="100%" height="100%" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="placeholder-title-1" style="display: block; border-radius: var(--border-radius-md);"><title id="placeholder-title-1">Referenssikuvan paikkamerkki</title><rect width="16" height="9" fill="#e2e8f0"></rect></svg>
+                         {/* Added Placeholder Results Section for Anna-Mari */}
+                         <div class="testimonial-results">
+                              {/* Placeholder Metric 1 */}
+                              <div class="metric-item">
+                                 <div class="metric-icon">
+                                     {/* Generic Bar Chart Icon */}
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10" /><line x1="18" y1="20" x2="18" y2="4" /><line x1="6" y1="20" x2="6" y2="16" /></svg>
+                                 </div>
+                                 <div class="metric-details">
+                                     <span class="metric-label">Key Result 1</span>
+                                     <span class="metric-change">To-be-announced</span> {/* Changed TBA */}
+                                 </div>
+                             </div>
+                              {/* Placeholder Metric 2 */}
+                              <div class="metric-item">
+                                 <div class="metric-icon">
+                                     {/* Generic Bar Chart Icon */}
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10" /><line x1="18" y1="20" x2="18" y2="4" /><line x1="6" y1="20" x2="6" y2="16" /></svg>
+                                 </div>
+                                 <div class="metric-details">
+                                     <span class="metric-label">Key Result 2</span>
+                                     <span class="metric-change">To-be-announced</span> {/* Changed TBA */}
+                                 </div>
+                             </div>
+                         </div>
                      </div>
-                </div>
-                {/* Card 3 (Joni) - NOW THIRD */}
+                     {/* Replace placeholder SVG with actual image for Seppo.io */}
+                     <div class="testimonial-card-image-area">
+                          {/* <svg width=\"100%\" height=\"100%\" viewBox=\"0 0 16 9\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"placeholder-title-1\" style=\"display: block; border-radius: var(--border-radius-md);\"><title id=\"placeholder-title-1\">Referenssikuvan paikkamerkki</title><rect width=\"16\" height=\"9\" fill=\"#e2e8f0\"></rect></svg> */}
+                          <img src="/images/references/seppo-reference.webp" alt="Seppo.io referenssikuva" style="width: 100%; height: auto; display: block; border-radius: var(--border-radius-md); object-fit: contain;" />
+                      </div>
+                 </div>
+                {/* Card 3 (Joni) - Stays Third */}
                  <div class="testimonial-card">
                      <div class="testimonial-card-content">
-                         <h3>Selkeä hinnoittelu ja upeat tulokset</h3>
                          <blockquote class="testimonial-quote">
-                             <p>Very clear pricing and contract model was keypoint why we made a deal. No risk and transparent cost. During the project results was in awesome level. Communication was easy all the way.</p>
+                             <p>"Very clear pricing and contract model was keypoint why we made a deal. No risk and transparent cost. During the project results was in awesome level. Communication was easy all the way".</p>
                          </blockquote>
+                         {/* MOVE author footer here */}
                          <footer class="testimonial-author">
                               <img src="/images/testimonials/joni räsänen.webp" alt="Joni Räsänen" class="author-image" />
                              <span class="author-info">
@@ -242,9 +273,35 @@ const pageDescription = "Luomme poikkeuksellisia digitaalisia kokemuksia, jotka 
                                  CTO, Gebwell
                              </span>
                          </footer>
+                         {/* Added Placeholder Results Section for Joni */}
+                         <div class="testimonial-results">
+                             {/* Placeholder Metric 1 */}
+                             <div class="metric-item">
+                                <div class="metric-icon">
+                                     {/* Generic Bar Chart Icon */}
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10" /><line x1="18" y1="20" x2="18" y2="4" /><line x1="6" y1="20" x2="6" y2="16" /></svg>
+                                </div>
+                                <div class="metric-details">
+                                    <span class="metric-label">Key Result 1</span>
+                                    <span class="metric-change">To-be-announced</span> {/* Changed TBA */}
+                                </div>
+                            </div>
+                             {/* Placeholder Metric 2 */}
+                             <div class="metric-item">
+                                <div class="metric-icon">
+                                     {/* Generic Bar Chart Icon */}
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10" /><line x1="18" y1="20" x2="18" y2="4" /><line x1="6" y1="20" x2="6" y2="16" /></svg>
+                                </div>
+                                <div class="metric-details">
+                                    <span class="metric-label">Key Result 2</span>
+                                    <span class="metric-change">To-be-announced</span> {/* Changed TBA */}
+                                </div>
+                            </div>
                         </div>
-                         <div class="testimonial-card-image-area">
-                              <svg width="100%" height="100%" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="placeholder-title-3" style="display: block; border-radius: var(--border-radius-md);"><title id="placeholder-title-3">Referenssikuvan paikkamerkki</title><rect width="16" height="9" fill="#e2e8f0"></rect></svg>
+                     </div>
+                     <div class="testimonial-card-image-area">
+                              {/* <svg width=\"100%\" height=\"100%\" viewBox=\"0 0 16 9\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"placeholder-title-3\" style=\"display: block; border-radius: var(--border-radius-md);\"><title id=\"placeholder-title-3\">Referenssikuvan paikkamerkki</title><rect width=\"16\" height=\"9\" fill=\"#e2e8f0\"></rect></svg> */}
+                              <img src="/images/references/gebwell4.webp" alt="Gebwell referenssikuva" style="width: 100%; height: auto; display: block; border-radius: var(--border-radius-md); object-fit: contain;" />
                          </div>
                  </div>
              </div>
@@ -419,13 +476,12 @@ const pageDescription = "Luomme poikkeuksellisia digitaalisia kokemuksia, jotka 
     .testimonial-card-image-area {
         flex-basis: 50%; /* UPDATED width */
         flex-shrink: 0;
-        /* background-color removed */
+        /* background-color: var(--color-bg-muted, #f1f5f9); */ /* REMOVED Placeholder bg */
         border-radius: var(--border-radius-md);
-        display: flex; /* Use flex to center image potentially */
-        align-items: center; /* Center vertically if needed */
-        justify-content: center; /* Center horizontally */
-        /* flex-direction: column; */ /* REMOVED */
-        /* gap: var(--spacing-lg); */ /* REMOVED */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 150px; /* Ensure some height */
     }
     .testimonial-card-image-area svg {
         max-width: 100%;
@@ -436,12 +492,12 @@ const pageDescription = "Luomme poikkeuksellisia digitaalisia kokemuksia, jotka 
 
      /* Cleaned up quote styles */
       .testimonial-quote {
-        margin: 0 0 var(--spacing-lg) 0; /* Bottom margin before author/results */
+        margin: 0 0 var(--spacing-lg) 0; /* Bottom margin before author */
         padding: 0;
         border: none;
       }
        .testimonial-quote p {
-        font-size: 1.125rem; /* Slightly larger quote text (adjust as needed) */
+        font-size: var(--font-size-lg);
         font-style: italic;
         color: var(--color-text-secondary);
         line-height: var(--line-height-relaxed);
@@ -468,10 +524,9 @@ const pageDescription = "Luomme poikkeuksellisia digitaalisia kokemuksia, jotka 
          color: var(--color-text-primary);
          line-height: var(--line-height-tight);
      }
-      /* Style the title/second line within author-info */
-      .author-info br + span { 
-         font-size: var(--font-size-xs); /* Smaller font size for title */
-         color: var(--color-text-muted, #6b7280); /* Lighter color for title */
+      .author-info br + span { /* Assuming second line is title */
+         color: var(--color-text-secondary);
+         font-size: var(--font-size-sm);
       }
 
      @media (max-width: 768px) {
@@ -540,7 +595,7 @@ const pageDescription = "Luomme poikkeuksellisia digitaalisia kokemuksia, jotka 
     }
 
     .testimonial-card-content h3 {
-        font-size: 1.5rem; /* Set explicit size (adjust as needed) */
+        font-size: var(--font-size-xl); /* Example size, adjust if needed */
         font-weight: 600;
         color: var(--color-text-primary);
         margin-bottom: var(--spacing-md); /* Space below title */
@@ -548,26 +603,20 @@ const pageDescription = "Luomme poikkeuksellisia digitaalisia kokemuksia, jotka 
 
     /* Added Results Styles */
     .testimonial-results {
-        margin: var(--spacing-lg) 0 0 0; /* Top margin */
-        border-top: 1px solid var(--color-border-subtle); /* Add separator line back */
-        padding-top: var(--spacing-lg); /* Add top padding back */
-        display: flex;
-        flex-wrap: wrap;
-        gap: var(--spacing-lg); /* Adjusted gap */
-        width: 100%;
-    }
-    .results-heading {
-        font-size: var(--font-size-sm);
-        font-weight: 600;
-        color: var(--color-text-secondary);
-        margin-bottom: var(--spacing-md);
-        flex-basis: 100%; /* Heading takes full width */
+        margin: var(--spacing-lg) 0; /* Space above and below results block */
+        padding-left: 0; /* If inheriting quote padding */
+        border-top: 1px solid var(--color-border-subtle); /* Separator line above */
+        padding-top: var(--spacing-lg); /* Space above first metric */
+        display: flex; /* Lay out items horizontally */
+        flex-direction: row; /* Default, but explicit */
+        gap: var(--spacing-xl); /* Space between horizontal items */
+        flex-wrap: wrap; /* Allow wrapping on smaller screens if needed */
     }
     .metric-item {
         display: flex;
         align-items: flex-start; /* Align icon top with first line */
         gap: var(--spacing-sm); /* Reduced gap */
-        flex-basis: auto; /* Let items size naturally or wrap */
+        flex-basis: calc(50% - var(--spacing-xl) / 2); /* Approx 2 per row */
         flex-grow: 1; /* Allow items to grow if space */
     }
     .metric-icon {
@@ -613,18 +662,9 @@ const pageDescription = "Luomme poikkeuksellisia digitaalisia kokemuksia, jotka 
     .metric-change.positive {
         color: var(--color-success, #10b981); /* Green color for positive change */
     }
-
-    /* Adjust metric layout for mobile if needed */
-    @media (max-width: 768px) {
-        .testimonial-results {
-            gap: var(--spacing-lg);
-            /* margin-bottom: var(--spacing-md); */
-            flex-direction: column; /* Stack heading and items on mobile */
-            align-items: flex-start;
-        }
-        .metric-item {
-            flex-basis: auto; /* Ensure full width when stacked */
-        }
+    /* Style for TBA/default metric change */
+    .metric-change:not(.positive) {
+        color: var(--color-text-secondary); /* Use secondary text color for TBA */
     }
 </style>
 
