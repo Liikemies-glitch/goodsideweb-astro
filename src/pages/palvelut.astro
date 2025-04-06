@@ -160,151 +160,89 @@ const pageDescription = "Luomme poikkeuksellisia digitaalisia kokemuksia, jotka 
         </div>
     </section>
 
-     {/* ADDED Menestystarinoita-osio */}
-    <section class="testimonial-section" style="background-color: var(--color-bg-secondary); padding: 4rem 0;">
-        <div class="container testimonial-container">
-             <div class="testimonial-content">
-                 <div class="section__header">
-                     <h2 class="section__title">Menestystarinoita</h2>
-                 </div>
-                 {/* Card 2 (Eemel.com) - Moved First */}
-                  <div class="testimonial-card">
-                     <div class="testimonial-card-content">
-                         <blockquote class="testimonial-quote">
-                              <p>"The employees of The Goodside handled the task brilliantly, and the outcome of the UX design work was excellent. Everything was done on schedule, as agreed, and in an honest and straightforward manner".</p>
-                         </blockquote>
-                         {/* MOVE author footer here */}
-                          <footer class="testimonial-author">
-                              <img src="/images/testimonials/jarkko.webp" alt="Jarkko Kähkönen" class="author-image" />
-                             <span class="author-info">
-                                  Jarkko Kähkönen<br/>
-                                  Founder CEO, Eemel.com
-                              </span>
-                          </footer>
-                         {/* Results Section for Eemel.com - Simplified */}
-                         <div class="testimonial-results">
-                              {/* Metric 1: Media Budget ROI - SIMPLIFIED */}
-                             <div class="metric-item">
-                                 <div class="metric-icon">
-                                     {/* Changed icon to Percentage */}
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="5" x2="5" y2="19" /><circle cx="6.5" cy="6.5" r="2.5" /><circle cx="17.5" cy="17.5" r="2.5" /></svg>
-                                 </div>
-                                 <div class="metric-details">
-                                     <span class="metric-label">Media Budget ROI</span>
-                                     {/* Removed value and sub spans */}
-                                     <span class="metric-change positive">+622% ROI</span>
-                                 </div>
-                             </div>
-                              {/* Metric 3: ARR Increase - Kept as is */}
-                              <div class="metric-item">
-                                 <div class="metric-icon">
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5" /><polyline points="5 12 12 5 19 12" /></svg>
-                                 </div>
-                                 <div class="metric-details">
-                                     <span class="metric-label">ARR Increase</span>
-                                     <span class="metric-change positive">+46%</span>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                     {/* Replace placeholder SVG with actual image for Eemel.com */}
-                     <div class="testimonial-card-image-area">
-                           {/* <svg width=\"100%\" height=\"100%\" viewBox=\"0 0 16 9\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"placeholder-title-2\" style=\"display: block; border-radius: var(--border-radius-md);\"><title id=\"placeholder-title-2\">Referenssikuvan paikkamerkki</title><rect width=\"16\" height=\"9\" fill=\"#e2e8f0\"></rect></svg> */}
-                           <img src="/images/references/eemel.webp" alt="Eemel.com referenssikuva" style="width: 100%; height: auto; display: block; border-radius: var(--border-radius-md); object-fit: contain;" />
-                     </div>
-                 </div>
-                {/* Card 1 (Anna-Mari) - Moved Second */}
-                 <div class="testimonial-card">
-                    <div class="testimonial-card-content">
-                        <blockquote class="testimonial-quote">
-                            <p>"Goodside tarjosi design palvelulleen testijakson yhden tuotealueemme uudistamiseksi. Kokeilujakson aikana pääsin tutustumaan palveluun käytännössä. Olin erittäin tyytyväinen, sillä kokeilu erotti Goodsiden selvästi kilpailijoista ja rakensi luottamusta. Goodsiden asiakaspalvelu on ensiluokkaista - koin tulleeni kuulluksi ja sain pelkällä kokeilulla kehitysprojektiani tehokkaasti eteenpäin".</p>
-                        </blockquote>
-                        {/* MOVE author footer here */}
-                         <footer class="testimonial-author">
-                             <img src="/images/testimonials/Anna-mari.webp" alt="Anna-Mari Jääskeläinen" class="author-image" />
-                            <span class="author-info">
-                                Anna-Mari Jääskeläinen<br/>
-                                Product Owner, Seppo.io
-                            </span>
-                        </footer>
-                         {/* Added Placeholder Results Section for Anna-Mari */}
-                         <div class="testimonial-results">
-                              {/* Placeholder Metric 1 */}
-                              <div class="metric-item">
-                                 <div class="metric-icon">
-                                     {/* Generic Bar Chart Icon */}
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10" /><line x1="18" y1="20" x2="18" y2="4" /><line x1="6" y1="20" x2="6" y2="16" /></svg>
-                                 </div>
-                                 <div class="metric-details">
-                                     <span class="metric-label">Key Result 1</span>
-                                     <span class="metric-change">To-be-announced</span> {/* Changed TBA */}
-                                 </div>
-                             </div>
-                              {/* Placeholder Metric 2 */}
-                              <div class="metric-item">
-                                 <div class="metric-icon">
-                                     {/* Generic Bar Chart Icon */}
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10" /><line x1="18" y1="20" x2="18" y2="4" /><line x1="6" y1="20" x2="6" y2="16" /></svg>
-                                 </div>
-                                 <div class="metric-details">
-                                     <span class="metric-label">Key Result 2</span>
-                                     <span class="metric-change">To-be-announced</span> {/* Changed TBA */}
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                     {/* Replace placeholder SVG with actual image for Seppo.io */}
-                     <div class="testimonial-card-image-area">
-                          {/* <svg width=\"100%\" height=\"100%\" viewBox=\"0 0 16 9\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"placeholder-title-1\" style=\"display: block; border-radius: var(--border-radius-md);\"><title id=\"placeholder-title-1\">Referenssikuvan paikkamerkki</title><rect width=\"16\" height=\"9\" fill=\"#e2e8f0\"></rect></svg> */}
-                          <img src="/images/references/seppo-reference.webp" alt="Seppo.io referenssikuva" style="width: 100%; height: auto; display: block; border-radius: var(--border-radius-md); object-fit: contain;" />
-                      </div>
-                 </div>
-                {/* Card 3 (Joni) - Stays Third */}
-                 <div class="testimonial-card">
-                     <div class="testimonial-card-content">
-                         <blockquote class="testimonial-quote">
-                             <p>"Very clear pricing and contract model was keypoint why we made a deal. No risk and transparent cost. During the project results was in awesome level. Communication was easy all the way".</p>
-                         </blockquote>
-                         {/* MOVE author footer here */}
-                         <footer class="testimonial-author">
-                              <img src="/images/testimonials/joni räsänen.webp" alt="Joni Räsänen" class="author-image" />
-                             <span class="author-info">
-                                 Joni Räsänen<br/>
-                                 CTO, Gebwell
-                             </span>
-                         </footer>
-                         {/* Added Placeholder Results Section for Joni */}
-                         <div class="testimonial-results">
-                             {/* Placeholder Metric 1 */}
-                             <div class="metric-item">
-                                <div class="metric-icon">
-                                     {/* Generic Bar Chart Icon */}
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10" /><line x1="18" y1="20" x2="18" y2="4" /><line x1="6" y1="20" x2="6" y2="16" /></svg>
-                                </div>
-                                <div class="metric-details">
-                                    <span class="metric-label">Key Result 1</span>
-                                    <span class="metric-change">To-be-announced</span> {/* Changed TBA */}
-                                </div>
-                            </div>
-                             {/* Placeholder Metric 2 */}
-                             <div class="metric-item">
-                                <div class="metric-icon">
-                                     {/* Generic Bar Chart Icon */}
-                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10" /><line x1="18" y1="20" x2="18" y2="4" /><line x1="6" y1="20" x2="6" y2="16" /></svg>
-                                </div>
-                                <div class="metric-details">
-                                    <span class="metric-label">Key Result 2</span>
-                                    <span class="metric-change">To-be-announced</span> {/* Changed TBA */}
-                                </div>
-                            </div>
+     {/* RESTRUCTURED Menestystarinoita-osio -> Case Studies */}
+    <section class="case-studies-section" style="padding: 4rem 0;">
+        <div class="container">
+             {/* Optional: Add a section header if needed */}
+             {/* <div class="section__header" style="text-align: center; margin-bottom: 3rem;">
+                 <h2 class="section__title">Asiakastyöt</h2>
+             </div> */}
+
+             {/* Case Study 1: Eemel.com (Previously Card 2) */}
+             <div class="case-study-item">
+                 <div class="case-study-content">
+                    <span class="tag case-study-tag">Case Study</span>
+                    <h3 class="case-study-title">Eemel.com</h3>
+                    <p class="case-study-description">Tehostimme Eemel.comin käyttökokemusta strategisella suunnittelulla, mikä johti merkittäviin parannuksiin keskeisissä liiketoimintamittareissa ja asiakastyytyväisyydessä.</p>
+                    <a href="#" class="button case-study-button">
+                        Katso Case Study <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; vertical-align: middle;"><polyline points="9 18 15 12 9 6"/></svg>
+                    </a>
+                     <div class="case-study-results">
+                        <div class="result-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="result-icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span>+622% ROI mediabudjetille</span>
                         </div>
-                     </div>
-                     <div class="testimonial-card-image-area">
-                              {/* <svg width=\"100%\" height=\"100%\" viewBox=\"0 0 16 9\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"placeholder-title-3\" style=\"display: block; border-radius: var(--border-radius-md);\"><title id=\"placeholder-title-3\">Referenssikuvan paikkamerkki</title><rect width=\"16\" height=\"9\" fill=\"#e2e8f0\"></rect></svg> */}
-                              <img src="/images/references/gebwell4.webp" alt="Gebwell referenssikuva" style="width: 100%; height: auto; display: block; border-radius: var(--border-radius-md); object-fit: contain;" />
-                         </div>
+                        <div class="result-item">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="result-icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span>+46% ARR kasvu</span>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="case-study-image-area">
+                     <img src="/images/references/eemel.webp" alt="Eemel.com Case Study Image" class="case-study-image"/>
                  </div>
              </div>
+
+             {/* Case Study 2: Seppo.io (Previously Card 1) */}
+              <div class="case-study-item">
+                 <div class="case-study-content">
+                     <span class="tag case-study-tag">Case Study</span>
+                     <h3 class="case-study-title">Seppo.io</h3>
+                     <p class="case-study-description">Yhteistyömme kokeilujakson kautta autoimme Seppo.io:ta validoimaan suunnitteluprosessimme arvon, rakentamaan luottamusta ja edistämään tehokkaasti heidän tuotekehitystään.</p>
+                     <a href="#" class="button case-study-button">
+                         Published soon <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; vertical-align: middle;"><polyline points="9 18 15 12 9 6"/></svg>
+                     </a>
+                     <div class="case-study-results">
+                         <div class="result-item">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="result-icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                             <span>To be accounced</span>
+                         </div>
+                         <div class="result-item">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="result-icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                             <span>To be accounced</span>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="case-study-image-area">
+                      <img src="/images/references/seppo-reference.webp" alt="Seppo.io Case Study Image" class="case-study-image"/>
+                 </div>
+             </div>
+
+            {/* Case Study 3: Gebwell (Previously Card 3) */}
+             <div class="case-study-item">
+                 <div class="case-study-content">
+                    <span class="tag case-study-tag">Case Study</span>
+                    <h3 class="case-study-title">Gebwell</h3>
+                    <p class="case-study-description">Läpinäkyvä prosessimme ja tuloshakuisuutemme auttoivat Gebwelliä saavuttamaan projektitavoitteensa. Selkeä ja helppo viestintä varmisti sujuvan yhteistyön koko projektin ajan.</p>
+                     <a href="#" class="button case-study-button">
+                         Published soon <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; vertical-align: middle;"><polyline points="9 18 15 12 9 6"/></svg>
+                     </a>
+                    <div class="case-study-results">
+                         <div class="result-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="result-icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span>To be accounced</span>
+                        </div>
+                        <div class="result-item">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="result-icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span>To be accounced</span>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="case-study-image-area">
+                      <img src="/images/references/gebwell4.webp" alt="Gebwell Case Study Image" class="case-study-image"/>
+                 </div>
+             </div>
+
         </div>
     </section>
 
@@ -441,118 +379,190 @@ const pageDescription = "Luomme poikkeuksellisia digitaalisia kokemuksia, jotka 
         text-decoration: underline;
     }
 
-     /* ADDED Testimonial section styles */
-     .testimonial-section {
-        /* Background set inline */
-     }
-     .testimonial-container {
-         /* Removed flex/grid/block styles to let global .container take effect */
-     }
+     /* ADDED Case Study Styles */
+    .case-studies-section {
+        max-width: var(--container-width);
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-    /* testimonial-content is the flex container for cards */
-    .testimonial-content {
+    .case-studies-section .container {
         display: flex;
         flex-direction: column;
-        gap: var(--spacing-xl); /* Increased gap between cards */
+        gap: 4rem; /* Space between case study items */
+        padding-left: 0;
+        padding-right: 0;
     }
 
-    /* Updated Card Styles */
-    .testimonial-card {
-        background-color: #ffffff; 
-        border-radius: 12px; 
-        padding: var(--spacing-xl);
-        border: 1px solid var(--color-border-subtle);
-        display: flex;
-        align-items: flex-start;
-        gap: var(--spacing-xl); 
-        width: 100%; /* Cards fill the container width */
-        box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+    .case-study-item {
+        background-color: rgba(255, 255, 255); /* Match expertise-section bg */
+        padding: var(--spacing-xl); /* Internal padding */
+        /* border-radius: var(--border-radius-lg); */ /* Use explicit value below */
+        border-radius: 12px; /* Explicit rounding */
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Match expertise-section shadow */
+        display: grid;
+        grid-template-columns: repeat(12, 1fr); /* 12 column grid */
+        gap: var(--spacing-xl);
+        align-items: center; /* Vertically center content and image */
     }
 
-    .testimonial-card-content {
-        flex-basis: 50%; /* UPDATED width */
-        flex-shrink: 0;
+    /* Alternate layout for even items if desired */
+    /* .case-study-item:nth-child(even) .case-study-content {
+        grid-column: 7 / span 6;
+        order: 2;
     }
-    .testimonial-card-image-area {
-        flex-basis: 50%; /* UPDATED width */
-        flex-shrink: 0;
-        /* background-color: var(--color-bg-muted, #f1f5f9); */ /* REMOVED Placeholder bg */
-        border-radius: var(--border-radius-md);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 150px; /* Ensure some height */
-    }
-    .testimonial-card-image-area svg {
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: contain;
-        color: var(--color-text-secondary);
+    .case-study-item:nth-child(even) .case-study-image-area {
+         grid-column: 1 / span 5;
+         order: 1;
+    } */
+
+     .case-study-content {
+         grid-column: 1 / span 6; /* Content takes first 6 columns */
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start; /* Align content to the start */
     }
 
-     /* Cleaned up quote styles */
-      .testimonial-quote {
-        margin: 0 0 var(--spacing-lg) 0; /* Bottom margin before author */
-        padding: 0;
-        border: none;
-      }
-       .testimonial-quote p {
-        font-size: var(--font-size-lg);
-        font-style: italic;
-        color: var(--color-text-secondary);
-        line-height: var(--line-height-relaxed);
-        margin-bottom: var(--spacing-lg);
-     }
-      /* Updated author styles */
-      .testimonial-author {
-         display: flex; /* Make footer flex to align image and text */
+    .case-study-image-area {
+         grid-column: 7 / span 6; /* Image takes last 6 columns */
+         /* background-color: var(--color-bg-muted, #f1f5f9); */ /* REMOVED Placeholder bg */
+         border-radius: var(--border-radius-lg); /* Rounded corners for image area */
+         overflow: hidden; /* Ensure image stays within bounds */
+         aspect-ratio: 16 / 10; /* Maintain aspect ratio */
+         display: flex; /* Center image within area */
          align-items: center;
-         gap: var(--spacing-md); /* Space between avatar and text */
-         margin-top: var(--spacing-lg); /* Space above author block */
-      }
-      /* Author image (avatar) styles */
-      .author-image {
-         width: 40px; /* Slightly smaller avatar */
-         height: 40px;
-         border-radius: 50%; /* Circular */
-         object-fit: cover; 
-         flex-shrink: 0; /* Prevent avatar shrinking */
-      }
-      /* Author info text styles */
-      .author-info {
-         font-size: var(--font-size-base);
+         justify-content: center;
+    }
+
+     .case-study-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Cover the area, might crop */
+        display: block;
+    }
+
+     .tag.case-study-tag {
+        /* background-color: var(--color-bg-accent-subtle, #f3f4f6); */ /* REMOVED gray background */
+        background-color: transparent;
+        color: var(--color-text-accent, var(--primary-color)); /* Tag text color */
+        padding: var(--spacing-xxs) var(--spacing-sm);
+        border-radius: var(--border-radius-full); /* Keep rounding */
+        font-size: var(--font-size-xs);
+        font-weight: 500;
+        margin-bottom: var(--spacing-md);
+        display: inline-block;
+    }
+
+     .case-study-title {
+         font-size: clamp(1.8rem, 3vw, 2.5rem); /* Responsive heading size */
+         font-weight: 700;
          color: var(--color-text-primary);
-         line-height: var(--line-height-tight);
+         margin-bottom: var(--spacing-md);
+         line-height: 1.2;
      }
-      .author-info br + span { /* Assuming second line is title */
+
+     .case-study-description {
+         font-size: var(--font-size-base); /* Standard paragraph size */
          color: var(--color-text-secondary);
-         font-size: var(--font-size-sm);
+         line-height: var(--line-height-relaxed);
+         margin-bottom: var(--spacing-lg);
+         max-width: 50ch; /* Limit line length for readability */
+     }
+
+      /* Basic button styling - reuse existing if possible, or define */
+      .button.case-study-button {
+         display: inline-flex;
+         align-items: center;
+         justify-content: center;
+         padding: var(--spacing-sm) var(--spacing-lg);
+         /* background-color: var(--color-bg-surface-strong, #1f2937); */ /* Old Darker background */
+         background-color: #160c28; /* New background color */
+         color: var(--color-text-on-strong, #ffffff); /* White text */
+         border: 1px solid transparent;
+         border-radius: 9999px; /* Force fully rounded corners */
+         font-weight: 500;
+         text-decoration: none;
+         transition: background-color 0.2s ease, transform 0.1s ease;
+         cursor: pointer;
+          margin-bottom: var(--spacing-lg); /* Space below button */
       }
+       .button.case-study-button:hover {
+          /* background-color: var(--color-bg-surface-hover, #374151); */ /* Old Slightly lighter on hover */
+          background-color: #2a1a4a; /* New Lighter hover color */
+          transform: translateY(-1px);
+      }
+
+     .case-study-results {
+         display: flex;
+         flex-wrap: wrap; /* Allow wrapping */
+         gap: var(--spacing-lg) var(--spacing-xl); /* Row and column gap */
+         margin-top: var(--spacing-sm); /* Reduced top margin, rely on button margin */
+         border-top: 1px solid var(--color-border-subtle);
+         padding-top: var(--spacing-lg);
+         width: 100%; /* Take full width of content area */
+     }
+
+     .result-item {
+         display: flex;
+         align-items: center;
+         gap: var(--spacing-sm);
+         font-size: var(--font-size-sm);
+         color: var(--color-text-primary);
+         flex-basis: calc(50% - var(--spacing-xl) / 2); /* Aim for 2 items per row */
+         min-width: 180px; /* Prevent items from becoming too narrow */
+     }
+
+     .result-icon {
+         flex-shrink: 0;
+         /* Color is set directly on SVG stroke */
+     }
+
+
+     /* Responsive adjustments */
+     @media (max-width: 992px) { /* Adjust breakpoint as needed */
+         .case-study-content {
+             grid-column: 1 / span 7; /* Content wider */
+         }
+         .case-study-image-area {
+             grid-column: 8 / span 5; /* Image narrower */
+         }
+     }
 
      @media (max-width: 768px) {
-        .testimonial-content {
-            gap: var(--spacing-lg);
-        }
-        .testimonial-card {
-            flex-direction: column; /* Stack image area below text content */
-            align-items: stretch; /* Stretch items to full width */
-        }
-         .testimonial-card-content,
-         .testimonial-card-image-area {
-             flex-basis: auto; /* Reset basis for column layout */
-             width: 100%;
+         .case-study-item {
+             grid-template-columns: 1fr; /* Stack columns */
+             gap: var(--spacing-lg);
          }
-          .testimonial-card-image-area {
-             margin-top: var(--spacing-lg); /* Space between stacked items */
+          .case-study-content,
+          .case-study-image-area {
+             grid-column: 1 / -1; /* Both take full width */
+         }
+         .case-study-image-area {
+             order: -1; /* Move image above content on mobile */
+             /* aspect-ratio: 16 / 9; /* Adjust aspect ratio for mobile if needed */
+         }
+          .case-study-content {
+              align-items: center; /* Center content text */
+              text-align: center;
           }
-          .testimonial-author {
-             justify-content: flex-start; /* Align author left */
-          }
+           .case-study-description {
+             max-width: none; /* Remove max width limit */
+         }
+           .case-study-results {
+             justify-content: center; /* Center result items */
+             gap: var(--spacing-md) var(--spacing-lg);
+         }
+           .result-item {
+             flex-basis: auto; /* Let items flow naturally */
+             justify-content: center;
+         }
      }
 
-    /* Poistetaan vanhat, tarpeettomat tyylit */
+
+     /* Poistetaan vanhat, tarpeettomat tyylit */
     /* .service-details, .service-tabs, .service-content, jne. poistettu */
-    /* .metric-item, .metric-icon, etc. poistettu */
+    /* REMOVING OLD METRIC STYLES AS THEY ARE REPLACED BY CASE STUDY RESULT STYLES */
+    /* .metric-item, .metric-icon, .metric-details, .metric-label, .metric-value, .metric-sub, .metric-change { display: none; } */
 
     /* Lisätään/varmistetaan tab-pane -tyylit */
     .tab-content-area .tab-pane {
@@ -580,92 +590,33 @@ const pageDescription = "Luomme poikkeuksellisia digitaalisia kokemuksia, jotka 
         margin-top: var(--spacing-sm); /* Lisätään vähän marginaalia ylös */
     }
 
+    /* REMOVED h3 style specific to old testimonial card */
+    /* .testimonial-card-content h3 { ... } */
+
+    /* REMOVED Old Results Styles */
+    /* .testimonial-results { ... } */
+    /* .metric-item { ... } */
+    /* .metric-icon { ... } */
+    /* .metric-details { ... } */
+    /* .metric-label { ... } */
+    /* .metric-value { ... } */
+    /* .metric-sub { ... } */
+    /* .metric-change { ... } */
+    /* .metric-change.positive { ... } */
+    /* .metric-change:not(.positive) { ... } */
+
     /* Lisätään tyylit expertise-sectionille */
     .expertise-section {
         background-color: rgba(255, 255, 255, 0.5); /* Valkoinen tausta 50% läpinäkyvyydellä */
         border-radius: var(--border-radius-lg, 12px); /* Pyöristetyt kulmat */
         padding: var(--spacing-xl) 0; /* Sisäinen pystytila */
         margin-bottom: var(--spacing-xl); /* Ulkoinen marginaali alas */
-         /* Lisätään varmuuden vuoksi, jos sectionille ei ole jo max-widthia */
-        max-width: calc(var(--container-width) + 2 * var(--spacing-md)); /* container + padding */
+        max-width: var(--container-width); /* Standard container width */
         margin-left: auto; 
         margin-right: auto;
-         /* Lisätään pieni varjo */
         box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     }
 
-    .testimonial-card-content h3 {
-        font-size: var(--font-size-xl); /* Example size, adjust if needed */
-        font-weight: 600;
-        color: var(--color-text-primary);
-        margin-bottom: var(--spacing-md); /* Space below title */
-    }
-
-    /* Added Results Styles */
-    .testimonial-results {
-        margin: var(--spacing-lg) 0; /* Space above and below results block */
-        padding-left: 0; /* If inheriting quote padding */
-        border-top: 1px solid var(--color-border-subtle); /* Separator line above */
-        padding-top: var(--spacing-lg); /* Space above first metric */
-        display: flex; /* Lay out items horizontally */
-        flex-direction: row; /* Default, but explicit */
-        gap: var(--spacing-xl); /* Space between horizontal items */
-        flex-wrap: wrap; /* Allow wrapping on smaller screens if needed */
-    }
-    .metric-item {
-        display: flex;
-        align-items: flex-start; /* Align icon top with first line */
-        gap: var(--spacing-sm); /* Reduced gap */
-        flex-basis: calc(50% - var(--spacing-xl) / 2); /* Approx 2 per row */
-        flex-grow: 1; /* Allow items to grow if space */
-    }
-    .metric-icon {
-        /* background-color: var(--color-primary-light, #e0f2fe); */ /* Old blue background */
-        /* color: var(--color-primary, #3b82f6); */ /* Old blue color */
-        background-color: rgba(255, 0, 54, 0.1); /* Light red background using primary color with alpha */
-        color: var(--primary-color, #ff0036); /* Use project's primary red color */
-        border-radius: 50%;
-        padding: var(--spacing-xs); /* Reduced padding */
-        display: inline-flex; /* Shrink to content */
-        align-items: center;
-        justify-content: center;
-        flex-shrink: 0;
-    }
-    .metric-icon svg {
-        width: 16px; /* Smaller icon */
-        height: 16px;
-    }
-    .metric-details {
-        display: flex;
-        flex-direction: column; /* Stack details vertically */
-        align-items: flex-start;
-    }
-    .metric-label {
-        font-size: var(--font-size-xs); /* Smaller label */
-        color: var(--color-text-secondary);
-        margin-bottom: var(--spacing-xxs);
-    }
-    .metric-value {
-        font-size: var(--font-size-lg);
-        font-weight: 600;
-        color: var(--color-text-primary);
-    }
-    .metric-sub {
-        font-size: var(--font-size-xs);
-        color: var(--color-text-secondary);
-    }
-    .metric-change {
-        font-size: var(--font-size-xs); /* Smaller change text */
-        font-weight: 500;
-        margin-top: var(--spacing-xxs);
-    }
-    .metric-change.positive {
-        color: var(--color-success, #10b981); /* Green color for positive change */
-    }
-    /* Style for TBA/default metric change */
-    .metric-change:not(.positive) {
-        color: var(--color-text-secondary); /* Use secondary text color for TBA */
-    }
 </style>
 
 </BaseLayout>
