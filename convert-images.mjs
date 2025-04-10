@@ -2,7 +2,7 @@ import sharp from 'sharp';
 import fs from 'fs';
 import path from 'path';
 
-const directoryPath = path.join('public', 'images', 'references');
+const directoryPath = path.join('public', 'images', 'value-props');
 const outputDirectory = directoryPath; // Output to the same directory
 
 // Ensure output directory exists (it should, but good practice)

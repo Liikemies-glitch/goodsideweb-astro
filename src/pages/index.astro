@@ -129,14 +129,18 @@ const latestPosts = (await getCollection('blog'))
             <div class="team-grid" style="display: flex; justify-content: center; gap: var(--spacing-lg); flex-wrap: wrap;">
                 <div class="team-member">
                     <div class="team-member__image">
-                        <img src="/images/team/mikki.png" alt="Mikki Aalto-Ylevä">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/mikki.webp" alt="Mikki Aalto-Ylevä" class="w-full h-full object-cover" loading="lazy">
+                        </div>
                     </div>
                     <h3 class="team-member__name">Mikki<br>Aalto-Ylevä</h3>
                     <p class="team-member__title">SaaS-spesialisti</p>
                 </div>
                 <div class="team-member">
                     <div class="team-member__image">
-                        <img src="/images/team/tuomas.png" alt="Tuomas Kaartoluoma">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/tuomas.webp" alt="Tuomas Kaartoluoma" class="w-full h-full object-cover" loading="lazy">
+                        </div>
                     </div>
                     <h3 class="team-member__name">Tuomas<br>Kaartoluoma</h3>
                     <p class="team-member__title">Designer</p>
@@ -152,7 +156,7 @@ const latestPosts = (await getCollection('blog'))
             <div class="solutions__grid">
                 <article class="solution-card">
                     <div class="solution-card__image">
-                        <img src="/images/value-props/positiointi.png" alt="Tuotepositiointi">
+                        <img src="/images/value-props/positiointi.webp" alt="Tuotepositiointi">
                     </div>
                     <div class="solution-card__content">
                         <div class="solution-card__tags">
@@ -165,7 +169,7 @@ const latestPosts = (await getCollection('blog'))
                 </article>
                 <article class="solution-card">
                     <div class="solution-card__image">
-                        <img src="/images/value-props/userjourney.png" alt="Käyttäjäpolut">
+                        <img src="/images/value-props/userjourney.webp" alt="Käyttäjäpolut">
                     </div>
                     <div class="solution-card__content">
                         <div class="solution-card__tags">
@@ -179,7 +183,7 @@ const latestPosts = (await getCollection('blog'))
                 </article>
                 <article class="solution-card">
                     <div class="solution-card__image">
-                        <img src="/images/value-props/ui.png" alt="Käyttöliittymä ja käyttökokemus" style="transform: scale(1.3);">
+                        <img src="/images/value-props/ui.webp" alt="Käyttöliittymä ja käyttökokemus" style="transform: scale(1.3);">
                     </div>
                     <div class="solution-card__content">
                         <div class="solution-card__tags">
