@@ -1,7 +1,7 @@
 ---
 title: "Designerin rooli asiakaskokemuksen parantamisessa"
 description: "Miten designerit vaikuttavat asiakaskokemukseen"
-pubDate: "2025-04-01"
+pubDate: "2025-01-25"
 heroImage: ../../assets/blog/images/designerin-rooli-asiakaskokemuksen-parantamisessa/featured.webp
 category: "design"
 tags: ["design", "asiakaskokemus", "ux"]

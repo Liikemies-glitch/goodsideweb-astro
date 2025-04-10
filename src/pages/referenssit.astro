@@ -13,7 +13,7 @@ const pageDescription = "Tutustu menestystarinoihimme SaaS-yritysten kanssa. Nä
                 <p class="large-paragraph" style="margin-bottom: 2rem;">
                     Autamme SaaS-yrityksiä kasvamaan yhdistämällä tuotestrategian, designin ja konvertoivat laskeutumissivut toimivaksi kokonaisuudeksi.
                 </p>
-                <div class="hero-buttons" style="margin-bottom: 2rem;">
+                <div class="hero-buttons">
                     <a href="#case-studies" class="btn btn--primary">Katso töitämme &rarr;</a>
                     <a href="/contact" class="btn">Ota yhteyttä</a>
                 </div>
@@ -292,11 +292,18 @@ const pageDescription = "Tutustu menestystarinoihimme SaaS-yritysten kanssa. Nä
             margin-bottom: 1rem;
             font-weight: 700;
         }
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            justify-content: flex-start;
+        }
         .hero-buttons .btn {
-            margin-right: 1rem;
+            /* margin-right: 1rem; */ /* REMOVED - Conflicts with gap */
         }
         .hero-buttons .btn:last-child {
-            margin-right: 0;
+            /* margin-right: 0; */ /* REMOVED - Conflicts with gap */
             background: none;
             border: 1px solid var(--border-color);
             color: var(--text-color);
@@ -340,12 +347,21 @@ const pageDescription = "Tutustu menestystarinoihimme SaaS-yritysten kanssa. Nä
             }
              .hero-stats {
                  justify-content: center;
+                 gap: 1rem; /* Reduced gap for mobile */
+                 flex-wrap: wrap; /* Allow wrapping */
+            }
+            .hero-stat-item {
+                text-align: left; /* Reset text-align if inherited */
+                display: inline-flex; /* Treat item as inline for better centering interaction */
             }
         }
 
         @media (max-width: 768px) {
             .case-study-item {
                 grid-template-columns: 1fr;
+            }
+            .hero-buttons {
+                justify-content: center;
             }
         }
 

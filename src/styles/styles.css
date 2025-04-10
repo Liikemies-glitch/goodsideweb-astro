@@ -249,24 +249,27 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .nav__menu {
-        /* display is handled by JS, we just need layout */
-        position: absolute;
-        top: 5rem; /* Position below the header */
+        /* Mobile menu styles */
+        position: fixed;
+        top: 5rem; /* Below header */
         left: 0;
         right: 0;
-        background-color: var(--background);
-        flex-direction: column;
-        padding: var(--spacing-md) 0;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background: var(--background);
+        box-shadow: 0 1px 0 var(--border-color), 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: var(--spacing-lg) var(--spacing-md);
         height: calc(100vh - 5rem); /* Full height minus header */
-        overflow-y: auto; /* Allow scrolling if content overflows */
-        align-items: center; /* Center items vertically */
-        gap: 0; /* Reset gap for vertical layout */
+        overflow-y: auto;
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--spacing-sm);
+        transform: translateX(100%); /* Initially hidden */
+        transition: transform 0.3s ease-in-out;
+        display: flex;
+        list-style: none; /* ADDED to remove bullet points */
     }
 
-    [data-theme="dark"] .nav__menu {
-        background-color: var(--surface);
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    .nav__menu.active {
+        transform: translateX(0); /* Show menu when active */
     }
 
     .nav__menu li {

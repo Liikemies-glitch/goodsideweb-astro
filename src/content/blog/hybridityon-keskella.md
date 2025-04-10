@@ -1,7 +1,7 @@
 ---
 title: "Hybridityön keskellä: Kuinka suunnitella toimiva toimisto?"
 description: "Hybridityö on tullut jäädäkseen. Se tarjoaa joustavuutta, mutta asettaa uusia haasteita toimiston suunnittelulle. Miten luoda tila, joka palvelee sekä etä- että lähityöntekijöitä?"
-pubDate: "2025-04-01"
+pubDate: "2025-03-15"
 heroImage: ../../assets/blog/images/hybridityon-keskella/featured.webp
 category: "työelämä"
 tags: ["hybridityö", "työelämä", "etätyö"]

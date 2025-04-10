@@ -1,7 +1,7 @@
 ---
 title: "Design as a Service vs. perinteinen design-toiminta"
 description: "Design as a Service (DaaS) haastaa perinteiset mallit. Mitä eroa niillä on ja kumpi sopii paremmin yrityksesi tarpeisiin?"
-pubDate: "2025-04-01"
+pubDate: "2025-01-01"
 heroImage: ../../assets/blog/images/design-as-a-service-vs-perinteinen-design-toiminta/featured.webp
 category: "design"
 tags: ["design", "palvelut", "vertailu"]

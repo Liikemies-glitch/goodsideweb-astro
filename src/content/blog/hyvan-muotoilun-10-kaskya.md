@@ -1,7 +1,7 @@
 ---
 title: "Hyvän muotoilun 10 käskyä"
 description: "Perusperiaatteet hyvästä muotoilusta"
-pubDate: "2025-04-01"
+pubDate: "2025-01-20"
 heroImage: ../../assets/blog/images/hyvan-muotoilun-10-kaskya/featured.webp
 category: "design"
 tags: ["design", "muotoilu", "periaatteet"]
