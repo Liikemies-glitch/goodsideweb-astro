@@ -1309,6 +1309,7 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
 }
 
 .team-member {
@@ -2080,4 +2081,10 @@ h1, h2, h3, h4, h5, h6 {
   align-self: flex-start; /* Align left */
 }
 
-/* End of copied styles */ 
+/* Responsive hero title for services page */
+@media (max-width: 767px) {
+    .saas-hero h1 {
+        font-size: 2.2rem; /* Pienempi fonttikoko mobiilille */
+        line-height: 1.3;
+    }
+}
