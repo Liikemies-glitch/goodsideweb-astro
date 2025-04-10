@@ -20,7 +20,7 @@ const pageDescription = "Luomme poikkeuksellisia digitaalisia kokemuksia, jotka 
      <section class="expertise-section">
         <div class="container">
             <!-- Tähän tulee tabi-navigaatio tai suoraan kortit -->
-             <div class="tabs-placeholder" style="margin-bottom: 3rem; text-align: center;">
+             <div class="tabs-placeholder" style="margin-bottom: 3rem;">
                  <!-- Päivitetyt tabi-napit attribuuteilla -->
                 <button class="tab-button-style" data-tab="ui-ux">UI/UX-suunnittelu</button>
                 <button class="tab-button-style active" data-tab="kayttajapolut">Käyttäjäpolut</button>
@@ -248,62 +248,101 @@ const pageDescription = "Luomme poikkeuksellisia digitaalisia kokemuksia, jotka 
 <style>
      /* Yleiset päivitykset */
     .large-paragraph {
-        font-size: var(--font-size-lg);
-        color: var(--color-text-secondary);
-        line-height: var(--line-height-relaxed);
+        font-size: 1.125rem; /* Tai muu sopiva koko */
+        line-height: 1.7;
+        color: var(--color-text-secondary); /* Harmaa teksti */
     }
 
-    /* REMOVED .badge styles */
-    /*
-    .badge {
-        background-color: var(--color-bg-accent); 
-        color: var(--color-text-on-accent); 
-        padding: var(--spacing-xs) var(--spacing-md);
-        border-radius: var(--border-radius-full);
-        font-size: var(--font-size-sm);
-        font-weight: 500;
-    }
-    */
-
-     /* Tabi-nappien tyyli (yksinkertaistettu esimerkki) */
-     .tabs-placeholder {
-        display: flex;
-        justify-content: center;
-        gap: var(--spacing-sm);
-        border-bottom: 1px solid var(--color-border-subtle);
+    /* Uusi Tab Style - Päivitetty */
+    .tabs-placeholder {
         margin-bottom: 3rem;
+        /* Removed text-align: center; - Handled in media query */
+        /* Base styles for desktop (optional) */
+        text-align: center; /* Keep centered on desktop */
     }
+
     .tab-button-style {
-        padding: var(--spacing-sm) var(--spacing-lg);
-        background: none;
-        border: none;
-        border-bottom: 3px solid transparent;
+        padding: 0.75rem 1.5rem; /* Lisää paddingia */
+        margin: 0 0.25rem; /* Pienempi marginaali */
+        background-color: transparent; /* Läpinäkyvä oletuksena */
+        color: var(--color-text); /* Oletustekstin väri */
+        border: none; /* Ei reunaa */
+        border-bottom: 2px solid transparent; /* Läpinäkyvä alareuna */
         cursor: pointer;
-        font-weight: 500;
-        color: var(--color-text-secondary);
-        transition: all 0.2s ease;
-        font-size: var(--font-size-md);
-         margin-bottom: -1px; /* Nosta napit viivan päälle */
-        font-family: inherit; /* Varmistetaan fontin perintä */
+        font-size: 1rem; /* Säädä fonttikokoa tarvittaessa */
+        font-weight: 500; /* Medium fontti */
+        transition: all 0.3s ease; /* Pehmeä siirtymä */
+        white-space: nowrap; /* Estää tekstin rivittymisen */
+        font-family: inherit; /* Varmistetaan oikea fontti */
     }
+
     .tab-button-style.active {
-        color: var(--color-primary);
-        border-bottom-color: var(--color-primary);
+        color: var(--color-primary); /* Pääväri aktiivisena */
+        border-bottom-color: var(--color-primary); /* Alareuna aktiivisena */
+        font-weight: 600; /* Lihavoitu aktiivisena */
     }
-     .tab-button-style:hover:not(.active) {
-         color: var(--color-primary);
-          opacity: 1;
-     }
+
+    .tab-button-style:hover:not(.active) {
+        color: var(--color-primary-light); /* Vaalempi pääväri hoverissa */
+        border-bottom-color: var(--color-primary-light); /* Vaalempi alareuna hoverissa */
+    }
 
 
-    /* Osaamiskorttien gridi */
+    /* Tabien sisällön piilotus oletuksena */
+    .tab-pane {
+        display: none;
+    }
+    .tab-pane.active {
+        display: block;
+        animation: fadeIn 0.5s ease-in-out; /* Lisätään pieni fade-in animaatio */
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    /* Mobiiliresponsiivisuus tabeille */
+    @media (max-width: 768px) {
+        .tabs-placeholder {
+            overflow-x: auto; /* Salli vaakavieritys */
+            white-space: nowrap; /* Pidä napit yhdellä rivillä */
+            text-align: left; /* Kohdista vasemmalle mobiilissa */
+            -webkit-overflow-scrolling: touch; /* Parempi vieritys iOS:ssä */
+            scrollbar-width: none; /* Piilota vierityspalkki (Firefox) */
+            padding-bottom: 10px; /* Add some padding so scrollbar doesn't overlap content if visible */
+            margin-left: -1rem; /* Compensate container padding if needed */
+            margin-right: -1rem; /* Compensate container padding if needed */
+            padding-left: 1rem; /* Add padding back */
+            padding-right: 1rem; /* Add padding back */
+        }
+
+        /* Piilota vierityspalkki (Webkit/Blink) */
+        .tabs-placeholder::-webkit-scrollbar {
+            display: none;
+        }
+
+        .tab-button-style {
+            padding: 0.75rem 1rem; /* Säädä padding mobiilissa */
+             display: inline-block; /* Varmista että napit ovat rivissä */
+        }
+
+         /* Add some space after the last tab to ensure it doesn't get cut off near the edge */
+        .tabs-placeholder::after {
+            content: '';
+            display: inline-block;
+            width: 1rem; /* Adjust space as needed */
+        }
+    }
+
+
+    /* Expertise Section & Cards */
     .expertise-cards-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: var(--spacing-xl);
     }
 
-    /* Kortin tyylit */
     .card {
         background-color: var(--color-bg-surface);
         border: 1px solid var(--color-border-subtle);
