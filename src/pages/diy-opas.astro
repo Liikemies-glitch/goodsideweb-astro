@@ -1,0 +1,73 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BackgroundPaths from '../components/BackgroundPaths.tsx';
+
+const pageTitle = "DIY SaaS Suunnitteluopas (Tulossa pian!) - The Good Side";
+const pageDescription = "Lataa pian kattava oppaamme SaaS-suunnittelun saloihin. Sillä välin, ota yhteyttä suoraan!";
+---
+<BaseLayout title={pageTitle} description={pageDescription}>
+    <BackgroundPaths client:load />
+
+    <section class="diy-hero" style="padding-top: 6rem; padding-bottom: 6rem; text-align: left; min-height: 70vh; display: flex; align-items: center; justify-content: flex-start;">
+        <div class="container" style="text-align: left;">
+            {/* TODO: Vaihda tähän parempi kuva/animaatio */}
+            <div class="placeholder-image" style="margin-bottom: 2rem; font-size: 4rem; text-align: left;">🚧</div>
+
+            <h1 style="margin-bottom: 1rem; font-size: clamp(2.5rem, 4vw, 3.5rem); line-height: 1.1; text-align: left;">DIY SaaS Suunnitteluopas - Rakenteilla!</h1>
+            <p class="large-paragraph" style="max-width: 650px; margin: 0 0 2.5rem 0;">
+                Pahoittelut! Kattava DIY-oppaamme SaaS-suunnittelun saloihin on vielä viimeistelyn alla. Haluatko ymmärtää nopeasti, miten voimme auttaa sinua kasvattamaan SaaS-liiketoimintaasi suunnittelun keinoin?
+            </p>
+            <div class="contact-info" style="background-color: var(--color-bg-surface); padding: 2rem 2.5rem; border-radius: var(--border-radius-lg); display: block; border: 1px solid var(--color-border-subtle); box-shadow: var(--shadow-md); max-width: max-content;">
+                <h3 style="margin-top: 0; margin-bottom: 1rem; color: var(--primary-color); font-size: var(--font-size-lg);">Paras tapa edetä nyt:</h3>
+                <p style="margin-bottom: 0.5rem; color: var(--color-text-secondary);">Ota yhteyttä suoraan Mikkiin:</p>
+                <p style="font-weight: 500; margin-bottom: 0.25rem; font-size: var(--font-size-md);"><strong>Mikki / The Good Side</strong></p>
+                <p style="margin-bottom: 0.25rem;">📞 <a href="tel:0408698887">040 869 8887</a></p>
+                <p style="margin-bottom: 0;">📧 <a href="mailto:mikki@goodside.fi">mikki@goodside.fi</a></p>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .large-paragraph { /* Varmistetaan tyyli, jos ei globaali */
+            font-size: var(--font-size-lg, 1.125rem);
+            color: var(--color-text-secondary);
+            line-height: var(--line-height-relaxed, 1.7);
+        }
+        .contact-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        /* Lisätään responsiivisuutta tekstille ja laatikolle */
+         @media (max-width: 768px) {
+            .diy-hero {
+                padding-top: 4rem;
+                padding-bottom: 4rem;
+                justify-content: center;
+                text-align: center;
+            }
+            .container {
+                text-align: center;
+            }
+            h1 {
+                 font-size: clamp(2rem, 6vw, 2.8rem);
+                 text-align: center;
+            }
+            .large-paragraph {
+                font-size: var(--font-size-base);
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .placeholder-image {
+                text-align: center;
+            }
+            .contact-info {
+                 padding: 1.5rem;
+                 display: inline-block;
+            }
+         }
+    </style>
+</BaseLayout> 

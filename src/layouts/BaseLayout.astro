@@ -9,6 +9,8 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const defaultOgImage = new URL('/images/brand/logo.webp', Astro.url.origin).toString(); // Using logo as default
 ---
 <!DOCTYPE html>
 <html lang="fi">
@@ -24,6 +26,21 @@ const { title, description } = Astro.props;
     <!-- Astro will handle CSS bundling, this is imported above -->
     <!-- <link rel="stylesheet" href="/styles.css"> -->
     <script is:inline src="/scripts/main.js"></script> <!-- Link main JS -->
+
+    {/* Open Graph / Facebook */}    <meta property="og:type" content="website">
+    <meta property="og:url" content={canonicalURL}>
+    <meta property="og:title" content={title}>
+    <meta property="og:description" content={description}>
+    <meta property="og:image" content={defaultOgImage}>
+
+    {/* Twitter */}    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content={canonicalURL}>
+    <meta property="twitter:title" content={title}>
+    <meta property="twitter:description" content={description}>
+    <meta property="twitter:image" content={defaultOgImage}>
+
+    {/* Canonical URL */}
+    <link rel="canonical" href={canonicalURL} />
 </head>
 <body>
     <!-- Header/Navigation -->
@@ -43,7 +60,7 @@ const { title, description } = Astro.props;
                 <li><a href="/palvelut">Palvelut</a></li>
                 <li><a href="/referenssit">Referenssit</a></li>
                 <li><a href="/blog">Blogi</a></li>
-                <li><a href="/#materiaalit">Materiaalit</a></li>
+                {/* <li><a href="/#materiaalit">Materiaalit</a></li> */}
                 <li><a href="/#hinnat">Hinnat</a></li>
                 <li><a href="/contact" class="btn btn--primary">Ota yhteyttä</a></li>
             </ul>
@@ -85,8 +102,9 @@ const { title, description } = Astro.props;
                 </div>
                 <div class="footer__contact">
                     <h4>Ota yhteyttä</h4>
-                    <p>info@goodside.fi</p>
-                    <!-- Add address or phone if needed -->
+                    <p><strong>Mikki Aalto-Ylevä</strong></p>
+                    <p><a href="tel:0408698887">040 869 8887</a></p>
+                    <p><a href="mailto:mikki@goodside.fi">mikki@goodside.fi</a></p>
                 </div>
             </div>
         </div>
