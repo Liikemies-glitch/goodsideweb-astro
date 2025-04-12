@@ -5,7 +5,7 @@ description: >-
   Nämä perusperiaatteet auttavat sinua luomaan käyttäjäystävällisen ja toimivan
   käyttöliittymän.
 author: moretagoy
-tags: []
+tags: ["Käyttöliittymäsuunnittelu", "UI", "Käytettävyys"]
 heroImage: ../../assets/blog/images/yksinkertainen-kayttoliittyma-top5-asiaa/featured.jpg
 heroImageAlt: Yksinkertainen käyttöliittymä - TOP5 asiaa
 ---

@@ -6,7 +6,7 @@ description: >-
   pohdintaa, jotta tekoälyn tuomat hyödyt voidaan maksimoida ja riskit
   minimoida.
 author: moretagoy
-tags: []
+tags: ["Tekoäly", "AI", "Etiikka"]
 heroImage: ../../assets/blog/images/tekoalyn-kayttamisen-haasteet/featured.webp
 heroImageAlt: Tekoälyn käyttämisen haasteet
 ---

@@ -6,12 +6,18 @@ description: >-
   jonotusaikoina ja botteina, jotka eivät ratkaise asiakkaan tarpeita.
 seoTitle: Asiakaskokemus ja heikko asiakaspalvelu
 author: mikki
-tags: []
+tags: ['Asiakaskokemus', 'Asiakaspalvelu', 'Tutkimus']
 heroImage: ../../assets/blog/images/asiakaskokemus-heikkenee-jalleen/featured.webp
 heroImageAlt: Asiakaskokemus heikkenee jälleen
 ---
 
-Tämä artikkeli on kirjoitettu ja kuvitettu tekoälyavusteisesti. Alkuperäinen The Wall Street Journalin kirjoitus [löytyy täältä.](https://www.wsj.com/articles/customer-experience-gets-worse-again-23774dff) Amerikkalaisten yritysten tuottama asiakaskokemus on laskenut uuteen pohjalukemaan kolmantena peräkkäisenä vuotena, kertoo tutkimusyhtiö Forresterin tuore raportti. Tutkimuksessa arvioitiin 98 363 kuluttajan käsityksiä 223 brändistä 13 eri toimialalta. ![](/images/blog/asiakaskokemus-heikkenee-jalleen/Nayttokuva-2024-06-25-kello-13.31.28-244x300.png)Asiakaskokemuksen keskiarvopistemäärä laski 69.3 pisteeseen sadasta, mikä on alin taso Forresterin CX Index -tutkimuksissa sitten vuoden 2017. Luku on laskenut tasaisesti vuodesta 2021 jolloin se oli korkeimmillaan. Vuodesta 2017 alkaen CX Index luku oli kasvussa aina vuoteen 2021 asti kunnes alamäki alkoi. Koronapandemian tuottamat haasteet, kuten toimitusviivästykset, tuotteiden huono saatavuus ja alimitoitetut henkilöstöresurssit, eivät enää selitä alamäkeä. Yritykset jatkavat hintojen nostamistaan ja piilokulujen lisäämistään mikä puolestaan tekee kuluttajista aiempaa skeptisempiä, kertoo Forresterin pääanalyytikko Pete Jacques.
+Tämä artikkeli on kirjoitettu ja kuvitettu tekoälyavusteisesti. Alkuperäinen The Wall Street Journalin kirjoitus [löytyy täältä.](https://www.wsj.com/articles/customer-experience-gets-worse-again-23774dff) 
+
+Amerikkalaisten yritysten tuottama asiakaskokemus on laskenut uuteen pohjalukemaan kolmantena peräkkäisenä vuotena, kertoo tutkimusyhtiö Forresterin tuore raportti. Tutkimuksessa arvioitiin 98 363 kuluttajan käsityksiä 223 brändistä 13 eri toimialalta.
+
+![Asiakaskokemuksen kehitys vuosina 2017-2024](../../assets/blog/images/asiakaskokemus-heikkenee-jalleen/cx-index-2017-2024.webp)
+
+Asiakaskokemuksen keskiarvopistemäärä laski 69.3 pisteeseen sadasta, mikä on alin taso Forresterin CX Index -tutkimuksissa sitten vuoden 2017. Luku on laskenut tasaisesti vuodesta 2021 jolloin se oli korkeimmillaan. Vuodesta 2017 alkaen CX Index luku oli kasvussa aina vuoteen 2021 asti kunnes alamäki alkoi. Koronapandemian tuottamat haasteet, kuten toimitusviivästykset, tuotteiden huono saatavuus ja alimitoitetut henkilöstöresurssit, eivät enää selitä alamäkeä. Yritykset jatkavat hintojen nostamistaan ja piilokulujen lisäämistään mikä puolestaan tekee kuluttajista aiempaa skeptisempiä, kertoo Forresterin pääanalyytikko Pete Jacques.
 
 > "Joku maksaa enemmän, mutta he eivät tunne sitä arvoa, jonka he uskovat korkeamman hinnan tuovan mukanaan", Jacques sanoi.
 

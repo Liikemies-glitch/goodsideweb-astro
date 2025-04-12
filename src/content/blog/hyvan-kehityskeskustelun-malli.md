@@ -5,7 +5,7 @@ description: >-
   Kehityskeskustelujen onnistuminen perustuu avoimeen ja rakentavaan
   vuorovaikutukseen, selkeisiin tavoitteisiin ja suunnitelmallisuuteen.
 author: moretagoy
-tags: []
+tags: ["kehityskeskustelu", "johtaminen", "HR"]
 heroImage: ../../assets/blog/images/hyvan-kehityskeskustelun-malli/featured.webp
 heroImageAlt: Hyvän kehityskeskustelun malli
 ---

@@ -7,11 +7,13 @@ description: >-
 author: moretagoy
 tags:
   - UX
+  - Käytettävyys
+  - Heuristiikat
 heroImage: ../../assets/blog/images/jakob-nielsen-ja-kaytettavyyden-periaatteet/featured.webp
 heroImageAlt: Jakob Nielsen ja käytettävyyden periaatteet
 ---
 
-**Jakob Nielsen** on yksi maailman tunnetuimmista käytettävyysasiantuntijoista ja digitaalisen muotoilun uranuurtajista. Nielsen tunnetaan erityisesti käytettävyyden periaatteistaan, jotka ovat muodostaneet perustan modernille käyttöliittymäsuunnittelulle ja käyttäjäkokemuksen kehittämiselle. Hänen työnsä keskittyy siihen, miten digitaalisia tuotteita voidaan tehdä helpommin käytettäviksi, ymmärrettävämmiksi ja käyttäjäystävällisemmiksi. Nielseniä kutsutaan usein ”**käytettävyyden isäksi**”, ja hänen työnsä on ollut ratkaisevassa roolissa verkkosivustojen ja sovellusten käytettävyyden parantamisessa.
+**Jakob Nielsen** on yksi maailman tunnetuimmista käytettävyysasiantuntijoista ja digitaalisen muotoilun uranuurtajista. Nielsen tunnetaan erityisesti käytettävyyden periaatteistaan, jotka ovat muodostaneet perustan modernille käyttöliittymäsuunnittelulle ja käyttäjäkokemuksen kehittämiselle. Hänen työnsä keskittyy siihen, miten digitaalisia tuotteita voidaan tehdä helpommin käytettäviksi, ymmärrettävämmiksi ja käyttäjäystävällisemmiksi. Nielseniä kutsutaan usein "**käytettävyyden isäksi**", ja hänen työnsä on ollut ratkaisevassa roolissa verkkosivustojen ja sovellusten käytettävyyden parantamisessa.
 
 ## Jakob Nielsenin tausta ja ura
 
@@ -31,15 +33,15 @@ Käyttäjän on aina tiedettävä, mitä järjestelmässä tapahtuu. Tähän kuu
 
 ### Vastaavuus todellisuuden kanssa
 
-Käyttöliittymän tulee puhua käyttäjän kieltä ja hyödyntää tuttuja käsitteitä, joita käyttäjät voivat helposti ymmärtää. Tämä tarkoittaa myös, että käyttöliittymän elementtien ja toimintojen tulee heijastaa todellisia ilmiöitä – esimerkiksi ”kansioiden” käyttö tiedostojen järjestämisessä vastaa fyysisten kansioiden käsitettä.
+Käyttöliittymän tulee puhua käyttäjän kieltä ja hyödyntää tuttuja käsitteitä, joita käyttäjät voivat helposti ymmärtää. Tämä tarkoittaa myös, että käyttöliittymän elementtien ja toimintojen tulee heijastaa todellisia ilmiöitä – esimerkiksi "kansioiden" käyttö tiedostojen järjestämisessä vastaa fyysisten kansioiden käsitettä.
 
 ### Käyttäjän hallinnan ja vapauden tarjoaminen
 
-Käyttäjät saattavat toisinaan tehdä virheitä, joten heidän tulee voida peruuttaa tai perua toimintoja helposti. Tämä periaate koskee esimerkiksi “Peruuta”- ja “Takaisin”-painikkeita, joiden avulla käyttäjät voivat korjata virheitään ilman turhautumista.
+Käyttäjät saattavat toisinaan tehdä virheitä, joten heidän tulee voida peruuttaa tai perua toimintoja helposti. Tämä periaate koskee esimerkiksi "Peruuta" ja "Takaisin" painikkeita, joiden avulla käyttäjät voivat korjata virheitään ilman turhautumista.
 
 ### Johdonmukaisuus ja standardit
 
-Suunnittelun on oltava yhtenäinen ja johdonmukainen, ja alan standardeja tulee noudattaa. Käyttäjät odottavat tiettyjä elementtejä tietyistä paikoista – esimerkiksi ”Hae”-kentän sijaintia tai toimintapainikkeiden visuaalisuutta. Johdonmukaisuus vähentää käyttäjien kognitiivista kuormitusta ja parantaa käyttäjäkokemusta.
+Suunnittelun on oltava yhtenäinen ja johdonmukainen, ja alan standardeja tulee noudattaa. Käyttäjät odottavat tiettyjä elementtejä tietyistä paikoista – esimerkiksi "Hae" kentän sijaintia tai toimintapainikkeiden visuaalisuutta. Johdonmukaisuus vähentää käyttäjien kognitiivista kuormitusta ja parantaa käyttäjäkokemusta.
 
 ### Virheiden estäminen
 
@@ -75,4 +77,4 @@ Digitaaliset tuotteet ovat nykyisin olennainen osa elämäämme, ja niiden käyt
 
 > Hänen heuristiikkansa tarjoavat selkeät ohjenuorat, joiden avulla tuotteet voidaan tehdä toimiviksi, helppokäyttöisiksi ja miellyttäviksi.
 
-Nielsenin ansiosta käytettävyys on tunnustettu osaksi ammattimaista suunnittelua, ja hänen työnsä perintö elää jokaisessa tuotteessa, joka on rakennettu käyttäjät mielessä.   **Janne Gylling** janne@goodside.fi 044 750 4444
+Nielsenin ansiosta käytettävyys on tunnustettu osaksi ammattimaista suunnittelua, ja hänen työnsä perintö elää jokaisessa tuotteessa, joka on rakennettu käyttäjät mielessä.   **Janne Gylling** janne@goodside.fi 044 750 4444

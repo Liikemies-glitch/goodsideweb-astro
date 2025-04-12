@@ -6,7 +6,7 @@ description: >-
   Vertaile eri vaihtoehtoja ja opi, miten voit edetä kustannustehokkaasti.
 seoTitle: 'Ideasta sovellukseksi: Miten edetä ilman softaosaamista?'
 author: mikki
-tags: []
+tags: ["Prototypointi", "MVP", "Budjetointi"]
 heroImage: ../../assets/blog/images/ideasta-appiin-selviytymisopas/featured.webp
 heroImageAlt: 'Ideasta appiin: Selviytymisopas, kun osaat bisneksen mutta et bittiä'
 ---

@@ -6,7 +6,7 @@ description: >-
   ajattelua, kaikki eivät hallitse näitä kaikkia taitoja tai löydä tasapainoa
   niiden välillä.
 author: moretagoy
-tags: []
+tags: ["UX", "Käyttökokemus", "Design"]
 heroImage: ../../assets/blog/images/mika-on-vaikeinta-ux-suunnittelussa/featured.webp
 heroImageAlt: Mikä on vaikeinta UX-suunnittelussa?
 ---

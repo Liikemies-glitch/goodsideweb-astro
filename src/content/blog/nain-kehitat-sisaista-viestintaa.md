@@ -6,7 +6,7 @@ description: >-
   viestintäprosessien ja työkalujen käyttöönottoa, avoimen kulttuurin luomista
   ja työntekijöiden aktiivista osallistamista viestintäprosessiin.
 author: moretagoy
-tags: []
+tags: ["Sisäinen viestintä", "Työelämä", "Johtaminen"]
 heroImage: ../../assets/blog/images/nain-kehitat-sisaista-viestintaa/featured.webp
 heroImageAlt: Näin kehität sisäistä viestintää
 ---

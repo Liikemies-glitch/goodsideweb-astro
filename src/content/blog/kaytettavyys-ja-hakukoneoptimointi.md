@@ -6,7 +6,7 @@ description: >-
   kuusi avainta parempaan verkkoläsnäoloon.
 seoTitle: 'UX ja SEO: Yhteinen tavoite'
 author: moretagoy
-tags: []
+tags: ["Käytettävyys", "Hakukoneoptimointi", "Design"]
 heroImage: ../../assets/blog/images/kaytettavyys-ja-hakukoneoptimointi/featured.webp
 heroImageAlt: Käytettävyys ja hakukoneoptimointi
 ---

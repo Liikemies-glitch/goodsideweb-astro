@@ -7,6 +7,8 @@ description: >-
 author: mikki
 tags:
   - Design
+  - Historia
+  - Tatuointi
 heroImage: ../../assets/blog/images/george-burchett-maailman-ensimmainen-moderni-tatuointitaiteilija/featured.webp
 heroImageAlt: George Burchett - Maailman ensimmäinen moderni tatuointitaiteilija
 ---

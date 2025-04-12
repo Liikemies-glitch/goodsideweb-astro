@@ -6,7 +6,7 @@ description: >-
   asiakaskokemusta. Hyvällä suunnittelulla saat aikaan kannattavaa
   liiketoimintaa.
 author: moretagoy
-tags: []
+tags: ["Käyttöliittymäsuunnittelu", "UI", "Liiketoiminta"]
 heroImage: ../../assets/blog/images/kayttoliittymasuunnittelun-tarkeys/featured.webp
 heroImageAlt: Käyttöliittymäsuunnittelu ja sen tärkeys
 ---

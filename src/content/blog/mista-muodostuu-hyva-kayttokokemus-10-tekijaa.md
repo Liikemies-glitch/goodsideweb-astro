@@ -5,7 +5,7 @@ description: >-
   Hyvä UX on kokonaisuus, jossa nämä tekijät yhdistyvät ja luovat miellyttävän,
   tehokkaan ja helppokäyttöisen kokemuksen.
 author: moretagoy
-tags: []
+tags: ["UX", "Käyttökokemus", "Design"]
 heroImage: ../../assets/blog/images/mista-muodostuu-hyva-kayttokokemus-10-tekijaa/featured.webp
 heroImageAlt: Mistä muodostuu hyvä käyttökokemus? 10 tekijää
 ---
