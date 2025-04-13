@@ -1,11 +1,11 @@
 ---
-title: "Miten ilmastonmuutosta voisi ratkoa palvelumuotoilun avulla?"
+title: "Miten ilmastonmuutosta voisi ratkoa palvelumuotoilun avulla"
 pubDate: "2024-08-01T10:30:00.000Z"
 description: >-
   Palvelumuotoilu tarjoaa työkaluja ja menetelmiä, joilla voidaan kehittää
   kestävämpiä ja ilmastoystävällisempiä palveluja ja ratkaisuja.
 seoTitle: "Palvelumuotoilu ilmastonmuutoksen ratkaisemisessa"
-author: mikki
+author: Mikki Aalto-Ylevä
 tags:
   - "palvelumuotoilu"
   - "ilmastonmuutos"
@@ -14,44 +14,97 @@ heroImage: ../../assets/blog/images/miten-ilmastonmuutosta-voisi-ratkoa-palvelum
 heroImageAlt: "Kuvitus maapallosta ja vihreistä ratkaisuista"
 ---
 
-Ilmastonmuutos on yksi aikamme suurimmista globaaleista haasteista, ja sen ratkaiseminen vaatii laaja-alaista yhteistyötä yhteiskunnan kaikilla tasoilla. **Palvelumuotoilu** voi olla avainasemassa, kun pyritään luomaan käyttäjäystävällisiä ja kestäviä ratkaisuja, jotka vastaavat ympäristöön kohdistuviin haasteisiin. Palvelumuotoilun perusperiaatteet, kuten asiakaslähtöisyys, iteratiivinen kehitys ja käyttäjien osallistaminen, ovat työkaluja, joiden avulla voidaan kehittää konkreettisia ja vaikuttavia ratkaisuja ilmastonmuutoksen hillitsemiseksi ja sopeutumiseksi sen vaikutuksiin.
+## Palvelumuotoilun rooli ilmastonmuutoksen ratkaisemisessa: tiivistelmä
 
-## Käyttäjälähtöinen ongelmanratkaisu
+Palvelumuotoilu tarjoaa tehokkaita menetelmiä ilmastonmuutoksen hillitsemiseen käyttäjälähtöisellä lähestymistavalla. Sen avulla voidaan suunnitella kestäviä ratkaisuja, jotka tekevät ympäristöystävällisistä valinnoista helppoja ja houkuttelevia. Palvelumuotoilun periaatteet - käyttäjäymmärrys, yhteissuunnittelu ja iteratiivinen kehitys - mahdollistavat uudenlaisten palvelujen kehittämisen, jotka aidosti vähentävät hiilijalanjälkeä. Se tarjoaa konkreettisia työkaluja yrityksille, kunnille ja organisaatioille ilmastotoimien toteuttamiseen käytännössä.
 
-Palvelumuotoilun keskiössä on käyttäjän tarpeiden ymmärtäminen ja käyttäjäkokemuksen parantaminen. Ilmastonmuutoksen ratkaisemisessa käyttäjälähtöisyys tarkoittaa sitä, että kestäviä toimintamalleja ja palveluita kehitetään nimenomaan käyttäjien ehdoilla. Tämä on tärkeää, sillä ilmastonmuutosta ei voida ratkoa pelkillä teknisillä innovaatioilla, vaan ihmisten arkea ja käyttäytymistä on muokattava suuntaan, jossa he voivat toimia ympäristön kannalta kestävästi.
+## Ilmastonmuutos vaatii monipuolisia ratkaisukeinoja
+
+Ilmastonmuutos on yksi aikamme suurimmista globaaleista haasteista, ja sen ratkaiseminen vaatii laaja-alaista yhteistyötä yhteiskunnan kaikilla tasoilla. **Palvelumuotoilu** voi olla avainasemassa, kun pyritään luomaan käyttäjäystävällisiä ja kestäviä ratkaisuja, jotka vastaavat ympäristöön kohdistuviin haasteisiin. 
+
+Palvelumuotoilun perusperiaatteet, kuten:
+- Asiakaslähtöisyys
+- Iteratiivinen kehitys
+- Käyttäjien osallistaminen
+
+Nämä ovat työkaluja, joiden avulla voidaan kehittää konkreettisia ja vaikuttavia ratkaisuja ilmastonmuutoksen hillitsemiseksi ja sopeutumiseksi sen vaikutuksiin.
+
+## Käyttäjälähtöinen ongelmanratkaisu ilmastohaasteissa
+
+Palvelumuotoilun keskiössä on käyttäjän tarpeiden ymmärtäminen ja käyttäjäkokemuksen parantaminen. Ilmastonmuutoksen ratkaisemisessa käyttäjälähtöisyys tarkoittaa sitä, että kestäviä toimintamalleja ja palveluita kehitetään nimenomaan käyttäjien ehdoilla. 
+
+Tämä on tärkeää, sillä ilmastonmuutosta ei voida ratkoa pelkillä teknisillä innovaatioilla, vaan ihmisten arkea ja käyttäytymistä on muokattava suuntaan, jossa he voivat toimia ympäristön kannalta kestävästi.
 
 > Esimerkiksi kaupunkien liikenteen kehittämisessä palvelumuotoilu voi auttaa löytämään ratkaisuja, jotka vähentävät yksityisautoilua ja kannustavat käyttämään joukkoliikennettä tai muita vähäpäästöisiä vaihtoehtoja.
 
-Suunnitteluprosessin aikana voidaan keskittyä siihen, miten joukkoliikenne voidaan tehdä käyttäjille sujuvammaksi, helpommaksi ja houkuttelevammaksi kuin autoilu.
+The Good Side auttaa SaaS-yrityksiä kehittämään ilmastoystävällisiä digitaalisia palveluita, jotka tukevat kestävää kehitystä ja auttavat vähentämään hiilijalanjälkeä.
 
-## Empatia ja ymmärrys ympäristön näkökulmasta
+## Empatia ympäristön näkökulmasta
 
-Palvelumuotoilun yksi perusperiaatteista on empatia, eli käyttäjän tunteiden ja tarpeiden syvällinen ymmärtäminen. Ympäristönäkökulma on luonnollinen laajennus tälle ajattelutavalle. Ilmastonmuutoksen kohdalla empatia tarkoittaa myös sitä, että otetaan huomioon sekä nykyisten että tulevien sukupolvien tarpeet ja planeetan rajalliset resurssit.
+Palvelumuotoilun yksi perusperiaatteista on empatia, eli käyttäjän tunteiden ja tarpeiden syvällinen ymmärtäminen. Ympäristönäkökulma on luonnollinen laajennus tälle ajattelutavalle. Ilmastonmuutoksen kohdalla empatia tarkoittaa myös sitä, että otetaan huomioon:
 
-> Palvelumuotoilu voi auttaa organisaatioita kehittämään tuotteita ja palveluita, jotka ovat paitsi käyttäjäystävällisiä myös ympäristöystävällisiä.
+1. Nykyisten sukupolvien tarpeet
+2. Tulevien sukupolvien tarpeet
+3. Planeetan rajalliset resurssit
 
-Esimerkiksi vähähiilisten palveluiden suunnittelussa voidaan hyödyntää empatiaa, kun ymmärretään, että käyttäjät arvostavat ekologisia ratkaisuja, mutta saattavat kokea niihin siirtymisen haastavana. Tämän ymmärryksen pohjalta voidaan kehittää palveluita, jotka tekevät kestävistä valinnoista vaivattomia ja käyttäjille luonnollisia.
+Esimerkiksi vähähiilisten palveluiden suunnittelussa voidaan hyödyntää empatiaa, kun ymmärretään, että käyttäjät arvostavat ekologisia ratkaisuja, mutta saattavat kokea niihin siirtymisen haastavana.
 
-## Kestävä käyttäytymisen muutos
+## Kestävän käyttäytymisen muutoksen muotoilu
 
-Ilmastonmuutoksen ratkaisussa yksi suurimmista haasteista on ihmisten käyttäytymisen muuttaminen. Palvelumuotoilun avulla voidaan suunnitella ratkaisuja, jotka tukevat ihmisten siirtymistä kestävämpiin toimintatapoihin. Tämän saavuttamiseksi on tärkeää tehdä kestävästä käyttäytymisestä helppoa, intuitiivista ja palkitsevaa. Esimerkiksi kiertotalouden palvelut voivat hyötyä palvelumuotoilusta, kun pyritään tekemään kierrättämisestä ja resurssien jakamisesta yksinkertaista ja houkuttelevaa. Käyttäjälähtöiset digitaaliset palvelut voivat helpottaa kuluttajia ymmärtämään omia ympäristövaikutuksiaan ja tehdä ekologisista valinnoista vaivattomia. Palvelumuotoiluprosessin avulla voidaan tunnistaa käyttäytymisen esteitä, kuten tiedon puutetta, mukavuudenhalua tai kustannushuolia, ja kehittää ratkaisuja, jotka poistavat tai vähentävät näitä esteitä. Esimerkiksi asuinrakennusten energiatehokkuutta parantavia ratkaisuja voidaan tehdä houkuttelevammiksi, kun niiden käyttöönotto on yksinkertaista ja käyttäjille tarjotaan selkeitä etuja, kuten kustannussäästöjä.
+Ilmastonmuutoksen ratkaisussa yksi suurimmista haasteista on ihmisten käyttäytymisen muuttaminen. Palvelumuotoilun avulla voidaan suunnitella ratkaisuja, jotka tukevat ihmisten siirtymistä kestävämpiin toimintatapoihin. 
 
-## Yhteissuunnittelu ja yhteistyö
+Tämän saavuttamiseksi on tärkeää tehdä kestävästä käyttäytymisestä:
+- Helppoa
+- Intuitiivista
+- Palkitsevaa
 
-Ilmastonmuutoksen monimutkaiset ongelmat vaativat yhteistyötä eri sidosryhmien välillä, mukaan lukien kaupunkien päättäjät, yritykset, asukkaat ja asiantuntijat. Palvelumuotoilu tuo yhteen eri toimijat yhteissuunnittelun kautta, jolloin voidaan kehittää kokonaisvaltaisia ratkaisuja. Tällöin ilmastonmuutoksen torjumiseksi luodut palvelut ja järjestelmät ovat tehokkaampia ja paremmin sopeutettuja paikallisiin olosuhteisiin. Yhteissuunnittelun avulla eri osapuolet voivat tuoda esiin omia näkemyksiään ja kokemuksiaan, mikä mahdollistaa monipuolisen lähestymistavan ongelman ratkaisemiseen. Esimerkiksi kaupunkisuunnittelussa voidaan kehittää vähähiilisiä liikenneratkaisuja, joissa huomioidaan sekä asukkaiden että yritysten tarpeet ja toiveet.
+Palvelumuotoiluprosessin avulla voidaan tunnistaa käyttäytymisen esteitä, kuten:
+- Tiedon puutetta
+- Mukavuudenhalua
+- Kustannushuolia
 
-## Prototypointi ja iteratiivinen kehitys
+## Yhteissuunnittelu ja monialainen yhteistyö
+
+Ilmastonmuutoksen monimutkaiset ongelmat vaativat yhteistyötä eri sidosryhmien välillä, mukaan lukien:
+- Kaupunkien päättäjät
+- Yritykset
+- Asukkaat
+- Asiantuntijat
+
+Palvelumuotoilu tuo yhteen eri toimijat yhteissuunnittelun kautta, jolloin voidaan kehittää kokonaisvaltaisia ratkaisuja. Tällöin ilmastonmuutoksen torjumiseksi luodut palvelut ja järjestelmät ovat tehokkaampia ja paremmin sopeutettuja paikallisiin olosuhteisiin.
+
+## Prototypointi ja iteratiivinen kehitys ilmastoratkaisuissa
 
 Palvelumuotoilun olennainen osa on prototypointi ja iteratiivinen kehitys, jossa ideoita testataan ja kehitetään jatkuvasti paremmiksi. Tämä toimintatapa on erityisen hyödyllinen ilmastonmuutoksen ratkaisuissa, joissa on tärkeää löytää toimivia malleja nopeasti muuttuvassa tilanteessa.
 
-> Prototyyppauksen avulla voidaan testata uusia ilmastoystävällisiä ratkaisuja ja saada niistä käyttäjäpalautetta ennen laajempaa käyttöönottoa. Esimerkiksi uusiutuvan energian palveluiden suunnittelussa voidaan kokeilla erilaisia toteutustapoja ja selvittää, mikä niistä on käyttäjien kannalta paras ja tehokkain.
+Iteratiivisen kehityksen hyödyt ilmastoratkaisuissa:
 
-Iteratiivinen kehitys mahdollistaa jatkuvan parantamisen, jolloin ilmastonmuutoksen torjuntaan liittyvät ratkaisut voivat kehittyä ja mukautua ajan myötä. Tämä on erityisen tärkeää, koska ilmastonmuutos on dynaaminen haaste, joka vaatii pitkäaikaisia ja joustavia ratkaisuja.
+1. Mahdollistaa jatkuvan parantamisen
+2. Auttaa sopeutumaan muuttuviin olosuhteisiin
+3. Pienentää riskejä uusien konseptien käyttöönotossa
+4. Mahdollistaa nopean reagoinnin käyttäjäpalautteeseen
+
+The Good Side tarjoaa SaaS-yrityksille palvelumuotoilukonsultointia, jonka avulla voidaan kehittää kestäviä digitaalisia ratkaisuja iteratiivisesti.
 
 ## Palvelumuotoilu julkishallinnossa ja kunnissa
 
-Kunnat ja kaupungit ovat keskeisiä toimijoita ilmastonmuutoksen torjunnassa, ja niiden päätöksillä on laajoja vaikutuksia ympäristöön. Palvelumuotoilu voi auttaa julkista sektoria kehittämään kestäviä palveluita ja infrastruktuuria, jotka tukevat vähähiilistä yhteiskuntaa. Esimerkiksi energiankäytön optimointi, jätehuoltojärjestelmät ja kestävän liikkumisen ratkaisut voidaan suunnitella palvelumuotoilun avulla paremmin vastaamaan asukkaiden tarpeita ja ympäristövaatimuksia. Palvelumuotoilun avulla kuntalaisia voidaan osallistaa aktiivisemmin ilmastotoimenpiteisiin, esimerkiksi luomalla osallistavia hankkeita, joissa asukkaat voivat vaikuttaa omien alueidensa kehittämiseen. Tämä lisää sitoutumista ilmastotoimiin ja tekee niistä näkyvämpiä paikallistasolla.
+Kunnat ja kaupungit ovat keskeisiä toimijoita ilmastonmuutoksen torjunnassa, ja niiden päätöksillä on laajoja vaikutuksia ympäristöön. Palvelumuotoilu voi auttaa julkista sektoria kehittämään kestäviä palveluita ja infrastruktuuria, jotka tukevat vähähiilistä yhteiskuntaa. 
 
-### Yhteenvetona
+Esimerkkejä palvelumuotoilun sovelluskohteista kuntatasolla:
+- Energiankäytön optimointi
+- Jätehuoltojärjestelmät 
+- Kestävän liikkumisen ratkaisut
 
-Ilmastonmuutoksen ratkominen vaatii käyttäytymisen muutosta, innovatiivisia ratkaisuja ja laajaa yhteistyötä yhteiskunnan eri osa-alueilla. Palvelumuotoilu tarjoaa tehokkaita työkaluja näiden muutosten edistämiseen, sillä se keskittyy käyttäjälähtöiseen suunnitteluun, empatiaan ja jatkuvaan kehittämiseen. Palvelumuotoilun avulla voidaan kehittää ilmastoystävällisiä palveluita, jotka ovat paitsi tehokkaita myös käyttäjille helppoja ja houkuttelevia. Tämä auttaa sekä organisaatioita että yhteisöjä siirtymään kestävämpään ja vähähiiliseen tulevaisuuteen.   **Janne Gylling** janne@goodside.fi 044 750 4444
+Palvelumuotoilun avulla kuntalaisia voidaan osallistaa aktiivisemmin ilmastotoimenpiteisiin, esimerkiksi luomalla osallistavia hankkeita, joissa asukkaat voivat vaikuttaa omien alueidensa kehittämiseen.
+
+## Yhteenveto palvelumuotoilun mahdollisuuksista
+
+Ilmastonmuutoksen ratkominen vaatii käyttäytymisen muutosta, innovatiivisia ratkaisuja ja laajaa yhteistyötä yhteiskunnan eri osa-alueilla. Palvelumuotoilu tarjoaa tehokkaita työkaluja näiden muutosten edistämiseen, sillä se keskittyy:
+
+- Käyttäjälähtöiseen suunnitteluun
+- Empatiaan
+- Jatkuvaan kehittämiseen
+
+Palvelumuotoilun avulla voidaan kehittää ilmastoystävällisiä palveluita, jotka ovat paitsi tehokkaita myös käyttäjille helppoja ja houkuttelevia.
+
+Haluatko kehittää yrityksellesi kestäviä digitaalisia palveluita? [Ota yhteyttä The Good Sideen](https://www.goodside.fi/contact) ja kartoitetaan yhdessä mahdollisuudet hiilijalanjäljen pienentämiseen palvelumuotoilun keinoin.

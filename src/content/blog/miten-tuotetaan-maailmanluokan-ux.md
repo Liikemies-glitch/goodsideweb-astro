@@ -1,44 +1,113 @@
 ---
-title: Miten tuotetaan maailmanluokan UX?
+title: Maailmanluokan UX-suunnittelu SaaS-tuotteille
 pubDate: '2024-09-18T09:22:21.000Z'
 description: >-
-  Prosessi jonka kautta itse aina ajattelen UX&#x2d;kehityshankkeita, on
-  miljoonaan kertaan käytetty.. lue koko juttu.
-author: moretagoy
+  Tehokas UX-suunnittelu noudattaa tupla timantti -prosessia: havainnointi, tarkentaminen, kehittäminen, testaus ja skaalaus. The Good Side tarjoaa asiantuntevaa UX-suunnittelua SaaS-yrityksille hyödyntäen käyttäjäkeskeistä lähestymistapaa ja dataohjattua kehitystä.
+author: Mikki Aalto-Ylevä
 tags:
-  - UX
+  - UX-suunnittelu
+  - SaaS-tuotteet
+  - Käyttäjäkokemus
 heroImage: ../../assets/blog/images/miten-tuotetaan-maailmanluokan-ux/featured.webp
-heroImageAlt: Miten tuotetaan maailmanluokan UX?
+heroImageAlt: Maailmanluokan UX-suunnittelu SaaS-tuotteille
 ---
 
-Jos klikkasit tätä artikkelia, sinulla on ehkä palvelu, josta tiedät ettei se ole ihan timanttisessa kunnossa. Ehkä aika on ajanut siitä ohi, tai pyörittelet edelleen sitä versiota joka koitettiin saada nopeasti valmiiksi. Ehkä ei ole ollut budjettia jatkokehittää, tai projektista puuttui kaikkiaan suunnittelija. Kaikki nämä ovat niitä syitä, joista keskustelemme asiakkaidemme kanssa. En halua rakentaa sinulle mitään tarinaa siitä miten mystisen prosessin kautta saat parannettua omaa palveluasi. Prosessi jonka kautta itse aina ajattelen UX-kehityshankkeita, on miljoonaan kertaan käytetty "**tupla timantti**". Tästä on piirretty yhtä monta versiota kuin on tekijöitä, mutta perusajatus on aina sama. ![](/images/blog/miten-tuotetaan-maailmanluokan-ux/goodside-doublediamond-1024x598.jpeg)  
+## Tiivistelmä
 
-### Havainnoi ja ymmärrä
+**UX-suunnittelu** on kriittinen tekijä SaaS-yritysten menestyksessä. Tässä artikkelissa esittelemme **tupla timantti -prosessin**, joka on tehokas menetelmä käyttäjäkokemuksen parantamiseen. Käymme läpi viisi keskeistä vaihetta: havainnointi, tiedon analysointi, konseptointi, testaus ja skaalaus. The Good Side auttaa SaaS-yrityksiä toteuttamaan tämän prosessin ja luomaan käyttäjäkeskeisiä digitaalisia palveluita, jotka tukevat liiketoiminnan kasvua.
 
-Tässä kohdassa oma tyylini on kerätä tietoa ihan jokaisesta suunnasta niin paljon kuin mahdollista ja varmistaa ettei tiettyjen ihmisten rooli tai asenne vaikuta liikaa kerättyyn palautteeseen. Monesti voidaan todeta, että ulkopuoliselle kerrotaan helpommin. Sen takia hoidan haastatteluja ja kerään tietoa ennemmin itse kuin että nojaisin pelkästään asiakasorganisaation keräämään dataan. Ihmisten kanssa keskustelu antaa minulle suunnittelijana todella paljon. Tämä jos joku on ihmisten kanssa tekemistä ja ihmismielen ymmärtämistä. Jos mahdollista, haluan aina myös havainnoida itse sitä kun loppuasiakkaat käyttävät palvelua. Se avaa omia silmiä yleensä paljon ja antaa sellaisia vastauksia joihin ei ole edes kysymyksiä olemassa.
+## Tunnistatko nämä UX-haasteet?
 
-### Tarkenna ja tajua
+Jos klikkasit tätä artikkelia, sinulla on ehkä SaaS-palvelu, josta tiedät ettei se ole ihan timanttisessa kunnossa. Ehkä aika on ajanut siitä ohi, tai pyörittelet edelleen sitä versiota joka koitettiin saada nopeasti valmiiksi. 
 
-Kaiken kerätyn tiedon analysointi ja jäsentäminen ottaa aikaa. Tässä kohtaa teen myös paljon vertailua kilpailijoihin ja kerään esimerkkejä toimialan ulkopuolelta. Olen huomannut että oma supervoimani on eri asioiden yhdistäminen ja isojen kokonaisuuksia hahmottaminen ja jäsentely. Näen ja tunnistan yhtymäkohtia jotka eivät ole niin tunnistettavia ja sitä kautta löydän uudenlaisia kohtia joita voidaan kehittää. Tämä vaihe vaatii todella paljon yleensä sitä, että jättää mielipiteet pois ja keskittyy vain prosessiin.
+Ehkä ei ole ollut budjettia jatkokehittää, tai projektista puuttui kaikkiaan suunnittelija. Kaikki nämä ovat niitä syitä, joista keskustelemme asiakkaidemme kanssa.
 
-### Kehitä ja kokeile
+En halua rakentaa sinulle mitään tarinaa siitä miten mystisen prosessin kautta saat parannettua omaa palveluasi. Prosessi jonka kautta The Good Side lähestyy **UX-kehityshankkeita**, on miljoonaan kertaan käytetty "**tupla timantti**". 
 
-Kolmannessa vaiheessa aletaan rakentamaan aihioita, prototyyppejä ja palveluita joilla voi yrittää todentaa eri ideoiden ja konseptien toimivuutta. Tässä on apua siitä, että näitä projekteja on tehnyt satoja. Olen joskus todennut että iso osa asiakkaista tekee vastaavia projekteja kerran viidessä vuodessa, kun itse teen niitä vähintään kymmenen joka vuosi. Kokemus antaa selkänojaa ja laajentaa ymmärrystä siitä, mihin suuntaan eri asioita kannattaa ja voi viedä. Luovuus saa kukkia tässä hetkessä niin paljon kuin mahdollista. Mikään idea tai ajatus ei ole vieläkään huono, vaan kaikki mahdollinen kirjataan ylös.
+## Tupla timantti -prosessi käytännössä
 
-### Tuota ja testaa
+### Vaihe 1: Havainnoi ja ymmärrä käyttäjiä
 
-Kun aihioista ja konsepteista alkaa olla riittävästi ajatuksia, että mitä valitaan ja minkä kanssa edetään, voidaan alkaa prototyyppejä rakentaa siten että niitä voi testata oikeilla käyttäjillä. Edellisen vaiheen versiot jotka lähinnät auttoivat konseptin keskustelun tukena, eivät palvele yleensä enää tässä vaiheessa. Tässä kohtaa kuluu niin post-it lappuja kuin kahvia. Kerätään palautetta, testataan, optimoidaan, analysoidaan kerättyä tietoa ja yritetään oppia niin paljon kuin mahdollista siitä, mikä tässä tapauksessa toimii ja mikä ei.
+Tässä kohdassa oma tyylimme The Good Sidella on kerätä tietoa **käyttäjistä** jokaisesta suunnasta niin paljon kuin mahdollista. Varmistamme ettei tiettyjen ihmisten rooli tai asenne vaikuta liikaa kerättyyn palautteeseen. 
 
-### Jakele ja skaalaa
+Käyttäjätutkimuksessa hyödynnämme:
 
-Valmis on parempi kuin täydellinen. Kun meillä on "koodattu versio v.1" käytössä, voimme siirtyä varsinaiseen kehittämiseen. Tässä kohtaa pitää ymmärtää ettei vielä mitään ole oikeasti valmista, vaan meillä on vasta ensimmäinen versio tulilla. Tässä kohtaa korostuu osaaminen, kokemus ja asioiden laaja-alainen ymmärrys. Data driven jatkokehitys halailee konepellin alla toiminnallisuuksien ja palvelulehityksen kanssa aktiivisesti. Tunnistetaan kehityskohteita kun dataa saadaan enemmän, opitaan sen pohjalta mitä pitäisi vielä edelleen muuttaa.
+* **Haastatteluja** eri sidosryhmien kanssa
+* **Käyttäjätestejä** todellisissa käyttöympäristöissä
+* **Analytiikkadatan** syvällistä analyysiä
+* **Kilpailija-analyysiä** markkinan ymmärtämiseksi
 
-## Tuhkasta timantteja?
+Monesti voidaan todeta, että ulkopuoliselle kerrotaan helpommin. Sen takia haastattelemme ja keräämme tietoa ennemmin itse kuin että nojaisimme pelkästään asiakasorganisaation keräämään dataan.
 
-No, miten siis saat oman palvelusi fenixin lailla nousuun? Jos oikein rautalangasta väännetään, niin tässä yksinkertainen lista juuri sinulle. **Ymmärrä nykytilanne.** Anna asiantuntijan analysoida palvelusi ja koostaa huomiot. **Korjaa heti helpot huomiot.** Aloita pienistä asioista ja saa oppeja ja onnistumisia. **Aloita systemaattinen isompien muutosten suunnittelu.** Teemme yhdessä tiekartan joka tukee tavoitetta, mutta mahdollistaa sinne pääsyn pieninä hallittavina paloina. **Luota suunnittelijaan ja ymmärrä asiakkaita.** Laita hetkeksi omat fiilikset sivuun ja koita keskittyä vain siihen mitä asiakkaasi tarvitsevat ja sanovat. **Anna asiakkaiden ja datan puhua.** Kerätään ja analysoidaan sitä miten muutokset purevat ja tunnistetaan yhdessä sieltä uusia kehityskohteita. **Älä keksi pyörää uudestaan.** Iso osa UX-ongelmista johtuu siitä, ettei noudateta hyväksi havaittuja malleja eikä ymmärretä miten ihmiset käyttäytyvät.
+Käyttäjien havainnointi avaa silmiä ja antaa sellaisia vastauksia joihin ei ole edes kysymyksiä olemassa.
 
-## Koska aloitetaan?
+### Vaihe 2: Tarkenna ja analysoi
 
-Meidän kanssa UX:n parantaminen on helppoa. Saat itsellesi suunnittelijan joka on osa tiimiäsi ja toimii osana teidän arkea. Me teemme kaikkemme sen eteen, että saat rehellistä palautetta palvelustasi, aitoja käyttäjien kommentteja sekä käyttöliittymäsuunnittelua jossa ymmärretään ihmisiä. Luomme sinulle tarvittaessa samalla visuaalisen identiteetin ja sparraamme kaikesta liiketoimintaan liittyvästä kehittämisestä. Me ymmärrämme koodia ja liiketoimintaa, joten tiedämme minkälaisia palveluita kannattaa suunnitella jotta niiden tekninen toteutus on sujuvaa ja käyttö ilahduttavaa. Sovitaan aiheesta tapaaminen, jossa voidaan yhdessä keskustella siitä mitä tarpeita juuri sinulla on ja miten me voisimme niissä auttaa.   **Janne Gylling** janne@goodside.fi 044 750 4444  
+Kaiken kerätyn tiedon analysointi ja jäsentäminen ottaa aikaa. Tässä kohtaa teemme:
 
-Kuva lainattu. Alkuperäinen tekijä: Sakshi Bhardwaj. Product Designer | Google UX Design
+1. Perusteellista **käyttäjädatan analysointia**
+2. **Kilpailija-benchmarkingia** toimialan parhaista käytännöistä
+3. **Trendien kartoitusta** toimialan ulkopuolelta
+
+Olen huomannut että The Good Siden supervoimana on eri asioiden yhdistäminen ja isojen kokonaisuuksien hahmottaminen. Näemme yhtymäkohtia jotka eivät ole niin tunnistettavia ja sitä kautta löydämme uudenlaisia kehityskohteita.
+
+Tämä vaihe vaatii objektiivisuutta ja kykyä jättää omat mielipiteet sivuun, keskittyen vain prosessiin ja dataan.
+
+### Vaihe 3: Kehitä ja konseptoi
+
+Kolmannessa vaiheessa alamme rakentamaan **prototyyppejä** ja **konsepteja**, joilla voi todentaa eri ideoiden toimivuutta. Tässä on apua siitä, että The Good Side on tehnyt satoja vastaavia projekteja.
+
+**SaaS-yritykset** tekevät vastaavia projekteja keskimäärin kerran viidessä vuodessa, kun taas me toteutamme niitä vähintään kymmenen vuosittain. Tämä kokemus antaa selkänojaa ja laajentaa ymmärrystä siitä, mihin suuntaan eri asioita kannattaa kehittää.
+
+Luovuus saa kukkia tässä vaiheessa. Mikään idea ei ole huono, vaan kaikki mahdollisuudet dokumentoidaan ja arvioidaan.
+
+### Vaihe 4: Testaa ja optimoi
+
+Kun aihioista ja konsepteista on riittävästi ajatuksia, siirrymme rakentamaan prototyyppejä joita voi testata oikeilla käyttäjillä. Tässä vaiheessa:
+
+* Keräämme **käyttäjäpalautetta** systemaattisesti
+* Testaamme eri konsepteja A/B-testeillä
+* Optimoimme löydösten perusteella
+* Analysoimme kerättyä tietoa jatkuvasti
+
+Tavoitteemme on oppia mahdollisimman paljon siitä, mikä toimii juuri sinun SaaS-tuotteesi kohdalla ja mikä ei.
+
+### Vaihe 5: Jakele ja skaalaa
+
+Valmis on parempi kuin täydellinen. Kun meillä on "koodattu versio v.1" käytössä, voimme siirtyä varsinaiseen **dataohjattuun kehittämiseen**. 
+
+Tässä kohtaa pitää ymmärtää ettei vielä mitään ole oikeasti valmista, vaan meillä on vasta ensimmäinen versio, josta opimme jatkuvasti. The Good Side hyödyntää:
+
+* **Analytiikkadataa** käytön ymmärtämiseksi
+* **Käyttäjäpalautelooppeja** kehityksen ohjaamiseksi
+* **Jatkuvan kehityksen mallia** tuotteen parantamiseksi
+
+Tunnistamme kehityskohteita kun dataa saadaan enemmän, ja opimme sen pohjalta mitä pitäisi vielä parantaa.
+
+## Tuhkasta timantteja: UX-kehityksen askeleet
+
+Miten siis saat oman SaaS-palvelusi kehitettyä maailmanluokan käyttäjäkokemukseksi? Jos oikein rautalangasta väännetään, tässä yksinkertainen toimintasuunnitelma:
+
+1. **Ymmärrä nykytilanne** - Anna The Good Siden asiantuntijan analysoida palvelusi ja koostaa huomiot.
+2. **Korjaa heti helpot huomiot** - Aloita pienistä asioista ja kerää nopeita voittoja.
+3. **Aloita systemaattinen isompien muutosten suunnittelu** - Luomme yhdessä tiekartan, joka tukee tavoitetta, mutta mahdollistaa etenemisen hallittavina paloina.
+4. **Luota suunnittelijaan ja ymmärrä käyttäjiä** - Keskity siihen mitä asiakkaasi tarvitsevat, ei omiin mieltymyksiisi.
+5. **Anna datan puhua** - Analysoimme miten muutokset vaikuttavat ja tunnistamme uusia kehityskohteita.
+6. **Älä keksi pyörää uudestaan** - Iso osa UX-ongelmista johtuu siitä, ettei noudateta hyväksi havaittuja malleja.
+
+## Kasvata SaaS-liiketoimintaasi paremmalla käyttäjäkokemuksella
+
+The Good Siden kanssa UX:n parantaminen on suoraviivaista. Saat käyttöösi suunnittelijan, joka toimii osana tiimiäsi ja ymmärtää SaaS-liiketoiminnan vaatimukset.
+
+Teemme kaikkemme sen eteen, että saat:
+
+* Rehellistä palautetta palvelustasi
+* Aitoja käyttäjien näkemyksiä
+* Käyttöliittymäsuunnittelua joka perustuu dataan
+* Tarvittaessa myös visuaalisen identiteetin uudistuksen
+* Sparrausta liiketoimintasi kehittämiseen
+
+Ymmärrämme sekä koodia että liiketoimintaa, joten tiedämme minkälaisia SaaS-palveluita kannattaa suunnitella niin, että niiden tekninen toteutus on sujuvaa ja käyttö ilahduttavaa.
+
+**[Ota yhteyttä, niin keskustellaan miten voimme auttaa sinun SaaS-yrityksesi käyttäjäkokemuksen kehittämisessä](https://goodside.fi/ota-yhteytta/)**
+
