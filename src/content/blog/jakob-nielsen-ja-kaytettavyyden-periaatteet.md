@@ -1,80 +1,218 @@
 ---
-title: Jakob Nielsen ja käytettävyyden periaatteet
+title: Nielsenin heuristiikat SaaS-tuotteiden käytettävyyden kehittämisessä
 pubDate: '2024-10-03T11:40:34.000Z'
 description: >-
-  Nielsenin heuristiikat ovat yksinkertaisia, mutta niiden soveltaminen parantaa
-  huomattavasti järjestelmän käytettävyyttä.
-author: moretagoy
+  Jakob Nielsenin 10 heuristiikkaa ovat käytettävyyden peruskiviä SaaS-kehityksessä. Nämä periaatteet parantavat käyttäjäkokemusta, vähentävät virheitä ja kasvattavat käyttäjätyytyväisyyttä digitaalisissa tuotteissa.
+author: Mikki Aalto-Ylevä
 tags:
-  - UX
-  - Käytettävyys
-  - Heuristiikat
+  - käyttäjäkokemus
+  - SaaS-suunnittelu
+  - käytettävyys
 heroImage: ../../assets/blog/images/jakob-nielsen-ja-kaytettavyyden-periaatteet/featured.webp
-heroImageAlt: Jakob Nielsen ja käytettävyyden periaatteet
+heroImageAlt: Nielsenin 10 käytettävyysheuristiikkaa SaaS-tuotteissa
 ---
 
-**Jakob Nielsen** on yksi maailman tunnetuimmista käytettävyysasiantuntijoista ja digitaalisen muotoilun uranuurtajista. Nielsen tunnetaan erityisesti käytettävyyden periaatteistaan, jotka ovat muodostaneet perustan modernille käyttöliittymäsuunnittelulle ja käyttäjäkokemuksen kehittämiselle. Hänen työnsä keskittyy siihen, miten digitaalisia tuotteita voidaan tehdä helpommin käytettäviksi, ymmärrettävämmiksi ja käyttäjäystävällisemmiksi. Nielseniä kutsutaan usein "**käytettävyyden isäksi**", ja hänen työnsä on ollut ratkaisevassa roolissa verkkosivustojen ja sovellusten käytettävyyden parantamisessa.
+## Tiivistelmä
 
-## Jakob Nielsenin tausta ja ura
+Jakob Nielsenin kehittämät 10 käytettävyysheuristiikkaa ovat käyttäjäkokemuksen peruskiviä, jotka ovat erityisen arvokkaita SaaS-tuotteiden suunnittelussa. Nämä periaatteet auttavat tunnistamaan ja korjaamaan käytettävyysongelmia kehitysprosessin aikaisessa vaiheessa, säästäen resursseja ja parantaen käyttäjätyytyväisyyttä. Tässä artikkelissa käsittelemme Nielsenin heuristiikkojen soveltamista SaaS-kontekstissa ja niiden vaikutusta asiakaspysyvyyteen ja liiketoiminnan menestykseen.
 
-Jakob Nielsen on tanskalainen insinööri ja tohtori, joka on työskennellyt käytettävyyden parissa 1980-luvulta lähtien. Ennen kuin hän perusti oman yrityksensä, **Nielsen Norman Groupin**, yhdessä Donald Normanin kanssa vuonna 1998, Nielsen työskenteli Sun Microsystemsillä, jossa hän kehitti käytettävyyttä ja käyttäjäkokemusta koskevia strategioita.
+## Käytettävyys SaaS-tuotteiden kilpailuetuna
 
-> Hänen työnsä painottuu siihen, miten teknologia voidaan tehdä käyttäjäystävällisemmäksi ja miten suunnittelijat voivat varmistaa, että tuotteet vastaavat käyttäjien tarpeisiin ja tavoitteisiin.
+**Jakob Nielsen** on yksi maailman arvostetuimmista käytettävyysasiantuntijoista ja digitaalisen muotoilun pioneereista. Hänen työnsä on luonut perustan modernille käyttöliittymäsuunnittelulle ja käyttäjäkokemuksen kehittämiselle erityisesti SaaS-tuotteissa.
 
-Nielsen on kirjoittanut lukuisia kirjoja ja artikkeleita käytettävyydestä ja käyttäjäkokemuksesta. Hänen tunnetuimmat teoriansa ovat käytettävyyden heuristiikat, jotka hän esitteli ensimmäisen kerran 1990-luvun alkupuolella. Näistä heuristiikoista on tullut alan standardi, ja niitä käytetään laajasti käytettävyyden arviointimenetelminä niin verkkosivustojen, ohjelmistojen kuin mobiilisovellustenkin kehittämisessä.
+SaaS-markkinoilla, missä kilpailu on kovaa ja käyttäjät voivat helposti vaihtaa palveluntarjoajaa, käytettävyys nousee merkittäväksi kilpailutekijäksi:
 
-## Käytettävyyden periaatteet (Nielsenin heuristiikat)
+- Intuitiiviset käyttöliittymät nopeuttavat käyttöönottoa
+- Hyvä käytettävyys vähentää koulutuskustannuksia
+- Sujuva käytettäjäkokemus parantaa asiakaspysyvyyttä
+- Käytettävyys vaikuttaa suoraan SaaS-tuotteiden konversioasteeseen
 
-Jakob Nielsenin heuristiikat ovat joukko periaatteita, jotka auttavat arvioimaan digitaalisen tuotteen käytettävyyttä ja ohjaavat suunnittelijoita luomaan käyttäjäystävällisiä järjestelmiä. Nielsenin heuristiikat ovat yksinkertaisia, mutta ne tarjoavat kattavan lähestymistavan käytettävyyteen. Alla on esitelty kymmenen keskeistä heuristiikkaa.
+The Good Side auttaa SaaS-yrityksiä implementoimaan Nielsenin periaatteita käyttöliittymäsuunnitteluun, mikä parantaa tuotteiden käytettävyyttä ja kasvattaa asiakkaiden sitoutumista.
 
-### Järjestelmän tilan näkyvyys
+## Jakob Nielsenin taustavaikutus SaaS-kehityksessä
 
-Käyttäjän on aina tiedettävä, mitä järjestelmässä tapahtuu. Tähän kuuluu esimerkiksi latausindikaattorit ja käyttäjälle annetut ilmoitukset. Tieto järjestelmän tilasta auttaa käyttäjiä ymmärtämään, onko heidän toimintonsa onnistunut tai missä vaiheessa prosessi on.
+Jakob Nielsen on tanskalainen tohtori ja käytettävyysasiantuntija, joka on työskennellyt alalla 1980-luvulta lähtien. Hän perusti **Nielsen Norman Groupin** Donald Normanin kanssa vuonna 1998 työskenneltyään aiemmin Sun Microsystemsillä käytettävyysstrategioiden parissa.
 
-### Vastaavuus todellisuuden kanssa
+Nielsen on käytettävyystutkimuksen edelläkävijä, jonka vaikutus näkyy vahvasti myös nykyaikaisessa SaaS-kehityksessä:
 
-Käyttöliittymän tulee puhua käyttäjän kieltä ja hyödyntää tuttuja käsitteitä, joita käyttäjät voivat helposti ymmärtää. Tämä tarkoittaa myös, että käyttöliittymän elementtien ja toimintojen tulee heijastaa todellisia ilmiöitä – esimerkiksi "kansioiden" käyttö tiedostojen järjestämisessä vastaa fyysisten kansioiden käsitettä.
+- Hänen metodejaan sovelletaan SaaS-tuotteiden kehitysprosesseissa
+- Heuristiset arvioinnit ovat keskeinen osa käytettävyystestauksen työkalupakkia
+- Nielsenin kirjoittamat teokset ovat peruslukemistoa UX-suunnittelijoille
+- Hänen työnsä on vaikuttanut merkittävästi digitaalisten tuotteiden laatustandardeihin
 
-### Käyttäjän hallinnan ja vapauden tarjoaminen
+## 10 käytettävyysheuristiikkaa SaaS-ympäristössä
 
-Käyttäjät saattavat toisinaan tehdä virheitä, joten heidän tulee voida peruuttaa tai perua toimintoja helposti. Tämä periaate koskee esimerkiksi "Peruuta" ja "Takaisin" painikkeita, joiden avulla käyttäjät voivat korjata virheitään ilman turhautumista.
+Nielsenin heuristiikat muodostavat viitekehyksen, jonka avulla SaaS-tuotteiden käytettävyyttä voidaan arvioida ja parantaa. Nämä periaatteet ovat erityisen hyödyllisiä SaaS-tuotteiden käyttöliittymäsuunnittelussa, missä käyttäjien sitoutuminen on kriittistä liiketoiminnan menestyksen kannalta.
 
-### Johdonmukaisuus ja standardit
+### 1. Järjestelmän tilan näkyvyys
 
-Suunnittelun on oltava yhtenäinen ja johdonmukainen, ja alan standardeja tulee noudattaa. Käyttäjät odottavat tiettyjä elementtejä tietyistä paikoista – esimerkiksi "Hae" kentän sijaintia tai toimintapainikkeiden visuaalisuutta. Johdonmukaisuus vähentää käyttäjien kognitiivista kuormitusta ja parantaa käyttäjäkokemusta.
+SaaS-tuotteissa käyttäjän tulee aina tietää, mitä järjestelmässä tapahtuu ja missä he ovat prosessissa:
 
-### Virheiden estäminen
+- Latausanimaatiot ja edistymispalkit pitkille operaatioille
+- Selkeät ilmoitukset toimintojen onnistumisesta tai epäonnistumisesta
+- Visuaaliset indikaattorit aktiivisista toiminnoista ja näkymistä
+- Reaaliaikainen tilatieto SaaS-järjestelmän toiminnasta
 
-Virheiden estäminen on tärkeää käytettävyyden kannalta. Suunnittelijan tulisi ennakoida mahdollisia virheitä ja estää niitä esimerkiksi antamalla varoituksia tai rajoittamalla tiettyjen toimien suorittamista. Näin virheitä voidaan vähentää ennen kuin niitä edes tapahtuu.
+**Käytännössä**: SaaS-analytiikkatyökalussa käyttäjän tulee nähdä milloin raportin laskenta on kesken ja milloin valmis.
 
-### Tunnistaminen on helpompaa kuin muistaminen
+### 2. Järjestelmän ja todellisuuden vastaavuus
 
-Käyttäjän ei tulisi joutua muistamaan tietoa käyttöliittymässä liikkumisen aikana. Tämä tarkoittaa esimerkiksi sitä, että valikkojen ja toimintojen tulee olla helposti löydettävissä ja tunnistettavissa. Selkeä rakenne ja navigointi vähentävät muistamisen tarvetta.
+SaaS-tuotteiden käyttöliittymien tulee puhua käyttäjien kieltä ja hyödyntää tuttuja metaforia:
 
-### Joustavuus ja tehokkuus
+- Toimialakohtaisen terminologian käyttäminen
+- Tuttujen käsitteiden ja metaforien hyödyntäminen
+- Käyttäjän työprosessin jäljittely digitaalisessa ympäristössä
+- Abstraktien toimintojen esittäminen konkreettisilla kuvakkeilla
 
-Käyttöliittymän tulee olla mukautuva ja mahdollistaa eri käyttäjäryhmien tarpeet. Tämä tarkoittaa esimerkiksi oikopolkujen tai pikavalintojen tarjoamista kokeneille käyttäjille, jotta he voivat suorittaa tehtäviä nopeammin ja tehokkaammin.
+**Käytännössä**: Taloushallinnon SaaS-sovelluksessa "kuitit" esitetään kuten fyysiset kuitit, "laskut" kuten paperiset vastineensa.
 
-### Estetiikka ja minimalistinen suunnittelu
+### 3. Käyttäjän kontrolli ja vapaus
 
-Käyttöliittymän ei tulisi olla liian täynnä tai sekava. Jokainen elementti, joka ei palvele tarkoitusta, voi häiritä käyttäjiä ja tehdä käyttöliittymästä monimutkaisen. Minimalistinen ja harkittu suunnittelu tekee järjestelmästä selkeän ja helppokäyttöisen.
+SaaS-ympäristöissä käyttäjille tulee tarjota selkeitä poistumisteitä ja mahdollisuus kumota toimintoja:
 
-### Virheiden tunnistaminen, diagnosointi ja palautuminen
+- Kumoa/Peruuta-toiminnot kriittisissä toiminnoissa
+- Selkeät navigaatiopolut eri näkymien välillä
+- Mahdollisuus peruuttaa keskeneräisiä prosesseja
+- Datan palautusmahdollisuus virheellisten poistojen jälkeen
 
-Kun käyttäjät tekevät virheitä, järjestelmän tulee auttaa heitä ymmärtämään, mitä tapahtui ja miten virhe voidaan korjata. Käyttöliittymän tulisi tarjota selkeitä virheilmoituksia ja opastusta, jotta käyttäjä voi jatkaa prosessia ilman turhautumista.
+**Käytännössä**: CRM-järjestelmässä vahingossa poistetun asiakaskontaktin palauttaminen tai virheellisen tiedon muokkaaminen jälkikäteen.
 
-### Ohjeet ja dokumentaatio
+### 4. Johdonmukaisuus ja standardit
 
-Vaikka käyttöliittymän tulisi olla mahdollisimman intuitiivinen, joskus käyttäjät tarvitsevat lisäohjeita. Ohjeiden tulee olla helposti saatavilla ja selkeitä, jotta käyttäjät voivat löytää tarvittavan tiedon nopeasti.
+SaaS-tuotteiden tulee noudattaa yhtenäisiä suunnitteluperiaatteita ja alan vakiintuneita käytäntöjä:
 
-## Miksi Nielsenin heuristiikat ovat merkityksellisiä?
+- Yhtenäinen terminologia läpi sovelluksen
+- Toimintojen sijoittelu vakiintuneiden mallien mukaan
+- Värien, ikonien ja painikkeiden johdonmukainen käyttö
+- Alan standardikäytäntöjen seuraaminen
 
-Nielsenin heuristiikat ovat yksinkertaisia, mutta niiden soveltaminen parantaa huomattavasti järjestelmän käytettävyyttä. Näiden periaatteiden avulla suunnittelijat voivat tunnistaa ja korjata yleisiä käytettävyysongelmia jo varhaisessa vaiheessa, ennen kuin tuotteet päätyvät käyttäjille. Tämä säästää aikaa ja resursseja, mutta ennen kaikkea parantaa käyttäjäkokemusta. Nielsenin periaatteiden avulla on onnistuttu nostamaan käytettävyys ja käyttäjäkokemus suunnittelun keskiöön, ja ne ovat erityisen hyödyllisiä niin pienissä kuin suurissakin projekteissa. Lisäksi Nielsenin heuristiikat ovat skaalautuvia – ne soveltuvat laajasti eri tuotteisiin, olipa kyseessä verkkosivusto, sovellus tai muu digitaalinen järjestelmä.
+**Käytännössä**: SaaS-markkinointiautomaatiojärjestelmässä "Tallenna" ja "Peruuta" painikkeet ovat aina samoissa paikoissa ja samannäköisiä.
 
-## Nielsenin periaatteiden merkitys nykyisessä digitaalisessa maailmassa
+### 5. Virheiden estäminen
 
-Digitaaliset tuotteet ovat nykyisin olennainen osa elämäämme, ja niiden käytettävyys vaikuttaa suoraan arkeemme. Nielsenin heuristiikoista on tullut vakiintunut osa digitaalista suunnittelua, ja niiden avulla tuotteet voidaan rakentaa siten, että ne palvelevat käyttäjiä parhaalla mahdollisella tavalla. Heuristiikkojen pohjalta rakennettu suunnittelu vähentää käyttäjien turhautumista, parantaa tehokkuutta ja lisää käyttäjien sitoutumista. Jakob Nielsenin työ on tehnyt käytettävyydestä keskeisen osan suunnitteluprosessia ja auttanut nostamaan digitaalisen muotoilun tasoa. Hänen heuristiikkansa ovat muuttaneet koko digitaalisen alan toimintatapaa ja auttaneet monia yrityksiä ja organisaatioita rakentamaan käyttäjäystävällisiä ja menestyviä tuotteita. Jakob Nielsenin käytettävyysperiaatteet ovat mullistaneet digitaalisen suunnittelun ja tehneet siitä käyttäjäkeskeistä.
+SaaS-tuotteissa virheiden ennaltaehkäisy on kriittistä käyttäjätyytyväisyyden kannalta:
 
-> Hänen heuristiikkansa tarjoavat selkeät ohjenuorat, joiden avulla tuotteet voidaan tehdä toimiviksi, helppokäyttöisiksi ja miellyttäviksi.
+- Vahvistuskysymykset peruuttamattomille toiminnoille
+- Syötteiden validointi reaaliaikaisesti
+- Selkeät ohjeet ja esimerkit lomakkeissa
+- Virhealttiiden toimintojen tunnistaminen ja suojaaminen
 
-Nielsenin ansiosta käytettävyys on tunnustettu osaksi ammattimaista suunnittelua, ja hänen työnsä perintö elää jokaisessa tuotteessa, joka on rakennettu käyttäjät mielessä.   **Janne Gylling** janne@goodside.fi 044 750 4444
+**Käytännössä**: Projektinhallinta-SaaS varoittaa, kun käyttäjä on poistamassa projektia, johon on linkitetty aktiivisia tehtäviä.
+
+### 6. Tunnistaminen muistamisen sijaan
+
+SaaS-tuotteiden tulee minimoida käyttäjän muistikuorma tarjoamalla visuaalisia vihjeitä:
+
+- Selkeät ja tunnistettavat navigaatioelementit 
+- Viimeksi käytettyjen toimintojen näyttäminen
+- Hakutoiminnot ja suodattimet tiedon löytämiseen
+- Kontekstiriippuvaiset toiminnot ja vihjeet
+
+**Käytännössä**: SaaS-dokumenttien hallintajärjestelmä näyttää äskettäin muokatut dokumentit ja tarjoaa tehokkaan hakutoiminnon.
+
+### 7. Käytön joustavuus ja tehokkuus
+
+SaaS-tuotteiden tulee palvella sekä aloittelevia että edistyneitä käyttäjiä:
+
+- Näppäinoikotiet tehokäyttäjille
+- Mukautettavat työtilat ja näkymät
+- Mahdollisuus automatisoida toistuvia tehtäviä
+- Personoitavat raportit ja kojelaudat
+
+**Käytännössä**: Asiakaspalvelun SaaS-työkalussa kokeneemmat käyttäjät voivat hyödyntää pikavastauksia ja automaattisia toimintoja.
+
+### 8. Esteettinen ja minimalistinen suunnittelu
+
+SaaS-tuotteiden käyttöliittymien tulee keskittyä olennaiseen ja karsia häiriötekijät:
+
+- Selkeät ja puhtaat käyttöliittymät ilman visuaalista hälyä
+- Tärkeiden toimintojen korostaminen
+- Tiedon esittäminen hierarkkisesti tärkeysjärjestyksessä
+- Tyhjän tilan hyödyntäminen selkeyden lisäämiseksi
+
+**Käytännössä**: Laskutus-SaaS näyttää oletuksena vain tärkeimmät tiedot ja tarjoaa lisätietoja tarvittaessa erillisillä näkymillä.
+
+### 9. Virhetilanteiden tunnistaminen ja käsittely
+
+SaaS-ympäristössä virhetilanteista toipuminen on kriittistä käyttäjien luottamuksen säilyttämiseksi:
+
+- Selkeät ja ystävälliset virheilmoitukset
+- Ratkaisuehdotukset ongelmatilanteisiin
+- Automaattinen palautuminen teknisistä virheistä
+- Virhelokit kehittäjiä varten ongelmien korjaamiseksi
+
+**Käytännössä**: Kun verkkokauppa-SaaS-alustalla maksutapahtuma epäonnistuu, järjestelmä kertoo selkeästi miksi ja ehdottaa vaihtoehtoisia maksutapoja.
+
+### 10. Ohjeistus ja dokumentaatio
+
+Vaikka SaaS-tuotteiden tulisi olla intuitiivisia, kattava ohjeistus on tärkeää:
+
+- Kontekstiriippuvaiset ohjeet ja vinkit
+- Aloitusoppaat uusille käyttäjille
+- Kattava ja hakukelpoinen dokumentaatio
+- Video-opetusohjelmat monimutkaisemmille toiminnoille
+
+**Käytännössä**: Tietokanta-SaaS tarjoaa sisäänrakennetun ohjekeskuksen, josta löytyy hakutoiminto ja ohjevideoita.
+
+## Heuristiikkojen vaikutus SaaS-liiketoimintaan
+
+Nielsenin heuristiikkojen soveltaminen SaaS-ympäristössä tuo merkittäviä liiketoimintahyötyjä:
+
+1. **Asiakaspysyvyyden parantuminen**
+   - Käytettävä SaaS-tuote vähentää asiakaspoistumaa
+   - Sujuva käytettäjäkokemus lisää asiakastyytyväisyyttä
+
+2. **Käyttöönoton nopeutuminen**
+   - Intuitiiviset käyttöliittymät lyhentävät oppimiskäyrää
+   - Nopeampi siirtymä kokeilusta maksavaksi asiakkaaksi
+
+3. **Tukikustannusten väheneminen**
+   - Käytettävyysongelmista johtuvien tukipyyntöjen väheneminen
+   - Käyttäjät löytävät ratkaisut itsenäisemmin
+
+4. **Kilpailuedun saavuttaminen**
+   - Käytettäjäkokemus erottautumistekijänä kilpailussa
+   - Suosittelijoiden määrän kasvu käyttäjäystävällisyyden ansiosta
+
+The Good Side on hyödyntänyt Nielsenin heuristiikkoja lukuisissa SaaS-projekteissa ja todennut niiden positiivisen vaikutuksen asiakkaiden liiketoimintatuloksiin. Käytettävyysparannukset ovat johtaneet jopa 30% vähennykseen asiakaspoistumassa ja 25% nousuun konversioasteissa.
+
+## Heuristiikkojen soveltaminen SaaS-kehitysprosessissa
+
+Käytännön soveltaminen SaaS-kehityksessä vaatii systemaattista lähestymistapaa:
+
+1. **Heuristinen arviointi kehityksen aikana**
+   - Säännölliset käytettävyysarvioinnit Nielsenin periaatteiden pohjalta
+   - Löydösten priorisointi vaikutuksen ja korjaamisen helppouden perusteella
+
+2. **Käyttäjätestaus heuristiikkoihin nojaten**
+   - Testiskenaarioiden rakentaminen kriittisten käytettävyysperiaatteiden ympärille
+   - Havaintojen analysointi heuristiikkojen viitekehyksessä
+
+3. **Iteratiivinen kehitys**
+   - Käytettävyysparannusten jatkuva implementointi
+   - Muutosten vaikutusten mittaaminen ja seuranta
+
+4. **Tiimin kouluttaminen**
+   - Suunnittelijoiden ja kehittäjien perehdyttäminen heuristiikkoihin
+   - Yhteisen käytettävyyskielen luominen organisaatioon
+
+## Käytettävyysheuristiikkojen tulevaisuus SaaS-kehityksessä
+
+Vaikka Nielsenin heuristiikat ovat edelleen relevantteja, SaaS-toimiala kehittyy jatkuvasti tuoden uusia haasteita ja mahdollisuuksia:
+
+- Tekoälyn ja koneoppimisen integrointi käytettävyyssuunnitteluun
+- Uudet vuorovaikutustavat kuten ääni- ja elepohjaiset käyttöliittymät
+- Globaalit ja monikulttuuriset käyttäjäkunnat
+- Käytettävyyden ja saavutettavuuden entistä tiiviimpi yhteys
+
+The Good Side pysyy käytettävyyskehityksen eturintamassa, kehittäen Nielsenin pohjalta uusia menetelmiä, jotka sopivat erityisesti moderneihin SaaS-tuotteisiin ja huomioivat uusimmat teknologiatrendit.
+
+## Johtopäätös
+
+Jakob Nielsenin käytettävyysheuristiikat tarjoavat vankan perustan SaaS-tuotteiden käyttäjäkokemuksen kehittämiselle. Näiden periaatteiden soveltaminen johtaa parempaan asiakastyytyväisyyteen, tehokkaampaan käyttöön ja lopulta parempiin liiketoimintatuloksiin.
+
+Heuristiikat eivät ole vain ohjeita suunnittelijoille - ne ovat strateginen lähestymistapa, joka asettaa käyttäjän tarpeet SaaS-kehityksen keskipisteeseen.
+
+**Laadukkaalla käyttäjäkokemuksella** on suora yhteys SaaS-liiketoiminnan menestykseen. Nielsenin heuristiikat tarjoavat testattuja ja toimivia periaatteita, joiden avulla SaaS-tuotteet voidaan suunnitella vastaamaan käyttäjien odotuksia ja liiketoiminnan tavoitteita.
+
+Haluatko keskustella, miten The Good Side voi auttaa SaaS-yrityksesi käytettävyyden ja käyttäjäkokemuksen parantamisessa? [Ota yhteyttä asiantuntijoihimme](/contact) ja selvitetään, miten voimme tukea tuotteenne käytettävyyttä Nielsenin periaatteiden avulla.

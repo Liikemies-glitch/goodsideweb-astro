@@ -4,48 +4,123 @@ pubDate: '2024-08-07T06:00:27.000Z'
 description: >-
   Kehityskeskustelujen onnistuminen perustuu avoimeen ja rakentavaan
   vuorovaikutukseen, selkeisiin tavoitteisiin ja suunnitelmallisuuteen.
-author: moretagoy
-tags: ["kehityskeskustelu", "johtaminen", "HR"]
+author: Mikki Aalto-Ylevä
+tags: ["Henkilöstökehitys", "Suorituksen johtaminen", "Työhyvinvointi"]
 heroImage: ../../assets/blog/images/hyvan-kehityskeskustelun-malli/featured.webp
 heroImageAlt: Hyvän kehityskeskustelun malli
 ---
 
-Kehityskeskustelut ovat tärkeitä hetkiä työntekijän ja esimiehen välisessä vuorovaikutuksessa, joissa käsitellään työntekijän suoriutumista, kehitystarpeita, tavoitteita ja työhyvinvointia. Kehityskeskustelujen tärkeimmät asiat voidaan jakaa seuraaviin pääteemoihin:
+## Tiivistelmä
 
-### **Selkeät tavoitteet ja odotukset**
+Tehokas kehityskeskustelu rakentuu selkeiden tavoitteiden, avoimen palautteen ja konkreettisten kehityssuunnitelmien varaan. Onnistunut keskustelu edistää työntekijän ammatillista kasvua, parantaa työhyvinvointia ja vahvistaa sitoutumista organisaatioon. Tässä artikkelissa esittelemme keskeiset elementit tuloksellisen kehityskeskustelun toteuttamiseen.
 
-**Työntekijän tavoitteet**: Käy läpi aiemmin asetetut tavoitteet ja arvioi, miten ne ovat toteutuneet. Aseta yhdessä uusia tavoitteita tulevalle jaksolle, jotka ovat selkeitä, mitattavia ja realistisia (SMART-periaatteen mukaisesti). **Organisaation odotukset**: Varmista, että työntekijä ymmärtää organisaation odotukset hänen roolistaan ja suoriutumisestaan. Selkeys tavoitteiden suhteen auttaa työntekijää ymmärtämään, mitä häneltä odotetaan ja mihin hänen tulisi keskittyä.
+## Kehityskeskustelun merkitys työelämässä
 
-### **Suoriutumisen arviointi**
+Kehityskeskustelut ovat avainhetkiä työntekijän ja esimiehen välisessä vuorovaikutuksessa. Niissä käsitellään työntekijän suoriutumista, kehitystarpeita, tavoitteita ja työhyvinvointia kokonaisvaltaisesti. 
 
-**Saavutusten tunnistaminen**: Keskustelkaa työntekijän onnistumisista ja saavutuksista viimeisen arviointijakson aikana. On tärkeää tunnistaa hyvää suoriutumista ja antaa myönteistä palautetta. **Kehityskohteiden tunnistaminen**: Käsittele myös mahdollisia haasteita tai suoriutumisalueita, joissa työntekijällä on parantamisen varaa. Keskustelu tulisi olla rakentava ja keskittyä siihen, miten työntekijä voi kehittyä näillä alueilla.
+Hyvin toteutettu kehityskeskustelu toimii työkaluna, joka edistää sekä työntekijän että organisaation menestystä.
 
-### **Palaute ja sen merkitys**
+## Keskeiset elementit onnistuneeseen kehityskeskusteluun
 
-**Rakentava palaute**: Kehityskeskustelujen yksi keskeinen tehtävä on tarjota työntekijälle rakentavaa ja konkreettista palautetta, joka auttaa häntä kehittymään. Keskity palautteen antamiseen siten, että se on selkeää ja kehityskeskeistä. **Työntekijän palaute esimiehelle**: Kehityskeskustelut ovat myös tilaisuus työntekijälle antaa palautetta organisaatiosta, työtehtävistä ja esimiestyöstä. Tämä vuorovaikutteisuus lisää avoimuutta ja edistää työtyytyväisyyttä.
+### Selkeät tavoitteet ja odotukset
 
-### **Osaamisen kehittäminen ja koulutustarpeet**
+**Työntekijän tavoitteet**: 
+- Käy läpi aiemmin asetetut tavoitteet ja arvioi niiden toteutuminen
+- Aseta yhdessä selkeitä, mitattavia ja realistisia tavoitteita tulevalle jaksolle (SMART-periaate)
+- Määrittele konkreettiset mittarit edistymisen seurantaan
 
-**Kehitystarpeet**: Selvitä, missä työntekijä kokee tarvitsevansa lisäosaamista tai kehittymismahdollisuuksia. Tämä voi koskea teknisiä taitoja, johtamistaitoja tai muita osaamisalueita, joita työntekijä haluaa parantaa. **Koulutus ja resurssit**: Suunnittele yhdessä työntekijän kanssa koulutus- ja kehitysohjelmia, jotka tukevat hänen ammatillista kehittymistään ja uratavoitteidensa saavuttamista. Varmista myös, että työntekijällä on tarvittavat resurssit ja tuki näiden tavoitteiden saavuttamiseen.
+**Organisaation odotukset**:
+- Varmista, että työntekijä ymmärtää, mitä häneltä odotetaan
+- Selkeytä työntekijän rooli organisaation kokonaistavoitteiden saavuttamisessa
+- Luo yhteys yksilön tavoitteiden ja organisaation strategian välille
 
-### **Työhyvinvointi ja työssä jaksaminen**
+### Suoriutumisen arviointi
 
-**Työmäärä ja jaksaminen**: Keskustelkaa työntekijän työhyvinvoinnista, työmäärästä ja siitä, miten hän kokee jaksavansa työssään. On tärkeää varmistaa, ettei työntekijä koe liiallista stressiä tai ylikuormitusta. **Työn ja vapaa-ajan tasapaino**: Selvitä, onko työntekijällä riittävä tasapaino työn ja muun elämän välillä. Työn ja vapaa-ajan tasapainon tukeminen edistää työmotivaatiota ja vähentää uupumuksen riskiä.
+**Saavutusten tunnistaminen**: 
+Keskustelkaa työntekijän onnistumisista ja saavutuksista edellisen arviointijakson aikana. Tunnista ja anna myönteistä palautetta hyvästä suoriutumisesta.
 
-### **Ura- ja kehittymissuunnitelmat**
+**Kehityskohteiden tunnistaminen**: 
+Käsittele rakentavasti alueita, joissa työntekijällä on parantamisen varaa. Keskity siihen, miten työntekijä voi kehittyä näillä alueilla.
 
-**Uratavoitteet**: Kartoita työntekijän pitkän aikavälin uratavoitteet ja miten organisaatio voi tukea niiden saavuttamista. Tämä voi sisältää uusia rooleja, uusia vastuualueita tai etenemismahdollisuuksia organisaatiossa. **Urakehityksen tukeminen**: Keskustelkaa, millaisia kehitysmahdollisuuksia organisaatio voi tarjota työntekijälle uranäkymien tukemiseksi, kuten mentorointia, uusia projekteja tai siirtymistä muihin tiimeihin.
+### Palaute ja sen merkitys
 
-### **Vuorovaikutuksen ja yhteistyön kehittäminen**
+**Rakentava palaute**:
+1. Anna konkreettista palautetta, joka auttaa työntekijää kehittymään
+2. Keskity palautteen selkeyteen ja kehityskeskeisyyteen
+3. Käytä esimerkkejä konkretisoimaan palautetta
 
-**Tiimityöskentely**: Käykää läpi, miten työntekijä kokee yhteistyön tiiminsä kanssa. Onko tiimin sisällä kehittämistarpeita tai haasteita, jotka vaikuttavat työn sujumiseen? Tämä on hyvä tilaisuus keskustella myös organisaation sisäisestä viestinnästä ja yhteistyökäytännöistä. **Esimiehen tuki**: Selvitä, miten työntekijä kokee saavansa tukea esihenkilöltä ja kollegoilta. Keskustelkaa siitä, miten esimies voisi auttaa työntekijää tehokkaammin.
+**Työntekijän palaute esimiehelle**:
+Rohkaise työntekijää antamaan palautetta organisaatiosta, työtehtävistä ja esimiestyöstä. Tämä vuorovaikutteisuus lisää avoimuutta ja edistää työtyytyväisyyttä.
 
-### **Yksilöllisyys ja työntekijän motivaatio**
+### Osaamisen kehittäminen ja koulutustarpeet
 
-**Motivaatio ja työtyytyväisyys**: Keskustele työntekijän motivaatioista ja siitä, mitkä tekijät tukevat hänen tyytyväisyyttään työssään. On tärkeää ymmärtää, mikä inspiroi ja innostaa työntekijää, jotta motivaatio pysyy korkealla. **Yksilöllisten tarpeiden huomioiminen**: Huomioi työntekijän yksilölliset tarpeet, kuten työskentelytyylit, elämänvaihe, perhetilanne tai henkilökohtaiset tavoitteet, ja mieti, miten työympäristöä ja tehtäviä voidaan mukauttaa niiden tukemiseksi.
+**Kehitystarpeet**: 
+Selvitä, missä työntekijä kokee tarvitsevansa lisäosaamista. Tämä voi koskea:
+- Teknisiä taitoja
+- Johtamistaitoja
+- Vuorovaikutustaitoja
+- Muita spesifisiä osaamisalueita
 
-### **Kehitystoimien seuranta**
+**Koulutus ja resurssit**: 
+Suunnittele yhdessä työntekijän kanssa konkreettisia kehitystoimenpiteitä:
+- Koulutusohjelmat
+- Mentorointisuhteet
+- Projektimahdollisuudet
+- Itseopiskelumateriaalit
 
-**Seuranta ja tuki**: Kehityskeskustelujen jälkeen on tärkeää seurata työntekijän kehitystä ja tarjota tarvittavaa tukea. Asettakaa yhdessä sovitut seurantapisteet tai välikatsaukset, joissa tarkistetaan, miten asetetut tavoitteet etenevät. **Jatkuva palaute**: Kehityskeskustelujen ei tulisi olla ainoa hetki palautteelle. Jatkuva ja säännöllinen palaute auttaa varmistamaan, että työntekijä tuntee olonsa tuetuksi koko vuoden ajan.
+The Good Side tarjoaa design-konsultointina räätälöityjä kehityskeskustelumalleja, jotka tukevat SaaS-yritysten henkilöstön kehittämistä ja kasvua.
 
-Kehityskeskustelujen onnistuminen perustuu avoimeen ja rakentavaan vuorovaikutukseen, selkeisiin tavoitteisiin ja suunnitelmallisuuteen. Keskusteluissa tulisi keskittyä paitsi suoritukseen ja palautteeseen, myös työntekijän hyvinvointiin, osaamisen kehittämiseen ja uratavoitteiden tukemiseen.   **Janne Gylling** janne@goodside.fi 044 750 4444
+### Työhyvinvointi ja työssä jaksaminen
+
+**Työmäärä ja jaksaminen**: 
+Keskustelkaa avoimesti työntekijän työhyvinvoinnista ja jaksamisesta. Varmista, ettei työntekijä koe liiallista stressiä tai ylikuormitusta.
+
+**Työn ja vapaa-ajan tasapaino**: 
+Selvitä, onko työntekijällä riittävä tasapaino työn ja muun elämän välillä. Tasapainon tukeminen edistää työmotivaatiota ja vähentää uupumuksen riskiä.
+
+### Ura- ja kehittymissuunnitelmat
+
+**Uratavoitteet**: 
+Kartoita työntekijän pitkän aikavälin uratavoitteet ja organisaation mahdollisuudet tukea niitä:
+- Uudet roolit
+- Vastuualueiden laajentaminen
+- Etenemismahdollisuudet organisaatiossa
+
+**Urakehityksen tukeminen**: 
+Keskustelkaa konkreettisista kehitysmahdollisuuksista:
+- Mentorointi
+- Haastavia projekteja
+- Tiimien väliset siirtymiset
+- Erikoistumispolut
+
+### Vuorovaikutuksen ja yhteistyön kehittäminen
+
+**Tiimityöskentely**: 
+Käykää läpi, miten työntekijä kokee yhteistyön tiimissään ja mitä kehittämistarpeita hän tunnistaa. Keskustelkaa myös organisaation sisäisestä viestinnästä ja yhteistyökäytännöistä.
+
+**Esimiehen tuki**: 
+Selvitä, miten työntekijä kokee saavansa tukea esihenkilöltä ja kollegoilta. Keskustelkaa konkreettisista tavoista, joilla esimies voisi auttaa työntekijää tehokkaammin.
+
+### Yksilöllisyys ja työntekijän motivaatio
+
+**Motivaatio ja työtyytyväisyys**: 
+Keskustele tekijöistä, jotka pitävät työntekijän motivaation korkealla:
+- Mikä inspiroi ja innostaa työssä?
+- Mitkä tehtävät tuottavat onnistumisen kokemuksia?
+- Mitkä arvot ohjaavat työntekijän toimintaa?
+
+**Yksilöllisten tarpeiden huomioiminen**: 
+Huomioi työntekijän yksilölliset tarpeet (työskentelytyylit, elämäntilanne, henkilökohtaiset tavoitteet) ja keskustelkaa, miten työympäristöä voidaan mukauttaa niiden tukemiseksi.
+
+### Kehitystoimien seuranta
+
+**Seuranta ja tuki**: 
+Asettakaa selkeät seurantapisteet tai välikatsaukset, joissa tarkistetaan tavoitteiden eteneminen. Dokumentoikaa yhdessä sovitut kehitystoimet ja seurannan aikataulu.
+
+**Jatkuva palaute**: 
+Kehityskeskustelun ei tulisi olla ainoa palautetilaisuus. Sopikaa säännöllisistä lyhyemmistä keskusteluhetkistä, jotka tukevat työntekijän kehitystä läpi vuoden.
+
+## Yhteenveto
+
+Kehityskeskustelujen onnistuminen perustuu avoimeen vuorovaikutukseen, selkeisiin tavoitteisiin ja konkreettisiin kehityssuunnitelmiin. Parhaimmillaan keskustelu huomioi sekä työntekijän että organisaation tarpeet ja luo pohjan molempien menestykselle.
+
