@@ -8,8 +8,6 @@ heroImage: ../../assets/blog/images/design-velan-korko/featured.jpg
 heroImageAlt: Design-velan korko ampaisi
 ---
 
-![](/images/blog/design-velan-korko/analog-clocks.svg)
-
 # Design-velan korkoprosentti on nyt korkeamalla kuin koskaan aiemmin
 
 Softaa voidaan luoda nopeammin kuin koskaan ja syitä design-velan ottamiselle on vähemmän. Tämän seurauksena tuotetiimien kannattaa keskittyä entistä enemmän product-market-fitin löytämiseen ja hypoteesien testaamiseen.
