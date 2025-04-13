@@ -13,7 +13,7 @@ Tee sisällöstä helpommin pureskeltavaa:
 
 Muuta pitkiä listauksia bullet-listoiksi
 Lisää numeroituja listoja prosesseille tai vaiheittaisille ohjeille
-Korosta hienovaraisesti muutamia avaintermejä ja -käsitteitä lihavoinnilla
+Korosta siellä täällä muutamia avaintermejä ja -käsitteitä lihavoinnilla
 
 Paranna hakukoneoptimointia:
 
@@ -48,6 +48,9 @@ Muita huomioitavia asioita
 Jos author on jotain muuta kun Mikki Aalto-Ylevä, päivitä se.
 Jos blogin lopussa on kirjoittajan nimi, poista se
 Käytä Good Sidesta aina kirjoitusasua The Good Side
+Jos sana The Good Side esiintyy otsikossa, käytä siinä isoja alkukirjaimia.
+Sen sijaan, että puhut saas kasvusta käytä aina kirjoitusasua "SaaS-kasvu" tai esimerkiksi saas tuote kohdalla käytä kirjoitusasua "SaaS-tuote"
+Jos otsikot ovat numeroituja, poista numerointi
 
 Pääavainsanat: määrittele kirjoitukselle kolme tagia, jotka sopivat aiheeseen
 Brändi/tuote/palvelu: Design-konsultointi SaaS-yrityksille
