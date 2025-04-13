@@ -45,7 +45,7 @@ Otsikoissa kirjoita vain otsikon ensimmäisen sanan alkukirjan isolla kirjaimell
 
 Muita huomioitavia asioita
 
-Jos author on jotain muuta kun Mikki Aalto-Ylevä, päivitä se.
+Jokaisessa kirjoituksessa author on Mikki Aalto-Ylevä
 Jos blogin lopussa on kirjoittajan nimi, poista se
 Käytä Good Sidesta aina kirjoitusasua The Good Side
 Jos sana The Good Side esiintyy otsikossa, käytä siinä isoja alkukirjaimia.

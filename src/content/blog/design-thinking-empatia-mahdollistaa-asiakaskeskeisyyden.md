@@ -85,4 +85,4 @@ Se mahdollistaa syvemmän asiakasymmärryksen, paremman ongelmanratkaisun, vahve
 
 **Haluatko oppia lisää siitä, miten empatia ja design thinking voivat auttaa teidän SaaS-yritystänne kasvamaan?**
 
-[Ota yhteyttä The Good Sideen ja keskustellaan lisää](/[locale]/contact/).
+[Ota yhteyttä ja keskustellaan lisää](/contact).
