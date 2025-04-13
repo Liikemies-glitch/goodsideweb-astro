@@ -1,102 +1,134 @@
 ---
-title: Kaikki paitsi LinkedIn on turhaa
+title: Linkedin tehokkain b2b-myyntikanava
 pubDate: '2025-01-30T14:19:26.000Z'
 description: >-
-  Data&#x2d;analyysi paljastaa LinkedInin ylivoimaisuuden B2B&#x2d;myynnissä.
-  Vertailussa mukana liidimäärät, konversiot ja euromääräiset tulokset eri
-  kanavista.
-seoTitle: LinkedIn on tehokkain B2B&#x2d;myyntikanava
+  Data-analyysi paljastaa LinkedInin ylivoimaisuuden B2B-myynnissä. Vertailussa liidimäärät, konversiot ja euromääräiset tulokset eri myyntikanavista. LinkedIn-liidit konvertoituvat kaupaksi yhtä todennäköisesti kuin suorat yhteydenotot tutuilta.
+seoTitle: LinkedIn on tehokkain B2B-myyntikanava
 author: Mikki Aalto-Ylevä
 tags:
-  - Tekoäly
-  - Myynti
+  - Myyntikanavat
   - Data-analyysi
+  - LinkedIn
 heroImage: ../../assets/blog/images/linkedin-on-myyntikanavien-ykkonen/featured.jpg
-heroImageAlt: Kaikki paitsi LinkedIn on turhaa
+heroImageAlt: LinkedIn tehokkain B2B-myyntikanava
 ---
 
-Myynnin data-analyysi vahvisti LinkedInin ylivoimaisuuden myyntikanaviemme joukossa niin liidien määrässä, konversiossa kuin euroissa mitattuna. LinkedIn-liidit konvertoituvat kaupaksi yhtä todennäköisesti kuin suorat yhteydenotot tutuilta. Tässä artikkelissa avaan yksityiskohtaisesti, miten tein analyysin ja mitä työkaluja käytin. Lukuaika: 5 minuuttia.
+## Tiivistelmä
 
-## CRM datan validointi
+Data-analyysimme osoittaa, että LinkedIn on ylivoimaisesti tehokkain B2B-myyntikanava sekä liidien määrässä, konversioprosentissa että euromääräisissä tuloksissa. LinkedIn-liidit konvertoituvat kaupaksi yhtä todennäköisesti kuin suorat yhteydenotot tutuilta kontakteilta. Tässä artikkelissa avaamme yksityiskohtaisesti analyysin toteutuksen, käytetyt työkalut ja keskeiset löydökset eri myyntikanavien tehokkuudesta.
 
-Ensimmäinen steppi oli selvittää, että mistä kanavasta tulevat kaupat konvertoituvat parhaiten kaupaksi. Tätä varten tarvittiin lista voitetuista kaupoista ja tieto, että mitä kanavaa pitkin myyntimahdollisuus oli syntynyt. Otin listan voitetuista kaupoista ulos HubSpotista ja kirjasin kunkin myyntimahdollisuuden kohdalle käsin tiedot myyntikanavasta. Tää tieto mulla oli päässä, olinhan ollut jokaisessa myyntimahdollisuudessa jollain tavalla itse mukana. On enemmän poikkeus kun sääntö, että CRM-järjestelmään merkataan kaupan loppusumma "vähä sinneppäin -hengessä" eli mäkin aloitin tarkistamalla, että HubSpottiin merkatut eurot on oikeasti linjassa sen kans mitä on tehty ja laskutettu. Ennen tarkistusta, käydään läpi meidän myyntikanavat:
+## CRM-datan validointi analyysin perustana
 
--   **LinkedIn -** tarve on tunnistettu LinkedInissä
--   **WhatsApp -** tarve on tunnistettu WhatsApissa
--   **Kylmäsoitto -** liidit, joissa myyntiprosessi on alkanut puhelinsoitosta asiakkaalle
--   **Kylmämeili -** myyntiprosessi on alkanut asiakkaalta tulleesta positiivisesta vastauksesta meidän sähköpostiin
--   **www-yhteydenottolomake -** tarve on ilmaistu yhteydenottolomakkeen kautta tai asiakas on etsinyt myyjän yhteystiedot osoitteesta goodside.fi
--   **Suorat inbound yhteydenotot -** tarpeesta kerrotaan suoraan asiantuntijalle tai myyjälle suoralla yhteydenotolla privaatisti
--   **Muu -** kaikki muut liidit, myös ne joiden alkuperä on hämärän peitossa
+Ensimmäinen vaihe oli selvittää, mistä kanavasta tulevat liidit konvertoituvat parhaiten kaupoiksi. Tätä varten tarvitsin:
 
-Vertailin keskenään myyntidataa toteutuneeseen liikevaihtoon kanavakohtaisesti. Kun huomasin, että erot näissä selittyy sillä, että kaupat on tehty hiljattain mutta niitä ei ole vielä laskutettu, pystyin päättelemään, että HubSpottiin merkattu euro ennustaa aika kivasti sitä me todellisuudessa tullaan laskuttamaan.
+- Listan voitetuista kaupoista
+- Tiedon kunkin myyntimahdollisuuden alkuperäisestä kanavasta
+- Vahvistuksen, että CRM-järjestelmän euromäärät vastaavat todellisia lukuja
+
+Otin listan voitetuista kaupoista HubSpotista ja kirjasin jokaiselle myyntimahdollisuudelle käsin tiedon alkuperäisestä myyntikanavasta. Tarkistin myös, että HubSpotiin merkityt eurot vastaavat todellisia laskutettuja summia.
+
+### Analysoidut myyntikanavat
+
+Vertailussa olivat mukana seuraavat kanavat:
+
+- **LinkedIn** - tarve tunnistettu LinkedInissä
+- **WhatsApp** - tarve tunnistettu WhatsAppissa
+- **Kylmäsoitto** - liidit, joissa myyntiprosessi alkoi puhelinsoitosta
+- **Kylmämeili** - prosessi alkoi asiakkaan positiivisesta vastauksesta sähköpostiin
+- **www-yhteydenottolomake** - tarve ilmaistu verkkosivujen kautta
+- **Suorat inbound-yhteydenotot** - suora yhteydenotto asiantuntijalle tai myyjälle
+- **Muu** - muut kanavat tai epäselvät tapaukset
 
 ## Historiallisesta datasta tulevaisuuden näkymiin
 
-Tässä kohtaa näytti jo siltä, että LinkedIn dominoi. En kuitenkaan halunnut tehdä tän datan perusteella vielä päätelmiä koska tiesin meidän ottaneen kylmäsoitot ja meilit valikoimaan vasta paljon sen jälkeen kun olimme aloittaneet ponnistelut LinkedInissä. Saadakseni näkymän tulevaan mun oli katsottava myyntiputkea laajemmasta näkökulmasta eikä pelkästään toteutuneiden kauppojen ja toteutuneiden eurojen kautta. Aloin siis tarkastelemaan kaikkien tarjousten, eli potentiaalisten kauppojen dataa. Myyntimahdollisuuksia oli kertynyt syyskuusta 2024 tähän päivään mitattaessa yli sata.
+LinkedIn näytti dominoivan kanavana jo alkuvaiheessa, mutta halusin varmistaa, ettei tulos johdu ainoastaan siitä, että LinkedIn oli ollut käytössämme pidempään kuin muut kanavat. Saadakseni paremman näkymän tulevaisuuteen, laajensin analyysia koskemaan:
 
-## Datan jalostaminen ja työkalujen valinta
+- Kaikkia tarjouksia, ei vain toteutuneita kauppoja
+- Myyntikanavakohtaisia win rate -lukuja
+- Keskimääräisiä kauppakokoja
 
-Jotta sain jokaiselle myyntimahdollisuudelle tiedon myyntikanavasta mun piti tehdä uusi attribuutti HubSpotiin ja kirjata tää tieto jokaiselle myyntimahdollisuudelle. Tää oli kohtalaisen helppo ja nopea homma koska oon ite tehnyt noista 90% niin tiedän mistä ne on tulleet. Lopulta kun data oli kunnossa, koitin ensin muodostaa siitä raportteja HubSpotilla. Törmäsin ongelmiin raportointinäkymän käytössä sekä kuukausitilaukseni laajuudessa, joten päätin kokeilla datan visualisointiin jotain toista työkalua, ja päädyin ottamaan datan ulos .csv muodossa ja heittämään sen Google Sheetille.
+Kun tarkastelin yli sadan myyntimahdollisuuden dataa syyskuusta 2024 alkaen, sain kattavamman kuvan eri kanavien tehokkuudesta.
 
-## Tekoäly apuna datan analysoinnissa
+## Datan jalostaminen ja analyysityökalut
 
-Nyt mulla oli edessäni dataa. Mä tiesin, että kun koskettelen sitä oikeasta paikasta niin se alkaa puhumaan mulle. En vaan ollut ihan varma, että mistä paikasta pitäisi kopeloida ja millä tekniikalla. Toisinsanoen en siis osaa käyttää Google Sheettiä, ja esimerkiksi Pivot taulukon käyttö osoittautui liian haastavaksi. No mikä ratkaisuksi? Tekoäly tietenkin. Annoin datasheeting Claudelle ja pyysin tekemään ensimmäisen analyysin promptilla: "Laskentataulukossa on data myyntimahdollisuuksista kanavittain. En tiedä mikä näistä myyntikanavista toimii parhaiten? Voitko tehdä analyysin minulle" Paljon muuta en sitten tarvinnutkaan. Nykyisin yllättävän usein tekoäly ei tyydy vain kirjoittamaan vastausta tekstillä, vaan kirjaimellisesti lennosta, koodaa sulle interaktiivisen työkalun, joka ratkaisee sun ongelman. Niin kävi tälläkin kertaa. Claude teki mulle interaktiivisen taulukon sekä raportin siitä mitkä kanavat toimivat parhaiten. Ilman sen kummempaa hienosäätöä sain vertailtavaksi mm:
+Datan laadun varmistamiseksi:
 
--   Kauppojen määrä yhteensä
--   Voitettujen kauppojen määrä
--   Win Rate (%)
--   Voitetut kaupat (€)
--   Keskiarvo / voitettu (€)
--   Pipeline kokonaisarvo (€)
+1. Loin uuden attribuutin HubSpotiin myyntikanavaa varten
+2. Kirjasin jokaiselle myyntimahdollisuudelle alkuperäisen kanavan
+3. Vein datan .csv-muodossa Google Sheetsiin, kun HubSpotin raportointi osoittautui rajoittuneeksi
 
-## Ensihavainnot datasta
+### Tekoäly apuna analysoinnissa
 
-Olen tehnyt erilaisiin CRM-järjestelmiin vuosien aikana aika monta raporttinäkymää. Olen myös aika montaa kertaa tehnyt pylväsdiagrammeja Google Sheetillä, jotta saisin kuvattua dataa tavalla, joka mahdollistaisi uusien näkemysten muodostamisen ja oikeiden päätelmien tekemisen. Ja voihan kakka tikun nokassa! Noin vaan mulla oli juuri mun sen hetkiseen tarpeeseen räätälöity interaktiivinen kuvaaja, josta pystyin tarkastelemaan kanavakohtaisesti toteutuneiden kauppoja tilastoja. Olin ällikällä lyöty ja hemmetin innoissani. Ekana mun huomioni keskittyi siihen, että LinkedIn näyttää toimivan hienosti:
+Tarvitsin apua datan tehokkaaseen analysointiin, joten hyödynsin tekoälyä:
 
--   Eniten myyntimahdollisuuksia kappalemäärällisesti
--   Eniten myyntimahdollisuuksien euroissa mitaten
--   Tarjousten winrate on toiseksi korkein ja voitetun kaupan keskiarvo toiseksi korkein
+1. Syötin Google Sheets -datan Claude 3.5 Sonnet -kielimalliin
+2. Pyysin tekoälyä tekemään ensimmäisen analyysin kanavien tehokkuudesta
+3. Tekoäly loi interaktiivisen taulukon ja raportin avainlukuineen
 
-Seuraavana päivänä palasin täydentämään tätä blogipostausta ja analysoin dataa syvällisemmin ja tein kiinnostavia löydöksiä. Analysoin jokaisen kanavan erikseen. Sain kanavakohtaisesti datasta vaikka kuinka paljon irti ja kirjoitettuani yhden A4 liuskan pelkästä kylmäsoittokanavaan liittyvän datan analysoinnista tekoälyllä, painoin isosti deletee, ja totesin sen sisällön kuuluvan johonkin toiseen blogiin. Joten, keskitytään tässä siihen mitä isoja linjoja data-analyysistä pystyi vetämään.
+Tekoälyn luoma työkalu mahdollisti eri kanavien vertailun seuraavien mittareiden avulla:
+- Kauppojen kokonaismäärä
+- Voitettujen kauppojen määrä
+- Win rate (%)
+- Voitetut kaupat (€)
+- Keskiarvo / voitettu kauppa (€)
+- Pipeline-kokonaisarvo (€)
 
-## LinkedInin ylivoima ja kylmämailien positiiviset trendit
+## Keskeiset löydökset myyntikanavista
 
-LinkedIn-liidit konvertoituvat kaupaksi yhtä todennäköisesti kuin suorat yhteydenotot tutuilta. Tää kannattaa pitää mielessä. Sen kautta on luotu eniten uusia myyntimahdollisuuksia ja voitettu määrällisesti eniten kauppoja. Keskikauppa on isoin ja Linkkarin kautta tulleiden liidien euromääräinen pipeline on suurin. Voittajasta ei ole epäselvyyksiä. LinkedIn kanavan myyntidata:
+### LinkedInin ylivoima
 
--   Total deals 41
--   Won deals 11
--   Winrate (kaikista tarjouksista) 26,8%
--   Winrate (klousatuista tarjouksista) 55,0%
--   Won deals value (€) 110 800€
--   Avg Value / Won (€) 10 073
--   Pipeline total Value (€) 666 600
+LinkedIn osoittautui selkeästi tehokkaimmaksi myyntikanavaksi:
 
-Pyysin tekoäly vielä laskemaan mahdollisuuksien winraten huomioimalla vain klosatut myyntimahdollisuudet, jonka jälkeen sain todellisen winraten osaksi taulukkoa. Samalla data myös paljasti sen, että myös kylmämaileilla rakennetaan toimivaa pipelinee ja data vihjailee kanavaan liittyvistä positiivisista trendeistä.
+- Eniten myyntimahdollisuuksia (41 kpl)
+- Eniten voitettuja kauppoja (11 kpl)
+- Korkea winrate (26,8% kaikista tarjouksista, 55% klousatuista)
+- Korkea keskikauppa (10 073€)
+- Suurin euromääräinen pipeline (666 600€)
 
-## Kylmäsoitto on nimenomaan kylmä
+LinkedIn-liidien konversio on yhtä hyvä kuin suorien yhteydenottojen kautta tulleiden liidien, mikä tekee siitä erittäin tehokkaan kanavan.
 
-Kylmäsoitto kanavan kautta luotuja mahdollisuuksia on klousattu vähän (klousattuja 2kpl). Dataa on niin vähän, että siihen täytyy suhtautua varauksella. Kanavakohtaisesti kaupan keskikoon tai läpimenoajan suhteen analyysi ei paljastanut mitään muista kanavista poikkeavaa. Ehkä tässä näkyy se, että kohderyhmä on kuitenkin sama kanavasta riippumatta, joten keskikauppaan ja kaupan läpimenoaikaan sillä ei kamalasti ole vaikutusta.
+### Kylmämailit lupaavana haastajana
 
-## Muut
+Data paljasti, että kylmämailit rakentavat toimivaa pipelinea ja osoittavat positiivisia trendejä, vaikka volyymi ei vielä ole yhtä suuri kuin LinkedInissä.
 
-Tää on sellanen Dark funnel, jossa valtaosa keisseistä tulee työpöydälle Jannen kautta. Janne ei oo myyjä vaan asiantuntija, joten tässä näkyy selkeesti se, että Janne ei follow-uppaa liidejä ollenkaan niin aktiivisesti kun minä. Sen takia avoinna olevien diilien läpimenoaika on todella pitkä ja voitettujen lyhyt. Jannelta ostetaan mutta jos asiakas ei osta niin kukaan ei aktiivisesti klousaa kauppaa, jonka seurauksena meillä roikkuu myyntiputkessa tarjouksia, jotka ei todennäköisesti koskaan tuu realisoitumaan. Diilien läpimenoaika
+### Kylmäsoittojen haasteet
 
--   Voitetut keskimäärin: 7.0 päivää
--   Hävityt keskimäärin: 83.5 päivää
+Kylmäsoittojen kautta luotuja myyntimahdollisuuksia on toistaiseksi klousattu vähän (2 kpl), joten dataa on liian vähän luotettavien johtopäätösten tekemiseen. Tämä kanava vaatii:
 
-## Alihankintaverkostoa varten paperit kuntoon
+- Lisää dataa luotettavampaa analyysiä varten
+- Mahdollisesti prosessin optimointia
 
-Kaupat isoja mutta myyntiprosessi pitäs optimoida näihin. Ratkaisevaa on tässä esimerkiksi tekijöiden portfoliot ja CV:t mihin me ei olla kauheesti panostettu. Tää on ollut meillä todella pienellä priolla ja siksi tässä ei olla onnistuttu.
+### Muiden kanavien erityispiirteet
 
-## Suorat yhteydenotot
+**Asiantuntijoiden kautta tulevat liidit:**
+- Nopeampi läpimenoaika voitetuissa kaupoissa (7 päivää)
+- Pidempi läpimenoaika hävityissä kaupoissa (83,5 päivää)
+- Haasteena follow-upin puute asiantuntijoilta
 
-Nää yleensä jotain tuttuja tai puolituttuja. Ja näissä kaupat klousaantuu hitaasti, varsinkin, epävarmat kaupat, jotka todennäköisesti hävitään. Syy tähän se, että tuttuja ei haluta painostaa vaan halutaan luottaa siihen, että "kyllä se ilmottaa jos kauppa toteutuu" ja sit näitä ei follow-upata niin ahkerasti. Muuten ihan ok "kanava".
+**Suorat yhteydenotot tutuilta:**
+- Hyvä konversioaste
+- Haasteena passiivisempi follow-up, koska tuttuja ei haluta painostaa
 
-## www-yhteydenottolomake
+**www-yhteydenottolomake:**
+- Heikko konversio
+- Vaatii tarkempaa selvitystä syistä
 
-Tää on kaikista epäselvin kanava. Miksi ei yhteydenottolomakkeen kautta tulleet liidit konvertoidu kaupaksi? Me vastataan kyllä nopeasti ja edetään vauhdilla neuvotteluihin mutta jotenkin nää on toistaiseksi olleet luonteeltaan sellasia et "ei me tehdäkään mitään". Vaatii lisää selvittelyä.
+## Johtopäätökset ja suositukset
 
-## Johtopäätökset ja pohdintaa
+LinkedIn on myyntikanaviemme selkeä ykkönen, ja siitä kannattaisi tehdä myyntityön keskeinen painopiste:
 
-Nyt oon käyttänyt analyysiin yhden kokonaisen työpäivän. Eilen tein pikaista, pintapuolista analyysiä ja nopeita johtopäätöksiä, joita tarkastelin uudestaan tänään, eli seuraavana päivänä. Menin myös vähän syvemmälle kanavakohtaisessa analyysissä. Tässä huomiot mitä koko prosessista jäi päällimmäisenä mieleen: LinkedIn on kanava ylivoimainen ja kannattaisi todellakin harkita, että keskittääkö sinne enemmän panoksia. Tätä puoltaa myös se ajatus, että sosiaalinen media ja siellä tapahtuva brändimielikuvan rakentaminen ja sisältöjen jakaminen ruokkii myös jokaista muuta myyntikanavaa. Meillä on dataa siitä, että kylmämailit toimii paremmin kohderyhmälle, jolle me ollaan somesta tuttuja. Yhden kanavan taktiikkaa kannattaa kuitenkin välttää koska tiedämme, että kohderyhmässä on paljon päättäjiä, joita on helpompi puhutella toisessa kanavassa. Oleellista on saada prosessit niin tehokkaiksi, että vähillä resursseilla voidaan hoitaa usempaa kanavaa. Data-analyysissä tekoäly on todella taitava. Käyttämäni kielimalli oli Claude 3.5 Sonnet, joka on selkeästi kehittynyt viimeisen puolen aikana datan analysoinnissa. Tätä kannattaa hyödyntää ja oma fiilis on, että ihmettelen todella todella paljon, jos CRM järjestelmien raportointinäkymät ja datan analysointitoiminnallisuudet eivät pian kehitä tähän suuntaan, mitä GEN Ai työkalut tarjoavat hyllytavarana kelle vaan 20€/kk tilauksella. Mikki Aalto-Ylevä mikki@goodside.fi 0408698887
+- Eniten liidejä sekä määrällisesti että euroissa mitattuna
+- Korkea konversioaste
+- Tukee myös muita myyntikanavia
+
+Samalla on syytä muistaa:
+
+1. **Monikanavastrategia kannattaa** - eri kohderyhmän jäseniä tavoitetaan eri kanavissa
+2. **Prosessien tehostaminen on avainasemassa** - vähillä resursseilla pitää pystyä hoitamaan useampaa kanavaa
+3. **Tekoäly on erinomainen työkalu data-analyysissä** - nykyaikaiset kielimallit mahdollistavat vaikuttavan analyysin ilman syvällistä analytiikkaosaamista
+
+## Miten The Good Side voi auttaa
+
+The Good Side auttaa SaaS-yrityksiä optimoimaan myyntikanaviaan data-lähtöisesti. Yhdistämällä tuotepositioinnin, käyttäjäpolkujen ja UI/UX-suunnittelun voimme auttaa sinua tavoittamaan potentiaaliset asiakkaat tehokkaasti juuri oikeissa kanavissa.
+
+Haluatko selvittää, mitkä myyntikanavat toimivat parhaiten yrityksellesi? [Ota yhteyttä asiantuntijoihimme](https://thegoodside.fi/contact) ja keskustellaan, miten voimme auttaa sinua kiihdyttämään SaaS-yrityksesi kasvua.

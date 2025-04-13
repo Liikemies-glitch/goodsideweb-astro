@@ -1,47 +1,120 @@
 ---
-title: UI/UX suunnittelija joka ymmärtää koodia
+title: Teknisesti osaava ui/ux suunnittelija tuo kilpailuetua
 pubDate: '2024-10-08T08:16:35.000Z'
 description: >-
-  Ohjelmistokehityksen perusteiden tuntemus auttaa UX&#x2d;suunnittelijaa
-  luomaan realistisia, toimivia ja käyttäjäystävällisiä ratkaisuja.
-author: moretagoy
+  Ohjelmistokehityksen perusteiden tuntemus auttaa UX-suunnittelijaa luomaan toimivia ja käyttäjälähtöisiä SaaS-tuotteita. Koodiymmärrys tehostaa suunnitteluprosessia, parantaa tiimityöskentelyä ja tuottaa realistisia ratkaisuja.
+author: Mikki Aalto-Ylevä
 tags:
-  - Design
-  - Käyttökokemus
+  - UI/UX suunnittelu
+  - Koodiosaaminen
+  - Suunnitteluprosessi
 heroImage: ../../assets/blog/images/ui-ux-suunnittelija-joka-ymmartaa-koodia/featured.webp
 heroImageAlt: UI/UX suunnittelija joka ymmärtää koodia
 ---
 
-UX-suunnittelu ei ole vain kauniiden käyttöliittymien luomista; sen taustalla on syvällinen ymmärrys siitä, miten käyttäjät toimivat, mitä he arvostavat ja miten digitaaliset tuotteet voivat vastata heidän tarpeisiinsa. Teknologian kehittyessä yhä useampi suunnittelija on huomannut, että perustason ymmärrys ohjelmistokehityksestä tekee suunnitteluprosessista sujuvampaa ja mahdollistaa parempien käyttäjäkokemusten luomisen. Miksi UX-suunnittelijan tulisi siis ymmärtää edes hieman koodia?
+## Miksi koodin ymmärtäminen tekee UI/UX-suunnittelijasta tehokkaamman?
 
-## Realistinen suunnittelu – teknisten rajoitteiden huomioiminen
+Tehokas UX-suunnittelu ylittää pelkän visuaalisen estetiikan. Sen ytimessä on syvä ymmärrys käyttäjien tarpeista, teknisistä mahdollisuuksista ja digitaalisen tuotteen kehitysprosessista. Erityisesti SaaS-yritysten kilpaillessa markkinaosuuksista suunnittelijat, jotka ymmärtävät koodin perusteita, tuovat merkittävää lisäarvoa. Tässä artikkelissa tarkastelemme, miksi koodiosaaminen on kasvava kilpailuetu UX/UI-suunnittelijoille, ja miten The Good Side hyödyntää tätä osaamista design-konsultoinnissaan.
 
-Yksi UX-suunnittelijan tärkeimmistä tehtävistä on varmistaa, että suunnitelmat ovat teknisesti toteutettavissa. Jos suunnittelija ymmärtää edes perusteet koodaamisesta ja ohjelmistokehityksestä, hän pystyy ottamaan huomioon teknologiset rajoitteet ja mahdollisuudet jo suunnitteluvaiheessa. Tällainen tietämys auttaa välttämään epärealistisia ideoita ja säästää kehitystiimin aikaa ja resursseja, koska suunnittelijan ei tarvitse myöhemmin tehdä suuria muutoksia konseptiinsa. Esimerkiksi, jos suunnittelija tietää, että tietyt animaatiot voivat hidastaa käyttöliittymää huomattavasti mobiililaitteilla, hän voi huomioida tämän jo suunnitteluvaiheessa ja kehittää kevyempiä ratkaisuja. Tämän tyyppinen suunnittelun ja teknologian yhteensovittaminen tekee lopputuloksesta joustavamman ja käyttöystävällisemmän.
+### Tekninen realismi suunnittelun perustana
 
-## Parempi yhteistyö kehittäjien kanssa
+**Suunnitelmien toteuttamiskelpoisuus on kriittistä**
 
-Ymmärrys ohjelmistokehityksen perusteista helpottaa viestintää ja yhteistyötä kehittäjien kanssa. Kun suunnittelijalla on käsitys koodin rakenteesta ja siitä, mitä työkalut ja kehitysympäristöt mahdollistavat, hän pystyy selittämään omia suunnitteluratkaisujaan kehitystiimille selkeämmin ja tarkemmin. Tämä vähentää väärinkäsityksiä ja varmistaa, että tiimi voi työskennellä sujuvammin yhteisen tavoitteen saavuttamiseksi. Jos suunnittelija esimerkiksi tietää, että tietynlainen suunnitteluelementti on haastava toteuttaa tietyssä ohjelmointiympäristössä, hän voi keskustella tästä kehittäjien kanssa jo varhaisessa vaiheessa ja tarvittaessa mukauttaa suunnitteluaan tai löytää yhdessä tiimin kanssa vaihtoehtoisia ratkaisuja. Tämä säästää sekä aikaa että kustannuksia, ja molemmat osapuolet voivat keskittyä siihen, missä he ovat parhaimmillaan.
+Koodiosaamisen suurin etu on kyky luoda teknisesti toteuttamiskelpoisia suunnitelmia. Suunnittelija, joka ymmärtää ohjelmistokehityksen periaatteita:
 
-## Käytännöllinen ymmärrys käytettävyydestä ja latausajoista
+- Tunnistaa jo varhaisessa vaiheessa mikä on mahdollista toteuttaa
+- Osaa priorisoida toiminnallisuuksia teknisen monimutkaisuuden perusteella
+- Välttää suunnitteluvirheitä, jotka vaatisivat myöhemmin kalliita korjauksia
 
-Suunnittelijan päätökset vaikuttavat suoraan sovelluksen tai verkkosivuston suorituskykyyn. Tietämys siitä, miten esimerkiksi kuvat, animaatiot ja muut käyttöliittymäelementit ladataan ja käsitellään koodissa, auttaa suunnittelijaa tekemään käytännöllisiä päätöksiä, jotka parantavat käyttökokemusta. Perustietämys koodin rakenteesta voi auttaa suunnittelijaa myös minimoimaan käyttöliittymän latausaikaa. Esimerkiksi, jos suunnittelija ymmärtää, että raskaat kuvat tai monimutkaiset animaatiot voivat hidastaa käyttöliittymää, hän voi valita kevyempiä vaihtoehtoja tai optimoida kuvia ja grafiikkaa siten, että ne eivät vaikuta negatiivisesti sivuston suorituskykyyn. Tämä parantaa käyttökokemusta ja varmistaa, että käyttäjät pääsevät nopeasti haluamaansa sisältöön.
+Esimerkiksi SaaS-tuotteen käyttöliittymää suunniteltaessa teknisesti valveutunut suunnittelija osaa arvioida, mitkä animaatiot ja visuaaliset elementit toimivat sujuvasti eri laitteilla ilman, että ne hidastavat sovellusta.
 
-## Responsiivisuuden huomioiminen
+### Tehokkaampi yhteistyö kehitystiimin kanssa
 
-Ohjelmistokehityksen perusymmärrys auttaa suunnittelijaa tekemään parempia päätöksiä responsiivisuudesta eli siitä, miten käyttöliittymä mukautuu eri laitteille ja näytöille. Suunnittelija, joka ymmärtää CSS:n ja JavaScriptin perusperiaatteet, tietää, miten käyttöliittymäkomponentteja voidaan joustavasti mukauttaa erilaisiin näyttöihin ja tilanteisiin. Responsiivinen suunnittelu edellyttää, että suunnittelija ottaa huomioon, miten eri elementit skaalautuvat ja asettuvat mobiililaitteilla, tableteilla ja tietokoneilla. Jos suunnittelija ymmärtää peruskäsitteitä, kuten media queries -komentoja CSS:ssä, hän voi suunnitella käyttöliittymän niin, että se toimii eri laitteilla optimaalisesti – mikä parantaa sekä käyttökokemusta että yrityksen asiakastyytyväisyyttä.
+**Sujuva kommunikaatio säästää aikaa ja rahaa**
 
-## Itsenäinen prototypointi ja nopeat iteroinnit
+Suunnittelija, joka ymmärtää koodia, voi:
 
-UX-suunnittelijan työhön kuuluu usein prototyyppien ja mallien luominen suunnitelmistaan, ja perustason koodiosaaminen mahdollistaa prototyyppien kehittämisen itsenäisesti ja joustavasti. Kun suunnittelija pystyy toteuttamaan esimerkiksi HTML- tai CSS-pohjaisen prototyypin ilman erillistä kehittäjän apua, hän voi testata ja hioa suunnitelmiaan nopeasti ja pienellä vaivalla. Tällainen itsenäisyys nopeuttaa suunnitteluprosessia, sillä pienet muutokset eivät edellytä jatkuvaa edestakaista viestintää kehitystiimin kanssa. Prototyyppien kehittäminen omatoimisesti auttaa myös suunnittelijaa hahmottamaan, miten suunnitteluratkaisut oikeasti toimivat käytännössä – ja korjaamaan nopeasti mahdolliset käytettävyysongelmat ennen kuin projekti siirtyy varsinaiseen kehitysvaiheeseen.
+- Kommunikoida kehittäjien kanssa heidän omalla kielellään
+- Perustella suunnitteluratkaisut teknisestä näkökulmasta
+- Osallistua teknisiin keskusteluihin ja ymmärtää kehittäjien huolenaiheet
 
-## Käyttäjäkokemuksen ja koodin rajapinnan ymmärtäminen
+The Good Side on havainnut, että teknisesti osaavat suunnittelijat pystyvät rakentamaan vahvemman yhteistyösuhteen kehitystiimin kanssa, mikä nopeuttaa SaaS-tuotteiden markkinoilletuloaikaa merkittävästi.
 
-Suunnittelijan perustason koodin ymmärrys voi auttaa häntä hahmottamaan, miten UX liittyy suoraan koodin rakenteeseen. Tämä on erityisen tärkeää esimerkiksi käyttöliittymän vuorovaikutuksellisissa osissa. Jos suunnittelija ymmärtää, miten JavaScript tai muut dynaamiset teknologiat toimivat, hän voi paremmin arvioida, millaiset vuorovaikutukset ovat realistisia ja mitkä saattaisivat aiheuttaa teknisiä haasteita. Käytettävyysongelmien ratkaiseminen sujuu tehokkaammin, kun suunnittelijalla on käsitys siitä, miten teknologiset elementit tukevat tai rajoittavat käyttökokemusta. Tämä mahdollistaa realistisempien ja toimivampien suunnitelmien luomisen, jotka eivät vain näytä hyvältä, vaan toimivat saumattomasti.
+### Suorituskyvyn optimointi käyttäjäkokemuksen ytimessä
 
-## Isompi potentiaali koko organisaatiolle
+**Nopeat latausajat ovat kriittisiä käyttäjäkokemukselle**
 
-Taitava UX-suunnittelija, joka tuntee myös koodauksen alkeet, voi toimia tehokkaammin kehitystiimin ja asiakkaiden välisenä siltana. Tällaisella osaamisella on myös kysyntää, sillä yritykset arvostavat tiimin jäseniä, joilla on laaja-alainen ymmärrys sekä suunnittelusta että teknologiasta. Suunnittelija, joka osaa puhua sekä koodin että suunnittelun kieltä, voi kasvaa rooliinsa monipuolisemmin ja edetä esimerkiksi UX/UI-kehittäjän, teknisen tuotepäällikön tai vaativampien suunnitteluprojektien vetäjän rooliin. Tämän osaamisen avulla hän voi myös osallistua liiketoiminnan strategiseen suunnitteluun ja tuoda lisäarvoa paitsi suunnittelutiimille myös koko organisaatiolle.
+Koodin perusteet ymmärtävä suunnittelija tekee päätöksiä, jotka vaikuttavat positiivisesti sovelluksen suorituskykyyn:
 
-## Koodin ymmärrys tekee suunnittelijasta paremman ammattilaisen
+- Valitsee kevyempiä komponentteja käyttöliittymiin
+- Ymmärtää, miten kuvat ja animaatiot vaikuttavat latausaikoihin
+- Suunnittelee käyttöliittymät ottaen huomioon tietokantakyselyiden määrän ja raskauden
 
-Ohjelmistokehityksen perusteiden tuntemus auttaa UX-suunnittelijaa luomaan realistisia, toimivia ja käyttäjäystävällisiä ratkaisuja. Kun suunnittelija tuntee teknologian rajoitteet ja mahdollisuudet, hän voi suunnitella käyttöliittymiä, jotka toimivat saumattomasti eri laitteilla, latautuvat nopeasti ja mukautuvat eri käyttötarpeisiin. Lisäksi koodin perusteiden hallinta parantaa yhteistyötä kehitystiimin kanssa, nopeuttaa prototyyppien testausta ja vähentää suunnitteluvirheitä. Vaikka UX-suunnittelijan ei tarvitse olla koodari, koodin ymmärtäminen tekee hänestä monipuolisemman ammattilaisen, joka pystyy tuottamaan käyttäjille erinomaista arvoa ja työskentelemään tehokkaasti osana kehitystiimiä. Tämä yhdistelmä luovaa ajattelua ja teknistä osaamista on avain menestykseen nopeasti kehittyvässä digitaalimaailmassa, jossa kilpailu käyttäjäkokemuksen laadussa kasvaa jatkuvasti.   **Janne Gylling** janne@goodside.fi 044 750 4444
+```
+Esimerkki: SaaS-dashboard, jossa suunnittelija ymmärtää tietokannan kuormituksen ja suunnittelee käyttöliittymän niin, että raskaita kyselyitä tehdään vain tarvittaessa, parantaa merkittävästi käyttäjäkokemusta.
+```
+
+### Responsiivisuuden syvällinen ymmärtäminen
+
+**Saumaton toiminta kaikilla laitteilla on välttämättömyys**
+
+CSS:n ja JavaScriptin periaatteet tunteva suunnittelija:
+
+- Huomioi responsiivisuuden jo suunnitteluprosessin alussa
+- Ymmärtää, miten eri elementit käyttäytyvät erikokoisilla näytöillä
+- Suunnittelee joustavampia käyttöliittymiä, jotka sopeutuvat eri käyttöympäristöihin
+
+Tämä osaaminen on erityisen arvokasta SaaS-tuotteille, joiden täytyy toimia moitteettomasti niin mobiililaitteilla kuin työpöytäympäristöissä.
+
+### Itsenäinen prototypointi nopeuttaa kehityssykliä
+
+**Nopeat iteraatiot johtavat parempiin tuotteisiin**
+
+Suunnittelija, joka osaa koodata, pystyy:
+
+- Luomaan toimivia prototyyppejä ilman kehittäjien apua
+- Testaamaan ideoitaan nopeasti käytännössä
+- Tekemään muutoksia prototyyppeihin välittömästi palautteen perusteella
+
+The Good Siden design-prosessissa hyödynnämme suunnittelijoiden koodiosaamista prototypointivaiheessa, mikä mahdollistaa nopeammat iteraatiot ja paremmat tulokset SaaS-asiakkaillemme.
+
+### Vuorovaikutussuunnittelun tehostaminen
+
+**Aidosti toimivat interaktiot lisäävät käyttäjätyytyväisyyttä**
+
+Koodin perusteet hallitseva suunnittelija ymmärtää:
+
+- Miten käyttäjän syötteet käsitellään teknisessä toteutuksessa
+- Mitkä vuorovaikutustavat ovat tehokkaimpia eri käyttötilanteissa
+- Miten animaatiot ja siirtymät voidaan toteuttaa suorituskykyä optimoiden
+
+```
+Tämä taito on erityisen tärkeä monimutkaisten SaaS-tuotteiden suunnittelussa, jossa käyttäjäpolut ja toiminnallisuudet riippuvat usein toisistaan.
+```
+
+### Organisaation laajempi hyöty
+
+**Moniosaaminen tuo lisäarvoa koko yritykselle**
+
+Suunnittelija, joka ymmärtää koodia:
+
+- Toimii siltana kehitys- ja suunnittelutiimien välillä
+- Voi ottaa laajemman roolin tuotekehityksessä
+- Pystyy kouluttamaan muita tiimin jäseniä teknisten ja suunnittelunäkökulmien yhdistämisessä
+
+The Good Side on havainnut, että tällaiset moniosaajat ovat erityisen arvokkaita nopeasti kasvaville SaaS-yrityksille, joissa roolit ovat usein joustavia.
+
+## Koodiosaaminen erottaa huippusuunnittelijat
+
+SaaS-tuotteiden kasvavilla markkinoilla pelkkä visuaalinen näyttävyys ei riitä. Käyttöliittymien täytyy olla teknisesti optimoituja, nopeita ja skaalautuvia. Suunnittelijat, jotka ymmärtävät koodia, pystyvät luomaan ratkaisuja, jotka eivät vain näytä hyvältä, vaan myös toimivat erinomaisesti.
+
+The Good Side yhdistää design-konsultoinnissaan vahvan visuaalisen osaamisen tekniseen ymmärrykseen. Tämä lähestymistapa tuottaa SaaS-asiakkaillemme käyttöliittymiä, jotka:
+
+- Parantavat käyttäjäkokemusta
+- Nopeuttavat kehityssykliä
+- Vähentävät teknistä velkaa
+- Tukevat liiketoiminnan kasvutavoitteita
+
+Haluatko tietää, miten teknisesti osaavat suunnittelijamme voivat auttaa SaaS-tuotteesi kehityksessä? 
+
+[Ota yhteyttä ja keskustellaan tarkemmin →](https://goodside.fi/contact)

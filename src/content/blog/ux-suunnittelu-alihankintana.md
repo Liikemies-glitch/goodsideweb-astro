@@ -1,56 +1,170 @@
 ---
-title: UX suunnittelu alihankintana
+title: Ux suunnittelun ulkoistaminen saas-yrityksessä
 pubDate: '2024-06-28T01:45:15.000Z'
 description: >-
-  UX&#x2d;suunnittelun ostaminen alihankintana voi tarjota merkittäviä etuja,
-  mutta.. Lue koko juttu tästä!
-author: moretagoy
-tags: []
+  UX-suunnittelun ulkoistaminen voi nopeuttaa SaaS-tuotteen kehitystä ja tuoda erikoisosaamista yritykseesi. Opas auttaa tekemään oikeita päätöksiä suunnittelukumppanin valinnassa ja yhteistyön rakentamisessa.
+author: Mikki Aalto-Ylevä
+tags:
+  - UX ulkoistaminen
+  - Design kumppanuus
+  - SaaS-kehitys
 heroImage: ../../assets/blog/images/ux-suunnittelu-alihankintana/featured.webp
 heroImageAlt: UX suunnittelu alihankintana
 ---
 
-UX-suunnittelun ostaminen alihankintana voi olla tehokas tapa hyödyntää asiantuntevien suunnittelijoiden osaamista ja kokemusta ilman, että tarvitsee palkata heitä pysyvästi. Kuitenkin prosessi voi olla monivaiheinen ja vaatii huolellista harkintaa. Tässä on muutamia tärkeitä asioita, jotka kannattaa ottaa huomioon alihankintaa harkittaessa:
+## UX-suunnittelun ulkoistaminen SaaS-tuotteen kasvun vauhdittajana
 
-### **Tavoitteet ja odotukset**
+UX-suunnittelu on kriittinen osa SaaS-tuotteen menestystä, mutta kaikilla yrityksillä ei ole resursseja ylläpitää kattavaa sisäistä suunnittelutiimiä. Ulkoistaminen tarjoaa mahdollisuuden hyödyntää huippuluokan suunnitteluosaamista ilman pysyvän tiimin rekrytointia. Oikein toteutettuna ulkoistettu UX-suunnittelu voi nopeuttaa kehitystä, parantaa tuotteen käyttäjäkokemusta ja tukea kasvutavoitteita. Tässä kattava opas UX-suunnittelun ulkoistamiseen SaaS-yrityksille.
 
--   **Määritä projektin tavoitteet**: Ennen alihankkijan valintaa, on tärkeää määritellä selkeästi projektin tavoitteet ja mitä haluat saavuttaa. Tämä auttaa varmistamaan, että alihankkija ymmärtää tarpeesi ja voi suunnitella ratkaisun, joka vastaa odotuksiasi.
--   **Aikataulut ja budjetti**: Aseta realistiset aikarajat ja budjetti projektin toteutukselle. Tämä auttaa välttämään mahdollisia yllätyksiä projektin aikana ja pitää kaikki osapuolet ajan tasalla.
+### Strateginen valmistautuminen ulkoistamiseen
 
-### **Alihankkijan valinta**
+**Määrittele tarkat tavoitteet ja odotukset**
 
--   **Kokemus ja osaaminen**: Varmista, että alihankkijalla on tarvittava kokemus ja asiantuntemus UX-suunnittelusta. Tarkista heidän portfoliossaan aiemmat projektit ja asiakaspalautteet.
--   **Referenssit ja asiakasarviot**: Kysy referenssejä aikaisemmista asiakasprojekteista ja arvioista, jotta voit saada käsityksen alihankkijan työskentelytavoista ja asiakaspalvelusta.
--   **Kulttuurinen yhteensopivuus**: Varmista, että alihankkija jakaa samanlaisen kulttuurin ja työskentelytavat kuin oma tiimisi. Tämä auttaa sujuvassa yhteistyössä ja kommunikoinnissa.
+Ennen kumppanin etsimistä, määrittele selkeästi:
 
-### **Yhteistyö ja kommunikaatio**
+- Mitä konkreettisia tavoitteita haluat saavuttaa (konversioasteen parantaminen, käyttäjien aktivointi, churnin vähentäminen)
+- Projektin laajuus ja odotetut toimitettavat materiaalit
+- Miten UX-suunnittelu integroituu tuotekehityksen kokonaisprosessiin
 
--   **Selkeät kommunikaatiokanavat**: Määritä selkeät kommunikaatiokanavat alihankkijan kanssa. Tämä voi sisältää säännölliset kokoukset, projektihallintatyökalut ja viestintäalustat.
--   **Palauteprosessit**: Suunnittele, miten palaute ja muutokset käsitellään projektin aikana. Hyvä palautteenantoprosessi varmistaa, että projektin suunta on oikea koko ajan.
+```
+Esimerkki: "Tavoitteemme on parantaa käyttäjien aktivointia 30% optimoimalla onboarding-prosessi ja kehittämällä käyttäjäystävällisempi dashboardnäkymä, joka ohjaa käyttäjiä ydintoimintojen pariin."
+```
 
-### **Työmenetelmät ja prosessit**
+**Aseta realistiset aikataulut ja budjetit**
 
--   **Suunnitteluprosessi**: Varmista, että alihankkija käyttää käytäntöjä ja menetelmiä, jotka tukevat käyttäjäkeskeistä suunnittelua, kuten käyttäjätutkimusta, prototypointia ja käytettävyystestausta.
--   **Työskentelytavat**: Ymmärrä alihankkijan työskentelytavat (esim. ketterä, vesiputous) ja varmista, että ne sopivat omiin projektinhallintatapoihisi.
+SaaS-tuotteen UX-suunnitteluprojekteissa on tärkeää:
 
-### **Sopimukset ja oikeudet**
+- Määritellä selkeät välitavoitteet ja aikataulu
+- Varata riittävästi aikaa iteraatioille ja palautekierroksille
+- Budjetoida koko prosessi realistisesti sisällyttäen myös mahdolliset lisätyöt
 
--   **Sopimuksen selkeys**: Laadi yksityiskohtainen sopimus, joka kattaa projektin laajuuden, aikarajat, budjetin, maksuehdot ja immateriaalioikeudet. Tämä estää väärinkäsityksiä ja ongelmia projektin aikana.
--   **Oikeudet ja omistus**: Varmista, että sopimuksessa on selvästi määritelty, kenelle suunnittelu- ja kehitystyön tulokset kuuluvat. Tämä on erityisen tärkeää, jos suunnittelija luo sisältöä tai materiaaleja, joita aiot käyttää pitkällä aikavälillä.
+The Good Side auttaa määrittelemään UX-projektille tarkat tavoitteet ja realistisen toteutussuunnitelman, joka tukee SaaS-yrityksesi kasvutavoitteita.
 
-### **Käyttäjätestaus ja validointi**
+### Oikean kumppanin valinta SaaS-yritykselle
 
--   **Käyttäjien osallistaminen**: Varmista, että alihankkija sisältää käyttäjätutkimuksen ja käytettävyystestauksen prosessiin. Tämä varmistaa, että lopullinen tuote todella vastaa käyttäjien tarpeita ja odotuksia.
--   **Iteratiivinen lähestymistapa**: Suunnitteluprosessin tulisi olla iteratiivinen, jolloin saat palautetta jatkuvasti ja teet parannuksia sen mukaan. Tämä voi myös auttaa välttämään suurempia ongelmia myöhemmin.
+**Erikoisosaaminen tuo kilpailuetua**
 
-### **Mittaa tuloksia**
+UX-suunnittelukumppanin valinnassa kiinnitä huomiota näihin:
 
--   **Tulosten arviointi**: Määrittele, miten arvioit UX-suunnittelun vaikutuksia ja tuloksia. Käytä KPI-mittareita, kuten käyttäjien tyytyväisyyttä, käytettävyyttä ja asiakasuskollisuutta, arvioidaksesi projektin onnistumista.
+- **SaaS-kokemus:** Etsi kumppania, jolla on kokemusta nimenomaan SaaS-tuotteiden suunnittelusta
+- **Toimialaosaaminen:** Kumppanin ymmärrys toimialastasi nopeuttaa yhteistyötä
+- **Todennetut tulokset:** Pyydä esimerkkejä, miten kumppani on auttanut muita SaaS-yrityksiä
 
-### **Pitkäaikainen yhteistyö**
+**Yhteensopivuus ja kommunikaatio ratkaisevat**
 
--   **Mahdollinen jatkosuunnittelu**: Mieti, voiko alihankkija olla kumppani tulevaisuudessa. Pitkäaikainen yhteistyö voi johtaa parempiin tuloksiin, sillä alihankkija tuntee brändisi ja tavoitteesi entistä paremmin.
+Ulkoistetun UX-suunnittelun onnistumisen kannalta on kriittistä varmistaa:
 
-### Yhteenveto
+- Yhteensopivat työskentelytavat ja prosessit
+- Kulttuurinen ja arvopohjainen yhteensopivuus
+- Selkeät kommunikaatiokanavat ja -käytännöt
 
-UX-suunnittelun ostaminen alihankintana voi tarjota merkittäviä etuja, mutta se vaatii huolellista suunnittelua ja harkintaa. Huolellinen valinta, selkeät odotukset, hyvä kommunikointi ja yhteistyö voivat varmistaa, että saat laadukasta UX-suunnittelua, joka tukee liiketoimintasi tavoitteita ja parantaa käyttäjäkokemusta.   **Janne Gylling** janne@goodside.fi 044 750 4444
+**Referenssit kertovat totuuden**
+
+Tarkista aina:
+
+- Aiemmat projektit ja niiden tulokset
+- Asiakaspalautteet ja arviot yhteistyöstä
+- Suunnittelijan kyky ymmärtää liiketoimintatarpeita
+
+### Tehokkaan yhteistyömallin rakentaminen
+
+**Selkeät kommunikaatiorakenteet**
+
+Luo heti alussa:
+
+1. Määritellyt yhteyshenkilöt molemmilta puolilta
+2. Säännölliset tapaamiset projektin edistymisen seurantaan
+3. Dokumentoidut kommunikaatiokanavat ja niiden käyttötarkoitukset
+4. Protokolla kiireellisten asioiden käsittelyyn
+
+**Strukturoitu palauteprosessi**
+
+Kehitä tehokas palauteprosessi, joka sisältää:
+
+- Selkeät kriteerit suunnitelmien arviointiin
+- Määritelty prosessi palautteen keräämiseen ja käsittelyyn
+- Oikeat osallistujat palautetilaisuuksiin (päätöksentekijät mukaan)
+- Dokumentointi ja muutoshallinta
+
+### Käyttäjäkeskeisen suunnitteluprosessin varmistaminen
+
+**Suunnittelumenetelmien ymmärtäminen**
+
+Varmista, että ulkoistettu UX-kumppani hyödyntää:
+
+- Käyttäjätutkimusta aidosta kohderyhmästä
+- Perusteltuja suunnittelupäätöksiä datan pohjalta
+- Prototypointia ja käytettävyystestausta
+
+**Iteratiivinen lähestymistapa**
+
+Tehokas UX-suunnittelu SaaS-tuotteille on aina:
+
+- Vaiheittaista ja iteratiivista
+- Käyttäjäpalautteeseen reagoivaa
+- Ketterää ja mukautuvaa
+
+The Good Side soveltaa iteratiivista suunnitteluprosessia, joka mahdollistaa nopean validoinnin ja jatkuvan kehityksen, mikä on erityisen tärkeää SaaS-tuotteiden kehityksessä.
+
+### Juridinen suoja ja oikeudet
+
+**Selkeät ja kattavat sopimukset**
+
+Ulkoistussopimuksessa tulee määritellä vähintään:
+
+- Projektin tarkka laajuus ja toimitettavat materiaalit
+- Aikataulut, maksuehdot ja -vaiheet
+- Immateriaalioikeudet ja niiden siirtyminen
+- Salassapitovelvollisuudet ja tietoturva
+- Muutoshallintaprosessi ja lisätöiden hinnoittelu
+
+**Immateriaalioikeuksien varmistaminen**
+
+SaaS-liiketoiminnan kannalta on kriittistä varmistaa, että:
+
+- Kaikki suunnittelutyön tulokset siirtyvät yrityksellesi
+- Dokumentaatio on kattavaa ja ymmärrettävää
+- Design-elementtien uudelleenkäyttöoikeudet ovat selkeästi määritelty
+
+### Tuloksellisuuden mittaaminen
+
+**Konkreettiset KPI-mittarit**
+
+Määrittele UX-suunnittelun vaikutuksen mittaamiseksi:
+
+- Käyttäjien sitoutumismittarit (aktivointi, retentio)
+- Konversioasteet eri käyttäjäpolkujen vaiheissa
+- Asiakastyytyväisyys ja NPS-luvut
+- Tukipyyntöjen määrät ja aiheet
+
+**Jatkuva oppiminen ja kehittäminen**
+
+Hyödynnä ulkoistussuhdetta myös:
+
+- Sisäisen osaamisen kasvattamiseen
+- Parhaiden käytäntöjen omaksumiseen
+- Tulevien kehitystarpeiden tunnistamiseen
+
+## Pitkäjänteinen kumppanuus tuottaa parhaat tulokset
+
+Kertaluontoisten projektien sijaan:
+
+- Rakenna strateginen kumppanuussuhde, jossa ulkoinen UX-suunnittelija oppii tuntemaan tuotteesi ja liiketoimintasi syvällisesti
+- Hyödynnä kumppanin näkemystä myös tuotteen strategisessa kehittämisessä
+- Pidä kumppani ajan tasalla liiketoimintatavoitteista ja -haasteista
+
+The Good Side rakentaa pitkäjänteisiä kumppanuuksia SaaS-yritysten kanssa, yhdistäen tuotepositioinnin, käyttäjäpolkujen optimoinnin ja UI/UX-suunnittelun kasvun vauhdittajiksi.
+
+## Onnistuneen UX-ulkoistuksen hyödyt SaaS-yritykselle
+
+Oikein toteutettuna UX-suunnittelun ulkoistaminen tarjoaa SaaS-yritykselle merkittäviä etuja:
+
+- **Erikoisosaaminen:** Pääsy huippuosaamiseen ilman rekrytointiprosesseja
+- **Kustannustehokkuus:** Joustavat resurssit ilman pysyviä henkilöstökuluja
+- **Skaalautuvuus:** Mahdollisuus kasvattaa tai supistaa resursseja tarpeen mukaan
+- **Tuore näkökulma:** Ulkopuolinen näkemys auttaa tunnistamaan sokeita pisteitä
+- **Nopeampi time-to-market:** Kokenut kumppani tehostaa kehitysprosessia
+
+The Good Side on erikoistunut auttamaan SaaS-yrityksiä kiihdyttämään kasvuaan kokonaisvaltaisella design-konsultoinnilla, joka yhdistää strategisen näkemyksen ja käytännön toteutuksen.
+
+[Ota yhteyttä ja kerro tuotteesi UX-haasteista →](https://goodside.fi/contact)

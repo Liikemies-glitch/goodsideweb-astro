@@ -1,47 +1,89 @@
 ---
-title: UX kansainvälistymisen tukena
+title: Ux suunnittelu kansainvälistymisen menestystekijänä
 pubDate: '2024-08-07T06:54:51.000Z'
 description: >-
-  Kokemuksia käytettävyyden tärkeydestä eri yritysten digitaalisten tuotteiden
-  menestystekijänä ja vinkkejä suunnitteluun.
-author: moretagoy
+  Laadukas käyttökokemussuunnittelu on kriittinen tekijä SaaS-yritysten kansainvälisessä menestyksessä. Esimerkkitapausten kautta näet, miten käyttäjälähtöinen suunnittelu mahdollistaa globaalin kasvun ja kilpailuedun.
+author: Mikki Aalto-Ylevä
 tags:
-  - UX
+  - UX suunnittelu
+  - Kansainvälistyminen
+  - SaaS-kasvu
 heroImage: ../../assets/blog/images/ux-kansainvalistymisen-tukena/featured.webp
 heroImageAlt: UX kansainvälistymisen tukena
 ---
 
-Elettiin vuotta 2015, kun aloitin Sinisellä Meteoriitilla markkinointijohtajana. Tuohon aikaan Sininen Meteoriitti teki EpiServer sekä Microsoft -pohjaisia palveluita. Yksi näistä Microsoft -pohjaisista toteutuksista oli **Valo Intranet**, joka oli SharePointin päälle rakennettu "teema" sekä nippu erillisiä toiminnallisuuksia. Vuosien 2015 ja 2020 välisenä aikana, Valo Intranet oli yksi maailman eniten menestystä saavuttaineista intranet/extranet -palveluista. Valo on valittu useamman kerran koko Euroopan parhaaksi intranet tuotteeksi ja se on kerännyt kansainvälistä kiitosta ympäri maailmaa.
+## Käyttäjäkokemus globaalin kasvun vauhdittajana
 
-## Mistä menestys johtuu?
+Laadukas käyttöliittymäsuunnittelu ja käyttäjäkokemus ovat kriittisiä menestystekijöitä SaaS-yrityksille, jotka tavoittelevat kansainvälistä kasvua. Tässä artikkelissa käsittelemme todellisia esimerkkejä siitä, miten hyvä UX-suunnittelu on auttanut suomalaisia yrityksiä menestymään globaaleilla markkinoilla. The Good Side hyödyntää näitä oppeja auttaessaan SaaS-yrityksiä kiihdyttämään kasvuaan ja saavuttamaan kansainvälistä menestystä.
 
-Jos ajatellaan SharePoint -tuotetta yleisesti, sen käytettävyys ja käyttöliittymä sellaisenaan ei houkuttele ketään aloittamaan päiväänsä tutkimalla intraa. Ja tässä piilee yksi Valo Intranetin salaisuuksista. Kun palvelusta rakennetaan käytettävä, mielenkiintoinen ja helposti omaksuttava kokonaisuus, synnytetään onnellisia käyttäjiä jotka sitoutuvat palvelun käyttöön. Jos asiakas on ikinä päässyt käyttämään Valoa, hän ei enää koskaan palaa perinteisen SharePointin pariin.
+### Case Valo Intranet: Suomalaisesta tuotteesta maailmanluokan menestykseksi
 
--   Käytettävyys vähentää yhteydenottoja asiakaspalveluun ja käyttötukeen, joka on suorassa yhteydessä kustannuksiin
--   Se tekee tuotteesta mielenkiintoisen, auttaa ja helpottaa sen myynnissä sekä vähentää asiakaspoistumaa
--   Tuote erottuu markkinassa ja erottuva käyttöliittymä jättää muistijäljen
+Vuosina 2015-2020 Valo Intranet nousi yhdeksi maailman menestyneimmistä intranet-ratkaisuista. Tämä SharePointin päälle rakennettu tuote valittiin toistuvasti Euroopan parhaaksi intranet-ratkaisuksi, mikä johti lopulta siihen, että kansainvälinen yritys Staffbase osti koko liiketoiminnan vuonna 2021.
 
-Vuonna 2021 [Staffbase osti Valo Intranetin](https://staffbase.com/en/microsoft-365/) kokonaan itselleen ja tuotteet sekä työntekijät siirtyivät heille. On siis täysin mahdollista, että kotimainen yritys menestyy kansainvälisillä markkinoilla, kunhan hyvän suunnittelun tärkeys ymmärretään koko organisaatiossa.
+**Menestyksen avaintekijät:**
 
-## Kenelle palveluita suunnitellaan?
+- **Käyttäjälähtöinen suunnittelu:** Valo muutti vaikeakäyttöisen SharePointin intuitiiviseksi työkaluksi
+- **Erottuva käyttöliittymä:** Tuote jätti positiivisen muistijäljen käyttäjiin
+- **Sitouttava käyttökokemus:** Käyttäjät pitivät tuotteesta niin paljon, etteivät halunneet palata entiseen
 
-Työskennellessäni Reaktorilla, oli asiakkaana **Epic Games**. Epic Games ja varsinkin heidän Fortnite -peli on tunnettu maailmanlaajuisesti. Rakensimme tiimin kanssa sisällönkohdentamiseen tarkoitettua moottoria, joka käytännössä tarkoittaa sitä, että joka kerta kun pelaaja aloittaa pelin tai palaa takaisin aloitusruutuun, he kohtaavat meidän tuottaman logiikan avulla tuotettua sisältöä. Rakensimme moottoria siten, että sitä ajettiin ensimmäisenä Fortniten osana, sen takia ettei maailmasta taida löytyä suositumpaa peliä, joten saimme happotestattua sen toimintaa heti alusta lähtien mahdollisimman suurella käyttäjämäärällä. Kun olin töissä **Powerilla**, kaikki suunnittelu lähti siitä että asiakaskunta on Pohjoismaissa. Asiakaskunnan ikäjakauma oli suuri, emmekä voineet koskaan luottaa siihen että jokainen asiakas olisi tietoteknisiltä taidoiltaan kovinkaan edistyksellisiä. Jokainen osio jota verkkokauppaan on suunniteltu, ei kaipaa ohjeita tai opastusta. Käyttöliittymä noudattaa parhaita käytäntöjä kaikilta osin, jotta sivuston käyttäminen olisi helppoa ja vaivatonta. Samalla logiikalla on rakennettu sisäinen StoreApp-palvelu, jossa henkilökunta pystyy hallinnoimaan asiakkaita, tilauksia sekä tekemään erilaisia päivittäisiä tehtäviä. Kun ymmärrät kohderyhmää, joka palveluita käyttää - osaat yleensä rakentaa alusta lähtien parempia palveluita. On järjestelmäsi kuinka monimutkainen tahansa, voi sitä aina käyttöliittymässä yksinkertaistaa, palastella hallittaviin kokonaisuuksiin ja ohjata käyttäjää pitkin asiointipolkuja.
+```
+"Kun palvelusta rakennetaan käytettävä, mielenkiintoinen ja helposti omaksuttava kokonaisuus, synnytetään onnellisia käyttäjiä jotka sitoutuvat palvelun käyttöön."
+```
 
-> Tuotteiden suunnittelijoilla on monesti se pelko, että yksinkertainen on jotenkin vajavainen, kun asiaa pitäisi aina miettiä vain käyttäjän kannalta.
+### Käyttäjäkokemuksen liiketoimintahyödyt
 
-Mieti kuinka monimutkainen laite oma matkapuhelimesi on. Koska olet viimeksi lukenut sen käyttöohjetta? [SAP:n käyttöohjeessa](https://help.sap.com/doc/18ec99b2d06449c5b8b79c784d5a3af9/4.2.14/en-US/is_42_user_en.pdf) on 1016 sivua eikä sitä lukemalla osaa vieläkään käyttää kyseistä järjestelmää.
+Laadukas UX-suunnittelu toi Valo Intranetille merkittäviä liiketoiminnallisia etuja:
 
-## Älä laita käyttäjää miettimään
+1. **Kustannussäästöt:** Vähemmän yhteydenottoja asiakaspalveluun ja käyttötukeen
+2. **Myynnin tehostuminen:** Tuotetta oli helpompi myydä sen käytettävyyden ansiosta
+3. **Asiakaspysyvyys:** Käyttäjät eivät halunneet vaihtaa kilpaileviin tuotteisiin
+4. **Kilpailuetu:** Erottuva käyttöliittymä toimi differointitekijänä markkinalla
 
-Kun rakennat voittavia palveluita jotka ottavat markkinassa tilaa itselleen kilpailijoilta, kannattaa muistaa ainakin seuraavat asiat.
+The Good Side auttaa SaaS-yrityksiä saavuttamaan vastaavia hyötyjä design-konsultoinnillaan, joka yhdistää käyttöliittymäsuunnittelun, tuotepositioinnin ja käyttäjäpolkujen optimoinnin.
 
--   Kilpailu on aina globaalia ja asiakkaat vertailevat palveluita aina yli toimialarajojen
--   Parempi käyttökokemus painaa enemmän kuin hinta
--   Pyri vähentämään kitkaa käyttäjän ja palvelun välillä
--   Jos joudut selittämään sitä - se on liian monimutkainen
--   Jokainen monimutkainen asia voidaan yksinkertaistaa osiin
--   Käyttäjien taitotaso ei saa määrittää käytettävyyttä
--   Käytettävyyttä on vaikeampi lisätä jälkikäteen
--   Design first -yritykset pärjäävät aina paremmin
+### Globaalit kohderyhmät ja skaalautuva suunnittelu
 
-  Haluaisitko kuulla lisää? Laita viestiä niin jutellaan.   **Janne Gylling** janne@goodside.fi 044 750 4444   Lue lisää [https://www.sharepointeurope.com/community-awards-2016/bestintranetextranetsolution/](https://www.sharepointeurope.com/community-awards-2016/bestintranetextranetsolution/)
+Kansainvälinen menestys edellyttää erilaisten käyttäjäryhmien tarpeiden ymmärtämistä. Tämä korostuu kokemuksissa maailmanlaajuisesti toimivien yritysten kanssa:
+
+**Epic Games (Fortnite):**
+
+- Suunnittelimme sisällönkohdentamismoottorin maailman suosituimpaan peliin
+- Käyttäjäkunta oli äärimmäisen laaja ja moninainen kulttuurisesti
+- Skaalautuvuus oli kriittistä - ratkaisu testattiin välittömästi miljoonilla käyttäjillä
+
+**Power:**
+
+- Käyttöliittymä suunniteltiin huomioiden laaja ikäjakauma ja vaihtelevat digitaaliset taidot
+- Verkkokaupan suunnittelussa painotettiin intuitiivisuutta - ei tarvetta ohjeille
+- Sisäiset työkalut (StoreApp) noudattivat samaa selkeää suunnittelufilosofiaa
+
+### Yksinkertaisuuden voima
+
+**Monimutkaisia järjestelmiä, yksinkertaisia käyttöliittymiä**
+
+SaaS-tuotteiden kansainvälisessä menestyksessä ratkaisevaa on monimutkaisuuden piilottaminen käyttäjältä:
+
+- Monimutkainenkin järjestelmä voidaan esittää yksinkertaisella käyttöliittymällä
+- Suunnittelijan on uskallettava karsia ja priorisoida käyttäjälle näytettäviä toimintoja
+- Yksinkertaistaminen ei tarkoita ominaisuuksien karsimista, vaan niiden järkevää organisointia
+
+> "Tuotteiden suunnittelijoilla on monesti pelko, että yksinkertainen on jotenkin vajavainen, kun asiaa pitäisi aina miettiä vain käyttäjän kannalta."
+
+Mieti kuinka monimutkainen matkapuhelimesi on teknisesti, mutta kuinka harvoin joudut lukemaan sen käyttöohjetta. Vertaa tätä esimerkiksi SAP:n 1016-sivuiseen käyttöohjeeseen, jonka lukemisen jälkeenkään järjestelmää ei osaa käyttää.
+
+## Voittavan kansainvälisen SaaS-tuotteen ux-periaatteet
+
+Kun haluat rakentaa SaaS-tuotteen, joka menestyy globaalisti, kiinnitä huomiota näihin periaatteisiin:
+
+1. **Globaali vertailukohta:** Asiakkaat vertaavat tuotettasi kansainvälisiin palveluihin yli toimialarajojen
+2. **Käyttökokemus > hinta:** Laadukas käyttökokemus on usein hintaa tärkeämpi valintakriteeri
+3. **Minimoi kitka:** Poista esteet käyttäjän ja palvelun väliltä
+4. **Selkeä viesti:** Jos joudut selittämään palveluasi liikaa, se on liian monimutkainen
+5. **Modulaarinen ajattelu:** Pilko monimutkaiset kokonaisuudet pienempiin, helpommin hallittaviin osiin
+6. **Universaali käytettävyys:** Suunnittele kaikille, älä vain teknisesti edistyneille
+7. **Design first -ajattelu:** Aloita käyttökokemuksesta, älä teknisistä ratkaisuista
+8. **Ennakoiva suunnittelu:** Käytettävyyttä on huomattavasti vaikeampi lisätä jälkikäteen
+
+The Good Side on erikoistunut auttamaan SaaS-yrityksiä rakentamaan käyttäjäkokemuksia, jotka menestyvät kansainvälisillä markkinoilla. Design-konsultointimme yhdistää strategisen tuotepositioinnin, käyttäjäpolkujen optimoinnin ja laadukkaan UI/UX-suunnittelun kasvun vauhdittamiseksi.
+
+[Ota yhteyttä ja keskustellaan, miten voimme vauhdittaa yrityksesi kansainvälistä kasvua →](https://goodside.fi/contact)

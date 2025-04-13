@@ -1,55 +1,152 @@
 ---
-title: UX ja UXR
+title: Käyttäjätutkimus saas-tuotteen kasvun vauhdittajana
 pubDate: '2024-09-10T19:13:48.000Z'
 description: >-
-  UXR&#x2d;tutkimus on käyttäjälähtöinen, informatiivinen ja tuottaa arvokasta
-  tietoa tuotteesi kehitykseen.
-author: moretagoy
+  Laadukas UXR-tutkimus on kriittinen tekijä SaaS-tuotteen käyttäjälähtöisessä kehityksessä. Oikein toteutettu käyttäjätutkimus auttaa tekemään tietopohjaisempia päätöksiä, nopeuttaa kehityssykliä ja parantaa asiakastyytyväisyyttä.
+author: Mikki Aalto-Ylevä
 tags:
-  - UX
-  - UXR
+  - UX tutkimus
+  - Käyttäjäkokemus
+  - SaaS-kehitys
 heroImage: ../../assets/blog/images/ux-ja-uxr/featured.webp
 heroImageAlt: UX ja UXR
 ---
 
-Hyvän käyttökokemuksen suunnittelussa on tärkeää, että keräät myös aitojen käyttäjien palautetta palvelusta. Kun mietit UXR (**User Experience Research**) kokonaisuutta projektissa, ota ainakin nämä alle olevat kymmenen asiaa huomioon.
+## Menestyvän SaaS-tuotteen käyttäjätutkimus
 
-### **Selkeä tavoite**
+Käyttäjäkokemustutkimus (UXR, User Experience Research) on avainasemassa SaaS-tuotteiden menestyksessä. Systemaattinen käyttäjien tarpeiden ja käyttäytymisen ymmärtäminen tuottaa arvokasta tietoa, joka vähentää kehitysriskejä ja parantaa tuotteen markkinasopivuutta. The Good Side hyödyntää käyttäjätutkimusta osana design-konsultointiaan auttaessaan SaaS-yrityksiä kasvupolulla. Tässä kymmenen kriittistä periaatetta tehokkaan käyttäjätutkimuksen toteuttamiseen.
 
-Ennen kuin aloitat tutkimuksen, määrittele selkeästi, mitä haluat saada selville. Tavoitteen täytyy olla tarkasti rajattu, jotta voit suunnitella tutkimuksen menetelmät sen mukaisesti.
+### 1. Määrittele selkeät tavoitteet
 
-### **Oikean kohderyhmän valinta**
+**Tarkat tutkimuskysymykset johtavat parempiin tuloksiin**
 
-Valitse tutkimukseen osallistujat, jotka edustavat kohderyhmääsi mahdollisimman hyvin. Tämä auttaa saamaan realistisempia ja hyödyllisempiä tuloksia.
+Onnistunut käyttäjätutkimus alkaa selkeästi määritellyistä tavoitteista:
 
-### **Monipuoliset tutkimusmenetelmät**
+- Määrittele täsmälliset kysymykset, joihin etsit vastauksia
+- Rajaa tutkimusalue tarpeeksi kapeaksi
+- Varmista, että tavoitteet tukevat SaaS-tuotteesi liiketoimintapäämääriä
 
-Käytä sekä laadullisia että määrällisiä menetelmiä (haastattelut, kyselyt, käytettävyystestit jne.). Näin saat laajempaa ymmärrystä käyttäjien tarpeista ja käyttäytymisestä.
+```
+Esimerkki: "Haluamme selvittää, miksi käyttäjät poistuvat tilauspolulta" on paljon tehokkaampi tutkimustavoite kuin "haluamme parantaa käyttäjäkokemusta".
+```
 
-### **Prototyyppien käyttö**
+### 2. Valitse edustavat käyttäjät
 
-Hyödynnä prototyyppejä testataksesi ideoita. Interaktiiviset prototyypit auttavat käyttäjiä ymmärtämään ja kokemaan tuotteen käyttöliittymää todellisemmin.
+**Oikean kohderyhmän valinta ratkaisee tutkimuksen laadun**
 
-### **Keskity käyttäjän tarpeisiin**
+SaaS-tuotteiden käyttäjätutkimuksessa on kriittistä valita:
 
-Aseta käyttäjän tarpeet ja ongelmat keskiöön. Vältä omien oletusten painottamista ja keskity siihen, miten käyttäjät oikeasti toimivat ja mitä he tarvitsevat.
+- Todellisia tai potentiaalisia käyttäjiä, jotka vastaavat kohdeyleisöäsi
+- Riittävän monipuolinen otanta eri käyttäjäprofiileista
+- Osallistujat, jotka edustavat erilaisia käyttötapoja ja taitotasoja
 
-### **Iteratiivinen prosessi**
+The Good Side auttaa SaaS-yrityksiä tunnistamaan ideaalit tutkimusosallistujat, jotka tuottavat relevanteimman näkemyksen juuri sinun tuotteesi käyttäjäpolkuihin.
 
-UXR-tutkimus ei ole kertaluonteinen tapahtuma. Iteroi ja päivitä tutkimustasi sekä prototyyppejä saatujen löydösten perusteella jatkuvasti.
+### 3. Hyödynnä monipuolisia menetelmiä
 
-### **Pysy avoimena löydöksille**
+**Laadulliset ja määrälliset menetelmät täydentävät toisiaan**
 
-Älä etsi vain vahvistusta omille oletuksillesi. Ota löydökset vastaan avoimin mielin ja ole valmis muuttamaan suuntaa tarpeen mukaan.
+Kattava UXR-tutkimus yhdistää erilaisia metodeja kokonaiskuvan saamiseksi:
 
-### **Kysy oikeat kysymykset**
+- **Laadulliset menetelmät:** Käyttäjähaastattelut, havainnoinnit, kontekstuaaliset tutkimukset
+- **Määrälliset menetelmät:** Kyselyt, analytiikka, A/B-testaus
+- **Käytettävyystestaus:** Ohjatut testitilanteet ja käyttäjien havainnointi
 
-Haastatteluissa ja kyselyissä kysy avoimia ja selkeitä kysymyksiä, jotka kannustavat osallistujia jakamaan rehellisiä mielipiteitä ja kokemuksia.
+SaaS-tuotteen eri kehitysvaiheissa painottuvat erilaiset menetelmät, ja The Good Side räätälöi tutkimusmetodit vastaamaan kehitysvaihettasi.
 
-### **Tiedon analysointi ja esittäminen**
+### 4. Rakenna testattavia prototyyppejä
 
-Analysoi tutkimuksen tulokset huolellisesti ja esitä ne tiivistetysti. Hyödynnä visuaalisia työkaluja, kuten kaavioita, löytöjen selkeyttämiseksi.
+**Varhaiset prototyypit säästävät kehitysresursseja**
 
-### **Toimenpiteiden suunnittelu**
+Prototyyppien testaaminen käyttäjillä on kustannustehokas tapa validoida ideoita:
 
-Hyvän tutkimuksen arvo näkyy siinä, että löydökset voidaan muuttaa konkreettisiksi parannuksiksi. Varmista, että tutkimuksen tuloksia hyödynnetään tuotteen kehittämisessä. Noudattamalla näitä periaatteita voit varmistaa, että UXR-tutkimus on käyttäjälähtöinen, informatiivinen ja tuottaa arvokasta tietoa tuotteesi kehitykseen.   **Janne Gylling** janne@goodside.fi 044 750 4444   [Tutustu meidän UXR-palveluihimme](https://goodside.fi/palvelut/uxr/)
+- Luo matalan tason prototyyppejä konseptien alkuvaiheen testaamiseen
+- Kehitä interaktiivisia prototyyppejä monimutkaisempien toimintojen validointiin
+- Iteroi prototyyppejä käyttäjäpalautteen perusteella ennen varsinaista kehitystyötä
+
+Prototyyppien avulla SaaS-yritykset voivat testata ja hioa konsepteja nopeasti ilman mittavia koodausinvestointeja.
+
+### 5. Keskity käyttäjien todellisiin tarpeisiin
+
+**Omat oletukset sivuun, käyttäjä keskiöön**
+
+Menestyvän SaaS-tuotteen kehityksessä on kriittistä:
+
+- Havainnoida käyttäjien todellista käyttäytymistä, ei vain kyselyvastauksia
+- Tunnistaa kipupisteet ja haasteet käyttäjien näkökulmasta
+- Kyseenalaistaa omat ennakko-oletukset käyttäjien tarpeiden suhteen
+
+The Good Side auttaa SaaS-yrityksiä pääsemään irti sisäisistä oletuksista ja saavuttamaan aidosti käyttäjälähtöisen lähestymistavan.
+
+### 6. Toteuta tutkimus iteratiivisesti
+
+**Jatkuva kehitys käyttäjäpalautteen pohjalta**
+
+UXR ei ole kertaluonteinen projekti vaan jatkuva prosessi:
+
+- Integroi käyttäjätutkimus osaksi kehityssykliä
+- Testaa uusia ominaisuuksia käyttäjillä ennen täysimittaista lanseerausta
+- Päivitä ymmärrystäsi käyttäjätarpeista säännöllisesti
+
+SaaS-tuotteiden menestykselle on olennaista rakentaa palautesilmukoita, jotka mahdollistavat nopean sopeutumisen muuttuviin tarpeisiin.
+
+### 7. Suhtaudu tuloksiin avoimesti
+
+**Yllättävät löydökset ovat arvokkaita oivalluksia**
+
+Käyttäjätutkimuksen suurin arvo tulee usein odottamattomista havainnoista:
+
+- Ole valmis muuttamaan suunnitelmia löydösten perusteella
+- Älä suodata tuloksia ennakko-oletusten mukaan
+- Näe kriittinen palaute mahdollisuutena parantaa tuotetta
+
+```
+Esimerkki: Eräs SaaS-yritys havaitsi käyttäjätutkimuksessa, että heidän "innovatiivinen" hakutoimintonsa oli tosiasiassa käyttäjille hämmentävä. Tämän oivalluksen ansiosta he pystyivät korjaamaan ongelman ennen laajempaa lanseerausta.
+```
+
+### 8. Muotoile kysymykset huolellisesti
+
+**Neutraalit, avoimet kysymykset tuottavat parhaita tuloksia**
+
+Käyttäjätutkimuksen laatu riippuu suuresti kysymysten muotoilusta:
+
+- Käytä avoimia kysymyksiä, jotka eivät ohjaa vastauksia
+- Vältä johdattelevia kysymysmuotoja
+- Kysy konkreettisista kokemuksista, ei hypoteettisista tilanteista
+
+Hyvin suunnitellut kysymykset tuottavat syvällisempää ymmärrystä käyttäjien todellisista tarpeista ja motivaatioista.
+
+### 9. Analysoi ja visualisoi löydökset selkeästi
+
+**Datasta oivalluksiin, oivalluksista toimenpiteisiin**
+
+Käyttäjätutkimuksen tulosten tehokas kommunikointi on ratkaisevaa:
+
+- Tunnista toistuvat teemat ja kaavat tuloksissa
+- Visualisoi löydökset helposti ymmärrettävään muotoon
+- Priorisoi havainnot niiden liiketoimintavaikutuksen mukaan
+
+The Good Side auttaa SaaS-yrityksiä muuntamaan käyttäjätutkimuksen tulokset selkeiksi toimintasuunnitelmiksi, jotka voidaan priorisoida kehityspolulla.
+
+### 10. Jalkauta löydökset konkreettisiksi toimenpiteiksi
+
+**Tutkimuksesta kehitykseen ilman katkoksia**
+
+Käyttäjätutkimuksen todellinen arvo mitataan sen vaikutuksella tuotekehitykseen:
+
+- Muunna löydökset selkeiksi kehitystoimenpiteiksi
+- Integroi UXR-tulokset tuotekehityksen prioriteetteihin
+- Seuraa toimenpiteiden vaikutusta käyttäjätyytyväisyyteen ja liiketoimintamittareihin
+
+## Käyttäjätutkimus kilpailuetuna SaaS-liiketoiminnassa
+
+Systemaattinen käyttäjätutkimus on investointi, joka maksaa itsensä takaisin SaaS-liiketoiminnan kaikilla osa-alueilla:
+
+- **Pienemmät kehitysriskit:** Vältä kalliita virheitä testaamalla konseptit ennen toteutusta
+- **Parempi asiakaspysyvyys:** Rakenna tuotetta, joka vastaa aidosti asiakkaiden tarpeisiin
+- **Tehokkaampi myynti:** Käytä käyttäjätutkimuksen tuloksia myynnin ja markkinoinnin tukena
+- **Fokusoidumpi kehitys:** Priorisoi toiminnallisuuksia, joilla on suurin vaikutus käyttäjätyytyväisyyteen
+
+The Good Side on erikoistunut auttamaan SaaS-yrityksiä hyödyntämään käyttäjätutkimusta kasvun vauhdittajana. Design-konsultointimme yhdistää käyttäjätutkimuksen, tuotepositioinnin ja UI/UX-suunnittelun saumattomaksi kokonaisuudeksi.
+
+[Ota yhteyttä ja selvitä, miten käyttäjätutkimus voi vauhdittaa SaaS-tuotteesi kasvua →](https://goodside.fi/contact)
