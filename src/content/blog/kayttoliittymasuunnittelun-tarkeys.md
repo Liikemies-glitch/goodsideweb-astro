@@ -1,26 +1,60 @@
 ---
-title: Käyttöliittymäsuunnittelu ja sen tärkeys
+title: Käyttöliittymäsuunnittelu liiketoiminnan kasvun tukena
 pubDate: '2024-07-10T10:40:25.000Z'
 description: >-
-  Netflixin käyttöliittymä on suunniteltu tukemaan liiketoimintaa ja
-  asiakaskokemusta. Hyvällä suunnittelulla saat aikaan kannattavaa
-  liiketoimintaa.
-author: moretagoy
-tags: ["Käyttöliittymäsuunnittelu", "UI", "Liiketoiminta"]
+  Strateginen käyttöliittymäsuunnittelu tukee liiketoiminnan tavoitteita ja parantaa asiakaskokemusta. Netflixin UI on erinomainen esimerkki siitä, miten suunnittelu voi ohjata käyttäjäkäyttäytymistä liiketoiminnallisten tavoitteiden mukaisesti.
+author: Mikki Aalto-Ylevä
+tags: ["Käyttöliittymäsuunnittelu", "Liiketoimintastrategia", "SaaS-kasvu"]
 heroImage: ../../assets/blog/images/kayttoliittymasuunnittelun-tarkeys/featured.webp
-heroImageAlt: Käyttöliittymäsuunnittelu ja sen tärkeys
+heroImageAlt: Käyttöliittymäsuunnittelu liiketoiminnan kasvun tukena
 ---
 
-Koska viimeksi katsoit elokuvan Netflixin kautta? Kuinka helppoa tai vaikeaa oli aloittaa elokuvan katsominen sen jälkeen kun löysit sopivan? Entä kuinka helppoa oli löytää jotain katsottavaa? Omaan makuun Netflixistä mielenkiintoisen sisällön löytäminen on todella vaivalloista ja sille on varmasti kaupallinen syy. Kun Netflix on aikanaan aloittanut, mediamuotona oli DVD-elokuvat. Sait postissa muutaman leffan ja kun olit ne katsonut ja palauttanut, sinulle tuli seuraavat. Tällä logiikalla kuukausittainen määrä joita voit katsoa pysyi jollakin tavalla loogisena. Netflix kuitenkin maksaa jokaisesta sisällöstä jota kulutat heidän kautta, eli se on heille epäedullista jos katsot kaikki elokuvat heidän palvelusta kuukauden aikana. Tämän takia Netflix on käytännössä tehnyt kaksi asiaa. Ensinnäkin, elokuvien ja sarjojen löytäminen on rakennettu niin, että suurin osa käyttäjistä selailee vain heille personoitua listaa sisällöstä. Toiseksi, Netflix on pyrkinyt siihen että suurin osa sisällöstä jota palvelun kautta kulutetaan, on heidän omaa tuotantoa.
+## Tiivistelmä
+
+Strateginen käyttöliittymäsuunnittelu (UI) on kriittinen osa menestyvää liiketoimintaa. Se vaikuttaa suoraan asiakaskokemukseen, käyttäjien käyttäytymiseen ja yrityksen tuottavuuteen. Hyvä UI-suunnittelu tasapainottelee käyttäjien tarpeiden ja liiketoiminnan tavoitteiden välillä, kuten Netflix tekee sisällön löydettävyyden ja kulutuksen hallinnassa. SaaS-yrityksille käyttöliittymäsuunnittelu on kasvun kannalta keskeinen kilpailutekijä.
+
+## Käyttöliittymät ja strategiset liiketoimintatavoitteet
+
+Koska viimeksi katsoit elokuvan Netflixin kautta? Kuinka helppoa oli löytää jotain katsottavaa? Omaan kokemukseeni perustuen Netflixistä mielenkiintoisen sisällön löytäminen on usein yllättävän vaivalloista - ja tämä on todennäköisesti tarkoituksellista.
+
+Tässä on kyse strategisesta käyttöliittymäsuunnittelusta:
+
+* Netflix maksaa jokaisesta sisällöstä, jota kulutat heidän palvelussaan
+* Yhtiölle on epäedullista, jos katsot liikaa sisältöä kuukaudessa
+* Käyttöliittymä ohjaa käyttäjiä tiettyyn käyttäytymismalliin
+
+Netflix on ratkaissut tämän haasteen kahdella strategisella tavalla:
+
+1. **Rajattu sisällön löydettävyys**: Käyttöliittymä on suunniteltu niin, että käyttäjät näkevät pääasiassa algoritmien personoimaa sisältöä, ei koko katalogia
+2. **Oman tuotannon korostaminen**: Netflix priorisoi oman tuotantonsa sisältöä, joka on heille kustannustehokkaampaa
 
 > Hyvä käyttöliittymäsuunnittelu tukee liiketoimintaa, samalla kun se antaa asiakkaille tunteen hyvästä käyttökokemuksesta.
 
-Netflix siis kulkee harmaalla alueella ja tasapainottelee sen kanssa, että kuinka yksinkertaiselta palvelu tuntuu ja kuinka helppo sieltä lopulta on sisältöä kuluttaa.
+Netflix tasapainottelee siis käyttäjäkokemuksen helppouden ja liiketoiminnan kannattavuuden välillä.
 
-## Käyttöliittymäsuunnittelu liiketoiminnan tukena
+## Käyttöliittymäsuunnittelu SaaS-liiketoiminnan tukena
 
-Hyvällä suunnittelulla saat aikaan kannattavaa liiketoimintaa. Pienillä muutoksilla voit vähentää yhteydenottoja asiakaspalveluun, parantaa verkkokauppasi konversiota tai lisätä uutiskirjeiden tilaajia.
+Hyvällä käyttöliittymäsuunnittelulla rakennetaan kannattavaa SaaS-liiketoimintaa. Strategisella UI-suunnittelulla voit:
 
-> Design ei ole koskaan irrallinen toiminta ja sen takia haluamme olla mahdollistamassa asiakkaillemme jatkuvana palveluna laadukasta suunnittelua järkevään hintaa.
+* Vähentää yhteydenottoja asiakaspalveluun
+* Parantaa verkkokauppasi konversioprosenttia
+* Kasvattaa uutiskirjeiden tilaajamääriä
+* Pienentää asiakaspoistumaa
+* Nostaa käyttäjien aktivaatioastetta
 
-Entinen esimieheni on joskus todennut, että suunnittelijat voidaan jakaa karkeasti kahteen ryhmään. On niitä jotka lukivat taidehistoriaa, värioppia ja tunnistavat Edefeltin taulut nimeltä. Ja sitten on heitä, jotka ymmärtävät liiketoimintaa, kaupallisuutta ja ymmärtävät loppuasiakkaiden tarpeita samalla kun luovat visuaalisesti miellyttäviä palveluita. Meidän kautta saat näitä jälkimmäisiä. **Janne Gylling** janne@goodside.fi 044 750 4444
+Tehokas UI-suunnittelu ei ole pelkkää estetiikkaa - se on liiketoimintatavoitteiden toteuttamista käyttöliittymäratkaisujen avulla.
+
+## Liiketoimintalähtöinen suunnitteluosaaminen
+
+Suunnittelijat voidaan jakaa karkeasti kahteen ryhmään:
+
+1. **Estetiikkakeskeiset suunnittelijat**: Painottavat taidehistoriaa, värioppia ja visuaalista ilmaisua
+2. **Liiketoimintalähtöiset suunnittelijat**: Ymmärtävät liiketoimintatavoitteita, kaupallisuutta ja loppuasiakkaiden tarpeita samalla luoden visuaalisesti toimivia ratkaisuja
+
+> Design ei ole koskaan irrallinen toiminta vaan kiinteä osa liiketoimintastrategiaa. The Good Side mahdollistaa asiakkailleen jatkuvana palveluna laadukasta, liiketoimintaa tukevaa suunnittelua.
+
+## Miten voimme auttaa SaaS-yrityksesi kasvussa?
+
+The Good Side erikoistuu liiketoimintalähtöiseen design-konsultointiin erityisesti SaaS-yrityksille. Yhdistämme kolme SaaS-yrityksen kasvun kannalta kriittistä osa-aluetta: tuotepositioinnin, käyttäjäpolut ja UI/UX-suunnittelun.
+
+[Ota yhteyttä](https://goodside.fi/contact) niin keskustellaan, miten voimme auttaa yrityksesi kasvussa käyttöliittymäsuunnittelun avulla.
