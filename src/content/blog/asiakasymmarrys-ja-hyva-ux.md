@@ -1,5 +1,5 @@
 ---
-title: Asiakasymmärrys saas ux suunnittelun perustana
+title: Asiakasymmärrys SaaS-tuotteen suunnittelun perustana
 pubDate: '2024-11-08T08:00:15.000Z'
 description: >-
   Miten syvä asiakasymmärrys toimii SaaS UX-suunnittelun perustana ja kiihdyttää kasvua? Opas SaaS-yrityksille tuotepositioinnin, käyttäjäpolkujen ja UI/UX:n yhdistämiseen.
