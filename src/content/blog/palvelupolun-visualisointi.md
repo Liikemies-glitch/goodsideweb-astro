@@ -1,58 +1,173 @@
 ---
-title: Palvelupolun visualisointi
+title: Service blueprint SaaS-tuotteen kehityksen tehostajana
 pubDate: '2024-09-24T06:39:02.000Z'
 description: >-
-  Kun nämä osa&#x2d;alueet otetaan huomioon palvelupolun visualisoinnissa, se
-  auttaa kehittämään palvelusta selkeämmän, tehokkaamman ja asiakaskeskeisemmän.
-author: moretagoy
+  Service blueprint auttaa SaaS-yrityksiä visualisoimaan käyttäjäpolun kokonaisuutena, 
+  tunnistamaan kehityskohteet ja parantamaan asiakaskokemusta systemaattisesti 
+  koko tuotteen elinkaaren ajan.
+author: Mikki Aalto-Ylevä
 tags:
   - Palvelumuotoilu
+  - Käyttäjäpolku
+  - SaaS-kehitys
 heroImage: ../../assets/blog/images/palvelupolun-visualisointi/featured.webp
-heroImageAlt: Palvelupolun visualisointi
+heroImageAlt: Service blueprint SaaS-tuotteen kehityksen tehostajana
 ---
 
-Palvelupolun visualisointi, eli **Service Blueprint**, on tehokas työkalu palvelumuotoilussa, jonka avulla voidaan hahmottaa palvelun kokonaisuus ja ymmärtää sen monimutkaiset vaiheet ja osat. Tärkeimmät asiat, jotka tulee ottaa huomioon palvelupolun visualisoinnissa, ovat seuraavat:
+## Tiivistelmä
 
-### 1\. **Asiakkaan polku (Customer Journey)**
+Service blueprint on tehokas visualisointityökalu, joka auttaa SaaS-yrityksiä hahmottamaan tuotteensa käyttäjäpolun kokonaisuutena. Se näyttää sekä käyttäjälle näkyvät elementit että taustalla toimivat prosessit, mahdollistaen pullonkaulojen tunnistamisen ja asiakaskokemuksen systemaattisen parantamisen. The Good Side hyödyntää service blueprintiä osana design-konsultointia SaaS-yrityksille, auttaen niitä optimoimaan käyttäjäpolkuja tuotteissaan.
 
-**Asiakkaan näkökulma** on keskiössä. Visualisoinnissa tulee hahmottaa kaikki vaiheet, joita asiakas käy läpi palvelun aikana. Tämä kattaa kaikki kontaktipisteet (touchpoints), joissa asiakas on vuorovaikutuksessa palvelun kanssa ennen, aikana ja jälkeen. Esimerkkejä kontaktipisteistä ovat verkkosivusto, puhelinpalvelu, myymäläkäynti tai sovelluksen käyttö.
+## Service blueprint SaaS-kehityksen strategisena työkaluna
 
-### 2\. **Frontstage- ja backstage-toiminnot**
+Service blueprint on palvelumuotoilun keskeinen visualisointityökalu, joka auttaa hahmottamaan SaaS-tuotteen kokonaisuuden ja ymmärtämään sen monimutkaiset vaiheet käyttäjän näkökulmasta. Se tekee näkyväksi sekä käyttäjälle näkyvät että taustalla tapahtuvat prosessit, mikä on erityisen arvokasta SaaS-tuotteiden kehityksessä.
 
-**Frontstage-toiminnot** ovat niitä, jotka ovat asiakkaan nähtävissä ja kokemia. Tämä voi olla esimerkiksi asiakaspalvelijan kanssa käyty keskustelu tai käyttöliittymä, jota asiakas käyttää. **Backstage-toiminnot** ovat piilossa asiakkaalta, mutta ne mahdollistavat palvelun toimivuuden. Tämä voi olla esimerkiksi tekninen tuki tai sisäiset prosessit, jotka varmistavat, että asiakas saa tarvitsemansa palvelun.
+The Good Side käyttää service blueprintejä osana design-konsultointia SaaS-yrityksille, auttaen niitä rakentamaan selkeämpiä ja tehokkaampia tuotekokemuksia. Seuraavassa esittelemme kymmenen keskeistä elementtiä, jotka tekevät service blueprintistä tehokkaan työkalun SaaS-tuotekehitykseen.
 
-### 3\. **Rajapinnat (Interaction Points)**
+## Asiakkaan polku (customer journey)
 
-Rajapinnat kuvaavat vuorovaikutusta asiakkaan ja palveluntarjoajan välillä, joko ihmisten tai teknologian kautta. On tärkeää tunnistaa, missä ja miten asiakas on yhteydessä palveluun ja millaisia tarpeita tai odotuksia näissä hetkissä on. Näitä vuorovaikutuksia voi olla suoria (esim. asiakaspalvelu) tai epäsuoria (esim. automaattiset viestit tai laitteiston käyttö).
+**Asiakkaan näkökulma** on service blueprintin ydin. Visualisoinnissa kuvataan kaikki vaiheet, joita käyttäjä käy läpi SaaS-tuotteen elinkaaren aikana.
 
-### 4\. **Tukiprosessit (Support Processes)**
+Tyypillisiä SaaS-tuotteen kontaktipisteitä:
 
-Tukiprosessit ovat niitä taustatoimia, jotka tukevat frontstage- ja backstage-toimintoja. Ne voivat sisältää esimerkiksi IT-järjestelmien ylläpidon, logistiikan tai varastonhallinnan. Tukiprosessien toimivuus on kriittistä sujuvan asiakaskokemuksen kannalta.
+- Tuotteen löytäminen hakukoneen kautta
+- Ensimmäinen vierailu verkkosivustolla
+- Rekisteröityminen ja käyttäjätilin luominen
+- Tuotteen käyttöönotto (onboarding)
+- Aktiivinen käyttö ja integraatio työnkulkuihin
+- Asiakaspalvelun käyttö ongelmatilanteissa
+- Tilin päivittäminen tai peruuttaminen
 
-### 5\. **Fyysiset ja digitaaliset elementit**
+Näiden vaiheiden yksityiskohtainen kuvaaminen antaa selkeän perustan koko service blueprintille.
 
-Palvelupolku sisältää usein sekä fyysisiä että digitaalisia kontaktipisteitä. Visualisoinnissa on tärkeää tunnistaa, missä kohtaa asiakas käyttää fyysisiä ympäristöjä (esim. myymälä, laite) ja missä kohtaa digitaalista ympäristöä (esim. sovellus, verkkosivusto).
+## Frontstage ja backstage toiminnot
 
-### 6\. **Aikajana (Timeline)**
+Service blueprint jakaa SaaS-tuotteen toiminnot kahteen keskeiseen kategoriaan:
 
-Aikajana auttaa hahmottamaan palvelun vaiheiden kulun ja eri vaiheiden keston. Tämä auttaa tunnistamaan pullonkaulat ja mahdolliset ongelmakohdat, jotka vaikuttavat palvelun tehokkuuteen ja asiakastyytyväisyyteen.
+**Frontstage-toiminnot** ovat käyttäjälle näkyviä:
+- Käyttöliittymä ja sen elementit
+- Asiakaspalvelijoiden kanssa käydyt keskustelut
+- Sähköpostit ja viestintä käyttäjän kanssa
 
-### 7\. **Asiakkaan tunteet ja kokemukset (Emotions and Experiences)**
+**Backstage-toiminnot** tapahtuvat käyttäjältä piilossa:
+- Tietokannan toiminnot ja API-kutsut
+- Automaattiset prosessit ja algoritmit
+- Sisäinen viestintä ja työnohjaus
 
-On tärkeää ottaa huomioon asiakkaan tuntemukset eri vaiheissa palvelupolkua. Esimerkiksi, milloin asiakas voi tuntea iloa, turhautumista tai epävarmuutta. Näiden kokemusten kartoitus auttaa tunnistamaan parannuskohtia palvelussa.
+Tämä jaottelu auttaa SaaS-yrityksiä erottamaan, mitkä osat vaikuttavat suoraan käyttäjäkokemukseen ja mitkä tukevat sitä taustalla.
 
-### 8\. **Vastuunjako ja roolit**
+## Vuorovaikutuksen rajapinnat
 
-Visualisointi auttaa myös selkeyttämään, kuka vastaa mistäkin palvelun osasta. Tämä koskee sekä asiakasrajapinnan toimijoita että taustalla olevia toimintoja. Roolien ja vastuunjakojen ymmärtäminen parantaa palvelun koordinointia ja laatua.
+Rajapinnat kuvaavat vuorovaikutusta käyttäjän ja SaaS-tuotteen välillä. Nämä ovat kriittisiä pisteitä, joissa käyttäjä muodostaa käsityksen tuotteen arvosta ja toimivuudesta.
 
-### 9\. **Palvelupolun "Line of Visibility"**
+Vuorovaikutuspisteiden analysoinnissa huomioitavia tekijöitä:
 
-**Näkyvyyden raja (Line of Visibility)** erottaa ne toiminnot, jotka asiakas näkee (frontstage), niistä, jotka pysyvät asiakkaalta piilossa (backstage). Tämä auttaa hahmottamaan, mitkä osat palvelusta ovat kriittisiä asiakkaan kokemuksen kannalta ja mitkä ovat tukitoimintoja.
+- **Suorat rajapinnat**: Käyttöliittymän painikkeet, lomakkeet, navigaatiorakenteet
+- **Epäsuorat rajapinnat**: Automaattiset ilmoitukset, sähköpostiviestit, push-notifikaatiot
 
-### 10\. **Resurssit ja infrastruktuuri**
+The Good Side auttaa SaaS-yrityksiä suunnittelemaan nämä rajapinnat niin, että ne tukevat käyttäjän tavoitteita ja vähentävät kitkaa tuotteen käytössä.
 
-Blueprintissä on myös tärkeää huomioida, millaisia resursseja ja infrastruktuuria tarvitaan palvelun toteuttamiseen. Tämä voi sisältää teknologian, tilat, henkilöstön tai muut keskeiset resurssit, jotka mahdollistavat palvelun toiminnan.
+## Tukiprosessit käyttäjäkokemuksen taustalla
 
-> Kun nämä osa-alueet otetaan huomioon palvelupolun visualisoinnissa, se auttaa kehittämään palvelusta selkeämmän, tehokkaamman ja asiakaskeskeisemmän.
+Tukiprosessit ovat SaaS-tuotteen taustalla toimivia järjestelmiä ja toimintoja, jotka mahdollistavat sujuvan käyttäjäkokemuksen. 
 
-  **Janne Gylling** janne@goodside.fi 044 750 4444
+Keskeisiä tukiprosesseja SaaS-tuotteissa:
+
+- Palvelininfrastruktuuri ja tietokannat
+- Tietoturva ja yksityisyydensuoja
+- Automatisoitu datan analysointi
+- Integrointimekanismit muihin järjestelmiin
+
+Näiden prosessien toimivuus määrittää pitkälti, kuinka luotettavaksi ja tehokkaaksi käyttäjät kokevat SaaS-tuotteen.
+
+## Digitaaliset ja fyysiset elementit käyttäjäkokemuksessa
+
+SaaS-tuotteet ovat luonteeltaan digitaalisia, mutta käyttäjäkokemus voi sisältää myös fyysisiä elementtejä:
+
+**Digitaaliset elementit**:
+- Verkkosivut ja sovellukset
+- Mobiili- ja työpöytäversiot
+- API-rajapinnat ja integraatiot
+
+**Fyysiset elementit tai kontekstit**:
+- Laitteet, joilla tuotetta käytetään
+- Käyttöympäristöt (esim. toimisto, koti, liikkuva työ)
+- Mahdolliset fyysiset tuotokset (raportit, tulosteet)
+
+Service blueprintissä on tärkeää huomioida, miten nämä elementit vaikuttavat toisiinsa ja käyttäjäkokemukseen kokonaisuutena.
+
+## Aikajana ja käyttäjän eteneminen
+
+Aikajana on service blueprintin keskeinen rakenteellinen elementti, joka auttaa:
+
+- Visualisoimaan käyttäjän matkan kronologisesti
+- Tunnistamaan hitaat tai työläät vaiheet
+- Optimoimaan prosessien kestoa
+
+SaaS-tuotteissa aikajanalla voidaan kuvata esimerkiksi:
+1. Kuinka nopeasti käyttäjä pääsee alkuun (time-to-value)
+2. Missä vaiheessa käyttäjä saavuttaa AHA-hetken
+3. Kuinka kauan kriittisten toimintojen suorittaminen kestää
+
+The Good Side auttaa SaaS-yrityksiä optimoimaan tätä ajallista ulottuvuutta käyttäjäkokemuksen parantamiseksi.
+
+## Käyttäjän tunnetilat ja kokemukset
+
+Service blueprintissä on olennaista huomioida käyttäjän emotionaaliset kokemukset eri vaiheissa:
+
+- Missä vaiheissa käyttäjä kokee onnistumisen tunteita?
+- Missä kohdissa syntyy mahdollisesti turhautumista?
+- Milloin käyttäjä kokee epävarmuutta tai hämmennystä?
+
+Näiden tunnetilojen kartoittaminen auttaa priorisoimaan kehitystoimenpiteitä SaaS-tuotteessa. Usein käyttäjän negatiiviset tunnekokemukset indikoivat kohtia, joissa on suurin tarve parannuksille.
+
+## Vastuunjako ja roolit SaaS-tuotekehityksessä
+
+Service blueprint selkeyttää, kuka organisaatiossa vastaa käyttäjäpolun eri vaiheista:
+
+- Tuotekehitys – käyttöliittymä ja toiminnallisuudet
+- Markkinointi – käyttäjien houkuttelu ja viestintä
+- Asiakaspalvelu – käyttäjien tukeminen
+- DevOps – järjestelmän toimivuuden varmistaminen
+
+Roolien ja vastuiden selkeyttäminen parantaa SaaS-yrityksen kykyä koordinoida toimintoja käyttäjäkokemuksen optimoimiseksi.
+
+## Line of visibility SaaS-tuotteessa
+
+**Näkyvyyden raja** (Line of Visibility) on service blueprintin keskeinen elementti, joka erottaa:
+
+- Käyttäjälle näkyvät elementit ja prosessit (yläpuolella)
+- Taustalla tapahtuvat toiminnot (alapuolella)
+
+Tämän rajan määrittely auttaa SaaS-yrityksiä tekemään tietoisia päätöksiä siitä:
+- Mitä toimintoja kannattaa tuoda käyttäjän näkyville
+- Mitä prosesseja on syytä abstrahoida käyttäjältä
+- Miten luoda läpinäkyvyyttä kriittisissä toiminnoissa
+
+Näkyvyyden rajan huolellinen suunnittelu on keskeistä intuitiivisen käyttökokemuksen rakentamisessa.
+
+## Resurssit ja infrastruktuuri SaaS-tuotteen taustalla
+
+Service blueprintissä kuvataan myös resurssit ja infrastruktuuri, jotka mahdollistavat SaaS-tuotteen toiminnan:
+
+- Teknologinen infrastruktuuri (palvelimet, tietokannat)
+- Henkilöstöresurssit eri vaiheissa
+- Työkalut ja prosessit kehityksen taustalla
+
+Näiden resurssien kartoittaminen auttaa SaaS-yrityksiä:
+- Tunnistamaan resurssien riittävyyden
+- Optimoimaan investointeja
+- Varautumaan kasvun vaatimuksiin
+
+## Service blueprintin hyödyntäminen SaaS-liiketoiminnassa
+
+Service blueprint tarjoaa SaaS-yrityksille strategisen työkalun, joka auttaa:
+
+1. Luomaan yhteisen ymmärryksen tuotteesta koko organisaatioon
+2. Tunnistamaan kehityskohteet ja pullonkaulat käyttäjäkokemuksessa
+3. Priorisoimaan kehitystoimenpiteitä vaikuttavuuden perusteella
+4. Viestimään tuotekehityksen prioriteetteja sidosryhmille
+
+The Good Side tarjoaa design-konsultointia SaaS-yrityksille, jotka haluavat hyödyntää service blueprintia tuotekehityksensä tehostamisessa ja käyttäjäkokemuksen parantamisessa.
+
+[Ota yhteyttä](/contact) keskustellaksesi, miten voimme auttaa yrityksesi kasvua service blueprintin ja muiden palvelumuotoilun työkalujen avulla.

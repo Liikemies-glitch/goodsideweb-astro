@@ -1,62 +1,188 @@
 ---
-title: Saavutettavuusvaatimukset digipalveluissa
+title: Digitaalisten palveluiden saavutettavuus
 pubDate: '2024-06-29T16:56:27.000Z'
 description: >-
-  Saavutettavuusasetusten huomioiminen digitaalisten palveluiden suunnittelussa
-  varmistaa, että kaikki käyttäjät voivat nauttia palveluista
-  tasa&#x2d;arvoisesti.
-author: moretagoy
-tags: []
+  Saavutettavuus on digitaalisten palveluiden suunnittelun kulmakivi. Tutustu keskeisiin saavutettavuusvaatimuksiin,
+  konkreettisiin suunnittelukäytäntöihin ja alan standardeihin tässä kattavassa oppaassa.
+author: 'Mikki Aalto-Ylevä'
+tags: ['Saavutettavuus', 'UX-suunnittelu', 'Käyttöliittymäsuunnittelu']
 heroImage: ../../assets/blog/images/saavutettavuusvaatimukset-digipalveluissa/featured.webp
-heroImageAlt: Saavutettavuusvaatimukset digipalveluissa
+heroImageAlt: Digitaalisten palveluiden saavutettavuus
 ---
 
-Digitaalisten palveluiden saavutettavuusasetukset ovat ohjeita ja käytäntöjä, jotka varmistavat, että kaikki käyttäjät, mukaan lukien henkilöt, joilla on erityistarpeita tai vammoja, voivat käyttää digitaalisia palveluja tehokkaasti. Saavutettavuus voi sisältää monenlaisia elementtejä, mutta tässä ovat keskeiset asiat, jotka on hyvä ottaa huomioon:
+## Tiivistelmä
 
-### 1\. **Käyttöliittymän saavutettavuus**
+Digitaalisten palveluiden saavutettavuus on sekä juridinen vaatimus että käyttäjäkokemuksen peruspilari. Tässä artikkelissa käsittelemme saavutettavuuden kymmenen keskeistä osa-aluetta, niiden konkreettisen toteutuksen ja merkityksen käyttäjille. Huomioimalla nämä elementit suunnittelussa varmistat, että palvelusi on kaikkien käytettävissä, mikä parantaa sekä käyttäjätyytyväisyyttä että liiketoimintaasi.
 
-Käyttöliittymän elementtien, kuten painikkeiden, linkkien ja valikoiden, tulisi olla riittävän suuria ja helposti saavutettavissa. Elementtien tulisi olla myös helposti navigoitavissa näppäimistöllä ja avustavilla teknologioilla.
+## Miksi saavutettavuus on kriittistä digitaalisissa palveluissa?
 
-### 2\. **Väri- ja kontrastivaatimukset**
+Yli 15% maailman väestöstä elää jonkin vamman kanssa, mutta saavutettavuus hyödyttää kaikkia käyttäjiä. Saavutettavuuden merkitys korostuu, kun:
 
-Tekstin ja taustan välinen kontrasti tulisi olla riittävä, jotta sisältö on helppolukuista myös heikommalla näöllä. Värien käyttö ei saisi olla ainoa keino viestiä tietoa; värisokeat käyttäjät tarvitsevat vaihtoehtoisia tapoja ymmärtää sisältö.
+- Yleisösi on monimuotoinen ja sisältää eri ikäryhmiä
+- Palvelusi toimii julkisena alustana tai tarjoaa olennaisia toimintoja
+- Tavoittelet laajaa käyttäjäkuntaa eri taustoista
+- Haluat välttää mahdolliset juridiset seuraamukset
 
-### 3\. **Kuvien ja graafisten elementtien vaihtoehtoinen teksti**
+**Hyvin toteutettu saavutettavuus** parantaa käyttökokemusta kaikille, ei vain niille, joilla on pysyviä rajoitteita. Se varmistaa palvelusi toimivuuden myös tilanteissa, joissa käyttäjä kohtaa väliaikaisia rajoitteita – kuten auringonpaistetta näytöllä tai meluisaa ympäristöä.
 
-Kaikille kuvilla ja graafisille elementeille tulisi lisätä vaihtoehtoinen teksti (alt-teksti), joka kuvaa kuvaa tai grafiikkaa. Tämä auttaa näkövammaisia käyttäjiä ymmärtämään visuaalista sisältöä avustavien teknologioiden avulla.
+## Käyttöliittymän saavutettavuuden perusperiaatteet
 
-### 4\. **Käytettävät fontit ja koko**
+### Navigaation helppous ja selkeä rakenne
 
-Fonttien tulisi olla helposti luettavia, ja niiden kokoa tulisi voida suurentaa ilman, että sisältö menee epäselväksi tai häiriintyy. Käytä selkeitä fontteja, jotka tukevat luettavuutta.
+Hyvä navigaatio on saavutettavan palvelun perusta:
 
-### 5\. **Navigoinnin helppous**
+- Suunnittele johdonmukainen ja ymmärrettävä rakenne
+- Varmista sivukartan looginen jäsentely
+- Käytä selkeitä ja kuvaavia otsikoita
+- Tarjoa useita tapoja löytää sisältöä (haku, valikot, tagit)
 
-Navigoinnin tulisi olla selkeää ja johdonmukaista. Käyttäjien tulisi pystyä löytämään haluamansa tieto helposti ilman turhaa vaivannäköä. Linkkien tulisi olla helposti tunnistettavissa.
+Näppäimistöllä navigointi on olennaista monille käyttäjille, joten varmista että:
 
-### 6\. **Monimuotoisuus eri käyttötavoissa**
+- Kaikki toiminnot ovat käytettävissä ilman hiirtä
+- Näppäimistöfokus on selkeästi näkyvissä
+- Tabulaattorijärjestys on looginen
 
-Digitaalisten palveluiden tulisi olla saavutettavissa eri laitteilla (älypuhelimet, tabletit, tietokoneet) ja eri käyttöjärjestelmillä. Responsiivinen suunnittelu varmistaa, että käyttöliittymä toimii hyvin kaikilla laitteilla.
+### Interaktiivisten elementtien korostaminen
 
-### 7\. **Käyttäjän kontrolli**
+Käyttöliittymän komponenttien tulee olla:
 
-Käyttäjille tulisi antaa mahdollisuus säätää palvelun asetuksia, kuten tekstikoko, väriteema tai äänenvoimakkuus, tarpeidensa mukaan. Tämä lisää saavutettavuutta ja mukautettavuutta.
+- **Riittävän suuria** kosketukselle (vähintään 44×44 pikseliä)
+- **Selkeästi erottuvia** taustasta
+- **Tunnistettavia** toiminnallisuutensa puolesta
+- **Helposti aktivoitavissa** eri syöttölaitteilla
 
-### 8\. **Ajan hallinta**
+The Good Side suunnittelee SaaS-tuotteiden käyttöliittymiä, joissa interaktiiviset elementit ovat intuitiivisia ja kaikkien käyttäjien ulottuvilla.
 
-Jos palvelu sisältää aikarajoituksia (esim. lomakkeiden täyttämisessä), käyttäjille tulisi tarjota riittävästi aikaa tai mahdollisuus jatkaa myöhemmin. Käyttäjät, joilla on erityistarpeita, voivat tarvita enemmän aikaa.
+## Visuaaliset saavutettavuusvaatimukset
 
-### 9\. **Saavutettavuusstandardit**
+### Värit ja kontrasti käyttökokemuksen parantajina
 
-Seuraa kansainvälisiä saavutettavuusstandardeja, kuten WCAG (Web Content Accessibility Guidelines), jotka tarjoavat ohjeita ja parhaita käytäntöjä saavutettavuuden parantamiseksi.
+Värien käytössä on huomioitava:
 
-### 10\. **Testaus ja käyttäjäpalautteet**
+- **Kontrastisuhde** tekstin ja taustan välillä (vähintään 4.5:1)
+- Tiedon välittäminen **myös muilla keinoilla** kuin värillä
+- Värimaailman toimivuus **värisokeuden eri muodoilla**
+- **Muokattavat väriasetukset** käyttäjien tarpeisiin
 
-Suunnittelun ja kehityksen aikana on tärkeää testata saavutettavuutta oikeilla käyttäjillä, mukaan lukien henkilöt, joilla on erityistarpeita. Palautteen kerääminen auttaa parantamaan palvelua.
+Konkreettinen ohje: Käytä esimerkiksi WebAIM:n kontrastintarkistustyökalua varmistaaksesi WCAG-standardin mukaisuuden.
 
-### Yhteenveto
+### Typografian merkitys saavutettavuudessa
 
-Saavutettavuusasetusten huomioiminen digitaalisten palveluiden suunnittelussa varmistaa, että kaikki käyttäjät voivat nauttia palveluista tasa-arvoisesti. Huolellinen suunnittelu ja jatkuva parantaminen ovat avainasemassa saavutettavien digitaalisten kokemusten tarjoamisessa.   **Janne Gylling** janne@goodside.fi 044 750 4444  
+Fonttien valinnassa ja käytössä:
 
-## Haluaisitko saavutettavuusarvioinnin?
+- Valitse **selkeitä ja luettavia fontteja** (Sans-serif usein parempi)
+- Varmista **riittävä fonttikoko** (vähintään 16px leipätekstissä)
+- Käytä **johdonmukaista tekstin tasausta** (yleensä vasemmalle)
+- Vältä **kokonaan isoilla kirjaimilla** kirjoittamista
+- Mahdollista tekstin **koon muuttaminen** selaimen toiminnoilla
 
-[Ota yhteyttä niin jutellaan lisää.](https://goodside.fi/ota-yhteytta/)
+## Sisällön saavutettavuus
+
+### Kuvien ja multimedian saavutettavuus
+
+Visuaalisen ja audio-sisällön saavutettavuus varmistetaan:
+
+- Lisäämällä **alt-tekstit** kaikille merkityksellisille kuville
+- Tarjoamalla **tekstivastineet** audiotallenteille
+- Varmistamalla videoiden **tekstitys ja kuvailutulkkaus**
+- Välttämällä **välkkyviä elementtejä** (epilepsiariskin vuoksi)
+
+Esimerkki hyvästä alt-tekstistä: Sen sijaan että kirjoittaisit "Kuva", kuvaile sisältö: "Nainen käyttää ruudunlukijaa kannettavalla tietokoneella, jossa näkyy verkkokaupan etusivu".
+
+### Lomakkeiden saavutettavuus
+
+Lomakkeet ovat usein haastavia saavutettavuuden kannalta. Varmista että:
+
+- Kaikilla kentillä on **selkeät nimiöt** (labels)
+- Virheviestit ovat **ymmärrettäviä ja tarkkoja**
+- Lomake on täytettävissä **näppäimistöllä**
+- Pakollisten kenttien merkinnät ovat **johdonmukaisia**
+- Automaattinen **virheiden tunnistus ja korjausehdotukset** ovat käytössä
+
+## Tekninen saavutettavuus
+
+### Responsiivisuus eri laitteilla
+
+Digitaalisten palveluiden tulee toimia eri konteksteissa:
+
+- Suunnittele **mobile first** -periaatteella
+- Testaa palvelua **erilaisilla näyttöko'oilla**
+- Varmista toimivuus **eri selaimilla ja käyttöjärjestelmillä**
+- Huomioi **hitaat verkkoyhteydet** ja laitteet
+
+### Ruudunlukijoiden ja avustavien teknologioiden tuki
+
+Avustavien teknologioiden käyttäjät tarvitsevat:
+
+- Asianmukaista **HTML-semantiikkaa** (otsikkotasot, artikkelit, jne.)
+- **ARIA-attribuutteja** tarvittaessa täydentämään semantiikkaa
+- **Dynaamisista muutoksista ilmoittamista** käyttäjälle
+- **Näppäimistökomennot** keskeisiin toimintoihin
+
+## Saavutettavuuden standardit ja testaus
+
+### WCAG-ohjeistuksen noudattaminen
+
+Web Content Accessibility Guidelines (WCAG) tarjoaa kolme vaatimustasoa:
+
+- **A-taso**: Minimitaso, välttämättömät perusasiat
+- **AA-taso**: EU-direktiivin ja useimpien maiden lainsäädännön vaatima taso
+- **AAA-taso**: Korkein saavutettavuuden taso
+
+Suomessa julkisilla toimijoilla ja tietyillä yksityisillä palveluilla on lakisääteinen velvollisuus noudattaa AA-tasoa.
+
+### Saavutettavuuden testaaminen
+
+Saavutettavuus vaatii systemaattista testausta:
+
+1. **Automaattiset työkalut** (WAVE, Axe, Lighthouse)
+2. **Manuaalinen testaus** näppäimistöllä ja ruudunlukijoilla
+3. **Käyttäjätestit** erilaisten tarpeiden omaavilla käyttäjillä
+
+The Good Side tarjoaa kattavaa saavutettavuustestausta SaaS-tuotteille varmistaen, että ne täyttävät sekä lain vaatimukset että käyttäjien tarpeet.
+
+## Käyttäjien hallinnan mahdollistaminen
+
+### Mukautettavuus ja käyttäjäkontrolli
+
+Käyttäjien tulisi voida hallita palvelun toimintaa:
+
+- **Tekstikoon ja -tyylin** muokkaaminen
+- **Värien ja kontrastin** säätäminen
+- **Animaatioiden ja liikkeen** pysäyttäminen
+- **Aikarajoitusten** pidentäminen tai poistaminen
+
+Nämä toiminnot eivät ole vain mukavuustekijöitä, vaan välttämättömiä toimintoja erityistarpeita omaaville käyttäjille.
+
+### Saavutettavuustoimintojen toteutus  SaaS-tuotteissa
+
+SaaS-palveluissa on erityisen tärkeää huomioida:
+
+- **Dashboardien ja raporttien** saavutettavuus
+- **Datanvisualisointien** vaihtoehtoiset esitystavat
+- **Monimutkaisten toimintojen** pilkkominen hallittaviksi kokonaisuuksiksi
+- **Käyttäjäprofiilit** eri saavutettavuusasetuksille
+
+## Jatkuva kehittäminen ja palautteen hyödyntäminen
+
+Saavutettavuus ei ole kertaluontoinen projekti vaan jatkuva prosessi:
+
+- Kerää **säännöllistä palautetta** eri käyttäjäryhmiltä
+- Seuraa **käyttödataa** tunnistaaksesi mahdollisia ongelmakohtia
+- Päivitä palvelua **standardien kehittyessä**
+- Kouluta henkilöstöä **saavutettavuuden periaatteista**
+
+The Good Side tukee yrityksiä pitkäjänteisessä saavutettavuustyössä tarjoamalla koulutusta, konsultointia ja jatkuvaa kehitystyötä.
+
+## Yhteenveto
+
+Saavutettavuus on keskeinen osa onnistunutta digitaalista palvelua - se ei ole vain lakisääteinen vaatimus vaan myös käyttäjäkokemuksen ja liiketoiminnan kannalta järkevä investointi. Huomioimalla tässä artikkelissa esitellyt kymmenen osa-aluetta luot digitaalisia palveluita, jotka ovat kaikkien käyttäjien saavutettavissa.
+
+SaaS-tuotteiden saavutettavuussuunnittelussa on erityisen tärkeää yhdistää:
+- Tekninen osaaminen
+- Käyttäjäkokemuksen ymmärrys
+- Eri käyttäjäryhmien tarpeiden huomiointi
+
+The Good Side yhdistää nämä elementit design-konsultoinnissaan, keskittyen kolmeen kriittiseen osa-alueeseen: tuotepositiointiin, käyttäjäpolkuihin ja UI/UX-suunnitteluun, saavutettavuus huomioiden.
+
+[Ota yhteyttä The Good Sideen](https://goodside.fi/ota-yhteytta/) saavutettavuusarvioinnin tai -konsultoinnin merkeissä.
