@@ -105,4 +105,4 @@ Sisäisten järjestelmien UX-suunnitteluun panostaminen tuottaa monia hyötyjä:
 
 Nämä edut tekevät sisäisten järjestelmien UX-suunnittelusta strategisen investoinnin, joka maksaa itsensä takaisin moninkertaisesti parantuneena tehokkuutena ja kilpailukykynä.
 
-[Ota yhteyttä The Good Sideen](../../contact) jos haluat keskustella, miten voimme auttaa organisaatiotasi kehittämään sisäisten järjestelmien käyttökokemusta.
+[Ota yhteyttä The Good Sideen](/contact) jos haluat keskustella, miten voimme auttaa organisaatiotasi kehittämään sisäisten järjestelmien käyttökokemusta.

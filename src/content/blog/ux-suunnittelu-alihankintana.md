@@ -167,4 +167,4 @@ Oikein toteutettuna UX-suunnittelun ulkoistaminen tarjoaa SaaS-yritykselle merki
 
 The Good Side on erikoistunut auttamaan SaaS-yrityksiä kiihdyttämään kasvuaan kokonaisvaltaisella design-konsultoinnilla, joka yhdistää strategisen näkemyksen ja käytännön toteutuksen.
 
-[Ota yhteyttä ja kerro tuotteesi UX-haasteista →](https://goodside.fi/contact)
+[Ota yhteyttä ja kerro tuotteesi UX-haasteista →](/contact)

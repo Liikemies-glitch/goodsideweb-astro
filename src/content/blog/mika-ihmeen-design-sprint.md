@@ -49,8 +49,6 @@ Menetelmä yhdistää elementtejä usealta eri osa-alueelta:
 
 Design sprint perustuu ajatukseen, että **paras tapa oppia ja kehittää on tekemällä ja testaamalla nopeasti**. Sen sijaan, että käytettäisiin kuukausia suunnitteluun ilman varmuutta lopputuloksen toimivuudesta, design sprint mahdollistaa nopean palautteen saamisen jo varhaisessa vaiheessa.
 
-![Design sprint brainstorming -tilanne](/images/blog/mika-ihmeen-design-sprint/design-sprint-brainstormaus-kaynnissa.png)
-
 ## Design sprintin vaiheet SaaS-kehityksessä
 
 Design sprint koostuu viidestä selkeästi määritellystä vaiheesta, jotka toteutetaan viiden päivän aikana. Jokainen päivä keskittyy tiettyyn osa-alueeseen:
@@ -332,8 +330,6 @@ Etätoteutuksessa on kiinnitettävä erityistä huomiota:
 * Energiatason ylläpitämiseen koko viikon ajan
 * Selkeisiin ohjeisiin ja vastuunjakoon
 
-![Design sprint käynnissä](/images/blog/mika-ihmeen-design-sprint/design-sprint-kaynnissa.png)
-
 ## The Good Side design sprint -kumppanina SaaS-yrityksille
 
 The Good Side on erikoistunut design sprint -menetelmän soveltamiseen erityisesti SaaS-yritysten tarpeisiin. Yhdistämme tuotepositioinnin, käyttäjäpolkujen ja UI/UX-suunnittelun osaamisen kokonaisvaltaiseksi lähestymistavaksi.
@@ -350,4 +346,4 @@ Design sprint tarjoaa tehokkaana menetelmän SaaS-tuotteiden kehittämiseen nope
 
 ## Ota seuraava askel SaaS-tuotteesi kehittämisessä
 
-Jos haluat tehostaa SaaS-tuotteesi kehitystä tai validoida uusia tuoteideoita nopeasti, [ota yhteyttä](https://goodside.fi/contact) niin keskustellaan, miten design sprint voisi auttaa juuri sinun yrityksesi haasteissa.
+Jos haluat tehostaa SaaS-tuotteesi kehitystä tai validoida uusia tuoteideoita nopeasti, [ota yhteyttä](/contact) niin keskustellaan, miten design sprint voisi auttaa juuri sinun yrityksesi haasteissa.

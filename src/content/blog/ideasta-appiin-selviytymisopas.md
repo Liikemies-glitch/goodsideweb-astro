@@ -149,8 +149,6 @@ Tulet varmasti törmäämään MVP-termiin (Minimum Viable Product) sovelluskehi
 
 Pidä silmät auki, ettet päädy tilanteeseen, jossa "MVP" on vain tekosyy tuottaa puolivalmis tuote, joka vaatii heti perään lisää rahaa ilman todellista arvoa.
 
-Lue myös: [Miksi MVP eli minimum viable product on menestyksen perusta](https://goodside.fi/miksi-mvp-on-menestyksen-perusta/)
-
 ## Seuraavat askeleet sovelluksesi kehittämisessä
 
 Loppujen lopuksi kyse on siitä, mikä lähestymistapa tuntuu sinulle sopivimmalta. Harkitse näitä tekijöitä:

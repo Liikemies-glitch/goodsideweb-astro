@@ -65,8 +65,6 @@ Konversio-optimoinnin hyödyt ovat konkreettisia ja merkittäviä liiketoiminnal
    - Tehokkaasti optimoitu sivusto antaa merkittävän edun kilpailijoihin nähden
    - Erityisesti SaaS-yrityksille tämä voi olla ratkaiseva kilpailutekijä
 
-![](/images/blog/konversio-optimointi-mita-se-on/konversio-optimoitu-verkkokauppa.png)
-
 ## Tehokkaat konversio-optimoinnin strategiat
 
 Vaikka jokainen verkkosivu on erilainen, on olemassa testattuja strategioita, jotka johtavat parempiin konversioihin:
@@ -158,8 +156,6 @@ Konversio-optimointi perustuu dataan ja analytiikkaan. Tärkeimpiä mitattavia a
 6. **Lomakkeiden täyttöaste**
    - Mittaa kuinka moni aloittaa lomakkeen täyttämisen vs. lähettää sen
    - Optimoi lomakkeita jatkuvasti
-
-![](/images/blog/konversio-optimointi-mita-se-on/konversio-optimoitu-kauppa-tuottaa-enemman.png)
 
 ## Konversio-optimoinnin yleisimmät haasteet ja niiden ratkaisut
 

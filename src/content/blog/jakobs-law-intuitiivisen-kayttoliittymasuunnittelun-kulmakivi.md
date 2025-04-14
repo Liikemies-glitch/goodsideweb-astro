@@ -66,8 +66,6 @@ Ihmisillä on olemassa olevia mentaalimalleja siitä, miten asiat toimivat:
 
 Tunnistamalla ja hyödyntämällä näitä mentaalimalleja voit luoda käyttöliittymiä, jotka tuntuvat käyttäjistä luonnollisilta ja helpoilta ymmärtää.
 
-![](/images/blog/jakobs-law-intuitiivisen-kayttoliittymasuunnittelun-kulmakivi/intuitiivinen-pelikayttoliittyma.png)
-
 ### Johdonmukaisuuden varmistaminen
 
 Johdonmukaisuus on avainasemassa intuitiivisen käyttöliittymän suunnittelussa:
@@ -139,8 +137,6 @@ Vaikka digitaalinen maailma kehittyy jatkuvasti, Jakob's Law -periaate pysyy rel
 - **Virtuaalitodellisuus**: Miten suunnitella intuitiivinen käyttöliittymä ympäristöön, jossa fyysisiä rajoitteita ei ole?
 - **Ääniohjaus**: Kuinka luoda intuitiivisia vuorovaikutusmalleja ilman visuaalisia elementtejä?
 - **Tekoäly**: Miten tehdä tekoälyn toiminnasta ennustettavaa ja ymmärrettävää?
-
-![](/images/blog/jakobs-law-intuitiivisen-kayttoliittymasuunnittelun-kulmakivi/scifi-kayttoliittyma-intuitiivinen.png)
 
 Tulevaisuudessa Jakob's Law -periaatteen soveltaminen voi tarkoittaa yhä enemmän eri aistien ja vuorovaikutustapojen huomioimista. Intuitiivinen suunnittelu voi laajentua koskemaan myös sitä, miten käyttöliittymät mukautuvat yksilöllisiin tarpeisiin ja mieltymyksiin.
 

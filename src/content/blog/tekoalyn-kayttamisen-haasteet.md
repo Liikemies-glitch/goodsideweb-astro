@@ -81,4 +81,4 @@ The Good Side auttaa yrityksiä tekoälyn vastuullisessa käyttöönotossa ja k�
 
 > Näiden uhkien hallinta vaatii huolellista suunnittelua, sääntelyä ja eettistä pohdintaa, jotta tekoälyn tuomat hyödyt voidaan maksimoida ja riskit minimoida.
 
-[Ota yhteyttä](https://thegoodside.fi/contact) niin keskustellaan, miten voimme auttaa yrityksesi tekoälystrategian kehittämisessä ja käyttöönotossa.
+[Ota yhteyttä](/contact) niin keskustellaan, miten voimme auttaa yrityksesi tekoälystrategian kehittämisessä ja käyttöönotossa.

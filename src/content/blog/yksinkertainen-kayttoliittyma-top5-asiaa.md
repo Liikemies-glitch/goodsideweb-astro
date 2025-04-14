@@ -84,4 +84,4 @@ Yksinkertaisen ja tehokkaan käyttöliittymän luominen edellyttää sekä desig
 
 The Good Side tarjoaa SaaS-yrityksille kokonaisvaltaista design-konsultointia, jossa yhdistämme tuotepositioinnin, käyttäjäpolkujen ja UI/UX-suunnittelun kasvun kiihdyttämiseksi. Tarjoamme palveluja SaaS-tuotteiden käytettävyyden parantamiseen, konversio-optimointiin ja asiakaspoistuman vähentämiseen.
 
-[Ota yhteyttä](https://thegoodside.fi/contact) ja kerro haasteistasi - autamme sinua rakentamaan käyttöliittymän, joka tukee liiketoimintatavoitteitasi ja maksimoi SaaS-tuotteesi potentiaalin.
+[Ota yhteyttä](/contact) ja kerro haasteistasi - autamme sinua rakentamaan käyttöliittymän, joka tukee liiketoimintatavoitteitasi ja maksimoi SaaS-tuotteesi potentiaalin.

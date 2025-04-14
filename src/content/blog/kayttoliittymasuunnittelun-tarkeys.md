@@ -57,4 +57,4 @@ Suunnittelijat voidaan jakaa karkeasti kahteen ryhmään:
 
 The Good Side erikoistuu liiketoimintalähtöiseen design-konsultointiin erityisesti SaaS-yrityksille. Yhdistämme kolme SaaS-yrityksen kasvun kannalta kriittistä osa-aluetta: tuotepositioinnin, käyttäjäpolut ja UI/UX-suunnittelun.
 
-[Ota yhteyttä](https://goodside.fi/contact) niin keskustellaan, miten voimme auttaa yrityksesi kasvussa käyttöliittymäsuunnittelun avulla.
+[Ota yhteyttä](/contact) niin keskustellaan, miten voimme auttaa yrityksesi kasvussa käyttöliittymäsuunnittelun avulla.

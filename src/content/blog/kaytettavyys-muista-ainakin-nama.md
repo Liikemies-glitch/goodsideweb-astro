@@ -103,4 +103,4 @@ Käytettävyyden parantaminen on jatkuva prosessi, joka tuottaa merkittäviä hy
 
 The Good Side auttaa SaaS-yrityksiä yhdistämään käytettävyyden, tuotepositioinnin ja käyttäjäpolkujen suunnittelun kokonaisvaltaiseksi kasvustrategiaksi.
 
-[Ota yhteyttä](https://www.goodside.fi/contact) ja selvitetään, miten design-konsultointimme voi auttaa SaaS-yrityksesi käytettävyyden parantamisessa ja liiketoiminnan kasvattamisessa.
+[Ota yhteyttä](/contact) ja selvitetään, miten design-konsultointimme voi auttaa SaaS-yrityksesi käytettävyyden parantamisessa ja liiketoiminnan kasvattamisessa.

@@ -142,4 +142,4 @@ Edellä mainittujen periaatteiden noudattaminen auttaa luomaan intuitiivisia ja 
 
 The Good Side tarjoaa kokonaisvaltaista design-konsultointia SaaS-yrityksille. Yhdistämme tuotepositioinnin, käyttäjäpolkujen ja UI/UX-suunnittelun kokonaisuudeksi, joka tukee liiketoimintasi kasvua.
 
-[Ota yhteyttä keskustellaksesi SaaS-tuotteesi käyttöliittymän optimoinnista](https://goodside.fi/ota-yhteytta/)
+[Ota yhteyttä keskustellaksesi SaaS-tuotteesi käyttöliittymän optimoinnista](/contact)

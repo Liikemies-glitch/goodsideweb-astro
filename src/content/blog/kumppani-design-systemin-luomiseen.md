@@ -92,4 +92,4 @@ The Good Sidelle jokainen asiakas on tärkeä, ja teemme työtä kuin omalle yri
 
 Jos mietit, onko design system oikea ratkaisu liiketoiminnallesi tai miten sellaisen hankinta kannattaisi toteuttaa, ota meihin yhteyttä. Hyödynnä kokemuksemme ja osaamisemme – yhdessä luomme järjestelmän, joka tekee digitaalisen ekosysteemisi hallinnasta helpompaa ja tehokkaampaa.
 
-[Ota yhteyttä](https://goodside.fi/contact) niin keskustellaan, miten voimme tukea SaaS-yrityksesi kasvua design systemin avulla.
+[Ota yhteyttä](/contact) niin keskustellaan, miten voimme tukea SaaS-yrityksesi kasvua design systemin avulla.

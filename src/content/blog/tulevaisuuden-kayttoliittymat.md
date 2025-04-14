@@ -130,4 +130,4 @@ Käyttöliittymäsuunnittelussa, olipa kyse autosta tai SaaS-tuotteesta, kriitti
 
 The Good Side auttaa SaaS-yrityksiä soveltamaan näitä periaatteita digitaalisten tuotteiden suunnittelussa, tarjoten käyttäjille intuitiivisia, tehokkaita ja miellyttäviä käyttökokemuksia.
 
-[Ota yhteyttä The Good Sideen](https://thegoodside.fi/contact) niin keskustellaan, miten voimme auttaa SaaS-tuotteesi käyttöliittymäsuunnittelussa.
+[Ota yhteyttä The Good Sideen](/contact) niin keskustellaan, miten voimme auttaa SaaS-tuotteesi käyttöliittymäsuunnittelussa.

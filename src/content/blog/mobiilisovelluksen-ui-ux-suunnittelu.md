@@ -172,4 +172,4 @@ The Good Side yhdistää kolme kriittistä osa-aluetta SaaS-yritysten kasvun kii
 
 Tutkimusten mukaan käyttäjälähtöinen suunnittelu voi nostaa konversiota jopa 400% ja vähentää tukipyyntöjä 90%.
 
-**[Ota yhteyttä, niin suunnitellaan yhdessä SaaS-tuotteellesi kilpailuetua tuova mobiilisovellus](https://goodside.fi/ota-yhteytta/)**
+**[Ota yhteyttä, niin suunnitellaan yhdessä SaaS-tuotteellesi kilpailuetua tuova mobiilisovellus](/contact)**

@@ -138,4 +138,4 @@ The Good Side tarjoaa kokonaisvaltaista konversio-optimointipalvelua SaaS-yrityk
 
 Emme voi julkisesti jakaa tarkkoja lukuja asiakkaidemme konversio-optimoinnista, mutta tulokset puhuvat puolestaan.
 
-**[Ota yhteyttä, niin keskustellaan miten voimme auttaa SaaS-palvelusi konversion kasvattamisessa jopa yli 200%](https://goodside.fi/ota-yhteytta/)**
+**[Ota yhteyttä, niin keskustellaan miten voimme auttaa SaaS-palvelusi konversion kasvattamisessa jopa yli 200%](/contact)**

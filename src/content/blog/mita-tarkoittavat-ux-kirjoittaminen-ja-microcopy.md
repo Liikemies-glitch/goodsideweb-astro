@@ -66,8 +66,6 @@ Hyvin suunniteltu microcopy:
 3. Auttaa ongelmatilanteissa nopeasti
 4. Voi yllättää ja ilahduttaa käyttäjää positiivisesti
 
-![](/images/blog/mita-tarkoittavat-ux-kirjoittaminen-ja-microcopy/Esimerkki-hyvasta-microcopysta-png.webp)
-
 ## Microcopyn kriittiset käyttökohdat
 
 Microcopyn merkitys korostuu erityisesti käyttäjäpolun kriittisissä vaiheissa:
@@ -112,8 +110,6 @@ Tutut termit, joita kannattaa säilyttää:
 - "Ostoskori"
 - "Maksu"
 
-![](/images/blog/mita-tarkoittavat-ux-kirjoittaminen-ja-microcopy/toimiva-microcopy-esimerkki-1333x1000.webp)
-
 ## UX-kirjoittamisen arvon mittaaminen
 
 UX-kirjoittamisen arvo ei ole mitattavissa sanojen määrässä vaan niiden vaikutuksessa. Paras lopputulos saavutetaan, kun UX-kirjoittaja on mukana projektissa alusta asti, jo konseptointivaiheessa.
@@ -139,8 +135,6 @@ UX-kirjoittaja voi olla avainasemassa A/B-testauksessa, jossa erilaisia tekstiva
 The Good Side auttaa SaaS-yrityksiä testaamaan ja kehittämään käyttöliittymätekstejä, jotka parantavat konversioastetta ja käyttäjätyytyväisyyttä.
 
 ## UX-kirjoittamisen ja microcopyn tärkeimmät elementit
-
-![](/images/blog/mita-tarkoittavat-ux-kirjoittaminen-ja-microcopy/Esimerkki-hyvasta-UX-kirjoittamisesta-png.webp)
 
 Tehokas UX-kirjoittaminen ja microcopy koostuvat useista tärkeistä elementeistä. Tässä viisi keskeistä tekijää, jotka muodostavat onnistuneen UX-kirjoittamisen perustan:
 
@@ -168,4 +162,4 @@ Investointi laadukkaaseen UX-kirjoittamiseen voi johtaa:
 - Korkeampiin konversioasteisiin
 - Liiketoiminnan kasvuun
 
-Haluatko kehittää SaaS-tuotteesi UX-kirjoittamista ja microcopya? [Ota yhteyttä The Good Sideen](https://www.goodside.fi/contact) ja parannetaan yhdessä tuotteesi käyttäjäkokemusta.
+Haluatko kehittää SaaS-tuotteesi UX-kirjoittamista ja microcopya? [Ota yhteyttä The Good Sideen](/contact) ja parannetaan yhdessä tuotteesi käyttäjäkokemusta.

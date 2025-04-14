@@ -134,4 +134,4 @@ Palvelumuotoilu tuottaa merkittäviä hyötyjä:
 
 SaaS-yrityksille nämä hyödyt muodostavat perustan kestävälle kasvulle, parantuneelle asiakaspysyvyydelle ja vahvalle kilpailuasemalle.
 
-Haluatko keskustella, miten palvelumuotoilu voisi auttaa SaaS-yrityksesi kasvua? [Ota yhteyttä The Good Sideen](../../contact) ja selvitetään, miten voimme auttaa.
+Haluatko keskustella, miten palvelumuotoilu voisi auttaa SaaS-yrityksesi kasvua? [Ota yhteyttä The Good Sideen](/contact) ja selvitetään, miten voimme auttaa.

@@ -150,4 +150,4 @@ Käytettävyys on keskeinen tekijä SaaS-liiketoiminnan kasvussa. Hyvin suunnite
 - Nopeuttaa käyttöönottoa ja arvon realisointia asiakkaalle
 - Tukee orgaanista kasvua käyttäjäsuositusten kautta
 
-[Ota yhteyttä](https://www.goodside.fi/contact) The Good Side -tiimiin ja selvitetään, miten design-konsultointimme voi auttaa SaaS-yrityksesi käytettävyyden ja kasvun parantamisessa. Yhdistämällä tuotepositioinnin, käyttäjäpolut ja UI/UX-suunnittelun luomme SaaS-tuotteellesi kilpailuetua, joka tukee kestävää kasvua.
+[Ota yhteyttä](/contact) The Good Side -tiimiin ja selvitetään, miten design-konsultointimme voi auttaa SaaS-yrityksesi käytettävyyden ja kasvun parantamisessa. Yhdistämällä tuotepositioinnin, käyttäjäpolut ja UI/UX-suunnittelun luomme SaaS-tuotteellesi kilpailuetua, joka tukee kestävää kasvua.

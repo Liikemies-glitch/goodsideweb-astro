@@ -80,4 +80,4 @@ Investoimalla asiakasymmärrykseen ja jatkuvaan **designin** kehittämiseen **Sa
 
 **Haluatko keskustella, miten The Good Side voi auttaa SaaS-yritystänne parantamaan asiakaskokemusta designin avulla?**
 
-[Ota yhteyttä ja varaa maksuton konsultaatio](/[locale]/contact/).
+[Ota yhteyttä ja varaa maksuton konsultaatio](/contact).

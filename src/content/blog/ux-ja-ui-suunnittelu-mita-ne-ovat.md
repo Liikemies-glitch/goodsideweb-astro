@@ -162,4 +162,4 @@ The Good Side toteuttaa SaaS-asiakkailleen räätälöityjä UX/UI-prosesseja, j
 
 Menestyvä SaaS-tuote tarvitsee sekä harkittua UX-suunnittelua että laadukasta UI-toteutusta. The Good Side yhdistää design-konsultoinnissaan molemmat näkökulmat, luoden SaaS-tuotteille käyttökokemuksia, jotka vauhdittavat kasvua.
 
-[Ota yhteyttä ja keskustellaan, miten voimme parantaa SaaS-tuotteesi UX/UI-suunnittelua →](https://goodside.fi/contact)
+[Ota yhteyttä ja keskustellaan, miten voimme parantaa SaaS-tuotteesi UX/UI-suunnittelua →](/contact)

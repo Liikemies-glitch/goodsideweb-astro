@@ -135,4 +135,4 @@ Ammattitaitoiset käyttöliittymäsuunnittelijat, joilla on syvällinen ymmärry
 
 The Good Side on erikoistunut tukemaan SaaS-yritysten kasvua yhdistämällä tuotepositioinnin, käyttäjäpolkujen ja UI/UX-suunnittelun kokonaisvaltaiseksi lähestymistavaksi, joka tuottaa mitattavia liiketoimintatuloksia.
 
-[Ota yhteyttä keskustellaksesi käyttöliittymäsuunnittelun roolista yrityksesi kasvustrategiassa](https://goodside.fi/ota-yhteytta/)
+[Ota yhteyttä keskustellaksesi käyttöliittymäsuunnittelun roolista yrityksesi kasvustrategiassa](/contact)

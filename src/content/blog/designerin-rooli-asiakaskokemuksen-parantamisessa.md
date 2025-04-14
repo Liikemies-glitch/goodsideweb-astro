@@ -119,4 +119,4 @@ Strategisella designilla on ratkaiseva rooli SaaS-yritysten kasvussa. Yhdistäm�
 
 The Good Side auttaa SaaS-yrityksiä hyödyntämään designin täyden potentiaalin kasvun vauhdittajana. Lähestymistapamme yhdistää liiketoimintaymmärryksen, käyttäjätutkimuksen ja luovan designin luodakseen ratkaisuja, jotka ovat sekä visuaalisesti vaikuttavia että liiketoiminnallisesti tuloksellisia.
 
-[Ota yhteyttä](https://www.goodside.fi/contact) ja keskustellaan, miten voimme auttaa SaaS-yrityksesi kasvua designin avulla.
+[Ota yhteyttä](/contact) ja keskustellaan, miten voimme auttaa SaaS-yrityksesi kasvua designin avulla.

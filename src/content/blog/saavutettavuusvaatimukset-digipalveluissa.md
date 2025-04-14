@@ -185,4 +185,4 @@ SaaS-tuotteiden saavutettavuussuunnittelussa on erityisen tärkeää yhdistää:
 
 The Good Side yhdistää nämä elementit design-konsultoinnissaan, keskittyen kolmeen kriittiseen osa-alueeseen: tuotepositiointiin, käyttäjäpolkuihin ja UI/UX-suunnitteluun, saavutettavuus huomioiden.
 
-[Ota yhteyttä The Good Sideen](https://goodside.fi/ota-yhteytta/) saavutettavuusarvioinnin tai -konsultoinnin merkeissä.
+[Ota yhteyttä The Good Sideen](/contact) saavutettavuusarvioinnin tai -konsultoinnin merkeissä.

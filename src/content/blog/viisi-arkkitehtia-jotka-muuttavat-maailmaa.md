@@ -127,4 +127,4 @@ Autamme SaaS-yrityksiä:
 * Luomaan Ingelsin filosofian mukaisia, yllättäviä mutta intuitiivisia toiminnallisuuksia
 * Implementoimaan Andon minimalismia taistelussa digitaalista informaatiotulvaa vastaan
 
-[Ota yhteyttä](https://thegoodside.fi/contact) ja keskustellaan, miten arkkitehtuurin mestareiden opit voivat auttaa sinun SaaS-tuotettasi erottumaan kilpailijoista ja luomaan mieleenpainuvia käyttäjäkokemuksia.
+[Ota yhteyttä](/contact) ja keskustellaan, miten arkkitehtuurin mestareiden opit voivat auttaa sinun SaaS-tuotettasi erottumaan kilpailijoista ja luomaan mieleenpainuvia käyttäjäkokemuksia.

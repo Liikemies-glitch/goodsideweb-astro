@@ -114,4 +114,4 @@ Perusteellisten UX-testien tekeminen on elintärkeää positiivisen käyttökoke
 
 The Good Side auttaa SaaS-yrityksiä hyödyntämään käyttäjätutkimusta kasvun vauhdittajana. Tarjoamme kokonaisvaltaista design-konsultointia, joka perustuu todelliseen käyttäjäymmärrykseen.
 
-[Tutustu meidän UXR-palveluihimme](https://goodside.fi/ota-yhteytta/)
+[Tutustu meidän UXR-palveluihimme](/contact)

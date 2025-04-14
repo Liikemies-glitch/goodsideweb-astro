@@ -167,4 +167,4 @@ Käyttäjäkokemus ja käyttöliittymäsuunnittelu ovat keskeisiä tekijöitä S
 
 SaaS-kasvu kansainvälisillä markkinoilla edellyttää kokonaisvaltaista lähestymistapaa, jossa tuotepositiointi, käyttäjäpolut ja UI/UX-suunnittelu nivoutuvat yhteen. Huolellisella suunnittelulla ja oikealla asiantuntemuksella SaaS-tuotteet voivat saavuttaa menestystä kansainvälisillä markkinoilla.
 
-[Ota yhteyttä The Good Sideen](https://goodside.fi/ota-yhteytta/) ja varmista SaaS-tuotteesi kansainvälinen käyttäjäkokemus.
+[Ota yhteyttä The Good Sideen](/contact) ja varmista SaaS-tuotteesi kansainvälinen käyttäjäkokemus.

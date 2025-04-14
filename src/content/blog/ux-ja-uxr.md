@@ -149,4 +149,4 @@ Systemaattinen käyttäjätutkimus on investointi, joka maksaa itsensä takaisin
 
 The Good Side on erikoistunut auttamaan SaaS-yrityksiä hyödyntämään käyttäjätutkimusta kasvun vauhdittajana. Design-konsultointimme yhdistää käyttäjätutkimuksen, tuotepositioinnin ja UI/UX-suunnittelun saumattomaksi kokonaisuudeksi.
 
-[Ota yhteyttä ja selvitä, miten käyttäjätutkimus voi vauhdittaa SaaS-tuotteesi kasvua →](https://goodside.fi/contact)
+[Ota yhteyttä ja selvitä, miten käyttäjätutkimus voi vauhdittaa SaaS-tuotteesi kasvua →](/contact)

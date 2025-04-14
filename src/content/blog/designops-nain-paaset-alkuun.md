@@ -285,4 +285,4 @@ Palvelumme sisältävät:
 - Työkalujen valinta ja käyttöönotto
 - Tiimin koulutus ja kehittäminen
 
-[Ota yhteyttä asiantuntijoihimme](https://goodside.fi/contact) ja aloita matka kohti tehokkaampaa, laadukkaampaa ja skaalautuvampaa muotoiluprosessia, joka tukee SaaS-yrityksesi kasvutavoitteita.
+[Ota yhteyttä asiantuntijoihimme](/contact) ja aloita matka kohti tehokkaampaa, laadukkaampaa ja skaalautuvampaa muotoiluprosessia, joka tukee SaaS-yrityksesi kasvutavoitteita.

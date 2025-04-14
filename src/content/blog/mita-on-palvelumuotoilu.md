@@ -55,4 +55,4 @@ Tavoitteena on parantaa sekä palvelun käyttäjälle tuottamaa arvoa että palv
 
 Palvelumuotoilu voi koskea mitä tahansa palvelualaa, esimerkiksi terveydenhuoltoa, vähittäiskauppaa tai julkisia palveluja. The Good Side auttaa asiakkaitaan kehittämään palveluita asiakaslähtöisesti palvelumuotoilun periaatteita hyödyntäen.
 
-Haluatko parantaa yrityksesi palveluita palvelumuotoilun avulla? [Ota yhteyttä meihin](https://www.goodside.fi/contact) ja kartoitetaan yhdessä mahdollisuudet kehittää SaaS-palveluasi käyttäjäystävällisemmäksi ja tehokkaammaksi.
+Haluatko parantaa yrityksesi palveluita palvelumuotoilun avulla? [Ota yhteyttä meihin](/contact) ja kartoitetaan yhdessä mahdollisuudet kehittää SaaS-palveluasi käyttäjäystävällisemmäksi ja tehokkaammaksi.

@@ -79,8 +79,6 @@ Testaavat teknistä toteutettavuutta ja suorituskykyä:
 
 Tekniset prototyypit ovat erityisen tärkeitä innovatiivisten tuotteiden kehityksessä.
 
-![](/images/blog/prototyyppi-ideasta-toimivaksi-tuotteeksi/prototyypin-piirtaja.png)
-
 ## Prototyyppien merkittävät hyödyt
 
 Prototyyppien käyttö tuotekehityksessä tuo merkittäviä etuja:
@@ -199,18 +197,14 @@ Tulevaisuudessa prototyyppien rooli tuotekehityksessä korostuu uusien teknologi
 - Mahdollistaa pienempien yritysten innovaatiot
 - Tukee ketterämpää tuotekehitystä
 
-![](/images/blog/prototyyppi-ideasta-toimivaksi-tuotteeksi/prototyyppia-toteuttamassa.png)
-
 ## Usein kysyttyjä kysymyksiä prototyypeistä
 
 ### Mikä on prototyypin ja MVP:n ero?
 
-Prototyyppi ja [MVP](https://goodside.fi/mvp-miksi-minimum-viable-product-on-menestyksen-perusta/) eroavat käyttötarkoituksiltaan:
+Prototyyppi ja MVP eroavat käyttötarkoituksiltaan:
 
 - **Prototyyppi** on testaustyökalu, joka konkretisoi idean. Se ei välttämättä ole toimiva tuote.
 - **MVP** on yksinkertaisin toimiva versio tuotteesta, joka voidaan julkaista markkinoille ja kerätä palautetta jatkokehitystä varten.
-
-*Lue lisää: [Miksi MVP eli minimum viable product on menestyksen perusta](https://goodside.fi/mvp-miksi-minimum-viable-product-on-menestyksen-perusta/)*
 
 ### Kuinka paljon prototyypin tekeminen maksaa?
 
@@ -244,4 +238,4 @@ Prototyyppien avulla SaaS-yritykset voivat:
 
 Erilaisten prototyyppien käyttö kehityksen eri vaiheissa tarjoaa monipuolisia näkökulmia ja mahdollisuuksia. Vaikka prototyyppien luomisessa on haasteita, oikeilla työkaluilla ja lähestymistavoilla ne voidaan ratkaista tehokkaasti.
 
-[Ota yhteyttä The Good Sideen](https://goodside.fi/ota-yhteytta/) ja tehosta tuotekehitysprosessiasi ammattimaisella prototyyppisuunnittelulla.
+[Ota yhteyttä The Good Sideen](/contact) ja tehosta tuotekehitysprosessiasi ammattimaisella prototyyppisuunnittelulla.

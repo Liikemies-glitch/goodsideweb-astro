@@ -182,4 +182,4 @@ Netflixin menestyksekäs asiakaskokemusstrategia perustuu käyttäjäkeskeisyyte
 
 The Good Side auttaa SaaS-yrityksiä implementoimaan näitä käyttäjäkokemuksen parhaita käytäntöjä, keskittyen kolmeen kriittiseen osa-alueeseen: tuotepositiointiin, käyttäjäpolkuihin ja UI/UX-suunnitteluun.
 
-[Ota yhteyttä The Good Sideen](https://goodside.fi/ota-yhteytta/) keskustellaksesi, kuinka Netflix-tyyppistä käyttäjäkokemusta voidaan soveltaa sinun SaaS-tuotteeseesi.
+[Ota yhteyttä The Good Sideen](/contact) keskustellaksesi, kuinka Netflix-tyyppistä käyttäjäkokemusta voidaan soveltaa sinun SaaS-tuotteeseesi.

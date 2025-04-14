@@ -86,4 +86,4 @@ Kun haluat rakentaa SaaS-tuotteen, joka menestyy globaalisti, kiinnitä huomiota
 
 The Good Side on erikoistunut auttamaan SaaS-yrityksiä rakentamaan käyttäjäkokemuksia, jotka menestyvät kansainvälisillä markkinoilla. Design-konsultointimme yhdistää strategisen tuotepositioinnin, käyttäjäpolkujen optimoinnin ja laadukkaan UI/UX-suunnittelun kasvun vauhdittamiseksi.
 
-[Ota yhteyttä ja keskustellaan, miten voimme vauhdittaa yrityksesi kansainvälistä kasvua →](https://goodside.fi/contact)
+[Ota yhteyttä ja keskustellaan, miten voimme vauhdittaa yrityksesi kansainvälistä kasvua →](/contact)

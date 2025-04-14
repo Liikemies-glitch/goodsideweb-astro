@@ -106,4 +106,4 @@ The Good Side yhdistää tuotepositioinnin, käyttäjäpolkujen suunnittelun ja 
 
 Design on nykyaikaisessa liiketoiminnassa strateginen voimavara, ei pelkkä kosmeettinen lisä. Applen esimerkki osoittaa, että asettamalla designin strategian ytimeen yritys voi rakentaa kestävää kilpailuetua ja brändiarvoa.
 
-Haluatko selvittää, miten voisit hyödyntää designia strategisena kilpailuetuna omassa SaaS-yrityksessäsi? [Ota yhteyttä The Good Siden asiantuntijoihin](https://goodside.fi/contact) ja keskustellaan, miten käyttäjäkeskeinen design voisi vauhdittaa yrityksesi kasvua.
+Haluatko selvittää, miten voisit hyödyntää designia strategisena kilpailuetuna omassa SaaS-yrityksessäsi? [Ota yhteyttä The Good Siden asiantuntijoihin](/contact) ja keskustellaan, miten käyttäjäkeskeinen design voisi vauhdittaa yrityksesi kasvua.

@@ -38,14 +38,6 @@ Tuoteomistaja tietää parhaiten on sellainen ajatus ja asenne, johon moni suunn
 
 The Good Side ratkaisee tämän haasteen UXR-tuotteistuksella. Myydään siis jatkuvaa käyttäjätutkimusta ja integroidaan se kiinteäksi osaksi SaaS-tuotekehitystä.
 
-### Aiheeseen liittyvät kirjoitukset The Good Side blogissa:
-
-* [UXR eli User Experience Research](https://goodside.fi/uxr-eli-user-experience-research/)
-* [Suosituimmat käyttäjätutkimusmenetelmät](https://goodside.fi/suosituimmat-kayttajatutkimusmenetelmat/)
-* [Käyttäjätestaus tekoälyllä – hyödyt verrattuna perinteiseen testaamiseen](https://goodside.fi/kayttajatestaus-tekoalylla-hyodyt-verrattuna-perinteiseen-testaamiseen/)
-* [Käyttäjätestaus tekoälyn avulla](https://goodside.fi/kayttajatestaus-tekoalyn-avulla/)
-* [Tekoälynatiivi käyttäjätutkimus modernisoi ihmiskeskeisen muotoilun](https://goodside.fi/tekoalynatiivi-kayttajatutkimus/)
-
 ## 2. Burgermenu - kuka voi olla suunnittelija?
 
 * Impressions: 10894 
@@ -67,10 +59,6 @@ Tämä postaus herätti kiinnotusta kahdesta syystä:
 
 The Good Side auttaa SaaS-yrityksiä kehittämään käyttöliittymäratkaisuja, jotka toimivat sekä mobiilissa että desktop-ympäristöissä, ja ovat intuitiivisia käyttäjille.
 
-### Aiheeseen liittyvät kirjoitukset The Good Side blogissa:
-
-* [Verkkopalvelun uudistaminen](https://goodside.fi/verkkopalvelun-uudistaminen/)
-
 ## 3. Jakob's Law - koska Nielsen niin sanoo
 
 * Impressions: 10532 
@@ -88,11 +76,6 @@ Tämä postaus oli kiinnostava myös siksi, että siinä oli kohtalaisen helppo 
 Myös kuva postauksessa selkeästi auttaa asiantuntijasisällön jakamisessa. Tämäkin teksti on sellainen, että idea aukeaa lukijalle nopeasti kun edes hetkeksi pysähtyy lukemaan. Tässä postauksessa kuva oli erityisen toimiva koska siinä oli jokaiselle tuttu taskulaskin.
 
 The Good Side soveltaa Jakobin lakia SaaS-tuotteiden kehityksessä varmistamalla, että käyttöliittymät seuraavat käyttäjille tuttuja malleja ja käyttäytyvät johdonmukaisesti heidän odotustensa mukaisesti.
-
-### Aiheeseen liittyvät kirjoitukset The Good Side blogissa:
-
-* [Jakob's Law: Intuitiivisen käyttöliittymäsuunnittelun kulmakivi](https://goodside.fi/jakobs-law-intuitiivisen-kayttoliittymasuunnittelun-kulmakivi/)
-* [UX suunnittelun lait](https://goodside.fi/ux-suunnittelun-lait/)
 
 ## 4. UX-kirjoittaminen ja microcopy - pieni niche josta kukaan ei puhu
 
@@ -112,11 +95,6 @@ Myös tässä postauksessa oli pari kuvaa, joissa esimerkkinä käytin tunnistet
 
 The Good Side integrooi UX-kirjoittamisen osaksi SaaS-tuotteiden kehitysprosessia, varmistaen että sovelluksissa käytetty kieli on selkeää, käyttäjiä ohjaavaa ja brändin mukaista.
 
-### Aiheeseen liittyvät kirjoitukset The Good Side blogissa:
-
-* [Käytettävyys ja hakukoneoptimointi](https://goodside.fi/kaytettavyys-ja-hakukoneoptimointi/)
-* [Mitä on UX-kirjoittaminen](https://goodside.fi/mita-on-ux-kirjoittaminen/)
-
 ## 5. Persoonat - ei jokaisen suunnittelijan hommaa
 
 * Impressions: 7199 
@@ -132,10 +110,6 @@ Käyttäjäpersoonat ovat edelleen kiistelty aihe. Usein käyttäjäpersoonat lu
 Ehkä juuri näistä syistä tämä postaus keräsi paljon lukijoita. Myös tämä työkalua on sellainen, että ken ikinä tätä käyttääkin, sopii toivoa, että tietää mitä tekee. Kunnollinen asiayhteyden tunteminen ja käyttäjäkokemus on aina hyvän muotoilun ja suunnittelun taustalla. 
 
 Sen takia persoonien luominen ammattimaisin menetelmin pitää olla vakavasti otettava työkalu eikä mikään meemigeneraattori. The Good Side auttaa SaaS-yrityksiä luomaan dataan perustuvia, aitoja käyttäjäpersoonia, jotka todella edustavat tuotteen kohdeyleisöä ja auttavat tekemään parempia suunnittelupäätöksiä.
-
-### Aiheeseen liittyvät kirjoitukset The Good Side blogissa:
-
-* [Asiakkaat mukaan palvelumuotoilun avulla](https://goodside.fi/asiakkaat-mukaan-palvelumuotoilun-avulla/)
 
 ## Mitä voimme oppia suosituimmista UX-aiheista?
 

@@ -99,4 +99,4 @@ Hyvä UX-kirjoittaminen auttaa käyttäjiä:
 - Ymmärtämään sen toimintoja
 - Saavuttamaan tavoitteensa vaivattomasti
 
-Haluatko parantaa SaaS-tuotteesi käyttäjäkokemusta laadukkaalla UX-kirjoittamisella? [Ota yhteyttä The Good Sideen](https://www.goodside.fi/contact) ja kerro tarpeistasi.
+Haluatko parantaa SaaS-tuotteesi käyttäjäkokemusta laadukkaalla UX-kirjoittamisella? [Ota yhteyttä The Good Sideen](/contact) ja kerro tarpeistasi.

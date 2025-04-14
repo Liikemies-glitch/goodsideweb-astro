@@ -155,4 +155,4 @@ Ammattimaiset UI-suunnittelutyökalut ovat keskeisessä roolissa SaaS-yritysten 
 
 The Good Side auttaa SaaS-yrityksiä valitsemaan oikeat työkalut ja prosessit käyttöliittymien suunnitteluun osana kokonaisvaltaista design-konsultointia.
 
-[Ota yhteyttä ja kerro tarpeistasi →](https://goodside.fi/contact)
+[Ota yhteyttä ja kerro tarpeistasi →](/contact)

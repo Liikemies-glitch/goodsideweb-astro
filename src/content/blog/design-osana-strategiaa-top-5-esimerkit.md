@@ -86,4 +86,4 @@ Oppimalla maailman johtavilta brändeiltä ja soveltamalla **design-ajattelua** 
 
 **Haluatko keskustella, miten strateginen design voisi auttaa teidän SaaS-yritystänne kasvamaan?**
 
-[Ota yhteyttä The Good Sideen ja varaa maksuton konsultaatio](/[locale]/contact/).
+[Ota yhteyttä The Good Sideen ja varaa maksuton konsultaatio](/contact/).

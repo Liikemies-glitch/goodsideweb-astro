@@ -107,4 +107,4 @@ The Good Side tarjoaa SaaS-yrityksille erikoistunutta design-konsultointia, joss
 * Proven käytäntöjen ja mallien hyödyntämisen muista SaaS-menestysprojekteista
 * Keskittymisen omaan ydinliiketoimintaan ja tuotekehitykseen
 
-[Ota yhteyttä](https://thegoodside.fi/contact) ja keskustellaan, miten voimme auttaa sinua rekrytoimaan oikean suunnittelijan tai tarjoamaan ulkoista design-asiantuntemusta SaaS-tuotteesi kehittämiseen.
+[Ota yhteyttä](/contact) ja keskustellaan, miten voimme auttaa sinua rekrytoimaan oikean suunnittelijan tai tarjoamaan ulkoista design-asiantuntemusta SaaS-tuotteesi kehittämiseen.

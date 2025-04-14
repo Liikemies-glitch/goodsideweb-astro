@@ -126,6 +126,6 @@ The Good Side tarjoaa design-konsultointia SaaS-yrityksille, jotka haluavat kiih
 
 Oletko suunnittelemassa uutta verkkopalvelua tai kehittämässä olemassa olevaa? The Good Side auttaa SaaS-yrityksiä konseptoimaan verkkopalveluita, jotka tukevat liiketoiminnan kasvua ja käyttäjien tarpeita.
 
-[Ota yhteyttä asiantuntijoihimme](https://thegoodside.fi/contact) ja kerro tarpeistasi. Autamme sinua luomaan verkkopalvelukonseptin, joka erottuu edukseen ja tukee liiketoimintasi tavoitteita.
+[Ota yhteyttä asiantuntijoihimme](/contact) ja kerro tarpeistasi. Autamme sinua luomaan verkkopalvelukonseptin, joka erottuu edukseen ja tukee liiketoimintasi tavoitteita.
 
 > Näiden asioiden huomiointi auttaa luomaan verkkopalvelun, joka on käyttäjälähtöinen, toiminnallisesti tehokas ja pitkäikäinen.

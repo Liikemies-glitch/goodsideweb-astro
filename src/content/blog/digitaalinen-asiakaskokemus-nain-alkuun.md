@@ -100,4 +100,4 @@ Asiakaskokemusstrategiamme perustuu dataan ja syvälliseen käyttäjäymmärryks
 
 Digitaalisen asiakaskokemuksen kehittäminen vaatii syvällistä ymmärrystä asiakkaista, saavutettavia ja käytettäviä ratkaisuja, personoitua sisältöä, monikanavaista lähestymistapaa ja jatkuvaa palautteen keruuta. Nämä tekijät yhdessä auttavat luomaan erinomaisen asiakaskokemuksen, joka edistää asiakasuskollisuutta ja SaaS-liiketoiminnan kasvua.
 
-Haluatko kehittää yrityksesi digitaalista asiakaskokemusta? [Ota yhteyttä](https://goodside.fi/contact) ja keskustellaan, miten voisimme auttaa sinua rakentamaan kilpailuetua asiakaskokemuksen kautta.
+Haluatko kehittää yrityksesi digitaalista asiakaskokemusta? [Ota yhteyttä](/contact) ja keskustellaan, miten voisimme auttaa sinua rakentamaan kilpailuetua asiakaskokemuksen kautta.

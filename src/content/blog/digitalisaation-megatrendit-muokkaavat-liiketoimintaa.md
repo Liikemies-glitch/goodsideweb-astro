@@ -172,4 +172,4 @@ Digitalisaatio on paljon muutakin kuin teknologian käyttöönottoa; se on jatku
 
 SaaS-yrityksille näiden trendien strateginen integrointi tuotekehitykseen ja liiketoimintamalleihin voi tuottaa merkittävää kilpailuetua ja kasvumahdollisuuksia. Onnistuminen edellyttää kuitenkin huolellista suunnittelua, asiakaskeskeisyyttä ja joustavuutta.
 
-Haluatko varmistaa, että yrityksesi hyödyntää digitalisaation megatrendejä tehokkaasti? [Ota yhteyttä](https://goodside.fi/contact) ja keskustellaan, miten voimme auttaa sinua rakentamaan kilpailukykyisen strategian digitalisaation aikakaudelle.
+Haluatko varmistaa, että yrityksesi hyödyntää digitalisaation megatrendejä tehokkaasti? [Ota yhteyttä](/contact) ja keskustellaan, miten voimme auttaa sinua rakentamaan kilpailukykyisen strategian digitalisaation aikakaudelle.

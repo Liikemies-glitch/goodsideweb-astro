@@ -109,5 +109,5 @@ Teemme kaikkemme sen eteen, että saat:
 
 Ymmärrämme sekä koodia että liiketoimintaa, joten tiedämme minkälaisia SaaS-palveluita kannattaa suunnitella niin, että niiden tekninen toteutus on sujuvaa ja käyttö ilahduttavaa.
 
-**[Ota yhteyttä, niin keskustellaan miten voimme auttaa sinun SaaS-yrityksesi käyttäjäkokemuksen kehittämisessä](https://goodside.fi/ota-yhteytta/)**
+**[Ota yhteyttä, niin keskustellaan miten voimme auttaa sinun SaaS-yrityksesi käyttäjäkokemuksen kehittämisessä](/contact)**
 

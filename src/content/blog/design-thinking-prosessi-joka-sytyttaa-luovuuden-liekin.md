@@ -125,4 +125,4 @@ Design thinking -prosessin avulla SaaS-yritykset voivat ylittää tavanomaiset t
 
 Luovuuden edistäminen ei ole sattumanvaraista, ja design thinking tarjoaa selkeän polun, jolla SaaS-organisaatiot voivat varmistaa, että luovuus ei jää yksittäiseksi inspiraation hetkeksi, vaan kehittyy osaksi jokapäiväistä toimintaa.
 
-Haluatko kuulla, miten The Good Siden design-konsultointi voi auttaa SaaS-yrityksesi kasvua tuotepositioinnin, käyttäjäpolkujen ja UI/UX-suunnittelun avulla? [Ota yhteyttä asiantuntijoihimme](https://www.goodside.fi/contact) ja keskustellaan, miten voimme vauhdittaa yrityksesi kasvua.
+Haluatko kuulla, miten The Good Siden design-konsultointi voi auttaa SaaS-yrityksesi kasvua tuotepositioinnin, käyttäjäpolkujen ja UI/UX-suunnittelun avulla? [Ota yhteyttä asiantuntijoihimme](/contact) ja keskustellaan, miten voimme vauhdittaa yrityksesi kasvua.

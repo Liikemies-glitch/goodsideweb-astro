@@ -182,4 +182,4 @@ SaaS-tuotteiden suunnittelijat voivat ammentaa merkittäviä oppeja näiden suun
 * Eamesien käyttäjäkeskeinen muotoilu
 * Mies van der Rohen "vähemmän on enemmän" -ajattelu
 
-[Ota yhteyttä The Good Sideen](https://thegoodside.fi/contact) niin keskustellaan, miten historiallisten muotoiluperiaatteiden soveltaminen voi tehostaa SaaS-tuotteesi käyttöliittymää ja käyttäjäkokemusta.
+[Ota yhteyttä The Good Sideen](/contact) niin keskustellaan, miten historiallisten muotoiluperiaatteiden soveltaminen voi tehostaa SaaS-tuotteesi käyttöliittymää ja käyttäjäkokemusta.

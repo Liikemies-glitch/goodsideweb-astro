@@ -125,4 +125,4 @@ UX-suunnittelu vaatii yhdistelmää teknistä, luovaa ja käyttäjälähtöistä
 
 ## Ota seuraava askel UX-suunnittelussasi
 
-[Ota yhteyttä](https://goodside.fi/contact) niin keskustellaan, miten voimme auttaa sinua ratkaisemaan SaaS-tuotteesi UX-suunnittelun haasteet ja kääntämään ne kilpailueduksi.
+[Ota yhteyttä](/contact) niin keskustellaan, miten voimme auttaa sinua ratkaisemaan SaaS-tuotteesi UX-suunnittelun haasteet ja kääntämään ne kilpailueduksi.

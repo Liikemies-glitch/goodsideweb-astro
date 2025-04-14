@@ -144,4 +144,4 @@ Näiden periaatteiden soveltaminen SaaS-tuotteisiin voi parantaa käyttäjäkoke
 
 Braunin design-periaatteet tarjoavat edelleen arvokkaita oppeja nykyaikaisille SaaS-yrityksille. Käyttäjäkeskeisyys, minimalismi, funktionaalisuus ja johdonmukaisuus ovat kaikki periaatteita, jotka voivat merkittävästi parantaa digitaalisten tuotteiden laatua ja kilpailukykyä.
 
-Haluatko soveltaa näitä ajattomia design-periaatteita oman SaaS-tuotteesi kehittämisessä? [Ota yhteyttä The Good Siden asiantuntijoihin](https://goodside.fi/contact) ja selvitetään, miten voimme auttaa sinua kehittämään tuotteita, jotka ovat sekä funktionaalisia että esteettisesti miellyttäviä.
+Haluatko soveltaa näitä ajattomia design-periaatteita oman SaaS-tuotteesi kehittämisessä? [Ota yhteyttä The Good Siden asiantuntijoihin](/contact) ja selvitetään, miten voimme auttaa sinua kehittämään tuotteita, jotka ovat sekä funktionaalisia että esteettisesti miellyttäviä.

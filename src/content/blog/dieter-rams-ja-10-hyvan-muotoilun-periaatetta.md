@@ -97,4 +97,4 @@ Nykyaikaisessa SaaS-tuotekehityksessä Ramsin periaatteet voidaan nähdä käytt
 
 Dieter Ramsin periaatteet korostavat muotoilun selkeyttä, käytettävyyttä ja kestävyyttä. Hänen mukaansa hyvä muotoilu on innovatiivista, toiminnallista ja esteettistä ilman, että se on päällekäyvää. Nämä periaatteet ovat vaikuttaneet vahvasti muotoilun kehitykseen ja ovat edelleen ajankohtaisia nykyajan tuotesuunnittelussa.
 
-The Good Side hyödyntää näitä samoja periaatteita SaaS-yritysten digitaalisten tuotteiden ja palveluiden suunnittelussa. Haluatko keskustella, miten voisimme soveltaa näitä periaatteita yrityksesi tuotekehitykseen? [Ota yhteyttä](https://goodside.fi/contact) ja keskustellaan lisää.
+The Good Side hyödyntää näitä samoja periaatteita SaaS-yritysten digitaalisten tuotteiden ja palveluiden suunnittelussa. Haluatko keskustella, miten voisimme soveltaa näitä periaatteita yrityksesi tuotekehitykseen? [Ota yhteyttä](/contact) ja keskustellaan lisää.
