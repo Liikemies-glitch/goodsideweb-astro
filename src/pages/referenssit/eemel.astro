@@ -2,48 +2,145 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import '../../styles/styles.css';
 
-const pageTitle = "Eemel Reference";
-const description = "Reference case study for Eemel.";
+const pageTitle = "Nettilaskusta Eemel.com:iksi - Käyttöliittymän uudistus liiketoiminnan kasvun tukena";
+const description = "Eemel.com käyttöliittymän uudistus - case study kuinka UX suunnittelulla parannettiin liiketoimintaa.";
 ---
 
 <BaseLayout title={pageTitle} description={description}>
   <div class="container">
     <section class="content-section">
-      <!-- Placeholder Image -->
-      <img src="/images/eemel/etusivu_laptop.webp" alt="Eemel project screenshot" style="width: 100%; height: auto; margin-bottom: var(--spacing-xl);" />
+      <!-- Hero Image -->
+      <img src="/images/eemel/etusivu_laptop.webp" alt="Eemel.com käyttöliittymä" style="width: 100%; height: auto; margin-bottom: var(--spacing-xl);" />
 
       <!-- Title -->
       <h1 class="gradient-heading-lg">{pageTitle}</h1>
 
-      <!-- Sample Text -->
-      <p>This is the introductory paragraph for the Eemel reference case study. Here, we can provide a brief overview of the project, the client, and the main challenges addressed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <!-- Intro Section: Lähtötilanne -->
+      <h2>Lähtötilanne</h2>
+      <p>Nettilasku.fi (Epic Invoicing Oy) on suomalaisille pienyrityksille suunnattu taloushallinnon ohjelmisto, joka tarjoaa ratkaisun myynti- ja ostolaskujen käsittelyyn, palkanlaskentaan, tuntikirjauksiin sekä automaattiseen kirjanpitoon. Vuonna 2010 perustettu Nettilasku pyrkii nyt kansainvälisille markkinoille Eemel.com -brändin alla.</p>
 
-      <!-- Quote Placeholder -->
-      <blockquote style="border-left: 4px solid var(--primary-color); padding-left: var(--spacing-md); margin: var(--spacing-lg) 0; font-style: italic;">
-        <p>"This is a placeholder for a compelling quote from the client or a team member regarding the Eemel project."</p>
-        <cite>– Quote Author, Company</cite>
-      </blockquote>
-
-      <!-- Sample Text Continued -->
-      <p>Following the introduction and quote, we delve deeper into the project specifics. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-
-      <!-- Screenshot Placeholder -->
-      <h2>Screenshots / Visuals</h2>
-      <p>Include relevant screenshots or visuals here. Maybe use a grid.</p>
+      <!-- Before/After Comparison -->
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-md); margin: var(--spacing-lg) 0;">
-        <img src="/images/eemel/etusivu_laptop.webp" alt="Eemel Screenshot 1" style="width: 100%; height: auto;" />
-        <img src="/images/eemel/etusivu_laptop_vanha.webp" alt="Eemel Screenshot 2 (Old)" style="width: 100%; height: auto;" />
+        <img src="/images/eemel/etusivu_laptop_vanha.webp" alt="Eemel vanha käyttöliittymä" style="width: 100%; height: auto;" />
+        <img src="/images/eemel/etusivu_laptop.webp" alt="Eemel uusi käyttöliittymä" style="width: 100%; height: auto;" />
       </div>
 
-      <!-- Reference Case Text Placeholder -->
-      <h2>Case Study Details</h2>
-      <p>This section is for the detailed breakdown of the reference case. Discuss the challenges, solutions implemented, technologies used, and the results achieved. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+      <!-- Challenges Section: Haasteet -->
+      <h3>Haasteet</h3>
+      <p>Kunnianhimoinen kansainvälistymistavoite törmäsi kuitenkin vanhentuneeseen käyttöliittymään ja nettisivuihin, jotka eivät enää vastanneet käyttäjien odotuksia:</p>
       <ul>
-        <li>Challenge 1: Detail</li>
-        <li>Solution 1: Detail</li>
-        <li>Technology Used: Detail</li>
-        <li>Result: Detail</li>
+        <li><strong>Heikko käyttökokemus</strong>: Käyttöliittymä oli vanhentunut ja monimutkainen</li>
+        <li><strong>Matala asiakasuskollisuus</strong>: Käyttäjät vaihtoivat kilpaileviin ratkaisuihin</li>
+        <li><strong>Alhainen konversioaste</strong>: Uudet asiakkaat eivät rekisteröityneet maksaviksi käyttäjiksi odotetulla tavalla</li>
+        <li><strong>Tehoton markkinointi</strong>: Mediabudjetin käyttö ei ollut enää kannattavaa</li>
+        <li><strong>Kilpailijoiden aggressiivinen hinnoittelu</strong>: Ilmaiskokeilut tekivät asiakashankinnasta haastavaa</li>
       </ul>
+
+      <!-- Client Quote with Image -->
+      <div style="display: flex; align-items: center; gap: var(--spacing-lg); margin: var(--spacing-xl) 0;">
+        <img src="/images/eemel/jarkko_kahkonen_eemel.webp" alt="Jarkko Kähkönen" style="width: 150px; height: auto; border-radius: 50%; object-fit: cover;" />
+        <blockquote style="border-left: 4px solid var(--primary-color); padding-left: var(--spacing-md); margin: 0; font-style: italic; flex-grow: 1;">
+          <p>"Halusimme kansainvälistää liiketoimintamme Eemel.com-brändillä ja hakea kasvuun vauhtia UX-maturiteetin kasvun kautta. Mediabudjetin käyttö ei ollut enää kannattavaa ja tuotevetoisen kasvun yksiköt eivät toimineet. Käyttöliittymämme ei vastannut modernien käyttäjien odotuksia ja konversioasteet olivat heikkoja. Tarvitsimme kipeästi strategisen uudistuksen."</p>
+          <cite>– Jarkko Kähkönen, Yrittäjä, Eemel.com</cite>
+        </blockquote>
+      </div>
+
+      <!-- Solution Section: Ratkaisu -->
+      <h2>Ratkaisu</h2>
+      <p>Nettilaskun käyttöliittymän ja käyttäjäkokemuksen kehittämisessä toteutettiin perusteellinen käyttäjälähtöinen suunnitteluprosessi. Projekti eteni iteratiivisesti ja pohjautui sekä käyttäjätutkimukseen että liiketoiminnallisiin tavoitteisiin.</p>
+
+      <!-- Placeholder for a solution image -->
+      <img src="https://via.placeholder.com/1200x600.png?text=UI+Solution+Showcase" alt="UI Solution Showcase" style="width: 100%; height: auto; margin: var(--spacing-lg) 0;" />
+
+      <h3>Strategiset päätökset:</h3>
+      <ol>
+        <li><strong>Navigaation selkeyttäminen</strong>: Käyttöliittymän rakenne uudistettiin, joka vähensi virheitä ja teki oppimiskäyrästä loivemman</li>
+        <li><strong>Laskutusprosessin yksinkertaistaminen</strong>: Laskun luominen ja lähettäminen nopeutui 30%</li>
+        <li><strong>Moderni visuaalinen ilme</strong>: Brändi päivitettiin vastaamaan nykyaikaisen SaaS-palvelun odotuksia</li>
+        <li><strong>Mobiiliresponsiivisuuden parantaminen</strong>: Käyttökokemus optimoitiin mobiililaitteille, joita käytti yli 60% käyttäjistä</li>
+        <li><strong>Uusi hinnoittelumalli</strong>: Pilottivaiheessa testattiin erilaisia hinnoittelumalleja, jotka kasvattivat ilmaiskäyttäjien siirtymistä maksullisiin versioihin</li>
+      </ol>
+
+      <h3>Käytännön toimenpiteet:</h3>
+      <ul>
+        <li>Käyttäjäpolkujen ja -tilanteiden huolellinen kartoitus</li>
+        <li>Kilpailija-analyysi markkinoilla erottautumiseksi</li>
+        <li>Syksyn 2024 visuaalinen uudistus (facelift)</li>
+        <li>Navigoinnin ja visuaalisen ohjauksen tehostaminen selkeillä elementeillä</li>
+        <li>Viestinnän parantaminen ja yksityisviestintämahdollisuuden lisääminen</li>
+        <li>Käyttöoikeuslogiikan uudistaminen useiden yritystilien hallintaan</li>
+        <li>Tuotepakettien hinnoittelun optimointi</li>
+      </ul>
+
+      <!-- Solution Results Grid with placeholder images -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-md); margin: var(--spacing-lg) 0;">
+        <img src="https://via.placeholder.com/400x300.png?text=Navigation+Improvement" alt="Navigaation selkeyttäminen" style="width: 100%; height: auto;" />
+        <img src="https://via.placeholder.com/400x300.png?text=Invoicing+Process" alt="Laskutusprosessin yksinkertaistaminen" style="width: 100%; height: auto;" />
+        <img src="https://via.placeholder.com/400x300.png?text=Mobile+Responsive+UI" alt="Mobiiliresponsiivinen käyttöliittymä" style="width: 100%; height: auto;" />
+      </div>
+
+      <!-- Client Quote -->
+      <blockquote style="border-left: 4px solid var(--primary-color); padding-left: var(--spacing-md); margin: var(--spacing-lg) 0; font-style: italic;">
+        <p>"Goodside otti tehtäväkseen ratkaista todellisia ongelmia, ei vain kaunistella pintaa. He tekivät perusteellista käyttäjätutkimusta ja seurasivat dataa päätösten pohjana. Navigaation selkeyttäminen, laskutusprosessin yksinkertaistaminen ja moderni visuaalinen ilme ovat olleet keskeisiä parannuksia. Erityisesti arvostan sitä, että kaikki muutokset tähtäsivät konkreettisiin liiketoiminnallisiin tuloksiin."</p>
+        <cite>– Jarkko Kähkönen, Yrittäjä, Eemel.com</cite>
+      </blockquote>
+
+      <!-- Results Section: Tulokset -->
+      <h2>Tulokset</h2>
+      <p>Modernisoidun käyttöliittymän ja käyttäjälähtöisen suunnittelun merkittävimmät tulokset:</p>
+
+      <!-- Results visualization placeholder -->
+      <img src="https://via.placeholder.com/1200x400.png?text=Results+Visualization" alt="Tulosten visualisointi" style="width: 100%; height: auto; margin: var(--spacing-lg) 0;" />
+
+      <h3>Liiketoiminnalliset hyödyt:</h3>
+      <ul>
+        <li><strong>Asiakasuskollisuus kasvoi 25%</strong>: Helppokäyttöisyys ja parempi käyttökokemus vähensivät asiakasvaihtuvuutta</li>
+        <li><strong>Ilmaisesta maksulliseen -konversio kaksinkertaistui</strong>: Käyttäjät päivittivät maksulliseen versioon kaksi kertaa aiempaa useammin</li>
+        <li><strong>Mediabudjetin ROI kasvoi 622%</strong>: Markkinointibudjetin tuotto nousi 0.80€/€ → 5.78€/€</li>
+        <li><strong>Viikoittainen toistuva tuotto (ARR) nousi 55%</strong>: 560€/viikko → 870€/viikko</li>
+        <li><strong>Käyttäjän keskimääräinen tuotto kasvoi 46%</strong>: 63€ → 92€</li>
+      </ul>
+
+      <h3>Projektin aikana toteutettiin:</h3>
+      <ul>
+        <li>Yli 20 uudistettua näkymää (ml. myynti- ja ostolaskujen luonti)</li>
+        <li>4 täysin uutta näkymää (etusivu, tilaukset, palveluntuottajien kilpailutus, yksityisviestintä)</li>
+        <li>Uusi ostopolku ja parannetut käyttöönottoprosessit</li>
+        <li>Eemel.com-nettisivujen visuaalisen ilmeen ja rakenteen päivitys</li>
+      </ul>
+
+      <!-- Client Quote -->
+      <blockquote style="border-left: 4px solid var(--primary-color); padding-left: var(--spacing-md); margin: var(--spacing-lg) 0; font-style: italic;">
+        <p>"Työskentely Goodsiden tiimin kanssa oli käänteentekevää. Projektin toteuttaminen tuotti välittömiä tuloksia: asiakasuskollisuus kasvoi 25%, konversiot kaksinkertaistuivat ja mediabudjetin tuotto nousi huimasti. Ennustamme uudistuksen tuottavan noin 180 000 euroa liikevaihtoa vuonna 2025, ilman lisäyksiä mediabudjettiin. Tämä tarkoittaa noin 50% kasvua liikevaihtoomme. Nyt yksikkötaloutta on kunnossa, joten Eemel.com on valmiina skaalautumaan."</p>
+        <cite>– Jarkko Kähkönen, Yrittäjä, Eemel.com</cite>
+      </blockquote>
+
+      <!-- Key Learnings Section: Tärkeimmät opit -->
+      <h2>Tärkeimmät opit</h2>
+      <p>UX-uudistusprojekti tarjosi arvokkaita oppeja kaikille yrityksille, jotka haluavat parantaa liiketoimintaansa designin avulla:</p>
+
+      <ol>
+        <li><strong>UX-muutokset tulee perustaa dataan</strong>: Käyttäjätestaus ja analytiikka ohjasivat päätöksiä, mikä varmisti muutosten tehokkuuden</li>
+        <li><strong>Iteratiivinen työskentely tehostaa prosessia</strong>: Tämä mahdollisti nopeat reaktiot asiakaspalautteeseen ja markkinatilanteisiin</li>
+        <li><strong>Brändin selkeys ja käyttökokemuksen sujuvuus ovat kriittisiä asiakaspidolle</strong>: Uusi ilme tuki yrityksen kasvua ja loi erottavan tekijän</li>
+        <li><strong>Mobiilikäyttö on ensisijaista</strong>: Käyttäjät toimivat liikkeellä ollessaan, joten responsiivisuuden optimointi oli elintärkeää liiketoiminnalle</li>
+        <li><strong>Pienet iteratiiviset parannukset kumuloituvat merkittäväksi liiketoiminta-arvoksi</strong>: Uudistusprosessi ei ole kertatapahtuma, vaan jatkuvien parannusten sarja</li>
+      </ol>
+
+      <!-- Key Learnings visualization placeholder -->
+      <img src="https://via.placeholder.com/1200x400.png?text=Key+Insights+Visualization" alt="Tärkeimmät opit visualisointi" style="width: 100%; height: auto; margin: var(--spacing-lg) 0;" />
+
+      <!-- Client Quote -->
+      <blockquote style="border-left: 4px solid var(--primary-color); padding-left: var(--spacing-md); margin: var(--spacing-lg) 0; font-style: italic;">
+        <p>"Goodsiden työntekijät hoitivat tehtävän loistavasti, ja UX-suunnittelutyön lopputulos oli erinomainen. Kaikki tehtiin aikataulussa sovitusti sekä rehellisellä ja suoraviivaisella tavalla. Erityisesti arvostimme heidän ymmärrystään siitä, että designin on palveltava liiketoimintaa. Pienet jatkuvat parannukset ovat tuoneet merkittävää arvoa – tämä ei ollut vain kertaprojekti vaan strateginen kumppanuus, joka jatkuu edelleen."</p>
+        <cite>– Jarkko Kähkönen, Yrittäjä, Eemel.com</cite>
+      </blockquote>
+
+      <!-- Future Plans Section: Tulevaisuuden suunnitelmat -->
+      <h2>Tulevaisuuden suunnitelmat</h2>
+      <p>Eemel.com jatkaa palvelunsa kehittämistä design-keskeisellä lähestymistavalla. Tulevat kehitysalueet sisältävät UX-analytiikan syventämisen ja AB-testauksen käyttöönoton palvelun käyttäjäkokemuksen edelleen hiomiseksi.</p>
+
+      <p>Tämä case study osoittaa, että investoimalla käyttäjäkeskeiseen suunnitteluun on mahdollista parantaa asiakaskokemusta, kasvattaa liikevaihtoa ja vähentää asiakaspoistumaa – tehden UX/UI-kehityksestä strategisen sijoituksen, joka maksaa itsensä takaisin moninkertaisesti.</p>
 
     </section>
   </div>
