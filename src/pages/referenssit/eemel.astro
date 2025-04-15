@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import '../../styles/styles.css';
+
+const pageTitle = "Eemel Reference";
+const description = "Reference case study for Eemel.";
+---
+
+<BaseLayout title={pageTitle} description={description}>
+  <div class="container">
+    <section class="content-section">
+      <!-- Placeholder Image -->
+      <img src="/images/eemel/etusivu_laptop.webp" alt="Eemel project screenshot" style="width: 100%; height: auto; margin-bottom: var(--spacing-xl);" />
+
+      <!-- Title -->
+      <h1 class="gradient-heading-lg">{pageTitle}</h1>
+
+      <!-- Sample Text -->
+      <p>This is the introductory paragraph for the Eemel reference case study. Here, we can provide a brief overview of the project, the client, and the main challenges addressed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+      <!-- Quote Placeholder -->
+      <blockquote style="border-left: 4px solid var(--primary-color); padding-left: var(--spacing-md); margin: var(--spacing-lg) 0; font-style: italic;">
+        <p>"This is a placeholder for a compelling quote from the client or a team member regarding the Eemel project."</p>
+        <cite>– Quote Author, Company</cite>
+      </blockquote>
+
+      <!-- Sample Text Continued -->
+      <p>Following the introduction and quote, we delve deeper into the project specifics. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+
+      <!-- Screenshot Placeholder -->
+      <h2>Screenshots / Visuals</h2>
+      <p>Include relevant screenshots or visuals here. Maybe use a grid.</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-md); margin: var(--spacing-lg) 0;">
+        <img src="/images/eemel/etusivu_laptop.webp" alt="Eemel Screenshot 1" style="width: 100%; height: auto;" />
+        <img src="/images/eemel/etusivu_laptop_vanha.webp" alt="Eemel Screenshot 2 (Old)" style="width: 100%; height: auto;" />
+      </div>
+
+      <!-- Reference Case Text Placeholder -->
+      <h2>Case Study Details</h2>
+      <p>This section is for the detailed breakdown of the reference case. Discuss the challenges, solutions implemented, technologies used, and the results achieved. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+      <ul>
+        <li>Challenge 1: Detail</li>
+        <li>Solution 1: Detail</li>
+        <li>Technology Used: Detail</li>
+        <li>Result: Detail</li>
+      </ul>
+
+    </section>
+  </div>
+</BaseLayout> 
