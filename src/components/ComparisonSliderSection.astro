@@ -45,14 +45,26 @@
             
             // Asetetaan tyylimäärittelyt
             slider.style.setProperty('--divider-width', '2px');
-            slider.style.setProperty('--divider-color', '#f97316');
+            slider.style.setProperty('--divider-color', '#ff0036');
             slider.style.setProperty('--default-handle-color', '#ff0036');
             slider.style.setProperty('--default-handle-opacity', '1');
             slider.style.setProperty('--default-handle-width', '40px');
             slider.style.setProperty('--default-handle-height', '40px');
-            // Hide the slider outline
+            // Hide the slider outline - multiple approaches
             slider.style.setProperty('--default-overlap-outline-color', 'transparent');
             slider.style.setProperty('--default-overlap-outline-width', '0px');
+            slider.style.setProperty('--default-overlap-outline-style', 'none');
+            
+            // Additional CSS injection to ensure no outlines
+            const styleEl = document.createElement('style');
+            styleEl.textContent = `
+                img-comparison-slider, 
+                img-comparison-slider * {
+                    outline: none !important;
+                    border: none !important;
+                }
+            `;
+            document.head.appendChild(styleEl);
             
             // Luodaan kuvat slideriin ja lisätään tyyppimääritykset
             const imgFirst = imageOld.cloneNode(true) as HTMLElement;
@@ -136,6 +148,24 @@
         position: relative; /* For absolute positioning of drag indicator */
     }
 
+    /* Aggressive approach to remove outlines */
+    :global(img-comparison-slider),
+    :global(img-comparison-slider *) {
+        outline: none !important;
+        outline-width: 0 !important;
+        outline-color: transparent !important;
+        border: none !important;
+    }
+    
+    /* Target specific parts related to outlines */
+    :global(img-comparison-slider::part(first-image)),
+    :global(img-comparison-slider::part(second-image)),
+    :global(img-comparison-slider::part(first-image-container)),
+    :global(img-comparison-slider::part(second-image-container)) {
+        outline: none !important;
+        border: none !important;
+    }
+
     @media (min-width: 1024px) {
         .container {
             padding-left: 0;
@@ -178,7 +208,7 @@
         }
         50% {
             transform: translate(-50%, -50%) scale(1.1);
-            box-shadow: 0 2px 15px rgba(249, 115, 22, 0.4);
+            box-shadow: 0 2px 15px rgba(255, 0, 54, 0.4);
         }
         100% {
             transform: translate(-50%, -50%) scale(1);
