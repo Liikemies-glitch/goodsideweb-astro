@@ -1,0 +1,172 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+// Define the structure for stats if needed
+interface StatItem {
+    text: string;
+    icon?: string; // Optional: Path or SVG string for an icon
+}
+
+interface Props extends HTMLAttributes<'section'> {
+    title: string;
+    paragraph: string;
+    primaryButtonText: string;
+    primaryButtonHref: string;
+    secondaryButtonText?: string;
+    secondaryButtonHref?: string;
+    imageUrl: string;
+    imageAlt: string;
+    stats?: StatItem[];
+    paddingTop?: string;
+    paddingBottom?: string;
+    imageStyles?: string; // Allow passing custom styles for the image container
+    imgStyles?: string; // Allow passing custom styles for the image itself
+}
+
+const {
+    title,
+    paragraph,
+    primaryButtonText,
+    primaryButtonHref,
+    secondaryButtonText,
+    secondaryButtonHref,
+    imageUrl,
+    imageAlt,
+    stats,
+    paddingTop = '4rem',
+    paddingBottom = '6rem',
+    imageStyles = 'border-radius: 1rem; overflow: hidden;', // Default from referenssit.astro
+    imgStyles = 'width: 100%; height: auto; display: block; object-fit: cover;', // Default from referenssit.astro
+    ...rest // Collect any other attributes like class, id, etc.
+} = Astro.props;
+---
+
+<section class:list={["hero-section", rest.class]} style={`padding-top: ${paddingTop}; padding-bottom: ${paddingBottom};`} {...rest}>
+    <div class="container hero-grid">
+        <div class="hero-content">
+            <h1 class="hero__title">{title}</h1>
+            <p class="large-paragraph" style="margin-bottom: 2rem;">
+                {paragraph}
+            </p>
+            <div class="hero-buttons">
+                <a href={primaryButtonHref} class="btn btn--primary">{primaryButtonText}</a>
+                {secondaryButtonText && secondaryButtonHref && (
+                    <a href={secondaryButtonHref} class="btn btn--secondary">{secondaryButtonText}&nbsp;&rarr;</a>
+                )}
+            </div>
+            {stats && stats.length > 0 && (
+                <div class="hero-stats">
+                    {stats.map(stat => (
+                        <div class="hero-stat-item">
+                            {/* Basic icon handling - assumes inline SVG or similar */} 
+                            {stat.icon && <Fragment set:html={stat.icon} />}
+                            <span>{stat.text}</span>
+                        </div>
+                    ))}
+                </div>
+            )}
+        </div>
+        <div class="hero-image-placeholder" style={imageStyles}>
+            <img src={imageUrl} alt={imageAlt} style={imgStyles}/>
+        </div>
+    </div>
+</section>
+
+<style>
+  /* Styles copied & adapted from eemel.astro and referenssit.astro */
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns on large screens */
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .hero-content .hero__title {
+      margin-bottom: 1rem;
+      font-weight: 700;
+      text-align: left;
+      /* Inherit size from global or BaseLayout */
+  }
+
+  .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      justify-content: flex-start;
+  }
+
+  /* Ensure btn styles work (assuming .btn is global) */
+  .hero-buttons .btn {
+      /* No extra margins needed, gap handles spacing */
+  }
+
+  /* Style for the secondary button */
+  .btn--secondary {
+      background-color: var(--secondary-color); /* Assuming this is the dark blue brand color */
+      color: #ffffff; /* Use explicit white color */
+      border: none; /* Remove default border if .btn has one */
+  }
+
+  .btn--secondary:hover {
+       filter: brightness(1.1); /* Simple hover effect */
+  }
+
+  .hero-stats {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      align-items: center;
+  }
+
+  .hero-stat-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: var(--font-size-sm);
+      color: var(--neutral-dark);
+      font-weight: 500;
+  }
+
+  .hero-stat-item svg {
+      /* Basic styling for potential icons */
+      width: 18px;
+      height: 18px;
+      stroke-width: 2;
+      stroke: var(--success-color, #10b981); /* Use success color or default */
+  }
+
+
+  /* Responsiveness for hero */
+  @media (max-width: 992px) {
+      .hero-grid {
+          grid-template-columns: 1fr; /* Single column */
+          text-align: center;
+      }
+      .hero-content {
+          order: 2; /* Text after image */
+      }
+      .hero-image-placeholder {
+          order: 1; /* Image first */
+          margin-bottom: 3rem;
+          min-height: 250px; /* Ensure space for image */
+      }
+      .hero-buttons {
+          justify-content: center;
+      }
+      .hero-stats {
+          justify-content: center;
+      }
+       .hero-content .hero__title {
+           text-align: center;
+       }
+  }
+
+  /* Smaller mobile adjustments if needed */
+  /*
+  @media (max-width: 768px) {
+       Optional: further adjustments
+  }
+  */
+</style> 

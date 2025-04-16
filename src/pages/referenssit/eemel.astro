@@ -1,172 +1,167 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import '../../styles/styles.css';
+import HeroSection from '../../components/HeroSection.astro';
 
 const pageTitle = "Eemel.comin redesign mahdollisti kasvun globaaleilla markkinoilla";
 const description = "Eemel.com uudisti käyttöliittymänsä ja käyttökokemuksena, jonka vuoksi mediabudjetin ROI kasvoi 622%.";
 ---
 
 <BaseLayout title={pageTitle} description={description}>
-  <div class="container">
-    <article class="case-study">
+  
+  <HeroSection
+      title="Eemel.com redesign & brändiuudistus"
+      paragraph="Eemel.com (ent. Nettilasku.fi) on pienyrityksille suunnattu taloushallinnon kokonaisratkaisu. Nyt kansainvälisille markkinoille tähtäävällä yrityksellä oli tarvetta radikaalille uudistukselle."
+      primaryButtonText="Katso tulokset →"
+      primaryButtonHref="#tulokset-heading"
+      secondaryButtonText="Lue koko tarina"
+      secondaryButtonHref="#lahtoilanne-heading"
+      imageUrl="/images/eemel/eemel-referenssitarina.webp"
+      imageAlt="Eemel.com referenssitarinan hero-kuva"
+      imageStyles="width: 100%; height: auto; display: block; object-fit: cover; border-radius: 1rem;"
+      paddingBottom="6rem"
+  />
 
-      <section class="hero-section" style="padding-top: 4rem; padding-bottom: 4rem;">
-        <div class="container hero-grid">
-            <div class="hero-content">
-                <h1 class="hero__title">Eemel.com redesign & brändiuudistus</h1>
-                <p class="large-paragraph" style="margin-bottom: 2rem;">
-                    Eemel.com (ent. Nettilasku.fi) on pienyrityksille suunnattu taloushallinnon kokonaisratkaisu. Nyt kansainvälisille markkinoille tähtäävällä yrityksellä oli tarvetta radikaalille uudistukselle.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#tulokset-heading" class="btn btn--primary">Katso tulokset &rarr;</a>
-                    <a href="#lahotilanne-heading" class="btn btn--secondary">Lue koko tarina</a>
-                </div>
-            </div>
-            <div class="hero-image-placeholder">
-                 <img src="/images/eemel/eemel-referenssitarina.webp" alt="Eemel.com referenssitarinan hero-kuva" style="width: 100%; height: auto; display: block; object-fit: cover; border-radius: 1rem;"/>
-            </div>
-        </div>
+  <article class="case-study">
+
+    <header class="case-study-header">
+      {/* Removed the h1 from here as it's now in the hero section */}
+    </header>
+
+    <section class="case-study-section" aria-labelledby="lahotilanne-heading">
+      <h2 id="lahotilanne-heading">Lähtötilanne</h2>
+      <p>Eemel.com (ent. Nettilasku.fi) on pienyrityksille suunnattu taloushallinnon ohjelmisto, joka tarjoaa ratkaisun myynti- ja ostolaskujen käsittelyyn, palkanlaskentaan, tuntikirjauksiin sekä automaattiseen kirjanpitoon. Vuonna 2010 perustettu Nettilasku pyrkii nyt kansainvälisille markkinoille Eemel.com -brändin alla.</p>
+
+      <div class="sub-section" aria-labelledby="haasteet-heading">
+        <h3 id="haasteet-heading">Haasteet</h3>
+        <p>Kunnianhimoinen kansainvälistymistavoite törmäsi kuitenkin vanhentuneeseen käyttöliittymään ja nettisivuihin, jotka eivät enää vastanneet käyttäjien odotuksia:</p>
+        <ul class="bullet-list">
+          <li><strong>Heikko käyttökokemus</strong>: Käyttöliittymä oli vanhentunut ja monimutkainen</li>
+          <li><strong>Matala asiakasuskollisuus</strong>: Käyttäjät vaihtoivat kilpaileviin ratkaisuihin</li>
+          <li><strong>Alhainen konversioaste</strong>: Uudet asiakkaat eivät rekisteröityneet maksaviksi käyttäjiksi odotetulla tavalla</li>
+          <li><strong>Tehoton markkinointi</strong>: Mediabudjetin käyttö ei ollut enää kannattavaa</li>
+          <li><strong>Kilpailijoiden aggressiivinen hinnoittelu</strong>: Ilmaiskokeilut tekivät asiakashankinnasta haastavaa</li>
+        </ul>
+      </div>
     </section>
 
-      <header class="case-study-header">
-        {/* Removed the h1 from here as it's now in the hero section */}
-      </header>
+    <aside class="client-quote with-image">
+      <img src="/images/eemel/jarkko_kahkonen_eemel.webp" alt="Jarkko Kähkönen" class="quote-image" />
+      <blockquote>
+        <p>"Halusimme kansainvälistää liiketoimintamme Eemel.com-brändillä ja hakea kasvuun vauhtia UX-maturiteetin kasvun kautta. Mediabudjetin käyttö ei ollut enää kannattavaa ja tuotevetoisen kasvun yksiköt eivät toimineet. Käyttöliittymämme ei vastannut modernien käyttäjien odotuksia ja konversioasteet olivat heikkoja. Tarvitsimme kipeästi strategisen uudistuksen."</p>
+        <cite>– Jarkko Kähkönen, Yrittäjä, Eemel.com</cite>
+      </blockquote>
+    </aside>
 
-      <section class="case-study-section" aria-labelledby="lahotilanne-heading">
-        <h2 id="lahotilanne-heading">Lähtötilanne</h2>
-        <p>Eemel.com (ent. Nettilasku.fi) on pienyrityksille suunnattu taloushallinnon ohjelmisto, joka tarjoaa ratkaisun myynti- ja ostolaskujen käsittelyyn, palkanlaskentaan, tuntikirjauksiin sekä automaattiseen kirjanpitoon. Vuonna 2010 perustettu Nettilasku pyrkii nyt kansainvälisille markkinoille Eemel.com -brändin alla.</p>
+    <section class="case-study-section" aria-labelledby="ratkaisu-heading">
+      <h2 id="ratkaisu-heading">Ratkaisu</h2>
+      <p>Nettilaskun käyttöliittymän ja käyttäjäkokemuksen kehittämisessä toteutettiin perusteellinen käyttäjälähtöinen suunnitteluprosessi. Projekti eteni iteratiivisesti ja pohjautui sekä käyttäjätutkimukseen että liiketoiminnallisiin tavoitteisiin.</p>
 
-        <div class="sub-section" aria-labelledby="haasteet-heading">
-          <h3 id="haasteet-heading">Haasteet</h3>
-          <p>Kunnianhimoinen kansainvälistymistavoite törmäsi kuitenkin vanhentuneeseen käyttöliittymään ja nettisivuihin, jotka eivät enää vastanneet käyttäjien odotuksia:</p>
+      <figure class="case-study-figure">
+        <img src="/images/eemel/etusivu_laptop.webp" alt="Eemel.com uusi käyttöliittymä" class="case-study-image" />
+        <figcaption>Eemel.comin modernisoitu käyttöliittymä.</figcaption>
+      </figure>
+
+      <div class="sub-section" aria-labelledby="strategiset-paatokset-heading">
+          <h3 id="strategiset-paatokset-heading">Strategiset päätökset:</h3>
+          <ol class="numbered-list">
+          <li><strong>Navigaation selkeyttäminen</strong>: Käyttöliittymän rakenne uudistettiin, joka vähensi virheitä ja teki oppimiskäyrästä loivemman</li>
+          <li><strong>Laskutusprosessin yksinkertaistaminen</strong>: Laskun luominen ja lähettäminen nopeutui 30%</li>
+          <li><strong>Moderni visuaalinen ilme</strong>: Brändi päivitettiin vastaamaan nykyaikaisen SaaS-palvelun odotuksia</li>
+          <li><strong>Mobiiliresponsiivisuuden parantaminen</strong>: Käyttökokemus optimoitiin mobiililaitteille, joita käytti yli 60% käyttäjistä</li>
+          <li><strong>Uusi hinnoittelumalli</strong>: Pilottivaiheessa testattiin erilaisia hinnoittelumalleja, jotka kasvattivat ilmaiskäyttäjien siirtymistä maksullisiin versioihin</li>
+          </ol>
+      </div>
+
+      <div class="sub-section" aria-labelledby="kaytannon-toimenpiteet-heading">
+          <h3 id="kaytannon-toimenpiteet-heading">Käytännön toimenpiteet:</h3>
           <ul class="bullet-list">
-            <li><strong>Heikko käyttökokemus</strong>: Käyttöliittymä oli vanhentunut ja monimutkainen</li>
-            <li><strong>Matala asiakasuskollisuus</strong>: Käyttäjät vaihtoivat kilpaileviin ratkaisuihin</li>
-            <li><strong>Alhainen konversioaste</strong>: Uudet asiakkaat eivät rekisteröityneet maksaviksi käyttäjiksi odotetulla tavalla</li>
-            <li><strong>Tehoton markkinointi</strong>: Mediabudjetin käyttö ei ollut enää kannattavaa</li>
-            <li><strong>Kilpailijoiden aggressiivinen hinnoittelu</strong>: Ilmaiskokeilut tekivät asiakashankinnasta haastavaa</li>
+          <li>Käyttäjäpolkujen ja -tilanteiden huolellinen kartoitus</li>
+          <li>Kilpailija-analyysi markkinoilla erottautumiseksi</li>
+          <li>Syksyn 2024 visuaalinen uudistus (facelift)</li>
+          <li>Navigoinnin ja visuaalisen ohjauksen tehostaminen selkeillä elementeillä</li>
+          <li>Viestinnän parantaminen ja yksityisviestintämahdollisuuden lisääminen</li>
+          <li>Käyttöoikeuslogiikan uudistaminen useiden yritystilien hallintaan</li>
+          <li>Tuotepakettien hinnoittelun optimointi</li>
           </ul>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <aside class="client-quote with-image">
-        <img src="/images/eemel/jarkko_kahkonen_eemel.webp" alt="Jarkko Kähkönen" class="quote-image" />
-        <blockquote>
-          <p>"Halusimme kansainvälistää liiketoimintamme Eemel.com-brändillä ja hakea kasvuun vauhtia UX-maturiteetin kasvun kautta. Mediabudjetin käyttö ei ollut enää kannattavaa ja tuotevetoisen kasvun yksiköt eivät toimineet. Käyttöliittymämme ei vastannut modernien käyttäjien odotuksia ja konversioasteet olivat heikkoja. Tarvitsimme kipeästi strategisen uudistuksen."</p>
-          <cite>– Jarkko Kähkönen, Yrittäjä, Eemel.com</cite>
-        </blockquote>
-      </aside>
+    <aside class="client-quote with-image">
+      <img src="/images/eemel/jarkko_kahkonen_eemel.webp" alt="Jarkko Kähkönen" class="quote-image" />
+      <blockquote>
+        <p>"Goodside otti tehtäväkseen ratkaista todellisia ongelmia, ei vain kaunistella pintaa. He tekivät perusteellista käyttäjätutkimusta ja seurasivat dataa päätösten pohjana. Navigaation selkeyttäminen, laskutusprosessin yksinkertaistaminen ja moderni visuaalinen ilme ovat olleet keskeisiä parannuksia. Erityisesti arvostan sitä, että kaikki muutokset tähtäsivät konkreettisiin liiketoiminnallisiin tuloksiin."</p>
+        <cite>– Jarkko Kähkönen, Yrittäjä, Eemel.com</cite>
+      </blockquote>
+    </aside>
 
-      <section class="case-study-section" aria-labelledby="ratkaisu-heading">
-        <h2 id="ratkaisu-heading">Ratkaisu</h2>
-        <p>Nettilaskun käyttöliittymän ja käyttäjäkokemuksen kehittämisessä toteutettiin perusteellinen käyttäjälähtöinen suunnitteluprosessi. Projekti eteni iteratiivisesti ja pohjautui sekä käyttäjätutkimukseen että liiketoiminnallisiin tavoitteisiin.</p>
+    <section class="case-study-section" aria-labelledby="tulokset-heading">
+      <h2 id="tulokset-heading">Tulokset</h2>
+      <p>Modernisoidun käyttöliittymän ja käyttäjälähtöisen suunnittelun merkittävimmät tulokset:</p>
 
-        <figure class="case-study-figure">
-          <img src="/images/eemel/etusivu_laptop.webp" alt="Eemel.com uusi käyttöliittymä" class="case-study-image" />
-          <figcaption>Eemel.comin modernisoitu käyttöliittymä.</figcaption>
-        </figure>
+      <figure class="case-study-figure">
+        <img src="/images/eemel/etusivu_laptop_vanha.webp" alt="Eemel.com vanha käyttöliittymä vertailuna" class="case-study-image" />
+        <figcaption>Vertailun vuoksi: Eemel.comin aiempi käyttöliittymä.</figcaption>
+      </figure>
 
-        <div class="sub-section" aria-labelledby="strategiset-paatokset-heading">
-            <h3 id="strategiset-paatokset-heading">Strategiset päätökset:</h3>
-            <ol class="numbered-list">
-            <li><strong>Navigaation selkeyttäminen</strong>: Käyttöliittymän rakenne uudistettiin, joka vähensi virheitä ja teki oppimiskäyrästä loivemman</li>
-            <li><strong>Laskutusprosessin yksinkertaistaminen</strong>: Laskun luominen ja lähettäminen nopeutui 30%</li>
-            <li><strong>Moderni visuaalinen ilme</strong>: Brändi päivitettiin vastaamaan nykyaikaisen SaaS-palvelun odotuksia</li>
-            <li><strong>Mobiiliresponsiivisuuden parantaminen</strong>: Käyttökokemus optimoitiin mobiililaitteille, joita käytti yli 60% käyttäjistä</li>
-            <li><strong>Uusi hinnoittelumalli</strong>: Pilottivaiheessa testattiin erilaisia hinnoittelumalleja, jotka kasvattivat ilmaiskäyttäjien siirtymistä maksullisiin versioihin</li>
-            </ol>
-        </div>
+      <div class="sub-section" aria-labelledby="liiketoiminnalliset-hyödyt-heading">
+          <h3 id="liiketoiminnalliset-hyödyt-heading">Liiketoiminnalliset hyödyt:</h3>
+          <ul class="bullet-list results-list">
+          <li><strong>Asiakasuskollisuus kasvoi 25%</strong>: Helppokäyttöisyys ja parempi käyttökokemus vähensivät asiakasvaihtuvuutta</li>
+          <li><strong>Ilmaisesta maksulliseen -konversio kaksinkertaistui</strong>: Käyttäjät päivittivät maksulliseen versioon kaksi kertaa aiempaa useammin</li>
+          <li><strong>Mediabudjetin ROI kasvoi 622%</strong>: Markkinointibudjetin tuotto nousi 0.80€/€ → 5.78€/€</li>
+          <li><strong>Viikoittainen toistuva tuotto (ARR) nousi 55%</strong>: 560€/viikko → 870€/viikko</li>
+          <li><strong>Käyttäjän keskimääräinen tuotto kasvoi 46%</strong>: 63€ → 92€</li>
+          </ul>
+      </div>
 
-        <div class="sub-section" aria-labelledby="kaytannon-toimenpiteet-heading">
-            <h3 id="kaytannon-toimenpiteet-heading">Käytännön toimenpiteet:</h3>
-            <ul class="bullet-list">
-            <li>Käyttäjäpolkujen ja -tilanteiden huolellinen kartoitus</li>
-            <li>Kilpailija-analyysi markkinoilla erottautumiseksi</li>
-            <li>Syksyn 2024 visuaalinen uudistus (facelift)</li>
-            <li>Navigoinnin ja visuaalisen ohjauksen tehostaminen selkeillä elementeillä</li>
-            <li>Viestinnän parantaminen ja yksityisviestintämahdollisuuden lisääminen</li>
-            <li>Käyttöoikeuslogiikan uudistaminen useiden yritystilien hallintaan</li>
-            <li>Tuotepakettien hinnoittelun optimointi</li>
-            </ul>
-        </div>
-      </section>
+      <div class="sub-section" aria-labelledby="projektin-aikana-toteutettiin-heading">
+          <h3 id="projektin-aikana-toteutettiin-heading">Projektin aikana toteutettiin:</h3>
+          <ul class="bullet-list">
+          <li>Yli 20 uudistettua näkymää (ml. myynti- ja ostolaskujen luonti)</li>
+          <li>4 täysin uutta näkymää (etusivu, tilaukset, palveluntuottajien kilpailutus, yksityisviestintä)</li>
+          <li>Uusi ostopolku ja parannetut käyttöönottoprosessit</li>
+          <li>Eemel.com-nettisivujen visuaalisen ilmeen ja rakenteen päivitys</li>
+          </ul>
+      </div>
+    </section>
 
-      <aside class="client-quote with-image">
-        <img src="/images/eemel/jarkko_kahkonen_eemel.webp" alt="Jarkko Kähkönen" class="quote-image" />
-        <blockquote>
-          <p>"Goodside otti tehtäväkseen ratkaista todellisia ongelmia, ei vain kaunistella pintaa. He tekivät perusteellista käyttäjätutkimusta ja seurasivat dataa päätösten pohjana. Navigaation selkeyttäminen, laskutusprosessin yksinkertaistaminen ja moderni visuaalinen ilme ovat olleet keskeisiä parannuksia. Erityisesti arvostan sitä, että kaikki muutokset tähtäsivät konkreettisiin liiketoiminnallisiin tuloksiin."</p>
-          <cite>– Jarkko Kähkönen, Yrittäjä, Eemel.com</cite>
-        </blockquote>
-      </aside>
+    <aside class="client-quote with-image">
+      <img src="/images/eemel/jarkko_kahkonen_eemel.webp" alt="Jarkko Kähkönen" class="quote-image" />
+      <blockquote>
+        <p>"Työskentely Goodsiden tiimin kanssa oli käänteentekevää. Projektin toteuttaminen tuotti välittömiä tuloksia: asiakasuskollisuus kasvoi 25%, konversiot kaksinkertaistuivat ja mediabudjetin tuotto nousi huimasti. Ennustamme uudistuksen tuottavan noin 180 000 euroa liikevaihtoa vuonna 2025, ilman lisäyksiä mediabudjettiin. Tämä tarkoittaa noin 50% kasvua liikevaihtoomme. Nyt yksikkötaloutta on kunnossa, joten Eemel.com on valmiina skaalautumaan."</p>
+        <cite>– Jarkko Kähkönen, Yrittäjä, Eemel.com</cite>
+      </blockquote>
+    </aside>
 
-      <section class="case-study-section" aria-labelledby="tulokset-heading">
-        <h2 id="tulokset-heading">Tulokset</h2>
-        <p>Modernisoidun käyttöliittymän ja käyttäjälähtöisen suunnittelun merkittävimmät tulokset:</p>
+    <section class="case-study-section" aria-labelledby="tarkeimmat-opit-heading">
+      <h2 id="tarkeimmat-opit-heading">Tärkeimmät opit</h2>
+      <p>UX-uudistusprojekti tarjosi arvokkaita oppeja kaikille yrityksille, jotka haluavat parantaa liiketoimintaansa designin avulla:</p>
 
-        <figure class="case-study-figure">
-          <img src="/images/eemel/etusivu_laptop_vanha.webp" alt="Eemel.com vanha käyttöliittymä vertailuna" class="case-study-image" />
-          <figcaption>Vertailun vuoksi: Eemel.comin aiempi käyttöliittymä.</figcaption>
-        </figure>
+      <ol class="numbered-list">
+        <li><strong>UX-muutokset tulee perustaa dataan</strong>: Käyttäjätestaus ja analytiikka ohjasivat päätöksiä, mikä varmisti muutosten tehokkuuden</li>
+        <li><strong>Iteratiivinen työskentely tehostaa prosessia</strong>: Tämä mahdollisti nopeat reaktiot asiakaspalautteeseen ja markkinatilanteisiin</li>
+        <li><strong>Brändin selkeys ja käyttökokemuksen sujuvuus ovat kriittisiä asiakaspidolle</strong>: Uusi ilme tuki yrityksen kasvua ja loi erottavan tekijän</li>
+        <li><strong>Mobiilikäyttö on ensisijaista</strong>: Käyttäjät toimivat liikkeellä ollessaan, joten responsiivisuuden optimointi oli elintärkeää liiketoiminnalle</li>
+        <li><strong>Pienet iteratiiviset parannukset kumuloituvat merkittäväksi liiketoiminta-arvoksi</strong>: Uudistusprosessi ei ole kertatapahtuma, vaan jatkuvien parannusten sarja</li>
+      </ol>
+    </section>
 
-        <div class="sub-section" aria-labelledby="liiketoiminnalliset-hyödyt-heading">
-            <h3 id="liiketoiminnalliset-hyödyt-heading">Liiketoiminnalliset hyödyt:</h3>
-            <ul class="bullet-list results-list">
-            <li><strong>Asiakasuskollisuus kasvoi 25%</strong>: Helppokäyttöisyys ja parempi käyttökokemus vähensivät asiakasvaihtuvuutta</li>
-            <li><strong>Ilmaisesta maksulliseen -konversio kaksinkertaistui</strong>: Käyttäjät päivittivät maksulliseen versioon kaksi kertaa aiempaa useammin</li>
-            <li><strong>Mediabudjetin ROI kasvoi 622%</strong>: Markkinointibudjetin tuotto nousi 0.80€/€ → 5.78€/€</li>
-            <li><strong>Viikoittainen toistuva tuotto (ARR) nousi 55%</strong>: 560€/viikko → 870€/viikko</li>
-            <li><strong>Käyttäjän keskimääräinen tuotto kasvoi 46%</strong>: 63€ → 92€</li>
-            </ul>
-        </div>
+    <aside class="client-quote with-image">
+      <img src="/images/eemel/jarkko_kahkonen_eemel.webp" alt="Jarkko Kähkönen" class="quote-image" />
+      <blockquote>
+        <p>"Goodsiden työntekijät hoitivat tehtävän loistavasti, ja UX-suunnittelutyön lopputulos oli erinomainen. Kaikki tehtiin aikataulussa sovitusti sekä rehellisellä ja suoraviivaisella tavalla. Erityisesti arvostimme heidän ymmärrystään siitä, että designin on palveltava liiketoimintaa. Pienet jatkuvat parannukset ovat tuoneet merkittävää arvoa – tämä ei ollut vain kertaprojekti vaan strateginen kumppanuus, joka jatkuu edelleen."</p>
+        <cite>– Jarkko Kähkönen, Yrittäjä, Eemel.com</cite>
+      </blockquote>
+    </aside>
 
-        <div class="sub-section" aria-labelledby="projektin-aikana-toteutettiin-heading">
-            <h3 id="projektin-aikana-toteutettiin-heading">Projektin aikana toteutettiin:</h3>
-            <ul class="bullet-list">
-            <li>Yli 20 uudistettua näkymää (ml. myynti- ja ostolaskujen luonti)</li>
-            <li>4 täysin uutta näkymää (etusivu, tilaukset, palveluntuottajien kilpailutus, yksityisviestintä)</li>
-            <li>Uusi ostopolku ja parannetut käyttöönottoprosessit</li>
-            <li>Eemel.com-nettisivujen visuaalisen ilmeen ja rakenteen päivitys</li>
-            </ul>
-        </div>
-      </section>
+    <section class="case-study-section" aria-labelledby="tulevaisuus-heading">
+      <h2 id="tulevaisuus-heading">Tulevaisuuden suunnitelmat</h2>
+      <p>Eemel.com jatkaa palvelunsa kehittämistä design-keskeisellä lähestymistavalla. Tulevat kehitysalueet sisältävät UX-analytiikan syventämisen ja AB-testauksen käyttöönoton palvelun käyttäjäkokemuksen edelleen hiomiseksi.</p>
+      <p>Tämä case study osoittaa, että investoimalla käyttäjäkeskeiseen suunnitteluun on mahdollista parantaa asiakaskokemusta, kasvattaa liikevaihtoa ja vähentää asiakaspoistumaa – tehden UX/UI-kehityksestä strategisen sijoituksen, joka maksaa itsensä takaisin moninkertaisesti.</p>
+    </section>
 
-      <aside class="client-quote with-image">
-        <img src="/images/eemel/jarkko_kahkonen_eemel.webp" alt="Jarkko Kähkönen" class="quote-image" />
-        <blockquote>
-          <p>"Työskentely Goodsiden tiimin kanssa oli käänteentekevää. Projektin toteuttaminen tuotti välittömiä tuloksia: asiakasuskollisuus kasvoi 25%, konversiot kaksinkertaistuivat ja mediabudjetin tuotto nousi huimasti. Ennustamme uudistuksen tuottavan noin 180 000 euroa liikevaihtoa vuonna 2025, ilman lisäyksiä mediabudjettiin. Tämä tarkoittaa noin 50% kasvua liikevaihtoomme. Nyt yksikkötaloutta on kunnossa, joten Eemel.com on valmiina skaalautumaan."</p>
-          <cite>– Jarkko Kähkönen, Yrittäjä, Eemel.com</cite>
-        </blockquote>
-      </aside>
-
-      <section class="case-study-section" aria-labelledby="tarkeimmat-opit-heading">
-        <h2 id="tarkeimmat-opit-heading">Tärkeimmät opit</h2>
-        <p>UX-uudistusprojekti tarjosi arvokkaita oppeja kaikille yrityksille, jotka haluavat parantaa liiketoimintaansa designin avulla:</p>
-
-        <ol class="numbered-list">
-          <li><strong>UX-muutokset tulee perustaa dataan</strong>: Käyttäjätestaus ja analytiikka ohjasivat päätöksiä, mikä varmisti muutosten tehokkuuden</li>
-          <li><strong>Iteratiivinen työskentely tehostaa prosessia</strong>: Tämä mahdollisti nopeat reaktiot asiakaspalautteeseen ja markkinatilanteisiin</li>
-          <li><strong>Brändin selkeys ja käyttökokemuksen sujuvuus ovat kriittisiä asiakaspidolle</strong>: Uusi ilme tuki yrityksen kasvua ja loi erottavan tekijän</li>
-          <li><strong>Mobiilikäyttö on ensisijaista</strong>: Käyttäjät toimivat liikkeellä ollessaan, joten responsiivisuuden optimointi oli elintärkeää liiketoiminnalle</li>
-          <li><strong>Pienet iteratiiviset parannukset kumuloituvat merkittäväksi liiketoiminta-arvoksi</strong>: Uudistusprosessi ei ole kertatapahtuma, vaan jatkuvien parannusten sarja</li>
-        </ol>
-      </section>
-
-      <aside class="client-quote with-image">
-        <img src="/images/eemel/jarkko_kahkonen_eemel.webp" alt="Jarkko Kähkönen" class="quote-image" />
-        <blockquote>
-          <p>"Goodsiden työntekijät hoitivat tehtävän loistavasti, ja UX-suunnittelutyön lopputulos oli erinomainen. Kaikki tehtiin aikataulussa sovitusti sekä rehellisellä ja suoraviivaisella tavalla. Erityisesti arvostimme heidän ymmärrystään siitä, että designin on palveltava liiketoimintaa. Pienet jatkuvat parannukset ovat tuoneet merkittävää arvoa – tämä ei ollut vain kertaprojekti vaan strateginen kumppanuus, joka jatkuu edelleen."</p>
-          <cite>– Jarkko Kähkönen, Yrittäjä, Eemel.com</cite>
-        </blockquote>
-      </aside>
-
-      <section class="case-study-section" aria-labelledby="tulevaisuus-heading">
-        <h2 id="tulevaisuus-heading">Tulevaisuuden suunnitelmat</h2>
-        <p>Eemel.com jatkaa palvelunsa kehittämistä design-keskeisellä lähestymistavalla. Tulevat kehitysalueet sisältävät UX-analytiikan syventämisen ja AB-testauksen käyttöönoton palvelun käyttäjäkokemuksen edelleen hiomiseksi.</p>
-        <p>Tämä case study osoittaa, että investoimalla käyttäjäkeskeiseen suunnitteluun on mahdollista parantaa asiakaskokemusta, kasvattaa liikevaihtoa ja vähentää asiakaspoistumaa – tehden UX/UI-kehityksestä strategisen sijoituksen, joka maksaa itsensä takaisin moninkertaisesti.</p>
-      </section>
-
-    </article>
-  </div>
+  </article>
 </BaseLayout>
 
 <style>
@@ -328,77 +323,14 @@ const description = "Eemel.com uudisti käyttöliittymänsä ja käyttökokemuks
      }
   }
 
-  /* --- UUDET HERO-TYYLIT --- */
-  .hero-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Kaksi saraketta leveillä näytöillä */
-    gap: 3rem;
-    align-items: center;
-  }
-
-  /* Varmistetaan, että otsikko on hero-contentin sisällä */
-  .hero-content .hero__title { /* Käytetään spesifisempää valitsinta */
-      margin-bottom: 1rem;
-      font-weight: 700;
-       /* Lisätään vasen tasaus, jos sitä tarvitaan globaalien tyylien sijaan */
-       text-align: left;
-  }
-
-  .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-bottom: 2rem;
-      justify-content: flex-start; /* Painikkeet vasemmalle */
-  }
-
-  /* Varmistetaan, että btn-tyylit toimivat */
-  .hero-buttons .btn {
-    /* Ei tarvita ylimääräisiä margineja, gap hoitaa välit */
-  }
-
-  /* Tyyli toiselle painikkeelle (ei --secondary) */
-  .hero-buttons .btn:not(.btn--primary) {
-      background: none;
-      border: 1px solid var(--neutral-light);
-      color: var(--neutral-darker);
-  }
-
-  .hero-buttons .btn:not(.btn--primary):hover {
-       background: var(--neutral-lightest);
-  }
-
-  /* Responsiveness for hero */
-  @media (max-width: 992px) { /* Leveämpi breakpoint mobiiliasettelulle */
-      .hero-grid {
-          grid-template-columns: 1fr; /* Yksi sarake */
-          text-align: center; /* Keskitä sisältö mobiilissa */
-      }
-      .hero-content {
-          order: 2; /* Teksti kuvan jälkeen */
-      }
-      .hero-image-placeholder {
-          order: 1; /* Kuva ensin */
-          margin-bottom: 3rem;
-          min-height: 250px; /* Varmistetaan, että kuvalla on tilaa */
-      }
-      .hero-buttons {
-          justify-content: center; /* Keskitä painikkeet mobiilissa */
-      }
-       /* Varmistetaan, että hero__title keskittyy myös */
-       .hero-content .hero__title {
-           text-align: center;
-       }
-  }
-
-  /* Pienempi mobiili, ei välttämättä tarvita erillistä, koska 992px hoitaa jo */
-  /*
-  @media (max-width: 768px) {
-      .hero-buttons {
-          justify-content: center;
-      }
-  }
-  */
-  /* --- LOPPU HERO-TYYLIT --- */
+  /* --- REMOVED HERO-TYYLIT --- */
+  /* .hero-grid { ... } */
+  /* .hero-content .hero__title { ... } */
+  /* .hero-buttons { ... } */
+  /* .hero-buttons .btn { ... } */
+  /* .hero-buttons .btn:not(.btn--primary) { ... } */
+  /* .hero-buttons .btn:not(.btn--primary):hover { ... } */
+  /* @media (max-width: 992px) { ... } */
+  /* --- LOPPU POISTETUT HERO-TYYLIT --- */
 
 </style> 
