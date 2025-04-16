@@ -2,8 +2,23 @@ import sharp from 'sharp';
 import fs from 'fs';
 import path from 'path';
 
-const directoryPath = path.join('public', 'images', 'value-props');
+// Get directory path from command line arguments
+const targetDirectory = process.argv[2];
+
+if (!targetDirectory) {
+    console.error('Please provide a directory path as an argument.');
+    process.exit(1); // Exit with an error code
+}
+
+// Use the provided directory path
+const directoryPath = path.resolve(targetDirectory);
 const outputDirectory = directoryPath; // Output to the same directory
+
+// Ensure the target directory exists
+if (!fs.existsSync(directoryPath)){
+    console.error(`Error: Directory not found - ${directoryPath}`);
+    process.exit(1);
+}
 
 // Ensure output directory exists (it should, but good practice)
 if (!fs.existsSync(outputDirectory)){
