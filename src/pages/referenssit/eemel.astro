@@ -4,6 +4,7 @@ import '../../styles/styles.css';
 import HeroSection from '../../components/HeroSection.astro';
 import CaseStudySection from '../../components/CaseStudySection.astro';
 import ResultsSection from '../../components/ResultsSection.astro';
+import ComparisonSliderSection from '../../components/ComparisonSliderSection.astro';
 
 const pageTitle = "Eemel.comin redesign mahdollisti kasvun globaaleilla markkinoilla";
 const description = "Eemel.com uudisti käyttöliittymänsä ja käyttökokemuksena, jonka vuoksi mediabudjetin ROI kasvoi 622%.";
@@ -72,7 +73,7 @@ const resultsData = {
     <CaseStudySection id="lahotilanne-heading" title="Eemel.com lähtötilanne">
       <p>Eemel.com, aiemmin Nettilasku.fi, on vuonna 2010 perustettu taloushallinnon ohjelmisto pienyrityksiä varten. Palvelu tarjoaa työkalut laskutukseen, palkanlaskentaan, tuntikirjauksiin ja automaattiseen kirjanpitoon. Yritys tähtäsi kansainvälisille markkinoille uudistetulla Eemel.com-brändillä.</p>
       
-      <p>Kunnianhimoinen kansainvälistymistavoite kohtasi kuitenkin vanhentuneesta käyttöliittymästä johtuvia ongelmia. Monimutkainen käyttökokemus heikensi asiakasuskollisuutta ja madalsi konversioasteita. Käyttäjät siirtyivät usein kilpaileviin ratkaisuihin.</p>
+      <p>Vanhentunut käyttöliittymä oli muodostunut kasvun esteeksi. Heikko käyttökokemus vähensi asiakasuskollisuutta ja madalsi konversioasteita. Käyttäjät siirtyivät usein kilpaileviin ratkaisuihin.</p>
       
       <div class="quote-in-section">
         <img src="/images/eemel/jarkko_kahkonen_eemel.webp" alt="Jarkko Kähkönen" class="quote-image" />
@@ -91,6 +92,10 @@ const resultsData = {
       operationalEfficiencyTitle="Projektin aikana toteutettiin"
       operationalEfficiencyItems={resultsData.operationalEfficiencyItems}
     />
+
+    <div class="full-width-section">
+      <ComparisonSliderSection />
+    </div>
 
     <section class="case-study-section" aria-labelledby="ratkaisu-heading">
       <h2 id="ratkaisu-heading">Ratkaisu</h2>
@@ -287,12 +292,23 @@ const resultsData = {
   @media (max-width: 768px) {
     .client-quote.with-image {
       grid-template-columns: 1fr; /* Stack image and text on smaller screens */
-      text-align: center;
+      text-align: left;
     }
 
     .quote-image {
-      margin: 0 auto var(--spacing-md); /* Center image when stacked */
+      margin: 0 0 var(--spacing-md); /* Left-align image when stacked */
     }
+  }
+
+  /* Make comparison slider take full width */
+  .full-width-section {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-bottom: var(--spacing-xxl);
   }
 
   /* --- REMOVED HERO-TYYLIT --- */

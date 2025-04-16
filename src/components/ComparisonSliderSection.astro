@@ -1,0 +1,188 @@
+---
+// Poistetaan import, lisäämme sen skriptin kautta
+---
+
+<section class="bg-white py-16 md:py-24 overflow-hidden">
+    <div class="container mx-auto px-4">
+        <div id="comparison-container" class="max-w-4xl mx-auto rounded-lg shadow-lg overflow-hidden border border-gray-200 relative">
+            <!-- Tämä div korvataan JavaScriptissä img-comparison-slider -elementillä -->
+            <img id="image-old" src="/images/eemel/etusivu_laptop_vanha.webp" alt="Vanha käyttöliittymä" style="display: none;" />
+            <img id="image-new" src="/images/eemel/etusivu_laptop.webp" alt="Uusi käyttöliittymä" style="display: none;" />
+            <div class="drag-indicator">Liikuta</div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Varmistamme, että dokumentti on latautunut
+    document.addEventListener('DOMContentLoaded', () => {
+        // Lataa img-comparison-slider -kirjasto dynaamisesti
+        const script = document.createElement('script');
+        script.src = 'https://unpkg.com/img-comparison-slider@8/dist/index.js';
+        script.type = 'module';
+        document.head.appendChild(script);
+        
+        script.onload = () => {
+            // Luodaan slider-elementti
+            const container = document.getElementById('comparison-container');
+            const imageOld = document.getElementById('image-old');
+            const imageNew = document.getElementById('image-new');
+            const dragIndicator = document.querySelector('.drag-indicator');
+
+            // Add null checks
+            if (!container || !imageOld || !imageNew) {
+                console.error("Comparison slider elements not found!");
+                return;
+            }
+            
+            // Luodaan slider
+            const slider = document.createElement('img-comparison-slider');
+            slider.classList.add('w-full', 'h-auto');
+            
+            // Ensure the slider has a maximum width and is centered
+            slider.style.maxWidth = '100%';
+            slider.style.margin = '0 auto';
+            
+            // Asetetaan tyylimäärittelyt
+            slider.style.setProperty('--divider-width', '2px');
+            slider.style.setProperty('--divider-color', '#f97316');
+            slider.style.setProperty('--default-handle-color', '#ff0036');
+            slider.style.setProperty('--default-handle-opacity', '1');
+            slider.style.setProperty('--default-handle-width', '40px');
+            slider.style.setProperty('--default-handle-height', '40px');
+            // Hide the slider outline
+            slider.style.setProperty('--default-overlap-outline-color', 'transparent');
+            slider.style.setProperty('--default-overlap-outline-width', '0px');
+            
+            // Luodaan kuvat slideriin ja lisätään tyyppimääritykset
+            const imgFirst = imageOld.cloneNode(true) as HTMLElement;
+            const imgSecond = imageNew.cloneNode(true) as HTMLElement;
+            
+            imgFirst.style.display = 'block';
+            imgSecond.style.display = 'block';
+            
+            // Ensure images don't overflow
+            imgFirst.style.maxWidth = '100%';
+            imgSecond.style.maxWidth = '100%';
+            
+            imgFirst.setAttribute('slot', 'second');
+            imgSecond.setAttribute('slot', 'first');
+            
+            // Lisätään kuvat slideriin
+            slider.appendChild(imgFirst);
+            slider.appendChild(imgSecond);
+            
+            // Tyhjennetään container ja lisätään slider
+            container.innerHTML = '';
+            container.appendChild(slider);
+            
+            // Add the drag indicator back after rendering the slider
+            if (dragIndicator) {
+                const newDragIndicator = dragIndicator.cloneNode(true);
+                container.appendChild(newDragIndicator);
+                
+                // Hide the indicator when user interacts with the slider
+                slider.addEventListener('mouseover', () => {
+                    // Removed automatic hiding after timeout
+                });
+                
+                // Instant hide when actually dragging
+                slider.addEventListener('mousedown', () => {
+                    const indicator = container.querySelector('.drag-indicator');
+                    if (indicator) {
+                        indicator.classList.add('hide');
+                    }
+                });
+                
+                slider.addEventListener('touchstart', () => {
+                    // Removed automatic hiding after timeout
+                });
+                
+                // Instant hide when moving finger
+                slider.addEventListener('touchmove', () => {
+                    const indicator = container.querySelector('.drag-indicator');
+                    if (indicator) {
+                        indicator.classList.add('hide');
+                    }
+                });
+            }
+        };
+    });
+</script>
+
+<style>
+    /* Ensure all content stays within viewport */
+    :global(body), :global(html) {
+        overflow-x: hidden;
+        width: 100%;
+        max-width: 100vw;
+    }
+    
+    /* Add container styles back */
+    .container {
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    /* Ensure comparison container doesn't overflow */
+    #comparison-container {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        position: relative; /* For absolute positioning of drag indicator */
+    }
+
+    @media (min-width: 1024px) {
+        .container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        
+        #comparison-container {
+            max-width: 100%;
+        }
+    }
+
+    /* Drag indicator */
+    .drag-indicator {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #ff0036;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 14px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        z-index: 100;
+        pointer-events: none;
+        animation: pulse 2s infinite;
+        opacity: 1;
+        transition: opacity 0.5s ease-out;
+    }
+    
+    .drag-indicator.hide {
+        opacity: 0;
+    }
+    
+    @keyframes pulse {
+        0% {
+            transform: translate(-50%, -50%) scale(1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        50% {
+            transform: translate(-50%, -50%) scale(1.1);
+            box-shadow: 0 2px 15px rgba(249, 115, 22, 0.4);
+        }
+        100% {
+            transform: translate(-50%, -50%) scale(1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+    }
+</style> 
