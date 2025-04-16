@@ -7,6 +7,8 @@ import ResultsSection from '../../components/ResultsSection.astro';
 import ComparisonSliderSection from '../../components/ComparisonSliderSection.astro';
 import TestimonialSection from '../../components/TestimonialSection.astro';
 import CTASection from '../../components/CTASection.astro';
+import FullStorySection from '../../components/FullStorySection.astro';
+import SuccessStoriesSection from '../../components/SuccessStoriesSection.astro';
 
 const pageTitle = "Eemel.comin redesign mahdollisti kasvun globaaleilla markkinoilla";
 const description = "Eemel.com uudisti käyttöliittymänsä ja käyttökokemuksena, jonka vuoksi mediabudjetin ROI kasvoi 622%.";
@@ -48,6 +50,51 @@ const resultsData = {
     "Laskun luominen ja lähettäminen nopeutui 30%"
   ]
 };
+
+// Full story data for the FullStorySection component
+const fullStoryData = {
+  title: "Lue eemel.comin koko tarina",
+  introduction: "Eemel.com, aiemmin Nettilasku.fi, tarvitsi kokonaisvaltaisen uudistuksen pystyäkseen kilpailemaan globaaleilla markkinoilla. Tämä on tarina siitä, kuinka käyttäjälähtöinen suunnittelu mullisti SaaS-tuotteen ja johti merkittäviin liiketoiminnan tuloksiin.",
+  sections: [
+    {
+      title: "Lähtötilanne ja haasteet",
+      content: [
+        "Eemel.com (aiemmin Nettilasku.fi) on vuonna 2010 perustettu innovatiivinen taloushallinnon ratkaisu, joka tarjoaa kokonaisvaltaisia työkaluja pienyrityksille. Yritys oli saavuttanut vakaan aseman kotimaisilla markkinoilla, mutta kansainvälisen laajentumisen tavoitteet edellyttivät merkittäviä muutoksia.",
+        "Merkittävin haaste oli vanhentunut käyttöliittymä, joka ei vastannut nykyaikaisten käyttäjien odotuksia. Tämä näkyi suoraan heikentyneenä asiakasuskollisuutena ja matalina konversioasteina. Mediabudjetin käyttö ei ollut enää kannattavaa ja tuotevetoisen kasvun yksiköt eivät toimineet optimaalisesti."
+      ]
+    },
+    {
+      title: "Strateginen lähestymistapa",
+      content: [
+        "Aloitimme projektin kattavalla käyttäjätutkimuksella, joka paljasti kriittiset kipupisteet sovelluksen käytössä. Haastattelimme sekä nykyisiä asiakkaita että potentiaalisia käyttäjiä ymmärtääksemme heidän tarpeensa ja odotuksensa.",
+        "Tutkimuksen pohjalta loimme käyttäjälähtöisen suunnitelman, joka keskittyi kolmeen pääalueeseen: käyttöliittymän modernisointi, käyttökokemuksen parantaminen ja konversiopolkujen optimointi."
+      ]
+    },
+    {
+      title: "Suunnitteluprosessi ja toteutus",
+      content: [
+        "Suunnittelutiimimme kehitti uuden visuaalisen ilmeen, joka vastasi kansainvälisten markkinoiden odotuksia ja heijasti Eemelin ammattimaisuutta ja luotettavuutta. Prototyyppivaiheessa testasimme ratkaisuja oikeilla käyttäjillä varmistaaksemme, että ne todella ratkaisivat tunnistettuja ongelmia.",
+        "Käyttöliittymän uudistuksessa keskityimme virtaviivaistamaan sovelluksen navigointia ja tekemään eri toiminnoista intuitiivisempia. Erityistä huomiota kiinnitimme laskutusprosessiin, joka oli sovelluksen käytetyin ominaisuus.",
+        "Toteutusvaiheessa työskentelimme tiiviissä yhteistyössä Eemelin kehitystiimin kanssa varmistaaksemme, että suunnitteluratkaisut implementoitiin täsmällisesti ja teknisesti toimivasti."
+      ]
+    },
+    {
+      title: "Tulokset ja vaikutukset",
+      content: [
+        "Uudistuksen tulokset ylittivät odotukset. Viikoittainen toistuva tuotto (ARR) nousi 55%, mediabudjetin ROI kasvoi 622% ja keskimääräinen asiakkuuden MRR kasvoi 46%.",
+        "Myös asiakastyytyväisyys parani merkittävästi, mikä näkyi 25% kasvuna asiakasuskollisuudessa. Free-to-paid -konversio tuplaantui, mikä osoitti uuden käyttöliittymän tehokkuuden asiakkaiden sitouttamisessa.",
+        "Ennusteiden mukaan uudistus tuottaa Eemelille noin 180 000 euroa liikevaihtoa vuonna 2025, mikä on merkittävä kasvu aiempaan verrattuna."
+      ]
+    },
+    {
+      title: "Johtopäätökset ja opitut asiat",
+      content: [
+        "Eemelin tapaus osoittaa, kuinka kriittinen käyttäjäkokemus on SaaS-tuotteiden menestykselle. Panostaminen käyttäjälähtöiseen suunnitteluun ei ole pelkästään visuaalinen parannus, vaan strateginen investointi, joka voi merkittävästi vaikuttaa liiketoiminnan avainlukuihin.",
+        "Projekti vahvisti myös, että menestyksekkään uudistuksen taustalla on aina perusteellinen käyttäjätutkimus ja jatkuva testaus todellisilla käyttäjillä."
+      ]
+    }
+  ]
+};
 ---
 
 <BaseLayout title={pageTitle} description={description}>
@@ -58,7 +105,7 @@ const resultsData = {
       primaryButtonText="Katso tulokset →"
       linkToResults={true}
       secondaryButtonText="Lue koko tarina"
-      secondaryButtonHref="#lahotilanne-heading"
+      secondaryButtonHref="#full-story-section"
       imageUrl="/images/eemel/eemel-referenssitarina.webp"
       imageAlt="Eemel.com referenssitarinan hero-kuva"
       imageStyles="width: 100%; height: auto; display: block; object-fit: cover; border-radius: 1rem;"
@@ -82,7 +129,7 @@ const resultsData = {
         <p class="quote-text">"Mediabudjetin käyttö ei ollut enää kannattavaa ja tuotevetoisen kasvun yksiköt eivät toimineet. Käyttöliittymämme ei vastannut modernien käyttäjien odotuksia ja tarvitsimme kipeästi strategisen uudistuksen." - Jarkko Kähkönen, Yrittäjä, Eemel.com</p>
       </div>
       
-      <p>Lisähaasteen muodostivat kilpailijoiden aggressiivinen hinnoittelu ja ilmaiskokeilut. Oli selvää, että nykyinen käyttökokemus ei tukenut kasvutavoitteita, vaan muodosti merkittävän esteen kansainvälistymiselle.</p>
+      <p>Lisähaasteen muodostivat kilpailijoiden aggressiivinen hinnoittelu ja ilmaiskokeilut. Oli selvää, että nykyinen käyttökokemus ei tukenut kasvutavoitteita, joten oli tehtävä jotain.</p>
     </CaseStudySection>
 
     <ResultsSection 
@@ -99,17 +146,27 @@ const resultsData = {
       <ComparisonSliderSection />
     </div>
 
-    <TestimonialSection 
-      customerName="Jarkko Kähkönen"
-      customerTitle="Founder & CEO"
-      customerCompany="Eemel.com"
-      testimonialText="The employees of The Goodside handled the task brilliantly, and the outcome of the UX design work was excellent. Everything was done on schedule, as agreed, and in an honest and straightforward manner."
-      customerImage="/images/eemel/jarkko_kahkonen_eemel.webp"
-    />
-
+    <div id="full-story-section">
+      <FullStorySection 
+        title={fullStoryData.title}
+        introduction={fullStoryData.introduction}
+        sections={fullStoryData.sections}
+      />
+    </div>
+    
     <CTASection />
 
   </article>
+
+  <TestimonialSection 
+    customerName="Jarkko Kähkönen"
+    customerTitle="Founder & CEO"
+    customerCompany="Eemel.com"
+    testimonialText="The employees of The Goodside handled the task brilliantly, and the outcome of the UX design work was excellent. Everything was done on schedule, as agreed, and in an honest and straightforward manner."
+    customerImage="/images/eemel/jarkko_kahkonen_eemel.webp"
+  />
+
+  <SuccessStoriesSection />
 
 </BaseLayout>
 

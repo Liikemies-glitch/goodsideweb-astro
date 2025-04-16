@@ -1,0 +1,159 @@
+---
+interface StorySection {
+  title: string;
+  content: string[];
+}
+
+export interface Props {
+  title: string;
+  introduction: string;
+  sections: StorySection[];
+}
+
+const { title, introduction, sections } = Astro.props;
+---
+
+<section class="full-story-section">
+  <div class="container">
+    <h2 class="section-title">{title}</h2>
+    
+    <div class="story-content">
+      <p class="introduction">{introduction}</p>
+      
+      <div class="story-toggle-container">
+        <button id="story-toggle" class="story-toggle">
+          <span class="toggle-text">Lue koko tarina</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="toggle-icon">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+      </div>
+      
+      <div id="full-story" class="full-story hidden">
+        {sections.map((section) => (
+          <div class="story-section">
+            <h3 class="section-title">{section.title}</h3>
+            {section.content.map((paragraph) => (
+              <p>{paragraph}</p>
+            ))}
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const storyToggle = document.getElementById('story-toggle');
+    const fullStory = document.getElementById('full-story');
+    const toggleText = storyToggle?.querySelector('.toggle-text');
+    const toggleIcon = storyToggle?.querySelector('.toggle-icon');
+    
+    storyToggle?.addEventListener('click', () => {
+      fullStory?.classList.toggle('hidden');
+      
+      if (fullStory?.classList.contains('hidden')) {
+        if (toggleText) toggleText.textContent = 'Lue koko tarina';
+        toggleIcon?.classList.remove('rotate');
+      } else {
+        if (toggleText) toggleText.textContent = 'Näytä vähemmän';
+        toggleIcon?.classList.add('rotate');
+      }
+    });
+  });
+</script>
+
+<style>
+  .full-story-section {
+    margin: 0;
+    padding: var(--spacing-xl) 0;
+    background-color: #f5f5f5;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+  
+  .section-title {
+    margin-bottom: var(--spacing-lg);
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  .story-content {
+    max-width: 80ch;
+    margin: 0;
+  }
+  
+  .introduction {
+    font-size: var(--font-size-lg);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .story-toggle-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .story-toggle {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    cursor: pointer;
+    padding: var(--spacing-sm) 0;
+    font-family: inherit;
+    font-size: var(--font-size-base);
+  }
+  
+  .story-toggle:hover {
+    opacity: 0.8;
+  }
+  
+  .toggle-text {
+    margin-right: var(--spacing-xs);
+  }
+  
+  .toggle-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .toggle-icon.rotate {
+    transform: rotate(180deg);
+  }
+  
+  .full-story {
+    opacity: 1;
+    max-height: 5000px;
+    transition: opacity 0.3s ease, max-height 0.5s ease;
+    overflow: hidden;
+  }
+  
+  .full-story.hidden {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+  }
+  
+  .story-section {
+    margin-bottom: var(--spacing-xl);
+  }
+  
+  .story-section h3 {
+    margin-bottom: var(--spacing-md);
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+  }
+  
+  .story-section p {
+    margin-bottom: var(--spacing-md);
+    line-height: 1.6;
+  }
+</style> 
