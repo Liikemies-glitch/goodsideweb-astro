@@ -1,0 +1,94 @@
+<section class="cta-section" style="background-color: var(--section-bg); padding: 6rem 0;">
+    <div class="container">
+        <div class="cta-grid">
+            <div class="cta-content">
+                <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1.5rem; line-height: 1.2;">Valmis kasvamaan nopeasti?</h2>
+                <p style="font-size: 1.125rem; color: var(--light-text); margin-bottom: 2.5rem; max-width: 500px;">
+                    Keskustellaan, miten suunnitteluosaamisemme voi auttaa SaaS-yritystäsi saavuttamaan kasvupotentiaalinsa.
+                </p>
+            </div>
+            <div class="cta-form">
+                <p style="margin-bottom: 0; font-weight: 500; color: var(--text-color); padding-left: 2.5rem; font-size: 1.125rem;">Jätä yhteystietosi, niin otamme yhteyttä.</p>
+                <!-- HubSpot Embed Code -->
+                <script src="https://js-eu1.hsforms.net/forms/embed/145360432.js" defer></script>
+                <div class="hs-form-frame" data-region="eu1" data-form-id="8bc5845c-348d-4ba7-baea-ebd46b11b0a0" data-portal-id="145360432"></div>
+                <!-- End HubSpot Embed Code -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* CTA Section Styles */
+    .cta-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); /* Responsive grid */
+        gap: 4rem; /* Adjust gap */
+        align-items: center;
+    }
+
+    .cta-form {
+        background-color: var(--card-background, #ffffff); /* Light background for form area */
+        padding: 2.5rem;
+        border-radius: 1rem;
+        /* border: 1px solid var(--border-color, #e2e8f0); /* Poistetaan reunus */
+    }
+
+    /* Basic HubSpot Form Styling Adjustments (Optional - HubSpot provides its own styling) */
+    /* You might need to target specific HubSpot classes if default styling needs overrides */
+    .cta-form .hs-form-frame {
+        /* Example: Ensure frame takes space */
+        min-height: 300px;
+    }
+    .cta-form label {
+        color: var(--text-color) !important; /* Dark color for labels */
+        margin-bottom: 0.5rem !important;
+        display: block !important;
+        font-weight: 500 !important;
+    }
+    .cta-form label span { /* Try targeting inner span as well */
+        color: var(--text-color) !important; /* Dark color for labels */
+    }
+    .cta-form input[type="text"],
+    .cta-form input[type="email"],
+    .cta-form textarea {
+        background-color: var(--white, #ffffff) !important; /* Light input background */
+        color: var(--text-color) !important; /* Dark text in inputs */
+        border: 1px solid var(--border-color, #e2e8f0) !important; /* Standard border */
+        border-radius: 0.5rem !important;
+        padding: 0.75rem 1rem !important;
+        width: 100% !important;
+        margin-bottom: 1rem !important; /* Spacing between fields */
+    }
+    .cta-form input[type="submit"] {
+        /* Style submit button like primary buttons */
+        background-color: var(--primary-color) !important; /* Primary button background */
+        color: var(--white) !important; /* Light text */
+        border: none !important;
+        padding: 0.75rem 1.5rem !important;
+        border-radius: 0.5rem !important;
+        font-weight: 600 !important;
+        cursor: pointer !important;
+        transition: background-color 0.2s ease, color 0.2s ease !important;
+        width: 100% !important; /* Full width button */
+        margin-top: 1rem !important;
+    }
+    .cta-form input[type="submit"]:hover {
+        background-color: var(--primary-dark, #047857) !important; /* Darker primary on hover */
+    }
+
+    @media (max-width: 768px) {
+        .cta-grid {
+            gap: 2.5rem;
+        }
+        .cta-content h2 {
+            font-size: 2rem;
+        }
+        .cta-content p {
+            font-size: 1rem;
+        }
+        .cta-form {
+            padding: 2rem;
+        }
+    }
+</style> 
