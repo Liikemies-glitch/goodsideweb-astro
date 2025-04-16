@@ -5,6 +5,7 @@ import HeroSection from '../../components/HeroSection.astro';
 import CaseStudySection from '../../components/CaseStudySection.astro';
 import ResultsSection from '../../components/ResultsSection.astro';
 import ComparisonSliderSection from '../../components/ComparisonSliderSection.astro';
+import TestimonialSection from '../../components/TestimonialSection.astro';
 
 const pageTitle = "Eemel.comin redesign mahdollisti kasvun globaaleilla markkinoilla";
 const description = "Eemel.com uudisti käyttöliittymänsä ja käyttökokemuksena, jonka vuoksi mediabudjetin ROI kasvoi 622%.";
@@ -97,84 +98,14 @@ const resultsData = {
       <ComparisonSliderSection />
     </div>
 
-    <section class="case-study-section" aria-labelledby="ratkaisu-heading">
-      <h2 id="ratkaisu-heading">Ratkaisu</h2>
-      <p>Nettilaskun käyttöliittymän ja käyttäjäkokemuksen kehittämisessä toteutettiin perusteellinen käyttäjälähtöinen suunnitteluprosessi. Projekti eteni iteratiivisesti ja pohjautui sekä käyttäjätutkimukseen että liiketoiminnallisiin tavoitteisiin.</p>
+    <TestimonialSection 
+      customerName="Jarkko Kähkönen"
+      customerTitle="Founder & CEO"
+      customerCompany="Eemel.com"
+      testimonialText="The employees of The Goodside handled the task brilliantly, and the outcome of the UX design work was excellent. Everything was done on schedule, as agreed, and in an honest and straightforward manner."
+      customerImage="/images/eemel/jarkko_kahkonen_eemel.webp"
+    />
 
-      <figure class="case-study-figure">
-        <img src="/images/eemel/etusivu_laptop.webp" alt="Eemel.com uusi käyttöliittymä" class="case-study-image" />
-        <figcaption>Eemel.comin modernisoitu käyttöliittymä.</figcaption>
-      </figure>
-
-      <div class="sub-section" aria-labelledby="strategiset-paatokset-heading">
-          <h3 id="strategiset-paatokset-heading">Strategiset päätökset:</h3>
-          <ol class="numbered-list">
-          <li><strong>Navigaation selkeyttäminen</strong>: Käyttöliittymän rakenne uudistettiin, joka vähensi virheitä ja teki oppimiskäyrästä loivemman</li>
-          <li><strong>Laskutusprosessin yksinkertaistaminen</strong>: Laskun luominen ja lähettäminen nopeutui 30%</li>
-          <li><strong>Moderni visuaalinen ilme</strong>: Brändi päivitettiin vastaamaan nykyaikaisen SaaS-palvelun odotuksia</li>
-          <li><strong>Mobiiliresponsiivisuuden parantaminen</strong>: Käyttökokemus optimoitiin mobiililaitteille, joita käytti yli 60% käyttäjistä</li>
-          <li><strong>Uusi hinnoittelumalli</strong>: Pilottivaiheessa testattiin erilaisia hinnoittelumalleja, jotka kasvattivat ilmaiskäyttäjien siirtymistä maksullisiin versioihin</li>
-          </ol>
-      </div>
-
-      <div class="sub-section" aria-labelledby="kaytannon-toimenpiteet-heading">
-          <h3 id="kaytannon-toimenpiteet-heading">Käytännön toimenpiteet:</h3>
-          <ul class="bullet-list">
-          <li>Käyttäjäpolkujen ja -tilanteiden huolellinen kartoitus</li>
-          <li>Kilpailija-analyysi markkinoilla erottautumiseksi</li>
-          <li>Syksyn 2024 visuaalinen uudistus (facelift)</li>
-          <li>Navigoinnin ja visuaalisen ohjauksen tehostaminen selkeillä elementeillä</li>
-          <li>Viestinnän parantaminen ja yksityisviestintämahdollisuuden lisääminen</li>
-          <li>Käyttöoikeuslogiikan uudistaminen useiden yritystilien hallintaan</li>
-          <li>Tuotepakettien hinnoittelun optimointi</li>
-          </ul>
-      </div>
-    </section>
-
-    <aside class="client-quote with-image">
-      <img src="/images/eemel/jarkko_kahkonen_eemel.webp" alt="Jarkko Kähkönen" class="quote-image" />
-      <blockquote>
-        <p>"Goodside otti tehtäväkseen ratkaista todellisia ongelmia, ei vain kaunistella pintaa. He tekivät perusteellista käyttäjätutkimusta ja seurasivat dataa päätösten pohjana. Navigaation selkeyttäminen, laskutusprosessin yksinkertaistaminen ja moderni visuaalinen ilme ovat olleet keskeisiä parannuksia. Erityisesti arvostan sitä, että kaikki muutokset tähtäsivät konkreettisiin liiketoiminnallisiin tuloksiin."</p>
-        <cite>– Jarkko Kähkönen, Yrittäjä, Eemel.com</cite>
-      </blockquote>
-    </aside>
-
-    <aside class="client-quote with-image">
-      <img src="/images/eemel/jarkko_kahkonen_eemel.webp" alt="Jarkko Kähkönen" class="quote-image" />
-      <blockquote>
-        <p>"Työskentely Goodsiden tiimin kanssa oli loistavaa. UX-suunnittelutyön lopputulos oli erinomainen. Kaikki tehtiin aikataulussa sovitusti sekä rehellisellä ja suoraviivaisella tavalla. Erityisesti arvostimme heidän ymmärrystään siitä, että designin on palveltava liiketoimintaa. Pienet jatkuvat parannukset ovat tuoneet merkittävää arvoa – tämä ei ollut vain kertaprojekti vaan strateginen kumppanuus, joka jatkuu edelleen."</p>
-        <cite>– Jarkko Kähkönen, Yrittäjä, Eemel.com</cite>
-      </blockquote>
-    </aside>
-
-    <section class="case-study-section" aria-labelledby="tarkeimmat-opit-heading">
-      <h2 id="tarkeimmat-opit-heading">Tärkeimmät opit</h2>
-      <p>UX-uudistusprojekti tarjosi arvokkaita oppeja kaikille yrityksille, jotka haluavat parantaa liiketoimintaansa designin avulla:</p>
-
-      <ol class="numbered-list">
-        <li><strong>UX-muutokset tulee perustaa dataan</strong>: Käyttäjätestaus ja analytiikka ohjasivat päätöksiä, mikä varmisti muutosten tehokkuuden</li>
-        <li><strong>Iteratiivinen työskentely tehostaa prosessia</strong>: Tämä mahdollisti nopeat reaktiot asiakaspalautteeseen ja markkinatilanteisiin</li>
-        <li><strong>Brändin selkeys ja käyttökokemuksen sujuvuus ovat kriittisiä asiakaspidolle</strong>: Uusi ilme tuki yrityksen kasvua ja loi erottavan tekijän</li>
-        <li><strong>Mobiilikäyttö on ensisijaista</strong>: Käyttäjät toimivat liikkeellä ollessaan, joten responsiivisuuden optimointi oli elintärkeää liiketoiminnalle</li>
-        <li><strong>Pienet iteratiiviset parannukset kumuloituvat merkittäväksi liiketoiminta-arvoksi</strong>: Uudistusprosessi ei ole kertatapahtuma, vaan jatkuvien parannusten sarja</li>
-      </ol>
-    </section>
-
-    <aside class="client-quote with-image">
-      <img src="/images/eemel/jarkko_kahkonen_eemel.webp" alt="Jarkko Kähkönen" class="quote-image" />
-      <blockquote>
-        <p>"Goodsiden työntekijät hoitivat tehtävän loistavasti, ja UX-suunnittelutyön lopputulos oli erinomainen. Kaikki tehtiin aikataulussa sovitusti sekä rehellisellä ja suoraviivaisella tavalla. Erityisesti arvostimme heidän ymmärrystään siitä, että designin on palveltava liiketoimintaa. Pienet jatkuvat parannukset ovat tuoneet merkittävää arvoa – tämä ei ollut vain kertaprojekti vaan strateginen kumppanuus, joka jatkuu edelleen."</p>
-        <cite>– Jarkko Kähkönen, Yrittäjä, Eemel.com</cite>
-      </blockquote>
-    </aside>
-
-    <section class="case-study-section" aria-labelledby="tulevaisuus-heading">
-      <h2 id="tulevaisuus-heading">Tulevaisuuden suunnitelmat</h2>
-      <p>Eemel.com jatkaa palvelunsa kehittämistä design-keskeisellä lähestymistavalla. Tulevat kehitysalueet sisältävät UX-analytiikan syventämisen ja AB-testauksen käyttöönoton palvelun käyttäjäkokemuksen edelleen hiomiseksi.</p>
-      <p>Tämä case study osoittaa, että investoimalla käyttäjäkeskeiseen suunnitteluun on mahdollista parantaa asiakaskokemusta, kasvattaa liikevaihtoa ja vähentää asiakaspoistumaa – tehden UX/UI-kehityksestä strategisen sijoituksen, joka maksaa itsensä takaisin moninkertaisesti.</p>
-    </section>
-
-  </article>
 </BaseLayout>
 
 <style>
