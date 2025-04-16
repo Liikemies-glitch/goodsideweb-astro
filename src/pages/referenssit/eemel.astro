@@ -2,9 +2,50 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import '../../styles/styles.css';
 import HeroSection from '../../components/HeroSection.astro';
+import CaseStudySection from '../../components/CaseStudySection.astro';
+import ResultsSection from '../../components/ResultsSection.astro';
 
 const pageTitle = "Eemel.comin redesign mahdollisti kasvun globaaleilla markkinoilla";
 const description = "Eemel.com uudisti käyttöliittymänsä ja käyttökokemuksena, jonka vuoksi mediabudjetin ROI kasvoi 622%.";
+
+// Results data for the new component
+const resultsData = {
+  title: "Saavutetut tulokset",
+  subtitle: "Modernisoidun käyttöliittymän ja käyttäjälähtöisen suunnittelun merkittävimmät tulokset:",
+  metricCards: [
+    {
+      value: "+55%",
+      title: "Viikoittainen tuotto (ARR)",
+      description: "Viikoittainen toistuva tuotto (ARR) nousi 560€/viikko → 870€/viikko" 
+    },
+    {
+      value: "+622%",
+      title: "Mediabudjetin ROI",
+      description: "Markkinointibudjetin yhden euron tuotto nousi 0.80€ → 5.78€"
+    },
+    {
+      value: "+46%",
+      title: "Keskikauppa MRR",
+      description: "Yksittäisen asiakkauuden keskimääräinen MRR kasvoi 63€ → 92€"
+    },
+    {
+      value: "+25%",
+      title: "Asiakasuskollisuus",
+      description: "Helppokäyttöisyys ja parempi käyttökokemus vähensivät asiakasvaihtuvuutta"
+    },
+  ],
+  businessGrowthItems: [
+    "Free-to-paid -konversio tuplaantui",
+    "Keskikauppa kasvoi 46% (63€ → 92€)",
+    "Ennustamme uudistuksen tuottavan noin 180 000 euroa liikevaihtoa vuonna 2025",
+  ],
+  operationalEfficiencyItems: [
+    "Yli 20 uudistettua näkymää (ml. myynti- ja ostolaskujen luonti)",
+    "4 täysin uutta näkymää (etusivu, tilaukset, palveluntuottajien kilpailutus, yksityisviestintä)",
+    "Uusi ostopolku ja parannetut käyttöönottoprosessit",
+    "Laskun luominen ja lähettäminen nopeutui 30%"
+  ]
+};
 ---
 
 <BaseLayout title={pageTitle} description={description}>
@@ -29,21 +70,28 @@ const description = "Eemel.com uudisti käyttöliittymänsä ja käyttökokemuks
       {/* Removed the h1 from here as it's now in the hero section */}
     </header>
 
-    <section class="case-study-section section-bg-light" aria-labelledby="lahotilanne-heading">
-      <h2 id="lahotilanne-heading">Eemel.com lähtötilanne</h2>
-      
+    <CaseStudySection id="lahotilanne-heading" title="Eemel.com lähtötilanne">
       <p>Eemel.com, aiemmin Nettilasku.fi, on vuonna 2010 perustettu taloushallinnon ohjelmisto pienyrityksiä varten. Palvelu tarjoaa työkalut laskutukseen, palkanlaskentaan, tuntikirjauksiin ja automaattiseen kirjanpitoon. Yritys tähtäsi kansainvälisille markkinoille uudistetulla Eemel.com-brändillä.</p>
       
       <p>Kunnianhimoinen kansainvälistymistavoite kohtasi kuitenkin vanhentuneesta käyttöliittymästä johtuvia ongelmia. Monimutkainen käyttökokemus heikensi asiakasuskollisuutta ja madalsi konversioasteita. Käyttäjät siirtyivät usein kilpaileviin ratkaisuihin.</p>
       
       <div class="quote-in-section">
         <img src="/images/eemel/jarkko_kahkonen_eemel.webp" alt="Jarkko Kähkönen" class="quote-image" />
-        <p class="quote-text">"Mediabudjetin käyttö ei ollut enää kannattavaa ja tuotevetoisen kasvun yksiköt eivät toimineet. Käyttöliittymämme ei vastannut modernien käyttäjien odotuksia ja tarvitsimme kipeästi strategisen uudistuksen."</p>
+        <p class="quote-text">"Mediabudjetin käyttö ei ollut enää kannattavaa ja tuotevetoisen kasvun yksiköt eivät toimineet. Käyttöliittymämme ei vastannut modernien käyttäjien odotuksia ja tarvitsimme kipeästi strategisen uudistuksen." - Jarkko Kähkönen, Yrittäjä, Eemel.com</p>
       </div>
       
       <p>Lisähaasteen muodostivat kilpailijoiden aggressiivinen hinnoittelu ja ilmaiskokeilut. Oli selvää, että nykyinen käyttökokemus ei tukenut kasvutavoitteita, vaan muodosti merkittävän esteen kansainvälistymiselle.</p>
-    </section>
+    </CaseStudySection>
 
+    <ResultsSection 
+      title={resultsData.title}
+      subtitle={resultsData.subtitle}
+      metricCards={resultsData.metricCards}
+      businessGrowthTitle="Liiketoiminnalliset hyödyt"
+      businessGrowthItems={resultsData.businessGrowthItems}
+      operationalEfficiencyTitle="Projektin aikana toteutettiin"
+      operationalEfficiencyItems={resultsData.operationalEfficiencyItems}
+    />
 
     <section class="case-study-section" aria-labelledby="ratkaisu-heading">
       <h2 id="ratkaisu-heading">Ratkaisu</h2>
@@ -87,41 +135,10 @@ const description = "Eemel.com uudisti käyttöliittymänsä ja käyttökokemuks
       </blockquote>
     </aside>
 
-    <section class="case-study-section" aria-labelledby="tulokset-heading">
-      <h2 id="tulokset-heading">Tulokset</h2>
-      <p>Modernisoidun käyttöliittymän ja käyttäjälähtöisen suunnittelun merkittävimmät tulokset:</p>
-
-      <figure class="case-study-figure">
-        <img src="/images/eemel/etusivu_laptop_vanha.webp" alt="Eemel.com vanha käyttöliittymä vertailuna" class="case-study-image" />
-        <figcaption>Vertailun vuoksi: Eemel.comin aiempi käyttöliittymä.</figcaption>
-      </figure>
-
-      <div class="sub-section" aria-labelledby="liiketoiminnalliset-hyödyt-heading">
-          <h3 id="liiketoiminnalliset-hyödyt-heading">Liiketoiminnalliset hyödyt:</h3>
-          <ul class="bullet-list results-list">
-          <li><strong>Asiakasuskollisuus kasvoi 25%</strong>: Helppokäyttöisyys ja parempi käyttökokemus vähensivät asiakasvaihtuvuutta</li>
-          <li><strong>Ilmaisesta maksulliseen -konversio kaksinkertaistui</strong>: Käyttäjät päivittivät maksulliseen versioon kaksi kertaa aiempaa useammin</li>
-          <li><strong>Mediabudjetin ROI kasvoi 622%</strong>: Markkinointibudjetin tuotto nousi 0.80€/€ → 5.78€/€</li>
-          <li><strong>Viikoittainen toistuva tuotto (ARR) nousi 55%</strong>: 560€/viikko → 870€/viikko</li>
-          <li><strong>Käyttäjän keskimääräinen tuotto kasvoi 46%</strong>: 63€ → 92€</li>
-          </ul>
-      </div>
-
-      <div class="sub-section" aria-labelledby="projektin-aikana-toteutettiin-heading">
-          <h3 id="projektin-aikana-toteutettiin-heading">Projektin aikana toteutettiin:</h3>
-          <ul class="bullet-list">
-          <li>Yli 20 uudistettua näkymää (ml. myynti- ja ostolaskujen luonti)</li>
-          <li>4 täysin uutta näkymää (etusivu, tilaukset, palveluntuottajien kilpailutus, yksityisviestintä)</li>
-          <li>Uusi ostopolku ja parannetut käyttöönottoprosessit</li>
-          <li>Eemel.com-nettisivujen visuaalisen ilmeen ja rakenteen päivitys</li>
-          </ul>
-      </div>
-    </section>
-
     <aside class="client-quote with-image">
       <img src="/images/eemel/jarkko_kahkonen_eemel.webp" alt="Jarkko Kähkönen" class="quote-image" />
       <blockquote>
-        <p>"Työskentely Goodsiden tiimin kanssa oli käänteentekevää. Projektin toteuttaminen tuotti välittömiä tuloksia: asiakasuskollisuus kasvoi 25%, konversiot kaksinkertaistuivat ja mediabudjetin tuotto nousi huimasti. Ennustamme uudistuksen tuottavan noin 180 000 euroa liikevaihtoa vuonna 2025, ilman lisäyksiä mediabudjettiin. Tämä tarkoittaa noin 50% kasvua liikevaihtoomme. Nyt yksikkötaloutta on kunnossa, joten Eemel.com on valmiina skaalautumaan."</p>
+        <p>"Työskentely Goodsiden tiimin kanssa oli loistavaa. UX-suunnittelutyön lopputulos oli erinomainen. Kaikki tehtiin aikataulussa sovitusti sekä rehellisellä ja suoraviivaisella tavalla. Erityisesti arvostimme heidän ymmärrystään siitä, että designin on palveltava liiketoimintaa. Pienet jatkuvat parannukset ovat tuoneet merkittävää arvoa – tämä ei ollut vain kertaprojekti vaan strateginen kumppanuus, joka jatkuu edelleen."</p>
         <cite>– Jarkko Kähkönen, Yrittäjä, Eemel.com</cite>
       </blockquote>
     </aside>
@@ -184,15 +201,6 @@ const description = "Eemel.com uudisti käyttöliittymänsä ja käyttökokemuks
     font-weight: 700;
   }
 
-  /* Apply gradient to specific h2 */
-  #lahotilanne-heading {
-    background: linear-gradient(to left, var(--primary-color), #170c28); /* Example gradient, adjust #1a4a8d if needed */
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    display: inline-block; /* Ensures gradient only covers text width */
-  }
-
   .sub-section {
     margin-top: var(--spacing-lg);
     margin-bottom: var(--spacing-lg);
@@ -253,7 +261,7 @@ const description = "Eemel.com uudisti käyttöliittymänsä ja käyttökokemuks
   .quote-image {
     width: 120px; /* Adjust image size */
     height: 120px;
-    border-radius: 50%;
+    border-radius: 0; /* Make image square */
     object-fit: cover;
   }
 
@@ -276,64 +284,6 @@ const description = "Eemel.com uudisti käyttöliittymänsä ja käyttökokemuks
     font-style: italic;
   }
 
-  /* Add background style for the Lähtötilanne section */
-  .section-bg-light {
-    background-color: rgb(249, 249, 249);
-    border-radius: 0; /* Remove border-radius for full-width */
-    margin-bottom: var(--spacing-xl); /* Maintain spacing */
-    box-shadow: none; /* Remove shadow for seamless edge-to-edge */
-
-    /* Full width calculations */
-    box-sizing: border-box;
-    width: 100vw;
-    position: relative; /* Needed for calc with vw */
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-
-    /* Add back padding, adjusting horizontal based on full-width calc */
-    padding-top: var(--spacing-lg);
-    padding-bottom: var(--spacing-lg);
-    /* The horizontal padding pushes content back into the 80ch flow */
-    /* It equals the space outside the 80ch container + original padding */
-    padding-left: calc(50vw - 40ch + var(--spacing-lg)); /* 80ch / 2 = 40ch */
-    padding-right: calc(50vw - 40ch + var(--spacing-lg)); /* 80ch / 2 = 40ch */
-  }
-  
-  /* Add more space between paragraphs in section-bg-light */
-  .section-bg-light p {
-    margin-bottom: var(--spacing-md);
-    line-height: 1.8;
-  }
-  
-  .section-bg-light p:last-child {
-    margin-bottom: 0;
-  }
-
-  /* Style for quote embedded within the section */
-  .quote-in-section {
-    display: grid;
-    grid-template-columns: auto 1fr; /* Image size auto, text fills rest */
-    gap: var(--spacing-lg);
-    align-items: center;
-    margin: var(--spacing-lg) 0; /* Add some vertical margin */
-  }
-  
-  .quote-in-section .quote-image {
-    width: 100px; /* Slightly smaller image */
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  .quote-in-section .quote-text {
-    font-style: italic;
-    color: var(--neutral-darker);
-    margin-bottom: 0; /* Override default paragraph margin */
-    line-height: 1.6; /* Adjust line height for quote */
-  }
-
   /* Basic responsiveness */
   @media (max-width: 768px) {
     .client-quote.with-image {
@@ -342,20 +292,6 @@ const description = "Eemel.com uudisti käyttöliittymänsä ja käyttökokemuks
     }
 
     .quote-image {
-      margin: 0 auto var(--spacing-md); /* Center image when stacked */
-    }
-
-     .sub-section {
-        /* padding-left: var(--spacing-sm); */ /* Removed for no indentation */
-     }
-     
-     /* Stack image and text in embedded quote on smaller screens */
-    .quote-in-section {
-      grid-template-columns: 1fr; /* Stack image and text */
-      text-align: center;
-    }
-    
-    .quote-in-section .quote-image {
       margin: 0 auto var(--spacing-md); /* Center image when stacked */
     }
   }

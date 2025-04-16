@@ -1,0 +1,117 @@
+---
+// src/components/CaseStudySection.astro
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends HTMLAttributes<'section'> {
+  id: string;
+  title: string;
+}
+
+const { id, title, class: className, ...rest } = Astro.props;
+---
+
+<section 
+  id={id} 
+  class:list={["case-study-section section-bg-light", className]} 
+  aria-labelledby={id} 
+  {...rest}
+>
+  <h2 id={id}>{title}</h2>
+  <slot />
+</section>
+
+<style>
+  .case-study-section {
+    /* Basic section spacing, might be adjusted by parent */
+    margin-bottom: var(--spacing-xxl); 
+  }
+
+  .case-study-section h2 {
+    margin-bottom: var(--spacing-lg);
+    font-size: 2.5rem;
+    font-weight: 700;
+    /* Apply gradient to h2 by default within this component */
+    background: linear-gradient(to left, var(--primary-color), #170c28); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block; /* Ensures gradient only covers text width */
+  }
+  
+  /* Styles specific to the background and full-width effect */
+  .section-bg-light {
+    background-color: rgb(249, 249, 249);
+    border-radius: 0; /* Remove border-radius for full-width */
+    margin-bottom: var(--spacing-xl); /* Maintain spacing */
+    box-shadow: none; /* Remove shadow for seamless edge-to-edge */
+
+    /* Full width calculations */
+    box-sizing: border-box;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+
+    /* Padding calculations */
+    padding-top: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+    padding-left: calc(50vw - 40ch + var(--spacing-lg)); /* 80ch / 2 = 40ch */
+    padding-right: calc(50vw - 40ch + var(--spacing-lg)); /* 80ch / 2 = 40ch */
+  }
+  
+  /* Add more space between paragraphs in section-bg-light */
+  .section-bg-light :global(p) { /* Use :global to target slotted p tags */
+    margin-bottom: var(--spacing-md);
+    line-height: 1.8;
+  }
+  
+  .section-bg-light :global(p:last-child) {
+    margin-bottom: 0;
+  }
+
+  /* Style for quote embedded within the section */
+  /* Use :global as the div will come from the slot */
+  .section-bg-light :global(.quote-in-section) {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Image size auto, text fills rest */
+    gap: var(--spacing-lg);
+    align-items: center;
+    margin: var(--spacing-lg) 0; /* Add some vertical margin */
+    border-left: 5px solid var(--primary-color); /* Add left border */
+    padding-left: var(--spacing-lg); /* Add padding for the border */
+  }
+  
+  .section-bg-light :global(.quote-in-section .quote-image) {
+    width: 100px; /* Slightly smaller image */
+    height: 100px;
+    border-radius: 0; /* Make image square */
+    object-fit: cover;
+  }
+  
+  .section-bg-light :global(.quote-in-section .quote-text) {
+    font-style: italic;
+    color: var(--neutral-darker);
+    margin-bottom: 0; /* Override default paragraph margin */
+    line-height: 1.6; /* Adjust line height for quote */
+  }
+
+  /* Basic responsiveness */
+  @media (max-width: 768px) {
+    /* Adjust padding for full-width background section on mobile */
+    .section-bg-light {
+        /* Use standard padding for content alignment */
+        padding-left: var(--spacing-lg); 
+        padding-right: var(--spacing-lg);
+    }
+
+    /* Stack image and text in embedded quote on smaller screens */
+    /* Use :global as the div will come from the slot */
+    .section-bg-light :global(.quote-in-section) {
+      grid-template-columns: 1fr; /* Stack image and text */
+      text-align: center;
+    }
+    
+    .section-bg-light :global(.quote-in-section .quote-image) {
+      margin: 0 auto var(--spacing-md); /* Center image when stacked */
+    }
+  }
+</style> 

@@ -1,0 +1,193 @@
+---
+// src/components/ResultsSection.astro
+interface MetricCard {
+  value: string;
+  title: string;
+  description: string;
+}
+
+interface Props {
+  title: string;
+  subtitle?: string;
+  metricCards: MetricCard[];
+  businessGrowthTitle?: string;
+  businessGrowthItems?: string[];
+  operationalEfficiencyTitle?: string;
+  operationalEfficiencyItems?: string[];
+}
+
+const { 
+  title, 
+  subtitle, 
+  metricCards, 
+  businessGrowthTitle = "Liiketoiminnan kasvu",
+  businessGrowthItems = [],
+  operationalEfficiencyTitle = "Operatiivinen tehokkuus",
+  operationalEfficiencyItems = []
+} = Astro.props;
+---
+
+<section class="results-section">
+  <div class="container">
+    <div class="results-header">
+      <h2>{title}</h2>
+      {subtitle && <p class="results-subtitle">{subtitle}</p>}
+    </div>
+
+    <div class="metric-cards">
+      {metricCards.map(card => (
+        <div class="metric-card">
+          <div class="metric-value">{card.value}</div>
+          <h3 class="metric-title">{card.title}</h3>
+          <p class="metric-description">{card.description}</p>
+        </div>
+      ))}
+    </div>
+
+    {(businessGrowthItems.length > 0 || operationalEfficiencyItems.length > 0) && (
+      <div class="detailed-results">
+        <h2>Yksityiskohtaiset tulokset</h2>
+        
+        <div class="detailed-results-columns">
+          {businessGrowthItems.length > 0 && (
+            <div class="detailed-column">
+              <h3>{businessGrowthTitle}</h3>
+              <ul>
+                {businessGrowthItems.map(item => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+          
+          {operationalEfficiencyItems.length > 0 && (
+            <div class="detailed-column">
+              <h3>{operationalEfficiencyTitle}</h3>
+              <ul>
+                {operationalEfficiencyItems.map(item => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      </div>
+    )}
+  </div>
+</section>
+
+<style>
+  .results-section {
+    padding: 4rem 0;
+    width: 100%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .results-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .results-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .results-subtitle {
+    font-size: 1.25rem;
+    color: var(--neutral-dark);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .metric-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .metric-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+  }
+
+  .metric-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .metric-value {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, var(--primary-color), #170c28);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+  }
+
+  .metric-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+
+  .metric-description {
+    color: var(--neutral-dark);
+    line-height: 1.6;
+  }
+
+  .detailed-results {
+    margin-top: 2rem;
+  }
+
+  .detailed-results h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .detailed-results-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 3rem;
+  }
+
+  .detailed-column h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+
+  .detailed-column ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
+
+  .detailed-column li {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .metric-cards {
+      grid-template-columns: 1fr;
+    }
+
+    .detailed-results-columns {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+</style> 
