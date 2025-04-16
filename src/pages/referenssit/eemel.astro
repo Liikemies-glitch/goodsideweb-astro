@@ -20,7 +20,7 @@ const description = "Eemel.com uudisti käyttöliittymänsä ja käyttökokemuks
       imageAlt="Eemel.com referenssitarinan hero-kuva"
       imageStyles="width: 100%; height: auto; display: block; object-fit: cover; border-radius: 1rem;"
       imgStyles="width: 130%; height: auto; display: block; object-fit: cover; max-width: none; object-position: left center;"
-      paddingBottom="6rem"
+      paddingBottom="4rem"
   />
 
   <article class="case-study">
@@ -29,30 +29,21 @@ const description = "Eemel.com uudisti käyttöliittymänsä ja käyttökokemuks
       {/* Removed the h1 from here as it's now in the hero section */}
     </header>
 
-    <section class="case-study-section" aria-labelledby="lahotilanne-heading">
-      <h2 id="lahotilanne-heading">Lähtötilanne</h2>
-      <p>Eemel.com (ent. Nettilasku.fi) on pienyrityksille suunnattu taloushallinnon ohjelmisto, joka tarjoaa ratkaisun myynti- ja ostolaskujen käsittelyyn, palkanlaskentaan, tuntikirjauksiin sekä automaattiseen kirjanpitoon. Vuonna 2010 perustettu Nettilasku pyrkii nyt kansainvälisille markkinoille Eemel.com -brändin alla.</p>
-
-      <div class="sub-section" aria-labelledby="haasteet-heading">
-        <h3 id="haasteet-heading">Haasteet</h3>
-        <p>Kunnianhimoinen kansainvälistymistavoite törmäsi kuitenkin vanhentuneeseen käyttöliittymään ja nettisivuihin, jotka eivät enää vastanneet käyttäjien odotuksia:</p>
-        <ul class="bullet-list">
-          <li><strong>Heikko käyttökokemus</strong>: Käyttöliittymä oli vanhentunut ja monimutkainen</li>
-          <li><strong>Matala asiakasuskollisuus</strong>: Käyttäjät vaihtoivat kilpaileviin ratkaisuihin</li>
-          <li><strong>Alhainen konversioaste</strong>: Uudet asiakkaat eivät rekisteröityneet maksaviksi käyttäjiksi odotetulla tavalla</li>
-          <li><strong>Tehoton markkinointi</strong>: Mediabudjetin käyttö ei ollut enää kannattavaa</li>
-          <li><strong>Kilpailijoiden aggressiivinen hinnoittelu</strong>: Ilmaiskokeilut tekivät asiakashankinnasta haastavaa</li>
-        </ul>
+    <section class="case-study-section section-bg-light" aria-labelledby="lahotilanne-heading">
+      <h2 id="lahotilanne-heading">Eemel.com lähtötilanne</h2>
+      
+      <p>Eemel.com, aiemmin Nettilasku.fi, on vuonna 2010 perustettu taloushallinnon ohjelmisto pienyrityksiä varten. Palvelu tarjoaa työkalut laskutukseen, palkanlaskentaan, tuntikirjauksiin ja automaattiseen kirjanpitoon. Yritys tähtäsi kansainvälisille markkinoille uudistetulla Eemel.com-brändillä.</p>
+      
+      <p>Kunnianhimoinen kansainvälistymistavoite kohtasi kuitenkin vanhentuneesta käyttöliittymästä johtuvia ongelmia. Monimutkainen käyttökokemus heikensi asiakasuskollisuutta ja madalsi konversioasteita. Käyttäjät siirtyivät usein kilpaileviin ratkaisuihin.</p>
+      
+      <div class="quote-in-section">
+        <img src="/images/eemel/jarkko_kahkonen_eemel.webp" alt="Jarkko Kähkönen" class="quote-image" />
+        <p class="quote-text">"Mediabudjetin käyttö ei ollut enää kannattavaa ja tuotevetoisen kasvun yksiköt eivät toimineet. Käyttöliittymämme ei vastannut modernien käyttäjien odotuksia ja tarvitsimme kipeästi strategisen uudistuksen."</p>
       </div>
+      
+      <p>Lisähaasteen muodostivat kilpailijoiden aggressiivinen hinnoittelu ja ilmaiskokeilut. Oli selvää, että nykyinen käyttökokemus ei tukenut kasvutavoitteita, vaan muodosti merkittävän esteen kansainvälistymiselle.</p>
     </section>
 
-    <aside class="client-quote with-image">
-      <img src="/images/eemel/jarkko_kahkonen_eemel.webp" alt="Jarkko Kähkönen" class="quote-image" />
-      <blockquote>
-        <p>"Halusimme kansainvälistää liiketoimintamme Eemel.com-brändillä ja hakea kasvuun vauhtia UX-maturiteetin kasvun kautta. Mediabudjetin käyttö ei ollut enää kannattavaa ja tuotevetoisen kasvun yksiköt eivät toimineet. Käyttöliittymämme ei vastannut modernien käyttäjien odotuksia ja konversioasteet olivat heikkoja. Tarvitsimme kipeästi strategisen uudistuksen."</p>
-        <cite>– Jarkko Kähkönen, Yrittäjä, Eemel.com</cite>
-      </blockquote>
-    </aside>
 
     <section class="case-study-section" aria-labelledby="ratkaisu-heading">
       <h2 id="ratkaisu-heading">Ratkaisu</h2>
@@ -193,6 +184,15 @@ const description = "Eemel.com uudisti käyttöliittymänsä ja käyttökokemuks
     font-weight: 700;
   }
 
+  /* Apply gradient to specific h2 */
+  #lahotilanne-heading {
+    background: linear-gradient(to left, var(--primary-color), #170c28); /* Example gradient, adjust #1a4a8d if needed */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block; /* Ensures gradient only covers text width */
+  }
+
   .sub-section {
     margin-top: var(--spacing-lg);
     margin-bottom: var(--spacing-lg);
@@ -276,36 +276,62 @@ const description = "Eemel.com uudisti käyttöliittymänsä ja käyttökokemuks
     font-style: italic;
   }
 
-  /* Style the "Haasteet" section as a card */
-  .sub-section[aria-labelledby="haasteet-heading"] {
-    background-color: var(--neutral-lightest);
-    padding: var(--spacing-lg);
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow-sm);
-    border: 1px solid var(--neutral-light);
-    margin-top: var(--spacing-xl); /* Add more top margin */
+  /* Add background style for the Lähtötilanne section */
+  .section-bg-light {
+    background-color: rgb(249, 249, 249);
+    border-radius: 0; /* Remove border-radius for full-width */
+    margin-bottom: var(--spacing-xl); /* Maintain spacing */
+    box-shadow: none; /* Remove shadow for seamless edge-to-edge */
+
+    /* Full width calculations */
+    box-sizing: border-box;
+    width: 100vw;
+    position: relative; /* Needed for calc with vw */
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+
+    /* Add back padding, adjusting horizontal based on full-width calc */
+    padding-top: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+    /* The horizontal padding pushes content back into the 80ch flow */
+    /* It equals the space outside the 80ch container + original padding */
+    padding-left: calc(50vw - 40ch + var(--spacing-lg)); /* 80ch / 2 = 40ch */
+    padding-right: calc(50vw - 40ch + var(--spacing-lg)); /* 80ch / 2 = 40ch */
+  }
+  
+  /* Add more space between paragraphs in section-bg-light */
+  .section-bg-light p {
+    margin-bottom: var(--spacing-md);
+    line-height: 1.8;
+  }
+  
+  .section-bg-light p:last-child {
+    margin-bottom: 0;
   }
 
-  /* Custom bullet points for the "Haasteet" list */
-  .sub-section[aria-labelledby="haasteet-heading"] .bullet-list {
-    list-style: none; /* Remove default bullets */
-    padding-left: 0; /* Remove default padding */
-    margin-top: var(--spacing-md); /* Add space above the list */
+  /* Style for quote embedded within the section */
+  .quote-in-section {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Image size auto, text fills rest */
+    gap: var(--spacing-lg);
+    align-items: center;
+    margin: var(--spacing-lg) 0; /* Add some vertical margin */
   }
-
-  .sub-section[aria-labelledby="haasteet-heading"] .bullet-list li {
-    position: relative;
-    padding-left: var(--spacing-lg); /* Make space for custom bullet */
-    margin-bottom: var(--spacing-md); /* Increase spacing between items */
+  
+  .quote-in-section .quote-image {
+    width: 100px; /* Slightly smaller image */
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
   }
-
-  .sub-section[aria-labelledby="haasteet-heading"] .bullet-list li::before {
-    content: '⚠️'; /* Custom bullet icon */
-    position: absolute;
-    left: 0;
-    top: 0.1em; /* Adjust vertical alignment */
-    color: var(--warning-color); /* Use a warning color */
-    font-size: 1.1em;
+  
+  .quote-in-section .quote-text {
+    font-style: italic;
+    color: var(--neutral-darker);
+    margin-bottom: 0; /* Override default paragraph margin */
+    line-height: 1.6; /* Adjust line height for quote */
   }
 
   /* Basic responsiveness */
@@ -322,6 +348,16 @@ const description = "Eemel.com uudisti käyttöliittymänsä ja käyttökokemuks
      .sub-section {
         /* padding-left: var(--spacing-sm); */ /* Removed for no indentation */
      }
+     
+     /* Stack image and text in embedded quote on smaller screens */
+    .quote-in-section {
+      grid-template-columns: 1fr; /* Stack image and text */
+      text-align: center;
+    }
+    
+    .quote-in-section .quote-image {
+      margin: 0 auto var(--spacing-md); /* Center image when stacked */
+    }
   }
 
   /* --- REMOVED HERO-TYYLIT --- */
