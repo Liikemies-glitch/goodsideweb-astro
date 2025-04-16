@@ -45,9 +45,6 @@ const {
     </div>
 
     {(businessGrowthItems.length > 0 || operationalEfficiencyItems.length > 0) && (
-      <div class="detailed-results">
-        <h2>Yksityiskohtaiset tulokset</h2>
-        
         <div class="detailed-results-columns">
           {businessGrowthItems.length > 0 && (
             <div class="detailed-column">
@@ -71,7 +68,6 @@ const {
             </div>
           )}
         </div>
-      </div>
     )}
   </div>
 </section>
@@ -89,7 +85,6 @@ const {
   }
 
   .results-header {
-    text-align: center;
     margin-bottom: 3rem;
   }
 
@@ -155,12 +150,11 @@ const {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 2rem;
-    text-align: center;
   }
 
   .detailed-results-columns {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 3rem;
   }
 
@@ -176,7 +170,7 @@ const {
   }
 
   .detailed-column li {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     line-height: 1.6;
   }
 
