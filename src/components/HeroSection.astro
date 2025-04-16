@@ -11,7 +11,7 @@ interface Props extends HTMLAttributes<'section'> {
     title: string;
     paragraph: string;
     primaryButtonText: string;
-    primaryButtonHref: string;
+    primaryButtonHref?: string;
     secondaryButtonText?: string;
     secondaryButtonHref?: string;
     imageUrl: string;
@@ -21,13 +21,14 @@ interface Props extends HTMLAttributes<'section'> {
     paddingBottom?: string;
     imageStyles?: string; // Allow passing custom styles for the image container
     imgStyles?: string; // Allow passing custom styles for the image itself
+    linkToResults?: boolean; // New prop to automatically link primary button to #results-section
 }
 
 const {
     title,
     paragraph,
     primaryButtonText,
-    primaryButtonHref,
+    primaryButtonHref: explicitPrimaryButtonHref, // Renamed to avoid conflict
     secondaryButtonText,
     secondaryButtonHref,
     imageUrl,
@@ -37,8 +38,12 @@ const {
     paddingBottom = '6rem',
     imageStyles = 'border-radius: 1rem; overflow: hidden;', // Default from referenssit.astro
     imgStyles = 'width: 100%; height: auto; display: block; object-fit: cover;', // Default from referenssit.astro
+    linkToResults = false, // Default the new prop to false
     ...rest // Collect any other attributes like class, id, etc.
 } = Astro.props;
+
+// Determine the actual href for the primary button
+const primaryHref = linkToResults ? '#results-section' : explicitPrimaryButtonHref;
 ---
 
 <section class:list={["hero-section", rest.class]} style={`padding-top: ${paddingTop}; padding-bottom: ${paddingBottom};`} {...rest}>
@@ -49,7 +54,7 @@ const {
                 {paragraph}
             </p>
             <div class="hero-buttons">
-                <a href={primaryButtonHref} class="btn btn--primary">{primaryButtonText}</a>
+                <a href={primaryHref} class="btn btn--primary">{primaryButtonText}</a>
                 {secondaryButtonText && secondaryButtonHref && (
                     <a href={secondaryButtonHref} class="btn btn--secondary">{secondaryButtonText}&nbsp;&rarr;</a>
                 )}
