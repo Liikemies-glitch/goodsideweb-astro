@@ -148,6 +148,7 @@ const primaryHref = linkToResults ? '#results-section' : explicitPrimaryButtonHr
       .hero-grid {
           grid-template-columns: 1fr; /* Single column */
           text-align: center;
+          width: 100%;
       }
       .hero-content {
           order: 2; /* Text after image */
@@ -156,6 +157,10 @@ const primaryHref = linkToResults ? '#results-section' : explicitPrimaryButtonHr
           order: 1; /* Image first */
           margin-bottom: 3rem;
           min-height: 250px; /* Ensure space for image */
+          width: 100%;
+          max-width: 600px; /* Limit maximum width in mobile */
+          margin-left: auto;
+          margin-right: auto;
       }
       .hero-buttons {
           justify-content: center;

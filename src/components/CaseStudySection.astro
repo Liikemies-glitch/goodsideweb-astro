@@ -107,11 +107,17 @@ const { id, title, class: className, ...rest } = Astro.props;
     /* Use :global as the div will come from the slot */
     .section-bg-light :global(.quote-in-section) {
       grid-template-columns: 1fr; /* Stack image and text */
-      text-align: center;
+      text-align: center; /* Keep container centered for image */
     }
     
     .section-bg-light :global(.quote-in-section .quote-image) {
-      margin: 0 auto var(--spacing-md); /* Center image when stacked */
+      /* Align image left on mobile by removing auto margin */
+      margin: 0 0 var(--spacing-md); 
+    }
+
+    /* Align quote text left on mobile */
+    .section-bg-light :global(.quote-in-section .quote-text) {
+      text-align: left;
     }
   }
 </style> 
