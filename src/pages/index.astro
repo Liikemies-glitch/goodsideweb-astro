@@ -10,6 +10,15 @@ const pageDescription = "The Good Side - Autamme tuotetiimejä rakentamaan menes
 const latestPosts = (await getCollection('blog'))
     .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
     .slice(0, 6);
+
+// Helper function to format dates
+function formatDate(date: Date): string {
+  return new Date(date).toLocaleDateString('fi-FI', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+}
 ---
 <BaseLayout title={pageTitle} description={pageDescription}>
     <!-- Hero Section -->
@@ -306,13 +315,13 @@ const latestPosts = (await getCollection('blog'))
                     <h3>SaaS-kasvukonsultointi</h3>
                     <p class="pricing-card__price" style="font-size: 2.5rem; font-weight: bold;">110 €/tunti</p>
                     <p class="pricing-card__description">Suunnittelija tai strategi, joka auttaa sinua poistamaan kasvun esteet tuloksekkaalla SaaS-kasvukonsultoinnilla.</p>
-                    <a href="/contact" class="btn btn--primary">Jätä yhteydenottopyyntö -></a>
+                    <a href="/contact" class="btn btn--primary">Jätä yhteydenottopyyntö &rarr;</a>
                 </div>
                 <div class="pricing-card">
                     <h3>SaaS-kasvutiimi</h3>
                     <p class="pricing-card__price" style="font-size: 2.5rem; font-weight: bold;">Kysy hintaa</p>
                     <p class="pricing-card__description">Kokenut tiimimme integroi tuotteen, käyttökokemuksen ja käyttäjäpolut kasvua tuottavaksi kokonaisuudeksi.</p>
-                    <a href="/contact" class="btn btn--primary">Jätä yhteydenottopyyntö -></a>
+                    <a href="/contact" class="btn btn--primary">Jätä yhteydenottopyyntö &rarr;</a>
                 </div>
             </div>
             <p class="pricing__note" style="text-align: center; margin-top: var(--spacing-lg);">*Alle viisi miljoonaa euroa vaihtaville pienille yrityksille tarjoamme palveluitamme alennettuun hintaan 95 €/tunti. Hinnat ovat verottomia (alv 0%).</p>
@@ -376,7 +385,7 @@ const latestPosts = (await getCollection('blog'))
                         <span class="faq-question">Mitä työkaluja käytätte suunnittelussa?</span>
                         <span class="faq-toggle">+</span>
                     </div>
-                    <p class="faq-answer">Käytämme moderneja suunnittelutyökaluja kuten Figmaa UI/UX-suunnitteluun, Miroa käyttäjäpolkujen ja workshoppien fasilitointiin sekä Hotjaria käyttäjäanalytiikkaan. Lisäksi hyödynnämme AI-pohjaisia työkaluja käyttäjätutkimuksessa ja data-analytiikassa varmistaaksemme dataohjatun suunnitteluprosessin.</p>
+                    <p class="faq-answer">Käytämme moderneja suunnittelutyökaluja kuten Figmaa UI/UX-suunnitteluun, Miroa käyttäjäpolkujen ja workshoppien fasilitointiin sekä Hotjaria käyttäjäanalytiikassa. Lisäksi hyödynnämme AI-pohjaisia työkaluja käyttäjätutkimuksessa ja data-analytiikassa varmistaaksemme dataohjatun suunnitteluprosessin.</p>
                 </div>
                 <!-- FAQ Item 4 -->
                 <div class="faq-item">
@@ -473,17 +482,16 @@ const latestPosts = (await getCollection('blog'))
                                  )}
                                 <h3 class="blog-card__title">{post.data.title}</h3>
                                 <p class="blog-card__excerpt">{post.data.description || 'Lue artikkeli...'}</p>
-                                <p class="blog-card__date">
-                                    {new Date(post.data.pubDate).toLocaleDateString('fi-FI', { year: 'numeric', month: 'long', day: 'numeric' })}
-                                </p>
-                                <span class="blog-card__readmore">Lue lisää -></span>
+                                <div class="blog-card__footer">
+                                    <span class="blog-card__readmore">Lue lisää &rarr;</span>
+                                </div>
                             </div>
                         </a>
                     </article>
                 ))}
             </div>
             <div style="text-align: center; margin-top: var(--spacing-lg);">
-                <a href="/blog" class="btn btn--secondary">Lue kaikki kirjoitukset -></a>
+                <a href="/blog" class="btn btn--secondary">Lue kaikki kirjoitukset &rarr;</a>
             </div>
         </div>
     </section>
