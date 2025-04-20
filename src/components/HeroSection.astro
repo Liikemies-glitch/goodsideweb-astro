@@ -14,14 +14,15 @@ interface Props extends HTMLAttributes<'section'> {
     primaryButtonHref?: string;
     secondaryButtonText?: string;
     secondaryButtonHref?: string;
-    imageUrl: string;
-    imageAlt: string;
+    imageUrl?: string; // Made optional for textOnly mode
+    imageAlt?: string; // Made optional for textOnly mode
     stats?: StatItem[];
     paddingTop?: string;
     paddingBottom?: string;
     imageStyles?: string; // Allow passing custom styles for the image container
     imgStyles?: string; // Allow passing custom styles for the image itself
     linkToResults?: boolean; // New prop to automatically link primary button to #results-section
+    textOnly?: boolean; // New prop for text-only layout
 }
 
 const {
@@ -39,14 +40,18 @@ const {
     imageStyles = 'border-radius: 1rem; overflow: hidden;', // Default from referenssit.astro
     imgStyles = 'width: 100%; height: auto; display: block; object-fit: cover;', // Default from referenssit.astro
     linkToResults = false, // Default the new prop to false
+    textOnly = false, // Default textOnly to false
     ...rest // Collect any other attributes like class, id, etc.
 } = Astro.props;
 
 // Determine the actual href for the primary button
 const primaryHref = linkToResults ? '#results-section' : explicitPrimaryButtonHref;
+
+// Add textOnly class conditionally
+const sectionClasses = ["hero-section", rest.class, textOnly ? "hero-section--text-only" : ""].filter(Boolean).join(" ");
 ---
 
-<section class:list={["hero-section", rest.class]} style={`padding-top: ${paddingTop}; padding-bottom: ${paddingBottom};`} {...rest}>
+<section class:list={sectionClasses} style={`padding-top: ${paddingTop}; padding-bottom: ${paddingBottom};`} {...rest}>
     <div class="container hero-grid">
         <div class="hero-content">
             <h1 class="hero__title">{title}</h1>
@@ -71,9 +76,12 @@ const primaryHref = linkToResults ? '#results-section' : explicitPrimaryButtonHr
                 </div>
             )}
         </div>
-        <div class="hero-image-placeholder" style={imageStyles}>
-            <img src={imageUrl} alt={imageAlt} style={imgStyles}/>
-        </div>
+        {/* Conditionally render image based on textOnly prop and imageUrl */}
+        {!textOnly && imageUrl && imageAlt && (
+            <div class="hero-image-placeholder" style={imageStyles}>
+                <img src={imageUrl} alt={imageAlt} style={imgStyles}/>
+            </div>
+        )}
     </div>
 </section>
 
@@ -86,11 +94,16 @@ const primaryHref = linkToResults ? '#results-section' : explicitPrimaryButtonHr
     align-items: center;
   }
 
+  .hero-content {
+      /* Default alignment */
+      text-align: left;
+  }
+
   .hero-content .hero__title {
       margin-bottom: 1rem;
       font-weight: 700;
-      text-align: left;
       /* Inherit size from global or BaseLayout */
+      /* text-align is inherited from hero-content or overridden below */
   }
 
   .hero-buttons {
@@ -98,7 +111,7 @@ const primaryHref = linkToResults ? '#results-section' : explicitPrimaryButtonHr
       flex-wrap: wrap;
       gap: 1rem;
       margin-bottom: 2rem;
-      justify-content: flex-start;
+      justify-content: flex-start; /* Default alignment */
   }
 
   /* Ensure btn styles work (assuming .btn is global) */
@@ -123,6 +136,7 @@ const primaryHref = linkToResults ? '#results-section' : explicitPrimaryButtonHr
       flex-wrap: wrap;
       gap: 1.5rem;
       align-items: center;
+      justify-content: flex-start; /* Default alignment */
   }
 
   .hero-stat-item {
@@ -142,35 +156,72 @@ const primaryHref = linkToResults ? '#results-section' : explicitPrimaryButtonHr
       stroke: var(--success-color, #10b981); /* Use success color or default */
   }
 
+  /* Styles for text-only mode */
+  .hero-section--text-only .hero-grid {
+      grid-template-columns: 1fr; /* Single column layout */
+      /* text-align: center;  Let children handle text alignment */
+  }
+
+  .hero-section--text-only .hero-content {
+      text-align: center; /* Ensure content block itself is centered */
+      max-width: 800px; /* Optional: Constrain width for readability */
+      margin-left: auto; /* Center the block */
+      margin-right: auto; /* Center the block */
+  }
+  
+  .hero-section--text-only .hero-content .hero__title {
+       text-align: center; /* Explicitly center title */
+  }
+
+
+  .hero-section--text-only .hero-buttons {
+      justify-content: center; /* Center buttons */
+  }
+
+  .hero-section--text-only .hero-stats {
+      justify-content: center; /* Center stats */
+  }
+
 
   /* Responsiveness for hero */
   @media (max-width: 992px) {
-      .hero-grid {
+      .hero-grid { /* Applies to both modes unless overridden by text-only */
           grid-template-columns: 1fr; /* Single column */
           text-align: center;
           width: 100%;
       }
       .hero-content {
-          order: 2; /* Text after image */
+           /* Default order */
+           order: 1; /* Text first in mobile */
       }
       .hero-image-placeholder {
-          order: 1; /* Image first */
-          margin-bottom: 3rem;
-          min-height: 250px; /* Ensure space for image */
-          width: 100%;
-          max-width: 600px; /* Limit maximum width in mobile */
-          margin-left: auto;
-          margin-right: auto;
+           order: 2; /* Image second in mobile */
+           margin-top: 3rem; /* Add margin top instead of bottom when image is second */
+           margin-bottom: 0; 
+           min-height: 250px; /* Ensure space for image */
+           width: 100%;
+           max-width: 600px; /* Limit maximum width in mobile */
+           margin-left: auto;
+           margin-right: auto;
       }
+      /* Ensure centering applies correctly on mobile for both modes */
+       .hero-content .hero__title {
+           text-align: center; 
+       }
       .hero-buttons {
           justify-content: center;
       }
       .hero-stats {
           justify-content: center;
       }
-       .hero-content .hero__title {
-           text-align: center;
-       }
+       /* If image exists, text comes first on mobile */
+       /* If textOnly, the order doesn't matter as there's only one column */
+      .hero-section:not(.hero-section--text-only) .hero-content {
+          order: 1; 
+      }
+      .hero-section:not(.hero-section--text-only) .hero-image-placeholder {
+           order: 2; 
+      }
   }
 
   /* Smaller mobile adjustments if needed */
