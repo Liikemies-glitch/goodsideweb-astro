@@ -36,7 +36,7 @@ const pageDescription = "Luomme poikkeuksellisia digitaalisia kokemuksia, jotka 
                         {/* Kortti 1: Kojelautasuunnittelu */}
                         <div class="card">
                             <div class="card-icon"> {/* Icon: Layout */} <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg> </div>
-                            <h4>Dashboard-suunnittelu</h4>
+                            <h4>Dashboardit</h4>
                             <p>Intuitiiviset dashboardit, jotka tekevät monimutkaisesta datasta helposti ymmärrettävää ja käytettävää.</p>
                             <ul>
                                 <li>Datavisualisointi</li>
@@ -60,8 +60,8 @@ const pageDescription = "Luomme poikkeuksellisia digitaalisia kokemuksia, jotka 
                         {/* Kortti 3: UI-suunnittelujärjestelmät */}
                         <div class="card">
                             <div class="card-icon"> {/* Icon: Layers */} <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg> </div>
-                            <h4>UI-suunnittelujärjestelmät</h4>
-                            <p>Skaalautuvat suunnittelujärjestelmät, jotka varmistavat yhdenmukaisuuden ja nopeuttavat kehitystä.</p>
+                            <h4>Design-systeemit</h4>
+                            <p>Skaalautuvat design-systeemit, jotka varmistavat yhdenmukaisuuden ja tehokkuuden.</p>
                             <ul>
                                 <li>Komponenttikirjastot</li>
                                 <li>Figma & Cursor</li>
@@ -121,7 +121,7 @@ const pageDescription = "Luomme poikkeuksellisia digitaalisia kokemuksia, jotka 
                         <div class="card">
                              <div class="card-icon"> {/* Icon: Target */} <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg> </div>
                             <h4>Markkinaerottautuminen</h4>
-                            <p>Strateginen positiointi, joka auttaa SaaS-tuotettasi erottumaan kilpailluilla markkinoilla.</p>
+                            <p>Strateginen positiointi, joka auttaa SaaS-tuotettasi erottumaan markkinoilla.</p>
                              <ul>
                                 <li>Kilpailija-analyysi</li>
                                 <li>Ainutlaatuiset myyntiargumentit</li>
@@ -351,11 +351,7 @@ const pageDescription = "Luomme poikkeuksellisia digitaalisia kokemuksia, jotka 
         transition: box-shadow 0.3s ease, transform 0.3s ease;
          display: flex;
         flex-direction: column;
-    }
-
-     .card:hover {
-        box-shadow: var(--shadow-lg);
-         transform: translateY(-4px);
+        height: auto; /* Annetaan JS:n hallita korkeutta */
     }
 
      .card-icon {
@@ -380,8 +376,8 @@ const pageDescription = "Luomme poikkeuksellisia digitaalisia kokemuksia, jotka 
      .card p {
         color: var(--color-text-secondary);
         line-height: var(--line-height-normal);
-        flex-grow: 1; /* Pusketaan linkki alas */
-         margin-bottom: var(--spacing-s);
+        margin-bottom: var(--spacing-md);
+        /* flex-grow: 1; */
     }
 
      .card ul {
@@ -389,6 +385,7 @@ const pageDescription = "Luomme poikkeuksellisia digitaalisia kokemuksia, jotka 
         padding-left: 0;
         margin-bottom: var(--spacing-sm);
         color: var(--color-text-secondary);
+        flex-grow: 1; /* Annetaan listan venyä */
     }
 
     .card li {
@@ -411,6 +408,7 @@ const pageDescription = "Luomme poikkeuksellisia digitaalisia kokemuksia, jotka 
         text-decoration: none;
         transition: color 0.2s ease;
          align-self: flex-start; /* Estää linkkiä venymästä */
+         margin-top: auto; /* Työnnetään linkki kortin alaosaan */
     }
 
     .card-link:hover {
@@ -757,54 +755,99 @@ const pageDescription = "Luomme poikkeuksellisia digitaalisia kokemuksia, jotka 
 
 {/* Lisätään JavaScript tabi-toiminnallisuudelle */}
 <script>
+    // Debounce function
+    function debounce(func: (...args: any[]) => void, wait: number, immediate?: boolean): (...args: any[]) => void {
+        let timeout: number | null = null;
+        return function(this: any, ...args: any[]) {
+            const context = this;
+            const later = () => {
+                timeout = null;
+                if (!immediate) func.apply(context, args);
+            };
+            const callNow = immediate && !timeout;
+            clearTimeout(timeout as number | undefined);
+            timeout = window.setTimeout(later, wait);
+            if (callNow) func.apply(context, args);
+        };
+    };
+
+    // Function to synchronize card heights within a tab pane
+    function syncCardHeights(tabPane: HTMLElement | null) {
+        if (!tabPane) return;
+        const cards = tabPane.querySelectorAll('.card') satisfies NodeListOf<HTMLElement>;
+        if (!cards.length) return;
+
+        let maxHeight: number = 0;
+
+        // Reset heights first to get natural height
+        cards.forEach((card: HTMLElement) => {
+            card.style.height = 'auto';
+        });
+
+        // Find the max height - Use setTimeout to wait for render
+        setTimeout(() => {
+            cards.forEach((card: HTMLElement) => {
+                const cardHeight = card.offsetHeight;
+                if (cardHeight > maxHeight) {
+                    maxHeight = cardHeight;
+                }
+            });
+
+            // Apply the max height to all cards in the pane
+            cards.forEach((card: HTMLElement) => {
+                card.style.height = `${maxHeight}px`;
+            });
+        }, 50); // 50ms delay - adjust if needed
+    }
+
     document.addEventListener('DOMContentLoaded', () => {
         const tabContainer = document.querySelector('.expertise-section .container');
         if (!tabContainer) return;
 
         const tabButtons = tabContainer.querySelectorAll('.tabs-placeholder .tab-button-style') satisfies NodeListOf<HTMLButtonElement>;
         const tabPanes = tabContainer.querySelectorAll('.tab-content-area .tab-pane') satisfies NodeListOf<HTMLElement>;
+        let activePane = tabContainer.querySelector('.tab-content-area .tab-pane.active') as HTMLElement;
 
         tabButtons.forEach(button => {
             button.addEventListener('click', () => {
                 const targetTabId = button.dataset.tab;
                 if (!targetTabId) return;
 
-                // Päivitä nappien tila
+                // Update button states
                 tabButtons.forEach(btn => {
-                    btn.classList.remove('active');
-                    if (btn === button) {
-                        btn.classList.add('active');
-                    }
+                    btn.classList.toggle('active', btn === button);
                 });
 
-                // Päivitä paneelien tila
+                // Update pane states and sync heights
                 tabPanes.forEach(pane => {
-                    if (pane.id === targetTabId) {
-                        pane.classList.add('active');
-                    } else {
-                        pane.classList.remove('active');
+                    const isActive = pane.id === targetTabId;
+                    pane.classList.toggle('active', isActive);
+                    if (isActive) {
+                        activePane = pane; // Update active pane reference
+                        // Wait a tiny moment for rendering before calculating height
+                        requestAnimationFrame(() => {
+                             syncCardHeights(pane);
+                        });
                     }
                 });
             });
         });
 
-        // Varmista, että initial state on oikein (vaikka Astro hoitaa SSR)
-        // Tämä on lisävarmistus client-puolella
-        const initiallyActiveButton = tabContainer.querySelector('.tabs-placeholder .tab-button-style.active') as HTMLElement;
-        const initialTargetId = initiallyActiveButton?.dataset.tab;
-
-        if (initialTargetId) {
-            tabPanes.forEach(pane => {
-                 if (pane.id === initialTargetId) {
-                    if (!pane.classList.contains('active')) {
-                         pane.classList.add('active'); // Varmista aktiivinen luokka
-                    }
-                 } else {
-                    if (pane.classList.contains('active')) {
-                         pane.classList.remove('active'); // Varmista, ettei muita ole aktiivisena
-                     }
-                 }
+        // Initial height synchronization for the default active tab
+        if (activePane) {
+             // Wait a tiny moment for rendering before calculating height
+            requestAnimationFrame(() => {
+                 syncCardHeights(activePane);
             });
         }
+
+        // Resync heights on window resize (debounced)
+        const debouncedSync = debounce(() => {
+            if (activePane) {
+                syncCardHeights(activePane);
+            }
+        }, 250, false); // Add third argument (immediate = false)
+
+        window.addEventListener('resize', debouncedSync);
     });
 </script>
