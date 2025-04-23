@@ -1,70 +1,142 @@
 ---
 // src/layouts/BaseLayout.astro
 import '../styles/styles.css'; // Import global styles
+import { SEO } from 'astro-seo'; // Import SEO component
+import type { TwitterCardType } from 'astro-seo'; // Import specific type for Twitter card
 
 // Define props for dynamic title and description
 interface Props {
 	title: string;
 	description: string;
     ogImage?: string; // Add optional ogImage prop
+    // Add other SEO-related props if needed (e.g., specific keywords, author)
 }
 
-const { title, description, ogImage } = Astro.props; // Destructure ogImage
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const defaultOgImage = new URL('/images/brand/logo.webp', Astro.url.origin).toString(); // Using logo as default
+const { 
+    title, 
+    description, 
+    ogImage 
+} = Astro.props;
+
+const siteUrl = Astro.site?.toString() ?? 'https://www.goodside.fi'; // Ensure site URL is defined
+const canonicalURL = new URL(Astro.url.pathname, siteUrl).toString();
 
 // Determine the final Open Graph image URL
+// Use the provided ogImage, fallback to a default, ensure it's absolute
 const finalOgImage = ogImage 
-    ? new URL(ogImage, Astro.url.origin).toString() 
-    : defaultOgImage;
+    ? new URL(ogImage, siteUrl).toString() 
+    : new URL('/og_image.png', siteUrl).toString(); // Default Open Graph image (separate from the logo)
+
+// --- SEO Component Configuration ---
+
+// Define base Open Graph properties
+const baseOgProperties = {
+    title: title, // Use page title
+    type: 'website',
+    image: finalOgImage, // Use determined image URL
+    url: canonicalURL, // Use canonical URL
+    siteName: 'The Good Side', // Site name
+    description: description // Use page description
+};
+
+// Define base Twitter card properties
+const baseTwitterProperties = {
+    card: 'summary_large_image' as TwitterCardType, // Explicitly cast the card type
+    site: '@aaltoyleva', // Twitter handle
+    creator: '@aaltoyleva', // Twitter handle
+    title: title, // Use page title
+    description: description, // Use page description
+    image: finalOgImage, // Use determined image URL
+    // imageAlt: 'Descriptive alt text for the image on Twitter' // Add specific alt text if needed
+};
+
+// Define Organization Schema
+const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    'url': siteUrl,
+    'logo': new URL('/images/brand/logo.webp', siteUrl).toString(), // Keep the logo for schema unchanged
+    'name': 'The Good Side Oy', // Assuming 'Oy' part based on footer
+    'contactPoint': {
+        '@type': 'ContactPoint',
+        'telephone': '+358-40-869-8887', // Use international format
+        'contactType': 'Customer Service', // Or appropriate type
+        'email': 'mikki@goodside.fi' // Added email from footer
+    },
+    'sameAs': [ // Added LinkedIn from footer
+        'https://www.linkedin.com/company/the-good-side-oy/'
+    ]
+};
+
 ---
 <!DOCTYPE html>
 <html lang="fi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content={description}>
-    <title>{title}</title>
+    {/* <meta name="description" content={description}> Replaced by SEO component */}
+    {/* <title>{title}</title> Replaced by SEO component */}
 
     {/* Favicon Links - Assuming files are in /public/ */}
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico"> {/* Fallback for older browsers */}
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+    <link rel="manifest" href="/site.webmanifest"/>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico"/> {/* Fallback for older browsers */}
     {/* Optional: Add SVG icon link if you have one */}
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
 
     <!-- Preload fonts for better performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
     <!-- Astro will handle CSS bundling, this is imported above -->
     <!-- <link rel="stylesheet" href="/styles.css"> -->
     <script is:inline src="/scripts/main.js"></script> <!-- Link main JS -->
 
-    {/* Open Graph / Facebook */}    <meta property="og:type" content="website">
+    {/* SEO Component Insertion with Organization JSON-LD schema */}
+    <SEO
+        title={title}
+        description={description}
+        canonical={canonicalURL}
+        openGraph={{
+            basic: baseOgProperties,
+            // Add image properties if needed (width, height, etc.)
+            // image: {
+            //     alt: 'Alt text for Open Graph image'
+            // }
+        }}
+        twitter={baseTwitterProperties}
+        extend={{
+             meta: [{ 
+                 name: 'script:ld+json', 
+                 content: JSON.stringify(organizationSchema)
+             }]
+        }}
+    />
+
+    {/* Remove Old Meta Tags - These are now handled by the SEO component */}
+    {/* 
+    <meta property="og:type" content="website">
     <meta property="og:url" content={canonicalURL}>
     <meta property="og:title" content={title}>
     <meta property="og:description" content={description}>
     <meta property="og:image" content={finalOgImage}>
-
-    {/* Twitter */}    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content={canonicalURL}>
     <meta property="twitter:title" content={title}>
     <meta property="twitter:description" content={description}>
     <meta property="twitter:image" content={finalOgImage}>
+    <link rel="canonical" href={canonicalURL} /> 
+    */}
 
-    {/* Canonical URL */}
-    <link rel="canonical" href={canonicalURL} />
 </head>
 <body>
     <!-- Header/Navigation -->
     <header class="header">
         <nav class="nav container">
             <a href="/" class="nav__logo">
-                <!-- Update image path -->
-                <img src="/images/brand/logo.webp" alt="The Good Side" width="140" height="32">
+                <img src="/images/brand/logo.webp" alt="The Good Side" width="140" height="32"/>
             </a>
             <button class="nav__toggle" aria-label="Toggle menu">
                 <span></span>
@@ -72,7 +144,6 @@ const finalOgImage = ogImage
                 <span></span>
             </button>
             <ul class="nav__menu">
-                <!-- Update links to use root-relative paths -->
                 <li><a href="/palvelut">Palvelut</a></li>
                 <li><a href="/referenssit">Referenssit</a></li>
                 <li><a href="/blog">Blogi</a></li>
@@ -94,7 +165,7 @@ const finalOgImage = ogImage
             <div class="footer__grid">
                 <div class="footer__brand">
                     <a href="/" class="footer__logo">
-                        <img src="/images/brand/logo.webp" alt="The Good Side" width="140" height="32">
+                        <img src="/images/brand/logo.webp" alt="The Good Side" width="140" height="32"/>
                     </a>
                     <p>Autamme tuotetiimejä rakentamaan menestyvää SaaS-liiketoimintaa.</p>
                     <p>&copy; {new Date().getFullYear()} The Good Side Oy. Kaikki oikeudet pidätetään.</p>

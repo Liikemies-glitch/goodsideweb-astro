@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Allow specific AI crawlers
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent:anthropic-ai
+Allow: /
+
+Sitemap: /sitemap-index.xml 
