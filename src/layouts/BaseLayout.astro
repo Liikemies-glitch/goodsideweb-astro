@@ -77,6 +77,16 @@ const organizationSchema = {
     {/* <meta name="description" content={description}> Replaced by SEO component */}
     {/* <title>{title}</title> Replaced by SEO component */}
 
+    <!-- Google tag (gtag.js) - Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RQ16VX54BC"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-RQ16VX54BC');
+    </script>
+
     {/* Favicon Links - Assuming files are in /public/ */}
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
