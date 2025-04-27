@@ -14,7 +14,7 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
-User-agent:anthropic-ai
+User-agent: anthropic-ai
 Allow: /
 
-Sitemap: /sitemap-index.xml 
+Sitemap: https://goodside.fi/sitemap-index.xml 
