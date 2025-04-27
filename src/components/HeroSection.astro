@@ -9,7 +9,7 @@ interface StatItem {
 
 interface Props extends HTMLAttributes<'section'> {
     title: string;
-    paragraph: string;
+    paragraph?: string;
     primaryButtonText?: string;
     primaryButtonHref?: string;
     secondaryButtonText?: string;
@@ -27,7 +27,7 @@ interface Props extends HTMLAttributes<'section'> {
 
 const {
     title,
-    paragraph,
+    paragraph = '',
     primaryButtonText,
     primaryButtonHref: explicitPrimaryButtonHref, // Renamed to avoid conflict
     secondaryButtonText,
@@ -36,7 +36,7 @@ const {
     imageAlt,
     stats,
     paddingTop = '4rem',
-    paddingBottom = '6rem',
+    paddingBottom = '3rem',
     imageStyles = 'border-radius: 1rem; overflow: hidden;', // Default from referenssit.astro
     imgStyles = 'width: 100%; height: auto; display: block; object-fit: cover;', // Default from referenssit.astro
     linkToResults = false, // Default the new prop to false
@@ -55,9 +55,11 @@ const sectionClasses = ["hero-section", rest.class, textOnly ? "hero-section--te
     <div class="container hero-grid">
         <div class="hero-content">
             <h1 class="hero__title">{title}</h1>
-            <p class="large-paragraph" style="margin-bottom: 2rem;">
-                {paragraph}
-            </p>
+            <div class="large-paragraph" style="margin-bottom: 2rem;">
+                <slot name="paragraph">
+                    {paragraph}
+                </slot>
+            </div>
             <div class="hero-buttons">
                 {primaryButtonText && primaryHref && (
                     <a href={primaryHref} class="btn btn--primary">{primaryButtonText}</a>
@@ -165,23 +167,28 @@ const sectionClasses = ["hero-section", rest.class, textOnly ? "hero-section--te
   }
 
   .hero-section--text-only .hero-content {
-      text-align: center; /* Ensure content block itself is centered */
+      /* Poistettu: text-align: center; */
       max-width: 800px; /* Optional: Constrain width for readability */
-      margin-left: auto; /* Center the block */
-      margin-right: auto; /* Center the block */
+      /* Poistettu: margin-left: auto; */ /* Center the block */
+      /* Poistettu: margin-right: auto; */ /* Center the block */
+       /* Varmistetaan vasen tasaus */
+      text-align: left;
+      margin-left: 0;
+      margin-right: 0;
   }
-  
+
   .hero-section--text-only .hero-content .hero__title {
-       text-align: center; /* Explicitly center title */
+       /* Poistettu: text-align: center; */ /* Explicitly center title */
+       text-align: left; /* Varmistetaan vasen tasaus */
   }
 
 
   .hero-section--text-only .hero-buttons {
-      justify-content: center; /* Center buttons */
+      justify-content: flex-start; /* Muutettu center -> flex-start */
   }
 
   .hero-section--text-only .hero-stats {
-      justify-content: center; /* Center stats */
+      justify-content: flex-start; /* Muutettu center -> flex-start */
   }
 
 

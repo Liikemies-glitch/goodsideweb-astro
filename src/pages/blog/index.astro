@@ -16,6 +16,7 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { Image } from 'astro:assets';
+import HeroSection from '../../components/HeroSection.astro';
 
 // 1. Fetch all published blog posts
 const allPosts = await getCollection('blog');
@@ -28,10 +29,13 @@ const pageDescription = "Lue The Good Side -blogin viimeisimmät artikkelit tuot
 ---
 <BaseLayout title={pageTitle} description={pageDescription}>
   <section class="blog-index container">
-    <header class="blog-index__header">
-      <h1 class="section__title">Blogi</h1>
-      <p class="section__subtitle">Viimeisimmät artikkelit tuotestrategiasta, SaaSista, designista ja muotoilusta.</p>
-    </header>
+    <HeroSection
+        title="Blogi"
+        paragraph="Viimeisimmät artikkelit tuotestrategiasta, SaaSista, designista ja muotoilusta."
+        textOnly={true}
+        paddingTop="0"
+        paddingBottom="var(--spacing-xl)"
+    />
 
     <div class="blog-index__grid">
       {sortedPosts.map((post: CollectionEntry<'blog'>) => (
@@ -80,22 +84,6 @@ const pageDescription = "Lue The Good Side -blogin viimeisimmät artikkelit tuot
   .blog-index {
     padding-top: var(--spacing-xl);
     padding-bottom: var(--spacing-xxl);
-  }
-
-  .blog-index__header {
-    text-align: center;
-    margin-bottom: var(--spacing-xl);
-  }
-
-  /* Add styles for the H1 title */
-  .blog-index__header .section__title {
-      font-size: clamp(3rem, 5vw, 4.5rem);
-      line-height: 1.4;
-      margin-bottom: var(--spacing-lg);
-      background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin-top: var(--spacing-sm);
   }
 
   .blog-index__grid {
