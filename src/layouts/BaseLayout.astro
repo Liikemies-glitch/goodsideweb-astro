@@ -3,6 +3,7 @@
 import '../styles/styles.css'; // Import global styles
 import { SEO } from 'astro-seo'; // Import SEO component
 import type { TwitterCardType } from 'astro-seo'; // Import specific type for Twitter card
+import Footer from '../components/Footer.astro'; // Import the new Footer component
 
 // Define props for dynamic title and description
 interface Props {
@@ -169,43 +170,8 @@ const organizationSchema = {
         <slot />
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__grid">
-                <div class="footer__brand">
-                    <a href="/" class="footer__logo">
-                        <img src="/images/brand/logo.webp" alt="The Good Side" width="140" height="32"/>
-                    </a>
-                    <p>Autamme tuotetiimejä rakentamaan menestyvää SaaS-liiketoimintaa.</p>
-                    <p>&copy; {new Date().getFullYear()} The Good Side Oy. Kaikki oikeudet pidätetään.</p>
-                </div>
-                <div class="footer__links">
-                    <h4>Sivusto</h4>
-                    <ul>
-                        <li><a href="/">Etusivu</a></li>
-                        <li><a href="/palvelut">Palvelut</a></li>
-                        <li><a href="/referenssit">Referenssit</a></li>
-                        <li><a href="/blog">Blogi</a></li>
-                        <li><a href="/contact">Ota yhteyttä</a></li>
-                    </ul>
-                </div>
-                <div class="footer__links">
-                    <h4>Seuraa meitä</h4>
-                    <ul>
-                        <li><a href="https://www.linkedin.com/company/the-good-side-oy/" target="_blank">LinkedIn</a></li>
-                        <!-- Add other social links if needed -->
-                    </ul>
-                </div>
-                <div class="footer__contact">
-                    <h4>Ota yhteyttä</h4>
-                    <p><strong>Mikki Aalto-Ylevä</strong></p>
-                    <p><a href="tel:0408698887">040 869 8887</a></p>
-                    <p><a href="mailto:mikki@goodside.fi">mikki@goodside.fi</a></p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Use the new Footer component -->
+    <Footer />
 
 </body>
 </html> 

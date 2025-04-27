@@ -1243,7 +1243,33 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
     .footer__grid {
         grid-template-columns: 1fr;
-        gap: var(--spacing-l);
+        gap: var(--spacing-xl); /* Increase gap for better separation */
+        text-align: left; /* Center text within the grid container */
+    }
+
+    /* Center content within each column */
+    .footer__brand,
+    .footer__links,
+    .footer__contact {
+        text-align: left;
+    }
+
+    /* Center the logo within the brand column */
+    .footer__logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Center the list items in the links columns */
+    .footer__links ul {
+        display: inline-block; /* Allows text-align: center to work */
+        text-align: left; /* Keep link text left-aligned */
+    }
+
+    /* Adjust contact paragraph alignment */
+    .footer__contact p {
+        justify-content: left;
+        text-align: left; /* Center contact text */
     }
 
     .footer__legal {
