@@ -23,6 +23,7 @@ interface Props extends HTMLAttributes<'section'> {
     imgStyles?: string; // Allow passing custom styles for the image itself
     linkToResults?: boolean; // New prop to automatically link primary button to #results-section
     textOnly?: boolean; // New prop for text-only layout
+    textAlign?: 'left' | 'center'; // New prop to control text alignment
 }
 
 const {
@@ -41,14 +42,20 @@ const {
     imgStyles = 'width: 100%; height: auto; display: block; object-fit: cover;', // Default from referenssit.astro
     linkToResults = false, // Default the new prop to false
     textOnly = false, // Default textOnly to false
+    textAlign = 'left', // Default alignment is left
     ...rest // Collect any other attributes like class, id, etc.
 } = Astro.props;
 
 // Determine the actual href for the primary button
 const primaryHref = linkToResults ? '#results-section' : explicitPrimaryButtonHref;
 
-// Add textOnly class conditionally
-const sectionClasses = ["hero-section", rest.class, textOnly ? "hero-section--text-only" : ""].filter(Boolean).join(" ");
+// Add textOnly and alignment classes conditionally
+const sectionClasses = [
+    "hero-section", 
+    rest.class, 
+    textOnly ? "hero-section--text-only" : "",
+    `hero-section--align-${textAlign}`
+].filter(Boolean).join(" ");
 ---
 
 <section class:list={sectionClasses} style={`padding-top: ${paddingTop}; padding-bottom: ${paddingBottom};`} {...rest}>
@@ -98,16 +105,14 @@ const sectionClasses = ["hero-section", rest.class, textOnly ? "hero-section--te
     align-items: center;
   }
 
+  /* Default: Left-aligned content */
   .hero-content {
-      /* Default alignment */
       text-align: left;
   }
 
   .hero-content .hero__title {
       margin-bottom: 1rem;
       font-weight: 700;
-      /* Inherit size from global or BaseLayout */
-      /* text-align is inherited from hero-content or overridden below */
   }
 
   .hero-buttons {
@@ -115,7 +120,54 @@ const sectionClasses = ["hero-section", rest.class, textOnly ? "hero-section--te
       flex-wrap: wrap;
       gap: 1rem;
       margin-bottom: 2rem;
-      justify-content: flex-start; /* Default alignment */
+      justify-content: flex-start;
+  }
+
+  .hero-stats {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      align-items: center;
+      justify-content: flex-start;
+  }
+
+  /* Center-aligned content */
+  .hero-section--align-center .hero-content {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .hero-section--align-center .hero-content .hero__title {
+      text-align: center;
+  }
+
+  .hero-section--align-center .hero-buttons {
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .hero-section--align-center .hero-stats {
+      justify-content: center;
+  }
+
+  /* Left-aligned content (explicit) */
+  .hero-section--align-left .hero-content {
+      text-align: left;
+  }
+
+  .hero-section--align-left .hero-content .hero__title {
+      text-align: left;
+  }
+
+  .hero-section--align-left .hero-buttons {
+      justify-content: flex-start;
+  }
+
+  .hero-section--align-left .hero-stats {
+      justify-content: flex-start;
   }
 
   /* Ensure btn styles work (assuming .btn is global) */
@@ -132,15 +184,6 @@ const sectionClasses = ["hero-section", rest.class, textOnly ? "hero-section--te
 
   .btn--secondary:hover {
        filter: brightness(1.1); /* Simple hover effect */
-  }
-
-  .hero-stats {
-      margin-top: 2rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      align-items: center;
-      justify-content: flex-start; /* Default alignment */
   }
 
   .hero-stat-item {
@@ -163,85 +206,49 @@ const sectionClasses = ["hero-section", rest.class, textOnly ? "hero-section--te
   /* Styles for text-only mode */
   .hero-section--text-only .hero-grid {
       grid-template-columns: 1fr; /* Single column layout */
-      /* text-align: center;  Let children handle text alignment */
   }
 
   .hero-section--text-only .hero-content {
-      /* Poistettu: text-align: center; */
       max-width: 800px; /* Optional: Constrain width for readability */
-      /* Poistettu: margin-left: auto; */ /* Center the block */
-      /* Poistettu: margin-right: auto; */ /* Center the block */
-       /* Varmistetaan vasen tasaus */
-      text-align: left;
-      margin-left: 0;
-      margin-right: 0;
+      margin-left: auto;
+      margin-right: auto;
   }
-
-  .hero-section--text-only .hero-content .hero__title {
-       /* Poistettu: text-align: center; */ /* Explicitly center title */
-       text-align: left; /* Varmistetaan vasen tasaus */
-  }
-
-
-  .hero-section--text-only .hero-buttons {
-      justify-content: flex-start; /* Muutettu center -> flex-start */
-  }
-
-  .hero-section--text-only .hero-stats {
-      justify-content: flex-start; /* Muutettu center -> flex-start */
-  }
-
 
   /* Responsiveness for hero */
   @media (max-width: 992px) {
       .hero-grid { /* Applies to both modes unless overridden by text-only */
           grid-template-columns: 1fr; /* Single column */
-          text-align: left; /* Changed from center to left */
           width: 100%;
-          padding-left: 0; /* Ensure no extra padding on left */
-          padding-right: 0; /* Ensure no extra padding on right */
-          margin-left: auto; /* Center the grid */
-          margin-right: auto; /* Center the grid */
-      }
-      .hero-content {
-          /* Default order */
-          order: 1; /* Text first in mobile */
-          padding-left: var(--spacing-md); /* Add consistent padding */
-          padding-right: var(--spacing-md); /* Add consistent padding */
-          width: 100%; /* Ensure full width */
-          box-sizing: border-box; /* Include padding in width calculation */
-          margin-left: 0; /* Reset any potential margins */
-          margin-right: 0; /* Reset any potential margins */
-          text-align: left; /* Keep text left-aligned */
-      }
-      .hero-image-placeholder {
-          order: 2; /* Image second in mobile */
-          margin-top: 3rem; /* Add margin top instead of bottom when image is second */
-          margin-bottom: 0; 
-          min-height: 250px; /* Ensure space for image */
-          width: 100%;
-          max-width: 600px; /* Limit maximum width in mobile */
           margin-left: auto;
           margin-right: auto;
       }
-      /* Ensure centering applies correctly on mobile for both modes */
-      .hero-content .hero__title {
-          text-align: left; /* Keep left-aligned on mobile */
-          width: 100%; /* Ensure full width */
+      
+      .hero-content {
+          order: 1; /* Text first in mobile */
+          padding-left: var(--spacing-md);
+          padding-right: var(--spacing-md);
+          width: 100%;
+          box-sizing: border-box;
+          margin-left: 0;
+          margin-right: 0;
       }
-      .hero-buttons {
-          justify-content: center;
-          width: 100%; /* Ensure full width */
+      
+      .hero-image-placeholder {
+          order: 2; /* Image second in mobile */
+          margin-top: 3rem;
+          margin-bottom: 0; 
+          min-height: 250px; /* Ensure space for image */
+          width: 100%;
+          max-width: 600px;
+          margin-left: auto;
+          margin-right: auto;
       }
-      .hero-stats {
-          justify-content: flex-start; /* Changed from center to left-aligned */
-          width: 100%; /* Ensure full width */
-      }
+      
       /* If image exists, text comes first on mobile */
-      /* If textOnly, the order doesn't matter as there's only one column */
       .hero-section:not(.hero-section--text-only) .hero-content {
           order: 1; 
       }
+      
       .hero-section:not(.hero-section--text-only) .hero-image-placeholder {
           order: 2; 
       }
@@ -261,24 +268,29 @@ const sectionClasses = ["hero-section", rest.class, textOnly ? "hero-section--te
           padding-left: var(--spacing-sm);
           padding-right: var(--spacing-sm);
       }
+      
       .hero-section .container {
           padding-left: var(--spacing-sm);
           padding-right: var(--spacing-sm);
       }
+      
       /* Force no extra horizontal paddings or margins on mobile */
       .hero-buttons {
           width: 100%;
           margin-left: auto;
           margin-right: auto;
       }
+      
       .hero-buttons .btn {
           text-align: center;
           justify-content: center;
       }
+      
       /* Reduce gap between stats items on mobile */
       .hero-stats {
           gap: 0.75rem;
       }
+      
       /* Hide hero image on mobile */
       .hero-image-placeholder {
           display: none;
@@ -315,8 +327,8 @@ const sectionClasses = ["hero-section", rest.class, textOnly ? "hero-section--te
       }
       
       .hero-content {
-          padding-left: 0 !important; /* Override any other padding */
-          padding-right: 0 !important; /* Override any other padding */
+          padding-left: 0 !important;
+          padding-right: 0 !important;
           width: 100%;
           box-sizing: border-box;
           margin-left: auto;
