@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BackgroundPaths from '../components/BackgroundPaths.tsx';
 import CTASection from '../components/CTASection.astro';
+import HeroSection from '../components/HeroSection.astro';
 
 const pageTitle = "SaaS-suunnittelun palvelut - The Good Side";
 const pageDescription = "Luomme poikkeuksellisia digitaalisia kokemuksia, jotka auttavat SaaS-yrityksiä erottumaan, sitouttamaan käyttäjiä ja kasvamaan.";
@@ -9,13 +10,14 @@ const pageDescription = "Luomme poikkeuksellisia digitaalisia kokemuksia, jotka 
 <BaseLayout title={pageTitle} description={pageDescription}>
     <BackgroundPaths client:load />
 
-    <!-- Uusi sisältö alkaa -->
-    <section class="saas-hero" style="padding-top: 4rem; padding-bottom: 3rem; text-align: center;">
-        <div class="container">
-            <h1>SaaS-tuotteiden spesialisteja</h1>
-            <p class="large-paragraph" style="max-width: 700px; margin: 1rem auto 3rem auto;">Luomme poikkeuksellisia digitaalisia kokemuksia, jotka auttavat SaaS-yrityksiä erottumaan, sitouttamaan käyttäjiä ja kasvamaan.</p>
-        </div>
-    </section>
+    <HeroSection
+        title="Rakenna SaaS-tuote, jota käyttäjät rakastavat"
+        paragraph="Palvelemme sinua kokonaisvaltaisesti SaaS-tuotteesi kehittämisessä - käyttöliittymäsuunnittelusta ja käyttäjäpoluista aina strategiseen tuotepositiointiin."
+        textOnly={true}
+        paddingTop="4rem"
+        paddingBottom="3rem"
+        class="saas-hero-component"
+    />
 
     <!-- Osaamisalueet (korvaa vanhan tabi-osion) -->
      <section class="expertise-section">
@@ -615,16 +617,17 @@ const pageDescription = "Luomme poikkeuksellisia digitaalisia kokemuksia, jotka 
     }
 
     /* Lisätään palvelut-sivun hero-otsikon tyylit */
-    .saas-hero h1 {
+    /* REMOVED .saas-hero h1 styles as HeroSection handles its own title styling */
+    /* .saas-hero h1 {
         font-size: clamp(3rem, 5vw, 4.5rem); /* Sama kuin contact.astro */
-        line-height: 1.2; /* Sama kuin contact.astro */
-        margin-bottom: var(--spacing-lg); /* Sama kuin contact.astro */
-        background: linear-gradient(45deg, var(--secondary-color), var(--primary-color)); /* Sama kuin contact.astro */
-        -webkit-background-clip: text;
+    /*    line-height: 1.2; /* Sama kuin contact.astro */
+    /*    margin-bottom: var(--spacing-lg); /* Sama kuin contact.astro */
+    /*    background: linear-gradient(45deg, var(--secondary-color), var(--primary-color)); /* Sama kuin contact.astro */
+    /*    -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         text-align: center; /* Muutettu keskelle */
-        margin-top: var(--spacing-sm); /* Lisätään vähän marginaalia ylös */
-    }
+    /*    margin-top: var(--spacing-sm); /* Lisätään vähän marginaalia ylös */
+    /* } */
 
     /* REMOVED h3 style specific to old testimonial card */
     /* .testimonial-card-content h3 { ... } */

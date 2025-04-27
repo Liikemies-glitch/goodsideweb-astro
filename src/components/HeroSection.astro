@@ -10,7 +10,7 @@ interface StatItem {
 interface Props extends HTMLAttributes<'section'> {
     title: string;
     paragraph: string;
-    primaryButtonText: string;
+    primaryButtonText?: string;
     primaryButtonHref?: string;
     secondaryButtonText?: string;
     secondaryButtonHref?: string;
@@ -59,7 +59,9 @@ const sectionClasses = ["hero-section", rest.class, textOnly ? "hero-section--te
                 {paragraph}
             </p>
             <div class="hero-buttons">
-                <a href={primaryHref} class="btn btn--primary">{primaryButtonText}</a>
+                {primaryButtonText && primaryHref && (
+                    <a href={primaryHref} class="btn btn--primary">{primaryButtonText}</a>
+                )}
                 {secondaryButtonText && secondaryButtonHref && (
                     <a href={secondaryButtonHref} class="btn btn--secondary">{secondaryButtonText}&nbsp;&rarr;</a>
                 )}
