@@ -3,6 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
 import HeroSection from '../components/HeroSection.astro';
+import TrustmaryEmbed from '../components/TrustmaryEmbed.astro';
+import CalendlyEmbed from '../components/CalendlyEmbed.astro';
 
 const pageTitle = "The Good Side | SaaS-tuotetiimien strategiakumppani";
 const pageDescription = "The Good Side - Autamme tuotetiimejä rakentamaan menestyvää SaaS-liiketoimintaa yhdistämällä tuotestrategian ja designin.";
@@ -213,8 +215,9 @@ function formatDate(date: Date): string {
                 <p class="section__subtitle">Lue mitä asiakkaamme kertovat kokemuksistaan</p>
             </div>
             <div class="testimonials__grid">
-                 <!-- Trustmary script removed for now, can be added back with is:inline if needed -->
-                 <script is:inline src="https://widget.trustmary.com/viOfoLSyY"></script>
+                 <div class="trustmary-widget">
+                    <TrustmaryEmbed />
+                </div>
             </div>
         </div>
     </section>
@@ -327,21 +330,7 @@ function formatDate(date: Date): string {
                 <p class="section__subtitle">Varaa aika ja katsotaan miten voimme auttaa tiimiäsi menestymään</p>
             </div>
             <div class="schedule-meeting__embed">
-                <!-- Cal.com embed start -->
-                <div style="width:100%;height:100%;overflow:scroll" id="cal-inline-index"></div>
-                <script type="text/javascript" is:inline>
-                    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-                    Cal("init", "kartoitustapaaminen", {origin:"https://cal.com"});
-
-                    Cal.ns.kartoitustapaaminen("inline", {
-                        elementOrSelector:"#cal-inline-index", // Use the new ID here
-                        config: {"layout":"month_view"},
-                        calLink: "aaltoyleva/kartoitustapaaminen",
-                    });
-
-                    Cal.ns.kartoitustapaaminen("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
-                </script>
-                <!-- Cal.com embed end -->
+                <CalendlyEmbed elementId="cal-inline-index" calLink="aaltoyleva/kartoitustapaaminen" />
             </div>
         </div>
     </section>

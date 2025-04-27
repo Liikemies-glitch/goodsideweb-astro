@@ -187,47 +187,138 @@ const sectionClasses = ["hero-section", rest.class, textOnly ? "hero-section--te
   @media (max-width: 992px) {
       .hero-grid { /* Applies to both modes unless overridden by text-only */
           grid-template-columns: 1fr; /* Single column */
-          text-align: center;
+          text-align: left; /* Changed from center to left */
           width: 100%;
+          padding-left: 0; /* Ensure no extra padding on left */
+          padding-right: 0; /* Ensure no extra padding on right */
+          margin-left: auto; /* Center the grid */
+          margin-right: auto; /* Center the grid */
       }
       .hero-content {
-           /* Default order */
-           order: 1; /* Text first in mobile */
+          /* Default order */
+          order: 1; /* Text first in mobile */
+          padding-left: var(--spacing-md); /* Add consistent padding */
+          padding-right: var(--spacing-md); /* Add consistent padding */
+          width: 100%; /* Ensure full width */
+          box-sizing: border-box; /* Include padding in width calculation */
+          margin-left: 0; /* Reset any potential margins */
+          margin-right: 0; /* Reset any potential margins */
+          text-align: left; /* Keep text left-aligned */
       }
       .hero-image-placeholder {
-           order: 2; /* Image second in mobile */
-           margin-top: 3rem; /* Add margin top instead of bottom when image is second */
-           margin-bottom: 0; 
-           min-height: 250px; /* Ensure space for image */
-           width: 100%;
-           max-width: 600px; /* Limit maximum width in mobile */
-           margin-left: auto;
-           margin-right: auto;
+          order: 2; /* Image second in mobile */
+          margin-top: 3rem; /* Add margin top instead of bottom when image is second */
+          margin-bottom: 0; 
+          min-height: 250px; /* Ensure space for image */
+          width: 100%;
+          max-width: 600px; /* Limit maximum width in mobile */
+          margin-left: auto;
+          margin-right: auto;
       }
       /* Ensure centering applies correctly on mobile for both modes */
-       .hero-content .hero__title {
-           text-align: center; 
-       }
+      .hero-content .hero__title {
+          text-align: left; /* Keep left-aligned on mobile */
+          width: 100%; /* Ensure full width */
+      }
       .hero-buttons {
           justify-content: center;
+          width: 100%; /* Ensure full width */
       }
       .hero-stats {
-          justify-content: center;
+          justify-content: flex-start; /* Changed from center to left-aligned */
+          width: 100%; /* Ensure full width */
       }
-       /* If image exists, text comes first on mobile */
-       /* If textOnly, the order doesn't matter as there's only one column */
+      /* If image exists, text comes first on mobile */
+      /* If textOnly, the order doesn't matter as there's only one column */
       .hero-section:not(.hero-section--text-only) .hero-content {
           order: 1; 
       }
       .hero-section:not(.hero-section--text-only) .hero-image-placeholder {
-           order: 2; 
+          order: 2; 
+      }
+
+      /* Fix for container in mobile */
+      .hero-section .container {
+          width: 100%;
+          box-sizing: border-box;
+          padding-left: var(--spacing-md);
+          padding-right: var(--spacing-md);
       }
   }
 
-  /* Smaller mobile adjustments if needed */
-  /*
+  /* Smaller mobile adjustments */
   @media (max-width: 768px) {
-       Optional: further adjustments
+      .hero-content {
+          padding-left: var(--spacing-sm);
+          padding-right: var(--spacing-sm);
+      }
+      .hero-section .container {
+          padding-left: var(--spacing-sm);
+          padding-right: var(--spacing-sm);
+      }
+      /* Force no extra horizontal paddings or margins on mobile */
+      .hero-buttons {
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+      }
+      .hero-buttons .btn {
+          text-align: center;
+          justify-content: center;
+      }
+      /* Reduce gap between stats items on mobile */
+      .hero-stats {
+          gap: 0.75rem;
+      }
+      /* Hide hero image on mobile */
+      .hero-image-placeholder {
+          display: none;
+      }
   }
-  */
+
+  /* Specific fix for hero container alignment issues */
+  .hero-section {
+      width: 100%;
+      box-sizing: border-box;
+  }
+
+  .hero-section .container {
+      width: 100%; 
+      box-sizing: border-box;
+      padding-left: var(--spacing-xl);
+      padding-right: var(--spacing-xl);
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .hero-section .hero-grid {
+      width: 100%;
+      box-sizing: border-box;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  @media (max-width: 992px) {
+      .hero-section .container {
+          padding-left: var(--spacing-md);
+          padding-right: var(--spacing-md);
+          max-width: 100%;
+      }
+      
+      .hero-content {
+          padding-left: 0 !important; /* Override any other padding */
+          padding-right: 0 !important; /* Override any other padding */
+          width: 100%;
+          box-sizing: border-box;
+          margin-left: auto;
+          margin-right: auto;
+      }
+  }
+
+  @media (max-width: 768px) {
+      .hero-section .container {
+          padding-left: var(--spacing-sm);
+          padding-right: var(--spacing-sm);
+      }
+  }
 </style> 

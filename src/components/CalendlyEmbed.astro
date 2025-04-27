@@ -1,0 +1,58 @@
+---
+// Props can be added here later if needed for customization
+const { elementId = 'cal-inline', calLink = 'aaltoyleva/kartoitustapaaminen' } = Astro.props;
+const uniqueWrapperId = `calendly-lazy-wrapper-${elementId}`; // Create unique ID for observer
+---
+<div id={uniqueWrapperId} class="calendly-lazy-wrapper" style="min-height: 400px; width: 100%;"> <!-- Placeholder wrapper -->
+  <div style="width:100%; height:100%; overflow:scroll; display: none;" id={elementId}></div> <!-- Actual embed target, initially hidden -->
+</div>
+
+<script type="text/javascript" is:inline define:vars={{ elementId, calLink, uniqueWrapperId }}>
+  const calendlyWrapper = document.getElementById(uniqueWrapperId);
+  const calendlyTargetDiv = document.getElementById(elementId);
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Make target div visible
+        if (calendlyTargetDiv) {
+          calendlyTargetDiv.style.display = 'block';
+        }
+
+        // Execute Calendly embed code only once
+        if (!window.Cal?.loaded) { // Check if Cal object exists and is loaded (basic check)
+          (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+
+          Cal("init", "kartoitustapaaminen", { // Keep namespace consistent
+            origin: "https://cal.com",
+            cookieBanner: {
+              show: false,
+              blocking: false
+            }
+          });
+
+          Cal.ns.kartoitustapaaminen("inline", {
+              elementOrSelector: `#${elementId}`,
+              config: { "layout": "month_view" },
+              calLink: calLink,
+          });
+
+          Cal.ns.kartoitustapaaminen("ui", { "hideEventTypeDetails": false, "layout": "month_view" });
+        } else {
+          // If Cal exists but wasn't initialized for this specific instance, potentially re-init or refresh
+          // For simplicity, we assume the initial load handles everything needed.
+          // If multiple Calendly instances cause issues, this part might need refinement.
+        }
+
+        // Stop observing once loaded
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    rootMargin: '100px' // Load slightly before it enters viewport
+  });
+
+  if (calendlyWrapper) {
+    observer.observe(calendlyWrapper);
+  }
+</script> 

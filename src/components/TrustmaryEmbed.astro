@@ -1,0 +1,30 @@
+---
+// Component props (if any in the future)
+---
+<!-- Placeholder div that will be replaced with the actual script when visible -->
+<div id="trustmary-placeholder" style="min-height: 200px;"></div>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', function() {
+    const placeholder = document.getElementById('trustmary-placeholder');
+    if (!placeholder) return;
+    
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          // Replace the placeholder with the actual Trustmary script tag
+          const scriptTag = document.createElement('script');
+          scriptTag.src = "https://widget.trustmary.com/viOfoLSyY";
+          
+          // Replace the placeholder completely
+          placeholder.parentNode.replaceChild(scriptTag, placeholder);
+          
+          // Disconnect the observer since we're done
+          observer.disconnect();
+        }
+      });
+    }, { rootMargin: '100px' });
+    
+    observer.observe(placeholder);
+  });
+</script> 

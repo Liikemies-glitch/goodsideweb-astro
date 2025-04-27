@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CTASection from '../components/CTASection.astro';
 import SuccessStoriesSection from '../components/SuccessStoriesSection.astro';
+import TrustmaryEmbed from '../components/TrustmaryEmbed.astro';
 
 const pageTitle = "Referenssit - The Good Side";
 const pageDescription = "Tutustu menestystarinoihimme SaaS-yritysten kanssa. Näe miten olemme auttaneet asiakkaitamme kasvamaan ja menestymään digitaalisessa maailmassa.";
@@ -91,15 +92,10 @@ const heroStats = [
     <!-- END: New Services Section -->
 
     <!-- Testimonials Section -->
-    <section class="testimonials" style="padding: 4rem 0;">
+    <section class="testimonials-full-page">
         <div class="container">
-            <div class="section__header" style="text-align: center; margin-bottom: 3rem;">
-                <h2 class="section__title">Mitä asiakkaamme sanovat?</h2>
-                <p class="section__subtitle" style="color: #6b7280;">Lue mitä asiakkaamme kertovat kokemuksistaan</p>
-            </div>
-            <div class="testimonials__grid">
-                 <script is:inline src="https://widget.trustmary.com/viOfoLSyY"></script>
-            </div>
+            <h2>Mitä asiakkaamme sanovat</h2>
+            <TrustmaryEmbed />
         </div>
     </section>
 
