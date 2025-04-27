@@ -7,16 +7,63 @@
                     Keskustellaan, miten suunnitteluosaamisemme voi auttaa SaaS-yritystäsi saavuttamaan kasvupotentiaalinsa.
                 </p>
             </div>
-            <div class="cta-form">
+            <div class="cta-form" id="hubspot-form-container">
                 <p style="margin-bottom: 0; font-weight: 500; color: var(--text-color); padding-left: 2.5rem; font-size: 1.125rem;">Jätä yhteystietosi, niin otamme yhteyttä.</p>
-                <!-- HubSpot Embed Code -->
-                <script src="https://js-eu1.hsforms.net/forms/embed/145360432.js" defer></script>
-                <div class="hs-form-frame" data-region="eu1" data-form-id="8bc5845c-348d-4ba7-baea-ebd46b11b0a0" data-portal-id="145360432"></div>
+                <!-- HubSpot Embed Code wrapped in template -->
+                <template id="hubspot-template">
+                    <script src="https://js-eu1.hsforms.net/forms/embed/145360432.js" defer></script>
+                    <div class="hs-form-frame" data-region="eu1" data-form-id="8bc5845c-348d-4ba7-baea-ebd46b11b0a0" data-portal-id="145360432"></div>
+                </template>
                 <!-- End HubSpot Embed Code -->
             </div>
         </div>
     </div>
 </section>
+
+<script is:inline>
+document.addEventListener('DOMContentLoaded', () => {
+    const formContainer = document.getElementById('hubspot-form-container');
+    const template = document.getElementById('hubspot-template');
+
+    if (!formContainer || !template) {
+        console.error("HubSpot lazy load elements not found.");
+        return;
+    }
+
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Clone the template content
+                const content = template.content.cloneNode(true);
+                
+                // Find the script tag within the cloned content
+                const scriptTag = content.querySelector('script');
+                const formDiv = content.querySelector('.hs-form-frame');
+
+                if (scriptTag && formDiv) {
+                    // Append the form div first
+                    formContainer.appendChild(formDiv);
+                    
+                    // Create a new script element to trigger execution
+                    const newScript = document.createElement('script');
+                    newScript.src = scriptTag.src;
+                    newScript.defer = scriptTag.defer;
+                    
+                    // Append the new script tag to the container (or head/body)
+                    formContainer.appendChild(newScript); 
+                } else {
+                     console.error("HubSpot script or form div not found in template.");
+                }
+
+                // Stop observing the container
+                obs.unobserve(formContainer);
+            }
+        });
+    }, { threshold: 0.1 }); // Trigger when 10% of the element is visible
+
+    observer.observe(formContainer);
+});
+</script>
 
 <style>
     /* CTA Section Styles */
