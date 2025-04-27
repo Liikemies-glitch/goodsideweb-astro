@@ -44,12 +44,14 @@ const pageDescription = "Varaa aika kalenterista tai jätä yhteydenottopyyntö,
   <!-- START: HubSpot Form Section -->
   <section class="contact-form-section">
     <div class="container">
-      <div class="form-content">
+      <div class="form-content" id="hubspot-form-container">
         <h2>Tai jätä yhteydenottopyyntö</h2>
         <p>Jos et löydä sopivaa aikaa tai haluat mieluummin että otan yhteyttä, täytä lomake niin palaan asiaan mahdollisimman pian.</p>
-        <!-- HubSpot Embed Code -->
-        <script src="https://js-eu1.hsforms.net/forms/embed/145360432.js" defer></script>
-        <div class="hs-form-frame" data-region="eu1" data-form-id="8bc5845c-348d-4ba7-baea-ebd46b11b0a0" data-portal-id="145360432"></div>
+        <!-- HubSpot Embed Code wrapped in template -->
+        <template id="hubspot-template">
+            <script src="https://js-eu1.hsforms.net/forms/embed/145360432.js" defer></script>
+            <div class="hs-form-frame" data-region="eu1" data-form-id="8bc5845c-348d-4ba7-baea-ebd46b11b0a0" data-portal-id="145360432"></div>
+        </template>
         <!-- End HubSpot Embed Code -->
       </div>
     </div>
@@ -74,6 +76,40 @@ const pageDescription = "Varaa aika kalenterista tai jätä yhteydenottopyyntö,
     });
 
     Cal.ns.kartoitustapaaminen("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+
+    // HubSpot Lazy Load Script (copied from CTASection)
+    document.addEventListener('DOMContentLoaded', () => {
+        const formContainer = document.getElementById('hubspot-form-container');
+        const template = document.getElementById('hubspot-template');
+
+        if (!formContainer || !template) {
+            console.error("HubSpot lazy load elements not found.");
+            return;
+        }
+
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const content = template.content.cloneNode(true);
+                    const scriptTag = content.querySelector('script');
+                    const formDiv = content.querySelector('.hs-form-frame');
+
+                    if (scriptTag && formDiv) {
+                        formContainer.appendChild(formDiv);
+                        const newScript = document.createElement('script');
+                        newScript.src = scriptTag.src;
+                        newScript.defer = scriptTag.defer;
+                        formContainer.appendChild(newScript); 
+                    } else {
+                         console.error("HubSpot script or form div not found in template.");
+                    }
+                    obs.unobserve(formContainer);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        observer.observe(formContainer);
+    });
   </script>
   <!-- Cal inline embed code ends -->
 
