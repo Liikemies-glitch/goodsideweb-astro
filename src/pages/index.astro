@@ -139,7 +139,7 @@ function formatDate(date: Date): string {
         <div class="container">
             <h2 class="section__title">Tuotetiimisi uudet jäsenet</h2>
             <p class="section__subtitle">Palkkaa meidät poistamaan kasvun esteet.</p>
-            <div class="team-grid" style="display: flex; justify-content: center; gap: var(--spacing-lg); flex-wrap: wrap;">
+            <div class="team-grid">
                 <div class="team-member">
                     <div class="team-member__image">
                         <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
@@ -167,6 +167,15 @@ function formatDate(date: Date): string {
                     <h3 class="team-member__name">Dũng<br>Nguyen</h3>
                     <p class="team-member__title">Designer</p>
                 </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/aksel.webp" alt="Aksel Suokas" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Aksel<br>Suokas</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
             </div>
         </div>
     </section>
@@ -186,7 +195,7 @@ function formatDate(date: Date): string {
                             <span>Tuotestrategia</span>
                         </div>
                         <h3>Määrittele ketä haluat palvella ja miten aiot erottautua</h3>
-                        <p>Mikki ja Dũng auttavat sinua ymmärtämään positiointivaihtoehtosi ja kartoittamaan kohderyhmäsi ainutlaatuiset tilanteet, jotta voit valita kohderyhmän, joka soveltuu liiketoimintasi skaalaamiseen.</p>
+                        <p>Autamme sinua ymmärtämään positiointivaihtoehtosi ja kartoittamaan kohderyhmäsi ainutlaatuiset tilanteet, jotta voit valita kohderyhmän, joka soveltuu liiketoimintasi skaalaamiseen.</p>
                     </div>
                 </article>
                 <article class="solution-card">
@@ -200,7 +209,7 @@ function formatDate(date: Date): string {
                             <span>Onboardaus</span>
                         </div>
                         <h3>Luo käyttäjäpolkuja, jotka konvertoituvat liikevaihdoksi</h3>
-                        <p>Tuomas ja Dũng auttavat sinua suunnittelemaan ja optimoimaan webin ja sovelluksen läpi leikkaavia käyttäjäpolkuja, jotta käyttäjä voivat kokea palvelusi ydinarvon ja sitoutua maksaviksi asiakkaiksi.</p>
+                        <p>Autamme sinua suunnittelemaan ja optimoimaan webin ja sovelluksen läpi leikkaavia käyttäjäpolkuja, jotta käyttäjä voivat kokea palvelusi ydinarvon ja sitoutua maksaviksi asiakkaiksi.</p>
                     </div>
                 </article>
                 <article class="solution-card">
@@ -214,7 +223,7 @@ function formatDate(date: Date): string {
                             <span>Tuote</span>
                         </div>
                         <h3>Luo niin hyvä tuote, että asiakkaat valitsevat sen ilman vertailua</h3>
-                        <p>Tuomas ja Dũng auttavat sinua tunnistamaan tärkeimmät käyttötapaukset, joiden pohjalta luodaan toiminnallisuuksia, jotka tekevät tuotteesi myynnistä naurettavan helppoa ja saavat kilpailijasi näyttämään auttamattoman vanhanaikaisilta.</p>
+                        <p>Autamme sinua tunnistamaan tärkeimmät käyttötapaukset, joiden pohjalta luodaan toiminnallisuuksia, jotka tekevät tuotteesi myynnistä naurettavan helppoa ja saavat kilpailijasi näyttämään auttamattoman vanhanaikaisilta.</p>
                     </div>
                 </article>
             </div>
@@ -491,3 +500,24 @@ function formatDate(date: Date): string {
     </section>
 
 </BaseLayout>
+
+<style>
+    .team-grid {
+        display: flex;
+        flex-direction: column; /* Stack vertically by default (mobile) */
+        align-items: center; /* Center items horizontally in column layout */
+        gap: var(--spacing-lg);
+    }
+
+    .team-member {
+        text-align: center; /* Ensure text inside member card is centered */
+    }
+
+    /* Apply row layout for medium screens and up */
+    @media (min-width: 768px) {
+        .team-grid {
+            flex-direction: row; /* Arrange side-by-side */
+            justify-content: center; /* Center items horizontally in row layout */
+        }
+    }
+</style>
