@@ -94,8 +94,11 @@ const heroStats = [
     <!-- Testimonials Section -->
     <section class="testimonials-full-page">
         <div class="container">
-            <h2>Mitä asiakkaamme sanovat</h2>
-            <TrustmaryEmbed />
+            <TrustmaryEmbed 
+                title="Mitä asiakkaamme sanovat"
+                subtitle="Lue mitä asiakkaamme kertovat kokemuksistaan"
+                titleClass="gradient-heading-lg" 
+            />
         </div>
     </section>
 
@@ -233,6 +236,11 @@ const heroStats = [
 
         /* CTA Section Styles - Now moved to component */
         /* Note: Following styles have been moved to CTASection.astro component */
+
+        /* Add padding to the top of the testimonials section */
+        .testimonials-full-page {
+            padding-top: var(--spacing-xl, 4rem);
+        }
         
     </style>
 </BaseLayout> 
