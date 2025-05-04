@@ -1,35 +1,40 @@
 ---
 // src/components/Footer.astro
+import { ui, defaultLang, languages } from '../i18n/ui';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 <footer class="footer">
     <div class="container">
         <div class="footer__grid">
             <div class="footer__brand">
-                <a href="/" class="footer__logo">
-                    <img src="/images/brand/logo.webp" alt="The Good Side" width="140" height="32"/>
+                <a href={`/${lang}/`} class="footer__logo">
+                    <img src="/images/brand/logo.webp" alt={t('site.title')} width="140" height="32"/>
                 </a>
-                <p>Autamme tuotetiimejä rakentamaan menestyvää SaaS-liiketoimintaa.</p>
-                <p>&copy; {new Date().getFullYear()} The Good Side Oy. Kaikki oikeudet pidätetään.</p>
+                <p>{t('footer.description')}</p>
+                <p>&copy; {new Date().getFullYear()} The Good Side Oy. {t('footer.rights')}</p>
             </div>
             <div class="footer__links">
-                <h4>Sivusto</h4>
+                <h4>{t('footer.siteLinks')}</h4>
                 <ul>
-                    <li><a href="/">Etusivu</a></li>
-                    <li><a href="/palvelut">Palvelut</a></li>
-                    <li><a href="/referenssit">Referenssit</a></li>
-                    <li><a href="/blog">Blogi</a></li>
-                    <li><a href="/contact">Ota yhteyttä</a></li>
+                    <li><a href={`/${lang}/`}>{t('footer.home')}</a></li>
+                    <li><a href={`/${lang}/palvelut`}>{t('footer.services')}</a></li>
+                    <li><a href={`/${lang}/referenssit`}>{t('footer.references')}</a></li>
+                    <li><a href={`/${lang}/blog`}>{t('footer.blog')}</a></li>
+                    <li><a href={`/${lang}/contact`}>{t('footer.contact')}</a></li>
                 </ul>
             </div>
             <div class="footer__links">
-                <h4>Seuraa meitä</h4>
+                <h4>{t('footer.followUs')}</h4>
                 <ul>
                     <li><a href="https://www.linkedin.com/company/the-good-side-oy/" target="_blank">LinkedIn</a></li>
                     <!-- Add other social links if needed -->
                 </ul>
             </div>
             <div class="footer__contact">
-                <h4>Ota yhteyttä</h4>
+                <h4>{t('footer.contactUs')}</h4>
                 <p><strong>Mikki Aalto-Ylevä</strong></p>
                 <p><a href="tel:0408698887">040 869 8887</a></p>
                 <p><a href="mailto:mikki@goodside.fi">mikki@goodside.fi</a></p>
