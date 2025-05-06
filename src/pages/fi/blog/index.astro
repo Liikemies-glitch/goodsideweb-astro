@@ -20,7 +20,7 @@ import HeroSection from '../../../components/HeroSection.astro';
 
 // Import all hero images using glob
 // Use 'any' type hint to bypass complex type issues for now
-const heroImageModules = import.meta.glob<any>('../../../assets/blog/images/**/featured.webp');
+const heroImageModules = import.meta.glob<any>('../../../assets/blog/images/**/featured.webp', { eager: true });
 
 // 1. Fetch all published blog posts
 const allPosts = await getCollection('blog');
@@ -57,21 +57,28 @@ const postsWithImages = await Promise.all(
 
     // Extract the base slug by removing .fi or .en suffix
     const baseSlug = post.slug.replace(/\.(fi|en)$/, '');
-    const globKey = `../../../assets/blog/images/${baseSlug}/featured.webp`;
-
-    if (imagePath && typeof imagePath === 'string' && heroImageModules[globKey]) { // Check if imagePath is a string
-      try {
-        const imageModule = await heroImageModules[globKey]();
-        heroImage = (imageModule as any).default;
-      } catch (e) {
-        console.error(`Error loading image for ${post.slug} with globKey ${globKey}:`, e);
+    
+    console.log(`Post ${post.slug} - imagePath: ${imagePath}, baseSlug: ${baseSlug}`);
+    
+    // Käytä eager: true lataamaan kuvat suoraan
+    if (imagePath && typeof imagePath === 'string') {
+      // Etsi oikea kuvapolku kaikkien ladattujen kuvien joukosta
+      const matchingImageKey = Object.keys(heroImageModules).find(path => 
+        path.includes(`/${baseSlug}/featured.webp`)
+      );
+      
+      console.log(`Post ${post.slug} - Found matching image key:`, matchingImageKey);
+      
+      if (matchingImageKey) {
+        // Eager: true latauksen ansiosta kuva on jo saatavilla, ei async käsittelyä
+        heroImage = heroImageModules[matchingImageKey].default;
+      } else {
+        console.error(`Could not find image for post ${post.slug}`);
       }
     } else if (imagePath && typeof imagePath !== 'string') {
-      // If imagePath is already an object (resolved image), use it directly
-      // This might happen if Astro pre-processes it in some contexts
+      // Jos imagePath on jo objekti (resolved image), käytä sitä suoraan
       heroImage = imagePath;
     }
-
 
     return {
       ...post,
@@ -109,44 +116,47 @@ const pageDescription = "Lue The Good Side -blogin viimeisimmät artikkelit tuot
     />
 
     <div class="blog-index__grid">
-      {sortedPosts.map((post) => ( // Rely on inferred type for post
-        <article class="blog-card">
-          <a href={`/fi/blog/${post.slug}/`} class="blog-card__link">
-            {post.data.heroImage && (
-              <div class="blog-card__image-container">
-                <Image
-                  src={post.data.heroImage}
-                  alt={post.data.heroImageAlt || post.data.title}
-                  width={800}
-                  height={450}
-                  widths={[200, 400, 800]}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  format="webp"
-                  quality={80}
-                  loading="lazy"
-                  decoding="async"
-                  class="blog-card__image"
-                />
-              </div>
-            )}
-            <div class="blog-card__content">
-              {post.data.tags && post.data.tags.length > 0 && (
-                <div class="blog-card__tags">
-                  {post.data.tags.map((tag: string) => (
-                    <span class="tag">{tag}</span>
-                  ))}
+      {sortedPosts.map((post) => { // Rely on inferred type for post
+        console.log(`Debug - Post ${post.slug} heroImage:`, post.data.heroImage);
+        return (
+          <article class="blog-card">
+            <a href={`/fi/blog/${post.slug}/`} class="blog-card__link">
+              {post.data.heroImage && (
+                <div class="blog-card__image-container">
+                  <Image
+                    src={post.data.heroImage}
+                    alt={post.data.heroImageAlt || post.data.title}
+                    width={800}
+                    height={450}
+                    widths={[200, 400, 800]}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    format="webp"
+                    quality={80}
+                    loading="lazy"
+                    decoding="async"
+                    class="blog-card__image"
+                  />
                 </div>
               )}
-              <h3 class="blog-card__title">{post.data.title}</h3>
-              <p class="blog-card__excerpt">{post.data.description || 'Lue artikkeli...'}</p>
-              <p class="blog-card__date">
-                {new Date(post.data.pubDate).toLocaleDateString('fi-FI', { year: 'numeric', month: 'long', day: 'numeric' })}
-              </p>
-              <span class="blog-card__readmore">Lue lisää &rarr;</span>
-            </div>
-          </a>
-        </article>
-      ))}
+              <div class="blog-card__content">
+                {post.data.tags && post.data.tags.length > 0 && (
+                  <div class="blog-card__tags">
+                    {post.data.tags.map((tag: string) => (
+                      <span class="tag">{tag}</span>
+                    ))}
+                  </div>
+                )}
+                <h3 class="blog-card__title">{post.data.title}</h3>
+                <p class="blog-card__excerpt">{post.data.description || 'Lue artikkeli...'}</p>
+                <p class="blog-card__date">
+                  {new Date(post.data.pubDate).toLocaleDateString('fi-FI', { year: 'numeric', month: 'long', day: 'numeric' })}
+                </p>
+                <span class="blog-card__readmore">Lue lisää &rarr;</span>
+              </div>
+            </a>
+          </article>
+        );
+      })}
     </div>
   </section>
 </BaseLayout>

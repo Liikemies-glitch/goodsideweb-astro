@@ -12,7 +12,9 @@ export const onRequest = defineMiddleware(async (context, next) => {
   console.log(`Middleware Entry: Original Pathname: "${originalPathname}"`);
 
   // 1. Ohitetaan Astron sisäiset resurssit ja jo kieliprefiksillä varustetut polut
-  if (originalPathname.startsWith('/_astro/') || supportedLocales.some(locale => originalPathname.startsWith(`/${locale}/`))) {
+  if (originalPathname.startsWith('/_astro/') || 
+      originalPathname.startsWith('/_image') || 
+      supportedLocales.some(locale => originalPathname.startsWith(`/${locale}/`))) {
     return next();
   }
 
