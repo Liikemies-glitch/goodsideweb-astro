@@ -87,20 +87,32 @@ Seuraa näitä milestoneja järjestyksessä:
         -   Testaa Vercelin esikatseluympäristössä (`preview deployment`), jotta varmistutaan middlewaren toiminnasta Vercelin infrassa.
 
 -   [ ] **Milestone 6: Sivujen inventaario ja kääntämisen valmistelu**
-    -   Tee kattava inventaario kaikista sivustolla olevista sivuista.
-        -   Etsi ja listaa kaikki `src/pages/` -hakemistossa olevat sivut, jotka tulee kääntää:
-            - `palvelut.astro` → `src/pages/en/palvelut.astro` (tai "services")
-            - `referenssit.astro` → `src/pages/en/referenssit.astro` (tai "references") 
-            - `contact.astro` → `src/pages/en/contact.astro`
-            - `diy-opas.astro` → `src/pages/en/diy-opas.astro` Tätä ei käännetä.
-            - `referenssit/eemel.astro` → `src/pages/en/referenssit/eemel.astro`
-        -   Etsi ja listaa kaikki blogitekstit (`src/content/blog/`) ja varmista, että ne on nimetty johdonmukaisesti (`.fi.md`-päätteiset tiedostot):
-            - Yhteensä 87 kääntämätöntä blogiartikkelia
-            - Kolme artikkelia jo käännetty englanniksi: `mita-on-palvelumuotoilu.en.md`, `kaytettavyys-ja-hakukoneoptimointi.en.md`, `design-ops.en.md`
-        -   Varmista, että blogin mahdolliset listaustiedostot toimivat molemmilla kielillä:
-            - `src/pages/fi/blog/index.astro` → `src/pages/en/blog/index.astro` (jo luotu)
-            - `src/pages/fi/blog/[slug].astro` → `src/pages/en/blog/[slug].astro` (tarkistettava)
-    -   Järjestä kaikki käännettävät sivut ja blogitekstit prioriteettijärjestykseen:
+    -   *Tähänastinen edistys ja äskettäin tehdyt muutokset:*
+        -   [x] **Sivujen rakenteiden valmistelu:**
+            -   [x] `referenssit.astro`: FI-versio siirretty (`src/pages/fi/references.astro`), EN-pohja luotu (`src/pages/en/references.astro`). Sisältö vaatii kääntämisen M7:ssä.
+            -   [x] `contact.astro`: EN-pohja luotu (`src/pages/en/contact.astro`). FI-version oletetaan olevan `src/pages/fi/contact.astro` (aiempien siirtojen perusteella, varmistettava). Sisältö vaatii kääntämisen M7:ssä.
+            -   [x] `palvelut.astro`: FI-versio siirretty (`src/pages/fi/services.astro`).
+        -   [x] **Blogi:**
+            -   [x] Listaussivut (`index.astro`, `[slug].astro`) todettu toimiviksi molemmilla kielillä (M3:n perusteella).
+            -   [x] Nimeämiskäytäntö (`.fi.md`, `.en.md`) vahvistettu toimivaksi.
+            -   [x] Käännöstöiden priorisointi (M8-M10) määritelty.
+            -   [x] Tiedossa 3 valmiiksi käännettyä artikkelia (`mita-on-palvelumuotoilu.en.md`, `kaytettavyys-ja-hakukoneoptimointi.en.md`, `design-ops.en.md`).
+        -   [x] **Suunnitelman ulkopuolinen parannus:** `src/components/Nav.astro` luotu, sisältää kielivalitsimen ja noudattaa i18n-periaatteita (tukee M4:n tavoitteita).
+    -   **Jäljellä olevat tämän milestonen tehtävät:**
+        -   [ ] **Sivujen inventaarion viimeistely:**
+            -   [ ] `palvelut.astro`: Luo EN-version pohja `src/pages/en/services.astro` (käännös M7).
+            -   [ ] `diy-opas.astro`: 
+                -   [ ] Varmista FI-sivun polku (esim. `src/pages/fi/diy-opas.astro`).
+                -   [x] Päätös: Ei käännetä EN-versioksi (vahvistettu).
+            -   [ ] `referenssit/eemel.astro`: 
+                -   [ ] Varmista FI-sivun polku (esim. `src/pages/fi/referenssit/eemel.astro`).
+                -   [ ] Luo EN-version pohja `src/pages/en/referenssit/eemel.astro` (käännös M7).
+            -   [ ] Varmista kaikkien muiden `src/pages/fi/` sivujen inventaario ja EN-vastineiden tarve.
+        -   [ ] **Blogitekstien inventaarion viimeistely:**
+            -   [ ] Laske ja vahvista kääntämättömien `.fi.md` artikkeleiden tarkka lukumäärä (alkuperäinen arvio ~87, kolme käännetty).
+        -   [ ] **Konfiguraation tarkistus:**
+            -   [ ] Tarkista `src/content/config.ts`: Varmista, että skeema (erityisesti `title`, `description`, `tags`) tukee kääntämistä ja kaikki tarvittavat kentät ovat käännettävissä osana `.en.md` tiedostojen frontmatteria.
+    -   **Priorisoidut käännösartikkelit (Milestone 8-10):**
         -   **Korkea prioriteetti (Milestone 8 - nämä 5 artikkelia):**
             - `design-osana-strategiaa-top-5-esimerkit.fi.md`
             - `design-thinking-prosessi-joka-sytyttaa-luovuuden-liekin.fi.md`
@@ -119,11 +131,6 @@ Seuraa näitä milestoneja järjestyksessä:
             - `ideasta-appiin-selviytymisopas.fi.md`
             - `jakobs-law-intuitiivisen-kayttoliittymasuunnittelun-kulmakivi.fi.md`
         -   **Matala prioriteetti (Milestone 10 - loput ~72 artikkelia)**
-    -   Blogitiedostot noudattavat jo johdonmukaista `.fi.md`-päätteistä nimeämiskäytäntöä. Uudelleennimeäminen ei ole tarpeen.
-    -   Tarkista `src/content/config.ts`:
-        - Nykyinen määrittely tukee monikielisiä tiedostoja, koska se ei määrittele kieltä osana skeemaa
-        - Z-objektiin on määritelty seuraavat pakolliset kentät: title, pubDate, description, author, tags
-        - Nämä kentät tulee kääntää jokaiselle artikkelille
     -   **Testausohjeet:**
         -   Varmista, että kaikilla inventaarion sivuilla ja tiedostoilla on selvä suunnitelma englanninkielisten versioiden luomiseksi.
         -   Varmista, että kaikki blogitekstit on nimetty oikein ja ne on järjestetty prioriteettijärjestykseen Milestone 8-10 mukaisesti.
