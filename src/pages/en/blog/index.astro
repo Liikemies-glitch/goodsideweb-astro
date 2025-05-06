@@ -1,19 +1,74 @@
 ---
 // src/pages/blog/index.astro
-import { getCollection } from 'astro:content';
+import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { Image } from 'astro:assets';
 import HeroSection from '../../../components/HeroSection.astro';
 
 // Import all hero images using glob
-const heroImageModules = import.meta.glob('../../../assets/blog/images/**/featured.webp');
+const heroImageModules = import.meta.glob<any>('../../../assets/blog/images/**/featured.webp');
 
-// Get all blog posts in English
+// 1. Get all blog posts
 const allPosts = await getCollection('blog');
-const englishPosts = allPosts.filter(post => post.id.endsWith('.en.md'));
+// Filter for English posts and ensure data integrity
+const englishPosts = allPosts.filter(post => post.id.endsWith('.en.md') && post.data);
 
-// Sort posts by publication date (newest first)
-const sortedPosts = englishPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+// 2. Add resolved image metadata to each post object
+const postsWithImages = await Promise.all(
+  englishPosts.map(async (post) => {
+    // Ensure post.data exists, though filter should guarantee it
+    if (!post.data) {
+      console.error(`Post with slug ${post.slug} is missing data.`);
+      return {
+        ...post,
+        data: {
+          title: 'Error: Missing Data',
+          pubDate: new Date(),
+          description: '',
+          author: '',
+          tags: [],
+          heroImage: null,
+          heroImageAlt: '',
+          draft: true,
+        }
+      };
+    }
+
+    let heroImage = null;
+    const imagePath = post.data.heroImage; 
+    const baseSlug = post.slug.replace(/\.en$/, ''); // Use .en for English posts
+    const globKey = `../../../assets/blog/images/${baseSlug}/featured.webp`;
+
+    if (imagePath && typeof imagePath === 'string' && heroImageModules[globKey]) {
+      try {
+        const imageModule = await heroImageModules[globKey]();
+        heroImage = (imageModule as any).default;
+      } catch (e) {
+        console.error(`Error loading image for ${post.slug} with globKey ${globKey}:`, e);
+      }
+    } else if (imagePath && typeof imagePath !== 'string') {
+      heroImage = imagePath;
+    }
+
+    return {
+      ...post,
+      data: {
+        ...post.data,
+        heroImage 
+      }
+    };
+  })
+);
+
+// 3. Sort posts by publication date (newest first)
+const sortedPosts = postsWithImages
+  .filter(post => post.data && post.data.pubDate) // Ensure pubDate exists
+  .sort((a, b) => {
+    if (a.data && a.data.pubDate && b.data && b.data.pubDate) {
+      return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
+    }
+    return 0; // Default sort if data is incomplete
+  });
 
 const pageTitle = "Blog | The Good Side";
 const pageDescription = "Read the latest articles from The Good Side blog on product strategy, SaaS, design, and more.";
@@ -34,6 +89,23 @@ const pageDescription = "Read the latest articles from The Good Side blog on pro
       {sortedPosts.map((post) => (
         <article class="blog-card">
           <a href={`/en/blog/${post.slug}/`} class="blog-card__link">
+            {post.data.heroImage && (
+              <div class="blog-card__image-container">
+                <Image
+                  src={post.data.heroImage}
+                  alt={post.data.heroImageAlt || post.data.title}
+                  width={800}
+                  height={450}
+                  widths={[200, 400, 800]}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  format="webp"
+                  quality={80}
+                  loading="lazy"
+                  decoding="async"
+                  class="blog-card__image"
+                />
+              </div>
+            )}
             <div class="blog-card__content">
               {post.data.tags && post.data.tags.length > 0 && (
                 <div class="blog-card__tags">
@@ -100,6 +172,29 @@ const pageDescription = "Read the latest articles from The Good Side blog on pro
     display: flex;
     flex-direction: column;
     height: 100%; /* Ensure link takes full card height */
+  }
+
+  .blog-card__image-container {
+    width: 100%;
+    aspect-ratio: 16 / 9; 
+    background-color: var(--light-background); 
+    overflow: hidden;
+  }
+
+   [data-theme="dark"] .blog-card__image-container {
+       background-color: #2a2a2a;
+   }
+
+  .blog-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    will-change: transform; 
+  }
+
+  .blog-card:hover .blog-card__image {
+    transform: scale(1.05);
   }
 
   .blog-card__content {

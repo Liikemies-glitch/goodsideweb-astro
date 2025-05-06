@@ -9,8 +9,9 @@ tags:
   - palvelumuotoilu
   - käyttäjäkokemus
   - asiakaslähtöisyys
-heroImage: ../../assets/blog/images/mita-on-palvelumuotoilu/featured.webp
-heroImageAlt: Mitä on palvelumuotoilu?
+heroImage: '../../assets/blog/images/mita-on-palvelumuotoilu/featured.webp'
+heroImageAlt: 'Palvelumuotoilun konsepteja kuvaava kuva'
+draft: false
 ---
 
 ## Palvelumuotoilun perusteet tiivistettynä

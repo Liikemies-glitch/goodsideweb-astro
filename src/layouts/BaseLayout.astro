@@ -4,6 +4,8 @@ import '../styles/styles.css'; // Import global styles
 import { SEO } from 'astro-seo'; // Import SEO component
 import type { TwitterCardType } from 'astro-seo'; // Import specific type for Twitter card
 import Footer from '../components/Footer.astro'; // Import the new Footer component
+import { getLangFromUrl } from '../i18n/utils'; // Import i18n utility
+import { getRelativeLocaleUrl } from 'astro:i18n'; // Astro i18n utilities
 
 // Define props for dynamic title and description
 interface Props {
@@ -18,6 +20,14 @@ const {
     description, 
     ogImage 
 } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url); // Get current language from URL
+
+// HUOM: Astro.config.i18n.locales ei ole suoraan saatavilla tässä Astro-komponentissa.
+// Käytetään tiedossa olevia arvoja tai haetaan ne astro:i18n-moduulista, jos mahdollista.
+// Tässä tapauksessa tiedämme ne:
+const supportedLocales = ['fi', 'en']; // Manuaalisesti määritellyt tuetut kielet
+const defaultLocale = 'fi'; // Manuaalisesti määritelty oletuskieli
 
 const siteUrl = Astro.site?.toString() ?? 'https://www.goodside.fi'; // Ensure site URL is defined
 const canonicalURL = new URL(Astro.url.pathname, siteUrl).toString();
@@ -69,9 +79,26 @@ const organizationSchema = {
     ]
 };
 
+// Muodostetaan polku ilman kieliprefiksiä hreflang-linkkejä varten
+// getLocaleAstroStaticPath-funktio palauttaa polun ilman kieliprefiksiä.
+// Tai, jos Astro.params.slug tms. on saatavilla, sitä voi käyttää.
+// Yksinkertaistetaan: Astro.url.pathname sisältää jo kieliprefiksin.
+// Poistetaan se manuaalisesti, jos se on olemassa.
+
+let pathWithoutLocale = Astro.url.pathname;
+if (pathWithoutLocale.startsWith(`/${lang}`)) {
+    pathWithoutLocale = pathWithoutLocale.substring(`/${lang}`.length);
+}
+// Varmistetaan, että polku alkaa '/' jos se ei ole tyhjä (etusivu)
+if (pathWithoutLocale === '') {
+    pathWithoutLocale = '/';
+} else if (!pathWithoutLocale.startsWith('/')) {
+    pathWithoutLocale = `/${pathWithoutLocale}`;
+}
+
 ---
 <!DOCTYPE html>
-<html lang="fi">
+<html lang={lang}> {/* Käytetään tunnistettua kieltä */}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -96,6 +123,20 @@ const organizationSchema = {
     <link rel="icon" type="image/x-icon" href="/favicon.ico"/> {/* Fallback for older browsers */}
     {/* Optional: Add SVG icon link if you have one */}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+
+    {/* hreflang-linkit */}
+    {supportedLocales.map(locale => (
+        <link
+            rel="alternate"
+            hreflang={locale}
+            href={new URL(getRelativeLocaleUrl(locale, pathWithoutLocale === '/' && locale === defaultLocale ? undefined : pathWithoutLocale), Astro.site).toString()}
+        />
+    ))}
+    <link
+        rel="alternate"
+        hreflang="x-default"
+        href={new URL(getRelativeLocaleUrl(defaultLocale, pathWithoutLocale === '/' && defaultLocale === defaultLocale ? undefined : pathWithoutLocale), Astro.site).toString()}
+    />
 
     <!-- Preload fonts for better performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -146,22 +187,41 @@ const organizationSchema = {
     <!-- Header/Navigation -->
     <header class="header">
         <nav class="nav container">
-            <a href="/" class="nav__logo">
-                <img src="/images/brand/logo.webp" alt="The Good Side" width="140" height="32"/>
-            </a>
-            <button class="nav__toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav__menu">
-                <li><a href="/palvelut">Palvelut</a></li>
-                <li><a href="/referenssit">Referenssit</a></li>
-                <li><a href="/blog">Blogi</a></li>
-                {/* <li><a href="/#materiaalit">Materiaalit</a></li> */}
-                <li><a href="/#hinnat">Hinnat</a></li>
-                <li><a href="/contact" class="btn btn--primary">Ota yhteyttä</a></li>
-            </ul>
+            {/* Ryhmä logolle ja kielivalitsimelle */}
+            <div class="logo-lang-group" style="display: flex; align-items: center;">
+                <a href={getRelativeLocaleUrl(lang, '/')} class="nav__logo"> 
+                    <img src="/images/brand/logo.webp" alt="The Good Side" width="140" height="32"/>
+                </a>
+                {/* Kielenvaihtolinkit, joilla margin-left ja margin-right */}
+                <div class="language-switcher" style="display: flex; align-items: center; gap: 0.5rem; margin-left: 1rem; margin-right: 1rem;">
+                    {supportedLocales.map((locale, index) => (
+                        <>
+                            {index > 0 && <span style="color: #CCC;">/</span>}
+                            {locale === lang ? (
+                                <span style="font-weight: bold; text-decoration: underline; color: var(--primary-color);">{locale.toUpperCase()}</span>
+                            ) : (
+                                <a href={getRelativeLocaleUrl(locale, pathWithoutLocale === '/' && locale === defaultLocale ? undefined : pathWithoutLocale)} style="text-decoration: none; color: var(--text-color-light);">{locale.toUpperCase()}</a>
+                            )}
+                        </>
+                    ))}
+                </div>
+            </div>
+
+            {/* Ryhmä navigaation ohjaimille (toggle-nappi ja menu) */}
+            <div class="nav-controls" style="display: flex; align-items: center; gap: 1rem;"> 
+                <button class="nav__toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav__menu">
+                    <li><a href={getRelativeLocaleUrl(lang, '/palvelut')}>Palvelut</a></li> 
+                    <li><a href={getRelativeLocaleUrl(lang, '/referenssit')}>Referenssit</a></li> 
+                    <li><a href={getRelativeLocaleUrl(lang, '/blog')}>Blogi</a></li> 
+                    <li><a href={getRelativeLocaleUrl(lang, '/#hinnat')}>Hinnat</a></li> 
+                    <li><a href={getRelativeLocaleUrl(lang, '/contact')} class="btn btn--primary">Ota yhteyttä</a></li> 
+                </ul>
+            </div>
         </nav>
     </header>
 

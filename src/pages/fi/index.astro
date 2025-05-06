@@ -1,0 +1,522 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import HeroSection from '../../components/HeroSection.astro';
+import TrustmaryEmbed from '../../components/TrustmaryEmbed.astro';
+import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
+
+const pageTitle = "The Good Side | SaaS-tuotetiimien strategiakumppani";
+const pageDescription = "The Good Side - Autamme tuotetiimejä rakentamaan menestyvää SaaS-liiketoimintaa yhdistämällä tuotestrategian ja designin.";
+
+// Fetch latest 6 blog posts
+const latestPosts = (await getCollection('blog'))
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+    .slice(0, 6);
+
+// Helper function to format dates
+function formatDate(date: Date): string {
+  return new Date(date).toLocaleDateString('fi-FI', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+}
+---
+<BaseLayout title={pageTitle} description={pageDescription}>
+    <!-- Use HeroSection component -->
+    <HeroSection
+        title="Jos DIY-menetelmä skaalautuisi, olisit jo markkinajohtaja."
+        paragraph="Autamme tuotetiimejä rakentamaan menestyvää SaaS-liiketoimintaa yhdistämällä tuotestrategian ja designin. Tämän todistavat yli kymmenen menestyvää asiakastamme."
+        primaryButtonText="Sovi tapaaminen &rarr;"
+        primaryButtonHref="/contact"
+        secondaryButtonText="Näytä referenssit"
+        secondaryButtonHref="/referenssit"
+        textOnly={true}
+        paddingTop="6rem"
+        paddingBottom="3rem"
+        textAlign="center"
+    />
+
+    <!-- Logo Wall Section -->
+    <section class="logo-wall">
+        <div class="container">
+            <h2 class="logo-wall__title">Menetelmiimme luottavat kasvuhakuiset tuotetiimit</h2>
+            <div class="logo-wall__grid">
+                <!-- The logos are intentionally duplicated below -->
+                <!-- First set -->
+                <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                 <!-- Second set (duplicate) -->
+                 <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problems">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Kuulostaako tutulta?</span>
+                <h2 class="section__title">Tyypilliset ongelmat</h2>
+            </div>
+            <div class="problems__grid">
+                <article class="problem-card">
+                    <h3>Tuotesuunnittelu</h3>
+                    <p>Tuotteen käyttöliittymä ja käyttökokemus tehdään ilman ammattimaista suunnittelua, jonka seurauksena lopputulos ei ole optimaalinen eikä tue kasvustrategiaa.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Käyttäjäpolut</h3>
+                    <p>Käytät käyttäjäpolkujen ja sisältöjen suunnitteluun kumppaneita, jotka kukin toimivat omissa siiloissaan, mikä johtaa vaihtelevaan laatutasoon ja heikkoon konversioon.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Tuotepositiointi</h3>
+                    <p>Tuote- ja markkinapositiointi tehdään ilman kunnon työkaluja, jonka seurauksena kohderyhmä on epäselvä, viesti ei resonoi ja tuotekehitystä on vaikea priorisoida.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Us Section -->
+    <section class="hire-us">
+        <div class="container">
+            <h2 class="section__title">Tuotetiimisi uudet jäsenet</h2>
+            <p class="section__subtitle">Palkkaa meidät poistamaan kasvun esteet.</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/mikki.webp" alt="Mikki Aalto-Ylevä" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Mikki<br>Aalto-Ylevä</h3>
+                    <p class="team-member__title">SaaS-spesialisti</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/tuomas.webp" alt="Tuomas Kaartoluoma" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Tuomas<br>Kaartoluoma</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/duncan.webp" alt="Dũng Nguyen" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Dũng<br>Nguyen</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/aksel.webp" alt="Aksel Suokas" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Aksel<br>Suokas</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Intro Section -->
+    <section class="solutions">
+        <div class="container">
+            <h2 class="section__title">Autamme sinua kasvamaan SaaS-liiketoiminnalla yhdistämällä nämä kolme kriittistä osa-aluetta</h2>
+            <div class="solutions__grid">
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/positiointi.webp" alt="Tuotepositiointi">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Tuotepositiointi</span>
+                            <span>Tuotestrategia</span>
+                        </div>
+                        <h3>Määrittele ketä haluat palvella ja miten aiot erottautua</h3>
+                        <p>Autamme sinua ymmärtämään positiointivaihtoehtosi ja kartoittamaan kohderyhmäsi ainutlaatuiset tilanteet, jotta voit valita kohderyhmän, joka soveltuu liiketoimintasi skaalaamiseen.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/userjourney.webp" alt="Käyttäjäpolut">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Ostopolut</span>
+                            <span>Markkinointi</span>
+                            <span>Onboardaus</span>
+                        </div>
+                        <h3>Luo käyttäjäpolkuja, jotka konvertoituvat liikevaihdoksi</h3>
+                        <p>Autamme sinua suunnittelemaan ja optimoimaan webin ja sovelluksen läpi leikkaavia käyttäjäpolkuja, jotta käyttäjä voivat kokea palvelusi ydinarvon ja sitoutua maksaviksi asiakkaiksi.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/ui.webp" alt="Käyttöliittymä ja käyttökokemus" style="transform: scale(1.3);">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Käyttökokemus (UX)</span>
+                            <span>Käyttöliittymä (UI)</span>
+                            <span>Tuote</span>
+                        </div>
+                        <h3>Luo niin hyvä tuote, että asiakkaat valitsevat sen ilman vertailua</h3>
+                        <p>Autamme sinua tunnistamaan tärkeimmät käyttötapaukset, joiden pohjalta luodaan toiminnallisuuksia, jotka tekevät tuotteesi myynnistä naurettavan helppoa ja saavat kilpailijasi näyttämään auttamattoman vanhanaikaisilta.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials__grid">
+                 <div class="trustmary-widget">
+                    <TrustmaryEmbed 
+                        title="Mitä asiakkaamme sanovat?"
+                        subtitle="Lue mitä asiakkaamme kertovat kokemuksistaan"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Not For Everyone Section -->
+    <section class="not-for-everyone">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Emme ole kaikille</h2>
+                <p class="section__subtitle">Emme ehkä ole oikea vaihtoehto jos...</p>
+            </div>
+            <div class="two-columns">
+                <div class="bullet-points">
+                    <ul>
+                        <li>Sinulla on aikaa opetella tekemään kaikki itse, etkä tarvitse kumppaneita</li>
+                        <li>Olet valinnut jo kumppaniyritykset sekä resurssit ja kaikki vaan toimii täydellisesti</li>
+                        <li>Sinulla on käytössä paremmat menetelmät, kehykset ja enemmän osaamista kuin meillä</li>
+                    </ul>
+                </div>
+                <div class="bullet-points">
+                    <ul>
+                        <li>Budjettisi on alle 5000€</li>
+                        <li>Haluat, että me myös koodaamme suunnitelmamme</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem/Solution Section (Using existing styles) -->
+    <section class="problem-solution-cards">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-xl);">
+                <h2 class="section__title">Ongelmat ja ratkaisut</h2>
+                <p class="section__subtitle">Yleisimmät haasteet ja miten autamme niissä.</p>
+            </div>
+
+            <!-- Problem 1 -->
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6 fit-content">
+                    <h3 class="problem__title">Epäselvä arvolupaus ja erottautumisen puute</h3>
+                    <p class="problem__description">Heikko tuotepositiointi aiheuttaa epäselvän arvolupauksen, joka nostaa asiakashankinnan kuluja, pitkittää myyntisyklejä ja tekee kehitystiimin priorisoinnista hankalaa, mikä näkyy resurssien käytön tehottomuutena ja heikkona kasvuna.</p>
+                </div>
+                <div class="arrow"></div>
+                <div class="col-md-6 solution-content">
+                    <h4>Ratkaisu</h4>
+                    <p class="solution__description">Tehdään positiointiharjoitus, joka auttaa sinua hahmottamaan eri positiointivaihtoehdot, jotta voit valita omalle go-to-market "lihaksellesi" sopivan kohderyhmän, ja luoda strategian, joka skaalautuu tuotekehityksen, markkinoinnin ja myynnin avulla.</p>
+                </div>
+            </div>
+
+            <!-- Problem 2 -->
+            <div class="row align-items-center mb-5">
+                 <div class="col-md-6 fit-content">
+                    <h3 class="problem__title">Heikosti konvertoiva käyttäjäpolku</h3>
+                    <p class="problem__description">Heikosti toteutetut käyttäjä- ja konversiopolut näkyvät laskevana konversiona ja korkeana välittömänä poistumana. Tästä aiheutuu negatiivista word-of-mouthia ja vaikeuksia löytää oikeita ongelmakohtia data-analytiikan avulla.</p>
+                </div>
+                <div class="arrow"></div>
+                <div class="col-md-6 solution-content">
+                    <h4>Ratkaisu</h4>
+                    <p class="solution__description">Kartoitetaan käyttäjäpolut, asennetaan data-analytiikkaa varten työkalut, tunnistetaan ja korjataan keskeiset ongelmakohdat, ja parannetaan polkuja siten, että käyttäjät voivat kokea palvelun ydinhyödyt vaivattomasti.</p>
+                </div>
+            </div>
+
+            <!-- Problem 3 -->
+             <div class="row align-items-center mb-5">
+                <div class="col-md-6 fit-content">
+                    <h3 class="problem__title">Myyntidemot tuottavat heikosti kauppaa</h3>
+                    <p class="problem__description">Heikosti toteutettu SaaS-tuotteen käyttöliittymä ja kokemus näkyvät kasvavana asiakaspoistumana, lisääntyneinä aspatikeitteinä, kriittisinä verkkoarvosteluina ja keskin kertaisina myyntituloksina.</p>
+                </div>
+                <div class="arrow"></div>
+                <div class="col-md-6 solution-content">
+                    <h4>Ratkaisu</h4>
+                    <p class="solution__description">Autamme konseptoimaan ja suunnittelemaan tuotteen siten, että se saa kilpailijanne näyttämään auttamattoman vanhanaikaiselta ja joka tarjoaa käyttäjälleen kokemuksen joka saa heidät maksamaan palvelustanne aiempaa korkeampaa hintaa.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="hinnat">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Soveltuuko palvelu minulle?</h2>
+                <p class="section__subtitle">Tutustu hinnoitteluumme</p>
+            </div>
+            <div class="pricing__grid" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr)); gap: var(--spacing-lg);">
+                <div class="pricing-card">
+                    <h3>Design-konsultointi</h3>
+                    <p class="pricing-card__price" style="font-size: 2.5rem; font-weight: bold;">110 €/tunti</p>
+                    <p class="pricing-card__description">SaaS-yrityksiin erikoistunut suunnittelija, joka auttaa poistamaan kasvun esteet Design-konsultoinnilla.</p>
+                    <a href="/contact" class="btn btn--primary">Jätä yhteydenottopyyntö &rarr;</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>SaaS-kasvutiimi</h3>
+                    <p class="pricing-card__price" style="font-size: 2.5rem; font-weight: bold;">Kysy hintaa</p>
+                    <p class="pricing-card__description">Kokenut tiimimme integroi tuotteen, käyttökokemuksen ja käyttäjäpolut kasvua tuottavaksi kokonaisuudeksi.</p>
+                    <a href="/contact" class="btn btn--primary">Jätä yhteydenottopyyntö &rarr;</a>
+                </div>
+            </div>
+            <p class="pricing__note" style="text-align: center; margin-top: var(--spacing-lg);">*Alle viisi miljoonaa euroa vaihtaville pienille yrityksille tarjoamme palveluitamme alennettuun hintaan 95 €/tunti. Hinnat ovat verottomia (alv 0%).</p>
+        </div>
+    </section>
+
+    <!-- Schedule Meeting Section -->
+    <section class="schedule-meeting" id="schedule-meeting">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Varaa tapaaminen</h2>
+                <p class="section__subtitle">Varaa aika ja katsotaan miten voimme auttaa tiimiäsi menestymään</p>
+            </div>
+            <div class="schedule-meeting__embed">
+                <CalendlyEmbed elementId="cal-inline-index" calLink="aaltoyleva/kartoitustapaaminen" />
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Usein kysytyt kysymykset</h2>
+                <p class="section__subtitle">Vastauksia yleisimpiin kysymyksiin palveluistamme</p>
+            </div>
+            <div class="faq-items">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question-wrapper">
+                        <span class="faq-question">Kuinka pitkäksi aikaa minun tarvitsee sitoutua?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Sopimuksemme ovat toistaiseksi voimassaolevia, joten minimisitoutuminen on yksi kuukausi. Tämä mahdollistaa joustavan yhteistyön ja antaa sinulle vapauden skaalata palveluitamme tarpeidesi mukaan. Tyypillisesti asiakkaamme työskentelevät kanssamme 2-6 kuukautta projektin laajuudesta riippuen.</p>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten erotatte itsenne muista design-toimistoista?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Olemme erikoistuneet nimenomaan SaaS-tuotteiden suunnitteluun ja ymmärrämme syvällisesti alan erityispiirteet. Yhdistämme tuotestrategian, käyttöliittymäsuunnittelun ja markkinoinnin yhdeksi kokonaisuudeksi. Meillä on vahva kokemus konversion optimoinnista ja käyttäjäpolkujen suunnittelusta erityisesti SaaS-kontekstissa.</p>
+                </div>
+                <!-- FAQ Item 3 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Mitä työkaluja käytätte suunnittelussa?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Käytämme moderneja suunnittelutyökaluja kuten Figmaa UI/UX-suunnitteluun, Miroa käyttäjäpolkujen ja workshoppien fasilitointiin sekä Hotjaria käyttäjäanalytiikassa. Lisäksi hyödynnämme AI-pohjaisia työkaluja käyttäjätutkimuksessa ja data-analytiikassa varmistaaksemme dataohjatun suunnitteluprosessin.</p>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten varmistatte, että design tukee liiketoimintatavoitteitamme?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Aloitamme aina kartoittamalla liiketoimintatavoitteenne ja mittarit. Teemme perusteellisen positiointiharjoituksen, joka auttaa ymmärtämään kohderyhmänne ja kilpailuetunne. Suunnitteluprosessimme perustuu jatkuvaan mittaamiseen ja optimointiin, jotta voimme varmistaa designin vaikuttavuuden konversioon ja kasvuun.</p>
+                </div>
+                <!-- FAQ Item 5 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Voitteko auttaa olemassa olevan tuotteen kehittämisessä?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Kyllä, autamme sekä uusien tuotteiden suunnittelussa että olemassa olevien tuotteiden kehittämisessä. Teemme ensin perusteellisen analyysin nykyisestä tuotteestanne, keräämme käyttäjädataa ja tunnistamme kehityskohteet. Tämän pohjalta luomme kehityssuunnitelman, joka voidaan toteuttaa vaiheittain häiritsemättä nykyistä liiketoimintaa.</p>
+                </div>
+                <!-- FAQ Item 6 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten käsittelette monimutkaisia SaaS-tuotteita?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Meillä on vahva kokemus monimutkaisten B2B SaaS-tuotteiden suunnittelusta. Käytämme hyväksi havaittuja menetelmiä ja kehyksiä, joiden avulla kompleksikin kokonaisuus kääntyy selkeäksi käyttöliittymäksi. Ulkopuolinen näkökulmamme auttaa usein näkemään yksinkertaistamisen mahdollisuudet, joita sisäinen tiimi ei välttämättä huomaa.</p>
+                </div>
+                <!-- FAQ Item 7 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten varmistatte suunnittelijan saatavuuden projektiimme?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Emme ylimyy resurssejamme, vaan varmistamme aina, että suunnittelijoillamme on riittävästi aikaa paneutua projektiinne. Tyypillisesti yksi suunnittelija työskentelee 2-3 projektin parissa samanaikaisesti, mikä mahdollistaa sekä tehokkaan työskentelyn että riittävän joustavuuden kiireellisissä tilanteissa.</p>
+                </div>
+                <!-- FAQ Item 8 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Mitä jos en ole tyytyväinen lopputulokseen?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Työllämme on täysi tyytyväisyystakuu. Jos et ole tyytyväinen työhömme, et maksa mitään. Työskentelemme iteratiivisesti ja keräämme palautetta säännöllisesti varmistaaksemme, että olemme oikealla polulla. Tämä lähestymistapa minimoi riskin, että lopputulos ei vastaisi odotuksiasi.</p>
+                </div>
+                <!-- FAQ Item 9 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten tuette kehitystiimiä implementoinnissa?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Toimitamme aina tarkat tekniset spesifikaatiot ja tyyliohjeet kehitystiimille. Käytämme Figman kehittäjänäkymää ja luomme tarvittaessa komponenttikirjaston. Olemme myös käytettävissä konsultointiin implementoinnin aikana ja autamme ratkaisemaan mahdolliset tekniset haasteet designin toteutuksessa.</p>
+                </div>
+                <!-- FAQ Item 10 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten hinnoittelette isommat projektit?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Isommissa projekteissa voimme sopia kiinteän kuukausibudjetin tai projektikohtaisen hinnoittelun. Tuntihintamme on 110€/tunti (pienemmille yrityksille 95€/tunti), mutta räätälöimme aina hinnoittelun projektin laajuuden ja tarpeiden mukaan. Teemme selkeän projektisuunnitelman, jossa määrittelemme tarvittavat resurssit ja aikataulun.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Preview Section -->
+    <section class="blog-preview" id="latest-posts">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title">Tuoreimmat ajatuksemme</h2>
+            </div>
+            <div class="blog-grid">
+                {latestPosts.map(post => (
+                    <article class="blog-card">
+                        <a href={`/blog/${post.slug}/`} class="blog-card__link">
+                            {post.data.heroImage && (
+                               <div class="blog-card__image-container">
+                                 <Image
+                                   src={post.data.heroImage}
+                                   alt={post.data.heroImageAlt || post.data.title}
+                                   width={800}
+                                   height={450}
+                                   format="webp"
+                                   quality={80}
+                                   loading="lazy"
+                                   decoding="async"
+                                   class="blog-card__image"
+                                 />
+                               </div>
+                            )}
+                            <div class="blog-card__content">
+                                 {post.data.tags && post.data.tags.length > 0 && (
+                                    <div class="blog-card__tags">
+                                        {post.data.tags.map(tag => (
+                                            <span class="tag">{tag}</span>
+                                        ))}
+                                    </div>
+                                 )}
+                                <h3 class="blog-card__title">{post.data.title}</h3>
+                                <p class="blog-card__excerpt">{post.data.description || 'Lue artikkeli...'}</p>
+                                <div class="blog-card__footer">
+                                    <span class="blog-card__readmore">Lue lisää &rarr;</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                ))}
+            </div>
+            <div style="text-align: center; margin-top: var(--spacing-lg);">
+                <a href="/blog" class="btn btn--secondary">Lue kaikki kirjoitukset &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+</BaseLayout>
+
+<style>
+    .team-grid {
+        display: flex;
+        flex-direction: column; /* Stack vertically by default (mobile) */
+        align-items: center; /* Center items horizontally in column layout */
+        gap: var(--spacing-lg);
+    }
+
+    .team-member {
+        text-align: center; /* Ensure text inside member card is centered */
+    }
+
+    /* Apply row layout for medium screens and up */
+    @media (min-width: 768px) {
+        .team-grid {
+            flex-direction: row; /* Arrange side-by-side */
+            justify-content: center; /* Center items horizontally in row layout */
+        }
+    }
+</style>

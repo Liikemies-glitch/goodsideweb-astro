@@ -1,11 +1,13 @@
 ---
 // src/pages/blog/[slug].astro
 import { getCollection, type CollectionEntry } from 'astro:content';
-import BlogPostLayout from '../../layouts/BlogPostLayout.astro';
+import BlogPostLayout from '../../../layouts/BlogPostLayout.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
-  return posts.map((post: CollectionEntry<'blog'>) => ({
+  // Filter for English posts before mapping
+  const englishPosts = posts.filter((post: CollectionEntry<'blog'>) => post.id.endsWith('.en.md'));
+  return englishPosts.map((post: CollectionEntry<'blog'>) => ({
     params: { slug: post.slug },
     props: { post }, // Pass the full post object as a prop
   }));

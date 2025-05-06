@@ -22,32 +22,77 @@ import HeroSection from '../../../components/HeroSection.astro';
 // Use 'any' type hint to bypass complex type issues for now
 const heroImageModules = import.meta.glob<any>('../../../assets/blog/images/**/featured.webp');
 
-// 1. Fetch all published blog posts and filter for Finnish
+// 1. Fetch all published blog posts
 const allPosts = await getCollection('blog');
-const finnishPosts = allPosts.filter((post: CollectionEntry<'blog'>) => post.id.endsWith('.fi.md'));
+
+// Filter for Finnish posts and ensure data integrity
+const finnishPosts = allPosts.filter(post => post.id.endsWith('.fi.md') && post.data);
 
 // 2. Sort posts by publication date (newest first)
 // Add resolved image metadata to each post object
-const postsWithImages = await Promise.all(finnishPosts.map(async (post) => {
-  let heroImage = null;
-  const imagePath = post.data.heroImage; // Path relative to content file
-  const globKey = `../../../assets/blog/images/${post.slug}/featured.webp`; 
-  if (imagePath && heroImageModules[globKey]) {
-    const imageModule = await heroImageModules[globKey](); 
-    // Cast to any to access default property
-    heroImage = (imageModule as any).default;
-  }
-  return {
-    ...post,
-    data: {
-      ...post.data,
-      heroImage // Replace string path with resolved image metadata
+const postsWithImages = await Promise.all(
+  finnishPosts.map(async (post) => {
+    // Ensure post.data exists, though filter should guarantee it
+    if (!post.data) {
+      // This case should ideally not be reached due to the filter above
+      console.error(`Post with slug ${post.slug} is missing data.`);
+      return {
+        ...post,
+        data: { 
+          // Provide minimal default data structure to prevent runtime errors
+          title: 'Error: Missing Data',
+          pubDate: new Date(),
+          description: '',
+          author: '',
+          tags: [],
+          heroImage: null,
+          heroImageAlt: '',
+          draft: true,
+        } 
+      };
     }
-  };
-}));
 
-// Rely on inference for sortedPosts type
-const sortedPosts = postsWithImages.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+    let heroImage = null;
+    const imagePath = post.data.heroImage; // Path relative to content file
+
+    // Extract the base slug by removing .fi or .en suffix
+    const baseSlug = post.slug.replace(/\.(fi|en)$/, '');
+    const globKey = `../../../assets/blog/images/${baseSlug}/featured.webp`;
+
+    if (imagePath && typeof imagePath === 'string' && heroImageModules[globKey]) { // Check if imagePath is a string
+      try {
+        const imageModule = await heroImageModules[globKey]();
+        heroImage = (imageModule as any).default;
+      } catch (e) {
+        console.error(`Error loading image for ${post.slug} with globKey ${globKey}:`, e);
+      }
+    } else if (imagePath && typeof imagePath !== 'string') {
+      // If imagePath is already an object (resolved image), use it directly
+      // This might happen if Astro pre-processes it in some contexts
+      heroImage = imagePath;
+    }
+
+
+    return {
+      ...post,
+      data: {
+        ...post.data,
+        heroImage // Replace string path with resolved image metadata
+      }
+    };
+  })
+);
+
+// Rely on inference for sortedPosts type, but add a check for data.pubDate
+const sortedPosts = postsWithImages
+  .filter(post => post.data && post.data.pubDate) // Ensure pubDate exists
+  .sort((a, b) => {
+    // Ensure a.data and b.data and their pubDate properties exist
+    if (a.data && a.data.pubDate && b.data && b.data.pubDate) {
+      return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
+    }
+    return 0; // Default sort if data is incomplete
+  });
 
 const pageTitle = "Blogi | The Good Side";
 const pageDescription = "Lue The Good Side -blogin viimeisimmät artikkelit tuotestrategiasta, SaaSista, designista ja muotoilusta.";

@@ -40,7 +40,7 @@ Seuraa näitä milestoneja järjestyksessä:
 
     *Muistiinpanot (AI): Milestone 2 suoritettu. Luotu `src/i18n/ui.ts` ja `src/i18n/utils.ts`. Muokattu `src/components/Footer.astro` käyttämään käännöksiä. Poiketen suunnitelmasta, luotiin `src/pages/fi` ja `src/pages/en` hakemistot, siirrettiin `src/pages/index.astro` -> `src/pages/fi/index.astro` ja luotiin kopiona `src/pages/en/index.astro` sekä minimaalinen `src/pages/index.astro` juureen, jotta testaus onnistui. Korjattiin myös siirrettyjen sivujen import-polut. Testattu, että `/fi/`- ja `/en/`-polut latautuvat ja Footer näyttää oikeat kieli-spesifit tekstit molemmilla poluilla.*
 
--   [ ] **Milestone 3: Sisältökokoelmien (Content Collections) Käännökset**
+-   [x] **Milestone 3: Sisältökokoelmien (Content Collections) Käännökset**
     -   Projektisi käyttää sisältökokoelmia (`src/content/`) MD-tiedostoille. Määritellään strategia kieliversioiden hallintaan. Yleinen tapa on käyttää tiedostonimeä erotteluun, esim. `blogipostaus.fi.md` ja `blogipostaus.en.md`.
     -   Muokkaa sisältökokoelmien skeemaa (`src/content/config.ts`) tarvittaessa (yleensä ei välttämätöntä pelkälle kielelle, mutta hyvä tarkistaa).
     -   Luo manuaalisesti *yhdestä* olemassa olevasta `.md`-tiedostosta englanninkielinen versio (esim. kopioi `jotain.fi.md` -> `jotain.en.md` ja käännä sisältö nopeasti).
@@ -62,7 +62,7 @@ Seuraa näitä milestoneja järjestyksessä:
     *3. Sisältökokoelmien skeeman tarkistus (`src/content/config.ts`).*
     *4. Varmistettava, että ainakin yksi .md-tiedosto on käännetty englanninkieliseksi.*
 
--   [ ] **Milestone 4: Layoutin Päivitys (`hreflang` ja Kielilinkit)**
+-   [x] **Milestone 4: Layoutin Päivitys (`hreflang` ja Kielilinkit)**
     -   Päivitä pääasiallinen layout-tiedosto (`src/layouts/Layout.astro` tai vastaava).
     -   Käytä Astro:n `Astro.url`- ja i18n-konfiguraatiotietoja generoidaksesi dynaamisesti oikeat `hreflang`-linkkitagit `<head>`-osioon jokaiselle tuetulle kielelle.
     -   Lisää kielenvaihtolinkki ("Suomeksi / In English") layoutiin. Linkkien tulisi osoittaa nykyisen sivun vastineeseen toisella kielellä. Käytä `getStaticPaths` (tarvittaessa) tai `Astro.currentLocale` apuna oikeiden URL-osoitteiden muodostamiseen.
@@ -71,7 +71,7 @@ Seuraa näitä milestoneja järjestyksessä:
         -   Tarkista `<head>`-osion sisältö. Sieltä pitäisi löytyä `<link rel="alternate" hreflang="fi" href="...">` ja `<link rel="alternate" hreflang="en" href="...">` -tagit, jotka osoittavat oikeisiin URL-osoitteisiin.
         -   Etsi ja klikkaa kielenvaihtolinkkiä (esim. "In English", kun olet suomenkielisellä sivulla). Sinut pitäisi ohjata saman sivun englanninkieliseen versioon (esim. `/fi/about` -> `/en/about`). Varmista, että linkki toimii molempiin suuntiin.
 
--   [ ] **Milestone 5: Kielen Tunnistus ja Juuri-URL:n Käsittely Vercelissä**
+-   [x] **Milestone 5: Kielen Tunnistus ja Juuri-URL:n Käsittely Vercelissä**
     -   Toteuta Astro Middleware (`src/middleware.ts` tai `src/middleware.js`).
     -   Middlewaren tulee:
         -   Tarkistaa pyynnöt, jotka kohdistuvat juuri-URL:iin (`/`).
@@ -86,17 +86,125 @@ Seuraa näitä milestoneja järjestyksessä:
         -   Varmista, että suorat navigoinnit osoitteisiin kuten `/fi/blog` tai `/en/about` toimivat edelleen ilman ylimääräisiä uudelleenohjauksia middlewaren toimesta.
         -   Testaa Vercelin esikatseluympäristössä (`preview deployment`), jotta varmistutaan middlewaren toiminnasta Vercelin infrassa.
 
--   [ ] **Milestone 6: Testaus ja Viimeistely**
-    -   Käännä *muutama lisää* sisältösivua ja blogipostausta englanniksi, jotta testaaminen on kattavampaa.
-    -   Testaa kaikki sivutyypit (etusivu, tavalliset sivut, blogilistaus, yksittäinen blogipostaus) molemmilla kielillä.
-    -   Tarkista linkkien toimivuus (sisäiset linkit, navigaatio, kielenvaihtolinkit) molemmilla kielillä.
-    -   Varmista `hreflang`-tagien oikeellisuus useilla eri sivuilla.
-    -   Tarkista juuri-URL:n uudelleenohjauksen toiminta eri selainasetuksilla.
-    -   Siivoa koodia, poista turhat kommentit ja lisää selventäviä kommentteja tarvittaessa.
-    -   Suorita tuotanto-build (`npm run build`) ja esikatsele se paikallisesti (`npm run preview`) varmistaaksesi, ettei virheitä ilmene.
-    -   Tee lopullinen testaus Vercelin preview-ympäristössä ennen tuotantoon vientiä.
-    -   **Testausohjeet:** Suorita kaikki yllä mainitut testit systemaattisesti. Pyydä tarvittaessa toista henkilöä testaamaan eri selaimella tai kieliasetuksilla.
+-   [ ] **Milestone 6: Sivujen inventaario ja kääntämisen valmistelu**
+    -   Tee kattava inventaario kaikista sivustolla olevista sivuista.
+        -   Etsi ja listaa kaikki `src/pages/` -hakemistossa olevat sivut, jotka tulee kääntää:
+            - `palvelut.astro` → `src/pages/en/palvelut.astro` (tai "services")
+            - `referenssit.astro` → `src/pages/en/referenssit.astro` (tai "references") 
+            - `contact.astro` → `src/pages/en/contact.astro`
+            - `diy-opas.astro` → `src/pages/en/diy-opas.astro` Tätä ei käännetä.
+            - `referenssit/eemel.astro` → `src/pages/en/referenssit/eemel.astro`
+        -   Etsi ja listaa kaikki blogitekstit (`src/content/blog/`) ja varmista, että ne on nimetty johdonmukaisesti (`.fi.md`-päätteiset tiedostot):
+            - Yhteensä 87 kääntämätöntä blogiartikkelia
+            - Kolme artikkelia jo käännetty englanniksi: `mita-on-palvelumuotoilu.en.md`, `kaytettavyys-ja-hakukoneoptimointi.en.md`, `design-ops.en.md`
+        -   Varmista, että blogin mahdolliset listaustiedostot toimivat molemmilla kielillä:
+            - `src/pages/fi/blog/index.astro` → `src/pages/en/blog/index.astro` (jo luotu)
+            - `src/pages/fi/blog/[slug].astro` → `src/pages/en/blog/[slug].astro` (tarkistettava)
+    -   Järjestä kaikki käännettävät sivut ja blogitekstit prioriteettijärjestykseen:
+        -   **Korkea prioriteetti (Milestone 8 - nämä 5 artikkelia):**
+            - `design-osana-strategiaa-top-5-esimerkit.fi.md`
+            - `design-thinking-prosessi-joka-sytyttaa-luovuuden-liekin.fi.md`
+            - `designerin-rooli-asiakaskokemuksen-parantamisessa.fi.md` 
+            - `designin-tulee-olla-kaiken-ytimessa-v-2.fi.md`
+            - `designin-yhtenaisyys-muutosten-keskella.fi.md`
+        -   **Keskitason prioriteetti (Milestone 9 - seuraavat 10 artikkelia):**
+            - `designops-muotoiluosaamisen-kumppani.fi.md`
+            - `designops-nain-paaset-alkuun.fi.md`
+            - `dieter-rams-ja-10-hyvan-muotoilun-periaatetta.fi.md`
+            - `digipalvelun-uudistaminen.fi.md`
+            - `digiprojektin-budjetointi.fi.md`
+            - `digitaalinen-asiakaskokemus-nain-alkuun.fi.md`
+            - `digitalisaation-megatrendit-muokkaavat-liiketoimintaa.fi.md`
+            - `empatia-palvelumuotoilussa.fi.md`
+            - `ideasta-appiin-selviytymisopas.fi.md`
+            - `jakobs-law-intuitiivisen-kayttoliittymasuunnittelun-kulmakivi.fi.md`
+        -   **Matala prioriteetti (Milestone 10 - loput ~72 artikkelia)**
+    -   Blogitiedostot noudattavat jo johdonmukaista `.fi.md`-päätteistä nimeämiskäytäntöä. Uudelleennimeäminen ei ole tarpeen.
+    -   Tarkista `src/content/config.ts`:
+        - Nykyinen määrittely tukee monikielisiä tiedostoja, koska se ei määrittele kieltä osana skeemaa
+        - Z-objektiin on määritelty seuraavat pakolliset kentät: title, pubDate, description, author, tags
+        - Nämä kentät tulee kääntää jokaiselle artikkelille
+    -   **Testausohjeet:**
+        -   Varmista, että kaikilla inventaarion sivuilla ja tiedostoilla on selvä suunnitelma englanninkielisten versioiden luomiseksi.
+        -   Varmista, että kaikki blogitekstit on nimetty oikein ja ne on järjestetty prioriteettijärjestykseen Milestone 8-10 mukaisesti.
+
+-   [ ] **Milestone 7: Staattisten sivujen kääntäminen**
+    -   Käännä kaikki staattiset sivut (etusivu, palvelut, referenssit, yhteydenotto, jne.) englannin kielelle.
+        -   Etsi ja tunnista sivut `src/pages/` -hakemistosta.
+        -   Luo vastaavat englanninkieliset versiot `src/pages/en/` -hakemistoon.
+        -   Varmista, että kaikki sivukohtaiset komponentit ja elementit käännetään.
+        -   Huomioi SEO-tagit ja metatiedot, kuvaukset ja otsikot.
+    -   Tarkista ja testaa jokainen käännetty sivu sekä ulkoasun että sisällön osalta.
+    -   Varmista, että kaikki navigaatioelementit toimivat oikein molemmilla kielillä.
+    -   **Testausohjeet:**
+        -   Käy läpi kaikki käännetyt sivut englanniksi ja varmista, että ne vastaavat sisällöltään suomenkielisiä sivuja.
+        -   Tarkista, että sivuilla ei ole jäljellä suomenkielistä tekstiä.
+        -   Testaa, että navigointi toimii sujuvasti englanninkielisessä versiossa.
+        -   Varmista, että kielenvaihtolinkit ohjaavat oikeisiin vastinsivuihin.
+
+-   [ ] **Milestone 8: Blogitekstien kääntäminen (Osa 1 - Tärkeimmät ja uusimmat artikkelit)**
+    -   Valitse 3-5 tärkeintä tai uusinta blogiartikkelia käännettäväksi ensimmäisessä vaiheessa.
+    -   Käännä valitut blogiartikkelit seuraavasti:
+        -   Kopioi jokainen `.fi.md`-tiedosto vastaavaksi `.en.md`-tiedostoksi.
+        -   Käännä frontmatter-metatiedot (otsikko, kuvaus, tagit, jne.).
+        -   Käännä artikkelin leipäteksti ylläpitäen alkuperäisen muotoilun.
+        -   Varmista, että kuvaviittaukset toimivat oikein.
+        -   Käännä tagit ja muut luokittelutiedot.
+    -   Tee tarvittavat muutokset, jos blogilistaussivut vaativat kielispesifejä muutoksia.
+    -   **Testausohjeet:**
+        -   Tarkista, että käännetyt blogiartikkelit näkyvät oikein `/en/blog/` -sivulla.
+        -   Varmista, että artikkelien kuvat, muotoilut ja tagit toimivat englanninkielisessä versiossa.
+        -   Varmista, että artikkelin metatiedot ja SEO-ominaisuudet on käännetty oikein.
+
+-   [ ] **Milestone 9: Blogitekstien kääntäminen (Osa 2 - Seuraava erä artikkeleita)**
+    -   Valitse seuraavat 5-10 blogiartikkelia käännettäväksi toisessa vaiheessa.
+    -   Käännä nämä artikkelit samalla prosessilla kuin Milestone 8:ssa:
+        -   Kopioi jokainen `.fi.md`-tiedosto vastaavaksi `.en.md`-tiedostoksi.
+        -   Käännä frontmatter-metatiedot (otsikko, kuvaus, tagit, jne.).
+        -   Käännä artikkelin leipäteksti ylläpitäen alkuperäisen muotoilun.
+        -   Varmista, että kuvaviittaukset toimivat oikein.
+        -   Käännä tagit ja muut luokittelutiedot.
+    -   Tarkista mahdolliset viittaukset toisiin artikkeleihin ja päivitä ne tarvittaessa.
+    -   **Testausohjeet:**
+        -   Toista samat testit kuin Milestone 8:ssa.
+        -   Varmista, että artikkelien väliset viittaukset toimivat oikein englanninkielisessä versiossa.
+
+-   [ ] **Milestone 10: Blogitekstien kääntäminen (Osa 3 - Loput artikkelit)**
+    -   Käännä kaikki jäljellä olevat blogiartikkelit:
+        -   Kopioi jokainen `.fi.md`-tiedosto vastaavaksi `.en.md`-tiedostoksi.
+        -   Käännä frontmatter-metatiedot (otsikko, kuvaus, tagit, jne.).
+        -   Käännä artikkelin leipäteksti ylläpitäen alkuperäisen muotoilun.
+        -   Varmista, että kuvaviittaukset toimivat oikein.
+        -   Käännä tagit ja muut luokittelutiedot.
+    -   Tarkista mahdolliset arkistointi- tai kategoriasivu ja varmista, että ne toimivat molemmilla kielillä.
+    -   **Testausohjeet:**
+        -   Varmista, että kaikki artikkelit näkyvät `/en/blog/` -sivulla.
+        -   Tarkista kategoriat, tagit ja arkistot molemmilla kielillä.
+        -   Varmista, että blogin hakutoiminto (jos sellainen on) toimii molemmilla kielillä.
+
+-   [ ] **Milestone 11: Testaus, optimointi ja tuotantoon vienti**
+    -   Suorita kattava testaus koko sivustolla molemmilla kielillä:
+        -   Käy läpi kaikki sivut ja varmista, että sisältö näkyy oikein.
+        -   Tarkista kaikki navigaatioelementit, linkit ja toiminnallisuudet.
+        -   Varmista, että kielenvaihto toimii kaikilla sivuilla oikein.
+        -   Testaa `middleware.ts` -toiminta juuri-URL:n kanssa molemmilla käyttötapauksilla (URL-parametrit).
+    -   Tee hakukoneoptimoinnin tarkistus:
+        -   Varmista, että kaikilla sivuilla on asianmukaiset SEO-metatiedot molemmilla kielillä.
+        -   Tarkista `hreflang`-tagien toiminta kaikilla sivuilla.
+        -   Varmista, että sivukartta (`sitemap.xml`) sisältää molemmat kieliversiot.
+    -   Optimoi suorituskyky:
+        -   Tarkista ja optimoi kuvatiedostot.
+        -   Suorita Lighthouse tai vastaava suorituskykytesti molemmilla kieliversioilla.
+    -   Tee lopullinen tuotantobuild ja julkaise sivusto:
+        -   Suorita `npm run build` ja tarkista, ettei virheitä ilmene.
+        -   Tarkista build-artefaktit varmistaaksesi, että kaikki sivut on generoitu oikein.
+        -   Testaa sivusto Vercelin esikatseluympäristössä ennen lopullista julkaisua.
+        -   Julkaise sivusto tuotantoon ja tarkista, että kaikki toimii odotetusti.
+    -   **Testausohjeet:**
+        -   Suorita kattava tarkistus kaikille sivuille tuotantoympäristössä.
+        -   Tarkista sivuston toiminta eri selaimilla ja laitteilla.
+        -   Varmista, että kielenvaihto ja juuri-URL:n käsittely toimii oikein tuotannossa.
 
 ---
 
-Aloitetaan **Milestone 1: Perusasetukset ja Konfigurointi**. Mitä i18n-ratkaisua suosit Astroon perustuen nykyiseen projektirakenteeseen ja tavoitteisiin? Vai haluatko minun tutkivan vaihtoehtoja ensin? 
+Tämä laajennettu suunnitelma kattaa koko sivuston kääntämisen suomesta englanniksi ja varmistaa, että kaikki sisältö, blogitekstit ja toiminnallisuudet toimivat moitteettomasti molemmilla kielillä. Milestonet on jaettu loogisiin kokonaisuuksiin, jotta työ voidaan tehdä hallituissa erissä.
