@@ -1,0 +1,62 @@
+---
+import { getLangFromUrl, getRelativeLocaleUrl } from '../i18n/utils';
+import { ui, defaultLang } from '../i18n/ui'; // Import directly from ui.ts
+import { useTranslations } from '../i18n/utils'; // Import useTranslations
+
+const lang = getLangFromUrl(Astro.url) as keyof typeof ui; // Add type assertion for lang
+const supportedLocales = Object.keys(ui) as (keyof typeof ui)[]; // Get keys from ui object
+const t = useTranslations(lang); // Initialize a translation function
+const defaultLocale = 'fi';
+
+// Get current path without locale prefix for language switcher
+let pathWithoutLocale = Astro.url.pathname;
+if (pathWithoutLocale.startsWith(`/${lang}`)) {
+    pathWithoutLocale = pathWithoutLocale.substring(`/${lang}`.length);
+}
+if (pathWithoutLocale === '') {
+    pathWithoutLocale = '/';
+} else if (!pathWithoutLocale.startsWith('/')) {
+    pathWithoutLocale = `/${pathWithoutLocale}`;
+}
+---
+
+<header class="header">
+    <nav class="nav container">
+        {/* Ryhmä logolle ja kielivalitsimelle */}
+        <div class="logo-lang-group" style="display: flex; align-items: center;">
+            <a href={getRelativeLocaleUrl(lang, '/')} class="nav__logo"> 
+                <img src="/images/brand/logo.webp" alt="The Good Side" width="140" height="32"/>
+            </a>
+            {/* Kielenvaihtolinkit */}
+            <div class="language-switcher" style="display: flex; align-items: center; gap: 0.5rem; margin-left: 1rem; margin-right: 1rem;">
+                {supportedLocales.map((locale: keyof typeof ui, index: number) => (
+                    <>
+                        {index > 0 && <span style="color: #CCC;">/</span>}
+                        {locale === lang ? (
+                            <span style="font-weight: bold; text-decoration: underline; color: var(--primary-color);">{locale.toUpperCase()}</span>
+                        ) : (
+                            <a href={getRelativeLocaleUrl(locale, pathWithoutLocale === '/' && locale === defaultLang ? undefined : pathWithoutLocale)} style="text-decoration: none; color: var(--text-color-light);">{locale.toUpperCase()}</a>
+                        )}
+                    </>
+                ))}
+            </div>
+        </div>
+
+        {/* Ryhmä navigaation ohjaimille */}
+        <div class="nav-controls" style="display: flex; align-items: center; gap: 1rem;"> 
+            <button class="nav__toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav__menu">
+                <li><a href={getRelativeLocaleUrl(lang, '/')}>{t('nav.home')}</a></li>
+                <li><a href={getRelativeLocaleUrl(lang, '/services')}>{t('nav.services')}</a></li>
+                <li><a href={getRelativeLocaleUrl(lang, '/references')}>{t('nav.references')}</a></li>
+                <li><a href={getRelativeLocaleUrl(lang, '/blog')}>{t('nav.blog')}</a></li>
+                <li><a href={getRelativeLocaleUrl(lang, '/#hinnat')}>{t('nav.pricing')}</a></li>
+                <li><a href={getRelativeLocaleUrl(lang, '/contact')} class="btn btn--primary">{t('nav.contactButton')}</a></li> 
+            </ul>
+        </div>
+    </nav>
+</header> 

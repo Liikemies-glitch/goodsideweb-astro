@@ -1,14 +1,28 @@
+---
+export interface Props {
+    title?: string;
+    paragraph?: string;
+    formTitle?: string;
+}
+
+const {
+    title = "Valmis kasvamaan nopeasti?",
+    paragraph = "Keskustellaan, miten suunnitteluosaamisemme voi auttaa SaaS-yritystäsi saavuttamaan kasvupotentiaalinsa.",
+    formTitle = "Jätä yhteystietosi, niin otamme yhteyttä."
+} = Astro.props;
+---
+
 <section class="cta-section" style="background-color: var(--section-bg); padding: 1rem 0; padding-top: 6rem;">
     <div class="container">
         <div class="cta-grid">
             <div class="cta-content">
-                <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1.5rem; line-height: 1.2; animation: color-cycle 3s ease-in-out infinite alternate;">Valmis kasvamaan nopeasti?</h2>
+                <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1.5rem; line-height: 1.2; animation: color-cycle 3s ease-in-out infinite alternate;">{title}</h2>
                 <p style="font-size: 1.125rem; color: var(--light-text); margin-bottom: 2.5rem; max-width: 500px;">
-                    Keskustellaan, miten suunnitteluosaamisemme voi auttaa SaaS-yritystäsi saavuttamaan kasvupotentiaalinsa.
+                    {paragraph}
                 </p>
             </div>
             <div class="cta-form" id="hubspot-form-container">
-                <p style="margin-bottom: 0; font-weight: 500; color: var(--text-color); padding-left: 2.5rem; font-size: 1.125rem;">Jätä yhteystietosi, niin otamme yhteyttä.</p>
+                <p style="margin-bottom: 0; font-weight: 500; color: var(--text-color); padding-left: 2.5rem; font-size: 1.125rem;">{formTitle}</p>
                 <!-- HubSpot Embed Code wrapped in template -->
                 <template id="hubspot-template">
                     <script src="https://js-eu1.hsforms.net/forms/embed/145360432.js" defer></script>

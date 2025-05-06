@@ -1,0 +1,686 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BackgroundPaths from '../../components/BackgroundPaths.tsx';
+import CTASection from '../../components/CTASection.astro';
+import HeroSection from '../../components/HeroSection.astro';
+
+const pageTitle = "SaaS Design Services - The Good Side";
+const pageDescription = "We create exceptional digital experiences that help SaaS companies stand out, engage users, and grow.";
+---
+<BaseLayout title={pageTitle} description={pageDescription}>
+    <BackgroundPaths client:load />
+
+    <HeroSection
+        title="Build a SaaS product your users love"
+        paragraph="We serve you comprehensively in developing your SaaS product - from user interface design and user journeys to strategic product positioning."
+        textOnly={true}
+        paddingTop="4rem"
+        paddingBottom="3rem"
+        class="saas-hero-component"
+        textAlign="center"
+    />
+
+    <!-- Expertise Areas -->
+     <section class="expertise-section">
+        <div class="container">
+            <!-- Tab navigation -->
+             <div class="tabs-placeholder" style="margin-bottom: 1rem;">
+                <button class="tab-button-style" data-tab="ui-ux">UI/UX Design</button>
+                <button class="tab-button-style active" data-tab="kayttajapolut">User Journeys</button>
+                <button class="tab-button-style" data-tab="positiointi">Product Positioning</button>
+            </div>
+
+            <div class="tab-content-area">
+
+                <!-- Tab 1: UI/UX Design -->
+                <div id="ui-ux" class="tab-pane">
+                    <div class="expertise-cards-grid">
+                        <div class="card">
+                            <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></div>
+                            <h4>Dashboards</h4>
+                            <p>Intuitive dashboards that make complex data easy to understand and use.</p>
+                            <ul>
+                                <li>Data visualization</li>
+                                <li>AI-based reporting</li>
+                                <li>Customizable charts</li>
+                            </ul>
+                            <a href="/en/contact" class="card-link">I want more information</a>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+                            <h4>User Experience</h4>
+                            <p>Smooth experiences that delight users and reduce churn from your SaaS product.</p>
+                            <ul>
+                                <li>User journey mapping</li>
+                                <li>Usability testing</li>
+                                <li>Interaction design</li>
+                            </ul>
+                            <a href="/en/contact" class="card-link">I want more information</a>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+                            <h4>Design Systems</h4>
+                            <p>Scalable design systems that ensure consistency and efficiency.</p>
+                            <ul>
+                                <li>Component libraries</li>
+                                <li>Figma & Cursor</li>
+                                <li>Documentation</li>
+                            </ul>
+                            <a href="/en/contact" class="card-link">I want more information</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: User Journeys -->
+                <div id="kayttajapolut" class="tab-pane active">
+                    <div class="expertise-cards-grid">
+                        <div class="card">
+                            <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+                            <h4>User Research</h4>
+                            <p>Deep understanding of your users through qualitative and quantitative research methods.</p>
+                            <ul>
+                                <li>User interviews</li>
+                                <li>Interaction data analysis</li>
+                                <li>Usability testing</li>
+                            </ul>
+                            <a href="/en/contact" class="card-link">I want more information</a>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                            <h4>Persona Development</h4>
+                            <p>Detailed user personas that guide product decisions and feature prioritization.</p>
+                            <ul>
+                                <li>Demographic profiling</li>
+                                <li>Behavioral patterns</li>
+                                <li>Goals and pain points</li>
+                            </ul>
+                            <a href="/en/contact" class="card-link">I want more information</a>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg></div>
+                            <h4>Journey Mapping</h4>
+                            <p>Visualized user journeys that identify opportunities for improvement and innovation.</p>
+                            <ul>
+                                <li>Touchpoint analysis</li>
+                                <li>Emotional mapping</li>
+                                <li>Opportunity identification</li>
+                            </ul>
+                            <a href="/en/contact" class="card-link">I want more information</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 3: Product Positioning -->
+                <div id="positiointi" class="tab-pane">
+                    <div class="expertise-cards-grid">
+                        <div class="card">
+                             <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+                            <h4>Market Differentiation</h4>
+                            <p>Strategic positioning that helps your SaaS product stand out in the market.</p>
+                             <ul>
+                                <li>Competitor analysis</li>
+                                <li>Unique selling propositions</li>
+                                <li>Market opportunity mapping</li>
+                            </ul>
+                            <a href="/en/contact" class="card-link">I want more information</a>
+                        </div>
+                        <div class="card">
+                             <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg></div>
+                            <h4>Value Proposition</h4>
+                            <p>Clear, compelling value propositions that resonate with your target audience.</p>
+                             <ul>
+                                <li>Benefit articulation</li>
+                                <li>Problem-solution framing</li>
+                                <li>ROI demonstration</li>
+                            </ul>
+                            <a href="/en/contact" class="card-link">I want more information</a>
+                        </div>
+                        <div class="card">
+                             <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg></div>
+                            <h4>Messaging Framework</h4>
+                            <p>Consistent messaging that communicates your product's value across all touchpoints.</p>
+                             <ul>
+                                <li>Core messaging</li>
+                                <li>Feature positioning</li>
+                                <li>Target audience-specific narratives</li>
+                            </ul>
+                            <a href="/en/contact" class="card-link">I want more information</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="case-studies-section" style="padding: 4rem 0;">
+        <div class="container">
+             <div class="case-study-item">
+                 <div class="case-study-content">
+                    <span class="tag case-study-tag">Case Study</span>
+                    <h3 class="case-study-title">Eemel.com</h3>
+                    <p class="case-study-description">We enhanced Eemel.com's user experience with strategic design, resulting in significant improvements in key business metrics and customer satisfaction.</p>
+                    <a href="/en/referenssit/eemel" class="button case-study-button">
+                        Read more
+                    </a>
+                     <div class="case-study-results">
+                        <div class="result-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="result-icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span>+622% ROI on media budget</span>
+                        </div>
+                        <div class="result-item">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="result-icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span>+46% ARR growth</span>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="case-study-image-area">
+                     <img src="/images/references/eemel.webp" alt="Eemel.com Case Study Image" class="case-study-image"/>
+                 </div>
+             </div>
+
+             <div class="case-study-item">
+                 <div class="case-study-content">
+                     <span class="tag case-study-tag">Case Study</span>
+                     <h3 class="case-study-title">Seppo.io</h3>
+                     <p class="case-study-description">Through our trial period collaboration, we helped Seppo.io validate the value of our design process, build trust, and effectively advance their product development.</p>
+                     <a href="#" class="button case-study-button">
+                         Coming soon <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; vertical-align: middle;"><polyline points="9 18 15 12 9 6"/></svg>
+                     </a>
+                     <div class="case-study-results">
+                         <div class="result-item">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="result-icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                             <span>To be announced</span>
+                         </div>
+                         <div class="result-item">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="result-icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                             <span>To be announced</span>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="case-study-image-area">
+                      <img src="/images/references/seppo-reference.webp" alt="Seppo.io Case Study Image" class="case-study-image" style="filter: blur(8px);"/>
+                 </div>
+             </div>
+
+             <div class="case-study-item">
+                 <div class="case-study-content">
+                    <span class="tag case-study-tag">Case Study</span>
+                    <h3 class="case-study-title">Gebwell</h3>
+                    <p class="case-study-description">Our transparent process and results-driven approach helped Gebwell achieve their project goals. Clear and easy communication ensured smooth collaboration throughout the project.</p>
+                     <a href="#" class="button case-study-button">
+                         Coming soon <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; vertical-align: middle;"><polyline points="9 18 15 12 9 6"/></svg>
+                     </a>
+                    <div class="case-study-results">
+                         <div class="result-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="result-icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span>To be announced</span>
+                        </div>
+                        <div class="result-item">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="result-icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span>To be announced</span>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="case-study-image-area">
+                      <img src="/images/references/gebwell4.webp" alt="Gebwell Case Study Image" class="case-study-image" style="filter: blur(8px);"/>
+                 </div>
+             </div>
+        </div>
+    </section>
+
+<style>
+     /* General updates */
+    .large-paragraph {
+        font-size: 1.125rem;
+        line-height: 1.7;
+        color: var(--color-text-secondary);
+    }
+
+    /* New Tab Style - Updated */
+    .tabs-placeholder {
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    .tab-button-style {
+        padding: 0.75rem 1.5rem;
+        margin: 0 0.25rem;
+        background-color: transparent;
+        color: var(--color-text);
+        border: none;
+        border-bottom: 2px solid transparent;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        white-space: nowrap;
+        font-family: inherit;
+    }
+
+    .tab-button-style.active {
+        color: var(--color-primary);
+        border-bottom-color: var(--color-primary);
+        font-weight: 600;
+    }
+
+    .tab-button-style:hover:not(.active) {
+        color: var(--color-primary-light);
+        border-bottom-color: var(--color-primary-light);
+    }
+
+
+    /* Hide tab content by default */
+    .tab-pane {
+        display: none;
+    }
+    .tab-pane.active {
+        display: block;
+        animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    /* Mobile responsiveness for tabs */
+    @media (max-width: 768px) {
+        .tabs-placeholder {
+            overflow-x: auto;
+            white-space: nowrap;
+            text-align: left;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            padding-bottom: 10px;
+            margin-left: -1rem;
+            margin-right: -1rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .tabs-placeholder::-webkit-scrollbar {
+            display: none;
+        }
+
+        .tab-button-style {
+            padding: 0.75rem 1rem;
+             display: inline-block;
+        }
+
+        .tabs-placeholder::after {
+            content: '';
+            display: inline-block;
+            width: 1rem;
+        }
+    }
+
+
+    /* Expertise Section & Cards */
+    .expertise-cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: var(--spacing-xl);
+    }
+
+    .card {
+        background-color: var(--color-bg-surface);
+        border: 1px solid var(--color-border-subtle);
+        border-radius: var(--border-radius-lg);
+        padding: var(--spacing-xl);
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+         display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+     .card-icon {
+        margin-bottom: var(--spacing-md);
+        width: 48px;
+        height: 48px;
+        background-color: var(--color-primary-light);
+        border-radius: var(--border-radius-md);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--primary-color);
+    }
+
+     .card h4 {
+        font-size: var(--font-size-xl);
+        font-weight: 600;
+        margin-bottom: var(--spacing-sm);
+        color: var(--color-text-primary);
+    }
+
+     .card p {
+        color: var(--color-text-secondary);
+        line-height: var(--line-height-normal);
+        margin-bottom: var(--spacing-md);
+    }
+
+     .card ul {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: var(--spacing-sm);
+        color: var(--color-text-secondary);
+        flex-grow: 1;
+    }
+
+    .card li {
+        position: relative;
+        padding-left: 1.5em;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .card li::before {
+        content: '•';
+        position: absolute;
+        left: 0;
+        color: var(--color-primary);
+        font-weight: bold;
+    }
+
+     .card-link {
+        color: var(--primary-color);
+        font-weight: 500;
+        text-decoration: none;
+        transition: color 0.2s ease;
+         align-self: flex-start;
+         margin-top: auto;
+    }
+
+    .card-link:hover {
+        text-decoration: underline;
+    }
+
+     /* Case Study Styles */
+    .case-studies-section {
+        max-width: var(--container-width);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .case-studies-section .container {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .case-study-item {
+        background-color: rgba(255, 255, 255);
+        padding: var(--spacing-xl);
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: var(--spacing-xl);
+        align-items: center;
+    }
+
+     .case-study-content {
+         grid-column: 1 / span 6;
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+    }
+
+    .case-study-image-area {
+         grid-column: 7 / span 6;
+         border-radius: var(--border-radius-lg);
+         overflow: hidden;
+         aspect-ratio: 16 / 10;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+    }
+
+     .case-study-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+     .tag.case-study-tag {
+        background-color: transparent;
+        color: var(--color-text-accent, var(--primary-color));
+        padding: var(--spacing-xxs) var(--spacing-sm);
+        border-radius: var(--border-radius-full);
+        font-size: var(--font-size-xs);
+        font-weight: 500;
+        margin-bottom: var(--spacing-md);
+        display: inline-block;
+    }
+
+     .case-study-title {
+         font-size: clamp(1.8rem, 3vw, 2.5rem);
+         font-weight: 700;
+         color: var(--color-text-primary);
+         margin-bottom: var(--spacing-md);
+         line-height: 1.2;
+     }
+
+     .case-study-description {
+         font-size: var(--font-size-base);
+         color: var(--color-text-secondary);
+         line-height: var(--line-height-relaxed);
+         margin-bottom: var(--spacing-lg);
+         max-width: 50ch;
+     }
+
+      .button.case-study-button {
+         display: inline-flex;
+         align-items: center;
+         justify-content: center;
+         padding: var(--spacing-sm) var(--spacing-lg);
+         background-color: #160c28;
+         color: var(--color-text-on-strong, #ffffff);
+         border: 1px solid transparent;
+         border-radius: 9999px;
+         font-weight: 500;
+         text-decoration: none;
+         transition: background-color 0.2s ease, transform 0.1s ease;
+         cursor: pointer;
+          margin-bottom: var(--spacing-lg);
+      }
+       .button.case-study-button:hover {
+          background-color: #2a1a4a;
+          transform: translateY(-1px);
+      }
+
+     .case-study-results {
+         display: flex;
+         flex-wrap: wrap;
+         gap: var(--spacing-lg) var(--spacing-xl);
+         margin-top: var(--spacing-sm);
+         border-top: 1px solid var(--color-border-subtle);
+         padding-top: var(--spacing-sm);
+         width: 100%;
+     }
+
+     .result-item {
+         display: flex;
+         align-items: center;
+         gap: var(--spacing-sm);
+         font-size: var(--font-size-sm);
+         color: var(--color-text-primary);
+         flex-basis: calc(50% - var(--spacing-xl) / 2);
+         min-width: 180px;
+     }
+
+     .result-icon {
+         flex-shrink: 0;
+     }
+
+
+     /* Responsive adjustments */
+     @media (max-width: 992px) {
+         .case-study-content {
+             grid-column: 1 / span 7;
+         }
+         .case-study-image-area {
+             grid-column: 8 / span 5;
+         }
+     }
+
+     @media (max-width: 768px) {
+         .case-study-item {
+             grid-template-columns: 1fr;
+             gap: var(--spacing-lg);
+         }
+          .case-study-content,
+          .case-study-image-area {
+             grid-column: 1 / -1;
+         }
+         .case-study-image-area {
+             order: -1;
+         }
+          .case-study-content {
+              align-items: center;
+              text-align: center;
+          }
+           .case-study-description {
+             max-width: none;
+         }
+           .case-study-results {
+             justify-content: center;
+             gap: var(--spacing-md) var(--spacing-lg);
+         }
+           .result-item {
+             flex-basis: auto;
+             justify-content: center;
+         }
+     }
+
+    .tab-content-area .tab-pane {
+        display: none;
+        animation: fadeIn 0.4s ease-in-out;
+    }
+    .tab-content-area .tab-pane.active {
+        display: block;
+    }
+     @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(5px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .expertise-section {
+        background-color: #ffffff;
+        border-radius: var(--border-radius-lg, 12px);
+        padding: var(--spacing-xl) 0;
+        margin-bottom: var(--spacing-xl);
+        max-width: var(--container-width);
+        margin-left: auto; 
+        margin-right: auto;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+</style>
+
+<CTASection 
+    title="Ready to grow fast?"
+    paragraph="Let's discuss how our design expertise can help your SaaS company reach its growth potential."
+    formTitle="Leave your contact information, and we'll be in touch."
+/>
+
+</BaseLayout>
+
+<script>
+    // Debounce function
+    function debounce(func: (...args: any[]) => void, wait: number, immediate?: boolean): (...args: any[]) => void {
+        let timeout: number | null = null;
+        return function(this: any, ...args: any[]) {
+            const context = this;
+            const later = () => {
+                timeout = null;
+                if (!immediate) func.apply(context, args);
+            };
+            const callNow = immediate && !timeout;
+            clearTimeout(timeout as number | undefined);
+            timeout = window.setTimeout(later, wait);
+            if (callNow) func.apply(context, args);
+        };
+    };
+
+    // Function to synchronize card heights within a tab pane
+    function syncCardHeights(tabPane: HTMLElement | null) {
+        if (!tabPane) return;
+        const cards = tabPane.querySelectorAll('.card') satisfies NodeListOf<HTMLElement>;
+        if (!cards.length) return;
+
+        let maxHeight: number = 0;
+
+        // Reset heights first to get natural height
+        cards.forEach((card: HTMLElement) => {
+            card.style.height = 'auto';
+        });
+
+        // Find the max height - Use setTimeout to wait for render
+        setTimeout(() => {
+            cards.forEach((card: HTMLElement) => {
+                const cardHeight = card.offsetHeight;
+                if (cardHeight > maxHeight) {
+                    maxHeight = cardHeight;
+                }
+            });
+
+            // Apply the max height to all cards in the pane
+            cards.forEach((card: HTMLElement) => {
+                card.style.height = `${maxHeight}px`;
+            });
+        }, 50); // 50ms delay - adjust if needed
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const tabContainer = document.querySelector('.expertise-section .container');
+        if (!tabContainer) return;
+
+        const tabButtons = tabContainer.querySelectorAll('.tabs-placeholder .tab-button-style') satisfies NodeListOf<HTMLButtonElement>;
+        const tabPanes = tabContainer.querySelectorAll('.tab-content-area .tab-pane') satisfies NodeListOf<HTMLElement>;
+        let activePane = tabContainer.querySelector('.tab-content-area .tab-pane.active') as HTMLElement;
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetTabId = button.dataset.tab;
+                if (!targetTabId) return;
+
+                // Update button states
+                tabButtons.forEach(btn => {
+                    btn.classList.toggle('active', btn === button);
+                });
+
+                // Update pane states and sync heights
+                tabPanes.forEach(pane => {
+                    const isActive = pane.id === targetTabId;
+                    pane.classList.toggle('active', isActive);
+                    if (isActive) {
+                        activePane = pane; // Update active pane reference
+                        // Wait a tiny moment for rendering before calculating height
+                        requestAnimationFrame(() => {
+                             syncCardHeights(pane);
+                        });
+                    }
+                });
+            });
+        });
+
+        // Initial height synchronization for the default active tab
+        if (activePane) {
+             // Wait a tiny moment for rendering before calculating height
+            requestAnimationFrame(() => {
+                 syncCardHeights(activePane);
+            });
+        }
+
+        // Resync heights on window resize (debounced)
+        const debouncedSync = debounce(() => {
+            if (activePane) {
+                syncCardHeights(activePane);
+            }
+        }, 250, false);
+
+        window.addEventListener('resize', debouncedSync);
+    });
+</script> 

@@ -6,17 +6,19 @@ import HeroSection from '../../components/HeroSection.astro';
 import TrustmaryEmbed from '../../components/TrustmaryEmbed.astro';
 import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
 
-const pageTitle = "The Good Side | SaaS-tuotetiimien strategiakumppani";
-const pageDescription = "The Good Side - Autamme tuotetiimejä rakentamaan menestyvää SaaS-liiketoimintaa yhdistämällä tuotestrategian ja designin.";
+const pageTitle = "The Good Side | Strategic Partner for SaaS Product Teams";
+const pageDescription = "The Good Side - We help product teams build successful SaaS businesses by combining product strategy and design.";
 
 // Fetch latest 6 blog posts
-const latestPosts = (await getCollection('blog'))
+const latestPosts = (await getCollection('blog', ({ id }) => {
+    return id.endsWith('.en.md');
+}))
     .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
     .slice(0, 6);
 
 // Helper function to format dates
 function formatDate(date: Date): string {
-  return new Date(date).toLocaleDateString('fi-FI', {
+  return new Date(date).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
@@ -26,12 +28,12 @@ function formatDate(date: Date): string {
 <BaseLayout title={pageTitle} description={pageDescription}>
     <!-- Use HeroSection component -->
     <HeroSection
-        title="Jos DIY-menetelmä skaalautuisi, olisit jo markkinajohtaja."
-        paragraph="Autamme tuotetiimejä rakentamaan menestyvää SaaS-liiketoimintaa yhdistämällä tuotestrategian ja designin. Tämän todistavat yli kymmenen menestyvää asiakastamme."
-        primaryButtonText="Sovi tapaaminen &rarr;"
-        primaryButtonHref="/contact"
-        secondaryButtonText="Näytä referenssit"
-        secondaryButtonHref="/referenssit"
+        title="If DIY methods scaled, you'd already be the market leader."
+        paragraph="We help product teams build successful SaaS businesses by combining product strategy and design. This is proven by over ten successful clients."
+        primaryButtonText="Schedule a meeting &rarr;"
+        primaryButtonHref="/en/contact"
+        secondaryButtonText="View case studies"
+        secondaryButtonHref="/en/referenssit"
         textOnly={true}
         paddingTop="6rem"
         paddingBottom="3rem"
@@ -41,7 +43,7 @@ function formatDate(date: Date): string {
     <!-- Logo Wall Section -->
     <section class="logo-wall">
         <div class="container">
-            <h2 class="logo-wall__title">Menetelmiimme luottavat kasvuhakuiset tuotetiimit</h2>
+            <h2 class="logo-wall__title">Growth-oriented product teams trust our methods</h2>
             <div class="logo-wall__grid">
                 <!-- The logos are intentionally duplicated below -->
                 <!-- First set -->
@@ -114,21 +116,21 @@ function formatDate(date: Date): string {
     <section class="problems">
         <div class="container">
             <div class="section__header">
-                <span class="section__tag">Kuulostaako tutulta?</span>
-                <h2 class="section__title">Tyypilliset ongelmat</h2>
+                <span class="section__tag">Sound familiar?</span>
+                <h2 class="section__title">Typical problems</h2>
             </div>
             <div class="problems__grid">
                 <article class="problem-card">
-                    <h3>Tuotesuunnittelu</h3>
-                    <p>Tuotteen käyttöliittymä ja käyttökokemus tehdään ilman ammattimaista suunnittelua, jonka seurauksena lopputulos ei ole optimaalinen eikä tue kasvustrategiaa.</p>
+                    <h3>Product design</h3>
+                    <p>The product's user interface and user experience are created without professional design, resulting in a suboptimal outcome that doesn't support your growth strategy.</p>
                 </article>
                 <article class="problem-card">
-                    <h3>Käyttäjäpolut</h3>
-                    <p>Käytät käyttäjäpolkujen ja sisältöjen suunnitteluun kumppaneita, jotka kukin toimivat omissa siiloissaan, mikä johtaa vaihtelevaan laatutasoon ja heikkoon konversioon.</p>
+                    <h3>User journeys</h3>
+                    <p>You use partners who operate in silos to design user journeys and content, leading to inconsistent quality and poor conversion rates.</p>
                 </article>
                 <article class="problem-card">
-                    <h3>Tuotepositiointi</h3>
-                    <p>Tuote- ja markkinapositiointi tehdään ilman kunnon työkaluja, jonka seurauksena kohderyhmä on epäselvä, viesti ei resonoi ja tuotekehitystä on vaikea priorisoida.</p>
+                    <h3>Product positioning</h3>
+                    <p>Product and market positioning are done without proper tools, resulting in an unclear target audience, messaging that doesn't resonate, and difficulties in prioritizing product development.</p>
                 </article>
             </div>
         </div>
@@ -137,8 +139,8 @@ function formatDate(date: Date): string {
     <!-- Hire Us Section -->
     <section class="hire-us">
         <div class="container">
-            <h2 class="section__title">Tuotetiimisi uudet jäsenet</h2>
-            <p class="section__subtitle">Palkkaa meidät poistamaan kasvun esteet.</p>
+            <h2 class="section__title">New members for your product team</h2>
+            <p class="section__subtitle">Hire us to remove barriers to growth.</p>
             <div class="team-grid">
                 <div class="team-member">
                     <div class="team-member__image">
@@ -147,7 +149,7 @@ function formatDate(date: Date): string {
                         </div>
                     </div>
                     <h3 class="team-member__name">Mikki<br>Aalto-Ylevä</h3>
-                    <p class="team-member__title">SaaS-spesialisti</p>
+                    <p class="team-member__title">SaaS Specialist</p>
                 </div>
                 <div class="team-member">
                     <div class="team-member__image">
@@ -183,47 +185,47 @@ function formatDate(date: Date): string {
     <!-- Solution Intro Section -->
     <section class="solutions">
         <div class="container">
-            <h2 class="section__title">Autamme sinua kasvamaan SaaS-liiketoiminnalla yhdistämällä nämä kolme kriittistä osa-aluetta</h2>
+            <h2 class="section__title">We help you grow your SaaS business by combining these three critical areas</h2>
             <div class="solutions__grid">
                 <article class="solution-card">
                     <div class="solution-card__image">
-                        <img src="/images/value-props/positiointi.webp" alt="Tuotepositiointi">
+                        <img src="/images/value-props/positiointi.webp" alt="Product Positioning">
                     </div>
                     <div class="solution-card__content">
                         <div class="solution-card__tags">
-                            <span>Tuotepositiointi</span>
-                            <span>Tuotestrategia</span>
+                            <span>Product Positioning</span>
+                            <span>Product Strategy</span>
                         </div>
-                        <h3>Määrittele ketä haluat palvella ja miten aiot erottautua</h3>
-                        <p>Autamme sinua ymmärtämään positiointivaihtoehtosi ja kartoittamaan kohderyhmäsi ainutlaatuiset tilanteet, jotta voit valita kohderyhmän, joka soveltuu liiketoimintasi skaalaamiseen.</p>
+                        <h3>Define who you want to serve and how you plan to differentiate</h3>
+                        <p>We help you understand your positioning options and map your target audience's unique situations so you can choose a target group that's suitable for scaling your business.</p>
                     </div>
                 </article>
                 <article class="solution-card">
                     <div class="solution-card__image">
-                        <img src="/images/value-props/userjourney.webp" alt="Käyttäjäpolut">
+                        <img src="/images/value-props/userjourney.webp" alt="User Journeys">
                     </div>
                     <div class="solution-card__content">
                         <div class="solution-card__tags">
-                            <span>Ostopolut</span>
-                            <span>Markkinointi</span>
-                            <span>Onboardaus</span>
+                            <span>Buying Journeys</span>
+                            <span>Marketing</span>
+                            <span>Onboarding</span>
                         </div>
-                        <h3>Luo käyttäjäpolkuja, jotka konvertoituvat liikevaihdoksi</h3>
-                        <p>Autamme sinua suunnittelemaan ja optimoimaan webin ja sovelluksen läpi leikkaavia käyttäjäpolkuja, jotta käyttäjä voivat kokea palvelusi ydinarvon ja sitoutua maksaviksi asiakkaiksi.</p>
+                        <h3>Create user journeys that convert to revenue</h3>
+                        <p>We help you design and optimize user journeys across web and application interfaces so users can experience your core value and commit to becoming paying customers.</p>
                     </div>
                 </article>
                 <article class="solution-card">
                     <div class="solution-card__image">
-                        <img src="/images/value-props/ui.webp" alt="Käyttöliittymä ja käyttökokemus" style="transform: scale(1.3);">
+                        <img src="/images/value-props/ui.webp" alt="User Interface and User Experience" style="transform: scale(1.3);">
                     </div>
                     <div class="solution-card__content">
                         <div class="solution-card__tags">
-                            <span>Käyttökokemus (UX)</span>
-                            <span>Käyttöliittymä (UI)</span>
-                            <span>Tuote</span>
+                            <span>User Experience (UX)</span>
+                            <span>User Interface (UI)</span>
+                            <span>Product</span>
                         </div>
-                        <h3>Luo niin hyvä tuote, että asiakkaat valitsevat sen ilman vertailua</h3>
-                        <p>Autamme sinua tunnistamaan tärkeimmät käyttötapaukset, joiden pohjalta luodaan toiminnallisuuksia, jotka tekevät tuotteesi myynnistä naurettavan helppoa ja saavat kilpailijasi näyttämään auttamattoman vanhanaikaisilta.</p>
+                        <h3>Create such a good product that customers choose it without comparison</h3>
+                        <p>We help you identify the most important use cases to create functionality that makes selling your product ridiculously easy and makes your competitors look hopelessly outdated.</p>
                     </div>
                 </article>
             </div>
@@ -236,8 +238,8 @@ function formatDate(date: Date): string {
             <div class="testimonials__grid">
                  <div class="trustmary-widget">
                     <TrustmaryEmbed 
-                        title="Mitä asiakkaamme sanovat?"
-                        subtitle="Lue mitä asiakkaamme kertovat kokemuksistaan"
+                        title="What our clients say"
+                        subtitle="Read what our clients say about their experiences"
                     />
                 </div>
             </div>
@@ -248,21 +250,21 @@ function formatDate(date: Date): string {
     <section class="not-for-everyone">
         <div class="container">
             <div class="section__header">
-                <h2 class="section__title">Emme ole kaikille</h2>
-                <p class="section__subtitle">Emme ehkä ole oikea vaihtoehto jos...</p>
+                <h2 class="section__title">We're not for everyone</h2>
+                <p class="section__subtitle">We may not be the right option if...</p>
             </div>
             <div class="two-columns">
                 <div class="bullet-points">
                     <ul>
-                        <li>Sinulla on aikaa opetella tekemään kaikki itse, etkä tarvitse kumppaneita</li>
-                        <li>Olet valinnut jo kumppaniyritykset sekä resurssit ja kaikki vaan toimii täydellisesti</li>
-                        <li>Sinulla on käytössä paremmat menetelmät, kehykset ja enemmän osaamista kuin meillä</li>
+                        <li>You have time to learn to do everything yourself and don't need partners</li>
+                        <li>You've already chosen partner companies and resources and everything works perfectly</li>
+                        <li>You have better methods, frameworks, and more expertise than we do</li>
                     </ul>
                 </div>
                 <div class="bullet-points">
                     <ul>
-                        <li>Budjettisi on alle 5000€</li>
-                        <li>Haluat, että me myös koodaamme suunnitelmamme</li>
+                        <li>Your budget is under €5000</li>
+                        <li>You want us to code our designs as well</li>
                     </ul>
                 </div>
             </div>
@@ -273,46 +275,46 @@ function formatDate(date: Date): string {
     <section class="problem-solution-cards">
         <div class="container">
             <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-xl);">
-                <h2 class="section__title">Ongelmat ja ratkaisut</h2>
-                <p class="section__subtitle">Yleisimmät haasteet ja miten autamme niissä.</p>
+                <h2 class="section__title">Problems and solutions</h2>
+                <p class="section__subtitle">The most common challenges and how we help with them.</p>
             </div>
 
             <!-- Problem 1 -->
             <div class="row align-items-center mb-5">
                 <div class="col-md-6 fit-content">
-                    <h3 class="problem__title">Epäselvä arvolupaus ja erottautumisen puute</h3>
-                    <p class="problem__description">Heikko tuotepositiointi aiheuttaa epäselvän arvolupauksen, joka nostaa asiakashankinnan kuluja, pitkittää myyntisyklejä ja tekee kehitystiimin priorisoinnista hankalaa, mikä näkyy resurssien käytön tehottomuutena ja heikkona kasvuna.</p>
+                    <h3 class="problem__title">Unclear value proposition and lack of differentiation</h3>
+                    <p class="problem__description">Weak product positioning creates an unclear value proposition, which increases customer acquisition costs, extends sales cycles, and makes development team prioritization difficult, resulting in inefficient resource use and poor growth.</p>
                 </div>
                 <div class="arrow"></div>
                 <div class="col-md-6 solution-content">
-                    <h4>Ratkaisu</h4>
-                    <p class="solution__description">Tehdään positiointiharjoitus, joka auttaa sinua hahmottamaan eri positiointivaihtoehdot, jotta voit valita omalle go-to-market "lihaksellesi" sopivan kohderyhmän, ja luoda strategian, joka skaalautuu tuotekehityksen, markkinoinnin ja myynnin avulla.</p>
+                    <h4>Solution</h4>
+                    <p class="solution__description">We'll conduct a positioning exercise that helps you understand different positioning options so you can choose a target group suitable for your go-to-market "muscle" and create a strategy that scales through product development, marketing, and sales.</p>
                 </div>
             </div>
 
             <!-- Problem 2 -->
             <div class="row align-items-center mb-5">
                  <div class="col-md-6 fit-content">
-                    <h3 class="problem__title">Heikosti konvertoiva käyttäjäpolku</h3>
-                    <p class="problem__description">Heikosti toteutetut käyttäjä- ja konversiopolut näkyvät laskevana konversiona ja korkeana välittömänä poistumana. Tästä aiheutuu negatiivista word-of-mouthia ja vaikeuksia löytää oikeita ongelmakohtia data-analytiikan avulla.</p>
+                    <h3 class="problem__title">Poorly converting user journey</h3>
+                    <p class="problem__description">Poorly implemented user and conversion paths result in declining conversion rates and high bounce rates. This leads to negative word-of-mouth and difficulties in finding the right problem areas through data analytics.</p>
                 </div>
                 <div class="arrow"></div>
                 <div class="col-md-6 solution-content">
-                    <h4>Ratkaisu</h4>
-                    <p class="solution__description">Kartoitetaan käyttäjäpolut, asennetaan data-analytiikkaa varten työkalut, tunnistetaan ja korjataan keskeiset ongelmakohdat, ja parannetaan polkuja siten, että käyttäjät voivat kokea palvelun ydinhyödyt vaivattomasti.</p>
+                    <h4>Solution</h4>
+                    <p class="solution__description">We map user journeys, set up data analytics tools, identify and fix key problem areas, and improve paths so users can experience the core benefits of your service effortlessly.</p>
                 </div>
             </div>
 
             <!-- Problem 3 -->
              <div class="row align-items-center mb-5">
                 <div class="col-md-6 fit-content">
-                    <h3 class="problem__title">Myyntidemot tuottavat heikosti kauppaa</h3>
-                    <p class="problem__description">Heikosti toteutettu SaaS-tuotteen käyttöliittymä ja kokemus näkyvät kasvavana asiakaspoistumana, lisääntyneinä aspatikeitteinä, kriittisinä verkkoarvosteluina ja keskin kertaisina myyntituloksina.</p>
+                    <h3 class="problem__title">Sales demos produce poor results</h3>
+                    <p class="problem__description">A poorly implemented SaaS product's user interface and experience manifests as increasing customer churn, more support tickets, critical online reviews, and mediocre sales results.</p>
                 </div>
                 <div class="arrow"></div>
                 <div class="col-md-6 solution-content">
-                    <h4>Ratkaisu</h4>
-                    <p class="solution__description">Autamme konseptoimaan ja suunnittelemaan tuotteen siten, että se saa kilpailijanne näyttämään auttamattoman vanhanaikaiselta ja joka tarjoaa käyttäjälleen kokemuksen joka saa heidät maksamaan palvelustanne aiempaa korkeampaa hintaa.</p>
+                    <h4>Solution</h4>
+                    <p class="solution__description">We help conceptualize and design the product so that it makes your competitors look hopelessly outdated and provides users with an experience that makes them willing to pay a higher price for your service than before.</p>
                 </div>
             </div>
 
@@ -323,24 +325,24 @@ function formatDate(date: Date): string {
     <section class="pricing" id="hinnat">
         <div class="container">
             <div class="section__header">
-                <h2 class="section__title">Soveltuuko palvelu minulle?</h2>
-                <p class="section__subtitle">Tutustu hinnoitteluumme</p>
+                <h2 class="section__title">Is our service right for me?</h2>
+                <p class="section__subtitle">Check out our pricing</p>
             </div>
             <div class="pricing__grid" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr)); gap: var(--spacing-lg);">
                 <div class="pricing-card">
-                    <h3>Design-konsultointi</h3>
-                    <p class="pricing-card__price" style="font-size: 2.5rem; font-weight: bold;">110 €/tunti</p>
-                    <p class="pricing-card__description">SaaS-yrityksiin erikoistunut suunnittelija, joka auttaa poistamaan kasvun esteet Design-konsultoinnilla.</p>
-                    <a href="/contact" class="btn btn--primary">Jätä yhteydenottopyyntö &rarr;</a>
+                    <h3>Design Consulting</h3>
+                    <p class="pricing-card__price" style="font-size: 2.5rem; font-weight: bold;">€110/hour</p>
+                    <p class="pricing-card__description">A designer specialized in SaaS companies who helps remove growth barriers through Design Consulting.</p>
+                    <a href="/en/contact" class="btn btn--primary">Request contact &rarr;</a>
                 </div>
                 <div class="pricing-card">
-                    <h3>SaaS-kasvutiimi</h3>
-                    <p class="pricing-card__price" style="font-size: 2.5rem; font-weight: bold;">Kysy hintaa</p>
-                    <p class="pricing-card__description">Kokenut tiimimme integroi tuotteen, käyttökokemuksen ja käyttäjäpolut kasvua tuottavaksi kokonaisuudeksi.</p>
-                    <a href="/contact" class="btn btn--primary">Jätä yhteydenottopyyntö &rarr;</a>
+                    <h3>SaaS Growth Team</h3>
+                    <p class="pricing-card__price" style="font-size: 2.5rem; font-weight: bold;">Ask for pricing</p>
+                    <p class="pricing-card__description">Our experienced team integrates product, user experience, and user journeys into a growth-generating whole.</p>
+                    <a href="/en/contact" class="btn btn--primary">Request contact &rarr;</a>
                 </div>
             </div>
-            <p class="pricing__note" style="text-align: center; margin-top: var(--spacing-lg);">*Alle viisi miljoonaa euroa vaihtaville pienille yrityksille tarjoamme palveluitamme alennettuun hintaan 95 €/tunti. Hinnat ovat verottomia (alv 0%).</p>
+            <p class="pricing__note" style="text-align: center; margin-top: var(--spacing-lg);">*For small companies with less than five million euros in turnover, we offer our services at a reduced rate of €95/hour. Prices are tax-free (VAT 0%).</p>
         </div>
     </section>
 
@@ -348,8 +350,8 @@ function formatDate(date: Date): string {
     <section class="schedule-meeting" id="schedule-meeting">
         <div class="container">
             <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
-                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Varaa tapaaminen</h2>
-                <p class="section__subtitle">Varaa aika ja katsotaan miten voimme auttaa tiimiäsi menestymään</p>
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Book a meeting</h2>
+                <p class="section__subtitle">Schedule a time and let's see how we can help your team succeed</p>
             </div>
             <div class="schedule-meeting__embed">
                 <CalendlyEmbed elementId="cal-inline-index" calLink="aaltoyleva/kartoitustapaaminen" />
@@ -361,89 +363,89 @@ function formatDate(date: Date): string {
     <section class="faq-section" id="faq">
         <div class="container">
             <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
-                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Usein kysytyt kysymykset</h2>
-                <p class="section__subtitle">Vastauksia yleisimpiin kysymyksiin palveluistamme</p>
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Frequently Asked Questions</h2>
+                <p class="section__subtitle">Answers to the most common questions about our services</p>
             </div>
             <div class="faq-items">
                 <!-- FAQ Item 1 -->
                 <div class="faq-item">
                     <div class="faq-question-wrapper">
-                        <span class="faq-question">Kuinka pitkäksi aikaa minun tarvitsee sitoutua?</span>
+                        <span class="faq-question">How long do I need to commit?</span>
                         <span class="faq-toggle">+</span>
                     </div>
-                    <p class="faq-answer">Sopimuksemme ovat toistaiseksi voimassaolevia, joten minimisitoutuminen on yksi kuukausi. Tämä mahdollistaa joustavan yhteistyön ja antaa sinulle vapauden skaalata palveluitamme tarpeidesi mukaan. Tyypillisesti asiakkaamme työskentelevät kanssamme 2-6 kuukautta projektin laajuudesta riippuen.</p>
+                    <p class="faq-answer">Our contracts are valid until further notice, so the minimum commitment is one month. This allows for flexible collaboration and gives you the freedom to scale our services according to your needs. Typically, our clients work with us for 2-6 months depending on the scope of the project.</p>
                 </div>
                 <!-- FAQ Item 2 -->
                 <div class="faq-item">
                      <div class="faq-question-wrapper">
-                        <span class="faq-question">Miten erotatte itsenne muista design-toimistoista?</span>
+                        <span class="faq-question">How do you differentiate yourselves from other design agencies?</span>
                         <span class="faq-toggle">+</span>
                     </div>
-                    <p class="faq-answer">Olemme erikoistuneet nimenomaan SaaS-tuotteiden suunnitteluun ja ymmärrämme syvällisesti alan erityispiirteet. Yhdistämme tuotestrategian, käyttöliittymäsuunnittelun ja markkinoinnin yhdeksi kokonaisuudeksi. Meillä on vahva kokemus konversion optimoinnista ja käyttäjäpolkujen suunnittelusta erityisesti SaaS-kontekstissa.</p>
+                    <p class="faq-answer">We specialize specifically in SaaS product design and deeply understand the industry's unique characteristics. We combine product strategy, UI design, and marketing into one cohesive whole. We have strong experience in conversion optimization and user journey design, especially in the SaaS context.</p>
                 </div>
                 <!-- FAQ Item 3 -->
                  <div class="faq-item">
                      <div class="faq-question-wrapper">
-                        <span class="faq-question">Mitä työkaluja käytätte suunnittelussa?</span>
+                        <span class="faq-question">What tools do you use for design?</span>
                         <span class="faq-toggle">+</span>
                     </div>
-                    <p class="faq-answer">Käytämme moderneja suunnittelutyökaluja kuten Figmaa UI/UX-suunnitteluun, Miroa käyttäjäpolkujen ja workshoppien fasilitointiin sekä Hotjaria käyttäjäanalytiikassa. Lisäksi hyödynnämme AI-pohjaisia työkaluja käyttäjätutkimuksessa ja data-analytiikassa varmistaaksemme dataohjatun suunnitteluprosessin.</p>
+                    <p class="faq-answer">We use modern design tools like Figma for UI/UX design, Miro for user journey mapping and workshop facilitation, and Hotjar for user analytics. We also leverage AI-based tools in user research and data analytics to ensure a data-driven design process.</p>
                 </div>
                 <!-- FAQ Item 4 -->
                 <div class="faq-item">
                      <div class="faq-question-wrapper">
-                        <span class="faq-question">Miten varmistatte, että design tukee liiketoimintatavoitteitamme?</span>
+                        <span class="faq-question">How do you ensure that design supports our business goals?</span>
                         <span class="faq-toggle">+</span>
                     </div>
-                    <p class="faq-answer">Aloitamme aina kartoittamalla liiketoimintatavoitteenne ja mittarit. Teemme perusteellisen positiointiharjoituksen, joka auttaa ymmärtämään kohderyhmänne ja kilpailuetunne. Suunnitteluprosessimme perustuu jatkuvaan mittaamiseen ja optimointiin, jotta voimme varmistaa designin vaikuttavuuden konversioon ja kasvuun.</p>
+                    <p class="faq-answer">We always start by mapping your business goals and metrics. We conduct a thorough positioning exercise that helps understand your target audience and competitive advantage. Our design process is based on continuous measurement and optimization to ensure the design's effectiveness on conversion and growth.</p>
                 </div>
                 <!-- FAQ Item 5 -->
                  <div class="faq-item">
                      <div class="faq-question-wrapper">
-                        <span class="faq-question">Voitteko auttaa olemassa olevan tuotteen kehittämisessä?</span>
+                        <span class="faq-question">Can you help with developing an existing product?</span>
                         <span class="faq-toggle">+</span>
                     </div>
-                    <p class="faq-answer">Kyllä, autamme sekä uusien tuotteiden suunnittelussa että olemassa olevien tuotteiden kehittämisessä. Teemme ensin perusteellisen analyysin nykyisestä tuotteestanne, keräämme käyttäjädataa ja tunnistamme kehityskohteet. Tämän pohjalta luomme kehityssuunnitelman, joka voidaan toteuttaa vaiheittain häiritsemättä nykyistä liiketoimintaa.</p>
+                    <p class="faq-answer">Yes, we help with both designing new products and developing existing ones. We first conduct a thorough analysis of your current product, gather user data, and identify development areas. Based on this, we create a development plan that can be implemented in phases without disrupting existing business.</p>
                 </div>
                 <!-- FAQ Item 6 -->
                  <div class="faq-item">
                      <div class="faq-question-wrapper">
-                        <span class="faq-question">Miten käsittelette monimutkaisia SaaS-tuotteita?</span>
+                        <span class="faq-question">How do you handle complex SaaS products?</span>
                         <span class="faq-toggle">+</span>
                     </div>
-                    <p class="faq-answer">Meillä on vahva kokemus monimutkaisten B2B SaaS-tuotteiden suunnittelusta. Käytämme hyväksi havaittuja menetelmiä ja kehyksiä, joiden avulla kompleksikin kokonaisuus kääntyy selkeäksi käyttöliittymäksi. Ulkopuolinen näkökulmamme auttaa usein näkemään yksinkertaistamisen mahdollisuudet, joita sisäinen tiimi ei välttämättä huomaa.</p>
+                    <p class="faq-answer">We have strong experience in designing complex B2B SaaS products. We use proven methods and frameworks that help transform even a complex system into a clear user interface. Our outside perspective often helps see simplification opportunities that an internal team might not notice.</p>
                 </div>
                 <!-- FAQ Item 7 -->
                  <div class="faq-item">
                      <div class="faq-question-wrapper">
-                        <span class="faq-question">Miten varmistatte suunnittelijan saatavuuden projektiimme?</span>
+                        <span class="faq-question">How do you ensure designer availability for our project?</span>
                         <span class="faq-toggle">+</span>
                     </div>
-                    <p class="faq-answer">Emme ylimyy resurssejamme, vaan varmistamme aina, että suunnittelijoillamme on riittävästi aikaa paneutua projektiinne. Tyypillisesti yksi suunnittelija työskentelee 2-3 projektin parissa samanaikaisesti, mikä mahdollistaa sekä tehokkaan työskentelyn että riittävän joustavuuden kiireellisissä tilanteissa.</p>
+                    <p class="faq-answer">We don't oversell our resources, but always ensure our designers have enough time to focus on your project. Typically, one designer works on 2-3 projects simultaneously, enabling both efficient work and sufficient flexibility in urgent situations.</p>
                 </div>
                 <!-- FAQ Item 8 -->
                  <div class="faq-item">
                      <div class="faq-question-wrapper">
-                        <span class="faq-question">Mitä jos en ole tyytyväinen lopputulokseen?</span>
+                        <span class="faq-question">What if I'm not satisfied with the result?</span>
                         <span class="faq-toggle">+</span>
                     </div>
-                    <p class="faq-answer">Työllämme on täysi tyytyväisyystakuu. Jos et ole tyytyväinen työhömme, et maksa mitään. Työskentelemme iteratiivisesti ja keräämme palautetta säännöllisesti varmistaaksemme, että olemme oikealla polulla. Tämä lähestymistapa minimoi riskin, että lopputulos ei vastaisi odotuksiasi.</p>
+                    <p class="faq-answer">Our work comes with a full satisfaction guarantee. If you're not happy with our work, you don't pay anything. We work iteratively and collect feedback regularly to ensure we're on the right track. This approach minimizes the risk that the final result wouldn't meet your expectations.</p>
                 </div>
                 <!-- FAQ Item 9 -->
                  <div class="faq-item">
                      <div class="faq-question-wrapper">
-                        <span class="faq-question">Miten tuette kehitystiimiä implementoinnissa?</span>
+                        <span class="faq-question">How do you support the development team in implementation?</span>
                         <span class="faq-toggle">+</span>
                     </div>
-                    <p class="faq-answer">Toimitamme aina tarkat tekniset spesifikaatiot ja tyyliohjeet kehitystiimille. Käytämme Figman kehittäjänäkymää ja luomme tarvittaessa komponenttikirjaston. Olemme myös käytettävissä konsultointiin implementoinnin aikana ja autamme ratkaisemaan mahdolliset tekniset haasteet designin toteutuksessa.</p>
+                    <p class="faq-answer">We always provide precise technical specifications and style guides to the development team. We use Figma's developer view and create a component library if needed. We're also available for consultation during implementation and help solve any technical challenges in design implementation.</p>
                 </div>
                 <!-- FAQ Item 10 -->
                  <div class="faq-item">
                      <div class="faq-question-wrapper">
-                        <span class="faq-question">Miten hinnoittelette isommat projektit?</span>
+                        <span class="faq-question">How do you price larger projects?</span>
                         <span class="faq-toggle">+</span>
                     </div>
-                    <p class="faq-answer">Isommissa projekteissa voimme sopia kiinteän kuukausibudjetin tai projektikohtaisen hinnoittelun. Tuntihintamme on 110€/tunti (pienemmille yrityksille 95€/tunti), mutta räätälöimme aina hinnoittelun projektin laajuuden ja tarpeiden mukaan. Teemme selkeän projektisuunnitelman, jossa määrittelemme tarvittavat resurssit ja aikataulun.</p>
+                    <p class="faq-answer">For larger projects, we can agree on a fixed monthly budget or project-specific pricing. Our hourly rate is €110/hour (€95/hour for smaller companies), but we always customize pricing according to the project scope and needs. We create a clear project plan defining the necessary resources and timeline.</p>
                 </div>
             </div>
         </div>
@@ -453,12 +455,12 @@ function formatDate(date: Date): string {
     <section class="blog-preview" id="latest-posts">
         <div class="container">
             <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
-                <h2 class="section__title">Tuoreimmat ajatuksemme</h2>
+                <h2 class="section__title">Our latest thoughts</h2>
             </div>
             <div class="blog-grid">
                 {latestPosts.map(post => (
                     <article class="blog-card">
-                        <a href={`/blog/${post.slug}/`} class="blog-card__link">
+                        <a href={`/en/blog/${post.slug}/`} class="blog-card__link">
                             {post.data.heroImage && (
                                <div class="blog-card__image-container">
                                  <Image
@@ -483,9 +485,9 @@ function formatDate(date: Date): string {
                                     </div>
                                  )}
                                 <h3 class="blog-card__title">{post.data.title}</h3>
-                                <p class="blog-card__excerpt">{post.data.description || 'Lue artikkeli...'}</p>
+                                <p class="blog-card__excerpt">{post.data.description || 'Read article...'}</p>
                                 <div class="blog-card__footer">
-                                    <span class="blog-card__readmore">Lue lisää &rarr;</span>
+                                    <span class="blog-card__readmore">Read more &rarr;</span>
                                 </div>
                             </div>
                         </a>
@@ -493,7 +495,7 @@ function formatDate(date: Date): string {
                 ))}
             </div>
             <div style="text-align: center; margin-top: var(--spacing-lg);">
-                <a href="/blog" class="btn btn--secondary">Lue kaikki kirjoitukset &rarr;</a>
+                <a href="/en/blog" class="btn btn--secondary">Read all articles &rarr;</a>
             </div>
         </div>
     </section>

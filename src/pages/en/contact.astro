@@ -1,71 +1,48 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-// import ScheduleSection from '../components/ScheduleSection.astro'; // Removed import
-import CalendlyEmbed from '../components/CalendlyEmbed.astro';
-import HeroSection from '../components/HeroSection.astro'; // Tuodaan HeroSection
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
+import HeroSection from '../../components/HeroSection.astro';
 
-// Remove the old script variable
-// const calEmbedScript = ` ... `;
-
-const pageTitle = "Ota yhteyttä | The Good Side";
-const pageDescription = "Varaa aika kalenterista tai jätä yhteydenottopyyntö, niin katsotaan miten voimme auttaa.";
+const pageTitle = "Contact Us | The Good Side";
+const pageDescription = "Book a time in the calendar or leave a contact request, and we'll see how we can help.";
 ---
 
 <BaseLayout title={pageTitle} description={pageDescription}>
-  <!-- Korvataan vanha contact-hero HeroSection-komponentilla -->
-  <!-- Pienennetään ala-paddingia, koska Calendly tulee heti alle -->
-  <!-- Lisätään luokka taustakuvalle -->
   <HeroSection
-    title="Jutellaan tuotteesi tulevaisuudesta"
+    title="Let's talk about the future of your product"
     paddingTop="4rem"
     paddingBottom="1rem" 
     class="contact-hero-bg" 
     textOnly={true}
   >
-    <!-- Käytetään slottia ilman Fragmentia -->
     <span slot="paragraph">
       {pageDescription}
       <br/>
-      Voit myös <a href="tel:0408698887">soittaa suoraan</a> tai laittaa sähköpostia <a href="mailto:mikki@goodside.fi">mikki@goodside.fi</a>.
+      You can also <a href="tel:0408698887">call directly</a> or send an email to <a href="mailto:mikki@goodside.fi">mikki@goodside.fi</a>.
     </span>
   </HeroSection>
-    <!-- Vanha contact-hero poistettu -->
-    <!-- <section class="contact-hero"> ... </section> -->
-    <!-- Myös contact-person div poistettu -->
-    <!-- Cal inline embed code begins - Siirretty CalendlyEmbed-komponenttiin -->
-    <!-- <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline" class="contact-booking"></div> -->
-    <!-- The class="contact-booking" is added back to retain styling -->
 
-  <!-- Container for the Calendly embed for styling/layout purposes -->
   <section class="schedule-section">
     <div class="container">
-        <!-- Lisätään id CalendlyEmbediin -->
         <CalendlyEmbed elementId="my-cal-inline" calLink="aaltoyleva/kartoitustapaaminen" />
     </div>
   </section>
 
-  <!-- START: HubSpot Form Section -->
   <section class="contact-form-section">
     <div class="container">
       <div class="form-content" id="hubspot-form-container">
-        <h2>Tai jätä yhteydenottopyyntö</h2>
-        <p>Jos et löydä sopivaa aikaa tai haluat mieluummin että otan yhteyttä, täytä lomake niin palaan asiaan mahdollisimman pian.</p>
-        <!-- HubSpot Embed Code wrapped in template -->
+        <h2>Or leave a contact request</h2>
+        <p>If you can't find a suitable time or prefer that I contact you, fill out the form and I'll get back to you as soon as possible.</p>
         <template id="hubspot-template">
             <script src="https://js-eu1.hsforms.net/forms/embed/145360432.js" defer></script>
             <div class="hs-form-frame" data-region="eu1" data-form-id="8bc5845c-348d-4ba7-baea-ebd46b11b0a0" data-portal-id="145360432"></div>
         </template>
-        <!-- End HubSpot Embed Code -->
       </div>
     </div>
   </section>
-  <!-- END: HubSpot Form Section -->
 
-  <!-- Add the new inline script -->
   <script type="text/javascript" is:inline>
-    // ... existing code ...
-
-    // HubSpot Lazy Load Script (copied from CTASection)
+    // HubSpot Lazy Load Script
     document.addEventListener('DOMContentLoaded', () => {
         const formContainer = document.getElementById('hubspot-form-container');
         const template = document.getElementById('hubspot-template');
@@ -99,29 +76,16 @@ const pageDescription = "Varaa aika kalenterista tai jätä yhteydenottopyyntö,
         observer.observe(formContainer);
     });
   </script>
-  <!-- Cal inline embed code ends -->
-
 </BaseLayout>
 
 <style>
-    /* Add some basic styling for the new schedule section if needed */
     .schedule-section {
         padding: var(--spacing-xl) 0;
     }
 
-  /* Lisätään taustakuva HeroSectionille luokan kautta */
   .contact-hero-bg {
-    /* padding: 4rem 0; */ /* Padding tulee nyt HeroSection-komponentista */
     background-image: url('/images/mesh-gradient-green.webp');
     background-size: cover;
     background-position: center;
   }
-
-  /* Poistetaan vanhat contact-hero ja contact-grid tyylit */
-  /* .contact-hero { ... } */
-  /* .contact-grid { ... } */
-  /* .contact-content { ... } */
-  /* .contact-description { ... } */
-  /* .contact-person { ... } */
-  /* .contact-booking { ... } */
 </style> 

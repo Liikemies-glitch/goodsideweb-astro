@@ -8,6 +8,12 @@ export const defaultLang = 'fi';
 export const ui = {
   fi: {
     'site.title': 'The Good Side',
+    'nav.home': 'Etusivu',
+    'nav.services': 'Palvelut',
+    'nav.references': 'Referenssit',
+    'nav.blog': 'Blogi',
+    'nav.pricing': 'Hinnat',
+    'nav.contactButton': 'Ota yhteyttä',
     'footer.rights': 'Kaikki oikeudet pidätetään.',
     'footer.description': 'Autamme tuotetiimejä rakentamaan menestyvää SaaS-liiketoimintaa.',
     'footer.siteLinks': 'Sivusto',
@@ -21,6 +27,12 @@ export const ui = {
   },
   en: {
     'site.title': 'The Good Side',
+    'nav.home': 'Home',
+    'nav.services': 'Services',
+    'nav.references': 'References',
+    'nav.blog': 'Blog',
+    'nav.pricing': 'Pricing',
+    'nav.contactButton': 'Contact Us',
     'footer.rights': 'All rights reserved.',
     'footer.description': 'We help product teams build successful SaaS businesses.',
     'footer.siteLinks': 'Site',

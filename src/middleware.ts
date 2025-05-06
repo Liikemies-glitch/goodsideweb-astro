@@ -30,7 +30,7 @@ export const onRequest = defineMiddleware(async (context, next) => {
   }
 
   // 3. Ohjataan muut kieliprefiksittömät polut oletuskielelle
-  // Esim. /palvelut -> /fi/palvelut
+  // Esim. /services -> /fi/services
   // Varmistetaan, että polun alussa on vain yksi kauttaviiva, vaikka originalPathname olisi vain "/" (joka on jo käsitelty)
   // tai jos se alkaa kauttaviivalla.
   const normalizedPath = originalPathname.startsWith('/') ? originalPathname : `/${originalPathname}`;

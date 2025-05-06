@@ -1,0 +1,321 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HeroSection from '../../components/HeroSection.astro';
+import CTASection from '../../components/CTASection.astro';
+import SuccessStoriesSection from '../../components/SuccessStoriesSection.astro';
+import type { Story } from '../../components/SuccessStoriesSection.astro'; // Import Story type
+import TrustmaryEmbed from '../../components/TrustmaryEmbed.astro';
+
+const pageTitle = "Referenssit - The Good Side";
+const pageDescription = "Tutustu menestystarinoihimme SaaS-yritysten kanssa. Näe miten olemme auttaneet asiakkaitamme kasvamaan ja menestymään digitaalisessa maailmassa.";
+
+// Define stats data
+const checkIconSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="result-icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>`;
+const heroStats = [
+    { text: "10+ Vuoden kokemus", icon: checkIconSvg },
+    { text: "20+ SaaS-asiakasta", icon: checkIconSvg }
+];
+
+// Data for SuccessStoriesSection (Finnish)
+const successStoriesDataFi = {
+    sectionTitle: "Case Studyt",
+    sectionParagraph: "Tutustu töihimme alansa johtavien yritysten kanssa, jotka ovat avullamme luoneet uniikkia arvoa ja kasvua.",
+    stories: [
+        {
+            href: "/fi/referenssit/eemel",
+            imageSrc: "/images/references/eemel.webp",
+            imageAlt: "Eemel.com Case Study", 
+            title: "Eemel.com",
+            subtitle: "UI/UX-suunnittelu, Brändi-identiteetti, Käyttäjäpolut ja Onboardaus.",
+            isComingSoon: false
+        },
+        {
+            href: "#",
+            imageSrc: "/images/references/seppo-reference.webp",
+            imageAlt: "Seppo.io Case Study",
+            title: "Seppo.io",
+            subtitle: "UI/UX-suunnittelu, Brändi-identiteetti",
+            isComingSoon: true,
+            comingSoonText: "Julkaistaan pian"
+        },
+        {
+            href: "#",
+            imageSrc: "/images/references/gebwell4.webp",
+            imageAlt: "Gebwell Case Study",
+            title: "Gebwell SmartHub",
+            subtitle: "UI/UX-suunnittelu, Brändi-identiteetti",
+            isComingSoon: true,
+            comingSoonText: "Julkaistaan pian"
+        },
+        {
+            href: "#",
+            imageSrc: "/images/references/paytrail.webp",
+            imageAlt: "Paytrail Case Study",
+            title: "Paytrail UXR",
+            subtitle: "UX, UI, Datavetoinen suunnittelu, Käytettävyystutkimus",
+            displayNone: true
+        },
+        {
+            href: "#",
+            imageSrc: "/images/references/eventspot.webp",
+            imageAlt: "Eventspot App Case Study",
+            title: "Eventspot App",
+            subtitle: "Prototypointi, Palvelumuotoilu, Visuaalinen suunnittelu, UX",
+            displayNone: true
+        },
+        {
+            href: "#",
+            imageSrc: "/images/references/koll.webp",
+            imageAlt: "KOLL App Case Study",
+            title: "KOLL App",
+            subtitle: "Prototypointi, Palvelumuotoilu, Visuaalinen suunnittelu, UX",
+            displayNone: true
+        }
+    ] as Story[] // Add type assertion here
+};
+
+// Data for CTASection (Finnish)
+const ctaDataFi = {
+    title: "Valmis kasvamaan nopeasti?",
+    paragraph: "Keskustellaan, miten suunnitteluosaamisemme voi auttaa SaaS-yritystäsi saavuttamaan kasvupotentiaalinsa.",
+    formTitle: "Jätä yhteystietosi, niin otamme yhteyttä."
+};
+
+---
+<BaseLayout title={pageTitle} description={pageDescription}>
+
+    <HeroSection
+        title="Muutamme SaaS-visioita kasvuksi"
+        paragraph="Autamme SaaS-yrityksiä kasvamaan yhdistämällä tuotestrategian, designin ja konvertoivat laskeutumissivut toimivaksi kokonaisuudeksi."
+        primaryButtonText="Katso töitämme →"
+        primaryButtonHref="#case-studies"
+        secondaryButtonText="Ota yhteyttä"
+        secondaryButtonHref="/fi/contact"
+        imageUrl="/images/references/referencehero_1.webp"
+        imageAlt="SaaS Growth Hero Image"
+        stats={heroStats}
+    />
+
+    <!-- START: New Success Stories Section -->
+    <SuccessStoriesSection 
+        sectionTitle={successStoriesDataFi.sectionTitle}
+        sectionParagraph={successStoriesDataFi.sectionParagraph}
+        stories={successStoriesDataFi.stories}
+    />
+    <!-- END: New Success Stories Section -->
+
+    <!-- START: New Services Section -->
+    <section class="services-section" style="padding: 4rem 0; background-color: var(--section-bg, #f9fafb);">
+        <div class="container">
+            <div class="services-heading" style="margin-bottom: 3rem;">
+                <h2 class="gradient-heading-lg">Näin autamme SaaS-yrityksiä kasvamaan</h2>
+                <p class="large-paragraph" style="max-width: 700px; margin: 1rem 0 0 0;">
+                    Kattavat suunnittelupalvelut räätälöitynä SaaS-yrityksille kasvun jokaiseen vaiheeseen.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service Card 1: UI/UX Design -->
+                <div class="service-card">
+                    <div class="service-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg></div>
+                    <h4 class="service-card-title">UI/UX-suunnittelu</h4>
+                    <p class="service-card-description">Luomme intuitiivisia käyttöliittymiä ja kokemuksia, jotka saavat kilpailijanne näyttämään auttamattoman vanhanaikaisilta.</p>
+                    <a href="/fi/services" class="service-card-link">Lue lisää &rarr;</a>
+                </div>
+                <!-- Service Card 2: Brand Identity -->
+                <div class="service-card">
+                    <div class="service-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg></div>
+                    <h4 class="service-card-title">Brändi-identiteetti</h4>
+                    <p class="service-card-description">Kehitämme erottuvan brändin, joka resonoi kohdeyleisösi kanssa, erottuu markkinoilta ja jää asiakkaiden mieleen.</p>
+                    <a href="/fi/services" class="service-card-link">Lue lisää &rarr;</a>
+                </div>
+                <!-- Service Card 3: Website Design -->
+                 <div class="service-card">
+                    <div class="service-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg></div>
+                    <h4 class="service-card-title">Verkkosivut ja ländärit</h4>
+                    <p class="service-card-description">Rakennamma verkkosivut ja ländärit, jotka viestivät tehokkaasti arvolupauksesi ja konvertoivat.</p>
+                    <a href="/fi/services" class="service-card-link">Lue lisää &rarr;</a>
+                </div>
+                <!-- Service Card 4: Product Design -->
+                 <div class="service-card">
+                    <div class="service-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg></div>
+                    <h4 class="service-card-title">Tuotesuunnittelu</h4>
+                    <p class="service-card-description">Suunnittelemme käyttäjäkeskeisiä SaaS-tuotteita, jotka ratkaisevat todellisia ongelmia ja ilahduttavat käyttäjiä.</p>
+                    <a href="/fi/services" class="service-card-link">Lue lisää &rarr;</a>
+                </div>
+                <!-- Service Card 5: User Journeys and Onboarding -->
+                 <div class="service-card">
+                    <div class="service-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg></div>
+                    <h4 class="service-card-title">Käyttäjäpolut ja Onboarding</h4>
+                    <p class="service-card-description">Optimoimme käyttäjäpolkuja ja käyttöliittymiä konversion ja sitoutumisasteen parantamiseksi sekä käyttäjien aktivoimiseksi.</p>
+                    <a href="/fi/services" class="service-card-link">Lue lisää &rarr;</a>
+                </div>
+                <!-- Service Card 6: Design Systems -->
+                 <div class="service-card">
+                    <div class="service-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg></div>
+                    <h4 class="service-card-title">Design Systems</h4>
+                    <p class="service-card-description">Luomme skaalautuvia suunnittelujärjestelmiä, jotka varmistavat johdonmukaisuuden ja nopeuttavat kehitystä.</p>
+                    <a href="/fi/services" class="service-card-link">Lue lisää &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END: New Services Section -->
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-full-page">
+        <div class="container">
+            <TrustmaryEmbed 
+                title="Mitä asiakkaamme sanovat"
+                subtitle="Lue mitä asiakkaamme kertovat kokemuksistaan"
+                titleClass="gradient-heading-lg" 
+            />
+        </div>
+    </section>
+
+    <!-- START: New CTA Section -->
+    <CTASection 
+        title={ctaDataFi.title}
+        paragraph={ctaDataFi.paragraph}
+        formTitle={ctaDataFi.formTitle}
+    />
+    <!-- END: New CTA Section -->
+
+    <style>
+        .stats-grid {
+            background: var(--light-background);
+            padding: 2rem;
+            border-radius: 1rem;
+        }
+        .stat-item h3 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+        .stat-item p {
+            font-size: 1.1rem;
+            color: var(--light-text);
+        }
+        .case-study-item {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 4rem;
+            align-items: center;
+        }
+        .case-study-image {
+            width: 100%;
+            height: auto;
+            border-radius: 1rem;
+        }
+        .case-study-results {
+            margin-top: 2rem;
+        }
+        .result-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .tag {
+            display: inline-block;
+            padding: 0.25rem 1rem;
+            border-radius: 2rem;
+            background: var(--light-background);
+            color: var(--light-text);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        @media (max-width: 768px) {
+            .case-study-item {
+                grid-template-columns: 1fr;
+            }
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* New Services Section Styles */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem; /* Slightly larger gap for service cards */
+        }
+        .service-card {
+            /* Optional: Add background or border if needed, or keep it clean */
+            /* background-color: var(--card-background, #fff); */
+            /* border: 1px solid var(--border-color, #e2e8f0); */
+            /* border-radius: 0.5rem; */
+            padding: 1rem 0; /* Padding top/bottom */
+        }
+        .service-card-icon {
+            background-color: var(--light-background, #f3f4f6); /* Icon background */
+            border-radius: 0.75rem; /* Slightly more rounded */
+            padding: 0.75rem;
+            display: inline-flex; /* To size based on content */
+            margin-bottom: 1rem;
+            color: var(--primary-color); /* Icon color */
+        }
+        .service-card-icon svg {
+            width: 24px; /* Icon size */
+            height: 24px;
+            stroke-width: 1.5; /* Slightly thinner stroke */
+        }
+        .service-card-title {
+            font-size: 1.125rem; /* Slightly smaller than story card title */
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+        .service-card-description {
+            font-size: 1rem;
+            color: var(--light-text);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        .service-card-link {
+            font-size: 1rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+        .service-card-link:hover {
+            color: var(--primary-dark, #047857);
+            /* Optional: Add underline on hover */
+            /* text-decoration: underline; */
+        }
+
+        /* Responsive adjustments for Services Section */
+        @media (max-width: 992px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .service-card {
+                 padding: 0; /* Remove vertical padding on mobile if desired */
+                 text-align: center; /* Center content on mobile */
+            }
+             .service-card-icon {
+                 margin-left: auto;
+                 margin-right: auto;
+             }
+        }
+
+        /* CTA Section Styles - Now moved to component */
+        /* Note: Following styles have been moved to CTASection.astro component */
+
+        /* Add padding to the top of the testimonials section */
+        .testimonials-full-page {
+            padding-top: var(--spacing-xl, 4rem);
+        }
+        
+    </style>
+</BaseLayout> 

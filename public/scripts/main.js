@@ -33,18 +33,61 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Smooth scroll for anchor links within the same page
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('a[href*="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        const href = this.getAttribute('href');
-        // Only handle anchor links within the same page
-        if (href.startsWith('#') && !href.includes('/')) {
+        console.log('[SmoothScroll] Click detected. Link href:', this.getAttribute('href'));
+        const hrefAttribute = this.getAttribute('href');
+        
+        const linkUrl = new URL(hrefAttribute, window.location.href);
+        const currentPathname = window.location.pathname;
+
+        console.log('[SmoothScroll] currentPathname:', currentPathname);
+        console.log('[SmoothScroll] linkUrl (resolved):', { 
+            href: linkUrl.href, 
+            pathname: linkUrl.pathname, 
+            hash: linkUrl.hash 
+        });
+
+        const normalizedLinkPathname = linkUrl.pathname.endsWith('/') ? linkUrl.pathname : linkUrl.pathname + '/';
+        const normalizedCurrentPathname = currentPathname.endsWith('/') ? currentPathname : currentPathname + '/';
+
+        console.log('[SmoothScroll] Normalized paths:', {
+            link: normalizedLinkPathname,
+            current: normalizedCurrentPathname
+        });
+
+        const isSamePageAnchor = normalizedLinkPathname === normalizedCurrentPathname && linkUrl.hash;
+        console.log('[SmoothScroll] Is it a same-page anchor for scrolling?', isSamePageAnchor);
+
+        if (isSamePageAnchor) {
             e.preventDefault();
-            const target = document.querySelector(href);
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth'
-                });
+            console.log('[SmoothScroll] Prevented default navigation.');
+            try {
+                const targetSelector = decodeURIComponent(linkUrl.hash);
+                console.log('[SmoothScroll] Attempting to find target with selector:', targetSelector);
+                const targetElement = document.querySelector(targetSelector);
+                
+                if (targetElement) {
+                    console.log('[SmoothScroll] Target element found:', targetElement);
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    console.log('[SmoothScroll] scrollIntoView called.');
+                    
+                    if (window.history && window.history.pushState) {
+                         history.pushState(null, null, linkUrl.pathname + linkUrl.hash);
+                         console.log('[SmoothScroll] history.pushState called with:', linkUrl.pathname + linkUrl.hash);
+                    }
+                } else {
+                    console.warn('[SmoothScroll] Target element NOT FOUND for selector:', targetSelector);
+                }
+            } catch (error) {
+                console.error('[SmoothScroll] Error during scroll attempt:', error);
+                // Fallback to default browser behavior if querySelector fails (e.g. invalid hash)
+                return true; 
             }
+        } else {
+            console.log('[SmoothScroll] Not a same-page anchor for smooth scrolling, letting browser handle it.');
         }
     });
 });

@@ -10,4 +10,11 @@ export function useTranslations(lang: keyof typeof ui) {
   return function t(key: keyof typeof ui[typeof defaultLang]) {
     return ui[lang][key] || ui[defaultLang][key];
   }
+}
+
+export function getRelativeLocaleUrl(lang: keyof typeof ui, path?: string) {
+  if (lang === defaultLang && (!path || path === '/')) {
+    return '/';
+  }
+  return `/${lang}${path || ''}`;
 } 

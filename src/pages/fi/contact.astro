@@ -1,0 +1,90 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
+import HeroSection from '../../components/HeroSection.astro';
+
+const pageTitle = "Ota yhteyttä | The Good Side";
+const pageDescription = "Varaa aika kalenterista tai jätä yhteydenottopyyntö, niin katsotaan miten voimme auttaa.";
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <HeroSection
+    title="Jutellaan tuotteesi tulevaisuudesta"
+    paddingTop="4rem"
+    paddingBottom="1rem" 
+    class="contact-hero-bg" 
+    textOnly={true}
+  >
+    <span slot="paragraph">
+      {pageDescription}
+      <br/>
+      Voit myös <a href="tel:0408698887">soittaa suoraan</a> tai laittaa sähköpostia <a href="mailto:mikki@goodside.fi">mikki@goodside.fi</a>.
+    </span>
+  </HeroSection>
+
+  <section class="schedule-section">
+    <div class="container">
+        <CalendlyEmbed elementId="my-cal-inline" calLink="aaltoyleva/kartoitustapaaminen" />
+    </div>
+  </section>
+
+  <section class="contact-form-section">
+    <div class="container">
+      <div class="form-content" id="hubspot-form-container">
+        <h2>Tai jätä yhteydenottopyyntö</h2>
+        <p>Jos et löydä sopivaa aikaa tai haluat mieluummin että otan yhteyttä, täytä lomake niin palaan asiaan mahdollisimman pian.</p>
+        <template id="hubspot-template">
+            <script src="https://js-eu1.hsforms.net/forms/embed/145360432.js" defer></script>
+            <div class="hs-form-frame" data-region="eu1" data-form-id="8bc5845c-348d-4ba7-baea-ebd46b11b0a0" data-portal-id="145360432"></div>
+        </template>
+      </div>
+    </div>
+  </section>
+
+  <script type="text/javascript" is:inline>
+    document.addEventListener('DOMContentLoaded', () => {
+        const formContainer = document.getElementById('hubspot-form-container');
+        const template = document.getElementById('hubspot-template');
+
+        if (!formContainer || !template) {
+            console.error("HubSpot lazy load elements not found.");
+            return;
+        }
+
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const content = template.content.cloneNode(true);
+                    const scriptTag = content.querySelector('script');
+                    const formDiv = content.querySelector('.hs-form-frame');
+
+                    if (scriptTag && formDiv) {
+                        formContainer.appendChild(formDiv);
+                        const newScript = document.createElement('script');
+                        newScript.src = scriptTag.src;
+                        newScript.defer = scriptTag.defer;
+                        formContainer.appendChild(newScript); 
+                    } else {
+                         console.error("HubSpot script or form div not found in template.");
+                    }
+                    obs.unobserve(formContainer);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        observer.observe(formContainer);
+    });
+  </script>
+</BaseLayout>
+
+<style>
+    .schedule-section {
+        padding: var(--spacing-xl) 0;
+    }
+
+  .contact-hero-bg {
+    background-image: url('/images/mesh-gradient-green.webp');
+    background-size: cover;
+    background-position: center;
+  }
+</style> 
