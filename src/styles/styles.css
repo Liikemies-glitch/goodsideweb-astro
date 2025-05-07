@@ -1156,11 +1156,15 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary);
 }
 
-.footer__links h3 {
+.footer__links h3, .footer__links h4, .footer__contact h4 {
     font-size: 1rem;
     font-weight: 600;
-    margin-bottom: var(--spacing-m);
-    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer__links h4,
+.footer__contact h4 {
+    margin-bottom: var(--spacing-xs);
 }
 
 .footer__links ul {

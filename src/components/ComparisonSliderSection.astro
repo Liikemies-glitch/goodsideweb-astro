@@ -1,5 +1,8 @@
 ---
-// Poistetaan import, lisäämme sen skriptin kautta
+export interface Props {
+    dragIndicatorText?: string;
+}
+const { dragIndicatorText = "Drag me" } = Astro.props as Props;
 ---
 
 <section class="bg-white py-16 md:py-24 overflow-hidden">
@@ -8,7 +11,7 @@
             <!-- Tämä div korvataan JavaScriptissä img-comparison-slider -elementillä -->
             <img id="image-old" src="/images/eemel/etusivu_laptop_vanha.webp" alt="Vanha käyttöliittymä" style="display: none;" />
             <img id="image-new" src="/images/eemel/etusivu_laptop.webp" alt="Uusi käyttöliittymä" style="display: none;" />
-            <div class="drag-indicator">Liikuta</div>
+            <div class="drag-indicator">{dragIndicatorText}</div>
         </div>
     </div>
 </section>

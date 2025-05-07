@@ -14,14 +14,15 @@ const t = useTranslations(lang);
                     <img src="/images/brand/logo.webp" alt={t('site.title')} width="140" height="32"/>
                 </a>
                 <p>{t('footer.description')}</p>
-                <p>&copy; {new Date().getFullYear()} The Good Side Oy. {t('footer.rights')}</p>
+                <p>&copy; {new Date().getFullYear()} The Good Side Oy.</p>
+                <p>{t('footer.rights')}</p>
             </div>
             <div class="footer__links">
                 <h4>{t('footer.siteLinks')}</h4>
                 <ul>
                     <li><a href={`/${lang}/`}>{t('footer.home')}</a></li>
                     <li><a href={`/${lang}/services`}>{t('footer.services')}</a></li>
-                    <li><a href={`/${lang}/referenssit`}>{t('footer.references')}</a></li>
+                    <li><a href={`/${lang}/references`}>{t('footer.references')}</a></li>
                     <li><a href={`/${lang}/blog`}>{t('footer.blog')}</a></li>
                     <li><a href={`/${lang}/contact`}>{t('footer.contact')}</a></li>
                 </ul>
@@ -35,9 +36,15 @@ const t = useTranslations(lang);
             </div>
             <div class="footer__contact">
                 <h4>{t('footer.contactUs')}</h4>
-                <p><strong>Mikki Aalto-Ylevä</strong></p>
+                <p>Mikki Aalto-Ylevä</p>
+                <p>Co-founder</p>
                 <p><a href="tel:0408698887">040 869 8887</a></p>
                 <p><a href="mailto:mikki@goodside.fi">mikki@goodside.fi</a></p>
+                <p><a href="https://www.linkedin.com/in/mikkiaaltoyleva/" target="_blank" rel="noopener noreferrer" aria-label="Mikki Aalto-Ylevä LinkedIn Profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="inline-block ml-1 relative bottom-[2px]">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a></p>
             </div>
         </div>
     </div>

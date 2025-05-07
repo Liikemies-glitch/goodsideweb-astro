@@ -1,14 +1,14 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import '../../styles/styles.css';
-import HeroSection from '../../components/HeroSection.astro';
-import CaseStudySection from '../../components/CaseStudySection.astro';
-import ResultsSection from '../../components/ResultsSection.astro';
-import ComparisonSliderSection from '../../components/ComparisonSliderSection.astro';
-import TestimonialSection from '../../components/TestimonialSection.astro';
-import CTASection from '../../components/CTASection.astro';
-import FullStorySection from '../../components/FullStorySection.astro';
-import SuccessStoriesSection from '../../components/SuccessStoriesSection.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import '../../../styles/styles.css';
+import HeroSection from '../../../components/HeroSection.astro';
+import CaseStudySection from '../../../components/CaseStudySection.astro';
+import ResultsSection from '../../../components/ResultsSection.astro';
+import ComparisonSliderSection from '../../../components/ComparisonSliderSection.astro';
+import TestimonialSection from '../../../components/TestimonialSection.astro';
+import CTASection from '../../../components/CTASection.astro';
+import FullStorySection from '../../../components/FullStorySection.astro';
+import SuccessStoriesSection from '../../../components/SuccessStoriesSection.astro';
 
 const pageTitle = "Eemel.comin redesign mahdollisti kasvun globaaleilla markkinoilla";
 const description = "Eemel.com uudisti käyttöliittymänsä ja käyttökokemuksena, jonka vuoksi mediabudjetin ROI kasvoi 622%.";
@@ -155,7 +155,7 @@ const fullStoryData = {
     />
 
     <div class="full-width-section">
-      <ComparisonSliderSection />
+      <ComparisonSliderSection dragIndicatorText="Liikuta" />
     </div>
 
     <div id="full-story-section">
@@ -163,6 +163,8 @@ const fullStoryData = {
         title={fullStoryData.title}
         introduction={fullStoryData.introduction}
         sections={fullStoryData.sections}
+        readMoreText="Lue koko tarina"
+        showLessText="Näytä vähemmän"
       />
     </div>
     

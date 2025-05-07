@@ -100,13 +100,13 @@ Seuraa näitä milestoneja järjestyksessä:
         -   [x] **Suunnitelman ulkopuolinen parannus:** `src/components/Nav.astro` luotu, sisältää kielivalitsimen ja noudattaa i18n-periaatteita (tukee M4:n tavoitteita).
     -   **Jäljellä olevat tämän milestonen tehtävät:**
         -   [ ] **Sivujen inventaarion viimeistely:**
-            -   [ ] `palvelut.astro`: Luo EN-version pohja `src/pages/en/services.astro` (käännös M7).
+            -   [x] `palvelut.astro`: Luo EN-version pohja `src/pages/en/services.astro` (käännös M7).
             -   [ ] `diy-opas.astro`: 
                 -   [ ] Varmista FI-sivun polku (esim. `src/pages/fi/diy-opas.astro`).
                 -   [x] Päätös: Ei käännetä EN-versioksi (vahvistettu).
             -   [ ] `referenssit/eemel.astro`: 
-                -   [ ] Varmista FI-sivun polku (esim. `src/pages/fi/referenssit/eemel.astro`).
-                -   [ ] Luo EN-version pohja `src/pages/en/referenssit/eemel.astro` (käännös M7).
+                -   [x] FI-sivun polku on `src/pages/fi/references/eemel.astro` (hakemisto `referenssit` muutettu `references`-muotoon).
+                -   [x] EN-versio luotu: `src/pages/en/references/eemel.astro` (hakemisto `referenssit` muutettu `references`-muotoon, käännös tehty).
             -   [ ] Varmista kaikkien muiden `src/pages/fi/` sivujen inventaario ja EN-vastineiden tarve.
         -   [ ] **Blogitekstien inventaarion viimeistely:**
             -   [ ] Laske ja vahvista kääntämättömien `.fi.md` artikkeleiden tarkka lukumäärä (alkuperäinen arvio ~87, kolme käännetty).

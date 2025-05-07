@@ -8,9 +8,11 @@ export interface Props {
   title: string;
   introduction: string;
   sections: StorySection[];
+  readMoreText: string;
+  showLessText: string;
 }
 
-const { title, introduction, sections } = Astro.props;
+const { title, introduction, sections, readMoreText, showLessText } = Astro.props;
 ---
 
 <section class="full-story-section">
@@ -22,7 +24,7 @@ const { title, introduction, sections } = Astro.props;
       
       <div class="story-toggle-container">
         <button id="story-toggle" class="story-toggle">
-          <span class="toggle-text">Lue koko tarina</span>
+          <span class="toggle-text">{readMoreText}</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="toggle-icon">
             <polyline points="6 9 12 15 18 9"></polyline>
           </svg>
@@ -43,7 +45,7 @@ const { title, introduction, sections } = Astro.props;
   </div>
 </section>
 
-<script>
+<script define:vars={{ readMoreText, showLessText }}>
   document.addEventListener('DOMContentLoaded', () => {
     const storyToggle = document.getElementById('story-toggle');
     const fullStory = document.getElementById('full-story');
@@ -54,10 +56,10 @@ const { title, introduction, sections } = Astro.props;
       fullStory?.classList.toggle('hidden');
       
       if (fullStory?.classList.contains('hidden')) {
-        if (toggleText) toggleText.textContent = 'Lue koko tarina';
+        if (toggleText) toggleText.textContent = readMoreText;
         toggleIcon?.classList.remove('rotate');
       } else {
-        if (toggleText) toggleText.textContent = 'Näytä vähemmän';
+        if (toggleText) toggleText.textContent = showLessText;
         toggleIcon?.classList.add('rotate');
       }
     });
