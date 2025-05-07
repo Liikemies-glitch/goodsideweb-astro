@@ -50,15 +50,47 @@ if (pathWithoutLocale === '') {
                 <span></span>
             </button>
             <ul class="nav__menu">
-                <li><a href={getRelativeLocaleUrl(lang, '/')}>{t('nav.home')}</a></li>
                 <li><a href={getRelativeLocaleUrl(lang, '/services')}>{t('nav.services')}</a></li>
                 <li><a href={getRelativeLocaleUrl(lang, '/references')}>{t('nav.references')}</a></li>
                 <li><a href={getRelativeLocaleUrl(lang, '/blog')}>{t('nav.blog')}</a></li>
-                <li><a href={getRelativeLocaleUrl(lang, '/#hinnat')}>{t('nav.pricing')}</a></li>
+                <li><a href={getRelativeLocaleUrl(lang, '/#hinnat-ankkuri')}>{t('nav.pricing')}</a></li>
                 <li><a href={getRelativeLocaleUrl(lang, '/contact')} class="btn btn--primary">{t('nav.contactButton')}</a></li> 
             </ul>
         </div>
     </nav>
+    
+    {/* Mobiilivalikko */}
+    <div class="mobile-menu">
+        <div class="mobile-menu__header">
+            <button class="mobile-menu__close" aria-label="Close menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <img src="/images/brand/logo.webp" alt="The Good Side" class="mobile-menu__logo" style="filter: brightness(0) saturate(100%) invert(7%) sepia(19%) saturate(1400%) hue-rotate(213deg) brightness(94%) contrast(95%);" />
+        </div>
+        <nav class="mobile-menu__nav">
+            <ul>
+                <li><a href={getRelativeLocaleUrl(lang, '/services')}>{t('nav.services')}</a></li>
+                <li><a href={getRelativeLocaleUrl(lang, '/references')}>{t('nav.references')}</a></li>
+                <li><a href={getRelativeLocaleUrl(lang, '/blog')}>{t('nav.blog')}</a></li>
+                <li class="contact-item"><a href={getRelativeLocaleUrl(lang, '/contact')}>{t('nav.contactButton')}</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu__footer">
+            <p>The Good Side</p>
+            <p>+358 40 869 8887</p>
+            <p>mikki@thegoodside.fi</p>
+            <div class="mobile-menu__social">
+                <a href="https://linkedin.com" target="_blank" rel="https://www.linkedin.com/company/the-good-side-oy/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="var(--secondary-color)">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
 </header> 
 
 <style>
@@ -71,4 +103,166 @@ if (pathWithoutLocale === '') {
         transition: all 0.3s ease;
         transform: translateY(-2px);
     }
+
+    /* Explicitly hide the old nav menu on mobile */
+    @media (max-width: 767px) {
+        .nav__menu {
+            display: none !important;
+        }
+    }
+
+    /* Mobiilivalikko */
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--light-background);
+        z-index: 1000;
+        transition: right 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        color: var(--text-color);
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .mobile-menu.active {
+        right: 0;
+    }
+
+    .mobile-menu__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .mobile-menu__close {
+        background: none;
+        border: none;
+        color: var(--text-color);
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+
+    .mobile-menu__logo {
+        height: 32px;
+        width: auto;
+        /* Use same filter as desktop nav logo to ensure it's dark */
+        filter: brightness(0) saturate(100%) invert(7%) sepia(19%) saturate(1400%) hue-rotate(213deg) brightness(94%) contrast(95%);
+    }
+
+    .mobile-menu__nav {
+        flex: 1;
+        padding: 2rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mobile-menu__nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: right;
+    }
+
+    .mobile-menu__nav li {
+        margin-bottom: 1.5rem;
+    }
+
+    .mobile-menu__nav a {
+        text-decoration: none;
+        font-size: 1.75rem;
+        font-weight: 600;
+        display: inline-block;
+        transition: transform 0.3s ease;
+        /* Gradient text effect */
+        background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+
+    .mobile-menu__nav a:hover {
+        transform: translateX(-5px);
+    }
+
+    .mobile-menu__footer {
+        padding: 1.5rem;
+        text-align: right;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .mobile-menu__footer p {
+        margin-bottom: 0.5rem;
+        color: var(--text-color);
+    }
+
+    .mobile-menu__social {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+
+    .mobile-menu__social a {
+        color: var(--text-color);
+        transition: opacity 0.3s ease;
+    }
+
+    .mobile-menu__social a:hover {
+        opacity: 0.8;
+    }
+
+    .mobile-menu__nav li.contact-item a {
+        font-weight: 600;
+        background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+
+    @media (min-width: 768px) {
+        .mobile-menu {
+            display: none;
+        }
+    }
 </style> 
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Override any existing event listeners by removing them
+        const menuToggle = document.querySelector('.nav__toggle');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const closeButton = document.querySelector('.mobile-menu__close');
+        
+        // Remove any existing click listeners (if possible)
+        if (menuToggle) {
+            const newMenuToggle = menuToggle.cloneNode(true);
+            if (menuToggle.parentNode) {
+                menuToggle.parentNode.replaceChild(newMenuToggle, menuToggle);
+            }
+            
+            // Add our click handler to the fresh element
+            newMenuToggle.addEventListener('click', () => {
+                if (mobileMenu) {
+                    mobileMenu.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                }
+            });
+        }
+
+        if (closeButton && mobileMenu) {
+            closeButton.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        }
+    });
+</script> 

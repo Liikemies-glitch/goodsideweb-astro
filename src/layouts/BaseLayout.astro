@@ -165,6 +165,13 @@ const organizationSchema = {
     <link rel="canonical" href={canonicalURL} /> 
     */}
 
+    <style is:global>
+      :root {
+        /* Existing CSS variables */
+        scroll-padding-top: 150px; /* Increased padding to account for lazy-loaded content */
+      }
+    </style>
+
 </head>
 <body>
     <Nav />

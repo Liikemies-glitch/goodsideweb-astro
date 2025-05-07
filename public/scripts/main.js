@@ -41,6 +41,16 @@ document.querySelectorAll('a[href*="#"]').forEach(anchor => {
         const linkUrl = new URL(hrefAttribute, window.location.href);
         const currentPathname = window.location.pathname;
 
+        // Close mobile menu if it's open - moved here to ensure it always happens regardless of navigation type
+        const menu = document.querySelector('.nav__menu');
+        const menuToggle = document.querySelector('.nav__toggle');
+        if (menu && menu.classList.contains('active')) {
+            menu.classList.remove('active');
+            if (menuToggle) {
+                menuToggle.classList.remove('active');
+            }
+        }
+
         console.log('[SmoothScroll] currentPathname:', currentPathname);
         console.log('[SmoothScroll] linkUrl (resolved):', { 
             href: linkUrl.href, 

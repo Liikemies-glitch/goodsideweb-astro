@@ -3,7 +3,7 @@
 const { elementId = 'cal-inline', calLink = 'aaltoyleva/kartoitustapaaminen' } = Astro.props;
 const uniqueWrapperId = `calendly-lazy-wrapper-${elementId}`; // Create unique ID for observer
 ---
-<div id={uniqueWrapperId} class="calendly-lazy-wrapper" style="width: 100%;"> <!-- Placeholder wrapper -->
+<div id={uniqueWrapperId} class="calendly-lazy-wrapper" style="width: 100%; min-height: 700px;"> <!-- Added min-height to reserve space -->
   <div style="width:100%; height:100%; overflow:scroll; display: none;" id={elementId}></div> <!-- Actual embed target, initially hidden -->
 </div>
 
