@@ -1,5 +1,5 @@
 ---
-import { getLangFromUrl, getRelativeLocaleUrl } from '../i18n/utils';
+import { getLangFromUrl, getRelativeLocaleUrl, getLanguageSwitchUrl } from '../i18n/utils';
 import { ui, defaultLang } from '../i18n/ui'; // Import directly from ui.ts
 import { useTranslations } from '../i18n/utils'; // Import useTranslations
 
@@ -35,7 +35,7 @@ if (pathWithoutLocale === '') {
                         {locale === lang ? (
                             <span style="font-weight: bold; text-decoration: underline; color: var(--primary-color);">{locale.toUpperCase()}</span>
                         ) : (
-                            <a href={getRelativeLocaleUrl(locale, pathWithoutLocale === '/' && locale === defaultLang ? undefined : pathWithoutLocale)} style="text-decoration: none; color: var(--text-color-light);">{locale.toUpperCase()}</a>
+                            <a href={getLanguageSwitchUrl(Astro.url, locale)} style="text-decoration: none; color: var(--text-color-light);">{locale.toUpperCase()}</a>
                         )}
                     </>
                 ))}
@@ -60,3 +60,15 @@ if (pathWithoutLocale === '') {
         </div>
     </nav>
 </header> 
+
+<style>
+    /* Palauta transition-efekti "Ota yhteyttä" -painikkeelle */
+    .nav__menu a.btn--primary {
+        transition: all 0.3s ease;
+    }
+    
+    .nav__menu a.btn--primary:hover {
+        transition: all 0.3s ease;
+        transform: translateY(-2px);
+    }
+</style> 

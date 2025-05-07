@@ -3,6 +3,11 @@
 import BaseLayout from './BaseLayout.astro';
 import { Image } from 'astro:assets'; // Import Astro's Image component
 import type { CollectionEntry } from 'astro:content'; // Import type for better type checking
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+// Get the current language
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 // Get the post object passed from the dynamic page
 interface Props {
@@ -12,14 +17,32 @@ const { post } = Astro.props;
 
 // Determine the title and description for SEO, using fallbacks
 const pageTitle = post.data.seoTitle || post.data.title; // Use SEO title if available, otherwise main title
-const pageDescription = post.data.description || 'Lue artikkeli The Good Side blogista.'; // Use frontmatter description or a generic fallback
+const pageDescription = post.data.description || (lang === 'fi' ? 'Lue artikkeli The Good Side blogista.' : 'Read the article from The Good Side blog.'); 
 
-// Format the publication date
-const formattedDate = new Date(post.data.pubDate).toLocaleDateString('fi-FI', {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-});
+// Format the publication date based on current language
+const formattedDate = new Date(post.data.pubDate).toLocaleDateString(
+  lang === 'fi' ? 'fi-FI' : 'en-US', 
+  {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  }
+);
+
+// Translation map for blog post UI elements
+const blogUI = {
+  fi: {
+    published: 'Julkaistu',
+    author: 'Kirjoittaja:'
+  },
+  en: {
+    published: 'Published',
+    author: 'Author:'
+  }
+};
+
+// Get blog UI strings based on current language
+const blogText = lang === 'fi' ? blogUI.fi : blogUI.en;
 ---
 <BaseLayout title={pageTitle} description={pageDescription}>
   <article class="blog-post container">
@@ -45,8 +68,8 @@ const formattedDate = new Date(post.data.pubDate).toLocaleDateString('fi-FI', {
     <header class="blog-post__header">
       <h1 class="blog-post__title">{post.data.title}</h1>
       <p class="blog-post__meta">
-        Julkaistu {formattedDate}
-        {post.data.author && ` | Kirjoittaja: ${post.data.author}`}
+        {blogText.published} {formattedDate}
+        {post.data.author && ` | ${blogText.author} ${post.data.author}`}
       </p>
       {post.data.tags && post.data.tags.length > 0 && (
         <div class="blog-post__tags">
@@ -250,6 +273,7 @@ const formattedDate = new Date(post.data.pubDate).toLocaleDateString('fi-FI', {
     .blog-post__title {
       font-size: 2.2rem;
     }
+    
     .blog-post__content {
       font-size: 1rem;
     }

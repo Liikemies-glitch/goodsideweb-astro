@@ -4,12 +4,12 @@ import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
 import HeroSection from '../../components/HeroSection.astro';
 
 const pageTitle = "Contact Us | The Good Side";
-const pageDescription = "Book a time in the calendar or leave a contact request, and we'll see how we can help.";
+const pageDescription = "Book a time from the calendar or leave a contact request, and we'll see how we can help.";
 ---
 
 <BaseLayout title={pageTitle} description={pageDescription}>
   <HeroSection
-    title="Let's talk about the future of your product"
+    title="Let's Talk About Your Product's Future"
     paddingTop="4rem"
     paddingBottom="1rem" 
     class="contact-hero-bg" 
@@ -31,8 +31,8 @@ const pageDescription = "Book a time in the calendar or leave a contact request,
   <section class="contact-form-section">
     <div class="container">
       <div class="form-content" id="hubspot-form-container">
-        <h2>Or leave a contact request</h2>
-        <p>If you can't find a suitable time or prefer that I contact you, fill out the form and I'll get back to you as soon as possible.</p>
+        <h2>Or Leave a Contact Request</h2>
+        <p>If you can't find a suitable time or would prefer that I contact you, fill out the form and I'll get back to you as soon as possible.</p>
         <template id="hubspot-template">
             <script src="https://js-eu1.hsforms.net/forms/embed/145360432.js" defer></script>
             <div class="hs-form-frame" data-region="eu1" data-form-id="8bc5845c-348d-4ba7-baea-ebd46b11b0a0" data-portal-id="145360432"></div>
@@ -42,7 +42,6 @@ const pageDescription = "Book a time in the calendar or leave a contact request,
   </section>
 
   <script type="text/javascript" is:inline>
-    // HubSpot Lazy Load Script
     document.addEventListener('DOMContentLoaded', () => {
         const formContainer = document.getElementById('hubspot-form-container');
         const template = document.getElementById('hubspot-template');

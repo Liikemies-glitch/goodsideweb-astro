@@ -44,7 +44,7 @@ Seuraa näitä milestoneja järjestyksessä:
     -   Projektisi käyttää sisältökokoelmia (`src/content/`) MD-tiedostoille. Määritellään strategia kieliversioiden hallintaan. Yleinen tapa on käyttää tiedostonimeä erotteluun, esim. `blogipostaus.fi.md` ja `blogipostaus.en.md`.
     -   Muokkaa sisältökokoelmien skeemaa (`src/content/config.ts`) tarvittaessa (yleensä ei välttämätöntä pelkälle kielelle, mutta hyvä tarkistaa).
     -   Luo manuaalisesti *yhdestä* olemassa olevasta `.md`-tiedostosta englanninkielinen versio (esim. kopioi `jotain.fi.md` -> `jotain.en.md` ja käännä sisältö nopeasti).
-    -   Päivitä sivut, jotka renderöivät sisältökokoelmien dataa (esim. blogin etusivu ja yksittäisen postauksen sivu), käyttämään `getCollection`-funktiota filtteröiden tulokset `Astro.currentLocale`-muuttujan perusteella. Varmista, että linkit osoittavat oikeisiin kieliversioihin.
+    -   Päivitä sivut, jotka renderöivät sisältökokoelman dataa (esim. blogin etusivu ja yksittäisen postauksen sivu), käyttämään `getCollection`-funktiota filtteröiden tulokset `Astro.currentLocale`-muuttujan perusteella. Varmista, että linkit osoittavat oikeisiin kieliversioihin.
     -   **Testausohjeet:**
         -   Navigoi sivulle, joka listaa sisältökokoelman kohteita (esim. blogi) suomeksi (`/fi/blog/`). Listauksen tulisi näyttää vain `.fi.md`-tiedostot.
         -   Navigoi vastaavalle sivulle englanniksi (`/en/blog/`). Listauksen tulisi näyttää vain `.en.md`-tiedostot (eli tässä vaiheessa vain se yksi manuaalisesti luotu).
@@ -86,7 +86,7 @@ Seuraa näitä milestoneja järjestyksessä:
         -   Varmista, että suorat navigoinnit osoitteisiin kuten `/fi/blog` tai `/en/about` toimivat edelleen ilman ylimääräisiä uudelleenohjauksia middlewaren toimesta.
         -   Testaa Vercelin esikatseluympäristössä (`preview deployment`), jotta varmistutaan middlewaren toiminnasta Vercelin infrassa.
 
--   [ ] **Milestone 6: Sivujen inventaario ja kääntämisen valmistelu**
+-   [x] **Milestone 6: Sivujen inventaario ja kääntämisen valmistelu**
     -   *Tähänastinen edistys ja äskettäin tehdyt muutokset:*
         -   [x] **Sivujen rakenteiden valmistelu:**
             -   [x] `referenssit.astro`: FI-versio siirretty (`src/pages/fi/references.astro`), EN-pohja luotu (`src/pages/en/references.astro`). Sisältö vaatii kääntämisen M7:ssä.
@@ -99,43 +99,43 @@ Seuraa näitä milestoneja järjestyksessä:
             -   [x] Tiedossa 3 valmiiksi käännettyä artikkelia (`mita-on-palvelumuotoilu.en.md`, `kaytettavyys-ja-hakukoneoptimointi.en.md`, `design-ops.en.md`).
         -   [x] **Suunnitelman ulkopuolinen parannus:** `src/components/Nav.astro` luotu, sisältää kielivalitsimen ja noudattaa i18n-periaatteita (tukee M4:n tavoitteita).
     -   **Jäljellä olevat tämän milestonen tehtävät:**
-        -   [ ] **Sivujen inventaarion viimeistely:**
+        -   [x] **Sivujen inventaarion viimeistely:**
             -   [x] `palvelut.astro`: Luo EN-version pohja `src/pages/en/services.astro` (käännös M7).
-            -   [ ] `diy-opas.astro`: 
-                -   [ ] Varmista FI-sivun polku (esim. `src/pages/fi/diy-opas.astro`).
+            -   [x] `diy-opas.astro`: 
+                -   [x] Varmista FI-sivun polku (esim. `src/pages/fi/diy-opas.astro`).
                 -   [x] Päätös: Ei käännetä EN-versioksi (vahvistettu).
-            -   [ ] `referenssit/eemel.astro`: 
+            -   [x] `referenssit/eemel.astro`: 
                 -   [x] FI-sivun polku on `src/pages/fi/references/eemel.astro` (hakemisto `referenssit` muutettu `references`-muotoon).
                 -   [x] EN-versio luotu: `src/pages/en/references/eemel.astro` (hakemisto `referenssit` muutettu `references`-muotoon, käännös tehty).
-            -   [ ] Varmista kaikkien muiden `src/pages/fi/` sivujen inventaario ja EN-vastineiden tarve.
-        -   [ ] **Blogitekstien inventaarion viimeistely:**
-            -   [ ] Laske ja vahvista kääntämättömien `.fi.md` artikkeleiden tarkka lukumäärä (alkuperäinen arvio ~87, kolme käännetty).
-        -   [ ] **Konfiguraation tarkistus:**
-            -   [ ] Tarkista `src/content/config.ts`: Varmista, että skeema (erityisesti `title`, `description`, `tags`) tukee kääntämistä ja kaikki tarvittavat kentät ovat käännettävissä osana `.en.md` tiedostojen frontmatteria.
-    -   **Priorisoidut käännösartikkelit (Milestone 8-10):**
+                -   [x] Varmista kaikkien muiden `src/pages/fi/` sivujen inventaario ja EN-vastineiden tarve.
+        -   [x] **Konfiguraation tarkistus:**
+            -   [x] Tarkista `src/content/config.ts`: Varmista, että skeema (erityisesti `title`, `description`, `tags`) tukee kääntämistä ja kaikki tarvittavat kentät ovat käännettävissä osana `.en.md` tiedostojen frontmatteria.
+    -   **Priorisoidut käännösartikkelit (Milestone 8-10) - Päivitetty hakusana-analyysin perusteella:**
+        -   *Tiedossa 3 valmiiksi käännettyä artikkelia: `mita-on-palvelumuotoilu.en.md`, `kaytettavyys-ja-hakukoneoptimointi.en.md`, `design-ops.en.md`.*
         -   **Korkea prioriteetti (Milestone 8 - nämä 5 artikkelia):**
-            - `design-osana-strategiaa-top-5-esimerkit.fi.md`
-            - `design-thinking-prosessi-joka-sytyttaa-luovuuden-liekin.fi.md`
-            - `designerin-rooli-asiakaskokemuksen-parantamisessa.fi.md` 
-            - `designin-tulee-olla-kaiken-ytimessa-v-2.fi.md`
-            - `designin-yhtenaisyys-muutosten-keskella.fi.md`
+            - `empatia-palvelumuotoilussa.fi.md` (Hakusanalle: empatiakartta)
+            - `jakob-nielsen-ja-kaytettavyyden-periaatteet.fi.md` (Hakusanoille: nielsenin heuristiikka, nielsen heuristiikat, jakob nielsen, nielsen käytettävyys, nielsenin 10 heuristiikkaa)
+            - `kayttoliittymasuunnittelu-10-huomiota.fi.md` (Hakusanalle: käyttöliittymäsuunnittelu)
+            - `prototyyppi-ideasta-toimivaksi-tuotteeksi.fi.md` (Hakusanalle: prototyyppi)
+            - `verkkopalvelun-konseptointi.fi.md` (Hakusanalle: konseptointi)
         -   **Keskitason prioriteetti (Milestone 9 - seuraavat 10 artikkelia):**
-            - `designops-muotoiluosaamisen-kumppani.fi.md`
-            - `designops-nain-paaset-alkuun.fi.md`
-            - `dieter-rams-ja-10-hyvan-muotoilun-periaatetta.fi.md`
-            - `digipalvelun-uudistaminen.fi.md`
-            - `digiprojektin-budjetointi.fi.md`
-            - `digitaalinen-asiakaskokemus-nain-alkuun.fi.md`
-            - `digitalisaation-megatrendit-muokkaavat-liiketoimintaa.fi.md`
-            - `empatia-palvelumuotoilussa.fi.md`
-            - `ideasta-appiin-selviytymisopas.fi.md`
-            - `jakobs-law-intuitiivisen-kayttoliittymasuunnittelun-kulmakivi.fi.md`
-        -   **Matala prioriteetti (Milestone 10 - loput ~72 artikkelia)**
+            - `kayttoliittymasuunnittelu-ja-hyva-ux.fi.md` (Hakusanalle: käyttöliittymäsuunnittelu)
+            - `kayttoliittymasuunnittelu-osana-kasvua.fi.md` (Hakusanalle: käyttöliittymäsuunnittelu)
+            - `kaytettavyys-muista-ainakin-nama.fi.md` (Hakusanalle: käytettävyys)
+            - `kayttokokemus-ei-ole-arvailua-uxr.fi.md` (Hakusanalle: käyttökokemus)
+            - `mista-muodostuu-hyva-kayttokokemus-10-tekijaa.fi.md` (Hakusanalle: käyttökokemus)
+            - `prototyypin-testaaminen.fi.md` (Hakusanalle: prototyyppi)
+            - `kaytettavyys-ohjelmistokehityksessa.fi.md` (Hakusanalle: käytettävyys)
+            - `designerin-rooli-asiakaskokemuksen-parantamisessa.fi.md` (Hakusanoille: käyttökokemus, ux suunnittelija)
+            - `ux-suunnittelu-kaikki-paitsi-kaytettavyys-on-turhaa.fi.md` (Hakusanalle: käytettävyys)
+            - `mobiilisovelluksen-ui-ux-suunnittelu.fi.md` (Hakusanalle: käyttöliittymäsuunnittelu)
+        -   **Matala prioriteetti (Milestone 10 - loput suomenkieliset artikkelit)**
+            - (Sisältää kaikki muut `src/content/blog/` hakemiston `.fi.md` päätteiset artikkelit, joita ei ole mainittu yllä tai jo käännetty)
     -   **Testausohjeet:**
         -   Varmista, että kaikilla inventaarion sivuilla ja tiedostoilla on selvä suunnitelma englanninkielisten versioiden luomiseksi.
         -   Varmista, että kaikki blogitekstit on nimetty oikein ja ne on järjestetty prioriteettijärjestykseen Milestone 8-10 mukaisesti.
 
--   [ ] **Milestone 7: Staattisten sivujen kääntäminen**
+-   [x] **Milestone 7: Staattisten sivujen kääntäminen**
     -   Käännä kaikki staattiset sivut (etusivu, palvelut, referenssit, yhteydenotto, jne.) englannin kielelle.
         -   Etsi ja tunnista sivut `src/pages/` -hakemistosta.
         -   Luo vastaavat englanninkieliset versiot `src/pages/en/` -hakemistoon.
@@ -149,47 +149,24 @@ Seuraa näitä milestoneja järjestyksessä:
         -   Testaa, että navigointi toimii sujuvasti englanninkielisessä versiossa.
         -   Varmista, että kielenvaihtolinkit ohjaavat oikeisiin vastinsivuihin.
 
--   [ ] **Milestone 8: Blogitekstien kääntäminen (Osa 1 - Tärkeimmät ja uusimmat artikkelit)**
-    -   Valitse 3-5 tärkeintä tai uusinta blogiartikkelia käännettäväksi ensimmäisessä vaiheessa.
-    -   Käännä valitut blogiartikkelit seuraavasti:
-        -   Kopioi jokainen `.fi.md`-tiedosto vastaavaksi `.en.md`-tiedostoksi.
-        -   Käännä frontmatter-metatiedot (otsikko, kuvaus, tagit, jne.).
-        -   Käännä artikkelin leipäteksti ylläpitäen alkuperäisen muotoilun.
-        -   Varmista, että kuvaviittaukset toimivat oikein.
-        -   Käännä tagit ja muut luokittelutiedot.
-    -   Tee tarvittavat muutokset, jos blogilistaussivut vaativat kielispesifejä muutoksia.
-    -   **Testausohjeet:**
-        -   Tarkista, että käännetyt blogiartikkelit näkyvät oikein `/en/blog/` -sivulla.
-        -   Varmista, että artikkelien kuvat, muotoilut ja tagit toimivat englanninkielisessä versiossa.
-        -   Varmista, että artikkelin metatiedot ja SEO-ominaisuudet on käännetty oikein.
+-   [x] **Milestone 8: Blogitekstien kääntäminen (Osa 1 - Korkean prioriteetin artikkelit)**
+    -   Käännettiin 5 korkean prioriteetin blogiartikkelia (määritelty Milestone 6:ssa hakusana-analyysin perusteella).
+    -   Käännös sisälsi:
+        -   `.fi.md`-tiedostojen kopioinnin `.en.md`-muotoon.
+        -   Frontmatter-metatietojen (otsikko, kuvaus, tagit, jne.) kääntämisen.
+        -   Artikkelin leipätekstin kääntämisen muotoilut säilyttäen.
+        -   Kuvaviittausten toimivuuden varmistamisen.
+        -   Tagien ja muiden luokittelutietojen kääntämisen.
+    -   Blogilistaussivut eivät vaatineet kielispesifejä muutoksia tämän osalta.
+    -   **Testaus:**
+        -   Käännetyt blogiartikkelit näkyvät oikein `/en/blog/` -sivulla.
+        -   Artikkelien kuvat, muotoilut ja tagit toimivat englanninkielisessä versiossa.
+        -   Artikkelin metatiedot ja SEO-ominaisuudet on käännetty oikein.
+    *Muistiinpanot (AI): Milestone 8 suoritettu. Viisi (5) korkean prioriteetin blogiartikkelia (määritelty Milestone 6:ssa) on käännetty englanniksi. Käännetyt artikkelit ovat: `empatia-palvelumuotoilussa.en.md`, `jakob-nielsen-ja-kaytettavyyden-periaatteet.en.md`, `kayttoliittymasuunnittelu-10-huomiota.en.md`, `prototyyppi-ideasta-toimivaksi-tuotteeksi.en.md`, ja `verkkopalvelun-konseptointi.en.md`.*
 
--   [ ] **Milestone 9: Blogitekstien kääntäminen (Osa 2 - Seuraava erä artikkeleita)**
-    -   Valitse seuraavat 5-10 blogiartikkelia käännettäväksi toisessa vaiheessa.
-    -   Käännä nämä artikkelit samalla prosessilla kuin Milestone 8:ssa:
-        -   Kopioi jokainen `.fi.md`-tiedosto vastaavaksi `.en.md`-tiedostoksi.
-        -   Käännä frontmatter-metatiedot (otsikko, kuvaus, tagit, jne.).
-        -   Käännä artikkelin leipäteksti ylläpitäen alkuperäisen muotoilun.
-        -   Varmista, että kuvaviittaukset toimivat oikein.
-        -   Käännä tagit ja muut luokittelutiedot.
-    -   Tarkista mahdolliset viittaukset toisiin artikkeleihin ja päivitä ne tarvittaessa.
-    -   **Testausohjeet:**
-        -   Toista samat testit kuin Milestone 8:ssa.
-        -   Varmista, että artikkelien väliset viittaukset toimivat oikein englanninkielisessä versiossa.
+*Huom: Loput blogiartikkeleiden käännöstehtävät (keski- ja matalan prioriteetin artikkelit, alun perin Milestone 9 ja 10) on siirretty erilliseen suunnitelmatiedostoon: `BLOG_ARTICLES_TRANSLATION_PROJECT.md`.*
 
--   [ ] **Milestone 10: Blogitekstien kääntäminen (Osa 3 - Loput artikkelit)**
-    -   Käännä kaikki jäljellä olevat blogiartikkelit:
-        -   Kopioi jokainen `.fi.md`-tiedosto vastaavaksi `.en.md`-tiedostoksi.
-        -   Käännä frontmatter-metatiedot (otsikko, kuvaus, tagit, jne.).
-        -   Käännä artikkelin leipäteksti ylläpitäen alkuperäisen muotoilun.
-        -   Varmista, että kuvaviittaukset toimivat oikein.
-        -   Käännä tagit ja muut luokittelutiedot.
-    -   Tarkista mahdolliset arkistointi- tai kategoriasivu ja varmista, että ne toimivat molemmilla kielillä.
-    -   **Testausohjeet:**
-        -   Varmista, että kaikki artikkelit näkyvät `/en/blog/` -sivulla.
-        -   Tarkista kategoriat, tagit ja arkistot molemmilla kielillä.
-        -   Varmista, että blogin hakutoiminto (jos sellainen on) toimii molemmilla kielillä.
-
--   [ ] **Milestone 11: Testaus, optimointi ja tuotantoon vienti**
+-   [ ] **Milestone 9: Testaus, optimointi ja tuotantoon vienti**
     -   Suorita kattava testaus koko sivustolla molemmilla kielillä:
         -   Käy läpi kaikki sivut ja varmista, että sisältö näkyy oikein.
         -   Tarkista kaikki navigaatioelementit, linkit ja toiminnallisuudet.

@@ -5,8 +5,7 @@ import { SEO } from 'astro-seo'; // Import SEO component
 import type { TwitterCardType } from 'astro-seo'; // Import specific type for Twitter card
 import Footer from '../components/Footer.astro'; // Import the new Footer component
 import Nav from '../components/Nav.astro';
-import { getLangFromUrl } from '../i18n/utils'; // Import i18n utility
-import { getRelativeLocaleUrl } from 'astro:i18n'; // Astro i18n utilities
+import { getLangFromUrl, getLanguageSwitchUrl } from '../i18n/utils'; // Import i18n utility including our new function
 
 // Define props for dynamic title and description
 interface Props {
@@ -80,23 +79,6 @@ const organizationSchema = {
     ]
 };
 
-// Muodostetaan polku ilman kieliprefiksiä hreflang-linkkejä varten
-// getLocaleAstroStaticPath-funktio palauttaa polun ilman kieliprefiksiä.
-// Tai, jos Astro.params.slug tms. on saatavilla, sitä voi käyttää.
-// Yksinkertaistetaan: Astro.url.pathname sisältää jo kieliprefiksin.
-// Poistetaan se manuaalisesti, jos se on olemassa.
-
-let pathWithoutLocale = Astro.url.pathname;
-if (pathWithoutLocale.startsWith(`/${lang}`)) {
-    pathWithoutLocale = pathWithoutLocale.substring(`/${lang}`.length);
-}
-// Varmistetaan, että polku alkaa '/' jos se ei ole tyhjä (etusivu)
-if (pathWithoutLocale === '') {
-    pathWithoutLocale = '/';
-} else if (!pathWithoutLocale.startsWith('/')) {
-    pathWithoutLocale = `/${pathWithoutLocale}`;
-}
-
 ---
 <!DOCTYPE html>
 <html lang={lang}> {/* Käytetään tunnistettua kieltä */}
@@ -125,18 +107,18 @@ if (pathWithoutLocale === '') {
     {/* Optional: Add SVG icon link if you have one */}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
 
-    {/* hreflang-linkit */}
+    <!-- hreflang links - now using getLanguageSwitchUrl which handles blog posts correctly -->
     {supportedLocales.map(locale => (
         <link
             rel="alternate"
             hreflang={locale}
-            href={new URL(getRelativeLocaleUrl(locale, pathWithoutLocale === '/' && locale === defaultLocale ? undefined : pathWithoutLocale), Astro.site).toString()}
+            href={new URL(getLanguageSwitchUrl(Astro.url, locale as keyof typeof import('../i18n/ui').ui), Astro.site).toString()}
         />
     ))}
     <link
         rel="alternate"
         hreflang="x-default"
-        href={new URL(getRelativeLocaleUrl(defaultLocale, pathWithoutLocale === '/' && defaultLocale === defaultLocale ? undefined : pathWithoutLocale), Astro.site).toString()}
+        href={new URL('/', Astro.site).toString()}
     />
 
     <!-- Preload fonts for better performance -->

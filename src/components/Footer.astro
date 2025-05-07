@@ -1,7 +1,7 @@
 ---
 // src/components/Footer.astro
 import { ui, defaultLang, languages } from '../i18n/ui';
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { getLangFromUrl, useTranslations, getRelativeLocaleUrl } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -10,7 +10,7 @@ const t = useTranslations(lang);
     <div class="container">
         <div class="footer__grid">
             <div class="footer__brand">
-                <a href={`/${lang}/`} class="footer__logo">
+                <a href={getRelativeLocaleUrl(lang, '/')} class="footer__logo">
                     <img src="/images/brand/logo.webp" alt={t('site.title')} width="140" height="32"/>
                 </a>
                 <p>{t('footer.description')}</p>
@@ -20,11 +20,11 @@ const t = useTranslations(lang);
             <div class="footer__links">
                 <h4>{t('footer.siteLinks')}</h4>
                 <ul>
-                    <li><a href={`/${lang}/`}>{t('footer.home')}</a></li>
-                    <li><a href={`/${lang}/services`}>{t('footer.services')}</a></li>
-                    <li><a href={`/${lang}/references`}>{t('footer.references')}</a></li>
-                    <li><a href={`/${lang}/blog`}>{t('footer.blog')}</a></li>
-                    <li><a href={`/${lang}/contact`}>{t('footer.contact')}</a></li>
+                    <li><a href={getRelativeLocaleUrl(lang, '/')}>{t('footer.home')}</a></li>
+                    <li><a href={getRelativeLocaleUrl(lang, '/services')}>{t('footer.services')}</a></li>
+                    <li><a href={getRelativeLocaleUrl(lang, '/references')}>{t('footer.references')}</a></li>
+                    <li><a href={getRelativeLocaleUrl(lang, '/blog')}>{t('footer.blog')}</a></li>
+                    <li><a href={getRelativeLocaleUrl(lang, '/contact')}>{t('footer.contact')}</a></li>
                 </ul>
             </div>
             <div class="footer__links">
