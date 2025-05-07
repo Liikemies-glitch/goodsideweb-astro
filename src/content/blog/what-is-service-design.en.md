@@ -55,4 +55,4 @@ The goal is to improve both the value provided to service users and the efficien
 
 Service design can be applied to any service sector, such as healthcare, retail, or public services. The Good Side helps clients develop services in a customer-centric manner by utilizing service design principles.
 
-Want to improve your company's services through service design? [Contact us](/contact) and let's explore the opportunities to make your SaaS service more user-friendly and efficient together. 
+Want to improve your company's services through service design? [Contact us](/en/contact) and let's explore the opportunities to make your SaaS service more user-friendly and efficient together. 

@@ -65,4 +65,4 @@ Clear processes, responsibilities, and a **design system** are key. **The Good S
 
 **Does your SaaS company need to streamline design processes and unify its visual identity?**
 
-[Contact us to discuss further](/contact). 
+[Contact us to discuss further](/en/contact). 

@@ -68,4 +68,4 @@ When search engines understand the site structure, users can also find what they
 
 At their best, user experience and search engine optimization support each other perfectly. In our design consulting for SaaS companies, we combine these elements through user journeys and user interface design.
 
-Would you like to know how we could improve your company's web presence and user experience simultaneously? [Contact us](/contact) and let's discuss further how we can help your SaaS company grow. 
+Would you like to know how we could improve your company's web presence and user experience simultaneously? [Contact us](/en/contact) and let's discuss further how we can help your SaaS company grow. 
