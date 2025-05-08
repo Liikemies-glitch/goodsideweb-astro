@@ -6,7 +6,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://www.goodside.fi',
+  site: 'https://goodside.fi/',
   i18n: {
     defaultLocale: 'fi',
     locales: ['fi', 'en'],
@@ -16,8 +16,11 @@ export default defineConfig({
   },
   integrations: [
     react(),
-    sitemap(),
+    sitemap()
   ],
+  redirects: {
+    '/in-english/': '/en/'
+  },
   vite: {
     plugins: [tailwindcss()]
   }
