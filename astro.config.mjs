@@ -20,7 +20,8 @@ export default defineConfig({
   ],
   redirects: {
     '/in-english/': '/en/',
-    '/fi/in-english/': '/en/'
+    '/fi/in-english/': '/en/',
+    '/palvelumuotoilu-kuntien-ja-kaupunkien-kehittamisen-tukena/': '/palvelumuotoilu-kuntien-kehittamisessa/'
   },
   vite: {
     plugins: [tailwindcss()]

@@ -15,7 +15,7 @@ Käytä aina tätä frontmatter-rakennetta, korvaten vain sisältö tarpeen muka
 title: "Artikkelin otsikko"
 description: "Lyhyt ytimekäs kuvaus, noin 150-200 merkkiä pitkä."
 pubDate: "YYYY-MM-DD" # Käytä nykyistä päivämäärää
-heroImage: ../../assets/blog/images/kategoria-aihe/featured.webp # Käytä olemassa olevaa kuvaa
+heroImage: ../../assets/blog/images/kategoria-aihe/featured.webp # Käytä olemassa olevaa kuvaa, valitse satunnaisesti joku kategoria
 author: "Mikki Aalto-Ylevä" # PAKOLLINEN, älä muuta
 categories: ["Kategoria1", "Kategoria2"] # Valitse sopivat kategoriat
 tags: ["tag1", "tag2", "tag3"] # ENINTÄÄN 3 tagia
@@ -88,3 +88,11 @@ Haluatko kuulla lisää digitaalisesta transformaatiosta tai keskustella, miten 
 1. 301-uudelleenohjaukset on konfiguroitu oikein `astro.config.mjs`-tiedostoon
 2. Uudet blogisisällöt vastaavat aidosti alkuperäistä aihetta, jotta hakukoneet tulkitsevat ne asianmukaisiksi korvaajiksi
 3. Kuvalähteet (heroImage) ovat olemassa ja toimivia 
+
+Lisäksi tässä lista avainsanoista, jotka ovat suomessa performoineet hyvin. Käytä jotain näistä, jos ne sopivat aiheeseen:
+
+- käyttökokemus
+- konseptointi
+- käytettävyys
+- nielsenin heuristiikka
+- prototyyppi
