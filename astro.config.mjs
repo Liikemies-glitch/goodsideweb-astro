@@ -22,7 +22,8 @@ export default defineConfig({
     '/in-english/': '/en/',
     '/fi/in-english/': '/en/',
     '/palvelumuotoilu-kuntien-ja-kaupunkien-kehittamisen-tukena/': '/fi/blog/palvelumuotoilu-kuntien-kehittamisessa/',
-    '/fi/palvelumuotoilu-kuntien-ja-kaupunkien-kehittamisen-tukena/': '/fi/blog/palvelumuotoilu-kuntien-kehittamisessa/'
+    '/fi/palvelumuotoilu-kuntien-ja-kaupunkien-kehittamisen-tukena/': '/fi/blog/palvelumuotoilu-kuntien-kehittamisessa/',
+    '/design-thinking-prosessi-joka-sytyttaa-luovuuden-liekin/': '/fi/blog/design-thinking-prosessi-joka-sytyttaa-luovuuden-liekinfi/'
   },
   vite: {
     plugins: [tailwindcss()]
