@@ -19,7 +19,8 @@ export default defineConfig({
     sitemap()
   ],
   redirects: {
-    '/in-english/': '/en/'
+    '/in-english/': '/en/',
+    '/fi/in-english/': '/en/'
   },
   vite: {
     plugins: [tailwindcss()]
