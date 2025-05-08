@@ -23,7 +23,12 @@ export default defineConfig({
     '/fi/in-english/': '/en/',
     '/palvelumuotoilu-kuntien-ja-kaupunkien-kehittamisen-tukena/': '/fi/blog/palvelumuotoilu-kuntien-kehittamisessa/',
     '/fi/palvelumuotoilu-kuntien-ja-kaupunkien-kehittamisen-tukena/': '/fi/blog/palvelumuotoilu-kuntien-kehittamisessa/',
-    '/design-thinking-prosessi-joka-sytyttaa-luovuuden-liekin/': '/fi/blog/design-thinking-prosessi-joka-sytyttaa-luovuuden-liekinfi/'
+    '/design-thinking-prosessi-joka-sytyttaa-luovuuden-liekin/': '/fi/blog/design-thinking-prosessi-joka-sytyttaa-luovuuden-liekinfi/',
+    '/blogi/': '/fi/blog/',
+    '/hyvan-kehityskeskustelun-malli/': '/fi/blog/',
+    '/insinoorilahtoisyys-uhka-vai-mahdollisuus/': '/fi/blog/insinoorilahtoisyys-uhka-vai-mahdollisuusfi/',
+    '/empatia-palvelumuotoilussa/': '/fi/blog/empatia-palvelumuotoilussafi/',
+    '/kaytettavyys-ja-ergonomia-sujuvan-ja-terveellisen-tyoskentelyn-perusta/': '/fi/blog/kaytettavyys-ja-ergonomia-sujuvan-ja-terveellisen-tyoskentelyn-perustafi/'
   },
   vite: {
     plugins: [tailwindcss()]
