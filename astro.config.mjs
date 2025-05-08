@@ -21,8 +21,8 @@ export default defineConfig({
   redirects: {
     '/in-english/': '/en/',
     '/fi/in-english/': '/en/',
-    '/palvelumuotoilu-kuntien-ja-kaupunkien-kehittamisen-tukena/': '/fi/blog/',
-    '/fi/palvelumuotoilu-kuntien-ja-kaupunkien-kehittamisen-tukena/': '/fi/blog/'
+    '/palvelumuotoilu-kuntien-ja-kaupunkien-kehittamisen-tukena/': '/fi/blog/palvelumuotoilu-kuntien-kehittamisessa/',
+    '/fi/palvelumuotoilu-kuntien-ja-kaupunkien-kehittamisen-tukena/': '/fi/blog/palvelumuotoilu-kuntien-kehittamisessa/'
   },
   vite: {
     plugins: [tailwindcss()]

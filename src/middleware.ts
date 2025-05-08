@@ -33,9 +33,10 @@ export const onRequest = defineMiddleware(async (context, next) => {
   // Esim. /services -> /fi/services
   // Varmistetaan, että polun alussa on vain yksi kauttaviiva, vaikka originalPathname olisi vain "/" (joka on jo käsitelty)
   // tai jos se alkaa kauttaviivalla.
-  const normalizedPath = originalPathname.startsWith('/') ? originalPathname : `/${originalPathname}`;
-  const targetPath = `/${defaultLocale}${normalizedPath}`;
+  // const normalizedPath = originalPathname.startsWith('/') ? originalPathname : `/${originalPathname}`;
+  // const targetPath = `/${defaultLocale}${normalizedPath}`;
   
-  console.log(`Middleware: Redirecting from '${originalPathname}' to '${targetPath}' (default locale redirect)`);
-  return redirect(targetPath, 307); // Käytetään 307 (Temporary Redirect) tai 301 (Permanent) tarpeen mukaan
+  // console.log(`Middleware: Redirecting from '${originalPathname}' to '${targetPath}' (default locale redirect)`);
+  // return redirect(targetPath, 307); // Käytetään 307 (Temporary Redirect) tai 301 (Permanent) tarpeen mukaan
+  return next(); // Sallitaan pyynnön jatkaa ilman automaattista /fi/ ohjausta
 }); 

@@ -39,7 +39,7 @@ Jokaisen blogiartikkelin loppuun tulee lisätä call-to-action, joka ohjaa käyt
 
 Haluatko kuulla lisää aiheesta tai keskustella, miten voimme auttaa organisaatiotasi [aiheeseen liittyvä asia]? Kokeneet asiantuntijamme auttavat sinua mielellään.
 
-[Ota yhteyttä asiantuntijoihimme tästä](/contact) ja kerro tarpeistasi - palaamme asiaan pian!
+[Ota yhteyttä asiantuntijoihimme tästä](/fi/contact) ja kerro tarpeistasi - palaamme asiaan pian!
 ```
 
 ## Prosessi uuden blogiartikkelin luomiseen ja uudelleenohjaukseen
