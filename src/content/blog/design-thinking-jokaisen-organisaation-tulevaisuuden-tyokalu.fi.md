@@ -85,4 +85,4 @@ Tulevaisuuden menestyvät **SaaS**-yritykset ovat niitä, jotka integroivat **de
 
 **Haluatko keskustella, miten design thinking voisi auttaa teidän SaaS-yritystänne saavuttamaan seuraavan kasvuvaiheen?**
 
-[Ota yhteyttä ja keskustellaan lisää](/contact).
+[Ota yhteyttä ja keskustellaan lisää](/fi/contact).

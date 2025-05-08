@@ -81,6 +81,6 @@ MVP-lähestymistavan avulla SaaS-yritykset voivat:
 
 MVP ei tarkoita keskeneräistä tai heikkolaatuista tuotetta, vaan toimivaa ja käyttäjille arvoa tuovaa versiota, joka toimii perustana tuotteen jatkokehitykselle.
 
-Haluatko kehittää SaaS-tuotteesi MVP:n tehokkaasti ja käyttäjälähtöisesti? [Ota yhteyttä The Good Sideen](/contact) ja keskustellaan, miten voimme auttaa tuotteesi menestymään markkinoilla.
+Haluatko kehittää SaaS-tuotteesi MVP:n tehokkaasti ja käyttäjälähtöisesti? [Ota yhteyttä The Good Sideen](/fi/contact) ja keskustellaan, miten voimme auttaa tuotteesi menestymään markkinoilla.
 
   **Mikki Aalto-Ylevä** 040 869 8887 mikki@goodside.fi

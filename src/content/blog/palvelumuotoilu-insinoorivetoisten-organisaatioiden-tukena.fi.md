@@ -109,4 +109,4 @@ Palvelumuotoilun menetelmät voivat auttaa insinöörejä ja suunnittelijoita ty
 
 The Good Side tarjoaa design-konsultointia, joka auttaa erityisesti SaaS-yrityksiä ja teknologiakeskeisiä organisaatioita yhdistämään teknisen osaamisen ja käyttäjälähtöisen suunnittelun. Yhdistämällä tuotepositioinnin, käyttäjäpolkujen suunnittelun ja UI/UX-osaamisen autamme insinöörivetoisia organisaatioita luomaan tuotteita ja palveluita, jotka sekä hyödyntävät teknologian potentiaalia että tarjoavat erinomaisen käyttäjäkokemuksen.
 
-Haluatko keskustella, miten voisimme auttaa organisaatiotasi yhdistämään teknisen osaamisen ja käyttäjälähtöisyyden? [Ota yhteyttä asiantuntijoihimme!](/contact)
+Haluatko keskustella, miten voisimme auttaa organisaatiotasi yhdistämään teknisen osaamisen ja käyttäjälähtöisyyden? [Ota yhteyttä asiantuntijoihimme!](/fi/contact)

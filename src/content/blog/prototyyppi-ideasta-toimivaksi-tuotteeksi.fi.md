@@ -238,4 +238,4 @@ Prototyyppien avulla SaaS-yritykset voivat:
 
 Erilaisten prototyyppien käyttö kehityksen eri vaiheissa tarjoaa monipuolisia näkökulmia ja mahdollisuuksia. Vaikka prototyyppien luomisessa on haasteita, oikeilla työkaluilla ja lähestymistavoilla ne voidaan ratkaista tehokkaasti.
 
-[Ota yhteyttä The Good Sideen](/contact) ja tehosta tuotekehitysprosessiasi ammattimaisella prototyyppisuunnittelulla.
+[Ota yhteyttä The Good Sideen](/fi/contact) ja tehosta tuotekehitysprosessiasi ammattimaisella prototyyppisuunnittelulla.

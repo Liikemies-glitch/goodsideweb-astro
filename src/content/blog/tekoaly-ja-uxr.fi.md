@@ -85,4 +85,4 @@ Haluatko hyödyntää tekoälyä SaaS-tuotteesi käyttäjätutkimuksessa? Täss�
 4. Paranna käyttäjäymmärrystä laajemman otannan avulla
 5. Varmista aina, että laatu säilyy ja tulokset validoidaan
 
-[Ota yhteyttä The Good Sideen](/contact) keskustellaksesi, miten voimme auttaa SaaS-yrityksesi käyttäjätutkimusta ja -ymmärrystä tekoälyavusteisten menetelmien avulla.
+[Ota yhteyttä The Good Sideen](/fi/contact) keskustellaksesi, miten voimme auttaa SaaS-yrityksesi käyttäjätutkimusta ja -ymmärrystä tekoälyavusteisten menetelmien avulla.

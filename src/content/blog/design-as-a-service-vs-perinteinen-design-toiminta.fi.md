@@ -61,4 +61,4 @@ Tämä kokonaisvaltainen lähestymistapa varmistaa, että design ei ole vain est
 
 **Haluatko kuulla lisää siitä, miten The Good Side voi auttaa SaaS-yritystäsi kasvamaan designin avulla?**
 
-[Ota yhteyttä ja keskustellaan lisää](/contact).
+[Ota yhteyttä ja keskustellaan lisää](/fi/contact).

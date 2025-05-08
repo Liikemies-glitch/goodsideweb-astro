@@ -88,4 +88,4 @@ Palvelumuotoilu on välttämätön työkalu jokaiselle, joka haluaa kehittää S
 
 Jos haluat varmistaa, että kehittämäsi SaaS-tuote ei ole pelkästään sinun visiosi toteutus, vaan myös toimiva ja haluttu ratkaisu markkinoille, The Good Side tarjoaa design-konsultointia SaaS-yrityksille juuri tähän tarpeeseen.
 
-[Ota yhteyttä](/contact) ja kerro meille, miten voimme auttaa SaaS-tuotteesi menestymään palvelumuotoilun avulla.
+[Ota yhteyttä](/fi/contact) ja kerro meille, miten voimme auttaa SaaS-tuotteesi menestymään palvelumuotoilun avulla.

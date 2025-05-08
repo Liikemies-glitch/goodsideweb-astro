@@ -62,4 +62,4 @@ Kun design on olennainen osa ohjelmistokehitysprosessia, syntyy useita etuja:
 
 The Good Side -design-konsultointi auttaa SaaS-yrityksiä yhdistämään tuotepositioinnin, käyttäjäpolut ja UI/UX-suunnittelun saumattomasti ohjelmistokehitysprosessiin. Tämä mahdollistaa tehokkaamman kehityksen ja paremmat lopputulokset.
 
-Haluatko kuulla, miten voisimme auttaa sinun SaaS-yritystäsi kehittämään tehokkaammin käyttäjälähtöisempiä ohjelmistoja? [Ota yhteyttä asiantuntijoihimme!](/contact)
+Haluatko kuulla, miten voisimme auttaa sinun SaaS-yritystäsi kehittämään tehokkaammin käyttäjälähtöisempiä ohjelmistoja? [Ota yhteyttä asiantuntijoihimme!](/fi/contact)

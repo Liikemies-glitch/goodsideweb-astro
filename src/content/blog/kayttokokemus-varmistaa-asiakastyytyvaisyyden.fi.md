@@ -103,4 +103,4 @@ Ensivaikutelman, käytön sujuvuuden, personoinnin, asiakastuen ja jatkuvan kehi
 
 Yritykset, jotka panostavat systemaattisesti näihin tekijöihin, saavuttavat vahvemman asiakassuhteen ja merkittävän kilpailuedun. SaaS-yrityksille tämä tarkoittaa korkeampaa asiakaskohtaista tuottoa ja kestävämpää kasvua.
 
-[Ota yhteyttä](/contact) ja keskustellaan, miten voimme auttaa yrityksesi käyttökokemuksen ja asiakastyytyväisyyden kehittämisessä.
+[Ota yhteyttä](/fi/contact) ja keskustellaan, miten voimme auttaa yrityksesi käyttökokemuksen ja asiakastyytyväisyyden kehittämisessä.

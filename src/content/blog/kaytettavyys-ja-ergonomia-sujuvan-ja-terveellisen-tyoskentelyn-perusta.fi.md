@@ -106,4 +106,4 @@ Käytettävyyden ja ergonomian kehittäminen on strateginen investointi, joka ma
 
 The Good Side tarjoaa SaaS-yrityksille design-konsultointia, joka ottaa huomioon sekä digitaalisen käytettävyyden että ergonomian periaatteet, jotta käyttäjäpolut ja käyttöliittymät tukevat optimaalista työntekoa.
 
-[Ota yhteyttä](/contact) ja keskustellaan, miten voimme auttaa organisaatiotasi kehittämään käytettävyyden ja ergonomian välistä synergiaa.
+[Ota yhteyttä](/fi/contact) ja keskustellaan, miten voimme auttaa organisaatiotasi kehittämään käytettävyyden ja ergonomian välistä synergiaa.

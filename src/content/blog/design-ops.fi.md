@@ -64,4 +64,4 @@ Selkeät prosessit, vastuut ja **design system** ovat avainasemassa. **The Good 
 
 **Kaipaako SaaS-yrityksenne design-prosessit tehostamista ja visuaalinen ilme yhtenäistämistä?**
 
-[Ota yhteyttä ja keskustellaan lisää](/contact).
+[Ota yhteyttä ja keskustellaan lisää](/fi/contact).

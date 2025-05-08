@@ -124,4 +124,4 @@ Onnistunut digipalvelun uudistus edellyttää tasapainoa useilla eri osa-alueill
 
 The Good Side auttaa SaaS-yrityksiä digipalveluiden uudistamisessa yhdistämällä tuotepositioinnin, käyttäjäpolut ja UI/UX-suunnittelun saumattomaksi kokonaisuudeksi. Suunnittelemme digipalvelusi uudistuksen, joka puhuttelee käyttäjiä ja tukee liiketoimintatavoitteitasi.
 
-Harkitsetko digipalvelusi uudistamista? [Ota yhteyttä](/contact) ja keskustellaan, miten voisimme auttaa sinua suunnittelemaan menestyksekäs uudistusprosessi.
+Harkitsetko digipalvelusi uudistamista? [Ota yhteyttä](/fi/contact) ja keskustellaan, miten voisimme auttaa sinua suunnittelemaan menestyksekäs uudistusprosessi.

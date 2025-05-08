@@ -68,4 +68,4 @@ The Good Siden kiinteähintainen design-konsultointi tarjoaa SaaS-yrityksille:
 - Laadukkaat UI/UX-ratkaisut
 - Nopean reagoinnin muutoksiin
 
-[Ota yhteyttä](/contact) ja keskustellaan, miten voimme auttaa SaaS-yrityksesi tuotekehitystä kiinteällä kuukausihinnoittelullamme.
+[Ota yhteyttä](/fi/contact) ja keskustellaan, miten voimme auttaa SaaS-yrityksesi tuotekehitystä kiinteällä kuukausihinnoittelullamme.

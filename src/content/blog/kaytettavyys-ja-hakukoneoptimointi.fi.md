@@ -68,4 +68,4 @@ Kun hakukoneet ymmärtävät sivuston rakenteen, myös käyttäjät löytävät 
 
 Parhaimmillaan käyttäjäkokemus ja hakukoneoptimointi tukevat toisiaan täydellisesti. Design-konsultoinnissamme SaaS-yrityksille yhdistämme nämä elementit käyttäjäpolkujen ja käyttöliittymäsuunnittelun avulla.
 
-Haluatko tietää, miten voisimme parantaa yrityksesi verkkonäkyvyyttä ja käyttäjäkokemusta samanaikaisesti? [Ota yhteyttä](/contact) ja keskustellaan lisää siitä, miten voimme auttaa SaaS-yrityksesi kasvussa.
+Haluatko tietää, miten voisimme parantaa yrityksesi verkkonäkyvyyttä ja käyttäjäkokemusta samanaikaisesti? [Ota yhteyttä](/fi/contact) ja keskustellaan lisää siitä, miten voimme auttaa SaaS-yrityksesi kasvussa.

@@ -122,4 +122,4 @@ Palvelumuotoilun hyödyt kuntien ja kaupunkien kehityksessä:
 
 The Good Side tarjoaa design-konsultointia myös julkiselle sektorille. Autamme kaupunkeja ja kuntia hyödyntämään palvelumuotoilun menetelmiä kehittääkseen parempia, käyttäjäkeskeisiä palveluita ja kaupunkitiloja. Yhdistämällä tuotepositioinnin, käyttäjäpolkujen suunnittelun ja UI/UX-designin autamme julkisia organisaatioita luomaan palveluita, jotka palvelevat asukkaita tehokkaasti ja parantavat kaupunkiympäristön käytettävyyttä.
 
-Haluatko keskustella, miten voisimme auttaa kuntaanne tai kaupunkianne kehittämään palveluita palvelumuotoilun avulla? [Ota yhteyttä asiantuntijoihimme!](/contact)
+Haluatko keskustella, miten voisimme auttaa kuntaanne tai kaupunkianne kehittämään palveluita palvelumuotoilun avulla? [Ota yhteyttä asiantuntijoihimme!](/fi/contact)

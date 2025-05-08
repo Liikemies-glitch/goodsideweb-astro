@@ -121,4 +121,4 @@ Toimenpidesuositukset SaaS-yrityksille:
 3. Validoi design-muutokset käyttäjätesteillä ennen käyttöönottoa
 4. Kehitä tuotetta kokonaisvaltaisesti, ei yksittäisinä irrallisina ominaisuuksina
 
-Tarvitsetko apua SaaS-tuotteesi designin yhtenäistämisessä tai design systemin kehittämisessä? [Ota yhteyttä The Good Siden asiantuntijoihin](/contact) ja keskustellaan, miten voimme auttaa rakentamaan johdonmukaisen ja käyttäjäkeskeisen designstrategian tuotteellesi.
+Tarvitsetko apua SaaS-tuotteesi designin yhtenäistämisessä tai design systemin kehittämisessä? [Ota yhteyttä The Good Siden asiantuntijoihin](/fi/contact) ja keskustellaan, miten voimme auttaa rakentamaan johdonmukaisen ja käyttäjäkeskeisen designstrategian tuotteellesi.

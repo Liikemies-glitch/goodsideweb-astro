@@ -80,4 +80,4 @@ Hyödyntämällä **käyttäjätutkimusta**, **yhteissuunnittelua**, **prototyyp
 
 Good Side auttaa **SaaS**-yrityksiä ottamaan asiakkaat mukaan kehitysprosessiin ja muuttamaan **asiakasymmärryksen** konkreettisiksi tuloksiksi yhdistämällä **tuotepositioinnin**, **käyttäjäpolut** ja **UI/UX-suunnittelun**. Jos haluat kuulla, miten voimme auttaa teitä rakentamaan asiakaslähtöisempää ja menestyvämpää SaaS-palvelua, ota yhteyttä.
 
-[Pyydä maksuton konsultaatio](/contact)
+[Pyydä maksuton konsultaatio](/fi/contact)

@@ -260,4 +260,4 @@ Aloita konversio-optimointi pienin, mitattavin askelin:
 3. Kerää ja analysoi dataa jatkuvasti
 4. Opi jokaisesta testistä ja kehitä toimintaa sen perusteella
 
-[Ota yhteyttä](/contact) ja keskustellaan, miten voimme auttaa yrityksesi konversio-optimoinnissa ja liiketoiminnan kasvattamisessa. Konversio-optimointi on matka, joka voi muuttaa koko liiketoimintasi suunnan.
+[Ota yhteyttä](/fi/contact) ja keskustellaan, miten voimme auttaa yrityksesi konversio-optimoinnissa ja liiketoiminnan kasvattamisessa. Konversio-optimointi on matka, joka voi muuttaa koko liiketoimintasi suunnan.

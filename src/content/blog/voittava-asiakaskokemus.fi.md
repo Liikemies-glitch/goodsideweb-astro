@@ -157,4 +157,4 @@ Meidän lähestymistapamme yhdistää tuotepositioinnin, käyttäjäpolkujen opt
 * Kehittämään käyttöliittymää käytettävyyden maksimoimiseksi
 * Luomaan mittarit asiakaskokemuksen jatkuvaan seurantaan
 
-[Ota yhteyttä](/contact) ja keskustellaan, miten voimme auttaa SaaS-yritystäsi rakentamaan voittavaa asiakaskokemusta, joka varmistaa kestävän kilpailuedun.
+[Ota yhteyttä](/fi/contact) ja keskustellaan, miten voimme auttaa SaaS-yritystäsi rakentamaan voittavaa asiakaskokemusta, joka varmistaa kestävän kilpailuedun.

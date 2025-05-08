@@ -107,4 +107,4 @@ Strateginen suunnittelu on merkittävä kasvun mahdollistaja SaaS-liiketoiminnas
 
 Suunnittelu ei ole vain esteettistä tai teknistä; **se on strateginen työkalu, joka voi ratkaisevasti vaikuttaa SaaS-yrityksen menestykseen**. Yrityksille, jotka haluavat kasvaa ja menestyä pitkällä aikavälillä, strategiseen UI/UX-suunnitteluun panostaminen on välttämätöntä.
 
-Haluatko keskustella miten The Good Side voi auttaa SaaS-yrityksesi kasvussa strategisen design-konsultoinnin avulla? [Ota yhteyttä asiantuntijoihimme](/contact) ja selvitetään, miten voimme auttaa sinua rakentamaan käyttäjäkeskeisiä tuotteita, jotka kiihdyttävät kasvuasi.
+Haluatko keskustella miten The Good Side voi auttaa SaaS-yrityksesi kasvussa strategisen design-konsultoinnin avulla? [Ota yhteyttä asiantuntijoihimme](/fi/contact) ja selvitetään, miten voimme auttaa sinua rakentamaan käyttäjäkeskeisiä tuotteita, jotka kiihdyttävät kasvuasi.

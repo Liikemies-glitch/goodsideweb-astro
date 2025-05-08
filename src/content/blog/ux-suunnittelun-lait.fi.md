@@ -156,4 +156,4 @@ UX-suunnittelun lait ja periaatteet tarjoavat tieteellisesti todistetun perustan
 
 Parhaimmillaan nämä periaatteet toimivat suunnittelijan työkalupakkina, johon voi tukeutua päätöksenteossa ja jonka avulla voi perustella suunnitteluratkaisuja.
 
-Haluatko varmistaa, että SaaS-tuotteesi noudattaa UX-suunnittelun parhaita käytäntöjä? [Ota yhteyttä](/contact) The Good Siden asiantuntijoihin ja kehitetään tuotteesi käyttökokemusta yhdessä.
+Haluatko varmistaa, että SaaS-tuotteesi noudattaa UX-suunnittelun parhaita käytäntöjä? [Ota yhteyttä](/fi/contact) The Good Siden asiantuntijoihin ja kehitetään tuotteesi käyttökokemusta yhdessä.

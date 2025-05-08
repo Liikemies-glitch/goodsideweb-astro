@@ -92,4 +92,4 @@ The Good Side tarjoaa design-konsultointia SaaS-yrityksille, jossa hyödynnämme
 
 Yritykset, jotka omaksuvat tekoälyn käyttäjätestauksessa, luovat merkittävää kilpailuetua kehittämällä tuotteita, jotka vastaavat tarkasti käyttäjien tarpeita. Ne, jotka jäävät jälkeen, saattavat huomata olevansa altavastaajia yhä digitalisoituvammassa maailmassa.
 
-[Ota yhteyttä](/contact) ja keskustellaan, miten tekoälyavusteinen käyttäjätestaus voisi hyödyttää yrityksesi tuotekehitystä ja kasvua.
+[Ota yhteyttä](/fi/contact) ja keskustellaan, miten tekoälyavusteinen käyttäjätestaus voisi hyödyttää yrityksesi tuotekehitystä ja kasvua.

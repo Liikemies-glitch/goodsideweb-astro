@@ -170,4 +170,4 @@ Service blueprint tarjoaa SaaS-yrityksille strategisen työkalun, joka auttaa:
 
 The Good Side tarjoaa design-konsultointia SaaS-yrityksille, jotka haluavat hyödyntää service blueprintia tuotekehityksensä tehostamisessa ja käyttäjäkokemuksen parantamisessa.
 
-[Ota yhteyttä](/contact) keskustellaksesi, miten voimme auttaa yrityksesi kasvua service blueprintin ja muiden palvelumuotoilun työkalujen avulla.
+[Ota yhteyttä](/fi/contact) keskustellaksesi, miten voimme auttaa yrityksesi kasvua service blueprintin ja muiden palvelumuotoilun työkalujen avulla.

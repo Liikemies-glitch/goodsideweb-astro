@@ -278,4 +278,4 @@ Yhdistämme viestinnän kehittämisessä kolme kriittistä osa-aluetta SaaS-yrit
 2. **Käyttäjäpolut** - Organisaation yhteinen näkemys asiakaskokemuksesta
 3. **UI/UX-suunnittelu** - Visuaalinen ja käyttäjäkeskeinen sisäinen viestintä
 
-**[Ota yhteyttä, niin keskustellaan miten voimme tehostaa SaaS-yrityksesi sisäistä viestintää ja kiihdyttää kasvua](/contact)**
+**[Ota yhteyttä, niin keskustellaan miten voimme tehostaa SaaS-yrityksesi sisäistä viestintää ja kiihdyttää kasvua](/fi/contact)**

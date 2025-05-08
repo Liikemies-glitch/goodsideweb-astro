@@ -87,6 +87,6 @@ Menestys ei ole pelkkää onnea tai sattumaa. Menestyvät organisaatiot hyödynt
 
 **The Good Side** auttaa **SaaS-yrityksiä** hyödyntämään design thinking -periaatteita **SaaS-kasvun** kiihdyttämiseksi. Yhdistämällä kolme kasvun kannalta kriittistä osa-aluetta – **tuotepositioinnin, käyttäjäpolut ja UI/UX-suunnittelun** – autamme luomaan **SaaS-tuotteita**, jotka eivät ainoastaan ratkaise asiakkaiden ongelmia, vaan myös sitouttavat heitä ja edistävät liiketoiminnan tavoitteita.
 
-Jos haluat keskustella siitä, miten design thinking ja strateginen suunnittelu voisivat auttaa sinun **SaaS-yritystäsi** menestymään, [ota yhteyttä meihin](/contact).
+Jos haluat keskustella siitä, miten design thinking ja strateginen suunnittelu voisivat auttaa sinun **SaaS-yritystäsi** menestymään, [ota yhteyttä meihin](/fi/contact).
 
 Tämä ajattelutapa ei ole vain menneisyyden menestystarinoiden taustalla – se on myös tulevaisuuden menestyksen avain.

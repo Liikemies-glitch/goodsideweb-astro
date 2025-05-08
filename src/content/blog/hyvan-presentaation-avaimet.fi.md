@@ -113,4 +113,4 @@ Vahva lopetus varmistaa, että esityksesi johtaa haluttuihin tuloksiin.
 
 Onnistunut presentaatio on monen tekijän summa. Selkeä rakenne, ytimekäs ilmaisu, tehokas visuaalisuus, yleisön huomioiminen, selkeä viestintä, itsevarma esiintyminen, viestin tehokas välittäminen ja vaikuttava lopetus luovat yhdessä esityksen, joka on vakuuttava, informatiivinen ja mieleenpainuva.
 
-The Good Side auttaa SaaS-yrityksiä kehittämään vaikuttavia presentaatiomateriaaleja, jotka tukevat tuotepositiointia ja kommunikoivat arvolupausta selkeästi. [Kysy lisää palveluistamme](/contact).
+The Good Side auttaa SaaS-yrityksiä kehittämään vaikuttavia presentaatiomateriaaleja, jotka tukevat tuotepositiointia ja kommunikoivat arvolupausta selkeästi. [Kysy lisää palveluistamme](/fi/contact).

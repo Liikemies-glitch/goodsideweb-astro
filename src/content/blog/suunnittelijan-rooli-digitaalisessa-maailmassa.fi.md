@@ -126,4 +126,4 @@ Suunnittelijan rooli on keskeinen tekijä erityisesti SaaS-yritysten digitaalisi
 
 Digitaalisessa maailmassa suunnittelijoiden tehtävät ovat monimuotoisia ja vaativat jatkuvaa oppimista ja sopeutumista uusiin teknologioihin. Hyvä suunnittelija yhdistää luovuuden, teknisen asiantuntemuksen ja kyvyn ymmärtää käyttäjien tarpeet, mikä tekee heistä arvokkaan osan modernia SaaS-yritystä.
 
-[Ota yhteyttä The Good Sideen](/contact) jos haluat keskustella miten design-konsultointimme voisi auttaa SaaS-yrityksesi kasvussa.
+[Ota yhteyttä The Good Sideen](/fi/contact) jos haluat keskustella miten design-konsultointimme voisi auttaa SaaS-yrityksesi kasvussa.

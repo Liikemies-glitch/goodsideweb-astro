@@ -215,4 +215,4 @@ Heuristiikat eivät ole vain ohjeita suunnittelijoille - ne ovat strateginen lä
 
 **Laadukkaalla käyttäjäkokemuksella** on suora yhteys SaaS-liiketoiminnan menestykseen. Nielsenin heuristiikat tarjoavat testattuja ja toimivia periaatteita, joiden avulla SaaS-tuotteet voidaan suunnitella vastaamaan käyttäjien odotuksia ja liiketoiminnan tavoitteita.
 
-Haluatko keskustella, miten The Good Side voi auttaa SaaS-yrityksesi käytettävyyden ja käyttäjäkokemuksen parantamisessa? [Ota yhteyttä asiantuntijoihimme](/contact) ja selvitetään, miten voimme tukea tuotteenne käytettävyyttä Nielsenin periaatteiden avulla.
+Haluatko keskustella, miten The Good Side voi auttaa SaaS-yrityksesi käytettävyyden ja käyttäjäkokemuksen parantamisessa? [Ota yhteyttä asiantuntijoihimme](/fi/contact) ja selvitetään, miten voimme tukea tuotteenne käytettävyyttä Nielsenin periaatteiden avulla.

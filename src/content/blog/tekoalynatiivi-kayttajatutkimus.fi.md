@@ -125,4 +125,4 @@ Tekoälynatiivi käyttäjätutkimus tarjoaa ratkaisun moniin perinteisen käytt�
 
 Vaikka tekoälynatiivien menetelmien käyttöönotto vaatii organisaatioilta uudenlaista ajattelua, niiden tarjoamat edut ovat kiistattomia. Tulevaisuudessa tekoälynatiivit käyttäjätutkimusmenetelmät tulevat olemaan keskeinen osa menestyvien SaaS-yritysten tuotekehitysprosessia.
 
-[Ota yhteyttä The Good Sideen](/contact) niin keskustellaan, miten tekoälynatiivi käyttäjätutkimus voisi vauhdittaa yrityksesi SaaS-tuotekehitystä.
+[Ota yhteyttä The Good Sideen](/fi/contact) niin keskustellaan, miten tekoälynatiivi käyttäjätutkimus voisi vauhdittaa yrityksesi SaaS-tuotekehitystä.

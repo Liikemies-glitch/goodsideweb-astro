@@ -179,4 +179,4 @@ Käyttöjärjestelmän valinta riippuu käyttäjän tarpeista ja mieltymyksistä
 
 Lopulta käyttöjärjestelmävalinta vaikuttaa merkittävästi digitaaliseen käyttäjäkokemukseen. SaaS-yritysten on kriittistä huomioida molempien alustojen erityispiirteet suunnittelussa.
 
-[Ota yhteyttä](https://www.goodside.fi/contact) The Good Sideen, jos kaipaat asiantuntija-apua SaaS-tuotteesi käyttäjäkokemuksen optimointiin eri mobiilialustoilla. Design-konsultointimme auttaa luomaan yhtenäisen käyttäjäkokemuksen molemmilla alustoilla, mikä tukee tuotteesi kasvua ja käyttäjätyytyväisyyttä.
+[Ota yhteyttä](/fi/contact)The Good Sideen, jos kaipaat asiantuntija-apua SaaS-tuotteesi käyttäjäkokemuksen optimointiin eri mobiilialustoilla. Design-konsultointimme auttaa luomaan yhtenäisen käyttäjäkokemuksen molemmilla alustoilla, mikä tukee tuotteesi kasvua ja käyttäjätyytyväisyyttä.

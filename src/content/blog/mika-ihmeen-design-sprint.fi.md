@@ -346,4 +346,4 @@ Design sprint tarjoaa tehokkaana menetelmän SaaS-tuotteiden kehittämiseen nope
 
 ## Ota seuraava askel SaaS-tuotteesi kehittämisessä
 
-Jos haluat tehostaa SaaS-tuotteesi kehitystä tai validoida uusia tuoteideoita nopeasti, [ota yhteyttä](/contact) niin keskustellaan, miten design sprint voisi auttaa juuri sinun yrityksesi haasteissa.
+Jos haluat tehostaa SaaS-tuotteesi kehitystä tai validoida uusia tuoteideoita nopeasti, [ota yhteyttä](/fi/contact) niin keskustellaan, miten design sprint voisi auttaa juuri sinun yrityksesi haasteissa.

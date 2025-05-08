@@ -139,4 +139,4 @@ Empatia tuo palvelumuotoiluun inhimillisyyttä ja varmistaa, että suunnittelura
 
 SaaS-yrityksille empatia tarjoaa kilpailuetua, joka näkyy parempana asiakaspitona, korkeampana käyttäjätyytyväisyytenä ja loppujen lopuksi vahvempana liiketoiminnan kasvuna.
 
-Haluatko kehittää SaaS-palveluasi empaattisemman suunnittelun avulla? [Ota yhteyttä](/contact) ja keskustellaan, miten voimme auttaa sinua ymmärtämään asiakkaitasi syvällisemmin ja kehittämään palveluita, jotka todella resonoivat käyttäjiesi kanssa.
+Haluatko kehittää SaaS-palveluasi empaattisemman suunnittelun avulla? [Ota yhteyttä](/fi/contact) ja keskustellaan, miten voimme auttaa sinua ymmärtämään asiakkaitasi syvällisemmin ja kehittämään palveluita, jotka todella resonoivat käyttäjiesi kanssa.

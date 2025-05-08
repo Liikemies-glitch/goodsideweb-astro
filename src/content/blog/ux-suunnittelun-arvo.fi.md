@@ -152,4 +152,4 @@ The Good Side yhdistää tuotepositioinnin, käyttäjäpolkujen suunnittelun ja 
 
 UX-suunnittelun arvo -mikroblogin suosio osoittaa, että käyttäjäkokemukseen liittyvät aiheet kiinnostavat laajaa yleisöä. Erityisesti käyttäjätutkimus, UX-kirjoittaminen ja design systemit nousivat suosituimmiksi aiheiksi, mikä heijastaa näiden osa-alueiden merkitystä modernissa tuotekehityksessä.
 
-Haluatko keskustella siitä, miten UX-suunnittelu voisi tuoda lisäarvoa SaaS-tuotteellesi? [Ota yhteyttä](/contact) The Good Siden asiantuntijoihin ja aloitetaan keskustelu kasvumahdollisuuksistasi.
+Haluatko keskustella siitä, miten UX-suunnittelu voisi tuoda lisäarvoa SaaS-tuotteellesi? [Ota yhteyttä](/fi/contact) The Good Siden asiantuntijoihin ja aloitetaan keskustelu kasvumahdollisuuksistasi.

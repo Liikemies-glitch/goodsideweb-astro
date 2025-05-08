@@ -80,4 +80,4 @@ Laadukkaan käyttökokemuksen varmistaminen SaaS-palveluissa vaatii:
 2. Johdonmukaisuutta eri laitteilla 
 3. Jatkuvaa käyttäjäpalautteen hyödyntämistä
 
-[Ota yhteyttä The Good Sideen](/contact) ja selvitä, miten voimme auttaa kehittämään SaaS-tuotteestasi sellaisen, että asiakkaasi rakastuvat siihen.
+[Ota yhteyttä The Good Sideen](/fi/contact) ja selvitä, miten voimme auttaa kehittämään SaaS-tuotteestasi sellaisen, että asiakkaasi rakastuvat siihen.

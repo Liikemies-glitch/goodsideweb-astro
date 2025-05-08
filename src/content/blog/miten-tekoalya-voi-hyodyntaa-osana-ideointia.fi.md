@@ -112,4 +112,4 @@ Tekoäly tarjoaa monipuolisia työkaluja, jotka voivat merkittävästi tehostaa 
 
 Parhaimmillaan tekoäly toimii tiimin luovana kumppanina, joka sekä tukee että haastaa ihmisajattelua – ei korvaa sitä.
 
-Haluatko tehostaa yrityksesi ideointiprosessia tekoälyn avulla? [Ota yhteyttä The Good Sideen](/contact) ja kerromme, miten voimme auttaa SaaS-yrityksesi tuotekehitystä ja innovaatiotoimintaa tekoälyä hyödyntämällä.
+Haluatko tehostaa yrityksesi ideointiprosessia tekoälyn avulla? [Ota yhteyttä The Good Sideen](/fi/contact) ja kerromme, miten voimme auttaa SaaS-yrityksesi tuotekehitystä ja innovaatiotoimintaa tekoälyä hyödyntämällä.

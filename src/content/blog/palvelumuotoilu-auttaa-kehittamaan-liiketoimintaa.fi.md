@@ -131,4 +131,4 @@ Yrityksille, jotka haluavat erottua ja tarjota asiakkailleen entistä parempia p
 
 The Good Side tarjoaa SaaS-yrityksille räätälöityä design-konsultointia, jossa palvelumuotoilun periaatteita sovelletaan erityisesti SaaS-liiketoiminnan kontekstissa. Yhdistämällä tuotepositioinnin, käyttäjäpolkujen suunnittelun ja UI/UX-designin autamme SaaS-yrityksiä kehittämään palveluita, jotka kiihdyttävät kasvua ja parantavat asiakastyytyväisyyttä.
 
-Haluatko keskustella, miten palvelumuotoilu voisi auttaa sinun liiketoimintasi kehittämisessä? [Ota yhteyttä asiantuntijoihimme!](/contact)
+Haluatko keskustella, miten palvelumuotoilu voisi auttaa sinun liiketoimintasi kehittämisessä? [Ota yhteyttä asiantuntijoihimme!](/fi/contact)

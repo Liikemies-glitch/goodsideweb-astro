@@ -177,4 +177,4 @@ Haluatko parantaa yrityksesi muotoiluprosesseja ja varmistaa, että design tukee
 - Kehittämään design-systeemin, joka tukee tuotekehitystä
 - Kouluttamaan tiimisi uusiin prosesseihin ja työkaluihin
 
-[Ota yhteyttä asiantuntijoihimme](/contact) ja selvitetään, miten voimme auttaa SaaS-yrityksesi muotoiluprosessien tehostamisessa ja skaalautuvuuden varmistamisessa.
+[Ota yhteyttä asiantuntijoihimme](/fi/contact) ja selvitetään, miten voimme auttaa SaaS-yrityksesi muotoiluprosessien tehostamisessa ja skaalautuvuuden varmistamisessa.

@@ -99,4 +99,4 @@ Muista hyödyntää **käyttäjäpersoonia**, **asiakaspolkuja** ja **iteratiivi
 
 Goodside on erikoistunut auttamaan **SaaS**-yrityksiä hyödyntämään **asiakasymmärrystä** strategisesti kasvun kiihdyttämiseksi yhdistämällä **tuotepositioinnin**, **käyttäjäpolut** ja **UI/UX-suunnittelun**. Jos haluat kuulla lisää siitä, miten voimme auttaa teidän yritystänne, jätä meille yhteydenottopyyntö.
 
-[Ota yhteyttä ja keskustellaan lisää](/contact)
+[Ota yhteyttä ja keskustellaan lisää](/fi/contact)

@@ -149,4 +149,4 @@ The Good Side auttaa SaaS-yrityksiä laskeutumissivujen testauksessa:
 
 Tehokas laskeutumissivu on hyvin kohdennettu, visuaalisesti houkutteleva ja selkeä, ja se ohjaa kävijää suorittamaan halutun toimenpiteen tehokkaasti. SaaS-yritykselle optimoitu laskeutumissivu tarjoaa vahvan arvolupauksen, rakentaa luottamusta ja toimii saumattomasti eri laitteilla ja selaimilla.
 
-[Ota yhteyttä The Good Sideen](/contact) keskustellaksesi, miten voimme auttaa SaaS-yrityksesi laskeutumissivujen optimoinnissa ja konversioasteen parantamisessa. Design-konsultointimme avulla rakennamme sivut, jotka tukevat liiketoimintasi kasvutavoitteita.
+[Ota yhteyttä The Good Sideen](/fi/contact) keskustellaksesi, miten voimme auttaa SaaS-yrityksesi laskeutumissivujen optimoinnissa ja konversioasteen parantamisessa. Design-konsultointimme avulla rakennamme sivut, jotka tukevat liiketoimintasi kasvutavoitteita.

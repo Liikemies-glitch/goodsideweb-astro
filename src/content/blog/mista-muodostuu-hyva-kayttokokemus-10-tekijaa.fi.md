@@ -143,4 +143,4 @@ Erinomainen käyttökokemus syntyy, kun edellä mainitut kymmenen tekijää toim
 
 The Good Side auttaa SaaS-yrityksiä rakentamaan kokonaisvaltaisia käyttökokemuksia, jotka yhdistävät tuotepositioinnin, käyttäjäpolut ja UI/UX-suunnittelun tavalla, joka tukee liiketoiminnan kasvua ja käyttäjien tyytyväisyyttä.
 
-Haluatko kehittää SaaS-tuotteesi käyttökokemusta? [Ota yhteyttä The Good Sideen](/contact) ja keskustellaan, miten voimme auttaa tuotteesi menestymään.
+Haluatko kehittää SaaS-tuotteesi käyttökokemusta? [Ota yhteyttä The Good Sideen](/fi/contact) ja keskustellaan, miten voimme auttaa tuotteesi menestymään.

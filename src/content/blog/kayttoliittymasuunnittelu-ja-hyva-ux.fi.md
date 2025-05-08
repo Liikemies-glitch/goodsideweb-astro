@@ -125,4 +125,4 @@ The Good Side on erikoistunut auttamaan SaaS-yrityksiä optimoimaan käyttöliit
 
 > Haluaisitko omaan SaaS-palveluusi paremman käyttöliittymän? Sellaisen joka vähentää kontakteja asiakaspalveluun, auttaa käyttäjiä tekemään heidän haluamiaan tehtäviä, sekä sitouttaa maksavia asiakkaita käyttämään palveluasi pidempään? The Good Side on valmiina auttamaan juuri sinua.
 
-[Ota yhteyttä](/contact)
+[Ota yhteyttä](/fi/contact)

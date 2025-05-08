@@ -121,4 +121,4 @@ SaaS-markkinoilla pärjäävät parhaiten tuotteet, jotka yhdistävät:
 
 **Oikea asenne** ratkaisee: intohimo luoda aidosti käyttäjien tarpeisiin vastaavia tuotteita on lopulta tärkeämpää kuin puhtaasti teknologialähtöinen tai markkinavetoinen kehitys.
 
-Haluatko keskustella, miten The Good Side voi auttaa SaaS-yrityksesi löytämään optimaalisen tasapainon teknologiavetoisuuden ja käyttäjäkokemuksen välillä? [Ota yhteyttä asiantuntijoihimme](/contact) ja selvitetään, miten voimme tukea tuotteenne menestystä.
+Haluatko keskustella, miten The Good Side voi auttaa SaaS-yrityksesi löytämään optimaalisen tasapainon teknologiavetoisuuden ja käyttäjäkokemuksen välillä? [Ota yhteyttä asiantuntijoihimme](/fi/contact) ja selvitetään, miten voimme tukea tuotteenne menestystä.

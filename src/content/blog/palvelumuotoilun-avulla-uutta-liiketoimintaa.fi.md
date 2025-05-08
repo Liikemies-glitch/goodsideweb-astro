@@ -137,4 +137,4 @@ Palvelumuotoilu on strateginen lähestymistapa, jonka avulla SaaS-yritys voi keh
 
 Kun SaaS-yritykset integroivat palvelumuotoilun osaksi liiketoimintastrategiaansa, ne parantavat sekä tuotteiden laatua että markkina-asemaansa. The Good Side tarjoaa design-konsultointia SaaS-yrityksille, jotka haluavat hyödyntää palvelumuotoilua kasvun vauhdittamisessa.
 
-[Ota yhteyttä](/contact) ja keskustellaan, miten voimme auttaa SaaS-yrityksesi kasvussa palvelumuotoilun avulla.
+[Ota yhteyttä](/fi/contact) ja keskustellaan, miten voimme auttaa SaaS-yrityksesi kasvussa palvelumuotoilun avulla.

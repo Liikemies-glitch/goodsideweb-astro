@@ -129,4 +129,4 @@ Hyvä UI/UX-suunnittelu SaaS-tuotteissa ei ole sattumaa vaan systemaattisen, kä
 
 **Menestyvä SaaS-tuote** erottuu kilpailijoista näiden kymmenen periaatteen johdonmukaisella soveltamisella. Suunnittelu ei ole vain visuaalista somistusta vaan strateginen kilpailuetu, joka voi merkittävästi vaikuttaa tuotteen menestykseen markkinoilla.
 
-Haluatko keskustella, miten The Good Side voi auttaa SaaS-tuotteenne UI/UX-suunnittelun kehittämisessä? [Ota yhteyttä asiantuntijoihimme](/contact) ja selvitetään, miten voimme tukea tuotteenne kasvua käyttäjälähtöisen suunnittelun avulla.
+Haluatko keskustella, miten The Good Side voi auttaa SaaS-tuotteenne UI/UX-suunnittelun kehittämisessä? [Ota yhteyttä asiantuntijoihimme](/fi/contact) ja selvitetään, miten voimme tukea tuotteenne kasvua käyttäjälähtöisen suunnittelun avulla.

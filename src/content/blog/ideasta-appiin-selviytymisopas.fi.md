@@ -182,4 +182,4 @@ Tärkeintä on:
 
 Oikealla asenteella, selkeällä suunnitelmalla ja realistisilla odotuksilla voit kääntää ideasi menestyväksi sovellukseksi ja liiketoiminnaksi.
 
-Haluatko keskustella sovelluksesi design-näkökulmasta ammattilaisen kanssa? [Ota yhteyttä meihin](/contact) ja varaa maksuton konsultaatioaika.
+Haluatko keskustella sovelluksesi design-näkökulmasta ammattilaisen kanssa? [Ota yhteyttä meihin](/fi/contact) ja varaa maksuton konsultaatioaika.

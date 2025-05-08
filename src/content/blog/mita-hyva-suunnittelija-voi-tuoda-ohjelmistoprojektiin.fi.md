@@ -141,4 +141,4 @@ Hyvä suunnittelija tuo ohjelmistoprojektiin:
 
 SaaS-yrityksille suunnittelija ei ole pelkkä kuluerä vaan strateginen investointi, joka maksaa itsensä takaisin moninkertaisesti parempana tuotteena, tyytyväisempinä asiakkaina ja vahvempana kilpailuasemana.
 
-Haluatko keskustella, miten ammattitaitoinen suunnittelu voisi auttaa SaaS-tuotteesi kehityksessä? [Ota yhteyttä The Good Sideen](/contact) ja selvitetään, miten voimme auttaa projektisi onnistumaan.
+Haluatko keskustella, miten ammattitaitoinen suunnittelu voisi auttaa SaaS-tuotteesi kehityksessä? [Ota yhteyttä The Good Sideen](/fi/contact) ja selvitetään, miten voimme auttaa projektisi onnistumaan.

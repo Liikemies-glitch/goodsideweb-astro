@@ -150,4 +150,4 @@ Intuitiivinen käyttöliittymä ei synny sattumalta. Se vaatii:
 - Johdonmukaisten suunnitteluratkaisujen toteuttamista
 - Jatkuvaa testausta ja iterointia
 
-The Good Side auttaa SaaS-yrityksiä luomaan intuitiivisia käyttöliittymiä, jotka tukevat sekä liiketoimintatavoitteita että käyttäjien tarpeita. [Ota yhteyttä](/contact) ja kerro, miten voimme auttaa sinua hyödyntämään Jakob's Law -periaatetta tuotteesi suunnittelussa.
+The Good Side auttaa SaaS-yrityksiä luomaan intuitiivisia käyttöliittymiä, jotka tukevat sekä liiketoimintatavoitteita että käyttäjien tarpeita. [Ota yhteyttä](/fi/contact) ja kerro, miten voimme auttaa sinua hyödyntämään Jakob's Law -periaatetta tuotteesi suunnittelussa.

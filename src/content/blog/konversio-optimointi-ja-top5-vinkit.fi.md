@@ -141,4 +141,4 @@ Konversio-optimointi on kriittinen osa verkkoliiketoiminnan kasvua, joka tuottaa
 
 Muista, että konversio-optimointi on jatkuva prosessi, joka vaatii säännöllistä seurantaa ja kehittämistä. Jokainen parannus konversioprosentissa voi tuottaa merkittävää liiketoiminnan kasvua ilman, että markkinointibudjettia tarvitsee kasvattaa.
 
-[Ota yhteyttä](/contact) ja keskustellaan, miten voimme auttaa yrityksesi konversio-optimoinnissa ja liiketoiminnan kasvattamisessa.
+[Ota yhteyttä](/fi/contact) ja keskustellaan, miten voimme auttaa yrityksesi konversio-optimoinnissa ja liiketoiminnan kasvattamisessa.

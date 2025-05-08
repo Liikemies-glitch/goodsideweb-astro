@@ -152,4 +152,4 @@ Prototypoinnin hyödyt SaaS-liiketoiminnalle:
 
 The Good Side tarjoaa design-konsultointia SaaS-yrityksille, jotka haluavat hyödyntää prototypointia tuotekehityksensä tehostamisessa.
 
-[Ota yhteyttä](/contact) ja keskustellaan, miten voimme auttaa yrityksesi käyttäjälähtöisen SaaS-tuotekehityksen vahvistamisessa.
+[Ota yhteyttä](/fi/contact) ja keskustellaan, miten voimme auttaa yrityksesi käyttäjälähtöisen SaaS-tuotekehityksen vahvistamisessa.

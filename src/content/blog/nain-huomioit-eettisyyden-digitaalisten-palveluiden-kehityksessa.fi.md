@@ -225,4 +225,4 @@ The Good Side auttaa SaaS-yrityksiä rakentamaan eettisesti kestäviä digitaali
 
 Eettinen suunnittelu ei ole vain oikea tapa toimia – se on älykäs liiketoimintastrategia SaaS-yrityksille, jotka tähtäävät kestävään kasvuun.
 
-**[Ota yhteyttä, niin keskustellaan miten voimme auttaa SaaS-yrityksesi eettisessä kehittämisessä](/contact)**
+**[Ota yhteyttä, niin keskustellaan miten voimme auttaa SaaS-yrityksesi eettisessä kehittämisessä](/fi/contact)**

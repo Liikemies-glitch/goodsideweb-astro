@@ -127,6 +127,6 @@ The Good Side yhdistää nämä teemat tarjoamalla kokonaisvaltaista design-kons
 
 UX-suunnittelun suosituimmat aiheet LinkedIn-mikroblogissa osoittavat, että käyttäjälähtöisyys, selkeys ja konkreettisuus kiinnostavat sekä ammattilaisia että päättäjiä. Nämä teemat muodostavat myös The Good Siden lähestymistavan ytimen SaaS-yritysten design-konsultoinnissa.
 
-Oletko kiinnostunut kehittämään SaaS-tuotteesi käyttäjäkokemusta käyttäjätutkimuksen, selkeän kirjoittamisen ja intuitiivisen käyttöliittymäsuunnittelun avulla? [Ota yhteyttä](/contact) The Good Siden asiantuntijoihin ja käynnistetään yhteistyö.
+Oletko kiinnostunut kehittämään SaaS-tuotteesi käyttäjäkokemusta käyttäjätutkimuksen, selkeän kirjoittamisen ja intuitiivisen käyttöliittymäsuunnittelun avulla? [Ota yhteyttä](/fi/contact) The Good Siden asiantuntijoihin ja käynnistetään yhteistyö.
 
 **Mikki Aalto-Ylevä** 040 869 8887 mikki@goodside.fi

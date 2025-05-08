@@ -133,4 +133,4 @@ Palvelumuotoilun kahdeksan elementtiä muodostavat kokonaisvaltaisen lähestymis
 
 The Good Side tarjoaa design-konsultointia SaaS-yrityksille, jotka haluavat hyödyntää näitä palvelumuotoilun periaatteita kasvunsa vauhdittamiseksi.
 
-[Ota yhteyttä](/contact) keskustellaksesi, miten voimme auttaa SaaS-yrityksesi kasvutavoitteiden saavuttamisessa palvelumuotoilun avulla.
+[Ota yhteyttä](/fi/contact) keskustellaksesi, miten voimme auttaa SaaS-yrityksesi kasvutavoitteiden saavuttamisessa palvelumuotoilun avulla.

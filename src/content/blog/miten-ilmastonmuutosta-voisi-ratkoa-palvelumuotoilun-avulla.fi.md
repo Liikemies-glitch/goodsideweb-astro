@@ -107,4 +107,4 @@ Ilmastonmuutoksen ratkominen vaatii käyttäytymisen muutosta, innovatiivisia ra
 
 Palvelumuotoilun avulla voidaan kehittää ilmastoystävällisiä palveluita, jotka ovat paitsi tehokkaita myös käyttäjille helppoja ja houkuttelevia.
 
-Haluatko kehittää yrityksellesi kestäviä digitaalisia palveluita? [Ota yhteyttä The Good Sideen](/contact) ja kartoitetaan yhdessä mahdollisuudet hiilijalanjäljen pienentämiseen palvelumuotoilun keinoin.
+Haluatko kehittää yrityksellesi kestäviä digitaalisia palveluita? [Ota yhteyttä The Good Sideen](/fi/contact) ja kartoitetaan yhdessä mahdollisuudet hiilijalanjäljen pienentämiseen palvelumuotoilun keinoin.

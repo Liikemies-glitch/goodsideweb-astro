@@ -67,4 +67,4 @@ Käytettävyyteen panostaminen on usein tärkeämpää kuin minkään muun osa-a
 
 UX-suunnittelussa käytettävyys on ohjelmiston onnistumisen kulmakivi, joka määrittää käyttäjätyytyväisyyden, tehokkuuden ja ohjelmiston menestyksen markkinoilla. Käytettävyyteen panostaminen ei ole pelkkä suositus – se on elintärkeää jokaisessa ohjelmistohankkeessa, jossa pyritään rakentamaan käyttäjäystävällinen, tehokas ja toimiva tuote.
 
-Haluatko varmistaa, että SaaS-tuotteesi käytettävyys on huippuluokkaa? [Ota yhteyttä](/contact) The Good Siden asiantuntijoihin ja kerro meille tuotteestasi.
+Haluatko varmistaa, että SaaS-tuotteesi käytettävyys on huippuluokkaa? [Ota yhteyttä](/fi/contact) The Good Siden asiantuntijoihin ja kerro meille tuotteestasi.

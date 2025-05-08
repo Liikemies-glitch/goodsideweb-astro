@@ -162,4 +162,4 @@ Investointi laadukkaaseen UX-kirjoittamiseen voi johtaa:
 - Korkeampiin konversioasteisiin
 - Liiketoiminnan kasvuun
 
-Haluatko kehittää SaaS-tuotteesi UX-kirjoittamista ja microcopya? [Ota yhteyttä The Good Sideen](/contact) ja parannetaan yhdessä tuotteesi käyttäjäkokemusta.
+Haluatko kehittää SaaS-tuotteesi UX-kirjoittamista ja microcopya? [Ota yhteyttä The Good Sideen](/fi/contact) ja parannetaan yhdessä tuotteesi käyttäjäkokemusta.

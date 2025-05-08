@@ -118,4 +118,4 @@ The Good Side auttaa SaaS-yrityksiä integroimaan nämä periaatteet tuotekehity
 
 UX-suunnittelun salaiset periaatteet perustuvat pohjimmiltaan käyttäjien ymmärtämiseen ja heidän tarpeidensa priorisointiin. Kun suunnitteluprosessi keskittyy käyttäjän ajattelun helpottamiseen, oikean tiedon tarjoamiseen oikeassa paikassa, toimialojen rajat ylittäviin käytäntöihin ja tehtäväkeskeiseen suunnitteluun, luodaan tuotteita jotka erottuvat markkinoilla.
 
-Haluatko varmistaa, että SaaS-tuotteesi hyödyntää näitä periaatteita? [Ota yhteyttä](/contact) The Good Siden asiantuntijoihin ja kehitetään käyttäjäkokemustasi yhdessä.
+Haluatko varmistaa, että SaaS-tuotteesi hyödyntää näitä periaatteita? [Ota yhteyttä](/fi/contact) The Good Siden asiantuntijoihin ja kehitetään käyttäjäkokemustasi yhdessä.

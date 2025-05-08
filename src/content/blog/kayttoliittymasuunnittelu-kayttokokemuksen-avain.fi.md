@@ -104,4 +104,4 @@ Käyttöliittymäsuunnittelu on **kriittinen osa asiakaskokemusta** ja siten ava
 
 The Good Side auttaa SaaS-yrityksiä parantamaan käyttöliittymäsuunnittelua siten, että se edistää liiketoiminnan kasvua. Yhdistämällä tuotepositioinnin, käyttäjäpolkujen ja UI/UX:n optimoinnin luomme kokonaisvaltaisen strategian, joka tukee yrityksesi kasvutavoitteita.
 
-[Ota yhteyttä](/contact) ja keskustellaan, miten voimme auttaa yrityksesi käyttöliittymien kehittämisessä ja liiketoiminnan kasvattamisessa.
+[Ota yhteyttä](/fi/contact) ja keskustellaan, miten voimme auttaa yrityksesi käyttöliittymien kehittämisessä ja liiketoiminnan kasvattamisessa.

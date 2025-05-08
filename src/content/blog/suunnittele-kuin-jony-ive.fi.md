@@ -190,4 +190,4 @@ Jony Iven suunnitteluperiaatteet - minimalismi, funktionaalisuus, laadukkaat mat
 
 SaaS-yritykset voivat saavuttaa kilpailuetua soveltamalla näitä periaatteita omiin tuotteisiinsa. The Good Siden design-konsultointi auttaa yrityksiä kehittämään käyttäjäkokemusta Iven oppien mukaisesti, keskittyen kolmeen kriittiseen osa-alueeseen: tuotepositiointiin, käyttäjäpolkuihin ja UI/UX-suunnitteluun.
 
-[Ota yhteyttä The Good Sideen](/contact) ja keskustellaan kuinka voimme auttaa sinua luomaan Jony Iven periaatteita hyödyntäviä digitaalisia tuotteita.
+[Ota yhteyttä The Good Sideen](/fi/contact) ja keskustellaan kuinka voimme auttaa sinua luomaan Jony Iven periaatteita hyödyntäviä digitaalisia tuotteita.

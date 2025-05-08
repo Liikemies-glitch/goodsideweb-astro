@@ -111,4 +111,4 @@ The Good Side on erikoistunut SaaS-yritysten kehitysprojektien suunnitteluun ja 
 
 Kokemuksemme mukaan digitaalisten projektien vaatimukset täsmentyvät ja kehittyvät prosessin aikana. Siksi suosittelemme joustavaa budjetointimallia, joka huomioi tämän todellisuuden.
 
-Haluatko keskustella SaaS-projektisi budjetoinnista asiantuntijoiden kanssa? [Ota yhteyttä](/contact) ja autamme sinua luomaan realistisen budjetin, joka mahdollistaa projektisi onnistumisen.
+Haluatko keskustella SaaS-projektisi budjetoinnista asiantuntijoiden kanssa? [Ota yhteyttä](/fi/contact) ja autamme sinua luomaan realistisen budjetin, joka mahdollistaa projektisi onnistumisen.

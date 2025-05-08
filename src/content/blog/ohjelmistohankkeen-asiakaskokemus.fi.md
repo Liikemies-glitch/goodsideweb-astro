@@ -70,4 +70,4 @@ Jos ohjelmistoprojektissa ilmenee ongelmia, asiakaskokemuksen huomioiminen on er
 
 The Good Side on erikoistunut SaaS-yritysten design-konsultointiin, jossa asiakaskokemus on keskiössä. Yhdistämällä tuotepositioinnin, käyttäjäpolut ja UI/UX-suunnittelun, autamme SaaS-yrityksiä parantamaan asiakaskokemustaan myös haastavissa projektitilanteissa.
 
-Haluatko keskustella, miten voisimme auttaa sinun yrityksesi ohjelmistoprojekteja? [Ota yhteyttä asiantuntijoihimme tänään!](/contact)
+Haluatko keskustella, miten voisimme auttaa sinun yrityksesi ohjelmistoprojekteja? [Ota yhteyttä asiantuntijoihimme tänään!](/fi/contact)

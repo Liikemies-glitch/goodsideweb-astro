@@ -131,4 +131,4 @@ Intranet on edelleen merkittävä investointi organisaatioille, jotka haluavat t
 
 The Good Side design-konsultointi auttaa SaaS-yrityksiä ja muita organisaatioita suunnittelemaan käyttäjäystävällisiä ja tehokkaita intranet-ratkaisuja. Yhdistämällä tuotepositioinnin, käyttäjäpolkujen suunnittelun ja UI/UX-osaamisen luomme intranet-alustoja, jotka palvelevat sekä organisaation että työntekijöiden tarpeita.
 
-Haluatko keskustella, miten voisimme auttaa organisaatiotasi kehittämään toimivan intranetin? [Ota yhteyttä asiantuntijoihimme tänään!](/contact)
+Haluatko keskustella, miten voisimme auttaa organisaatiotasi kehittämään toimivan intranetin? [Ota yhteyttä asiantuntijoihimme tänään!](/fi/contact)

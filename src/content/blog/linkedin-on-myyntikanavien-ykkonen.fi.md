@@ -131,4 +131,4 @@ Samalla on syytä muistaa:
 
 The Good Side auttaa SaaS-yrityksiä optimoimaan myyntikanaviaan data-lähtöisesti. Yhdistämällä tuotepositioinnin, käyttäjäpolkujen ja UI/UX-suunnittelun voimme auttaa sinua tavoittamaan potentiaaliset asiakkaat tehokkaasti juuri oikeissa kanavissa.
 
-Haluatko selvittää, mitkä myyntikanavat toimivat parhaiten yrityksellesi? [Ota yhteyttä asiantuntijoihimme](/contact) ja keskustellaan, miten voimme auttaa sinua kiihdyttämään SaaS-yrityksesi kasvua.
+Haluatko selvittää, mitkä myyntikanavat toimivat parhaiten yrityksellesi? [Ota yhteyttä asiantuntijoihimme](/fi/contact) ja keskustellaan, miten voimme auttaa sinua kiihdyttämään SaaS-yrityksesi kasvua.

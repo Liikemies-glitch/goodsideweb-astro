@@ -117,4 +117,4 @@ The Good Side yhdistää design-konsultoinnissaan vahvan visuaalisen osaamisen t
 
 Haluatko tietää, miten teknisesti osaavat suunnittelijamme voivat auttaa SaaS-tuotteesi kehityksessä? 
 
-[Ota yhteyttä ja keskustellaan tarkemmin →](/contact)
+[Ota yhteyttä ja keskustellaan tarkemmin →](/fi/contact)
