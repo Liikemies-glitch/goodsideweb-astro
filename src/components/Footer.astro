@@ -2,9 +2,41 @@
 // src/components/Footer.astro
 import { ui, defaultLang, languages } from '../i18n/ui';
 import { getLangFromUrl, useTranslations, getRelativeLocaleUrl } from '../i18n/utils';
+import { pageMappings } from '../i18n/pageMappings';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+/**
+ * Helper function to get the correct localized path
+ * @param path Path without language prefix, e.g. "/product-positioning"
+ * @returns Correct path for the current language
+ */
+function getLocalizedPath(path: string): string {
+  // Handle root path
+  if (path === '/' || path === '') return '/';
+  
+  // Remove leading slash if present
+  const cleanPath = path.startsWith('/') ? path.substring(1) : path;
+  
+  // If we're in English, use the original path
+  if (lang === 'en') return path;
+  
+  // If we're in Finnish and the path exists in mappings (English -> Finnish)
+  if (lang === 'fi' && cleanPath in pageMappings) {
+    const fiPath = pageMappings[cleanPath];
+    return fiPath.startsWith('/') ? fiPath : `/${fiPath}`;
+  }
+  
+  // Fallback - use the original path
+  return path;
+}
+
+// Define service pages with their paths
+const servicePages = [
+  { path: '/product-positioning', translationKey: 'footer.productPositioning' as keyof typeof ui[typeof defaultLang] }
+  // Add new service pages here in the future
+];
 ---
 <footer class="footer">
     <div class="container">
@@ -25,6 +57,18 @@ const t = useTranslations(lang);
                     <li><a href={getRelativeLocaleUrl(lang, '/references')}>{t('footer.references')}</a></li>
                     <li><a href={getRelativeLocaleUrl(lang, '/blog')}>{t('footer.blog')}</a></li>
                     <li><a href={getRelativeLocaleUrl(lang, '/contact')}>{t('footer.contact')}</a></li>
+                </ul>
+            </div>
+            <div class="footer__links">
+                <h4>{t('footer.serviceLinks')}</h4>
+                <ul>
+                    {servicePages.map(page => (
+                      <li>
+                        <a href={getRelativeLocaleUrl(lang, getLocalizedPath(page.path))}>
+                          {t(page.translationKey)}
+                        </a>
+                      </li>
+                    ))}
                 </ul>
             </div>
             <div class="footer__links">

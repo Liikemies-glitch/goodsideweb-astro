@@ -1,5 +1,6 @@
 import { ui, defaultLang } from './ui';
 import { getEquivalentBlogSlug } from './blogMappings';
+import { getEquivalentPagePath } from './pageMappings';
 
 export function getLangFromUrl(url: URL) {
   const [, lang] = url.pathname.split('/');
@@ -72,6 +73,19 @@ export function getLanguageSwitchUrl(currentUrl: URL, targetLang: keyof typeof u
   }
   if (pathWithoutLocale === '') {
     pathWithoutLocale = '/';
+  }
+  
+  // NEW: Check if we have a mapping for this page
+  if (pathWithoutLocale !== '/') {
+    // Remove leading slash for mapping lookup
+    const pathWithoutLeadingSlash = pathWithoutLocale.startsWith('/')
+      ? pathWithoutLocale.substring(1)
+      : pathWithoutLocale;
+    
+    // Get equivalent path in target language
+    const targetPath = getEquivalentPagePath(pathWithoutLeadingSlash, currentLang, targetLang);
+    
+    return getRelativeLocaleUrl(targetLang, `/${targetPath}`);
   }
   
   return getRelativeLocaleUrl(targetLang, pathWithoutLocale);
