@@ -1,0 +1,536 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import HeroSection from '../../components/HeroSection.astro';
+import TrustmaryEmbed from '../../components/TrustmaryEmbed.astro';
+import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
+
+const pageTitle = "Tuotepositiointi SaaS-tuotteelle | The Good Side";
+const pageDescription = "Laadukkaalla tuotepositioinnilla varmistat SaaS-tuotteesi kilpailuedun markkinoilla. Autamme määrittelemään kohderyhmän ja arvolupauksen, joka erottaa sinut kilpailijoista.";
+
+// Fetch latest 6 blog posts
+const latestPosts = (await getCollection('blog'))
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+    .slice(0, 6);
+
+// Helper function to format dates
+function formatDate(date: Date): string {
+  return new Date(date).toLocaleDateString('fi-FI', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+}
+---
+<BaseLayout title={pageTitle} description={pageDescription}>
+    <!-- Use HeroSection component -->
+    <HeroSection
+        title="Tuotepositiointi auttaa SaaS-tuotettasi erottumaan kilpailijoista"
+        paragraph="Selkeä tuotepositiointi on kriittinen menestystekijä SaaS-liiketoiminnassa. Autamme sinua määrittelemään ketä haluat palvella ja miten aiot erottautua kilpailijoistasi."
+        primaryButtonText="Sovi tapaaminen &rarr;"
+        primaryButtonHref="/fi/contact"
+        secondaryButtonText="Näytä referenssit"
+        secondaryButtonHref="/fi/references"
+        textOnly={true}
+        paddingTop="6rem"
+        paddingBottom="3rem"
+        textAlign="center"
+    />
+
+    <!-- Logo Wall Section -->
+    <section class="logo-wall">
+        <div class="container">
+            <h2 class="logo-wall__title">Tuotepositiointimme on auttanut näitä SaaS-yrityksiä menestymään</h2>
+            <div class="logo-wall__grid">
+                <!-- The logos are intentionally duplicated below -->
+                <!-- First set -->
+                <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+                 <!-- Second set (duplicate) -->
+                 <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problems">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Kuulostaako tutulta?</span>
+                <h2 class="section__title">Tuotepositioinnin haasteet SaaS-yrityksille</h2>
+            </div>
+            <div class="problems__grid">
+                <article class="problem-card">
+                    <h3>Epäselvä kohderyhmä</h3>
+                    <p>SaaS-tuotteesi yrittää miellyttää kaikkia, mutta ei lopulta palvele erinomaisesti ketään. Kohderyhmän epäselvyys johtaa tehottomaan markkinointiin ja resurssien tuhlaamiseen.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Erottautumisen puute</h3>
+                    <p>Tuotteesi ei erotu selkeästi kilpailijoista ja potentiaaliset asiakkaat eivät näe, miksi juuri sinun palvelusi olisi parempi vaihtoehto. Tämä johtaa pidempiin myyntisykleihin ja hintakilpailuun.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Heikko konversio</h3>
+                    <p>Viestisi ei resonoi potentiaalisten asiakkaiden kanssa, koska et ole tunnistanut heidän todellisia kipupisteitään. Tästä seuraa heikko konversio ja korkeat asiakashankinnan kustannukset.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Us Section -->
+    <section class="hire-us">
+        <div class="container">
+            <h2 class="section__title">Tuotepositioinnin asiantuntijat palveluksessasi</h2>
+            <p class="section__subtitle">Palkkaa meidät tekemään tuotteesi positiointi, joka erottuu markkinoilla.</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/mikki.webp" alt="Mikki Aalto-Ylevä" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Mikki<br>Aalto-Ylevä</h3>
+                    <p class="team-member__title">SaaS-spesialisti</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/tuomas.webp" alt="Tuomas Kaartoluoma" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Tuomas<br>Kaartoluoma</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/duncan.webp" alt="Dũng Nguyen" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Dũng<br>Nguyen</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/aksel.webp" alt="Aksel Suokas" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Aksel<br>Suokas</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Intro Section -->
+    <section class="solutions">
+        <div class="container">
+            <h2 class="section__title">Tehokas tuotepositiointi auttaa SaaS-tuotettasi kasvamaan</h2>
+            <div class="solutions__grid">
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/positiointi.webp" alt="Tuotepositiointi">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Tuotepositiointi</span>
+                            <span>Tuotestrategia</span>
+                        </div>
+                        <h3>Selkeä kohderyhmävalinta kasvattaa konversioita</h3>
+                        <p>Autamme sinua tunnistamaan potentiaalisimmat kohderyhmät ja ymmärtämään heidän erityistarpeensa. Näin voit kohdistaa viestisi ja tuotekehityksesi juuri oikeille asiakkaille, mikä kasvattaa konversioita ja optimoi tuotekehitystä.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/userjourney.webp" alt="Käyttäjäpolut">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Kilpailuetu</span>
+                            <span>Erottautuminen</span>
+                        </div>
+                        <h3>Vahva erottautuminen kilpailijoista</h3>
+                        <p>Autamme sinua löytämään uniikin position markkinoilla, joka erottaa sinut selkeästi kilpailijoistasi. Tämä mahdollistaa korkeammat hinnat, lyhyemmät myyntisyklit ja vahvemman brändin rakentamisen.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/ui.webp" alt="Käyttöliittymä ja käyttökokemus" style="transform: scale(1.3);">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Arvolupaus</span>
+                            <span>Viestintä</span>
+                            <span>Markkinointi</span>
+                        </div>
+                        <h3>Selkeä arvolupaus joka resonoi kohderyhmäsi kanssa</h3>
+                        <p>Autamme sinua muodostamaan arvolupauksen, joka puhuttelee kohderyhmääsi ja kommunikoi tuotteesi hyödyt selkeästi. Tämä parantaa markkinointiviestintääsi ja luo perustan, jonka varaan kaikki yrityksesi viestintä voidaan rakentaa.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials__grid">
+                 <div class="trustmary-widget">
+                    <TrustmaryEmbed 
+                        title="Mitä asiakkaamme sanovat tuotepositioinnistamme"
+                        subtitle="Lue mitä asiakkaamme kertovat positiointikokemuksistaan"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Not For Everyone Section -->
+    <section class="not-for-everyone">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Tuotepositiointipalvelumme ei sovi kaikille</h2>
+                <p class="section__subtitle">Emme ehkä ole oikea vaihtoehto jos...</p>
+            </div>
+            <div class="two-columns">
+                <div class="bullet-points">
+                    <ul>
+                        <li>Tuotteesi on vasta ideatasolla eikä sinulla ole vielä yhtään asiakasta</li>
+                        <li>Et ole valmis tekemään päätöksiä kohderyhmän rajaamisesta</li>
+                        <li>Yrityksenne eri osastot eivät ole valmiita yhtenäiseen viestintään</li>
+                    </ul>
+                </div>
+                <div class="bullet-points">
+                    <ul>
+                        <li>Budjettisi on alle 5000€</li>
+                        <li>Uskot, että tuotteesi sopii kaikille ja kaikille pitää myydä</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem/Solution Section (Using existing styles) -->
+    <section class="problem-solution-cards">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-xl);">
+                <h2 class="section__title">Tuotepositioinnin ongelmat ja ratkaisut</h2>
+                <p class="section__subtitle">Tavallisimmat positioinnin haasteet ja miten autamme niissä.</p>
+            </div>
+
+            <!-- Problem 1 -->
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6 fit-content">
+                    <h3 class="problem__title">Epäselvä arvolupaus ja erottautumisen puute</h3>
+                    <p class="problem__description">Heikko tuotepositiointi aiheuttaa epäselvän arvolupauksen, joka nostaa asiakashankinnan kuluja, pitkittää myyntisyklejä ja tekee kehitystiimin priorisoinnista hankalaa, mikä näkyy resurssien käytön tehottomuutena ja heikkona kasvuna.</p>
+                </div>
+                <div class="arrow"></div>
+                <div class="col-md-6 solution-content">
+                    <h4>Ratkaisu</h4>
+                    <p class="solution__description">Teemme kattavan positiointiharjoituksen, jossa analysoimme markkinaa, kilpailijoita ja asiakassegmenttejä. Lopputuloksena syntyy selkeä positiointistrategia, joka auttaa erottautumaan kilpailijoista ja kommunikoimaan arvolupauksesi vaikuttavasti.</p>
+                </div>
+            </div>
+
+            <!-- Problem 2 -->
+            <div class="row align-items-center mb-5">
+                 <div class="col-md-6 fit-content">
+                    <h3 class="problem__title">Liian laaja kohderyhmä ja fokuksen puute</h3>
+                    <p class="problem__description">Yrität palvella kaikkia mahdollisia asiakkaita, minkä seurauksena viestisi on yleinen eikä resonoi syvästi kenenkään kanssa. Tämä johtaa korkeisiin markkinointikustannuksiin ja heikkoon konversioon.</p>
+                </div>
+                <div class="arrow"></div>
+                <div class="col-md-6 solution-content">
+                    <h4>Ratkaisu</h4>
+                    <p class="solution__description">Autamme sinua segmentoimaan potentiaaliset asiakkaat ja valitsemaan tarkasti rajatun kohderyhmän, jolle tuotteesi tuottaa eniten arvoa. Määrittelemme kohdepersoonat ja heidän erityistarpeensa, jotta voit kohdistaa viestisi tehokkaasti.</p>
+                </div>
+            </div>
+
+            <!-- Problem 3 -->
+             <div class="row align-items-center mb-5">
+                <div class="col-md-6 fit-content">
+                    <h3 class="problem__title">Hinnoittelun haastavuus ja hintakilpailu</h3>
+                    <p class="problem__description">Ilman selkeää positiointia tuotteesi joutuu helposti hintakilpailuun ja katteesi pienenevät. Et pysty perustelemaan korkeampaa hintaa, koska asiakkaat eivät näe selkeää eroa kilpailijoihin verrattuna.</p>
+                </div>
+                <div class="arrow"></div>
+                <div class="col-md-6 solution-content">
+                    <h4>Ratkaisu</h4>
+                    <p class="solution__description">Kehitämme arvolupauksen, joka korostaa tuotteesi ainutlaatuisuutta ja keskittyy tietyille asiakassegmenteille tuotettavaan lisäarvoon. Tämä mahdollistaa arvopohjaisen hinnoittelun ja paremmat katteet.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="hinnat" style="padding-top: 2rem;">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Tuotepositiointipalvelumme hinnoittelu</h2>
+                <p class="section__subtitle">Investoi tuotepositiointiin varmistaaksesi kasvun</p>
+            </div>
+            <div class="pricing__grid" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr)); gap: var(--spacing-lg);">
+                <div class="pricing-card">
+                    <h3>Positiointityöpaja</h3>
+                    <p class="pricing-card__price" style="font-size: 2.5rem; font-weight: bold;">5 900 €</p>
+                    <p class="pricing-card__description">Kattava tuotepositiointityöpaja, joka sisältää markkina-analyysin, kilpailija-analyysin ja selkeän positiointistrategian luomisen.</p>
+                    <a href="/fi/contact" class="btn btn--primary">Ota yhteyttä &rarr;</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Kokonaisvaltainen positiointi</h3>
+                    <p class="pricing-card__price" style="font-size: 2.5rem; font-weight: bold;">Kysy hintaa</p>
+                    <p class="pricing-card__description">Kattava tuotepositiointistrategia, viestinnän suunnittelu ja implementointiapu, joka auttaa erottumaan markkinoilla ja kasvattamaan liiketoimintaa.</p>
+                    <a href="/fi/contact" class="btn btn--primary">Ota yhteyttä &rarr;</a>
+                </div>
+            </div>
+            <p class="pricing__note" style="text-align: center; margin-top: var(--spacing-lg);">*Alle viisi miljoonaa euroa vaihtaville pienille yrityksille tarjoamme palveluitamme alennettuun hintaan. Hinnat ovat verottomia (alv 0%).</p>
+        </div>
+    </section>
+
+    <!-- Dummy anchor element for pricing section -->
+    <div id="hinnat-ankkuri" style="height: 1px; visibility: hidden;"></div>
+
+    <!-- Schedule Meeting Section -->
+    <section class="schedule-meeting" id="schedule-meeting">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Varaa tapaaminen tuotepositioinnin asiantuntijan kanssa</h2>
+                <p class="section__subtitle">Keskustellaan, miten voimme auttaa SaaS-tuotettasi erottautumaan markkinoilla</p>
+            </div>
+            <div class="schedule-meeting__embed">
+                <CalendlyEmbed elementId="cal-inline-index" calLink="aaltoyleva/kartoitustapaaminen" />
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Usein kysytyt kysymykset tuotepositioinnista</h2>
+                <p class="section__subtitle">Vastauksia yleisimpiin tuotepositiointiin liittyviin kysymyksiin</p>
+            </div>
+            <div class="faq-items">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question-wrapper">
+                        <span class="faq-question">Mitä tuotepositiointi tarkoittaa käytännössä?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Tuotepositiointi tarkoittaa sitä, miten määrittelet tuotteesi paikan markkinoilla suhteessa kilpailijoihin ja potentiaalisten asiakkaiden mielissä. Se vastaa kysymyksiin: kenelle tuote on tarkoitettu, mitä ongelmia se ratkaisee, miten se eroaa kilpailijoista ja miksi asiakkaan pitäisi valita juuri sinun tuotteesi.</p>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miksi tuotepositiointi on erityisen tärkeää SaaS-yrityksille?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">SaaS-markkinat ovat erittäin kilpailtuja ja uusia tuotteita syntyy jatkuvasti. Ilman selkeää positiointia tuotteesi hukkuu massaan. Lisäksi SaaS-tuotteet ovat usein monimutkaisia ja niiden hyötyjen kommunikointi on haastavaa. Hyvä positiointi tekee tuotteestasi helpommin ymmärrettävän ja erottuvamman.</p>
+                </div>
+                <!-- FAQ Item 3 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Kuinka kauan tuotepositiointiprosessi kestää?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Tyypillinen tuotepositiointiprojekti kestää 4-6 viikkoa. Tämä sisältää markkina-analyysin, asiakashaastattelut, kilpailija-analyysin, positiointivaihtoehtojen luomisen ja testaamisen, sekä lopullisen positiointistrategian ja viestintäsuunnitelman laatimisen.</p>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Milloin on oikea aika tehdä tuotepositiointi?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Ideaalitilanteessa tuotepositiointi tehdään ennen tuotteen lanseerausta, mutta todellisuudessa sen voi tehdä missä tahansa vaiheessa. Se on erityisen hyödyllistä, kun: 1) olet lanseeraamassa uutta tuotetta, 2) kasvusi on hidastunut, 3) markkinoille on tullut uusia kilpailijoita, 4) olet laajentamassa uusille markkinoille, tai 5) tuotevalikoimasi on laajentunut.</p>
+                </div>
+                <!-- FAQ Item 5 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten mittaatte tuotepositioinnin onnistumista?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Mittaamme onnistumista useilla mittareilla, kuten: konversioprosenttien paraneminen, keskiostoksen kasvu, myyntisyklin lyheneminen, asiakashankinnan kustannusten aleneminen ja asiakaspidon paraneminen. Seuraamme myös brändin tunnettuutta ja markkinoinnin tehokkuutta.</p>
+                </div>
+                <!-- FAQ Item 6 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Pitääkö tuotepositiointi tehdä uudelleen säännöllisesti?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Tuotepositiointia tulisi arvioida säännöllisesti, erityisesti kun markkinatilanne muuttuu, kilpailijat kehittävät tarjontaansa tai oma tuotteesi kehittyy merkittävästi. Suosittelemme arvioimaan positiointia vähintään vuosittain ja tekemään suuremman päivityksen 2-3 vuoden välein.</p>
+                </div>
+                <!-- FAQ Item 7 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten tuotepositiointi eroaa brändäyksestä?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Tuotepositiointi keskittyy siihen, miten yksittäinen tuote tai palvelu asemoidaan markkinoilla. Brändäys puolestaan kattaa koko yrityksen identiteetin, persoonallisuuden ja maineen. Positiointi on siis osa brändäystä, mutta keskittyy erityisesti siihen, miten tuote erotetaan kilpailijoista ja kommunikoidaan asiakkaille.</p>
+                </div>
+                <!-- FAQ Item 8 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Voiko tuotepositiointia tehdä, jos meillä on useita eri kohderyhmiä?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Kyllä voi, mutta se on haastavampaa. Vahvimmat positioinnit keskittyvät yleensä yhteen pääkohderyhmään, joka toimii "design-ankkurina". Useampien kohderyhmien tapauksessa voidaan luoda päätason positiointi, jota sitten muokataan eri segmenteille. Autamme sinua priorisoimaan kohderyhmät ja luomaan positiointistrategian, joka palvelee liiketoimintatavoitteitasi parhaiten.</p>
+                </div>
+                <!-- FAQ Item 9 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten tuotepositiointi vaikuttaa tuotekehitykseen?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Selkeä tuotepositiointi auttaa tuotekehitystä priorisoimaan ominaisuuksia, jotka vahvistavat valittua positiota markkinoilla. Se toimii suodattimena, jonka läpi uusia ideoita voidaan arvioida: tukeeko tämä ominaisuus valittua positiointia ja kohderyhmää? Näin resurssit kohdistuvat tehokkaasti niihin alueisiin, jotka vahvistavat kilpailuetuasi.</p>
+                </div>
+                <!-- FAQ Item 10 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Kuinka paljon dataa tarvitaan hyvään positiointiin?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Hyvä positiointi perustuu sekä kvalitatiiviseen että kvantitatiiviseen dataan. Tarvitsemme ymmärrystä asiakkaistasi, heidän tarpeistaan, kilpailijoistasi ja markkinatrendeistä. Jos sinulla on jo asiakastutkimusta, analytiikkaa ja myyntidataa, hyödynnämme sitä. Jos dataa on vähemmän, aloitamme keräämällä sitä osana prosessia. Tärkeintä on, että positiointi perustuu todelliseen asiakasymmärrykseen, ei pelkkiin olettamuksiin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Preview Section -->
+    <section class="blog-preview" id="latest-posts">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title">Tuoreimmat ajatuksemme tuotepositioinnista</h2>
+            </div>
+            <div class="blog-grid">
+                {latestPosts.map(post => (
+                    <article class="blog-card">
+                        <a href={`/fi/blog/${post.slug}/`} class="blog-card__link">
+                            {post.data.heroImage && (
+                               <div class="blog-card__image-container">
+                                 <Image
+                                   src={post.data.heroImage}
+                                   alt={post.data.heroImageAlt || post.data.title}
+                                   width={800}
+                                   height={450}
+                                   format="webp"
+                                   quality={80}
+                                   loading="lazy"
+                                   decoding="async"
+                                   class="blog-card__image"
+                                 />
+                               </div>
+                            )}
+                            <div class="blog-card__content">
+                                 {post.data.tags && post.data.tags.length > 0 && (
+                                    <div class="blog-card__tags">
+                                        {post.data.tags.map(tag => (
+                                            <span class="tag">{tag}</span>
+                                        ))}
+                                    </div>
+                                 )}
+                                <h3 class="blog-card__title">{post.data.title}</h3>
+                                <p class="blog-card__excerpt">{post.data.description || 'Lue artikkeli...'}</p>
+                                <div class="blog-card__footer">
+                                    <span class="blog-card__readmore">Lue lisää &rarr;</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                ))}
+            </div>
+            <div style="text-align: center; margin-top: var(--spacing-lg);">
+                <a href="/blog" class="btn btn--secondary">Lue kaikki kirjoitukset &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+</BaseLayout>
+
+<style>
+    .team-grid {
+        display: flex;
+        flex-direction: column; /* Stack vertically by default (mobile) */
+        align-items: center; /* Center items horizontally in column layout */
+        gap: var(--spacing-lg);
+    }
+
+    .team-member {
+        text-align: center; /* Ensure text inside member card is centered */
+    }
+
+    /* Apply row layout for medium screens and up */
+    @media (min-width: 768px) {
+        .team-grid {
+            flex-direction: row; /* Arrange side-by-side */
+            justify-content: center; /* Center items horizontally in row layout */
+        }
+    }
+</style> 

@@ -1,0 +1,489 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import HeroSection from '../../components/HeroSection.astro';
+import TrustmaryEmbed from '../../components/TrustmaryEmbed.astro';
+import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
+
+const pageTitle = "SaaS Product Positioning | The Good Side";
+const pageDescription = "Position your SaaS product for market leadership. Strategic positioning and messaging that differentiates your solution and drives growth.";
+
+// Fetch latest 6 blog posts about product positioning
+const latestPosts = (await getCollection('blog', ({ id, data }) => {
+    return id.endsWith('.en.md') && data.tags && (data.tags.includes('Product Positioning') || data.tags.includes('SaaS'));
+}))
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+    .slice(0, 6);
+
+// Helper function to format dates
+function formatDate(date: Date): string {
+  return new Date(date).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+}
+---
+<BaseLayout title={pageTitle} description={pageDescription}>
+    <!-- Use HeroSection component -->
+    <HeroSection
+        title="Position your SaaS product for market dominance."
+        paragraph="Unclear positioning is killing your growth. We help SaaS teams craft strategic positioning that differentiates your product, resonates with ideal customers, and creates a sustainable competitive advantage."
+        primaryButtonText="Book a positioning workshop &rarr;"
+        primaryButtonHref="/en/contact"
+        secondaryButtonText="View positioning case studies"
+        secondaryButtonHref="/en/references"
+        textOnly={true}
+        paddingTop="6rem"
+        paddingBottom="3rem"
+        textAlign="center"
+    />
+
+    <!-- Logo Wall Section -->
+    <section class="logo-wall">
+        <div class="container">
+            <h2 class="logo-wall__title">Trusted by SaaS companies for strategic positioning</h2>
+            <div class="logo-wall__grid">
+                <!-- The logos are intentionally duplicated below -->
+                <!-- First set -->
+                <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+                <!-- Second set (duplicate) -->
+                <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problems">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Struggling with these?</span>
+                <h2 class="section__title">Common positioning problems</h2>
+            </div>
+            <div class="problems__grid">
+                <article class="problem-card">
+                    <h3>Generic messaging</h3>
+                    <p>Your product sounds just like competitors, making it impossible for buyers to understand your unique value.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Unclear target audience</h3>
+                    <p>Trying to appeal to everyone results in connecting with no one, leading to high CAC and extended sales cycles.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Feature obsession</h3>
+                    <p>Focusing on features rather than benefits makes your marketing fall flat and fails to demonstrate real business value.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Us Section -->
+    <section class="hire-us">
+        <div class="container">
+            <h2 class="section__title">Expert positioning strategists</h2>
+            <p class="section__subtitle">Specialists in SaaS product positioning and market differentiation.</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/mikki.webp" alt="Mikki Aalto-Ylevä" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Mikki<br>Aalto-Ylevä</h3>
+                    <p class="team-member__title">SaaS Positioning Expert</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/tuomas.webp" alt="Tuomas Kaartoluoma" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Tuomas<br>Kaartoluoma</h3>
+                    <p class="team-member__title">Messaging Strategist</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/duncan.webp" alt="Dũng Nguyen" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Dũng<br>Nguyen</h3>
+                    <p class="team-member__title">Brand Strategist</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/aksel.webp" alt="Aksel Suokas" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Aksel<br>Suokas</h3>
+                    <p class="team-member__title">Market Researcher</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Intro Section -->
+    <section class="solutions">
+        <div class="container">
+            <h2 class="section__title">Our strategic positioning framework for SaaS success</h2>
+            <div class="solutions__grid">
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/positiointi.webp" alt="Market Analysis">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Market Analysis</span>
+                            <span>Competitive Research</span>
+                        </div>
+                        <h3>Define your unique market opportunity</h3>
+                        <p>We analyze your market landscape to identify untapped opportunities and positioning gaps that your product can uniquely fill, creating clear separation from competitors.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/userjourney.webp" alt="Customer Segmentation">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Customer Segmentation</span>
+                            <span>Ideal Customer Profile</span>
+                        </div>
+                        <h3>Target your highest-value customers</h3>
+                        <p>We identify and profile your most profitable customer segments, allowing you to focus your positioning on the specific buyers who will drive sustainable revenue growth.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/ui.webp" alt="Messaging Framework" style="transform: scale(1.3);">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Messaging Framework</span>
+                            <span>Value Proposition</span>
+                        </div>
+                        <h3>Craft a compelling positioning statement</h3>
+                        <p>We develop a clear, concise positioning framework that articulates your unique value and resonates with your target audience, making your product the obvious choice.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials__grid">
+                 <div class="trustmary-widget">
+                    <TrustmaryEmbed 
+                        title="Positioning success stories"
+                        subtitle="See how our positioning strategies transformed these SaaS businesses"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Not For Everyone Section -->
+    <section class="not-for-everyone">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Not the right fit for everyone</h2>
+                <p class="section__subtitle">Our positioning services aren't ideal if...</p>
+            </div>
+            <div class="two-columns">
+                <div class="bullet-points">
+                    <ul>
+                        <li>You're looking for a quick marketing fix rather than strategic repositioning</li>
+                        <li>Your product is still in very early development with minimal market validation</li>
+                        <li>You're unwilling to make product changes to align with your optimal positioning</li>
+                    </ul>
+                </div>
+                <div class="bullet-points">
+                    <ul>
+                        <li>Your positioning workshop budget is below €5000</li>
+                        <li>You just need copywriting without strategic guidance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem/Solution Section (Using existing styles) -->
+    <section class="problem-solution-cards">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-xl);">
+                <h2 class="section__title">Positioning challenges and solutions</h2>
+                <p class="section__subtitle">How our strategic positioning framework solves common SaaS growth barriers.</p>
+            </div>
+
+            <!-- Problem 1 -->
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6 fit-content">
+                    <h3 class="problem__title">Undifferentiated value proposition</h3>
+                    <p class="problem__description">When your positioning lacks clarity, potential customers can't articulate why they should choose you over competitors. This leads to commoditization, price sensitivity, and an inability to charge premium rates for your product.</p>
+                </div>
+                <div class="arrow"></div>
+                <div class="col-md-6 solution-content">
+                    <h4>Solution</h4>
+                    <p class="solution__description">Our differentiation workshop identifies your unique value drivers and creates positioning that highlights your strengths. We develop clear, compelling messaging that communicates your distinct advantages, allowing you to command premium pricing.</p>
+                </div>
+            </div>
+
+            <!-- Problem 2 -->
+            <div class="row align-items-center mb-5">
+                 <div class="col-md-6 fit-content">
+                    <h3 class="problem__title">Poor product-market fit</h3>
+                    <p class="problem__description">When you try to serve everyone, you end up serving no one effectively. This scattershot approach results in high customer acquisition costs, lengthy sales cycles, and difficulty scaling due to inconsistent positioning.</p>
+                </div>
+                <div class="arrow"></div>
+                <div class="col-md-6 solution-content">
+                    <h4>Solution</h4>
+                    <p class="solution__description">Our market segmentation process identifies your ideal customer profile with precision. We analyze customer data to pinpoint where your product creates the most value, then position your offering specifically for those high-value segments.</p>
+                </div>
+            </div>
+
+            <!-- Problem 3 -->
+             <div class="row align-items-center mb-5">
+                <div class="col-md-6 fit-content">
+                    <h3 class="problem__title">Inconsistent messaging across channels</h3>
+                    <p class="problem__description">When your positioning changes across marketing channels, sales materials, and product experiences, it creates customer confusion and erodes trust. This fragmented approach undermines your brand authority and hampers growth.</p>
+                </div>
+                <div class="arrow"></div>
+                <div class="col-md-6 solution-content">
+                    <h4>Solution</h4>
+                    <p class="solution__description">We create a comprehensive positioning framework and messaging guide that ensures consistency across all touchpoints. This unified approach aligns your entire organization around a clear, compelling story that resonates with your target audience.</p>
+                </div>
+            </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="hinnat" style="padding-top: 2rem;">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Ready to position your SaaS for market leadership?</h2>
+                <p class="section__subtitle">Our positioning services and packages</p>
+            </div>
+            <div class="pricing__grid" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr)); gap: var(--spacing-lg);">
+                <div class="pricing-card">
+                    <h3>Positioning Workshop</h3>
+                    <p class="pricing-card__price" style="font-size: 2.5rem; font-weight: bold;">€6,500</p>
+                    <p class="pricing-card__description">2-day intensive workshop to develop your strategic positioning, competitive differentiation, and core messaging framework.</p>
+                    <a href="/en/contact" class="btn btn--primary">Book Your Workshop &rarr;</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Complete Positioning Package</h3>
+                    <p class="pricing-card__price" style="font-size: 2.5rem; font-weight: bold;">€12,000</p>
+                    <p class="pricing-card__description">Comprehensive positioning strategy including market research, workshop, messaging guide, and implementation support.</p>
+                    <a href="/en/contact" class="btn btn--primary">Get Your Custom Plan &rarr;</a>
+                </div>
+            </div>
+            <p class="pricing__note" style="text-align: center; margin-top: var(--spacing-lg);">*For startups with less than €1 million in funding, we offer our positioning workshop at a reduced rate of €4,500. Prices are tax-free (VAT 0%).</p>
+        </div>
+    </section>
+
+    <!-- Dummy anchor element for pricing section -->
+    <div id="hinnat-ankkuri" style="height: 1px; visibility: hidden;"></div>
+
+    <!-- Schedule Meeting Section -->
+    <section class="schedule-meeting" id="schedule-meeting">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Book a positioning consultation</h2>
+                <p class="section__subtitle">Schedule a 30-minute call to discuss your positioning challenges</p>
+            </div>
+            <div class="schedule-meeting__embed">
+                <CalendlyEmbed elementId="cal-inline-positioning" calLink="aaltoyleva/kartoitustapaaminen" />
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Positioning FAQ</h2>
+                <p class="section__subtitle">Common questions about our product positioning services</p>
+            </div>
+            <div class="faq-items">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question-wrapper">
+                        <span class="faq-question">How long does a positioning project typically take?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Our standard positioning workshop takes 2 days, with preparation work requiring about 1-2 weeks. The complete positioning package typically spans 4-6 weeks from start to finish, depending on the complexity of your market and the depth of research required.</p>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How is your positioning methodology different?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Unlike generic marketing agencies, we specialize exclusively in SaaS positioning. Our framework is based on extensive experience with 10+ SaaS companies and combines competitive analysis, customer research, and benefit mapping to create positioning that drives measurable business results.</p>
+                </div>
+                <!-- FAQ Item 3 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Do we need to have customer data before starting?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">While customer data is valuable, it's not a prerequisite. Our process includes gathering insights through stakeholder interviews and market research. If you have existing customer feedback or analytics, we'll incorporate that data to strengthen your positioning strategy.</p>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How do you measure positioning success?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">We establish clear KPIs at the start of the project, typically including metrics like conversion rate improvements, sales cycle length reduction, win rate increases, and higher average deal values. We also track qualitative indicators like customer understanding of your value proposition.</p>
+                </div>
+                <!-- FAQ Item 5 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Can positioning help if we're in a crowded market?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Absolutely. In fact, clear positioning is even more critical in crowded markets. We'll help you identify underserved segments or unique value combinations that competitors have overlooked, allowing you to carve out a distinctive market position even in competitive landscapes.</p>
+                </div>
+                <!-- FAQ Item 6 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Should we reposition our product if it's already established?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Repositioning an established product can be powerful when entering new markets, facing new competitors, or when growth has plateaued. Our process includes careful evaluation of your current position and a strategic transition plan to minimize disruption while maximizing impact.</p>
+                </div>
+                <!-- FAQ Item 7 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Who from our team needs to be involved?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">The most effective positioning workshops include leadership from product, marketing, and sales functions, plus the CEO for strategic alignment. We typically work with 4-6 key stakeholders who have deep understanding of your product, customers, and market dynamics.</p>
+                </div>
+                <!-- FAQ Item 8 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">What deliverables will we receive?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Our standard deliverables include a comprehensive positioning statement, ideal customer profiles, competitive differentiation analysis, core value proposition, messaging framework, and implementation guidelines. The complete package also includes customer journey mapping and channel-specific messaging recommendations.</p>
+                </div>
+                <!-- FAQ Item 9 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How does positioning relate to our product roadmap?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Strong positioning should influence your product roadmap by highlighting the features and capabilities that reinforce your unique market position. We'll help you identify product enhancement opportunities that strengthen your competitive differentiation and resonate with your target audience.</p>
+                </div>
+                <!-- FAQ Item 10 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Do you help with implementation after the strategy is complete?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Yes, our complete positioning package includes implementation support to ensure your new positioning is effectively applied across your marketing channels, sales materials, and product experience. We also offer ongoing consulting to help your team navigate the positioning rollout and measure results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</BaseLayout>
+
+<style>
+    .team-grid {
+        display: flex;
+        flex-direction: column; /* Stack vertically by default (mobile) */
+        align-items: center; /* Center items horizontally in column layout */
+        gap: var(--spacing-lg);
+    }
+
+    .team-member {
+        text-align: center; /* Ensure text inside member card is centered */
+    }
+
+    /* Apply row layout for medium screens and up */
+    @media (min-width: 768px) {
+        .team-grid {
+            flex-direction: row; /* Arrange side-by-side */
+            justify-content: center; /* Center items horizontally in row layout */
+        }
+    }
+</style> 
