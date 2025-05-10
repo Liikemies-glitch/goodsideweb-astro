@@ -1,0 +1,49 @@
+---
+interface Props {
+    title: string;
+    subtitle: string;
+    leftColumnItems: string[];
+    rightColumnItems: string[];
+}
+
+const { title, subtitle, leftColumnItems, rightColumnItems } = Astro.props;
+
+// Yhdistetään kaikki listakohteet yhteen taulukkoon
+const allItems = [...leftColumnItems, ...rightColumnItems];
+---
+
+<section class="not-for-everyone">
+    <div class="container">
+        <div class="section__header">
+            <h2 class="section__title">{title}</h2>
+            <p class="section__subtitle">{subtitle}</p>
+        </div>
+        <div class="single-column">
+            <div class="bullet-points">
+                <ul>
+                    {allItems.map(item => (
+                        <li>{item}</li>
+                    ))}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section> 
+
+<style>
+    /* Yksisarakkeinen layout */
+    section.not-for-everyone .single-column {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    /* Bullet point tyylitys */
+    section.not-for-everyone .bullet-points ul {
+        padding-left: 1.25rem;
+    }
+
+    section.not-for-everyone .bullet-points li {
+        margin-bottom: 0.75rem;
+        line-height: 1.5;
+    }
+</style> 

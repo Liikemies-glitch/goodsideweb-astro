@@ -1,0 +1,31 @@
+---
+interface Problem {
+    title: string;
+    description: string;
+}
+
+interface Props {
+    tag: string;
+    title: string;
+    problems: Problem[];
+}
+
+const { tag, title, problems } = Astro.props;
+---
+
+<section class="problems">
+    <div class="container">
+        <div class="section__header">
+            <span class="section__tag">{tag}</span>
+            <h2 class="section__title">{title}</h2>
+        </div>
+        <div class="problems__grid">
+            {problems.map((problem) => (
+                <article class="problem-card">
+                    <h3>{problem.title}</h3>
+                    <p>{problem.description}</p>
+                </article>
+            ))}
+        </div>
+    </div>
+</section> 

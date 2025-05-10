@@ -1,0 +1,74 @@
+---
+interface Props {
+    title: string;
+    subtitle: string;
+}
+
+const { title, subtitle } = Astro.props;
+---
+
+<section class="hire-us">
+    <div class="container">
+        <h2 class="section__title">{title}</h2>
+        <p class="section__subtitle">{subtitle}</p>
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="team-member__image">
+                    <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                        <img src="/images/team/mikki.webp" alt="Mikki Aalto-Ylevä" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                </div>
+                <h3 class="team-member__name">Mikki<br>Aalto-Ylevä</h3>
+                <p class="team-member__title">SaaS-spesialisti</p>
+            </div>
+            <div class="team-member">
+                <div class="team-member__image">
+                    <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                        <img src="/images/team/tuomas.webp" alt="Tuomas Kaartoluoma" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                </div>
+                <h3 class="team-member__name">Tuomas<br>Kaartoluoma</h3>
+                <p class="team-member__title">Designer</p>
+            </div>
+            <div class="team-member">
+                <div class="team-member__image">
+                    <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                        <img src="/images/team/duncan.webp" alt="Dũng Nguyen" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                </div>
+                <h3 class="team-member__name">Dũng<br>Nguyen</h3>
+                <p class="team-member__title">Designer</p>
+            </div>
+            <div class="team-member">
+                <div class="team-member__image">
+                    <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                        <img src="/images/team/aksel.webp" alt="Aksel Suokas" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                </div>
+                <h3 class="team-member__name">Aksel<br>Suokas</h3>
+                <p class="team-member__title">Designer</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .team-grid {
+        display: flex;
+        flex-direction: column; /* Stack vertically by default (mobile) */
+        align-items: center; /* Center items horizontally in column layout */
+        gap: var(--spacing-lg);
+    }
+
+    .team-member {
+        text-align: center; /* Ensure text inside member card is centered */
+    }
+
+    /* Apply row layout for medium screens and up */
+    @media (min-width: 768px) {
+        .team-grid {
+            flex-direction: row; /* Arrange side-by-side */
+            justify-content: center; /* Center items horizontally in row layout */
+        }
+    }
+</style> 

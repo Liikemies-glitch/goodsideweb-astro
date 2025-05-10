@@ -5,6 +5,10 @@ import { Image } from 'astro:assets';
 import HeroSection from '../../components/HeroSection.astro';
 import TrustmaryEmbed from '../../components/TrustmaryEmbed.astro';
 import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
+import NotForEveryone from '../../components/NotForEveryone.astro';
+import LogoWall from '../../components/LogoWall.astro';
+import ProblemSection from '../../components/ProblemSection.astro';
+import TeamSection from '../../components/TeamSection.astro';
 
 const pageTitle = "The Good Side | SaaS-tuotetiimien strategiakumppani";
 const pageDescription = "The Good Side - Autamme tuotetiimejä rakentamaan menestyvää SaaS-liiketoimintaa yhdistämällä tuotestrategian ja designin.";
@@ -39,158 +43,33 @@ function formatDate(date: Date): string {
     />
 
     <!-- Logo Wall Section -->
-    <section class="logo-wall">
-        <div class="container">
-            <h2 class="logo-wall__title">Menetelmiimme luottavat kasvuhakuiset tuotetiimit</h2>
-            <div class="logo-wall__grid">
-                <!-- The logos are intentionally duplicated below -->
-                <!-- First set -->
-                <div class="logo-item">
-                    <img src="/images/logos/eemel.png" alt="Eemel logo">
-                </div>
-                <div class="logo-item">
-                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
-                </div>
-                <div class="logo-item">
-                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
-                </div>
-                <div class="logo-item">
-                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
-                </div>
-                <div class="logo-item">
-                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
-                </div>
-                <div class="logo-item">
-                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
-                </div>
-                <div class="logo-item">
-                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
-                </div>
-                <div class="logo-item">
-                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
-                </div>
-                <div class="logo-item">
-                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
-                </div>
-                 <div class="logo-item">
-                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
-                </div>
-                <div class="logo-item">
-                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
-                </div>
-                <div class="logo-item">
-                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
-                </div>
-                 <!-- Second set (duplicate) -->
-                 <div class="logo-item">
-                    <img src="/images/logos/eemel.png" alt="Eemel logo">
-                </div>
-                <div class="logo-item">
-                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
-                </div>
-                <div class="logo-item">
-                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
-                </div>
-                <div class="logo-item">
-                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
-                </div>
-                <div class="logo-item">
-                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
-                </div>
-                <div class="logo-item">
-                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
-                </div>
-                <div class="logo-item">
-                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
-                </div>
-                <div class="logo-item">
-                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
-                </div>
-                <div class="logo-item">
-                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
-                </div>
-                 <div class="logo-item">
-                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
-                </div>
-                <div class="logo-item">
-                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
-                </div>
-                <div class="logo-item">
-                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
-                </div>
-            </div>
-        </div>
-    </section>
+    <LogoWall title="Menetelmiimme luottavat kasvuhakuiset tuotetiimit" />
 
     <!-- Problem Section -->
-    <section class="problems">
-        <div class="container">
-            <div class="section__header">
-                <span class="section__tag">Kuulostaako tutulta?</span>
-                <h2 class="section__title">Tyypilliset ongelmat</h2>
-            </div>
-            <div class="problems__grid">
-                <article class="problem-card">
-                    <h3>Tuotesuunnittelu</h3>
-                    <p>Tuotteen käyttöliittymä ja käyttökokemus tehdään ilman ammattimaista suunnittelua, jonka seurauksena lopputulos ei ole optimaalinen eikä tue kasvustrategiaa.</p>
-                </article>
-                <article class="problem-card">
-                    <h3>Käyttäjäpolut</h3>
-                    <p>Käytät käyttäjäpolkujen ja sisältöjen suunnitteluun kumppaneita, jotka kukin toimivat omissa siiloissaan, mikä johtaa vaihtelevaan laatutasoon ja heikkoon konversioon.</p>
-                </article>
-                <article class="problem-card">
-                    <h3>Tuotepositiointi</h3>
-                    <p>Tuote- ja markkinapositiointi tehdään ilman kunnon työkaluja, jonka seurauksena kohderyhmä on epäselvä, viesti ei resonoi ja tuotekehitystä on vaikea priorisoida.</p>
-                </article>
-            </div>
-        </div>
-    </section>
+    <ProblemSection 
+        tag="Kuulostaako tutulta?"
+        title="Tyypilliset ongelmat"
+        problems={[
+            {
+                title: "Tuotesuunnittelu",
+                description: "Tuotteen käyttöliittymä ja käyttökokemus tehdään ilman ammattimaista suunnittelua, jonka seurauksena lopputulos ei ole optimaalinen eikä tue kasvustrategiaa."
+            },
+            {
+                title: "Käyttäjäpolut",
+                description: "Käytät käyttäjäpolkujen ja sisältöjen suunnitteluun kumppaneita, jotka kukin toimivat omissa siiloissaan, mikä johtaa vaihtelevaan laatutasoon ja heikkoon konversioon."
+            },
+            {
+                title: "Tuotepositiointi",
+                description: "Tuote- ja markkinapositiointi tehdään ilman kunnon työkaluja, jonka seurauksena kohderyhmä on epäselvä, viesti ei resonoi ja tuotekehitystä on vaikea priorisoida."
+            }
+        ]}
+    />
 
-    <!-- Hire Us Section -->
-    <section class="hire-us">
-        <div class="container">
-            <h2 class="section__title">Tuotetiimisi uudet jäsenet</h2>
-            <p class="section__subtitle">Palkkaa meidät poistamaan kasvun esteet.</p>
-            <div class="team-grid">
-                <div class="team-member">
-                    <div class="team-member__image">
-                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
-                            <img src="/images/team/mikki.webp" alt="Mikki Aalto-Ylevä" class="w-full h-full object-cover" loading="lazy">
-                        </div>
-                    </div>
-                    <h3 class="team-member__name">Mikki<br>Aalto-Ylevä</h3>
-                    <p class="team-member__title">SaaS-spesialisti</p>
-                </div>
-                <div class="team-member">
-                    <div class="team-member__image">
-                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
-                            <img src="/images/team/tuomas.webp" alt="Tuomas Kaartoluoma" class="w-full h-full object-cover" loading="lazy">
-                        </div>
-                    </div>
-                    <h3 class="team-member__name">Tuomas<br>Kaartoluoma</h3>
-                    <p class="team-member__title">Designer</p>
-                </div>
-                <div class="team-member">
-                    <div class="team-member__image">
-                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
-                            <img src="/images/team/duncan.webp" alt="Dũng Nguyen" class="w-full h-full object-cover" loading="lazy">
-                        </div>
-                    </div>
-                    <h3 class="team-member__name">Dũng<br>Nguyen</h3>
-                    <p class="team-member__title">Designer</p>
-                </div>
-                <div class="team-member">
-                    <div class="team-member__image">
-                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
-                            <img src="/images/team/aksel.webp" alt="Aksel Suokas" class="w-full h-full object-cover" loading="lazy">
-                        </div>
-                    </div>
-                    <h3 class="team-member__name">Aksel<br>Suokas</h3>
-                    <p class="team-member__title">Designer</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Team Section -->
+    <TeamSection
+        title="Tuotetiimisi uudet jäsenet"
+        subtitle="Palkkaa meidät poistamaan kasvun esteet"
+    />
 
     <!-- Solution Intro Section -->
     <section class="solutions">
@@ -257,29 +136,19 @@ function formatDate(date: Date): string {
     </section>
 
     <!-- Not For Everyone Section -->
-    <section class="not-for-everyone">
-        <div class="container">
-            <div class="section__header">
-                <h2 class="section__title">Emme ole kaikille</h2>
-                <p class="section__subtitle">Emme ehkä ole oikea vaihtoehto jos...</p>
-            </div>
-            <div class="two-columns">
-                <div class="bullet-points">
-                    <ul>
-                        <li>Sinulla on aikaa opetella tekemään kaikki itse, etkä tarvitse kumppaneita</li>
-                        <li>Olet valinnut jo kumppaniyritykset sekä resurssit ja kaikki vaan toimii täydellisesti</li>
-                        <li>Sinulla on käytössä paremmat menetelmät, kehykset ja enemmän osaamista kuin meillä</li>
-                    </ul>
-                </div>
-                <div class="bullet-points">
-                    <ul>
-                        <li>Budjettisi on alle 5000€</li>
-                        <li>Haluat, että me myös koodaamme suunnitelmamme</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+    <NotForEveryone 
+        title="Emme ole kaikille"
+        subtitle="Emme ehkä ole oikea vaihtoehto jos..."
+        leftColumnItems={[
+            "Sinulla on aikaa opetella tekemään kaikki itse, etkä tarvitse kumppaneita",
+            "Olet valinnut jo kumppaniyritykset sekä resurssit ja kaikki vaan toimii täydellisesti",
+            "Sinulla on käytössä paremmat menetelmät, kehykset ja enemmän osaamista kuin meillä"
+        ]}
+        rightColumnItems={[
+            "Budjettisi on alle 5000€",
+            "Haluat, että me myös koodaamme suunnitelmamme"
+        ]}
+    />
 
     <!-- Problem/Solution Section (Using existing styles) -->
     <section class="problem-solution-cards">
@@ -516,22 +385,5 @@ function formatDate(date: Date): string {
 </BaseLayout>
 
 <style>
-    .team-grid {
-        display: flex;
-        flex-direction: column; /* Stack vertically by default (mobile) */
-        align-items: center; /* Center items horizontally in column layout */
-        gap: var(--spacing-lg);
-    }
-
-    .team-member {
-        text-align: center; /* Ensure text inside member card is centered */
-    }
-
-    /* Apply row layout for medium screens and up */
-    @media (min-width: 768px) {
-        .team-grid {
-            flex-direction: row; /* Arrange side-by-side */
-            justify-content: center; /* Center items horizontally in row layout */
-        }
-    }
+    /* CSS styles for this page - removed team-grid styles as they're now in the TeamSection component */
 </style>

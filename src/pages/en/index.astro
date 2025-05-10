@@ -5,6 +5,7 @@ import { Image } from 'astro:assets';
 import HeroSection from '../../components/HeroSection.astro';
 import TrustmaryEmbed from '../../components/TrustmaryEmbed.astro';
 import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
+import NotForEveryone from '../../components/NotForEveryone.astro';
 
 const pageTitle = "The Good Side | Strategic Partner for SaaS Product Teams";
 const pageDescription = "The Good Side - We help product teams build successful SaaS businesses by combining product strategy and design.";
@@ -259,29 +260,19 @@ function formatDate(date: Date): string {
     </section>
 
     <!-- Not For Everyone Section -->
-    <section class="not-for-everyone">
-        <div class="container">
-            <div class="section__header">
-                <h2 class="section__title">Not the right fit for everyone</h2>
-                <p class="section__subtitle">We might not be your ideal partner if...</p>
-            </div>
-            <div class="two-columns">
-                <div class="bullet-points">
-                    <ul>
-                        <li>You prefer to build everything in-house and have the resources to do so</li>
-                        <li>You already have a well-oiled machine with trusted partners and processes</li>
-                        <li>Your team has deeper expertise and more proven frameworks than ours</li>
-                    </ul>
-                </div>
-                <div class="bullet-points">
-                    <ul>
-                        <li>Your project budget is below €5000</li>
-                        <li>You're looking for a tech partner who also codes</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+    <NotForEveryone 
+        title="Not the right fit for everyone"
+        subtitle="We might not be your ideal partner if..."
+        leftColumnItems={[
+            "You prefer to build everything in-house and have the resources to do so",
+            "You already have a well-oiled machine with trusted partners and processes",
+            "Your team has deeper expertise and more proven frameworks than ours"
+        ]}
+        rightColumnItems={[
+            "Your project budget is below €5000",
+            "You're looking for a tech partner who also codes"
+        ]}
+    />
 
     <!-- Problem/Solution Section (Using existing styles) -->
     <section class="problem-solution-cards">

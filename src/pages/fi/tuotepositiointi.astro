@@ -1,27 +1,28 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getCollection } from 'astro:content';
+// import { getCollection } from 'astro:content'; // Removed as latestPosts is no longer used
 import { Image } from 'astro:assets';
 import HeroSection from '../../components/HeroSection.astro';
 import TrustmaryEmbed from '../../components/TrustmaryEmbed.astro';
 import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
+import NotForEveryone from '../../components/NotForEveryone.astro';
 
 const pageTitle = "Tuotepositiointi SaaS-tuotteelle | The Good Side";
 const pageDescription = "Laadukkaalla tuotepositioinnilla varmistat SaaS-tuotteesi kilpailuedun markkinoilla. Autamme määrittelemään kohderyhmän ja arvolupauksen, joka erottaa sinut kilpailijoista.";
 
-// Fetch latest 6 blog posts
-const latestPosts = (await getCollection('blog'))
-    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-    .slice(0, 6);
+// Fetch latest 6 blog posts - REMOVED
+// const latestPosts = (await getCollection('blog'))
+//     .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+//     .slice(0, 6);
 
-// Helper function to format dates
-function formatDate(date: Date): string {
-  return new Date(date).toLocaleDateString('fi-FI', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  });
-}
+// Helper function to format dates - REMOVED if only used for blog posts
+// function formatDate(date: Date): string {
+//   return new Date(date).toLocaleDateString('fi-FI', {
+//     year: 'numeric',
+//     month: 'long',
+//     day: 'numeric',
+//   });
+// }
 ---
 <BaseLayout title={pageTitle} description={pageDescription}>
     <!-- Use HeroSection component -->
@@ -41,7 +42,7 @@ function formatDate(date: Date): string {
     <!-- Logo Wall Section -->
     <section class="logo-wall">
         <div class="container">
-            <h2 class="logo-wall__title">Tuotepositiointimme on auttanut näitä SaaS-yrityksiä menestymään</h2>
+            <h2 class="logo-wall__title">Tehokas positiointi osana kasvua</h2>
             <div class="logo-wall__grid">
                 <!-- The logos are intentionally duplicated below -->
                 <!-- First set -->
@@ -149,8 +150,8 @@ function formatDate(date: Date): string {
     <!-- Hire Us Section -->
     <section class="hire-us">
         <div class="container">
-            <h2 class="section__title">Tuotepositioinnin asiantuntijat palveluksessasi</h2>
-            <p class="section__subtitle">Palkkaa meidät tekemään tuotteesi positiointi, joka erottuu markkinoilla.</p>
+            <h2 class="section__title">SaaS-spesialistit palveluksessasi</h2>
+            <p class="section__subtitle">Palkkaa meidät tekemään positiointiharjoitus, joka erottaa sinut kilpailijoista.</p>
             <div class="team-grid">
                 <div class="team-member">
                     <div class="team-member__image">
@@ -247,8 +248,8 @@ function formatDate(date: Date): string {
             <div class="testimonials__grid">
                  <div class="trustmary-widget">
                     <TrustmaryEmbed 
-                        title="Mitä asiakkaamme sanovat tuotepositioinnistamme"
-                        subtitle="Lue mitä asiakkaamme kertovat positiointikokemuksistaan"
+                        title="Mitä asiakkaamme sanovat"
+                        subtitle="Lue mitä asiakkaamme kertovat kokemuksistaan"
                     />
                 </div>
             </div>
@@ -256,35 +257,25 @@ function formatDate(date: Date): string {
     </section>
 
     <!-- Not For Everyone Section -->
-    <section class="not-for-everyone">
-        <div class="container">
-            <div class="section__header">
-                <h2 class="section__title">Tuotepositiointipalvelumme ei sovi kaikille</h2>
-                <p class="section__subtitle">Emme ehkä ole oikea vaihtoehto jos...</p>
-            </div>
-            <div class="two-columns">
-                <div class="bullet-points">
-                    <ul>
-                        <li>Tuotteesi on vasta ideatasolla eikä sinulla ole vielä yhtään asiakasta</li>
-                        <li>Et ole valmis tekemään päätöksiä kohderyhmän rajaamisesta</li>
-                        <li>Yrityksenne eri osastot eivät ole valmiita yhtenäiseen viestintään</li>
-                    </ul>
-                </div>
-                <div class="bullet-points">
-                    <ul>
-                        <li>Budjettisi on alle 5000€</li>
-                        <li>Uskot, että tuotteesi sopii kaikille ja kaikille pitää myydä</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+    <NotForEveryone 
+        title="Palvelumme ei sovi kaikille"
+        subtitle="Emme ehkä ole oikea vaihtoehto jos..."
+        leftColumnItems={[
+            "Tuotteesi on vasta ideatasolla eikä sinulla ole vielä yhtään asiakasta",
+            "Et ole valmis tekemään päätöksiä kohderyhmän rajaamisesta",
+            "Yrityksenne eri osastot eivät ole valmiita yhtenäiseen viestintään"
+        ]}
+        rightColumnItems={[
+            "Budjettisi on alle 5000€",
+            "Uskot, että tuotteesi sopii kaikille ja kaikille pitää myydä"
+        ]}
+    />
 
     <!-- Problem/Solution Section (Using existing styles) -->
     <section class="problem-solution-cards">
         <div class="container">
             <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-xl);">
-                <h2 class="section__title">Tuotepositioinnin ongelmat ja ratkaisut</h2>
+                <h2 class="section__title">Tyypilliset haasteet</h2>
                 <p class="section__subtitle">Tavallisimmat positioinnin haasteet ja miten autamme niissä.</p>
             </div>
 
@@ -334,7 +325,7 @@ function formatDate(date: Date): string {
     <section class="pricing" id="hinnat" style="padding-top: 2rem;">
         <div class="container">
             <div class="section__header">
-                <h2 class="section__title">Tuotepositiointipalvelumme hinnoittelu</h2>
+                <h2 class="section__title">Hinnoittelumme</h2>
                 <p class="section__subtitle">Investoi tuotepositiointiin varmistaaksesi kasvun</p>
             </div>
             <div class="pricing__grid" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr)); gap: var(--spacing-lg);">
@@ -362,7 +353,7 @@ function formatDate(date: Date): string {
     <section class="schedule-meeting" id="schedule-meeting">
         <div class="container">
             <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
-                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Varaa tapaaminen tuotepositioinnin asiantuntijan kanssa</h2>
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Varaa tapaaminen</h2>
                 <p class="section__subtitle">Keskustellaan, miten voimme auttaa SaaS-tuotettasi erottautumaan markkinoilla</p>
             </div>
             <div class="schedule-meeting__embed">
@@ -375,7 +366,7 @@ function formatDate(date: Date): string {
     <section class="faq-section" id="faq">
         <div class="container">
             <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
-                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Usein kysytyt kysymykset tuotepositioinnista</h2>
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Usein kysytyt kysymykset</h2>
                 <p class="section__subtitle">Vastauksia yleisimpiin tuotepositiointiin liittyviin kysymyksiin</p>
             </div>
             <div class="faq-items">
@@ -459,55 +450,6 @@ function formatDate(date: Date): string {
                     </div>
                     <p class="faq-answer">Hyvä positiointi perustuu sekä kvalitatiiviseen että kvantitatiiviseen dataan. Tarvitsemme ymmärrystä asiakkaistasi, heidän tarpeistaan, kilpailijoistasi ja markkinatrendeistä. Jos sinulla on jo asiakastutkimusta, analytiikkaa ja myyntidataa, hyödynnämme sitä. Jos dataa on vähemmän, aloitamme keräämällä sitä osana prosessia. Tärkeintä on, että positiointi perustuu todelliseen asiakasymmärrykseen, ei pelkkiin olettamuksiin.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Blog Preview Section -->
-    <section class="blog-preview" id="latest-posts">
-        <div class="container">
-            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
-                <h2 class="section__title">Tuoreimmat ajatuksemme tuotepositioinnista</h2>
-            </div>
-            <div class="blog-grid">
-                {latestPosts.map(post => (
-                    <article class="blog-card">
-                        <a href={`/fi/blog/${post.slug}/`} class="blog-card__link">
-                            {post.data.heroImage && (
-                               <div class="blog-card__image-container">
-                                 <Image
-                                   src={post.data.heroImage}
-                                   alt={post.data.heroImageAlt || post.data.title}
-                                   width={800}
-                                   height={450}
-                                   format="webp"
-                                   quality={80}
-                                   loading="lazy"
-                                   decoding="async"
-                                   class="blog-card__image"
-                                 />
-                               </div>
-                            )}
-                            <div class="blog-card__content">
-                                 {post.data.tags && post.data.tags.length > 0 && (
-                                    <div class="blog-card__tags">
-                                        {post.data.tags.map(tag => (
-                                            <span class="tag">{tag}</span>
-                                        ))}
-                                    </div>
-                                 )}
-                                <h3 class="blog-card__title">{post.data.title}</h3>
-                                <p class="blog-card__excerpt">{post.data.description || 'Lue artikkeli...'}</p>
-                                <div class="blog-card__footer">
-                                    <span class="blog-card__readmore">Lue lisää &rarr;</span>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-                ))}
-            </div>
-            <div style="text-align: center; margin-top: var(--spacing-lg);">
-                <a href="/blog" class="btn btn--secondary">Lue kaikki kirjoitukset &rarr;</a>
             </div>
         </div>
     </section>

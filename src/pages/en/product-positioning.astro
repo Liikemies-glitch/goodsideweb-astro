@@ -5,6 +5,7 @@ import { Image } from 'astro:assets';
 import HeroSection from '../../components/HeroSection.astro';
 import TrustmaryEmbed from '../../components/TrustmaryEmbed.astro';
 import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
+import NotForEveryone from '../../components/NotForEveryone.astro';
 
 const pageTitle = "SaaS Product Positioning | The Good Side";
 const pageDescription = "Position your SaaS product for market leadership. Strategic positioning and messaging that differentiates your solution and drives growth.";
@@ -257,29 +258,19 @@ function formatDate(date: Date): string {
     </section>
 
     <!-- Not For Everyone Section -->
-    <section class="not-for-everyone">
-        <div class="container">
-            <div class="section__header">
-                <h2 class="section__title">Not the right fit for everyone</h2>
-                <p class="section__subtitle">Our positioning services aren't ideal if...</p>
-            </div>
-            <div class="two-columns">
-                <div class="bullet-points">
-                    <ul>
-                        <li>You're looking for a quick marketing fix rather than strategic repositioning</li>
-                        <li>Your product is still in very early development with minimal market validation</li>
-                        <li>You're unwilling to make product changes to align with your optimal positioning</li>
-                    </ul>
-                </div>
-                <div class="bullet-points">
-                    <ul>
-                        <li>Your positioning workshop budget is below €5000</li>
-                        <li>You just need copywriting without strategic guidance</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+    <NotForEveryone 
+        title="Not the right fit for everyone"
+        subtitle="Our positioning services aren't ideal if..."
+        leftColumnItems={[
+            "You're looking for a quick marketing fix rather than strategic repositioning",
+            "Your product is still in very early development with minimal market validation",
+            "You're unwilling to make product changes to align with your optimal positioning"
+        ]}
+        rightColumnItems={[
+            "Your positioning workshop budget is below €5000",
+            "You just need copywriting without strategic guidance"
+        ]}
+    />
 
     <!-- Problem/Solution Section (Using existing styles) -->
     <section class="problem-solution-cards">
