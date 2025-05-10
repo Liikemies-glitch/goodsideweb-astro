@@ -34,15 +34,22 @@ export function getEquivalentPagePath(
   if (currentPath === "/" || currentPath === "") return "/";
 
   // Remove leading slash if present
-  const normalizedPath = currentPath.startsWith("/") 
+  let normalizedPath = currentPath.startsWith("/") 
     ? currentPath.substring(1) 
     : currentPath;
+
+  // Remove trailing slash if present
+  if (normalizedPath.endsWith("/")) {
+    normalizedPath = normalizedPath.substring(0, normalizedPath.length - 1);
+  }
 
   // Check if we have a mapping for this path
   if (normalizedPath in pageMappings) {
     return pageMappings[normalizedPath];
   }
 
-  // No mapping found, return original path
+  // No mapping found, return original path (without the trailing slash, if it was removed)
+  // or consider if the original currentPath (with slash) should be returned if no mapping.
+  // For now, returning the slash-trimmed normalizedPath is consistent.
   return normalizedPath;
 } 
