@@ -43,9 +43,6 @@
           "description": "Enforce strict TypeScript settings, ensuring type safety across the project."
         },
         {
-          "description": "Use TailwindCSS for all styling, keeping the utility-first approach in mind."
-        },
-        {
           "description": "Ensure Astro components are modular, reusable, and maintain a clear separation of concerns."
         }
       ]
