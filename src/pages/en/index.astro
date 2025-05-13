@@ -6,6 +6,11 @@ import HeroSection from '../../components/HeroSection.astro';
 import TrustmaryEmbed from '../../components/TrustmaryEmbed.astro';
 import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
 import NotForEveryone from '../../components/NotForEveryone.astro';
+import LogoWall from '../../components/LogoWall.astro';
+import ProblemSection from '../../components/ProblemSection.astro';
+import TeamSection from '../../components/TeamSection.astro';
+import ProblemSolutionSection from '../../components/ProblemSolutionSection.astro';
+import PricingSection from '../../components/PricingSection.astro';
 
 const pageTitle = "The Good Side | Strategic Partner for SaaS Product Teams";
 const pageDescription = "The Good Side - We help product teams build successful SaaS businesses by combining product strategy and design.";
@@ -275,83 +280,53 @@ function formatDate(date: Date): string {
     />
 
     <!-- Problem/Solution Section (Using existing styles) -->
-    <section class="problem-solution-cards">
-        <div class="container">
-            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-xl);">
-                <h2 class="section__title">Problems and solutions</h2>
-                <p class="section__subtitle">The most common challenges and how we help with them.</p>
-            </div>
-
-            <!-- Problem 1 -->
-            <div class="row align-items-center mb-5">
-                <div class="col-md-6 fit-content">
-                    <h3 class="problem__title">Your product gets lost in the noise</h3>
-                    <p class="problem__description">When your value proposition isn't crystal clear, you're fighting an uphill battle. Customers can't understand why they should choose you, sales cycles drag on, and your team struggles to prioritize features that actually matter. The result? Wasted resources and stalled growth.</p>
-                </div>
-                <div class="arrow"></div>
-                <div class="col-md-6 solution-content">
-                    <h4>Solution</h4>
-                    <p class="solution__description">We'll help you carve out a unique market position that resonates with your ideal customers. Through strategic positioning workshops, we'll identify your competitive edge and create a go-to-market strategy that aligns your product, marketing, and sales efforts for maximum impact.</p>
-                </div>
-            </div>
-
-            <!-- Problem 2 -->
-            <div class="row align-items-center mb-5">
-                 <div class="col-md-6 fit-content">
-                    <h3 class="problem__title">Users drop off before seeing value</h3>
-                    <p class="problem__description">Your conversion funnel is leaking. Users sign up but quickly abandon ship before experiencing your product's core benefits. This not only hurts your bottom line but also creates a negative feedback loop as frustrated users share their experiences.</p>
-                </div>
-                <div class="arrow"></div>
-                <div class="col-md-6 solution-content">
-                    <h4>Solution</h4>
-                    <p class="solution__description">We'll transform your user journey into a smooth, engaging experience. By mapping out every touchpoint, implementing smart analytics, and optimizing critical paths, we ensure users quickly discover and experience the value that makes your product indispensable.</p>
-                </div>
-            </div>
-
-            <!-- Problem 3 -->
-             <div class="row align-items-center mb-5">
-                <div class="col-md-6 fit-content">
-                    <h3 class="problem__title">Your product doesn't sell itself</h3>
-                    <p class="problem__description">Your sales team is working overtime, but demos aren't converting. The product experience isn't compelling enough to justify the price, leading to increased churn, support headaches, and underwhelming sales performance.</p>
-                </div>
-                <div class="arrow"></div>
-                <div class="col-md-6 solution-content">
-                    <h4>Solution</h4>
-                    <p class="solution__description">We'll redesign your product experience to be so compelling that it sells itself. By focusing on what truly matters to your users, we'll create an interface that not only looks modern but delivers such clear value that customers are eager to pay premium prices.</p>
-                </div>
-            </div>
-            </div>
-
-        </div>
-    </section>
+    <ProblemSolutionSection
+        title="Problems and solutions"
+        subtitle="The most common challenges and how we help with them."
+        solutionTitle="Solution"
+        items={[
+            {
+                problemTitle: "Your product gets lost in the noise",
+                problemDescription: "When your value proposition isn't crystal clear, you're fighting an uphill battle. Customers can't understand why they should choose you, sales cycles drag on, and your team struggles to prioritize features that actually matter. The result? Wasted resources and stalled growth.",
+                solutionDescription: "We'll help you carve out a unique market position that resonates with your ideal customers. Through strategic positioning workshops, we'll identify your competitive edge and create a go-to-market strategy that aligns your product, marketing, and sales efforts for maximum impact."
+            },
+            {
+                problemTitle: "Users drop off before seeing value",
+                problemDescription: "Your conversion funnel is leaking. Users sign up but quickly abandon ship before experiencing your product's core benefits. This not only hurts your bottom line but also creates a negative feedback loop as frustrated users share their experiences.",
+                solutionDescription: "We'll transform your user journey into a smooth, engaging experience. By mapping out every touchpoint, implementing smart analytics, and optimizing critical paths, we ensure users quickly discover and experience the value that makes your product indispensable."
+            },
+            {
+                problemTitle: "Your product doesn't sell itself",
+                problemDescription: "Your sales team is working overtime, but demos aren't converting. The product experience isn't compelling enough to justify the price, leading to increased churn, support headaches, and underwhelming sales performance.",
+                solutionDescription: "We'll redesign your product experience to be so compelling that it sells itself. By focusing on what truly matters to your users, we'll create an interface that not only looks modern but delivers such clear value that customers are eager to pay premium prices."
+            }
+        ]}
+    />
 
     <!-- Pricing Section -->
-    <section class="pricing" id="hinnat" style="padding-top: 2rem;">
-        <div class="container">
-            <div class="section__header">
-                <h2 class="section__title">Ready to transform your SaaS product?</h2>
-                <p class="section__subtitle">Explore our flexible pricing options</p>
-            </div>
-            <div class="pricing__grid" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr)); gap: var(--spacing-lg);">
-                <div class="pricing-card">
-                    <h3>Strategic Design Partner</h3>
-                    <p class="pricing-card__price" style="font-size: 2.5rem; font-weight: bold;">€110/hour</p>
-                    <p class="pricing-card__description">Expert SaaS design consultation to break through growth barriers and transform your product into a market leader.</p>
-                    <a href="/en/contact" class="btn btn--primary">Start Your Growth Journey &rarr;</a>
-                </div>
-                <div class="pricing-card">
-                    <h3>Full-Service Growth Engine</h3>
-                    <p class="pricing-card__price" style="font-size: 2.5rem; font-weight: bold;">Let's talk</p>
-                    <p class="pricing-card__description">A dedicated team of SaaS growth experts working in harmony to accelerate your success.</p>
-                    <a href="/en/contact" class="btn btn--primary">Get Your Custom Plan &rarr;</a>
-                </div>
-            </div>
-            <p class="pricing__note" style="text-align: center; margin-top: var(--spacing-lg);">*For small companies with less than five million euros in turnover, we offer our services at a reduced rate of €95/hour. Prices are tax-free (VAT 0%).</p>
-        </div>
-    </section>
-
-    <!-- Dummy anchor element for pricing section -->
-    <div id="hinnat-ankkuri" style="height: 1px; visibility: hidden;"></div>
+    <PricingSection
+        title="Ready to transform your SaaS product?"
+        subtitle="Explore our flexible pricing options"
+        sectionId="hinnat"
+        anchorId="hinnat-ankkuri"
+        pricingOptions={[
+            {
+                title: "Strategic Design Partner",
+                price: "€110/hour",
+                description: "Expert SaaS design consultation to break through growth barriers and transform your product into a market leader.",
+                buttonText: "Start Your Growth Journey &rarr;",
+                buttonHref: "/en/contact"
+            },
+            {
+                title: "Full-Service Growth Engine",
+                price: "Let's talk",
+                description: "A dedicated team of SaaS growth experts working in harmony to accelerate your success.",
+                buttonText: "Get Your Custom Plan &rarr;",
+                buttonHref: "/en/contact"
+            }
+        ]}
+        note="*For small companies with less than five million euros in turnover, we offer our services at a reduced rate of €95/hour. Prices are tax-free (VAT 0%)."
+    />
 
     <!-- Schedule Meeting Section -->
     <section class="schedule-meeting" id="schedule-meeting">

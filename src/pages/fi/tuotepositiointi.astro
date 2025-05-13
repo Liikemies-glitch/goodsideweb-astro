@@ -1,11 +1,15 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-// import { getCollection } from 'astro:content'; // Removed as latestPosts is no longer used
+import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
 import HeroSection from '../../components/HeroSection.astro';
 import TrustmaryEmbed from '../../components/TrustmaryEmbed.astro';
 import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
 import NotForEveryone from '../../components/NotForEveryone.astro';
+import LogoWall from '../../components/LogoWall.astro';
+import TeamSection from '../../components/TeamSection.astro';
+import ProblemSolutionSection from '../../components/ProblemSolutionSection.astro';
+import PricingSection from '../../components/PricingSection.astro';
 
 const pageTitle = "Tuotepositiointi SaaS-tuotteelle | The Good Side";
 const pageDescription = "Laadukkaalla tuotepositioinnilla varmistat SaaS-tuotteesi kilpailuedun markkinoilla. Autamme määrittelemään kohderyhmän ja arvolupauksen, joka erottaa sinut kilpailijoista.";
@@ -272,82 +276,52 @@ const pageDescription = "Laadukkaalla tuotepositioinnilla varmistat SaaS-tuottee
     />
 
     <!-- Problem/Solution Section (Using existing styles) -->
-    <section class="problem-solution-cards">
-        <div class="container">
-            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-xl);">
-                <h2 class="section__title">Tyypilliset haasteet</h2>
-                <p class="section__subtitle">Tavallisimmat positioinnin haasteet ja miten autamme niissä.</p>
-            </div>
-
-            <!-- Problem 1 -->
-            <div class="row align-items-center mb-5">
-                <div class="col-md-6 fit-content">
-                    <h3 class="problem__title">Epäselvä arvolupaus ja erottautumisen puute</h3>
-                    <p class="problem__description">Heikko tuotepositiointi aiheuttaa epäselvän arvolupauksen, joka nostaa asiakashankinnan kuluja, pitkittää myyntisyklejä ja tekee kehitystiimin priorisoinnista hankalaa, mikä näkyy resurssien käytön tehottomuutena ja heikkona kasvuna.</p>
-                </div>
-                <div class="arrow"></div>
-                <div class="col-md-6 solution-content">
-                    <h4>Ratkaisu</h4>
-                    <p class="solution__description">Teemme kattavan positiointiharjoituksen, jossa analysoimme markkinaa, kilpailijoita ja asiakassegmenttejä. Lopputuloksena syntyy selkeä positiointistrategia, joka auttaa erottautumaan kilpailijoista ja kommunikoimaan arvolupauksesi vaikuttavasti.</p>
-                </div>
-            </div>
-
-            <!-- Problem 2 -->
-            <div class="row align-items-center mb-5">
-                 <div class="col-md-6 fit-content">
-                    <h3 class="problem__title">Liian laaja kohderyhmä ja fokuksen puute</h3>
-                    <p class="problem__description">Yrität palvella kaikkia mahdollisia asiakkaita, minkä seurauksena viestisi on yleinen eikä resonoi syvästi kenenkään kanssa. Tämä johtaa korkeisiin markkinointikustannuksiin ja heikkoon konversioon.</p>
-                </div>
-                <div class="arrow"></div>
-                <div class="col-md-6 solution-content">
-                    <h4>Ratkaisu</h4>
-                    <p class="solution__description">Autamme sinua segmentoimaan potentiaaliset asiakkaat ja valitsemaan tarkasti rajatun kohderyhmän, jolle tuotteesi tuottaa eniten arvoa. Määrittelemme kohdepersoonat ja heidän erityistarpeensa, jotta voit kohdistaa viestisi tehokkaasti.</p>
-                </div>
-            </div>
-
-            <!-- Problem 3 -->
-             <div class="row align-items-center mb-5">
-                <div class="col-md-6 fit-content">
-                    <h3 class="problem__title">Hinnoittelun haastavuus ja hintakilpailu</h3>
-                    <p class="problem__description">Ilman selkeää positiointia tuotteesi joutuu helposti hintakilpailuun ja katteesi pienenevät. Et pysty perustelemaan korkeampaa hintaa, koska asiakkaat eivät näe selkeää eroa kilpailijoihin verrattuna.</p>
-                </div>
-                <div class="arrow"></div>
-                <div class="col-md-6 solution-content">
-                    <h4>Ratkaisu</h4>
-                    <p class="solution__description">Kehitämme arvolupauksen, joka korostaa tuotteesi ainutlaatuisuutta ja keskittyy tietyille asiakassegmenteille tuotettavaan lisäarvoon. Tämä mahdollistaa arvopohjaisen hinnoittelun ja paremmat katteet.</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
+    <ProblemSolutionSection
+        title="Tyypilliset haasteet"
+        subtitle="Tavallisimmat positioinnin haasteet ja miten autamme niissä."
+        items={[
+            {
+                problemTitle: "Epäselvä arvolupaus ja erottautumisen puute",
+                problemDescription: "Heikko tuotepositiointi aiheuttaa epäselvän arvolupauksen, joka nostaa asiakashankinnan kuluja, pitkittää myyntisyklejä ja tekee kehitystiimin priorisoinnista hankalaa, mikä näkyy resurssien käytön tehottomuutena ja heikkona kasvuna.",
+                solutionDescription: "Teemme kattavan positiointiharjoituksen, jossa analysoimme markkinaa, kilpailijoita ja asiakassegmenttejä. Lopputuloksena syntyy selkeä positiointistrategia, joka auttaa erottautumaan kilpailijoista ja kommunikoimaan arvolupauksesi vaikuttavasti."
+            },
+            {
+                problemTitle: "Liian laaja kohderyhmä ja fokuksen puute",
+                problemDescription: "Yrität palvella kaikkia mahdollisia asiakkaita, minkä seurauksena viestisi on yleinen eikä resonoi syvästi kenenkään kanssa. Tämä johtaa korkeisiin markkinointikustannuksiin ja heikkoon konversioon.",
+                solutionDescription: "Autamme sinua segmentoimaan potentiaaliset asiakkaat ja valitsemaan tarkasti rajatun kohderyhmän, jolle tuotteesi tuottaa eniten arvoa. Määrittelemme kohdepersoonat ja heidän erityistarpeensa, jotta voit kohdistaa viestisi tehokkaasti."
+            },
+            {
+                problemTitle: "Hinnoittelun haastavuus ja hintakilpailu",
+                problemDescription: "Ilman selkeää positiointia tuotteesi joutuu helposti hintakilpailuun ja katteesi pienenevät. Et pysty perustelemaan korkeampaa hintaa, koska asiakkaat eivät näe selkeää eroa kilpailijoihin verrattuna.",
+                solutionDescription: "Kehitämme arvolupauksen, joka korostaa tuotteesi ainutlaatuisuutta ja keskittyy tietyille asiakassegmenteille tuotettavaan lisäarvoon. Tämä mahdollistaa arvopohjaisen hinnoittelun ja paremmat katteet."
+            }
+        ]}
+    />
 
     <!-- Pricing Section -->
-    <section class="pricing" id="hinnat" style="padding-top: 2rem;">
-        <div class="container">
-            <div class="section__header">
-                <h2 class="section__title">Hinnoittelumme</h2>
-                <p class="section__subtitle">Investoi tuotepositiointiin varmistaaksesi kasvun</p>
-            </div>
-            <div class="pricing__grid" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr)); gap: var(--spacing-lg);">
-                <div class="pricing-card">
-                    <h3>Positiointityöpaja</h3>
-                    <p class="pricing-card__price" style="font-size: 2.5rem; font-weight: bold;">5 900 €</p>
-                    <p class="pricing-card__description">Kattava tuotepositiointityöpaja, joka sisältää markkina-analyysin, kilpailija-analyysin ja selkeän positiointistrategian luomisen.</p>
-                    <a href="/fi/contact" class="btn btn--primary">Ota yhteyttä &rarr;</a>
-                </div>
-                <div class="pricing-card">
-                    <h3>Kokonaisvaltainen positiointi</h3>
-                    <p class="pricing-card__price" style="font-size: 2.5rem; font-weight: bold;">Kysy hintaa</p>
-                    <p class="pricing-card__description">Kattava tuotepositiointistrategia, viestinnän suunnittelu ja implementointiapu, joka auttaa erottumaan markkinoilla ja kasvattamaan liiketoimintaa.</p>
-                    <a href="/fi/contact" class="btn btn--primary">Ota yhteyttä &rarr;</a>
-                </div>
-            </div>
-            <p class="pricing__note" style="text-align: center; margin-top: var(--spacing-lg);">*Alle viisi miljoonaa euroa vaihtaville pienille yrityksille tarjoamme palveluitamme alennettuun hintaan. Hinnat ovat verottomia (alv 0%).</p>
-        </div>
-    </section>
-
-    <!-- Dummy anchor element for pricing section -->
-    <div id="hinnat-ankkuri" style="height: 1px; visibility: hidden;"></div>
+    <PricingSection
+        title="Hinnoittelumme"
+        subtitle="Investoi tuotepositiointiin varmistaaksesi kasvun"
+        sectionId="hinnat"
+        anchorId="hinnat-ankkuri"
+        pricingOptions={[
+            {
+                title: "Positiointityöpaja",
+                price: "5 900 €",
+                description: "Kattava tuotepositiointityöpaja, joka sisältää markkina-analyysin, kilpailija-analyysin ja selkeän positiointistrategian luomisen.",
+                buttonText: "Ota yhteyttä &rarr;",
+                buttonHref: "/fi/contact"
+            },
+            {
+                title: "Kokonaisvaltainen positiointi",
+                price: "Kysy hintaa",
+                description: "Kattava tuotepositiointistrategia, viestinnän suunnittelu ja implementointiapu, joka auttaa erottumaan markkinoilla ja kasvattamaan liiketoimintaa.",
+                buttonText: "Ota yhteyttä &rarr;",
+                buttonHref: "/fi/contact"
+            }
+        ]}
+        note="*Alle viisi miljoonaa euroa vaihtaville pienille yrityksille tarjoamme palveluitamme alennettuun hintaan. Hinnat ovat verottomia (alv 0%)."
+    />
 
     <!-- Schedule Meeting Section -->
     <section class="schedule-meeting" id="schedule-meeting">

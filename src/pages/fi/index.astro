@@ -9,6 +9,8 @@ import NotForEveryone from '../../components/NotForEveryone.astro';
 import LogoWall from '../../components/LogoWall.astro';
 import ProblemSection from '../../components/ProblemSection.astro';
 import TeamSection from '../../components/TeamSection.astro';
+import ProblemSolutionSection from '../../components/ProblemSolutionSection.astro';
+import PricingSection from '../../components/PricingSection.astro';
 
 const pageTitle = "The Good Side | SaaS-tuotetiimien strategiakumppani";
 const pageDescription = "The Good Side - Autamme tuotetiimejä rakentamaan menestyvää SaaS-liiketoimintaa yhdistämällä tuotestrategian ja designin.";
@@ -151,82 +153,52 @@ function formatDate(date: Date): string {
     />
 
     <!-- Problem/Solution Section (Using existing styles) -->
-    <section class="problem-solution-cards">
-        <div class="container">
-            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-xl);">
-                <h2 class="section__title">Ongelmat ja ratkaisut</h2>
-                <p class="section__subtitle">Yleisimmät haasteet ja miten autamme niissä.</p>
-            </div>
-
-            <!-- Problem 1 -->
-            <div class="row align-items-center mb-5">
-                <div class="col-md-6 fit-content">
-                    <h3 class="problem__title">Epäselvä arvolupaus ja erottautumisen puute</h3>
-                    <p class="problem__description">Heikko tuotepositiointi aiheuttaa epäselvän arvolupauksen, joka nostaa asiakashankinnan kuluja, pitkittää myyntisyklejä ja tekee kehitystiimin priorisoinnista hankalaa, mikä näkyy resurssien käytön tehottomuutena ja heikkona kasvuna.</p>
-                </div>
-                <div class="arrow"></div>
-                <div class="col-md-6 solution-content">
-                    <h4>Ratkaisu</h4>
-                    <p class="solution__description">Tehdään positiointiharjoitus, joka auttaa sinua hahmottamaan eri positiointivaihtoehdot, jotta voit valita omalle go-to-market "lihaksellesi" sopivan kohderyhmän, ja luoda strategian, joka skaalautuu tuotekehityksen, markkinoinnin ja myynnin avulla.</p>
-                </div>
-            </div>
-
-            <!-- Problem 2 -->
-            <div class="row align-items-center mb-5">
-                 <div class="col-md-6 fit-content">
-                    <h3 class="problem__title">Heikosti konvertoiva käyttäjäpolku</h3>
-                    <p class="problem__description">Heikosti toteutetut käyttäjä- ja konversiopolut näkyvät laskevana konversiona ja korkeana välittömänä poistumana. Tästä aiheutuu negatiivista word-of-mouthia ja vaikeuksia löytää oikeita ongelmakohtia data-analytiikan avulla.</p>
-                </div>
-                <div class="arrow"></div>
-                <div class="col-md-6 solution-content">
-                    <h4>Ratkaisu</h4>
-                    <p class="solution__description">Kartoitetaan käyttäjäpolut, asennetaan data-analytiikkaa varten työkalut, tunnistetaan ja korjataan keskeiset ongelmakohdat, ja parannetaan polkuja siten, että käyttäjät voivat kokea palvelun ydinhyödyt vaivattomasti.</p>
-                </div>
-            </div>
-
-            <!-- Problem 3 -->
-             <div class="row align-items-center mb-5">
-                <div class="col-md-6 fit-content">
-                    <h3 class="problem__title">Myyntidemot tuottavat heikosti kauppaa</h3>
-                    <p class="problem__description">Heikosti toteutettu SaaS-tuotteen käyttöliittymä ja kokemus näkyvät kasvavana asiakaspoistumana, lisääntyneinä aspatikeitteinä, kriittisinä verkkoarvosteluina ja keskin kertaisina myyntituloksina.</p>
-                </div>
-                <div class="arrow"></div>
-                <div class="col-md-6 solution-content">
-                    <h4>Ratkaisu</h4>
-                    <p class="solution__description">Autamme konseptoimaan ja suunnittelemaan tuotteen siten, että se saa kilpailijanne näyttämään auttamattoman vanhanaikaiselta ja joka tarjoaa käyttäjälleen kokemuksen joka saa heidät maksamaan palvelustanne aiempaa korkeampaa hintaa.</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
+    <ProblemSolutionSection
+        title="Ongelmat ja ratkaisut"
+        subtitle="Yleisimmät haasteet ja miten autamme niissä."
+        items={[
+            {
+                problemTitle: "Epäselvä arvolupaus ja erottautumisen puute",
+                problemDescription: "Heikko tuotepositiointi aiheuttaa epäselvän arvolupauksen, joka nostaa asiakashankinnan kuluja, pitkittää myyntisyklejä ja tekee kehitystiimin priorisoinnista hankalaa, mikä näkyy resurssien käytön tehottomuutena ja heikkona kasvuna.",
+                solutionDescription: "Tehdään positiointiharjoitus, joka auttaa sinua hahmottamaan eri positiointivaihtoehdot, jotta voit valita omalle go-to-market \"lihaksellesi\" sopivan kohderyhmän, ja luoda strategian, joka skaalautuu tuotekehityksen, markkinoinnin ja myynnin avulla."
+            },
+            {
+                problemTitle: "Heikosti konvertoiva käyttäjäpolku",
+                problemDescription: "Heikosti toteutetut käyttäjä- ja konversiopolut näkyvät laskevana konversiona ja korkeana välittömänä poistumana. Tästä aiheutuu negatiivista word-of-mouthia ja vaikeuksia löytää oikeita ongelmakohtia data-analytiikan avulla.",
+                solutionDescription: "Kartoitetaan käyttäjäpolut, asennetaan data-analytiikkaa varten työkalut, tunnistetaan ja korjataan keskeiset ongelmakohdat, ja parannetaan polkuja siten, että käyttäjät voivat kokea palvelun ydinhyödyt vaivattomasti."
+            },
+            {
+                problemTitle: "Myyntidemot tuottavat heikosti kauppaa",
+                problemDescription: "Heikosti toteutettu SaaS-tuotteen käyttöliittymä ja kokemus näkyvät kasvavana asiakaspoistumana, lisääntyneinä aspatikeitteinä, kriittisinä verkkoarvosteluina ja keskin kertaisina myyntituloksina.",
+                solutionDescription: "Autamme konseptoimaan ja suunnittelemaan tuotteen siten, että se saa kilpailijanne näyttämään auttamattoman vanhanaikaiselta ja joka tarjoaa käyttäjälleen kokemuksen joka saa heidät maksamaan palvelustanne aiempaa korkeampaa hintaa."
+            }
+        ]}
+    />
 
     <!-- Pricing Section -->
-    <section class="pricing" id="hinnat" style="padding-top: 2rem;">
-        <div class="container">
-            <div class="section__header">
-                <h2 class="section__title">Soveltuuko palvelu minulle?</h2>
-                <p class="section__subtitle">Tutustu hinnoitteluumme</p>
-            </div>
-            <div class="pricing__grid" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr)); gap: var(--spacing-lg);">
-                <div class="pricing-card">
-                    <h3>Design-konsultointi</h3>
-                    <p class="pricing-card__price" style="font-size: 2.5rem; font-weight: bold;">110 €/tunti</p>
-                    <p class="pricing-card__description">SaaS-yrityksiin erikoistunut suunnittelija, joka auttaa poistamaan kasvun esteet Design-konsultoinnilla.</p>
-                    <a href="/fi/contact" class="btn btn--primary">Jätä yhteydenottopyyntö &rarr;</a>
-                </div>
-                <div class="pricing-card">
-                    <h3>SaaS-kasvutiimi</h3>
-                    <p class="pricing-card__price" style="font-size: 2.5rem; font-weight: bold;">Kysy hintaa</p>
-                    <p class="pricing-card__description">Kokenut tiimimme integroi tuotteen, käyttökokemuksen ja käyttäjäpolut kasvua tuottavaksi kokonaisuudeksi.</p>
-                    <a href="/fi/contact" class="btn btn--primary">Jätä yhteydenottopyyntö &rarr;</a>
-                </div>
-            </div>
-            <p class="pricing__note" style="text-align: center; margin-top: var(--spacing-lg);">*Alle viisi miljoonaa euroa vaihtaville pienille yrityksille tarjoamme palveluitamme alennettuun hintaan 95 €/tunti. Hinnat ovat verottomia (alv 0%).</p>
-        </div>
-    </section>
-
-    <!-- Dummy anchor element for pricing section -->
-    <div id="hinnat-ankkuri" style="height: 1px; visibility: hidden;"></div>
+    <PricingSection
+        title="Valmiina skaalaamaan?"
+        subtitle="Tutustu hinnoitteluvaihtoehtoihimme."
+        sectionId="hinnat"
+        anchorId="hinnat-ankkuri"
+        pricingOptions={[
+            {
+                title: "Strateginen design-kumppani",
+                price: "110€/tunti",
+                description: "Asiantuntevaa SaaS-tuotteiden suunnittelua, joka auttaa tekemään tuotteestasi markkinajohtajan.",
+                buttonText: "Aloita kasvumatkasi &rarr;",
+                buttonHref: "/fi/contact"
+            },
+            {
+                title: "Strateginen kasvutiimi",
+                price: "Kysy tarjous",
+                description: "Sitoutunut tiimi SaaS-kasvun asiantuntijoita menestyksesi vauhdittamiseksi.",
+                buttonText: "Pyydä räätälöity suunnitelma &rarr;",
+                buttonHref: "/fi/contact"
+            }
+        ]}
+        note="*Alle viiden miljoonan euron liikevaihdon yrityksille tarjoamme palveluitamme alennettuun hintaan 95€/tunti. Hinnat ovat verottomia (alv 0%)."
+    />
 
     <!-- Schedule Meeting Section -->
     <section class="schedule-meeting" id="schedule-meeting">

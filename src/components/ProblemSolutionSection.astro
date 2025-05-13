@@ -1,0 +1,39 @@
+---
+interface ProblemSolution {
+    problemTitle: string;
+    problemDescription: string;
+    solutionDescription: string;
+}
+
+interface Props {
+    title: string;
+    subtitle?: string;
+    solutionTitle?: string;
+    items: ProblemSolution[];
+}
+
+const { title, subtitle, solutionTitle = "Ratkaisu", items } = Astro.props;
+---
+
+<section class="problem-solution-cards">
+    <div class="container">
+        <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-xl);">
+            <h2 class="section__title">{title}</h2>
+            {subtitle && <p class="section__subtitle">{subtitle}</p>}
+        </div>
+
+        {items.map((item) => (
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6 fit-content">
+                    <h3 class="problem__title">{item.problemTitle}</h3>
+                    <p class="problem__description">{item.problemDescription}</p>
+                </div>
+                <div class="arrow"></div>
+                <div class="col-md-6 solution-content">
+                    <h4>{solutionTitle}</h4>
+                    <p class="solution__description">{item.solutionDescription}</p>
+                </div>
+            </div>
+        ))}
+    </div>
+</section> 

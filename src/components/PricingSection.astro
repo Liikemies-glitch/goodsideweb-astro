@@ -1,0 +1,100 @@
+---
+interface PricingOption {
+    title: string;
+    price: string;
+    description: string;
+    buttonText: string;
+    buttonHref: string;
+}
+
+interface Props {
+    title: string;
+    subtitle: string;
+    pricingOptions: PricingOption[];
+    note?: string;
+    sectionId?: string;
+    anchorId?: string;
+}
+
+const { 
+    title, 
+    subtitle, 
+    pricingOptions, 
+    note,
+    sectionId = "pricing", 
+    anchorId = "pricing-anchor" 
+} = Astro.props;
+---
+
+<!-- Pricing Section -->
+<section class="pricing" id={sectionId} style="padding-top: 2rem;">
+    <div class="container">
+        <div class="section__header">
+            <h2 class="section__title">{title}</h2>
+            <p class="section__subtitle">{subtitle}</p>
+        </div>
+        <div class="pricing__grid">
+            {pricingOptions.map(option => (
+                <div class="pricing-card">
+                    <h3>{option.title}</h3>
+                    <p class="pricing-card__price">{option.price}</p>
+                    <p class="pricing-card__description">{option.description}</p>
+                    <a href={option.buttonHref} class="btn btn--primary" set:html={option.buttonText}></a>
+                </div>
+            ))}
+        </div>
+        {note && <p class="pricing__note">{note}</p>}
+    </div>
+</section>
+
+<!-- Dummy anchor element for pricing section -->
+{anchorId && <div id={anchorId} style="height: 1px; visibility: hidden;"></div>}
+
+<style>
+    .pricing__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+        gap: var(--spacing-lg);
+        margin-top: var(--spacing-lg);
+    }
+
+    .pricing-card {
+        background-color: var(--color-card-bg, #f8f9fa);
+        border-radius: var(--border-radius-md, 8px);
+        padding: var(--spacing-lg, 2rem);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .pricing-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .pricing-card h3 {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        color: var(--color-primary, #9C2043);
+    }
+
+    .pricing-card__price {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: var(--color-text-dark, #333);
+    }
+
+    .pricing-card__description {
+        margin-bottom: 2rem;
+        font-size: var(--font-size-md, 1rem);
+        color: var(--color-text, #555);
+        flex-grow: 1;
+    }
+
+    .pricing__note {
+        text-align: center;
+        margin-top: var(--spacing-lg, 2rem);
+        font-size: var(--font-size-sm, 0.875rem);
+        color: var(--color-text-light, #666);
+    }
+</style> 

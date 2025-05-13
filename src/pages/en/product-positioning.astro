@@ -6,6 +6,10 @@ import HeroSection from '../../components/HeroSection.astro';
 import TrustmaryEmbed from '../../components/TrustmaryEmbed.astro';
 import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
 import NotForEveryone from '../../components/NotForEveryone.astro';
+import LogoWall from '../../components/LogoWall.astro';
+import TeamSection from '../../components/TeamSection.astro';
+import ProblemSolutionSection from '../../components/ProblemSolutionSection.astro';
+import PricingSection from '../../components/PricingSection.astro';
 
 const pageTitle = "SaaS Product Positioning | The Good Side";
 const pageDescription = "Position your SaaS product for market leadership. Strategic positioning and messaging that differentiates your solution and drives growth.";
@@ -273,83 +277,53 @@ function formatDate(date: Date): string {
     />
 
     <!-- Problem/Solution Section (Using existing styles) -->
-    <section class="problem-solution-cards">
-        <div class="container">
-            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-xl);">
-                <h2 class="section__title">Positioning challenges and solutions</h2>
-                <p class="section__subtitle">How our strategic positioning framework solves common SaaS growth barriers.</p>
-            </div>
-
-            <!-- Problem 1 -->
-            <div class="row align-items-center mb-5">
-                <div class="col-md-6 fit-content">
-                    <h3 class="problem__title">Undifferentiated value proposition</h3>
-                    <p class="problem__description">When your positioning lacks clarity, potential customers can't articulate why they should choose you over competitors. This leads to commoditization, price sensitivity, and an inability to charge premium rates for your product.</p>
-                </div>
-                <div class="arrow"></div>
-                <div class="col-md-6 solution-content">
-                    <h4>Solution</h4>
-                    <p class="solution__description">Our differentiation workshop identifies your unique value drivers and creates positioning that highlights your strengths. We develop clear, compelling messaging that communicates your distinct advantages, allowing you to command premium pricing.</p>
-                </div>
-            </div>
-
-            <!-- Problem 2 -->
-            <div class="row align-items-center mb-5">
-                 <div class="col-md-6 fit-content">
-                    <h3 class="problem__title">Poor product-market fit</h3>
-                    <p class="problem__description">When you try to serve everyone, you end up serving no one effectively. This scattershot approach results in high customer acquisition costs, lengthy sales cycles, and difficulty scaling due to inconsistent positioning.</p>
-                </div>
-                <div class="arrow"></div>
-                <div class="col-md-6 solution-content">
-                    <h4>Solution</h4>
-                    <p class="solution__description">Our market segmentation process identifies your ideal customer profile with precision. We analyze customer data to pinpoint where your product creates the most value, then position your offering specifically for those high-value segments.</p>
-                </div>
-            </div>
-
-            <!-- Problem 3 -->
-             <div class="row align-items-center mb-5">
-                <div class="col-md-6 fit-content">
-                    <h3 class="problem__title">Inconsistent messaging across channels</h3>
-                    <p class="problem__description">When your positioning changes across marketing channels, sales materials, and product experiences, it creates customer confusion and erodes trust. This fragmented approach undermines your brand authority and hampers growth.</p>
-                </div>
-                <div class="arrow"></div>
-                <div class="col-md-6 solution-content">
-                    <h4>Solution</h4>
-                    <p class="solution__description">We create a comprehensive positioning framework and messaging guide that ensures consistency across all touchpoints. This unified approach aligns your entire organization around a clear, compelling story that resonates with your target audience.</p>
-                </div>
-            </div>
-            </div>
-
-        </div>
-    </section>
+    <ProblemSolutionSection
+        title="Positioning challenges and solutions"
+        subtitle="How our strategic positioning framework solves common SaaS growth barriers."
+        solutionTitle="Solution"
+        items={[
+            {
+                problemTitle: "Undifferentiated value proposition",
+                problemDescription: "When your positioning lacks clarity, potential customers can't articulate why they should choose you over competitors. This leads to commoditization, price sensitivity, and an inability to charge premium rates for your product.",
+                solutionDescription: "Our differentiation workshop identifies your unique value drivers and creates positioning that highlights your strengths. We develop clear, compelling messaging that communicates your distinct advantages, allowing you to command premium pricing."
+            },
+            {
+                problemTitle: "Poor product-market fit",
+                problemDescription: "When you try to serve everyone, you end up serving no one effectively. This scattershot approach results in high customer acquisition costs, lengthy sales cycles, and difficulty scaling due to inconsistent positioning.",
+                solutionDescription: "Our market segmentation process identifies your ideal customer profile with precision. We analyze customer data to pinpoint where your product creates the most value, then position your offering specifically for those high-value segments."
+            },
+            {
+                problemTitle: "Inconsistent messaging across channels",
+                problemDescription: "When your positioning changes across marketing channels, sales materials, and product experiences, it creates customer confusion and erodes trust. This fragmented approach undermines your brand authority and hampers growth.",
+                solutionDescription: "We create a comprehensive positioning framework and messaging guide that ensures consistency across all touchpoints. This unified approach aligns your entire organization around a clear, compelling story that resonates with your target audience."
+            }
+        ]}
+    />
 
     <!-- Pricing Section -->
-    <section class="pricing" id="hinnat" style="padding-top: 2rem;">
-        <div class="container">
-            <div class="section__header">
-                <h2 class="section__title">Ready to position your SaaS for market leadership?</h2>
-                <p class="section__subtitle">Our positioning services and packages</p>
-            </div>
-            <div class="pricing__grid" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr)); gap: var(--spacing-lg);">
-                <div class="pricing-card">
-                    <h3>Positioning Workshop</h3>
-                    <p class="pricing-card__price" style="font-size: 2.5rem; font-weight: bold;">€6,500</p>
-                    <p class="pricing-card__description">2-day intensive workshop to develop your strategic positioning, competitive differentiation, and core messaging framework.</p>
-                    <a href="/en/contact" class="btn btn--primary">Book Your Workshop &rarr;</a>
-                </div>
-                <div class="pricing-card">
-                    <h3>Complete Positioning Package</h3>
-                    <p class="pricing-card__price" style="font-size: 2.5rem; font-weight: bold;">€12,000</p>
-                    <p class="pricing-card__description">Comprehensive positioning strategy including market research, workshop, messaging guide, and implementation support.</p>
-                    <a href="/en/contact" class="btn btn--primary">Get Your Custom Plan &rarr;</a>
-                </div>
-            </div>
-            <p class="pricing__note" style="text-align: center; margin-top: var(--spacing-lg);">*For startups with less than €1 million in funding, we offer our positioning workshop at a reduced rate of €4,500. Prices are tax-free (VAT 0%).</p>
-        </div>
-    </section>
-
-    <!-- Dummy anchor element for pricing section -->
-    <div id="hinnat-ankkuri" style="height: 1px; visibility: hidden;"></div>
+    <PricingSection
+        title="Ready to position your SaaS for market leadership?"
+        subtitle="Our positioning services and packages"
+        sectionId="hinnat"
+        anchorId="hinnat-ankkuri"
+        pricingOptions={[
+            {
+                title: "Positioning Workshop",
+                price: "€6,500",
+                description: "2-day intensive workshop to develop your strategic positioning, competitive differentiation, and core messaging framework.",
+                buttonText: "Book Your Workshop &rarr;",
+                buttonHref: "/en/contact"
+            },
+            {
+                title: "Complete Positioning Package",
+                price: "€12,000",
+                description: "Comprehensive positioning strategy including market research, workshop, messaging guide, and implementation support.",
+                buttonText: "Get Your Custom Plan &rarr;",
+                buttonHref: "/en/contact"
+            }
+        ]}
+        note="*For startups with less than €1 million in funding, we offer our positioning workshop at a reduced rate of €4,500. Prices are tax-free (VAT 0%)."
+    />
 
     <!-- Schedule Meeting Section -->
     <section class="schedule-meeting" id="schedule-meeting">
