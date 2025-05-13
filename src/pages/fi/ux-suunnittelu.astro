@@ -1,0 +1,452 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import HeroSection from '../../components/HeroSection.astro';
+import TrustmaryEmbed from '../../components/TrustmaryEmbed.astro';
+import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
+import NotForEveryone from '../../components/NotForEveryone.astro';
+import LogoWall from '../../components/LogoWall.astro';
+import TeamSection from '../../components/TeamSection.astro';
+import ProblemSolutionSection from '../../components/ProblemSolutionSection.astro';
+import PricingSection from '../../components/PricingSection.astro';
+
+const pageTitle = "UX-suunnittelu SaaS-yrityksille | The Good Side";
+const pageDescription = "Laadukkaalla UX-suunnittelulla varmistat SaaS-tuotteesi käytettävyyden ja asiakastyytyväisyyden. Autamme suunnittelemaan intuitiivisia ja tehokkaita käyttökokemuksia.";
+
+// Fetch latest 6 blog posts - REMOVED
+// const latestPosts = (await getCollection('blog'))
+//     .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+//     .slice(0, 6);
+
+// Helper function to format dates - REMOVED if only used for blog posts
+// function formatDate(date: Date): string {
+//   return new Date(date).toLocaleDateString('fi-FI', {
+//     year: 'numeric',
+//     month: 'long',
+//     day: 'numeric',
+//   });
+// }
+---
+<BaseLayout title={pageTitle} description={pageDescription}>
+    <!-- Use HeroSection component -->
+    <HeroSection
+        title="Viimeinkin käyttäjäkokemus joka näkyy viivan alla."
+        paragraph="Autamme sinua suunnittelemaan UX:n, joka tekee tuotteestasi helppokäyttöisen, tehokkaan ja miellyttävän. Näin parannat asiakastyytyväisyyttä ja vähennät churnia."
+        primaryButtonText="Sovi tapaaminen &rarr;"
+        primaryButtonHref="/fi/contact"
+        secondaryButtonText="Näytä referenssit"
+        secondaryButtonHref="/fi/references"
+        textOnly={true}
+        paddingTop="6rem"
+        paddingBottom="3rem"
+        textAlign="center"
+    />
+
+    <!-- Logo Wall Section -->
+    <section class="logo-wall">
+        <div class="container">
+            <h2 class="logo-wall__title">Toimiva UX osana menestystä</h2>
+            <div class="logo-wall__grid">
+                <!-- The logos are intentionally duplicated below -->
+                <!-- First set -->
+                <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+                 <!-- Second set (duplicate) -->
+                 <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problems">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Kuulostaako tutulta?</span>
+                <h2 class="section__title">UX-suunnittelun haasteet SaaS-yrityksille</h2>
+            </div>
+            <div class="problems__grid">
+                <article class="problem-card">
+                    <h3>Liikaa featureja</h3>
+                    <p>SaaS-tuotettasi on laajennettu feature kerrallaan, käyttöliittymä on sekava, eivätkä käyttäjät löydä tarvitsemiaan toimintoja, mikä johtaa heikkoon käyttäjäkokemukseen.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Korkea churn-prosentti</h3>
+                    <p>Asiakkaat lähtevät, koska tuotteesi ei vastaa heidän odotuksiaan käytettävyyden suhteen.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Vääriä valintoja</h3>
+                    <p>Suunnittelu tehdään insinöörien ja devaajien voimin ja ilman kunnollista käyttäjäymmärrystä, joka johtaa heikkoihin ratkaisuihin.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Us Section -->
+    <section class="hire-us">
+        <div class="container">
+            <h2 class="section__title">SaaS UX-osaajat palveluksessasi</h2>
+            <p class="section__subtitle">Palkkaa meidät suunnittelemaan käyttökokemus, joka tekee tuotteestasi rakastetun.</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/mikki.webp" alt="Mikki Aalto-Ylevä" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Mikki<br>Aalto-Ylevä</h3>
+                    <p class="team-member__title">SaaS-spesialisti</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/tuomas.webp" alt="Tuomas Kaartoluoma" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Tuomas<br>Kaartoluoma</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/duncan.webp" alt="Dũng Nguyen" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Dũng<br>Nguyen</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/aksel.webp" alt="Aksel Suokas" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Aksel<br>Suokas</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Intro Section -->
+    <section class="solutions">
+        <div class="container">
+            <h2 class="section__title">Tehokas UX-suunnittelu parantaa SaaS-tuotteesi tuloksia</h2>
+            <div class="solutions__grid">
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/positiointi.webp" alt="UX Audit ja Käyttäjätutkimus">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Käytettävyys</span>
+                            <span>Käyttäjätutkimus</span>
+                        </div>
+                        <h3>Intuitiivinen ja helppokäyttöinen design</h3>
+                        <p>Teemme perusteellisen UX-auditoinnin ja käyttäjätutkimuksen ymmärtääksemme käyttäjiesi tarpeet ja kipupisteet. Suunnittelemme käyttöliittymiä, jotka ovat selkeitä, johdonmukaisia ja tehokkaita käyttää.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/userjourney.webp" alt="Asiakaspolut ja Prototypointi">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Asiakaskokemus</span>
+                            <span>Konversio-optimointi</span>
+                        </div>
+                        <h3>Optimoidut asiakaspolut ja korkeampi konversio</h3>
+                        <p>Kartoitamme ja optimoimme käyttäjäpolut, jotta asiakkaasi saavuttavat tavoitteensa vaivattomasti. Prototyyppien avulla testaamme ja iteroimme ratkaisuja, varmistaen parhaan mahdollisen lopputuloksen ja korkeammat konversiot.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/ui.webp" alt="Visuaalinen suunnittelu ja Brändinmukaisuus" style="transform: scale(1.3);">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>UI Design</span>
+                            <span>Brändi</span>
+                            <span>Sitouttaminen</span>
+                        </div>
+                        <h3>Vahva brändi-ilme ja parempi sitoutuminen</h3>
+                        <p>Luomme visuaalisesti houkuttelevan ja brändisi mukaisen käyttöliittymän, joka parantaa käyttäjäkokemusta ja lisää asiakkaiden sitoutumista. Johdonmukainen design vahvistaa brändiäsi ja luo luottamusta.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials__grid">
+                 <div class="trustmary-widget">
+                    <TrustmaryEmbed 
+                        title="Mitä asiakkaamme sanovat UX-suunnittelusta"
+                        subtitle="Lue mitä asiakkaamme kertovat kokemuksistaan"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Not For Everyone Section -->
+    <NotForEveryone 
+        title="Palvelumme ei sovi kaikille"
+        subtitle="Emme ehkä ole oikea vaihtoehto jos..."
+        leftColumnItems={[
+            "Et ole valmis panostamaan käyttäjätutkimukseen",
+            "Haluat vain nopean 'kasvojenkohotuksen' ilman syvempää analyysiä",
+            "Et näe arvoa iteratiivisessa suunnitteluprosessissa"
+        ]}
+        rightColumnItems={[
+            "Budjettisi on alle 5000€ UX-projektiin",
+            "Uskot, että tiedät jo täsmälleen mitä käyttäjäsi tarvitsevat ilman testausta"
+        ]}
+    />
+
+    <!-- Problem/Solution Section (Using existing styles) -->
+    <ProblemSolutionSection
+        title="Tyypilliset UX-haasteet"
+        subtitle="Yleisimmät UX-suunnittelun haasteet ja miten autamme niissä."
+        items={[
+            {
+                problemTitle: "Huono käytettävyys ja korkea asiakaspoistuma",
+                problemDescription: "Monimutkainen ja epälooginen käyttöliittymä turhauttaa käyttäjiä, mikä johtaa heikkoon adoptioon, lisääntyneeseen asiakaspalvelun kuormitukseen ja lopulta asiakkaiden menetykseen kilpailijoille.",
+                solutionDescription: "Teemme käyttäjätutkimusta ja käytettävyystestausta tunnistaaksemme ongelmakohdat. Suunnittelemme intuitiivisia käyttöliittymiä ja selkeitä käyttäjäpolkuja, jotka parantavat käyttökokemusta ja vähentävät asiakaspoistumaa."
+            },
+            {
+                problemTitle: "Tehoton tuotekehitys ja hukatut resurssit",
+                problemDescription: "Ilman selkeää UX-prosessia ja käyttäjäpalautetta tuotekehitys perustuu oletuksiin. Tämä johtaa ominaisuuksien rakentamiseen, joita käyttäjät eivät tarvitse tai osaa käyttää, mikä tuhlaa aikaa ja rahaa.",
+                solutionDescription: "Integroimme UX-suunnittelun tiiviisti tuotekehitysprosessiin. Käytämme dataa ja käyttäjäpalautetta ohjaamaan suunnittelupäätöksiä, varmistaen että kehitettävät ominaisuudet tuottavat todellista arvoa käyttäjille."
+            },
+            {
+                problemTitle: "Heikko brändikokemus ja erottautumisen puute",
+                problemDescription: "Epäjohdonmukainen tai vanhentunut ulkoasu ja käyttökokemus heikentävät brändisi uskottavuutta. Tuotteesi ei erotu kilpailijoista ja asiakkaiden on vaikea muodostaa positiivista mielikuvaa.",
+                solutionDescription: "Luomme yhtenäisen ja modernin UX/UI-designin, joka on linjassa brändisi kanssa. Vahvistamme brändi-identiteettiäsi ja luomme ikimuistoisen käyttökokemuksen, joka auttaa sinua erottautumaan markkinoilla."
+            }
+        ]}
+    />
+
+    <!-- Pricing Section -->
+    <PricingSection
+        title="Valmiina skaalaamaan?"
+        subtitle="Tutustu hinnoitteluvaihtoehtoihimme."
+        sectionId="hinnat"
+        anchorId="hinnat-ankkuri"
+        pricingOptions={[
+            {
+                title: "Strateginen design-kumppani",
+                price: "110€/tunti",
+                description: "Asiantuntevaa SaaS-tuotteiden suunnittelua, joka auttaa tekemään tuotteestasi markkinajohtajan.",
+                buttonText: "Aloita kasvumatkasi &rarr;",
+                buttonHref: "/fi/contact"
+            },
+            {
+                title: "Strateginen kasvutiimi",
+                price: "Kysy tarjous",
+                description: "Sitoutunut tiimi SaaS-kasvun asiantuntijoita menestyksesi vauhdittamiseksi.",
+                buttonText: "Pyydä räätälöity suunnitelma &rarr;",
+                buttonHref: "/fi/contact"
+            }
+        ]}
+        note="*Alle viiden miljoonan euron liikevaihdon yrityksille tarjoamme palveluitamme alennettuun hintaan 95€/tunti. Hinnat ovat verottomia (alv 0%)."
+    />
+
+    <!-- Schedule Meeting Section -->
+    <section class="schedule-meeting" id="schedule-meeting">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Varaa tapaamisaika</h2>
+                <p class="section__subtitle">Keskustellaan, miten voimme parantaa SaaS-tuotteesi käyttökokemusta ja kasvattaa liiketoimintaasi.</p>
+            </div>
+            <div class="schedule-meeting__embed">
+                <CalendlyEmbed elementId="cal-inline-index" calLink="aaltoyleva/kartoitustapaaminen" />
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Usein kysytyt kysymykset UX-suunnittelusta</h2>
+                <p class="section__subtitle">Vastauksia yleisimpiin UX-suunnitteluun liittyviin kysymyksiin</p>
+            </div>
+            <div class="faq-items">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question-wrapper">
+                        <span class="faq-question">Mitä UX-suunnittelu tarkoittaa SaaS-tuotteelle?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">UX-suunnittelu (User Experience Design) SaaS-tuotteelle keskittyy luomaan käyttäjälle mahdollisimman sujuvan, tehokkaan ja miellyttävän kokemuksen tuotteen parissa. Se kattaa kaiken käytettävyydestä ja informaatioarkkitehtuurista aina visuaaliseen ilmeeseen ja käyttäjän tunteisiin asti.</p>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miksi UX-suunnittelu on kriittistä SaaS-yrityksille?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">SaaS-markkinoilla kilpailu on kovaa ja asiakkailla on paljon valinnanvaraa. Hyvä UX on avainasemassa asiakastyytyväisyyden, asiakaspidon ja konversioiden parantamisessa. Huono UX johtaa nopeasti asiakkaiden menetykseen ja negatiiviseen maineeseen.</p>
+                </div>
+                <!-- FAQ Item 3 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Kuinka kauan tyypillinen UX-suunnitteluprojekti kestää?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Projektin kesto riippuu sen laajuudesta. Pienempi UX-auditointi ja suositukset voivat kestää 2-4 viikkoa. Laajempi, kokonaisvaltainen UX-suunnitteluprojekti, joka sisältää käyttäjätutkimusta, prototypointia ja UI-designia, voi kestää 6-12 viikkoa tai pidempäänkin riippuen tuotteen monimutkaisuudesta.</p>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Milloin UX-suunnitteluun kannattaa panostaa?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">UX-suunnitteluun kannattaa panostaa jatkuvasti. Erityisen tärkeää se on: 1) uutta tuotetta tai merkittävää ominaisuutta kehitettäessä, 2) kun käyttäjäpalautteessa nousee esiin käytettävyysongelmia, 3) kun konversiot tai asiakaspysyvyys laskevat, 4) kun halutaan parantaa kilpailukykyä markkinoilla.</p>
+                </div>
+                <!-- FAQ Item 5 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten mittaatte UX-suunnittelun onnistumista?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Onnistumista mitataan sekä kvalitatiivisilla että kvantitatiivisilla mittareilla. Näitä voivat olla esimerkiksi: käytettävyystestien tulokset (esim. suoritusaika, virheiden määrä), asiakastyytyväisyyskyselyt (esim. NPS, CSAT), konversioprosentit, churn-rate, ja tukipyyntöjen määrän väheneminen.</p>
+                </div>
+                <!-- FAQ Item 6 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Mitä eroa on UX- ja UI-suunnittelulla?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">UX-suunnittelu (User Experience) keskittyy kokonaisvaltaiseen käyttökokemukseen: miten tuote tuntuu ja toimii. UI-suunnittelu (User Interface) on osa UX:ää ja keskittyy tuotteen visuaaliseen ilmeeseen ja interaktiivisiin elementteihin, kuten nappeihin, ikoneihin ja asetteluun.</p>
+                </div>
+                <!-- FAQ Item 7 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Sisältyykö käyttäjätutkimus palveluihinne?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Kyllä, käyttäjätutkimus on keskeinen osa UX-suunnitteluprosessiamme. Menetelmät valitaan projektin tarpeiden mukaan, ja ne voivat sisältää esimerkiksi käyttäjähaastatteluja, kyselytutkimuksia, käytettävyystestausta ja analytiikan hyödyntämistä.</p>
+                </div>
+                <!-- FAQ Item 8 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Teettekö myös mobiilisovellusten UX-suunnittelua?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Kyllä, suunnittelemme käyttökokemuksia sekä web-pohjaisille SaaS-tuotteille että mobiilisovelluksille. Sovellamme samoja käyttäjäkeskeisiä periaatteita alustasta riippumatta, mutta huomioimme kunkin alustan erityispiirteet.</p>
+                </div>
+                <!-- FAQ Item 9 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten UX-suunnittelu integroituu ketterään kehitykseen?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Integroimme UX-suunnittelun tiiviisti ketterän kehityksen sykleihin. Tämä tarkoittaa jatkuvaa yhteistyötä kehitystiimin kanssa, iteratiivista suunnittelua ja testausta sekä joustavaa reagointia muutoksiin. Tavoitteena on varmistaa, että UX-näkökulma on mukana koko kehitysprosessin ajan.</p>
+                </div>
+                <!-- FAQ Item 10 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Mitä jos meillä on jo olemassa oleva design system?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Hyödynnämme mielellämme olemassa olevaa design systemiänne. Se nopeuttaa suunnitteluprosessia ja varmistaa yhtenäisen käyttökokemuksen. Tarvittaessa voimme myös auttaa design systemin kehittämisessä tai päivittämisessä osana UX-projektia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</BaseLayout>
+
+<style>
+    .team-grid {
+        display: flex;
+        flex-direction: column; /* Stack vertically by default (mobile) */
+        align-items: center; /* Center items horizontally in column layout */
+        gap: var(--spacing-lg);
+    }
+
+    .team-member {
+        text-align: center; /* Ensure text inside member card is centered */
+    }
+
+    /* Apply row layout for medium screens and up */
+    @media (min-width: 768px) {
+        .team-grid {
+            flex-direction: row; /* Arrange side-by-side */
+            justify-content: center; /* Center items horizontally in row layout */
+        }
+    }
+</style> 

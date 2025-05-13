@@ -11,6 +11,7 @@ import ProblemSection from '../../components/ProblemSection.astro';
 import TeamSection from '../../components/TeamSection.astro';
 import ProblemSolutionSection from '../../components/ProblemSolutionSection.astro';
 import PricingSection from '../../components/PricingSection.astro';
+import FAQSection from '../../components/FAQSection.astro';
 
 const pageTitle = "The Good Side | Strategic Partner for SaaS Product Teams";
 const pageDescription = "The Good Side - We help product teams build successful SaaS businesses by combining product strategy and design.";
@@ -341,97 +342,53 @@ function formatDate(date: Date): string {
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="faq-section" id="faq">
-        <div class="container">
-            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
-                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Frequently Asked Questions</h2>
-                <p class="section__subtitle">Get straight answers about how we can help your SaaS product succeed</p>
-            </div>
-            <div class="faq-items">
-                <!-- FAQ Item 1 -->
-                <div class="faq-item">
-                    <div class="faq-question-wrapper">
-                        <span class="faq-question">What's the minimum commitment required?</span>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <p class="faq-answer">We offer flexible month-to-month contracts with no long-term commitments. Most clients see meaningful results within 2-6 months, but you're free to adjust the engagement based on your needs. This flexibility ensures you only pay for the value you receive.</p>
-                </div>
-                <!-- FAQ Item 2 -->
-                <div class="faq-item">
-                     <div class="faq-question-wrapper">
-                        <span class="faq-question">What makes your approach unique?</span>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <p class="faq-answer">Unlike general design agencies, we're laser-focused on SaaS products. Our unique value comes from combining product strategy, UX design, and growth marketing into a single, cohesive approach. We've helped over 10 SaaS companies achieve significant growth through our proven methodology.</p>
-                </div>
-                <!-- FAQ Item 3 -->
-                 <div class="faq-item">
-                     <div class="faq-question-wrapper">
-                        <span class="faq-question">What's your design toolkit?</span>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <p class="faq-answer">We leverage cutting-edge tools including Figma for design, Miro for collaboration, and Hotjar for insights. Our AI-powered analytics tools help us make data-driven decisions. This modern stack ensures efficient workflows and measurable results.</p>
-                </div>
-                <!-- FAQ Item 4 -->
-                <div class="faq-item">
-                     <div class="faq-question-wrapper">
-                        <span class="faq-question">How do you align design with business goals?</span>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <p class="faq-answer">We start by deeply understanding your business objectives and KPIs. Our proven positioning framework helps identify your unique market advantage. Every design decision is measured against conversion metrics and growth targets, ensuring tangible business impact.</p>
-                </div>
-                <!-- FAQ Item 5 -->
-                 <div class="faq-item">
-                     <div class="faq-question-wrapper">
-                        <span class="faq-question">Can you improve our existing product?</span>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <p class="faq-answer">Absolutely. We excel at product evolution. Our process starts with a comprehensive audit of your current product, user data analysis, and opportunity mapping. We then create a phased improvement plan that delivers results without disrupting your business operations.</p>
-                </div>
-                <!-- FAQ Item 6 -->
-                 <div class="faq-item">
-                     <div class="faq-question-wrapper">
-                        <span class="faq-question">How do you handle complex B2B SaaS products?</span>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <p class="faq-answer">Complexity is our specialty. We've successfully simplified numerous complex B2B SaaS products through our systematic approach. Our fresh perspective often reveals simplification opportunities that internal teams miss, leading to more intuitive user experiences.</p>
-                </div>
-                <!-- FAQ Item 7 -->
-                 <div class="faq-item">
-                     <div class="faq-question-wrapper">
-                        <span class="faq-question">How do you manage project resources?</span>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <p class="faq-answer">We maintain a lean team structure where each designer handles 2-3 projects maximum. This ensures dedicated attention to your project while maintaining flexibility for urgent needs. We never overcommit our resources, guaranteeing consistent quality and availability.</p>
-                </div>
-                <!-- FAQ Item 8 -->
-                 <div class="faq-item">
-                     <div class="faq-question-wrapper">
-                        <span class="faq-question">What's your satisfaction guarantee?</span>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <p class="faq-answer">We offer a 100% satisfaction guarantee - if you're not completely satisfied, you don't pay. Our iterative approach includes regular checkpoints and feedback loops, ensuring we stay aligned with your vision and deliver exceptional results.</p>
-                </div>
-                <!-- FAQ Item 9 -->
-                 <div class="faq-item">
-                     <div class="faq-question-wrapper">
-                        <span class="faq-question">How do you work with development teams?</span>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <p class="faq-answer">We provide comprehensive support to development teams through detailed specifications, interactive Figma prototypes, and component libraries. Our designers remain available throughout implementation to ensure smooth handoff and address any technical challenges.</p>
-                </div>
-                <!-- FAQ Item 10 -->
-                 <div class="faq-item">
-                     <div class="faq-question-wrapper">
-                        <span class="faq-question">What's your pricing structure?</span>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <p class="faq-answer">We offer flexible pricing options including hourly rates (€110/hour, €95/hour for smaller companies) and project-based pricing. Each proposal includes a detailed project plan with clear deliverables and timeline. We customize pricing based on your specific needs and project scope.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- FAQ Section (Using the new Component) -->
+    <FAQSection 
+        title="Frequently Asked Questions"
+        subtitle="Get straight answers about how we can help your SaaS product succeed"
+        faqs={[
+            {
+                question: "What's the minimum commitment required?",
+                answer: "We offer flexible month-to-month contracts with no long-term commitments. Most clients see meaningful results within 2-6 months, but you're free to adjust the engagement based on your needs. This flexibility ensures you only pay for the value you receive."
+            },
+            {
+                question: "What makes your approach unique?",
+                answer: "Unlike general design agencies, we're laser-focused on SaaS products. Our unique value comes from combining product strategy, UX design, and growth marketing into a single, cohesive approach. We've helped over 10 SaaS companies achieve significant growth through our proven methodology."
+            },
+            {
+                question: "What's your design toolkit?",
+                answer: "We leverage cutting-edge tools including Figma for design, Miro for collaboration, and Hotjar for insights. Our AI-powered analytics tools help us make data-driven decisions. This modern stack ensures efficient workflows and measurable results."
+            },
+            {
+                question: "How do you align design with business goals?",
+                answer: "We start by deeply understanding your business objectives and KPIs. Our proven positioning framework helps identify your unique market advantage. Every design decision is measured against conversion metrics and growth targets, ensuring tangible business impact."
+            },
+            {
+                question: "Can you improve our existing product?",
+                answer: "Absolutely. We excel at product evolution. Our process starts with a comprehensive audit of your current product, user data analysis, and opportunity mapping. We then create a phased improvement plan that delivers results without disrupting your business operations."
+            },
+            {
+                question: "How do you handle complex B2B SaaS products?",
+                answer: "Complexity is our specialty. We've successfully simplified numerous complex B2B SaaS products through our systematic approach. Our fresh perspective often reveals simplification opportunities that internal teams miss, leading to more intuitive user experiences."
+            },
+            {
+                question: "How do you manage project resources?",
+                answer: "We maintain a lean team structure where each designer handles 2-3 projects maximum. This ensures dedicated attention to your project while maintaining flexibility for urgent needs. We never overcommit our resources, guaranteeing consistent quality and availability."
+            },
+            {
+                question: "What's your satisfaction guarantee?",
+                answer: "We offer a 100% satisfaction guarantee - if you're not completely satisfied, you don't pay. Our iterative approach includes regular checkpoints and feedback loops, ensuring we stay aligned with your vision and deliver exceptional results."
+            },
+            {
+                question: "How do you work with development teams?",
+                answer: "We provide comprehensive support to development teams through detailed specifications, interactive Figma prototypes, and component libraries. Our designers remain available throughout implementation to ensure smooth handoff and address any technical challenges."
+            },
+            {
+                question: "What's your pricing structure?",
+                answer: "We offer flexible pricing options including hourly rates (€110/hour, €95/hour for smaller companies) and project-based pricing. Each proposal includes a detailed project plan with clear deliverables and timeline. We customize pricing based on your specific needs and project scope."
+            }
+        ]}
+    />
 
     <!-- Blog Preview Section -->
     <section class="blog-preview" id="latest-posts">

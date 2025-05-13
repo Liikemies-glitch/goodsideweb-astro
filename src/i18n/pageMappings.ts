@@ -4,6 +4,7 @@
 export const pageMappings: Record<string, string> = {
   // Finnish to English
   'tuotepositiointi': 'product-positioning',
+  'ux-suunnittelu': 'ux-design',
   // These are the same in both languages
   'services': 'services', 
   'references': 'references',
@@ -12,6 +13,7 @@ export const pageMappings: Record<string, string> = {
 
   // English to Finnish (reversed mappings for convenience)
   'product-positioning': 'tuotepositiointi',
+  'ux-design': 'ux-suunnittelu',
   'diy-guide': 'diy-opas',
 };
 

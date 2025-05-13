@@ -1,0 +1,120 @@
+---
+interface FAQItem {
+    question: string;
+    answer: string;
+}
+
+export interface Props {
+    title?: string;
+    subtitle?: string;
+    faqs: FAQItem[];
+    sectionId?: string;
+    colorAccent?: string;
+}
+
+const { 
+    title = "Usein kysytyt kysymykset", 
+    subtitle = "Vastauksia yleisimpiin kysymyksiin palveluistamme",
+    faqs,
+    sectionId = "faq",
+    colorAccent = "#9C2043"
+} = Astro.props;
+---
+
+<section class="faq-section" id={sectionId}>
+    <div class="container">
+        <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+            <h2 class="section__title" style={`color: ${colorAccent}; font-weight: bold;`}>{title}</h2>
+            <p class="section__subtitle">{subtitle}</p>
+        </div>
+        <div class="faq-items">
+            {faqs.map((item) => (
+                <div class="faq-item">
+                    <div class="faq-question-wrapper">
+                        <span class="faq-question">{item.question}</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">{item.answer}</p>
+                </div>
+            ))}
+        </div>
+    </div>
+</section>
+
+<style>
+    .faq-section {
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .faq-items {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .faq-item {
+        margin-bottom: 1rem;
+        border-bottom: 1px solid var(--color-light-gray);
+    }
+    
+    .faq-question-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+        cursor: pointer;
+    }
+    
+    .faq-question {
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+    
+    .faq-toggle {
+        font-size: 1.5rem;
+        font-weight: 300;
+        transition: transform 0.3s ease;
+    }
+    
+    .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+        padding: 0 0;
+        opacity: 0;
+    }
+    
+    .faq-item.active .faq-toggle {
+        transform: rotate(45deg);
+    }
+    
+    .faq-item.active .faq-answer {
+        max-height: 500px;
+        padding: 0 0 1rem 0;
+        opacity: 1;
+    }
+</style>
+
+<script>
+    // JavaScript for toggling FAQ items
+    document.addEventListener('DOMContentLoaded', () => {
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const questionWrapper = item.querySelector('.faq-question-wrapper');
+            
+            questionWrapper?.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                
+                // Close all FAQ items
+                faqItems.forEach(faq => {
+                    faq.classList.remove('active');
+                });
+                
+                // If the clicked item wasn't active, make it active
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    });
+</script> 

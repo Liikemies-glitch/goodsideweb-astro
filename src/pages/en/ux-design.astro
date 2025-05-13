@@ -1,0 +1,438 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import HeroSection from '../../components/HeroSection.astro';
+import TrustmaryEmbed from '../../components/TrustmaryEmbed.astro';
+import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
+import NotForEveryone from '../../components/NotForEveryone.astro';
+import LogoWall from '../../components/LogoWall.astro';
+import TeamSection from '../../components/TeamSection.astro';
+import ProblemSolutionSection from '../../components/ProblemSolutionSection.astro';
+import PricingSection from '../../components/PricingSection.astro';
+
+const pageTitle = "UX Design for SaaS Companies | The Good Side";
+const pageDescription = "Transform your SaaS product with exceptional UX design that boosts usability, customer satisfaction, and reduces churn. Expert design that delivers measurable results.";
+---
+<BaseLayout title={pageTitle} description={pageDescription}>
+    <!-- Use HeroSection component -->
+    <HeroSection
+        title="User experience that drives growth and retention."
+        paragraph="We create intuitive UX that makes your product not just usable, but indispensable—reducing churn and accelerating growth while delighting your customers."
+        primaryButtonText="Schedule a meeting &rarr;"
+        primaryButtonHref="/en/contact"
+        secondaryButtonText="View references"
+        secondaryButtonHref="/en/references"
+        textOnly={true}
+        paddingTop="6rem"
+        paddingBottom="3rem"
+        textAlign="center"
+    />
+
+    <!-- Logo Wall Section -->
+    <section class="logo-wall">
+        <div class="container">
+            <h2 class="logo-wall__title">Trusted by innovative SaaS companies</h2>
+            <div class="logo-wall__grid">
+                <!-- The logos are intentionally duplicated below -->
+                <!-- First set -->
+                <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+                 <!-- Second set (duplicate) -->
+                 <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problems">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Sound familiar?</span>
+                <h2 class="section__title">UX Issues Impacting Your SaaS</h2>
+            </div>
+            <div class="problems__grid">
+                <article class="problem-card">
+                    <h3>Feature overload</h3>
+                    <p>Too many features creating a cluttered interface that frustrates users.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Silent ex-customers</h3>
+                    <p>Users leaving without complaints as your product fails to meet expectations.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Tech-first design</h3>
+                    <p>Engineer-focused interface that confuses customers despite being functional.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Us Section -->
+    <section class="hire-us">
+        <div class="container">
+            <h2 class="section__title">SaaS UX Specialists Who Deliver Results</h2>
+            <p class="section__subtitle">Meet the team that transforms products into experiences users love to pay for</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/mikki.webp" alt="Mikki Aalto-Ylevä" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Mikki<br>Aalto-Ylevä</h3>
+                    <p class="team-member__title">SaaS Strategist</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/tuomas.webp" alt="Tuomas Kaartoluoma" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Tuomas<br>Kaartoluoma</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/duncan.webp" alt="Dũng Nguyen" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Dũng<br>Nguyen</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/aksel.webp" alt="Aksel Suokas" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Aksel<br>Suokas</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Intro Section -->
+    <section class="solutions">
+        <div class="container">
+            <h2 class="section__title">How Strategic UX Design Transforms Your SaaS Metrics</h2>
+            <div class="solutions__grid">
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/positiointi.webp" alt="UX Audit and User Research">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Usability</span>
+                            <span>User Research</span>
+                        </div>
+                        <h3>Friction-Free User Experiences</h3>
+                        <p>We dive deep into user research and behavior analysis to design interfaces that feel effortless and intuitive. By eliminating confusion points, we reduce support tickets and increase user satisfaction.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/userjourney.webp" alt="Customer Journeys and Prototyping">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Customer Experience</span>
+                            <span>Conversion Optimization</span>
+                        </div>
+                        <h3>Conversion-Optimized User Journeys</h3>
+                        <p>We transform complex processes into smooth, guided experiences that maximize conversion at every step. Our data-driven approach identifies and eliminates drop-off points, turning more visitors into paying customers.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/ui.webp" alt="Visual Design and Brand Consistency" style="transform: scale(1.3);">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>UI Design</span>
+                            <span>Brand</span>
+                            <span>Engagement</span>
+                        </div>
+                        <h3>Brand-Elevating Visual Identity</h3>
+                        <p>We craft visually stunning interfaces that reinforce your brand's unique personality while ensuring functionality. This creates memorable experiences that keep users engaged and builds lasting brand loyalty.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials__grid">
+                 <div class="trustmary-widget">
+                    <TrustmaryEmbed 
+                        title="What Our Clients Say About Their UX Transformation"
+                        subtitle="Real results from companies like yours"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Not For Everyone Section -->
+    <NotForEveryone 
+        title="Our Approach Isn't For Everyone"
+        subtitle="We might not be the right fit if..."
+        leftColumnItems={[
+            "You want visual changes without strategic research",
+            "You prioritize speed over creating the right solution",
+            "You prefer a one-time fix over ongoing optimization"
+        ]}
+        rightColumnItems={[
+            "Your budget is below €5,000 for UX improvements",
+            "You're certain about user needs without validation data"
+        ]}
+    />
+
+    <!-- Problem/Solution Section (Using existing styles) -->
+    <ProblemSolutionSection
+        title="Real UX Problems We Solve"
+        subtitle="Common challenges our clients face and how we transform them."
+        items={[
+            {
+                problemTitle: "User Frustration Driving Churn",
+                problemDescription: "Your complex interface leads to confusion, frustration, and ultimately customer abandonment. Support requests surge while user engagement plummets.",
+                solutionDescription: "We simplify and restructure your interface based on actual user behavior data, creating intuitive workflows that feel natural. The result: improved user satisfaction, reduced support load, and significantly lower churn rates."
+            },
+            {
+                problemTitle: "Wasted Development Resources",
+                problemDescription: "Your team builds features that users rarely use or can't find, wasting valuable development hours and delaying critical improvements that would drive growth.",
+                solutionDescription: "We implement user-centered design processes that prioritize features based on real user needs and business impact. This ensures every development hour creates maximum value and user satisfaction."
+            },
+            {
+                problemTitle: "Forgettable Product Experience",
+                problemDescription: "Your product blends in with competitors, lacks distinctive personality, and fails to create emotional connections with users—making it easy to replace.",
+                solutionDescription: "We craft a memorable, brand-aligned user experience that differentiates your product in the market. Through thoughtful design details and consistent identity, we create an experience users recommend to others."
+            }
+        ]}
+    />
+
+    <!-- Pricing Section -->
+    <PricingSection
+        title="Ready to Transform Your UX?"
+        subtitle="Choose the engagement model that fits your needs."
+        sectionId="pricing"
+        anchorId="pricing-anchor"
+        pricingOptions={[
+            {
+                title: "Strategic Design Partner",
+                price: "€110/hour",
+                description: "Expert UX design services tailored to transform your SaaS product into a market-leading experience.",
+                buttonText: "Start your transformation &rarr;",
+                buttonHref: "/en/contact"
+            },
+            {
+                title: "Dedicated Growth Team",
+                price: "Let's talk",
+                description: "A comprehensive team of UX, UI, and growth specialists working together to accelerate your SaaS success.",
+                buttonText: "Get a customized plan &rarr;",
+                buttonHref: "/en/contact"
+            }
+        ]}
+        note="*For companies with annual revenue under five million euros, we offer our services at a discounted rate of €95/hour. Prices are tax exclusive (VAT 0%)."
+    />
+
+    <!-- Schedule Meeting Section -->
+    <section class="schedule-meeting" id="schedule-meeting">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Book Your UX Strategy Session</h2>
+                <p class="section__subtitle">Let's explore how improved user experience can drive growth and retention for your SaaS business.</p>
+            </div>
+            <div class="schedule-meeting__embed">
+                <CalendlyEmbed elementId="cal-inline-index" calLink="aaltoyleva/kartoitustapaaminen" />
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">UX Design Questions Answered</h2>
+                <p class="section__subtitle">Everything you need to know about improving your SaaS experience</p>
+            </div>
+            <div class="faq-items">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question-wrapper">
+                        <span class="faq-question">What exactly is UX design in the SaaS context?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">For SaaS products, UX design creates the complete user journey that makes complex workflows feel simple and intuitive. It encompasses everything from information architecture and navigation patterns to visual design and emotional response—all optimized specifically for subscription-based software products.</p>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How does UX design impact SaaS business metrics?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Exceptional UX directly impacts your bottom line through increased conversion rates (often 3-5x), reduced churn (typically 10-30% improvement), higher customer lifetime value, lower support costs, and stronger word-of-mouth growth. In the competitive SaaS landscape, superior UX is often the primary differentiator between market leaders and the rest.</p>
+                </div>
+                <!-- FAQ Item 3 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">What timeline should we expect for a UX redesign?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Timelines vary based on project scope. A focused UX audit with recommendations typically takes 2-3 weeks. A comprehensive redesign involving user research, journey mapping, prototyping, and UI design usually requires 6-12 weeks. Complex products with multiple user roles may require longer timeframes to ensure all use cases are optimized.</p>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">When is the right time to invest in UX improvement?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">The best times to invest in UX are: 1) Before developing new features or products to ensure they meet actual user needs, 2) When metrics show increasing churn or decreasing engagement, 3) When support requests consistently highlight usability issues, 4) When you're preparing to scale or enter new markets, or 5) When your product has grown organically without strategic UX planning.</p>
+                </div>
+                <!-- FAQ Item 5 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How do you measure the ROI of UX improvements?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">We track both leading and lagging indicators. Leading indicators include task completion rates, error rates, and user satisfaction scores from testing. Lagging business metrics include conversion rate improvements, reduced churn, decreased support tickets, increased feature adoption, and NPS/CSAT scores. We establish baseline measurements before changes to accurately calculate ROI.</p>
+                </div>
+                <!-- FAQ Item 6 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How do UX and UI design work together?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">UI design (the visual interface) is a crucial component of the broader UX design discipline. UX determines how the product works and feels through research, user flows, and information architecture. UI then brings this to life visually through interface elements, typography, color, and layout. Great products require excellence in both areas working in harmony.</p>
+                </div>
+                <!-- FAQ Item 7 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">What does your user research process involve?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Our research combines qualitative and quantitative methods tailored to your specific needs and constraints. This typically includes user interviews with key segments, usability testing of existing workflows, analytics review, customer support ticket analysis, competitive benchmarking, and carefully designed surveys. We focus on discovering not just what users do, but why they do it.</p>
+                </div>
+                <!-- FAQ Item 8 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Do you design for mobile and responsive experiences?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Absolutely. We design for all relevant platforms and screen sizes your users need. For SaaS products, this often means responsive web applications, dedicated mobile experiences, and occasionally native applications. We approach each platform strategically, optimizing the experience for the specific context while maintaining consistency across touchpoints.</p>
+                </div>
+                <!-- FAQ Item 9 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How do you integrate with agile development teams?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">We've refined our process to work seamlessly with agile teams. We typically work 1-2 sprints ahead of development, providing validated designs ready for implementation. We participate in relevant ceremonies, provide detailed specifications and assets, and remain available for questions during development. Post-implementation, we review the built product to ensure design fidelity and suggest refinements.</p>
+                </div>
+                <!-- FAQ Item 10 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Can you work with our existing design system?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Yes, we're experienced in working with established design systems. We can leverage your existing system to ensure consistency while suggesting refinements where needed. If your system has gaps or needs updating, we can help expand and evolve it. For companies without a formal design system, we can help develop one that scales with your product's growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</BaseLayout>
+
+<style>
+    .team-grid {
+        display: flex;
+        flex-direction: column; /* Stack vertically by default (mobile) */
+        align-items: center; /* Center items horizontally in column layout */
+        gap: var(--spacing-lg);
+    }
+
+    .team-member {
+        text-align: center; /* Ensure text inside member card is centered */
+    }
+
+    /* Apply row layout for medium screens and up */
+    @media (min-width: 768px) {
+        .team-grid {
+            flex-direction: row; /* Arrange side-by-side */
+            justify-content: center; /* Center items horizontally in row layout */
+        }
+    }
+</style> 

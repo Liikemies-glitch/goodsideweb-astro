@@ -11,6 +11,7 @@ import ProblemSection from '../../components/ProblemSection.astro';
 import TeamSection from '../../components/TeamSection.astro';
 import ProblemSolutionSection from '../../components/ProblemSolutionSection.astro';
 import PricingSection from '../../components/PricingSection.astro';
+import FAQSection from '../../components/FAQSection.astro';
 
 const pageTitle = "The Good Side | SaaS-tuotetiimien strategiakumppani";
 const pageDescription = "The Good Side - Autamme tuotetiimejä rakentamaan menestyvää SaaS-liiketoimintaa yhdistämällä tuotestrategian ja designin.";
@@ -213,97 +214,51 @@ function formatDate(date: Date): string {
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="faq-section" id="faq">
-        <div class="container">
-            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
-                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Usein kysytyt kysymykset</h2>
-                <p class="section__subtitle">Vastauksia yleisimpiin kysymyksiin palveluistamme</p>
-            </div>
-            <div class="faq-items">
-                <!-- FAQ Item 1 -->
-                <div class="faq-item">
-                    <div class="faq-question-wrapper">
-                        <span class="faq-question">Kuinka pitkäksi aikaa minun tarvitsee sitoutua?</span>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <p class="faq-answer">Sopimuksemme ovat toistaiseksi voimassaolevia, joten minimisitoutuminen on yksi kuukausi. Tämä mahdollistaa joustavan yhteistyön ja antaa sinulle vapauden skaalata palveluitamme tarpeidesi mukaan. Tyypillisesti asiakkaamme työskentelevät kanssamme 2-6 kuukautta projektin laajuudesta riippuen.</p>
-                </div>
-                <!-- FAQ Item 2 -->
-                <div class="faq-item">
-                     <div class="faq-question-wrapper">
-                        <span class="faq-question">Miten erotatte itsenne muista design-toimistoista?</span>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <p class="faq-answer">Olemme erikoistuneet nimenomaan SaaS-tuotteiden suunnitteluun ja ymmärrämme syvällisesti alan erityispiirteet. Yhdistämme tuotestrategian, käyttöliittymäsuunnittelun ja markkinoinnin yhdeksi kokonaisuudeksi. Meillä on vahva kokemus konversion optimoinnista ja käyttäjäpolkujen suunnittelusta erityisesti SaaS-kontekstissa.</p>
-                </div>
-                <!-- FAQ Item 3 -->
-                 <div class="faq-item">
-                     <div class="faq-question-wrapper">
-                        <span class="faq-question">Mitä työkaluja käytätte suunnittelussa?</span>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <p class="faq-answer">Käytämme moderneja suunnittelutyökaluja kuten Figmaa UI/UX-suunnitteluun, Miroa käyttäjäpolkujen ja workshoppien fasilitointiin sekä Hotjaria käyttäjäanalytiikassa. Lisäksi hyödynnämme AI-pohjaisia työkaluja käyttäjätutkimuksessa ja data-analytiikassa varmistaaksemme dataohjatun suunnitteluprosessin.</p>
-                </div>
-                <!-- FAQ Item 4 -->
-                <div class="faq-item">
-                     <div class="faq-question-wrapper">
-                        <span class="faq-question">Miten varmistatte, että design tukee liiketoimintatavoitteitamme?</span>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <p class="faq-answer">Aloitamme aina kartoittamalla liiketoimintatavoitteenne ja mittarit. Teemme perusteellisen positiointiharjoituksen, joka auttaa ymmärtämään kohderyhmänne ja kilpailuetunne. Suunnitteluprosessimme perustuu jatkuvaan mittaamiseen ja optimointiin, jotta voimme varmistaa designin vaikuttavuuden konversioon ja kasvuun.</p>
-                </div>
-                <!-- FAQ Item 5 -->
-                 <div class="faq-item">
-                     <div class="faq-question-wrapper">
-                        <span class="faq-question">Voitteko auttaa olemassa olevan tuotteen kehittämisessä?</span>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <p class="faq-answer">Kyllä, autamme sekä uusien tuotteiden suunnittelussa että olemassa olevien tuotteiden kehittämisessä. Teemme ensin perusteellisen analyysin nykyisestä tuotteestanne, keräämme käyttäjädataa ja tunnistamme kehityskohteet. Tämän pohjalta luomme kehityssuunnitelman, joka voidaan toteuttaa vaiheittain häiritsemättä nykyistä liiketoimintaa.</p>
-                </div>
-                <!-- FAQ Item 6 -->
-                 <div class="faq-item">
-                     <div class="faq-question-wrapper">
-                        <span class="faq-question">Miten käsittelette monimutkaisia SaaS-tuotteita?</span>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <p class="faq-answer">Meillä on vahva kokemus monimutkaisten B2B SaaS-tuotteiden suunnittelusta. Käytämme hyväksi havaittuja menetelmiä ja kehyksiä, joiden avulla kompleksikin kokonaisuus kääntyy selkeäksi käyttöliittymäksi. Ulkopuolinen näkökulmamme auttaa usein näkemään yksinkertaistamisen mahdollisuudet, joita sisäinen tiimi ei välttämättä huomaa.</p>
-                </div>
-                <!-- FAQ Item 7 -->
-                 <div class="faq-item">
-                     <div class="faq-question-wrapper">
-                        <span class="faq-question">Miten varmistatte suunnittelijan saatavuuden projektiimme?</span>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <p class="faq-answer">Emme ylimyy resurssejamme, vaan varmistamme aina, että suunnittelijoillamme on riittävästi aikaa paneutua projektiinne. Tyypillisesti yksi suunnittelija työskentelee 2-3 projektin parissa samanaikaisesti, mikä mahdollistaa sekä tehokkaan työskentelyn että riittävän joustavuuden kiireellisissä tilanteissa.</p>
-                </div>
-                <!-- FAQ Item 8 -->
-                 <div class="faq-item">
-                     <div class="faq-question-wrapper">
-                        <span class="faq-question">Mitä jos en ole tyytyväinen lopputulokseen?</span>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <p class="faq-answer">Työllämme on täysi tyytyväisyystakuu. Jos et ole tyytyväinen työhömme, et maksa mitään. Työskentelemme iteratiivisesti ja keräämme palautetta säännöllisesti varmistaaksemme, että olemme oikealla polulla. Tämä lähestymistapa minimoi riskin, että lopputulos ei vastaisi odotuksiasi.</p>
-                </div>
-                <!-- FAQ Item 9 -->
-                 <div class="faq-item">
-                     <div class="faq-question-wrapper">
-                        <span class="faq-question">Miten tuette kehitystiimiä implementoinnissa?</span>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <p class="faq-answer">Toimitamme aina tarkat tekniset spesifikaatiot ja tyyliohjeet kehitystiimille. Käytämme Figman kehittäjänäkymää ja luomme tarvittaessa komponenttikirjaston. Olemme myös käytettävissä konsultointiin implementoinnin aikana ja autamme ratkaisemaan mahdolliset tekniset haasteet designin toteutuksessa.</p>
-                </div>
-                <!-- FAQ Item 10 -->
-                 <div class="faq-item">
-                     <div class="faq-question-wrapper">
-                        <span class="faq-question">Miten hinnoittelette isommat projektit?</span>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <p class="faq-answer">Isommissa projekteissa voimme sopia kiinteän kuukausibudjetin tai projektikohtaisen hinnoittelun. Tuntihintamme on 110€/tunti (pienemmille yrityksille 95€/tunti), mutta räätälöimme aina hinnoittelun projektin laajuuden ja tarpeiden mukaan. Teemme selkeän projektisuunnitelman, jossa määrittelemme tarvittavat resurssit ja aikataulun.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- FAQ Section (Using the new Component) -->
+    <FAQSection 
+        faqs={[
+            {
+                question: "Kuinka pitkäksi aikaa minun tarvitsee sitoutua?",
+                answer: "Sopimuksemme ovat toistaiseksi voimassaolevia, joten minimisitoutuminen on yksi kuukausi. Tämä mahdollistaa joustavan yhteistyön ja antaa sinulle vapauden skaalata palveluitamme tarpeidesi mukaan. Tyypillisesti asiakkaamme työskentelevät kanssamme 2-6 kuukautta projektin laajuudesta riippuen."
+            },
+            {
+                question: "Miten erotatte itsenne muista design-toimistoista?",
+                answer: "Olemme erikoistuneet nimenomaan SaaS-tuotteiden suunnitteluun ja ymmärrämme syvällisesti alan erityispiirteet. Yhdistämme tuotestrategian, käyttöliittymäsuunnittelun ja markkinoinnin yhdeksi kokonaisuudeksi. Meillä on vahva kokemus konversion optimoinnista ja käyttäjäpolkujen suunnittelusta erityisesti SaaS-kontekstissa."
+            },
+            {
+                question: "Mitä työkaluja käytätte suunnittelussa?",
+                answer: "Käytämme moderneja suunnittelutyökaluja kuten Figmaa UI/UX-suunnitteluun, Miroa käyttäjäpolkujen ja workshoppien fasilitointiin sekä Hotjaria käyttäjäanalytiikassa. Lisäksi hyödynnämme AI-pohjaisia työkaluja käyttäjätutkimuksessa ja data-analytiikassa varmistaaksemme dataohjatun suunnitteluprosessin."
+            },
+            {
+                question: "Miten varmistatte, että design tukee liiketoimintatavoitteitamme?",
+                answer: "Aloitamme aina kartoittamalla liiketoimintatavoitteenne ja mittarit. Teemme perusteellisen positiointiharjoituksen, joka auttaa ymmärtämään kohderyhmänne ja kilpailuetunne. Suunnitteluprosessimme perustuu jatkuvaan mittaamiseen ja optimointiin, jotta voimme varmistaa designin vaikuttavuuden konversioon ja kasvuun."
+            },
+            {
+                question: "Voitteko auttaa olemassa olevan tuotteen kehittämisessä?",
+                answer: "Kyllä, autamme sekä uusien tuotteiden suunnittelussa että olemassa olevien tuotteiden kehittämisessä. Teemme ensin perusteellisen analyysin nykyisestä tuotteestanne, keräämme käyttäjädataa ja tunnistamme kehityskohteet. Tämän pohjalta luomme kehityssuunnitelman, joka voidaan toteuttaa vaiheittain häiritsemättä nykyistä liiketoimintaa."
+            },
+            {
+                question: "Miten käsittelette monimutkaisia SaaS-tuotteita?",
+                answer: "Meillä on vahva kokemus monimutkaisten B2B SaaS-tuotteiden suunnittelusta. Käytämme hyväksi havaittuja menetelmiä ja kehyksiä, joiden avulla kompleksikin kokonaisuus kääntyy selkeäksi käyttöliittymäksi. Ulkopuolinen näkökulmamme auttaa usein näkemään yksinkertaistamisen mahdollisuudet, joita sisäinen tiimi ei välttämättä huomaa."
+            },
+            {
+                question: "Miten varmistatte suunnittelijan saatavuuden projektiimme?",
+                answer: "Emme ylimyy resurssejamme, vaan varmistamme aina, että suunnittelijoillamme on riittävästi aikaa paneutua projektiinne. Tyypillisesti yksi suunnittelija työskentelee 2-3 projektin parissa samanaikaisesti, mikä mahdollistaa sekä tehokkaan työskentelyn että riittävän joustavuuden kiireellisissä tilanteissa."
+            },
+            {
+                question: "Mitä jos en ole tyytyväinen lopputulokseen?",
+                answer: "Työllämme on täysi tyytyväisyystakuu. Jos et ole tyytyväinen työhömme, et maksa mitään. Työskentelemme iteratiivisesti ja keräämme palautetta säännöllisesti varmistaaksemme, että olemme oikealla polulla. Tämä lähestymistapa minimoi riskin, että lopputulos ei vastaisi odotuksiasi."
+            },
+            {
+                question: "Miten tuette kehitystiimiä implementoinnissa?",
+                answer: "Toimitamme aina tarkat tekniset spesifikaatiot ja tyyliohjeet kehitystiimille. Käytämme Figman kehittäjänäkymää ja luomme tarvittaessa komponenttikirjaston. Olemme myös käytettävissä konsultointiin implementoinnin aikana ja autamme ratkaisemaan mahdolliset tekniset haasteet designin toteutuksessa."
+            },
+            {
+                question: "Miten hinnoittelette isommat projektit?",
+                answer: "Isommissa projekteissa voimme sopia kiinteän kuukausibudjetin tai projektikohtaisen hinnoittelun. Tuntihintamme on 110€/tunti (pienemmille yrityksille 95€/tunti), mutta räätälöimme aina hinnoittelun projektin laajuuden ja tarpeiden mukaan. Teemme selkeän projektisuunnitelman, jossa määrittelemme tarvittavat resurssit ja aikataulun."
+            }
+        ]}
+    />
 
     <!-- Blog Preview Section -->
     <section class="blog-preview" id="latest-posts">
