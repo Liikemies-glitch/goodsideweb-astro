@@ -1,0 +1,463 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import HeroSection from '../../components/HeroSection.astro';
+import TrustmaryEmbed from '../../components/TrustmaryEmbed.astro';
+import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
+import NotForEveryone from '../../components/NotForEveryone.astro';
+import LogoWall from '../../components/LogoWall.astro';
+import ProblemSection from '../../components/ProblemSection.astro';
+import TeamSection from '../../components/TeamSection.astro';
+import ProblemSolutionSection from '../../components/ProblemSolutionSection.astro';
+import PricingSection from '../../components/PricingSection.astro';
+import FAQSection from '../../components/FAQSection.astro';
+
+const pageTitle = "Expert UX Designer Services | The Good Side";
+const pageDescription = "Elevate your SaaS product with our experienced UX designers. We solve user experience challenges and create interfaces your customers will love.";
+
+// Fetch latest 6 blog posts
+const latestPosts = (await getCollection('blog', ({ id }) => {
+    return id.endsWith('.en.md');
+}))
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+    .slice(0, 6);
+
+// Helper function to format dates
+function formatDate(date: Date): string {
+  return new Date(date).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+}
+---
+<BaseLayout title={pageTitle} description={pageDescription}>
+    <!-- Use HeroSection component -->
+    <HeroSection
+        title="UX designers who transform your product"
+        paragraph="Our UX design experts create intuitive, engaging experiences that delight users and drive business growth. With over 10 years of experience helping SaaS companies succeed."
+        primaryButtonText="Book a UX consultation &rarr;"
+        primaryButtonHref="/en/contact"
+        secondaryButtonText="View UX case studies"
+        secondaryButtonHref="/en/references"
+        textOnly={true}
+        paddingTop="6rem"
+        paddingBottom="3rem"
+        textAlign="center"
+    />
+
+    <!-- Logo Wall Section -->
+    <section class="logo-wall">
+        <div class="container">
+            <h2 class="logo-wall__title">Companies trust our UX designers</h2>
+            <div class="logo-wall__grid">
+                <!-- The logos are intentionally duplicated below -->
+                <!-- First set -->
+                <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+                 <!-- Second set (duplicate) -->
+                 <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problems">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">UX challenges</span>
+                <h2 class="section__title">Common UX problems</h2>
+            </div>
+            <div class="problems__grid">
+                <article class="problem-card">
+                    <h3>Confusing interfaces</h3>
+                    <p>Your users struggle to navigate your product, leading to frustration and decreased engagement.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Low conversion rates</h3>
+                    <p>Poor UX design creates friction in your user journey, resulting in high bounce rates and abandoned purchases.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Outdated design</h3>
+                    <p>Your product looks dated compared to competitors, undermining user trust and perceived value.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Us Section -->
+    <section class="hire-us">
+        <div class="container">
+            <h2 class="section__title">Our UX design team</h2>
+            <p class="section__subtitle">Expert UX designers ready to transform your product</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/mikki.webp" alt="Mikki Aalto-Ylevä" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Mikki<br>Aalto-Ylevä</h3>
+                    <p class="team-member__title">UX Strategist</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/tuomas.webp" alt="Tuomas Kaartoluoma" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Tuomas<br>Kaartoluoma</h3>
+                    <p class="team-member__title">UX Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/duncan.webp" alt="Dũng Nguyen" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Dũng<br>Nguyen</h3>
+                    <p class="team-member__title">UX Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/aksel.webp" alt="Aksel Suokas" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Aksel<br>Suokas</h3>
+                    <p class="team-member__title">UX Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Intro Section -->
+    <section class="solutions">
+        <div class="container">
+            <h2 class="section__title">Our UX design services</h2>
+            <div class="solutions__grid">
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/positiointi.webp" alt="UX Strategy">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>UX Strategy</span>
+                            <span>User Research</span>
+                        </div>
+                        <h3>Strategic UX planning</h3>
+                        <p>Our UX designers analyze your users' needs and develop comprehensive UX strategies that align with your business goals and create meaningful experiences.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/userjourney.webp" alt="User Journey Design">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>User Journeys</span>
+                            <span>UX Design</span>
+                            <span>Prototyping</span>
+                        </div>
+                        <h3>User journey optimization</h3>
+                        <p>Our UX designers craft intuitive user flows and journeys that guide users seamlessly through your product, creating memorable experiences that drive conversions.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/ui.webp" alt="UI Design" style="transform: scale(1.3);">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>UI Design</span>
+                            <span>Visual Design</span>
+                            <span>Design Systems</span>
+                        </div>
+                        <h3>Exceptional interface design</h3>
+                        <p>Our UX designers create visually stunning interfaces that balance aesthetics with functionality, making your product both beautiful and easy to use.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials__grid">
+                 <div class="trustmary-widget">
+                    <TrustmaryEmbed 
+                        title="UX design success stories"
+                        subtitle="See how our UX designers helped transform these products"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Not For Everyone Section -->
+    <NotForEveryone 
+        title="Is our UX design team right for you?"
+        subtitle="We might not be your ideal UX partner if..."
+        leftColumnItems={[
+            "You already have skilled in-house UX designers",
+            "You're looking for quick visual tweaks without strategic thinking",
+            "You want a UX designer who follows orders without questioning assumptions"
+        ]}
+        rightColumnItems={[
+            "Your UX design budget is below €5000",
+            "You need a UX designer who also handles development"
+        ]}
+    />
+
+    <!-- Problem/Solution Section (Using existing styles) -->
+    <ProblemSolutionSection
+        title="UX design challenges we solve"
+        subtitle="Common UX problems and our approach to solving them"
+        solutionTitle="Our UX approach"
+        items={[
+            {
+                problemTitle: "Users find your product confusing",
+                problemDescription: "Your product's interface is complex and unintuitive, causing users to struggle with even basic tasks. This leads to support tickets, negative reviews, and high churn rates as users abandon your product for simpler alternatives.",
+                solutionDescription: "Our UX designers will simplify and streamline your interface through careful user research, information architecture, and usability testing. We'll create intuitive navigation patterns and clear visual hierarchies that make your product feel natural and easy to use."
+            },
+            {
+                problemTitle: "Low user engagement and adoption",
+                problemDescription: "Users sign up but rarely return to your product. Your onboarding process fails to demonstrate value quickly, and core features go undiscovered. This results in poor retention metrics and slow growth despite marketing efforts.",
+                solutionDescription: "Our UX designers will reimagine your onboarding experience and core user flows to highlight your product's value. Through interactive prototypes and user testing, we'll create engaging experiences that guide users to their 'aha moments' faster."
+            },
+            {
+                problemTitle: "Your product looks outdated",
+                problemDescription: "Your interface feels dated compared to competitors, making users question if your product is still actively maintained. This perception issue hurts conversions, especially when prospects compare options during trials or demos.",
+                solutionDescription: "Our UX designers will revitalize your product's visual identity while maintaining familiarity for existing users. We'll implement modern design patterns, create a consistent design system, and ensure your product projects quality and trustworthiness."
+            }
+        ]}
+    />
+
+    <!-- Pricing Section -->
+    <PricingSection
+        title="UX designer pricing"
+        subtitle="Flexible options to fit your UX design needs"
+        sectionId="hinnat"
+        anchorId="hinnat-ankkuri"
+        pricingOptions={[
+            {
+                title: "UX Design Consultation",
+                price: "€110/hour",
+                description: "Work with our expert UX designers to solve specific interface challenges and improve user experience across your product.",
+                buttonText: "Book a UX consultation &rarr;",
+                buttonHref: "/en/contact"
+            },
+            {
+                title: "Comprehensive UX Redesign",
+                price: "Let's talk",
+                description: "A complete UX design package with research, user journey mapping, wireframing, prototyping, and design implementation support.",
+                buttonText: "Get your UX design plan &rarr;",
+                buttonHref: "/en/contact"
+            }
+        ]}
+        note="*For small companies with less than five million euros in turnover, we offer our UX design services at a reduced rate of €95/hour. Prices are tax-free (VAT 0%)."
+    />
+
+    <!-- Schedule Meeting Section -->
+    <section class="schedule-meeting" id="schedule-meeting">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Meet our UX designers</h2>
+                <p class="section__subtitle">Schedule a consultation to discuss your UX design needs</p>
+            </div>
+            <div class="schedule-meeting__embed">
+                <CalendlyEmbed elementId="cal-inline-index" calLink="aaltoyleva/kartoitustapaaminen" />
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (Using the new Component) -->
+    <FAQSection 
+        title="UX Design FAQs"
+        subtitle="Common questions about our UX design services"
+        faqs={[
+            {
+                question: "What's your UX design process?",
+                answer: "Our UX design process includes research, wireframing, prototyping, and testing. We start by understanding your users through research, then create wireframes to establish structure, develop interactive prototypes, and conduct usability testing to validate our designs before finalizing them."
+            },
+            {
+                question: "How long does a UX design project take?",
+                answer: "The timeline varies based on project scope. Small UX improvements can be completed in 2-4 weeks, while comprehensive redesigns typically take 2-4 months. We'll provide a detailed timeline during our initial consultation based on your specific requirements."
+            },
+            {
+                question: "Will I work with the same UX designer throughout?",
+                answer: "Yes, you'll have a dedicated UX designer as your main point of contact throughout the project. For larger projects, we may bring in additional specialists for specific aspects of UX design, but your primary designer will maintain consistency and communication."
+            },
+            {
+                question: "How do you measure UX success?",
+                answer: "We establish clear UX metrics at the beginning of each project, which may include task completion rates, time-on-task, error rates, conversion rates, and user satisfaction scores. We track these metrics before and after implementation to quantify the impact of our UX improvements."
+            },
+            {
+                question: "Do your UX designers work remotely or on-site?",
+                answer: "Our UX designers primarily work remotely, which allows for flexibility and efficiency. However, we can arrange on-site workshops, stakeholder interviews, or user testing sessions when needed. We use collaborative tools like Figma and Miro to maintain seamless communication."
+            },
+            {
+                question: "How do you handle UX for complex B2B products?",
+                answer: "Our UX designers specialize in simplifying complex B2B interfaces. We begin with extensive domain research and user interviews to understand specialized workflows. We then apply information architecture principles to organize complex functionality into intuitive interfaces that balance power with usability."
+            },
+            {
+                question: "Can you help with just part of our UX process?",
+                answer: "Absolutely. While we offer end-to-end UX design services, we can also support specific phases like user research, wireframing, prototyping, or usability testing. Our flexible approach allows us to integrate with your existing processes and fill gaps where needed."
+            },
+            {
+                question: "Do you create design systems?",
+                answer: "Yes, our UX designers excel at creating comprehensive design systems that ensure consistency across your product. These systems include component libraries, interaction patterns, and design guidelines that help your team maintain UX quality as your product evolves."
+            },
+            {
+                question: "How do you handle UX handoff to developers?",
+                answer: "We create detailed specifications that developers can easily implement. Our deliverables include interactive Figma prototypes, component documentation, responsive behavior guidelines, and animation specifications. Our UX designers remain available during implementation to answer questions and provide clarification."
+            },
+            {
+                question: "What's your UX design toolkit?",
+                answer: "Our UX designers use industry-leading tools including Figma for design and prototyping, Miro for collaboration and user journey mapping, Hotjar for user analytics, and UserTesting for remote usability testing. We can adapt to your preferred tools if needed for better integration with your workflows."
+            }
+        ]}
+    />
+
+    <!-- Blog Preview Section -->
+    <section class="blog-preview" id="latest-posts">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title">UX design insights</h2>
+            </div>
+            <div class="blog-grid">
+                {latestPosts.map(post => (
+                    <article class="blog-card">
+                        <a href={`/en/blog/${post.slug}/`} class="blog-card__link">
+                            {post.data.heroImage && (
+                               <div class="blog-card__image-container">
+                                 <Image
+                                   src={post.data.heroImage}
+                                   alt={post.data.heroImageAlt || post.data.title}
+                                   width={800}
+                                   height={450}
+                                   format="webp"
+                                   quality={80}
+                                   loading="lazy"
+                                   decoding="async"
+                                   class="blog-card__image"
+                                 />
+                               </div>
+                            )}
+                            <div class="blog-card__content">
+                                 {post.data.tags && post.data.tags.length > 0 && (
+                                    <div class="blog-card__tags">
+                                        {post.data.tags.map(tag => (
+                                            <span class="tag">{tag}</span>
+                                        ))}
+                                    </div>
+                                 )}
+                                <h3 class="blog-card__title">{post.data.title}</h3>
+                                <p class="blog-card__excerpt">{post.data.description || 'Read article...'}</p>
+                                <div class="blog-card__footer">
+                                    <span class="blog-card__readmore">Read more &rarr;</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                ))}
+            </div>
+            <div style="text-align: center; margin-top: var(--spacing-lg);">
+                <a href="/en/blog" class="btn btn--secondary">View all UX design articles &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+</BaseLayout>
+
+<style>
+    .team-grid {
+        display: flex;
+        flex-direction: column; /* Stack vertically by default (mobile) */
+        align-items: center; /* Center items horizontally in column layout */
+        gap: var(--spacing-lg);
+    }
+
+    .team-member {
+        text-align: center; /* Ensure text inside member card is centered */
+    }
+
+    /* Apply row layout for medium screens and up */
+    @media (min-width: 768px) {
+        .team-grid {
+            flex-direction: row; /* Arrange side-by-side */
+            justify-content: center; /* Center items horizontally in row layout */
+        }
+    }
+</style> 

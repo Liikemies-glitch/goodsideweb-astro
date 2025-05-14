@@ -1,0 +1,452 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import HeroSection from '../../components/HeroSection.astro';
+import TrustmaryEmbed from '../../components/TrustmaryEmbed.astro';
+import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
+import NotForEveryone from '../../components/NotForEveryone.astro';
+import LogoWall from '../../components/LogoWall.astro';
+import TeamSection from '../../components/TeamSection.astro';
+import ProblemSolutionSection from '../../components/ProblemSolutionSection.astro';
+import PricingSection from '../../components/PricingSection.astro';
+
+const pageTitle = "UX Designer ja käyttökokemussuunnittelu | The Good Side";
+const pageDescription = "Ammattitaitoinen UX Designer parantaa digitaalisten tuotteiden käytettävyyttä, nostaa konversioastetta ja lisää asiakastyytyväisyyttä. Kokeneet UX-suunnittelijat palveluksessasi.";
+
+// Fetch latest 6 blog posts - REMOVED
+// const latestPosts = (await getCollection('blog'))
+//     .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+//     .slice(0, 6);
+
+// Helper function to format dates - REMOVED if only used for blog posts
+// function formatDate(date: Date): string {
+//   return new Date(date).toLocaleDateString('fi-FI', {
+//     year: 'numeric',
+//     month: 'long',
+//     day: 'numeric',
+//   });
+// }
+---
+<BaseLayout title={pageTitle} description={pageDescription}>
+    <!-- Use HeroSection component -->
+    <HeroSection
+        title="UX Designer, joka ymmärtää liiketoimintaasi."
+        paragraph="Kokeneet UX Designer -asiantuntijamme luovat intuitiivisia käyttökokemuksia, jotka tekevät tuotteestasi korvaamattoman – vähentävät asiakaspoistumaa ja nopeuttavat kasvua ilahduttaen samalla asiakkaitasi."
+        primaryButtonText="Varaa tapaaminen &rarr;"
+        primaryButtonHref="/fi/contact"
+        secondaryButtonText="Näytä referenssit"
+        secondaryButtonHref="/fi/references"
+        textOnly={true}
+        paddingTop="6rem"
+        paddingBottom="3rem"
+        textAlign="center"
+    />
+
+    <!-- Logo Wall Section -->
+    <section class="logo-wall">
+        <div class="container">
+            <h2 class="logo-wall__title">UX Design asikkaitamme</h2>
+            <div class="logo-wall__grid">
+                <!-- The logos are intentionally duplicated below -->
+                <!-- First set -->
+                <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+                 <!-- Second set (duplicate) -->
+                 <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problems">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Kuulostaako tutulta?</span>
+                <h2 class="section__title">Ongelmia, joita UX Designer tyypillisesti ratkoo</h2>
+            </div>
+            <div class="problems__grid">
+                <article class="problem-card">
+                    <h3>Liikaa ominaisuuksia</h3>
+                    <p>Liian monta ominaisuutta luo sekavan käyttöliittymän, joka turhauttaa käyttäjiä. UX Designer selkeyttää kokonaisuuden.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Käyttäjäkato ilman palautetta</h3>
+                    <p>Käyttäjät lähtevät valittamatta, kun tuotteesi ei vastaa heidän odotuksiaan. Ammattitaitoinen UX Designer tunnistaa ongelmakohdat.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Tekniikkakeskeinen suunnittelu</h3>
+                    <p>Insinöörikeskeinen käyttöliittymä, joka hämmentää asiakkaita, vaikka olisikin toimiva. UX Designer kääntää tekniikan käyttäjälähtöiseksi.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Us Section -->
+    <section class="hire-us">
+        <div class="container">
+            <h2 class="section__title">UX Designer palveluksessasi</h2>
+            <p class="section__subtitle">Ammattitaitoiset UX Designerit muuttavat tuotteesi kokemuksiksi, joista käyttäjät maksavat mielellään.</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/mikki.webp" alt="Mikki Aalto-Ylevä" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Mikki<br>Aalto-Ylevä</h3>
+                    <p class="team-member__title">UX-strategi</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/tuomas.webp" alt="Tuomas Kaartoluoma" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Tuomas<br>Kaartoluoma</h3>
+                    <p class="team-member__title">UX Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/duncan.webp" alt="Dũng Nguyen" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Dũng<br>Nguyen</h3>
+                    <p class="team-member__title">UX Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/aksel.webp" alt="Aksel Suokas" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Aksel<br>Suokas</h3>
+                    <p class="team-member__title">UX Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Intro Section -->
+    <section class="solutions">
+        <div class="container">
+            <h2 class="section__title">Miten UX Designer voi parantaa liiketoimintaasi</h2>
+            <div class="solutions__grid">
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/positiointi.webp" alt="UX Designer tutkimassa käyttäjäkokemusta">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Käytettävyys</span>
+                            <span>Käyttäjätutkimus</span>
+                        </div>
+                        <h3>Kitkaton käyttökokemus</h3>
+                        <p>UX Designer syventyy käyttäjätutkimukseen ja käyttäytymisanalyysiin suunnitellakseen käyttöliittymiä, jotka tuntuvat vaivattomilta ja intuitiivisilta. Poistamalla sekaannusta aiheuttavat tekijät vähennämme tukipyyntöjä ja lisäämme käyttäjätyytyväisyyttä.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/userjourney.webp" alt="UX Designer optimoimassa käyttäjäpolkuja">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Asiakaskokemus</span>
+                            <span>Konversio-optimointi</span>
+                        </div>
+                        <h3>Konversio-optimoidut käyttäjäpolut</h3>
+                        <p>Ammattitaitoinen UX Designer muuttaa monimutkaiset prosessit sujuviksi, ohjatuiksi kokemuksiksi, jotka maksimoivat konversion joka vaiheessa. Datapohjainen lähestymistapamme tunnistaa ja poistaa pudotuskohdat, muuttaen yhä useammat kävijät maksaviksi asiakkaiksi.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/ui.webp" alt="UX Designer luomassa visuaalista käyttöliittymää" style="transform: scale(1.3);">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>UI-suunnittelu</span>
+                            <span>Brändi</span>
+                            <span>Sitoutuminen</span>
+                        </div>
+                        <h3>Brändiä vahvistava visuaalinen ilme</h3>
+                        <p>UX Designerimme suunnittelevat visuaalisesti näyttäviä käyttöliittymiä, jotka vahvistavat brändisi ainutlaatuista persoonallisuutta samalla varmistaen toiminnallisuuden. Tämä luo mieleenpainuvia kokemuksia, jotka pitävät käyttäjät sitoutuneina ja rakentavat kestävää brändiuskollisuutta.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials__grid">
+                 <div class="trustmary-widget">
+                    <TrustmaryEmbed 
+                        title="Mitä asiakkaamme sanovat"
+                        subtitle="Todellisia tuloksia yrityksiltä kuten sinun"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Not For Everyone Section -->
+    <NotForEveryone 
+        title="Palvelumme ei sovi kaikille"
+        subtitle="Emme ehkä ole oikea vaihtoehto jos..."
+        leftColumnItems={[
+            "Haluat vain visuaalisia muutoksia ilman strategista UX Designer -työpanosta",
+            "Priorisoit nopeutta oikean UX-ratkaisun luomisen sijaan",
+            "Suosit kertaratkaisua jatkuvan käyttäjäkokemuksen optimoinnin sijaan"
+        ]}
+        rightColumnItems={[
+            "Budjettisi UX Designer -palveluihin on alle 5 000 €",
+            "Olet varma käyttäjien tarpeista ilman validointidataa"
+        ]}
+    />
+
+    <!-- Problem/Solution Section (Using existing styles) -->
+    <ProblemSolutionSection
+        title="UX-haasteet ja ratkaisumme"
+        subtitle="Yleisimmät UX-haasteet ja miten ratkaisemme ne."
+        items={[
+            {
+                problemTitle: "Käyttäjien turhautuminen johtaa asiakaskatoon",
+                problemDescription: "Monimutkainen käyttöliittymä aiheuttaa hämmennystä, turhautumista ja lopulta asiakkaiden menettämistä. Tukipyynnöt lisääntyvät, kun käyttäjien sitoutuminen romahtaa.",
+                solutionDescription: "UX Designer yksinkertaistaa ja uudelleenrakentaa käyttöliittymäsi todellisen käyttäjäkäyttäytymisdatan perusteella, luoden intuitiivisia työnkulkuja, jotka tuntuvat luonnollisilta. Tulos: parantunut käyttäjätyytyväisyys, vähentynyt tukikuorma ja merkittävästi alhaisempi asiakaspoistuma."
+            },
+            {
+                problemTitle: "Hukatut kehitysresurssit",
+                problemDescription: "Tiimisi rakentaa ominaisuuksia, joita käyttäjät harvoin käyttävät tai eivät löydä, tuhlaten arvokasta kehitysaikaa ja viivästyttäen kriittisiä parannuksia, jotka edistäisivät kasvua.",
+                solutionDescription: "UX Designer toteuttaa käyttäjäkeskeisiä suunnitteluprosesseja, jotka priorisoivat ominaisuuksia todellisten käyttäjätarpeiden ja liiketoimintavaikutusten perusteella. Näin jokainen kehitystunti luo maksimaalista arvoa ja käyttäjätyytyväisyyttä."
+            },
+            {
+                problemTitle: "Erottumaton tuotekokemus",
+                problemDescription: "Tuotteesi sulautuu kilpailijoiden joukkoon, siitä puuttuu selkeä persoonallisuus, eikä se luo tunnesidettä käyttäjien kanssa – tehden siitä helposti korvattavan.",
+                solutionDescription: "UX Designer -tiimimme suunnittelee mieleenpainuvan, brändiin sopivan käyttökokemuksen, joka erottaa tuotteesi markkinoilla. Harkittujen suunnitteluyksityiskohtien ja johdonmukaisen identiteetin avulla luomme kokemuksen, jota käyttäjät suosittelevat muillekin."
+            }
+        ]}
+    />
+
+    <!-- Pricing Section -->
+    <PricingSection
+        title="Hinnoittelumme"
+        subtitle="Investoi käyttökokemukseen varmistaaksesi kasvun"
+        sectionId="hinnat"
+        anchorId="hinnat-ankkuri"
+        pricingOptions={[
+            {
+                title: "UX Designer",
+                price: "110€/tunti",
+                description: "Yksittäinen UX Designer -asiantuntija palveluksessasi. Sopii erinomaisesti kohdennettuihin UX-projekteihin ja käytettävyystutkimuksiin.",
+                buttonText: "Ota yhteyttä &rarr;",
+                buttonHref: "/fi/contact"
+            },
+            {
+                title: "UX Design tiimi",
+                price: "95€/tunti",
+                description: "Kokonaisvaltainen UX Design -tiimi, joka sisältää UX-strategin, UX Designerin ja UI-suunnittelijan. Ratkaisee monimutkaisimmatkin käyttökokemushaasteet.",
+                buttonText: "Ota yhteyttä &rarr;",
+                buttonHref: "/fi/contact"
+            }
+        ]}
+        note="*Alle viisi miljoonaa euroa vaihtaville pienille yrityksille tarjoamme UX Designer -palveluitamme alennettuun hintaan 95€/tunti. Hinnat ovat verottomia (alv 0%)."
+    />
+
+    <!-- Schedule Meeting Section -->
+    <section class="schedule-meeting" id="schedule-meeting">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Varaa tapaaminen asiantuntijan kanssa</h2>
+                <p class="section__subtitle">Keskustellaan, miten UX Designer voi parantaa tuotteesi käyttökokemusta, edistää yrityksesi kasvua ja lisätä asiakaspitoa</p>
+            </div>
+            <div class="schedule-meeting__embed">
+                <CalendlyEmbed elementId="cal-inline-ux" calLink="aaltoyleva/kartoitustapaaminen" />
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">UX Designer FAQ</h2>
+                <p class="section__subtitle">Vastauksia yleisimpiin UX Designer -palveluihin liittyviin kysymyksiin</p>
+            </div>
+            <div class="faq-items">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question-wrapper">
+                        <span class="faq-question">Mitä UX Designer tekee käytännössä?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">UX-suunnittelu tarkoittaa käyttäjäkokemuksen kokonaisvaltaista suunnittelua. Se kattaa tuotteen käyttöliittymän, informaatioarkkitehtuurin, vuorovaikutustavat ja visuaalisen ilmeen. Tavoitteena on luoda helppokäyttöinen, intuitiivinen ja miellyttävä kokemus, joka vastaa käyttäjien tarpeisiin ja auttaa heitä saavuttamaan tavoitteensa tehokkaasti.</p>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten UX Designer vaikuttaa liiketoimintaan?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Ammattitaitoisen UX Designerin työ vaikuttaa suoraan tulokseen: konversioasteet kasvavat (usein 3-5x), asiakaspoistuma vähenee (tyypillisesti 10-30% parannus), asiakaskohtainen elinkaariarvoa kasvaa, tukikulut laskevat ja suosittelumarkkinointi tehostuu. Kilpailluilla markkinoilla UX Designerin luoma ylivoimainen käyttökokemus on usein tärkein erottava tekijä markkinajohtajien ja muiden välillä.</p>
+                </div>
+                <!-- FAQ Item 3 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Kuinka kauan UX Designer -projekti tyypillisesti kestää?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Aikataulut vaihtelevat projektin laajuuden mukaan. UX Designerin tekemä kohdennettu UX-auditointi suosituksineen kestää tyypillisesti 2-3 viikkoa. Kattava uudelleensuunnittelu, joka sisältää käyttäjätutkimuksen, käyttäjäpolkujen mallinnuksen, prototyypit ja UI-suunnittelun, vaatii yleensä 6-12 viikkoa. Monimutkaiset tuotteet useilla käyttäjärooleilla saattavat vaatia pidempiä ajanjaksoja varmistaakseen, että kaikki käyttötapaukset optimoidaan.</p>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Milloin on oikea aika palkata UX Designer?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Parhaat ajat palkata UX Designer ovat: 1) Ennen uusien ominaisuuksien tai tuotteiden kehittämistä varmistaaksesi, että ne vastaavat todellisia käyttäjätarpeita, 2) Kun mittarit osoittavat kasvavaa asiakaspoistumaa tai vähenevää sitoutumista, 3) Kun tukipyynnöt jatkuvasti korostavat käytettävyysongelmia, 4) Kun valmistaudut laajentumaan tai menet uusille markkinoille, tai 5) Kun tuotteesi on kasvanut orgaanisesti ilman strategista UX-suunnittelua.</p>
+                </div>
+                <!-- FAQ Item 5 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten mittaatte UX Designer -työn tuloksia?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Seuraamme sekä ennakoivia että jälkikäteisiä indikaattoreita. Ennakoivia indikaattoreita ovat tehtävien suoritusasteet, virheprosentit ja käyttäjätyytyväisyyspisteet testauksesta. Jälkikäteisiä liiketoimintamittareita, joita UX Designer voi parantaa, ovat konversioasteen parannukset, vähentynyt asiakaspoistuma, vähentyneet tukipyynnöt, lisääntynyt ominaisuuksien käyttöönotto ja NPS/CSAT-pisteet. Määritämme perustason mittaukset ennen muutoksia laskeaksemme sijoitetun pääoman tuoton tarkasti.</p>
+                </div>
+                <!-- FAQ Item 6 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten UX Designer ja UI Designer eroavat toisistaan?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">UI Designer (käyttöliittymäsuunnittelija) keskittyy visuaaliseen käyttöliittymään, mikä on olennainen osa laajempaa UX-suunnittelun kokonaisuutta. UX Designer määrittää, miten tuote toimii ja tuntuu tutkimuksen, käyttäjäpolkujen ja informaatioarkkitehtuurin kautta. UI Designer tuo tämän eloon visuaalisesti käyttöliittymäelementtien, typografian, värin ja asettelun avulla. Erinomaiset tuotteet vaativat huippuosaamista molemmilla alueilla, jotka toimivat harmoniassa.</p>
+                </div>
+                <!-- FAQ Item 7 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Mitä UX Designer -tutkimusprosessi sisältää?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">UX Designer yhdistää tutkimuksessaan kvalitatiivisia ja kvantitatiivisia menetelmiä räätälöitynä erityisiin tarpeisiisi ja rajoituksiisi. Tämä sisältää tyypillisesti käyttäjähaastatteluja keskeisten segmenttien kanssa, nykyisten työnkulkujen käytettävyystestausta, analytiikan tarkastelua, asiakastukiticketien analyysia, kilpailuvertailua ja huolellisesti suunniteltuja kyselyitä. UX Designer keskittyy selvittämään paitsi mitä käyttäjät tekevät, myös miksi he tekevät niin.</p>
+                </div>
+                <!-- FAQ Item 8 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Suunnitteleeko UX Designer mobiili- ja responsiivisia kokemuksia?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Ehdottomasti. UX Designerimme suunnittelevat kaikille olennaisille alustoille ja näyttökoille, joita käyttäjäsi tarvitsevat. Tämä tarkoittaa usein responsiivisia verkkosovelluksia, omistautuneita mobiilikokemukksia ja toisinaan natiivisovelluksia. UX Designer lähestyy jokaista alustaa strategisesti, optimoiden kokemuksen tiettyyn kontekstiin samalla ylläpitäen johdonmukaisuutta kaikkien kosketuspisteiden välillä.</p>
+                </div>
+                <!-- FAQ Item 9 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten UX Designer työskentelee kehitystiimien kanssa?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">UX Designerimme ovat hinoneet prosessinsa toimiakseen saumattomasti ketterien tiimien kanssa. Työskentelemme tyypillisesti 1-2 sprinttiä kehityksen edellä, tarjoten validoituja suunnitelmia valmiina toteutukseen. UX Designer osallistuu olennaisiin tapahtumiin, tarjoaa yksityiskohtaisia määrittelyjä ja resursseja, ja on käytettävissä kysymyksiä varten kehityksen aikana. Toteutuksen jälkeen tarkistamme rakennetun tuotteen varmistaaksemme suunnittelun tarkkuuden ja ehdottaaksemme parannuksia.</p>
+                </div>
+                <!-- FAQ Item 10 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Voiko UX Designer työskennellä olemassa olevan design-järjestelmän kanssa?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Kyllä, UX Designereillamme on kokemusta vakiintuneiden design-järjestelmien kanssa työskentelystä. Voimme hyödyntää olemassa olevaa järjestelmääsi varmistaaksemme johdonmukaisuuden samalla ehdottaen parannuksia tarvittaessa. Jos järjestelmässäsi on aukkoja tai se kaipaa päivitystä, UX Designerimme voi auttaa laajentamaan ja kehittämään sitä. Yrityksille, joilla ei ole muodollista design-järjestelmää, voimme auttaa kehittämään sellaisen, joka skaalautuu tuotteesi kasvun mukana.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</BaseLayout>
+
+<style>
+    .team-grid {
+        display: flex;
+        flex-direction: column; /* Stack vertically by default (mobile) */
+        align-items: center; /* Center items horizontally in column layout */
+        gap: var(--spacing-lg);
+    }
+
+    .team-member {
+        text-align: center; /* Ensure text inside member card is centered */
+    }
+
+    /* Apply row layout for medium screens and up */
+    @media (min-width: 768px) {
+        .team-grid {
+            flex-direction: row; /* Arrange side-by-side */
+            justify-content: center; /* Center items horizontally in row layout */
+        }
+    }
+</style> 
