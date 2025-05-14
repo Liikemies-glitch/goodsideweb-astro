@@ -1,0 +1,438 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import HeroSection from '../../components/HeroSection.astro';
+import TrustmaryEmbed from '../../components/TrustmaryEmbed.astro';
+import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
+import NotForEveryone from '../../components/NotForEveryone.astro';
+import LogoWall from '../../components/LogoWall.astro';
+import TeamSection from '../../components/TeamSection.astro';
+import ProblemSolutionSection from '../../components/ProblemSolutionSection.astro';
+import PricingSection from '../../components/PricingSection.astro';
+
+const pageTitle = "Käyttäjätutkimus SaaS-yrityksille | The Good Side";
+const pageDescription = "Tutki käyttäjiesi tarpeet asiantuntevalla käyttäjätutkimuksella, joka ohjaa tuotepäätöksiä, parantaa käyttäjäkokemusta ja tuottaa mitattavia tuloksia SaaS-liiketoiminnallesi.";
+---
+<BaseLayout title={pageTitle} description={pageDescription}>
+    <!-- Use HeroSection component -->
+    <HeroSection
+        title="Kun käyttäjätutkimus ei voi olla enää sivuseikka"
+        paragraph="SaaS-yrityksissä käyttäjätutkimus jää usein yksittäisen designerin, myynnin tai tuoteomistajan satunnaiseksi tehtäväksi. Me teemme siitä systemaattisen prosessin, joka tuo varmuutta jokaiseen tuotepäätökseen."
+        primaryButtonText="Varaa tapaaminen &rarr;"
+        primaryButtonHref="/fi/ota-yhteytta"
+        secondaryButtonText="Katso referenssit"
+        secondaryButtonHref="/fi/referenssit"
+        textOnly={true}
+        paddingTop="6rem"
+        paddingBottom="3rem"
+        textAlign="center"
+    />
+
+    <!-- Logo Wall Section -->
+    <section class="logo-wall">
+        <div class="container">
+            <h2 class="logo-wall__title">Innovatiivisten SaaS-yritysten luottama kumppani</h2>
+            <div class="logo-wall__grid">
+                <!-- The logos are intentionally duplicated below -->
+                <!-- First set -->
+                <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+                 <!-- Second set (duplicate) -->
+                 <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problems">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Kuulostaako tutulta?</span>
+                <h2 class="section__title">Tuotekehityksen haasteet</h2>
+            </div>
+            <div class="problems__grid">
+                <article class="problem-card">
+                    <h3>Hutkit et tutki</h3>
+                    <p>Kriittisten tuotepäätösten tekeminen oletusten perusteella todellisen käyttäjäymmärryksen sijaan.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Ei tutkijoita tiimissä</h3>
+                    <p>Interaktio data ja sen tutkiminen ei ole kenenkään tärkein tehtävä ja siksi se jää tekemättä.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Käyttäjät etäällä</h3>
+                    <p>Kun yrityksesi kasvaa, menetät yhteyden käyttäjiisi ja heidän todellisiin tarpeisiinsa.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Us Section -->
+    <section class="hire-us">
+        <div class="container">
+            <h2 class="section__title">Asiantuntijat, jotka tuottavat oivalluksia</h2>
+            <p class="section__subtitle">Palkkaa meidät hankkimaan se oikea käyttäjäymmärrys, joka johtaa konkreettisiin tuloksiin</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/mikki.webp" alt="Mikki Aalto-Ylevä" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Mikki<br>Aalto-Ylevä</h3>
+                    <p class="team-member__title">Tutkimusstrategisti</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/tuomas.webp" alt="Tuomas Kaartoluoma" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Tuomas<br>Kaartoluoma</h3>
+                    <p class="team-member__title">UX-suunnittelija</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/duncan.webp" alt="Dũng Nguyen" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Dũng<br>Nguyen</h3>
+                    <p class="team-member__title">UX-suunnittelija</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/aksel.webp" alt="Aksel Suokas" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Aksel<br>Suokas</h3>
+                    <p class="team-member__title">UX-suunnittelija</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Intro Section -->
+    <section class="solutions">
+        <div class="container">
+            <h2 class="section__title">Miten käyttäjätutkimus tuottaa tuloksia</h2>
+            <div class="solutions__grid">
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/positiointi.webp" alt="Käyttäjähaastattelut ja laadullinen tutkimus">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Käyttäjähaastattelut</span>
+                            <span>Laadullinen tutkimus</span>
+                        </div>
+                        <h3>Syvällinen asiakasymmärrys</h3>
+                        <p>Selvitämme käyttäjien motivaatiot, esteet ja piilossa olevat tarpeet, joita pelkkä määrällinen data ei paljasta. Haastatteluiden ja käyttötilanteiden tutkimisen avulla saamme selville sekä mitä käyttäjät tekevät että miksi – näin voimme tehdä aidosti käyttäjälähtöisiä päätöksiä.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/userjourney.webp" alt="Käyttäjätestaus ja validointi">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Käytettävyystestaus</span>
+                            <span>Prototyyppien validointi</span>
+                        </div>
+                        <h3>Riskejä vähentävä validointi</h3>
+                        <p>Testaamme konseptit ja prototyypit oikeiden käyttäjien kanssa ennen implementointia. Tämä lähestymistapa paljastaa ongelmat varhain, kun niiden korjaaminen on vielä edullista. Näin vältämme rakentamasta ominaisuuksia, joita käyttäjät eivät halua tai osaa käyttää.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/ui.webp" alt="Data-analyysi ja oivallukset" style="transform: scale(1.3);">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Analytiikka</span>
+                            <span>Käyttäytymisen seuranta</span>
+                            <span>Oivallukset</span>
+                        </div>
+                        <h3>Datapohjainen päätöksenteon tuki</h3>
+                        <p>Muunnamme monimutkaisen käyttäjätiedon selkeiksi ja käytännöllisiksi oivalluksiksi, joita tiimisi voi heti hyödyntää. Yhdistämällä määrällistä dataa laadulliseen tutkimukseen saamme kokonaiskuvan, joka tukee varmoja tuotepäätöksiä.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials__grid">
+                 <div class="trustmary-widget">
+                    <TrustmaryEmbed 
+                        title="Mitä asiakkaamme sanovat"
+                        subtitle="Todellisia oivalluksia, jotka johtavat todellisiin tuloksiin"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Not For Everyone Section -->
+    <NotForEveryone 
+        title="UXR ei sovi kaikille"
+        subtitle="Emme välttämättä ole oikea valinta, jos..."
+        leftColumnItems={[
+            "Haluat vahvistaa päätöksiä, jotka olet jo tehnyt",
+            "Tarvitset tutkimusta vain läpikäytävänä asiana sidosryhmille",
+            "Suosit mielipiteitä todisteiden sijaan päätöksenteossa"
+        ]}
+        rightColumnItems={[
+            "Budjettisi on alle 3 000 € tutkimustoiminnoille",
+            "Et halua ottaa mukaan todellisia käyttäjiä prosessiin"
+        ]}
+    />
+
+    <!-- Problem/Solution Section (Using existing styles) -->
+    <ProblemSolutionSection
+        title="Ratkaisemme näitä yleisiä käyttäjätutkimushaasteita"
+        subtitle="Autamme SaaS-yrityksiä ymmärtämään käyttäjiään paremmin ja tekemään parempia tuotepäätöksiä."
+        items={[
+            {
+                problemTitle: "Tiimissä on eriäviä mielipiteitä käyttäjien tarpeista",
+                problemDescription: "Kun tiimissä on erilaisia käsityksiä siitä, mitä käyttäjät haluavat, päätökset tehdään usein sen perusteella, kuka puhuu vakuuttavimmin. Tämä johtaa umpikujiin ja tuotteisiin, jotka eivät vastaa käyttäjien todellisia tarpeita.",
+                solutionDescription: "Keräämme käyttäjiltäsi konkreettista palautetta, joka auttaa ratkaisemaan sisäiset erimielisyydet. Tutkimuksemme kertoo selkeästi, mitä käyttäjät todella arvostavat, ja yhdistää tiimin yhteisten prioriteettien ympärille."
+            },
+            {
+                problemTitle: "Uudet ominaisuudet jäävät käyttämättä",
+                problemDescription: "Kehität uusia ominaisuuksia, joihin käytät paljon resursseja, mutta käyttäjät eivät löydä tai käytä niitä. Tämä tarkoittaa, että investoinnit eivät tuota odotettua hyötyä.",
+                solutionDescription: "Selvitämme tarkasti, mitä toiminnallisuutta käyttäjät tarvitsevat ja miten he haluavat käyttää sitä. Varmistamme, että uudet ominaisuudet ratkaisevat käyttäjien oikeita ongelmia ja ovat helppokäyttöisiä. Tämä parantaa ominaisuuksien käyttöastetta ja tuottoa kehitysresursseista."
+            },
+            {
+                problemTitle: "Asiakkaat lähtevät, mutta syyt jäävät epäselviksi",
+                problemDescription: "Kun asiakkaat peruuttavat tilauksensa ilman selkeää palautetta, on vaikea ymmärtää, miksi he lähtevät. Tämä vaikeuttaa asiakaspitoa ja tuotteen kehittämistä.",
+                solutionDescription: "Tutkimuksemme paljastaa, miksi käyttäjät jättävät tuotteesi. Löydämme käyttäjien käyttäytymisestä kaavoja ja tunnistamme tarkat syyt, miksi he peruuttavat tilauksensa. Saat selkeitä oivalluksia, joihin voit reagoida heti."
+            }
+        ]}
+    />
+
+    <!-- Pricing Section -->
+    <PricingSection
+        title="Valmis ymmärtämään käyttäjiäsi?"
+        subtitle="Valitse tutkimuslähestymistapa, joka sopii tarpeisiisi."
+        sectionId="pricing"
+        anchorId="pricing-anchor"
+        pricingOptions={[
+            {
+                title: "Tutkimussprintti",
+                price: "110 €/tunti",
+                description: "Kohdennettua käyttäjätutkimusta vastaamaan tuotteesi käytettävyyttä ja käyttäjien tarpeita koskeviin kysymyksiin.",
+                buttonText: "Aloita oivallusten paljastaminen &rarr;",
+                buttonHref: "/fi/ota-yhteytta"
+            },
+            {
+                title: "Datadriven design",
+                price: "Jutellaan",
+                description: "Datadriven design jatkuvana palveluna, joka integroi käyttäjäymmärryksen tuotekehitysprosessiisi.",
+                buttonText: "Hanki räätälöity suunnitelma &rarr;",
+                buttonHref: "/fi/ota-yhteytta"
+            }
+        ]}
+        note="*Yrityksille, joiden vuosittainen liikevaihto on alle viisi miljoonaa euroa, tarjoamme palvelumme alennettuun hintaan 95 €/tunti. Hinnat ovat veroista puhtaita (ALV 0%)."
+    />
+
+    <!-- Schedule Meeting Section -->
+    <section class="schedule-meeting" id="schedule-meeting">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Varaa tapaaminen</h2>
+                <p class="section__subtitle">Tutkitaan, miten käyttäjätutkimus voi informoida parempia tuotepäätöksiä ja edistää SaaS-liiketoimintasi kasvua.</p>
+            </div>
+            <div class="schedule-meeting__embed">
+                <CalendlyEmbed elementId="cal-inline-index" calLink="aaltoyleva/kartoitustapaaminen" />
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Käyttäjätutkimuskysymyksiin vastauksia</h2>
+                <p class="section__subtitle">Kaikki mitä sinun tarvitsee tietää käyttäjiesi paremmasta ymmärtämisestä</p>
+            </div>
+            <div class="faq-items">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question-wrapper">
+                        <span class="faq-question">Miksi käyttäjätutkimus on välttämätöntä SaaS-tuotteille?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">SaaS-yrityksille käyttäjätutkimus on ratkaisevaa, koska se vaikuttaa suoraan keskeisiin mittareihin kuten hankintaan, aktivointiin, asiakaspidon ja laajentumistuloihin. Tilauspohjaisilla malleilla käyttäjätarpeiden ymmärtäminen varmistaa, että rakennat ominaisuuksia, jotka tuottavat pitkäaikaista arvoa ja estävät asiakaspoistumaa. Se myös merkittävästi vähentää kehitysjätettä keskittämällä resurssit todellisten käyttäjäongelmien ratkaisemiseen oletettujen sijaan.</p>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Mitä tutkimusmenetelmiä käytätte ja milloin?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Käytämme menetelmien yhdistelmää perustuen spesifisiin kysymyksiisi ja rajoitteisiisi. Löytämiseen käytämme syvähaastatteluja, kontekstuaalista tutkimusta ja päiväkirjatutkimuksia. Validointiin suoritamme käytettävyystestausta, prototyyppitestausta ja preferenssitestausta. Mittaamiseen hyödynnämme analytiikka-arvioita, kyselyitä ja vertailuanalyysejä. Jokainen menetelmä valitaan strategisesti vastaamaan kriittisimpiin kysymyksiisi tehokkaimmalla tavalla.</p>
+                </div>
+                <!-- FAQ Item 3 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Montako käyttäjää tutkimukseen tulee sisällyttää?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Laadullisille menetelmille kuten käytettävyystestaukselle 5-8 osallistujaa per käyttäjäsegmentti tyypillisesti paljastaa 85-90% merkittävistä ongelmista. Löytämishaastatteluille suosittelemme yleensä 8-12 osallistujaa per segmentti saavuttaaksemme oivalluskyllästymispisteen. Määrälliselle tutkimukselle kuten kyselyille, otoskoko riippuu käyttäjäkantasi koosta ja halutusta luottamustasosta, mutta tähtäämme tyypillisesti tilastolliseen merkitsevyyteen 95% luottamustasolla.</p>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten rekrytoitte tutkimukseen osallistujia?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Käytämme useita rekrytointikanavia riippuen tarpeistasi. Olemassa oleville tuotteille voimme rekrytoida suoraan käyttäjäkannastasi sovelluksen sisäisillä kutsuilla, sähköpostikampanjoilla tai asiakaslistoilla. Uusille tuotteille tai ei-käyttäjien tavoittamiseen hyödynnämme erikoistuneita tutkimusrekrytointipaneeleja, sosiaalisen median rekrytointia ja toimialakohtaisia verkostoja. Hoidamme kaiken seulonnan, aikataulutuksen ja kannustimien hallinnan.</p>
+                </div>
+                <!-- FAQ Item 5 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Mikä on tyypillisen tutkimusprojektin aikataulu?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Kohdistettu käytettävyystutkimus voidaan saattaa loppuun 2-3 viikossa aloituksesta loppuraporttiin. Kattavampi löytämistutkimus kestää tyypillisesti 4-6 viikkoa. Aikataulu sisältää suunnittelun (1 viikko), rekrytoinnin (1-2 viikkoa), tutkimusistunnot (1-2 viikkoa) ja analyysin/raportoinnin (1 viikko). Voimme nopeuttaa tiettyjä projekteja nopean tutkimuksen tekniikoilla, kun päätökset ovat aikakriittisiä.</p>
+                </div>
+                <!-- FAQ Item 6 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten esitätte tutkimustulokset?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Toimitamme oivalluksia useissa muodoissa varmistaaksemme, että ne ovat toimivia ja saavutettavia. Tämä sisältää tyypillisesti yksityiskohtaisen raportin metodologialla ja löydöksillä, tiivistelmän johdolle, esitystyöpajan tiimille, videokohokohtia käyttäjäistunnoista ja spesifisiä suosituksia kytkettynä tuotteiden tiekarttaan. Keskitymme tekemään oivalluksista välittömästi hyödyllisiä päätöksenteolle.</p>
+                </div>
+                <!-- FAQ Item 7 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Käytättekö etä- vai lähitutkimusmenetelmiä?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Suoritamme sekä etä- että lähitutkimusta tarpeidesi mukaan. Etätutkimus tarjoaa laajemman maantieteellisen ulottuvuuden, nopeammat aikataulut ja usein alhaisemmat kustannukset. Lähitutkimus tarjoaa rikkaampia kontekstuaalisia oivalluksia ja toimii paremmin tietyille väestöryhmille tai kun fyysinen vuorovaikutus tuotteiden kanssa on tärkeää. Suosittelemme parasta lähestymistapaa tutkimustavoitteidesi, aikataulusi ja budjettisi perusteella.</p>
+                </div>
+                <!-- FAQ Item 8 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten mittaatte käyttäjätutkimuksen ROI:n?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Seuraamme sekä suoria että epäsuoria ROI-mittareita. Suorat mittarit sisältävät säästetyn kehitysajan välttämällä ei-haluttuja ominaisuuksia, lisääntyneen konversion parannetusta käyttöönotosta ja vähentyneen poistuman kipupisteiden korjaamisesta. Epäsuorat mittarit sisältävät nopeamman päätöksenteon, vähentyneet sisäiset väittelyt ja yhtenäisemmän tuotestrategian. Työskentelemme kanssasi perustaaksemme ennen/jälkeen -mittauksia spesifisille mittareille, jotka ovat arvokkaimpia liiketoiminnallesi.</p>
+                </div>
+                <!-- FAQ Item 9 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Milloin meidän tulisi suorittaa käyttäjätutkimusta?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Ihanteelliset ajat tutkimukselle ovat: 1) Ennen suunnittelun tai kehityksen aloittamista tuotekonseptien validoimiseksi, 2) Suunnitteluiteraatioiden aikana ratkaisujen hiomiseksi, 3) Ennen merkittäviä julkaisuja ongelmien havaitsemiseksi, 4) Julkaisun jälkeen menestyksen mittaamiseksi ja parannusten tunnistamiseksi, ja 5) Säännöllisesti pysyäksesi yhteydessä kehittyviin käyttäjätarpeisiin. Menestyneimmät SaaS-yritykset integroivat tutkimuksen jatkuvasti tuotekehityssykliinsä.</p>
+                </div>
+                <!-- FAQ Item 10 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten käsittelette luottamuksellisuutta ja tietosuojaa?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Suhtaudumme tietosuojaan erittäin vakavasti. Kaikki tutkimukseen osallistujat allekirjoittavat suostumuslomakkeet, jotka määrittelevät, miten heidän tietojaan käytetään. Noudatamme GDPR-vaatimuksia, anonymisoimme kaiken tutkimusdatan ja säilytämme tietoja turvallisesti. Kilpailukykyistä tutkimusta varten voimme allekirjoittaa salassapitosopimukset. Tuotetesteille käytämme turvallisia ympäristöjä. Voimme työskennellä oikeudellisen tiimisi kanssa varmistaaksemme, että kaikki tutkimustoimintamme täyttävät yrityksesi säännöstenvaatimukset.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</BaseLayout>
+
+<style>
+    .team-grid {
+        display: flex;
+        flex-direction: column; /* Stack vertically by default (mobile) */
+        align-items: center; /* Center items horizontally in column layout */
+        gap: var(--spacing-lg);
+    }
+
+    .team-member {
+        text-align: center; /* Ensure text inside member card is centered */
+    }
+
+    /* Apply row layout for medium screens and up */
+    @media (min-width: 768px) {
+        .team-grid {
+            flex-direction: row; /* Arrange side-by-side */
+            justify-content: center; /* Center items horizontally in row layout */
+        }
+    }
+</style> 

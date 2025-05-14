@@ -1,0 +1,438 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import HeroSection from '../../components/HeroSection.astro';
+import TrustmaryEmbed from '../../components/TrustmaryEmbed.astro';
+import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
+import NotForEveryone from '../../components/NotForEveryone.astro';
+import LogoWall from '../../components/LogoWall.astro';
+import TeamSection from '../../components/TeamSection.astro';
+import ProblemSolutionSection from '../../components/ProblemSolutionSection.astro';
+import PricingSection from '../../components/PricingSection.astro';
+
+const pageTitle = "User Research for SaaS Companies | The Good Side";
+const pageDescription = "Unlock customer insights with expert user research that drives product decisions, increases user satisfaction, and delivers measurable ROI for your SaaS business.";
+---
+<BaseLayout title={pageTitle} description={pageDescription}>
+    <!-- Use HeroSection component -->
+    <HeroSection
+        title="User research that transforms products and drives growth."
+        paragraph="We uncover the insights you need to build products people love, solve the right problems, and create experiences that keep customers coming back."
+        primaryButtonText="Schedule a meeting &rarr;"
+        primaryButtonHref="/en/contact"
+        secondaryButtonText="View references"
+        secondaryButtonHref="/en/references"
+        textOnly={true}
+        paddingTop="6rem"
+        paddingBottom="3rem"
+        textAlign="center"
+    />
+
+    <!-- Logo Wall Section -->
+    <section class="logo-wall">
+        <div class="container">
+            <h2 class="logo-wall__title">Trusted by innovative SaaS companies</h2>
+            <div class="logo-wall__grid">
+                <!-- The logos are intentionally duplicated below -->
+                <!-- First set -->
+                <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+                 <!-- Second set (duplicate) -->
+                 <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problems">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Sound familiar?</span>
+                <h2 class="section__title">Product Development Challenges</h2>
+            </div>
+            <div class="problems__grid">
+                <article class="problem-card">
+                    <h3>Building in the dark</h3>
+                    <p>Making critical product decisions based on assumptions rather than real user insights.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Misaligned priorities</h3>
+                    <p>Investing resources in features users don't need while neglecting what would drive retention.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Growing disconnect</h3>
+                    <p>As your company scales, losing touch with who your users are and what they truly value.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Us Section -->
+    <section class="hire-us">
+        <div class="container">
+            <h2 class="section__title">User Research Experts Who Deliver Actionable Insights</h2>
+            <p class="section__subtitle">Meet the team that translates customer behavior into product decisions that drive growth</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/mikki.webp" alt="Mikki Aalto-Ylevä" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Mikki<br>Aalto-Ylevä</h3>
+                    <p class="team-member__title">Research Strategist</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/tuomas.webp" alt="Tuomas Kaartoluoma" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Tuomas<br>Kaartoluoma</h3>
+                    <p class="team-member__title">UX Researcher</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/duncan.webp" alt="Dũng Nguyen" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Dũng<br>Nguyen</h3>
+                    <p class="team-member__title">Insights Analyst</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/aksel.webp" alt="Aksel Suokas" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Aksel<br>Suokas</h3>
+                    <p class="team-member__title">Research Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Intro Section -->
+    <section class="solutions">
+        <div class="container">
+            <h2 class="section__title">How Strategic User Research Drives Business Results</h2>
+            <div class="solutions__grid">
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/positiointi.webp" alt="User Interviews and Qualitative Research">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>User Interviews</span>
+                            <span>Qualitative Research</span>
+                        </div>
+                        <h3>Deep Customer Understanding</h3>
+                        <p>We uncover the motivations, barriers, and unmet needs that quantitative data alone can't reveal. Through expert interviews and contextual inquiry, we help you understand not just what users do, but why they do it—enabling truly user-centered decisions.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/userjourney.webp" alt="User Testing and Validation">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Usability Testing</span>
+                            <span>Prototype Validation</span>
+                        </div>
+                        <h3>Risk-Reducing Validation</h3>
+                        <p>We test concepts and prototypes with real users before you invest in full development. This validation approach identifies issues early when they're inexpensive to fix, dramatically reducing the risk of building features users don't want or can't use.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/ui.webp" alt="Data Analysis and Insights" style="transform: scale(1.3);">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Analytics</span>
+                            <span>Behavior Tracking</span>
+                            <span>Insights</span>
+                        </div>
+                        <h3>Data-Driven Decision Support</h3>
+                        <p>We transform complex user behavior data into clear, actionable insights your team can immediately use. By combining quantitative analytics with qualitative research, we provide the complete picture you need to make confident product decisions.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials__grid">
+                 <div class="trustmary-widget">
+                    <TrustmaryEmbed 
+                        title="What Our Clients Say About Our Research Impact"
+                        subtitle="Real insights leading to real results"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Not For Everyone Section -->
+    <NotForEveryone 
+        title="Our Research Approach Isn't For Everyone"
+        subtitle="We might not be the right fit if..."
+        leftColumnItems={[
+            "You want to validate decisions you've already made",
+            "You need research as a checkbox item for stakeholders",
+            "You prefer opinions over evidence in decision-making"
+        ]}
+        rightColumnItems={[
+            "Your budget is below €3,000 for research activities",
+            "You're unwilling to include actual users in the process"
+        ]}
+    />
+
+    <!-- Problem/Solution Section (Using existing styles) -->
+    <ProblemSolutionSection
+        title="Real Research Challenges We Solve"
+        subtitle="Common problems our clients face and how we transform them."
+        items={[
+            {
+                problemTitle: "Conflicting Internal Opinions",
+                problemDescription: "Your team has multiple competing hypotheses about what users want, leading to deadlocks and decisions based on who argues most persuasively rather than actual user needs.",
+                solutionDescription: "We gather structured feedback from your actual users, resolving internal debates with evidence rather than opinions. Our research provides clarity on what users truly value, unifying teams around validated priorities."
+            },
+            {
+                problemTitle: "Low Feature Adoption",
+                problemDescription: "You invest significant resources in new features that users rarely discover or use, creating bloated products that fail to deliver expected returns on development investment.",
+                solutionDescription: "We identify precisely what functionality users need and how they expect to use it, ensuring new features solve real problems in intuitive ways. This leads to higher adoption rates and better ROI on development resources."
+            },
+            {
+                problemTitle: "High Churn, Unknown Causes",
+                problemDescription: "Customers leave your product without clear feedback, making it difficult to address the root causes of churn and continually improve retention.",
+                solutionDescription: "Our specialized research methods uncover the hidden reasons users abandon products. We identify patterns in user behavior before churn occurs and reveal the specific pain points driving cancellations—insights you can act on immediately."
+            }
+        ]}
+    />
+
+    <!-- Pricing Section -->
+    <PricingSection
+        title="Ready to Understand Your Users?"
+        subtitle="Choose the research approach that fits your needs."
+        sectionId="pricing"
+        anchorId="pricing-anchor"
+        pricingOptions={[
+            {
+                title: "Focused Research Sprint",
+                price: "€110/hour",
+                description: "Targeted user research to answer specific questions about your product's usability and user needs.",
+                buttonText: "Start uncovering insights &rarr;",
+                buttonHref: "/en/contact"
+            },
+            {
+                title: "Comprehensive Research Program",
+                price: "Let's talk",
+                description: "A complete research strategy that builds continuous user insights into your product development process.",
+                buttonText: "Get a customized plan &rarr;",
+                buttonHref: "/en/contact"
+            }
+        ]}
+        note="*For companies with annual revenue under five million euros, we offer our services at a discounted rate of €95/hour. Prices are tax exclusive (VAT 0%)."
+    />
+
+    <!-- Schedule Meeting Section -->
+    <section class="schedule-meeting" id="schedule-meeting">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Book Your Research Strategy Session</h2>
+                <p class="section__subtitle">Let's explore how user research can inform better product decisions and drive growth for your SaaS business.</p>
+            </div>
+            <div class="schedule-meeting__embed">
+                <CalendlyEmbed elementId="cal-inline-index" calLink="aaltoyleva/kartoitustapaaminen" />
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">User Research Questions Answered</h2>
+                <p class="section__subtitle">Everything you need to know about understanding your users better</p>
+            </div>
+            <div class="faq-items">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question-wrapper">
+                        <span class="faq-question">Why is user research essential for SaaS products?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">For SaaS companies, user research is crucial because it directly impacts key metrics like acquisition, activation, retention, and expansion revenue. With subscription-based models, understanding user needs ensures you're building features that drive long-term value and prevent churn. It also significantly reduces development waste by focusing resources on solving real user problems rather than assumed ones.</p>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">What research methods do you use and when?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">We employ a mix of methods based on your specific questions and constraints. For discovery, we use in-depth interviews, contextual inquiry, and diary studies. For validation, we conduct usability testing, prototype testing, and preference testing. For measurement, we leverage analytics reviews, surveys, and benchmark studies. Each method is strategically chosen to answer your most critical questions in the most efficient way.</p>
+                </div>
+                <!-- FAQ Item 3 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How many users do you need to include in research?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">For qualitative methods like usability testing, 5-8 participants per user segment typically uncovers 85-90% of major issues. For discovery interviews, we usually recommend 8-12 participants per segment to reach insight saturation. For quantitative research like surveys, sample size depends on your user base size and desired confidence level, but we typically aim for statistical significance with a 95% confidence level.</p>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How do you recruit research participants?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">We use multiple recruitment channels depending on your needs. For existing products, we can recruit directly from your user base through in-app invitations, email campaigns, or customer lists. For new products or reaching non-users, we leverage specialized research recruitment panels, social media recruitment, and industry-specific networks. We handle all screening, scheduling, and incentive management.</p>
+                </div>
+                <!-- FAQ Item 5 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">What's the timeline for a typical research project?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">A focused usability study can be completed in 2-3 weeks from kickoff to final report. More comprehensive discovery research typically takes 4-6 weeks. The timeline includes planning (1 week), recruitment (1-2 weeks), research sessions (1-2 weeks), and analysis/reporting (1 week). We can expedite certain projects with rapid research techniques when decisions are time-sensitive.</p>
+                </div>
+                <!-- FAQ Item 6 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How do you present research findings?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">We deliver insights in multiple formats to ensure they're actionable and accessible. This typically includes a detailed report with methodology and findings, an executive summary for leadership, a presentation workshop for the team, video highlights from user sessions, and specific recommendations tied to your product roadmap. We focus on making insights immediately useful for decision-making.</p>
+                </div>
+                <!-- FAQ Item 7 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Do you use remote or in-person research methods?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">We conduct both remote and in-person research based on your needs. Remote research offers broader geographic reach, faster timelines, and often lower costs. In-person research provides richer contextual insights and works better for certain populations or when physical interactions with products are important. We'll recommend the best approach based on your research goals, timeline, and budget.</p>
+                </div>
+                <!-- FAQ Item 8 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How do you measure the ROI of user research?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">We track both direct and indirect ROI metrics. Direct metrics include development time saved by avoiding unwanted features, increased conversion from improved onboarding, and reduced churn from fixing pain points. Indirect metrics include faster decision-making, reduced internal debates, and more cohesive product strategy. We work with you to establish before/after measurements for the specific metrics most valuable to your business.</p>
+                </div>
+                <!-- FAQ Item 9 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">When should we conduct user research?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">The ideal times for research are: 1) Before starting design or development to validate product concepts, 2) During design iterations to refine solutions, 3) Before major releases to catch issues, 4) After launch to measure success and identify improvements, and 5) Periodically to stay connected with evolving user needs. The most successful SaaS companies integrate research continuously throughout their product development cycle.</p>
+                </div>
+                <!-- FAQ Item 10 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How do you handle confidentiality and data privacy?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">We take data privacy extremely seriously. All research participants sign consent forms specifying how their data will be used. We comply with GDPR requirements, anonymize all research data, and securely store information. For competitive research, we can sign NDAs. For product tests, we use secure environments. We can work with your legal team to ensure all research activities meet your company's compliance requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</BaseLayout>
+
+<style>
+    .team-grid {
+        display: flex;
+        flex-direction: column; /* Stack vertically by default (mobile) */
+        align-items: center; /* Center items horizontally in column layout */
+        gap: var(--spacing-lg);
+    }
+
+    .team-member {
+        text-align: center; /* Ensure text inside member card is centered */
+    }
+
+    /* Apply row layout for medium screens and up */
+    @media (min-width: 768px) {
+        .team-grid {
+            flex-direction: row; /* Arrange side-by-side */
+            justify-content: center; /* Center items horizontally in row layout */
+        }
+    }
+</style> 
