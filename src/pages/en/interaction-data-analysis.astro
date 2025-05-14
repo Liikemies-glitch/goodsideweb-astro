@@ -1,0 +1,438 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import HeroSection from '../../components/HeroSection.astro';
+import TrustmaryEmbed from '../../components/TrustmaryEmbed.astro';
+import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
+import NotForEveryone from '../../components/NotForEveryone.astro';
+import LogoWall from '../../components/LogoWall.astro';
+import TeamSection from '../../components/TeamSection.astro';
+import ProblemSolutionSection from '../../components/ProblemSolutionSection.astro';
+import PricingSection from '../../components/PricingSection.astro';
+
+const pageTitle = "Interaction Data Analysis for SaaS Companies | The Good Side";
+const pageDescription = "Transform your product with expert interaction data analysis that reveals user behavior patterns, identifies improvement opportunities, and drives measurable ROI.";
+---
+<BaseLayout title={pageTitle} description={pageDescription}>
+    <!-- Use HeroSection component -->
+    <HeroSection
+        title="Interaction data analysis that reveals hidden opportunities."
+        paragraph="We turn complex user behavior data into actionable insights that help you optimize experiences, improve conversion rates, and reduce user friction."
+        primaryButtonText="Schedule a meeting &rarr;"
+        primaryButtonHref="/en/contact"
+        secondaryButtonText="View references"
+        secondaryButtonHref="/en/references"
+        textOnly={true}
+        paddingTop="6rem"
+        paddingBottom="3rem"
+        textAlign="center"
+    />
+
+    <!-- Logo Wall Section -->
+    <section class="logo-wall">
+        <div class="container">
+            <h2 class="logo-wall__title">Trusted by innovative SaaS companies</h2>
+            <div class="logo-wall__grid">
+                <!-- The logos are intentionally duplicated below -->
+                <!-- First set -->
+                <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+                 <!-- Second set (duplicate) -->
+                 <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problems">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Sound familiar?</span>
+                <h2 class="section__title">Data Analysis Challenges</h2>
+            </div>
+            <div class="problems__grid">
+                <article class="problem-card">
+                    <h3>Data overwhelm</h3>
+                    <p>Drowning in interaction data but struggling to extract meaningful insights that actually improve your product.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Misinterpreted signals</h3>
+                    <p>Drawing incorrect conclusions from user behavior data, leading to product changes that don't improve key metrics.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Analysis paralysis</h3>
+                    <p>Unable to connect the dots between user interactions and business outcomes that drive growth.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Us Section -->
+    <section class="hire-us">
+        <div class="container">
+            <h2 class="section__title">Data Analysis Experts Who Deliver Actionable Insights</h2>
+            <p class="section__subtitle">Meet the team that transforms raw interaction data into strategic product improvements</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/mikki.webp" alt="Mikki Aalto-Ylevä" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Mikki<br>Aalto-Ylevä</h3>
+                    <p class="team-member__title">Data Strategy Lead</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/tuomas.webp" alt="Tuomas Kaartoluoma" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Tuomas<br>Kaartoluoma</h3>
+                    <p class="team-member__title">Analytics Specialist</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/duncan.webp" alt="Dũng Nguyen" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Dũng<br>Nguyen</h3>
+                    <p class="team-member__title">Data Scientist</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/aksel.webp" alt="Aksel Suokas" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Aksel<br>Suokas</h3>
+                    <p class="team-member__title">Visualization Expert</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Intro Section -->
+    <section class="solutions">
+        <div class="container">
+            <h2 class="section__title">How Strategic Data Analysis Drives Business Results</h2>
+            <div class="solutions__grid">
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/positiointi.webp" alt="Interaction Pattern Analysis">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Behavior Mapping</span>
+                            <span>Pattern Recognition</span>
+                        </div>
+                        <h3>Behavioral Pattern Insights</h3>
+                        <p>We identify hidden patterns in how users interact with your product, revealing the paths that lead to success and the friction points causing abandonment. By mapping behavioral sequences, we help you understand which interactions predict long-term retention and which signal potential churn.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/userjourney.webp" alt="Conversion Optimization">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Funnel Analysis</span>
+                            <span>Conversion Optimization</span>
+                        </div>
+                        <h3>Revenue-Focused Optimization</h3>
+                        <p>We analyze every step of your conversion funnels to identify exactly where and why users drop off. By combining quantitative drop-off data with qualitative insights, we deliver targeted optimization recommendations that significantly improve conversion rates and revenue metrics.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/ui.webp" alt="Engagement Analytics" style="transform: scale(1.3);">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Engagement Metrics</span>
+                            <span>Feature Utilization</span>
+                            <span>Cohort Analysis</span>
+                        </div>
+                        <h3>Actionable Product Intelligence</h3>
+                        <p>We transform complex usage data into clear product direction by analyzing feature adoption, engagement depth, and user segments. Our detailed cohort analysis reveals which features drive retention for different user types, enabling you to prioritize development that maximizes long-term customer value.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials__grid">
+                 <div class="trustmary-widget">
+                    <TrustmaryEmbed 
+                        title="What Our Clients Say About Our Data Analysis Impact"
+                        subtitle="Real insights leading to measurable improvements"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Not For Everyone Section -->
+    <NotForEveryone 
+        title="Our Data Analysis Approach Isn't For Everyone"
+        subtitle="We might not be the right fit if..."
+        leftColumnItems={[
+            "You want data to confirm pre-determined conclusions",
+            "You need surface-level metrics without context",
+            "You prefer intuition over evidence-based decisions"
+        ]}
+        rightColumnItems={[
+            "Your budget is below €3,000 for analysis services",
+            "You're unwilling to implement tracking or share data"
+        ]}
+    />
+
+    <!-- Problem/Solution Section (Using existing styles) -->
+    <ProblemSolutionSection
+        title="Real Data Challenges We Solve"
+        subtitle="Common problems our clients face and how we transform them."
+        items={[
+            {
+                problemTitle: "Drowning in Metrics",
+                problemDescription: "You collect mountains of product analytics but struggle to separate signal from noise, making it difficult to identify which metrics truly matter for your business goals.",
+                solutionDescription: "We establish clear KPI hierarchies linked to your business objectives, filtering out vanity metrics and focusing on actionable indicators. Our analysis framework connects user interactions directly to business outcomes, providing clarity on what actually drives results."
+            },
+            {
+                problemTitle: "Unknown User Segments",
+                problemDescription: "You treat all users as a single group, missing opportunities to understand how different segments interact with your product and what drives value for each.",
+                solutionDescription: "We identify natural user segments based on behavior patterns, revealing distinct usage profiles. This segmentation allows for targeted improvements that address the specific needs of your most valuable cohorts, increasing retention and lifetime value."
+            },
+            {
+                problemTitle: "Data Silos and Blind Spots",
+                problemDescription: "Your interaction data is fragmented across multiple tools and platforms, creating blind spots and making it impossible to see the complete user journey.",
+                solutionDescription: "We integrate data from multiple sources to create unified user journey maps that reveal cross-platform behavior patterns. By connecting previously siloed data, we uncover insights about the full customer experience that were previously invisible."
+            }
+        ]}
+    />
+
+    <!-- Pricing Section -->
+    <PricingSection
+        title="Ready to Unlock Your Data's Potential?"
+        subtitle="Choose the analysis approach that fits your needs."
+        sectionId="pricing"
+        anchorId="pricing-anchor"
+        pricingOptions={[
+            {
+                title: "Focused Analysis Sprint",
+                price: "€110/hour",
+                description: "Targeted data analysis to solve specific conversion, engagement, or retention challenges in your product.",
+                buttonText: "Start uncovering insights &rarr;",
+                buttonHref: "/en/contact"
+            },
+            {
+                title: "Comprehensive Analytics Program",
+                price: "Let's talk",
+                description: "A complete analytics strategy with ongoing monitoring, reporting, and optimization recommendations.",
+                buttonText: "Get a customized plan &rarr;",
+                buttonHref: "/en/contact"
+            }
+        ]}
+        note="*For companies with annual revenue under five million euros, we offer our services at a discounted rate of €95/hour. Prices are tax exclusive (VAT 0%)."
+    />
+
+    <!-- Schedule Meeting Section -->
+    <section class="schedule-meeting" id="schedule-meeting">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Book Your Data Strategy Session</h2>
+                <p class="section__subtitle">Let's explore how interaction data analysis can reveal opportunities and drive growth for your SaaS business.</p>
+            </div>
+            <div class="schedule-meeting__embed">
+                <CalendlyEmbed elementId="cal-inline-index" calLink="aaltoyleva/kartoitustapaaminen" />
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Interaction Data Analysis Questions Answered</h2>
+                <p class="section__subtitle">Everything you need to know about understanding your users' behavior</p>
+            </div>
+            <div class="faq-items">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question-wrapper">
+                        <span class="faq-question">Why is interaction data analysis critical for SaaS products?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">For SaaS companies, interaction data analysis directly impacts revenue by identifying optimization opportunities throughout the customer lifecycle. With subscription-based models, understanding exactly how users engage with your product helps you improve activation rates, increase feature adoption, enhance user satisfaction, and reduce churn. Even small improvements in these metrics can significantly impact your ARR and growth trajectory.</p>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">What analysis methods do you use and when?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">We employ multiple methodologies based on your specific goals. For conversion optimization, we use funnel analysis, drop-off identification, and A/B test analysis. For engagement insights, we leverage feature usage tracking, session analysis, and behavioral cohort comparisons. For retention improvements, we utilize survival analysis, churn prediction modeling, and feature impact assessment. Each approach is selected to address your most pressing business questions.</p>
+                </div>
+                <!-- FAQ Item 3 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How much historical data do you need for meaningful analysis?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">For most analyses, 3-6 months of data provides sufficient context to identify patterns while remaining relevant to your current product. For seasonal businesses, we recommend at least 12 months of data to account for cyclical variations. The minimum data requirements depend on your user volume—high-traffic products can yield insights more quickly than those with lower user counts. We can work with what you have while helping you implement better tracking for future analysis.</p>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">What tracking tools do you work with?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">We're tool-agnostic and experienced with most major analytics platforms including Google Analytics, Mixpanel, Amplitude, Heap, Pendo, and Segment. We can work with your existing implementation or recommend appropriate tools based on your needs. For specialized analyses, we may use additional tools like Hotjar for heatmaps and session recordings, Fullstory for user frustration detection, or custom SQL queries against your product database.</p>
+                </div>
+                <!-- FAQ Item 5 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">What's the timeline for a typical data analysis project?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">A focused analysis examining specific user journeys or features typically takes 2-3 weeks from kickoff to final recommendations. More comprehensive product-wide analysis generally requires 4-6 weeks. The timeline includes setup and data validation (1 week), analysis (1-3 weeks), and reporting/recommendation development (1 week). For ongoing analysis partnerships, we establish regular reporting and insight delivery cadences aligned with your development cycles.</p>
+                </div>
+                <!-- FAQ Item 6 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How do you present analysis findings?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">We deliver insights in multiple formats to ensure they're actionable across your organization. This typically includes interactive dashboards for ongoing monitoring, detailed reports with methodology and findings, executive summaries for leadership, and specific recommendations prioritized by potential impact and implementation effort. We focus on telling the story behind the data rather than just presenting numbers.</p>
+                </div>
+                <!-- FAQ Item 7 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Can you help implement tracking and event collection?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Yes, we offer tracking implementation services ranging from developing comprehensive tracking plans to hands-on implementation of analytics tools. We help define what events and properties to track, create naming conventions that scale, and ensure data quality and consistency. For clients with technical resources, we can provide specifications for your team to implement; for others, we can handle the technical integration directly.</p>
+                </div>
+                <!-- FAQ Item 8 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How do you measure the ROI of data analysis?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">We establish clear before/after metrics tied to your business goals. Common ROI measures include percentage improvements in conversion rates, increases in feature adoption, reductions in time-to-value, decreased churn rates, and higher user engagement metrics. We also track qualitative benefits like faster decision-making and more focused product roadmaps. For each recommendation implemented, we help you measure the specific impact to demonstrate clear return on your analysis investment.</p>
+                </div>
+                <!-- FAQ Item 9 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">When should we conduct interaction data analysis?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">The ideal times for analysis are: 1) When launching new features to measure adoption and impact, 2) When experiencing unexpected changes in key metrics like conversion or churn, 3) Before major redesigns to establish baselines and identify opportunities, 4) During growth phases to optimize acquisition and activation funnels, and 5) Regularly as part of continuous improvement cycles. The most successful SaaS companies integrate analysis ongoing rather than as isolated projects.</p>
+                </div>
+                <!-- FAQ Item 10 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How do you handle data privacy regulations?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">We strictly adhere to GDPR, CCPA, and other relevant privacy regulations. We work with anonymized or pseudonymized data whenever possible, implement appropriate data access controls, and ensure all analysis activities comply with your privacy policies and user consent agreements. We can help review your current data collection practices for compliance issues and recommend privacy-preserving approaches to gather the insights you need while protecting user privacy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</BaseLayout>
+
+<style>
+    .team-grid {
+        display: flex;
+        flex-direction: column; /* Stack vertically by default (mobile) */
+        align-items: center; /* Center items horizontally in column layout */
+        gap: var(--spacing-lg);
+    }
+
+    .team-member {
+        text-align: center; /* Ensure text inside member card is centered */
+    }
+
+    /* Apply row layout for medium screens and up */
+    @media (min-width: 768px) {
+        .team-grid {
+            flex-direction: row; /* Arrange side-by-side */
+            justify-content: center; /* Center items horizontally in row layout */
+        }
+    }
+</style> 

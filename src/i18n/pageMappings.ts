@@ -6,6 +6,7 @@ export const pageMappings: Record<string, string> = {
   'tuotepositiointi': 'product-positioning',
   'ux-suunnittelu': 'ux-design',
   'kayttajatutkimus': 'user-research',
+  'interaktiodatan-analyysi': 'interaction-data-analysis',
   // These are the same in both languages
   'services': 'services', 
   'references': 'references',
@@ -16,6 +17,7 @@ export const pageMappings: Record<string, string> = {
   'product-positioning': 'tuotepositiointi',
   'ux-design': 'ux-suunnittelu',
   'user-research': 'kayttajatutkimus',
+  'interaction-data-analysis': 'interaktiodatan-analyysi',
   'diy-guide': 'diy-opas',
 };
 

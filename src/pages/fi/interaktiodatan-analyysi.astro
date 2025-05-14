@@ -1,0 +1,438 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import HeroSection from '../../components/HeroSection.astro';
+import TrustmaryEmbed from '../../components/TrustmaryEmbed.astro';
+import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
+import NotForEveryone from '../../components/NotForEveryone.astro';
+import LogoWall from '../../components/LogoWall.astro';
+import TeamSection from '../../components/TeamSection.astro';
+import ProblemSolutionSection from '../../components/ProblemSolutionSection.astro';
+import PricingSection from '../../components/PricingSection.astro';
+
+const pageTitle = "Interaktiodatan analyysi SaaS-yrityksille | The Good Side";
+const pageDescription = "Kehitä tuotettasi ammattilaisten interaktiodatan analyysillä, joka paljastaa käyttäjien käyttäytymismallit, tunnistaa parannusmahdollisuudet ja tuottaa mitattavia tuloksia.";
+---
+<BaseLayout title={pageTitle} description={pageDescription}>
+    <!-- Use HeroSection component -->
+    <HeroSection
+        title="Voisit tietää, mitä käyttäjäsi tekevät"
+        paragraph="Autamme keräämään ja analysoimaan interaktiodataa, joka auttaa sinua optimoimaan käyttökokemuksia, parantamaan konversioasteita ja vähentämään käyttäjien kohtaamia ongelmia."
+        primaryButtonText="Varaa tapaaminen &rarr;"
+        primaryButtonHref="/fi/ota-yhteytta"
+        secondaryButtonText="Katso referenssit"
+        secondaryButtonHref="/fi/referenssit"
+        textOnly={true}
+        paddingTop="6rem"
+        paddingBottom="3rem"
+        textAlign="center"
+    />
+
+    <!-- Logo Wall Section -->
+    <section class="logo-wall">
+        <div class="container">
+            <h2 class="logo-wall__title">Innovatiivisten SaaS-yritysten luottama kumppani</h2>
+            <div class="logo-wall__grid">
+                <!-- The logos are intentionally duplicated below -->
+                <!-- First set -->
+                <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+                 <!-- Second set (duplicate) -->
+                 <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problems">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Kuulostaako tutulta?</span>
+                <h2 class="section__title">Data-analyysin haasteet</h2>
+            </div>
+            <div class="problems__grid">
+                <article class="problem-card">
+                    <h3>Ei dataa</h3>
+                    <p>Kukaan ei kerää tai analysoi interaktiodataa, joten tuotepäätökset tehdään mutulla eikä käyttäjien todellisen käyttäytymisen perusteella.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Epäjärjestelmällinen keruu</h3>
+                    <p>Datan keruu on satunnaista ja epäjohdonmukaista, mikä tekee trendien tunnistamisesta ja pitkän aikavälin oivallusten tekemisestä mahdotonta.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Ei vastuullista</h3>
+                    <p>Kukaan ei ota vastuuta käyttäjien käyttäytymisen analysoinnista, joten arvokas data jää hyödyntämättä ja tuotekehitys perustuu arvailuun.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Us Section -->
+    <section class="hire-us">
+        <div class="container">
+            <h2 class="section__title">Käytettävyyden ja interaktiodatan asiantuntijat</h2>
+            <p class="section__subtitle">Tutustu tiimiin, joka muuttaa interaktiodatan strategisiksi tuoteparannuksiksi</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/mikki.webp" alt="Mikki Aalto-Ylevä" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Mikki<br>Aalto-Ylevä</h3>
+                    <p class="team-member__title">Strategi</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/tuomas.webp" alt="Tuomas Kaartoluoma" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Tuomas<br>Kaartoluoma</h3>
+                    <p class="team-member__title">UX-suunnittelija</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/duncan.webp" alt="Dũng Nguyen" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Dũng<br>Nguyen</h3>
+                    <p class="team-member__title">UX-suunnittelija</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/aksel.webp" alt="Aksel Suokas" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Aksel<br>Suokas</h3>
+                    <p class="team-member__title">UX-suunnittelija</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Intro Section -->
+    <section class="solutions">
+        <div class="container">
+            <h2 class="section__title">Miten strateginen data-analyysi edistää liiketoiminnan tuloksia</h2>
+            <div class="solutions__grid">
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/positiointi.webp" alt="Interaktiomallianalyysi">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Käyttäytymiskartoitus</span>
+                            <span>Kaavantunnistus</span>
+                        </div>
+                        <h3>Käyttäytymismallien oivallukset</h3>
+                        <p>Tunnistamme piilossa olevat kaavat siitä, miten käyttäjät ovat vuorovaikutuksessa tuotteesi kanssa, paljastaen polut, jotka johtavat onnistumiseen ja kitkapisteet, jotka aiheuttavat luopumista. Kartoittamalla käyttäytymisketjuja autamme sinua ymmärtämään, mitkä vuorovaikutukset ennustavat pitkäaikaista asiakaspysyvyyttä ja mitkä signaloivat mahdollista asiakasmenetystä.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/userjourney.webp" alt="Konversio-optimointi">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Suppilo-analyysi</span>
+                            <span>Konversio-optimointi</span>
+                        </div>
+                        <h3>Tuloskeskeinen optimointi</h3>
+                        <p>Analysoimme jokaisen vaiheen konversiosuppiloissasi tunnistaaksemme tarkasti, missä ja miksi käyttäjät putoavat pois. Yhdistämällä kvantitatiivisen pudokastiedot laadullisiin oivalluksiin toimitamme kohdennettuja optimointiehdotuksia, jotka parantavat merkittävästi konversioasteita ja tuottomittareita.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/ui.webp" alt="Sitoutumisen analytiikka" style="transform: scale(1.3);">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Sitoutumisen mittarit</span>
+                            <span>Ominaisuuksien käyttö</span>
+                            <span>Kohorttien analyysi</span>
+                        </div>
+                        <h3>Toimiva tuoteälykkyys</h3>
+                        <p>Muutamme monimutkaiset käyttötiedot selkeäksi tuotesuunnaksi analysoimalla ominaisuuksien käyttöönottoa, sitoutumisen syvyyttä ja käyttäjäsegmenttejä. Yksityiskohtainen kohorttien analyysimme paljastaa, mitkä ominaisuudet edistävät asiakaspysyvyyttä eri käyttäjätyypeille, mikä mahdollistaa kehityksen priorisoinnin tavalla, joka maksimoi pitkäaikaisen asiakasarvon.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials__grid">
+                 <div class="trustmary-widget">
+                    <TrustmaryEmbed 
+                        title="Mitä asiakkaamme sanovat"
+                        subtitle="Todellisia oivalluksia, jotka johtavat mitattaviin parannuksiin"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Not For Everyone Section -->
+    <NotForEveryone 
+        title="Data-analyysipalvelumme ei sovi kaikille"
+        subtitle="Emme ehkä ole oikea kumppani, jos..."
+        leftColumnItems={[
+            "Haluat datan vahvistavan ennalta päätetyt johtopäätökset",
+            "Tarvitset pintapuolisia mittareita ilman kontekstia",
+            "Suosit intuitiota näyttöön perustuvien päätösten sijaan"
+        ]}
+        rightColumnItems={[
+            "Budjettisi on alle 3 000 € analyysipalveluille",
+            "Et ole halukas toteuttamaan seurantaa tai jakamaan dataa"
+        ]}
+    />
+
+    <!-- Problem/Solution Section (Using existing styles) -->
+    <ProblemSolutionSection
+        title="Todellisia dataongelmia joita ratkaisemme"
+        subtitle="Yleisiä ongelmia, joita asiakkaamme kohtaavat, ja miten muutamme ne."
+        items={[
+            {
+                problemTitle: "Datan keruu on satunnaista",
+                problemDescription: "Tuotetiimillä ei ole selkeää strategiaa datan keruulle - joku kerää jotain, toinen jotain muuta, ja kolmas ei kerää mitään. Tämä johtaa puutteelliseen ymmärrykseen käyttäjistä ja heidän käyttäytymisestään.",
+                solutionDescription: "Rakennamme systemaattisen datankeruustrategian, joka varmistaa oikeiden tietojen keräämisen oikeista kohdista. Autamme määrittelemään kriittiset tapahtumat ja käyttäjätiedot, jotka ovat välttämättömiä liiketoiminnan tavoitteiden saavuttamiseksi."
+            },
+            {
+                problemTitle: "Vanhentuneet analytiikkatyökalut",
+                problemDescription: "Käytät perinteisiä analytiikkatyökaluja, jotka eivät pysty hyödyntämään tekoälyn mahdollisuuksia tai tarjoamaan reaaliaikaista analyysiä. Tämä rajoittaa datan hyödyntämistä ja hidastaa päätöksentekoa.",
+                solutionDescription: "Esittelemme moderneja analytiikkaratkaisuja, jotka hyödyntävät tekoälyä ja koneoppimista käyttäjien käyttäytymisen ennustamiseen ja tunnistamiseen. Automatisoidut raportit ja reaaliaikaiset hälytykset mahdollistavat nopean reagointikyvyn muutoksiin."
+            },
+            {
+                problemTitle: "Epäjohdonmukainen datan hyödyntäminen",
+                problemDescription: "Datan analysointi ja hyödyntäminen on epäjohdonmukaista - joskus dataa käytetään päätöksenteossa, joskus ei. Tämä johtaa suboptimisiin päätöksiin ja menetettyihin mahdollisuuksiin.",
+                solutionDescription: "Luomme selkeät prosessit ja työkalut datan hyödyntämiseen päivittäisessä työssä. Koulutamme tiimin käyttämään dataa tehokkaasti ja rakennamme automatisoituja työkaluja, jotka tekevät datan hyödyntämisestä helppoa ja luotettavaa."
+            }
+        ]}
+    />
+
+    <!-- Pricing Section -->
+    <PricingSection
+        title="Valmis kokeilemaan?"
+        subtitle="Valitse tarpeisiisi sopiva analyysilähestymistapa."
+        sectionId="pricing"
+        anchorId="pricing-anchor"
+        pricingOptions={[
+            {
+                title: "Interaktiodatan analyysi",
+                price: "110 €/tunti",
+                description: "Kohdennettu data-analyysi ratkaisemaan tiettyjä konversio-, onboardaus- tai käytettävyysongelmia tuotteessasi.",
+                buttonText: "Aloita oivallusten selvittäminen &rarr;",
+                buttonHref: "/fi/ota-yhteytta"
+            },
+            {
+                title: "Tutkimus + analyysi",
+                price: "Keskustellaan",
+                description: "Täydellinen analytiikkastrategia ja jatkuva palvelu, joka sisältää jatkuvan seurannan, raportoinnin ja optimointiehdotukset.",
+                buttonText: "Hanki räätälöity suunnitelma &rarr;",
+                buttonHref: "/fi/ota-yhteytta"
+            }
+        ]}
+        note="*Yrityksille, joiden vuotuinen liikevaihto on alle viisi miljoonaa euroa, tarjoamme palvelumme alennettuun hintaan 95 €/tunti. Hinnat ovat verottomia (ALV 0%)."
+    />
+
+    <!-- Schedule Meeting Section -->
+    <section class="schedule-meeting" id="schedule-meeting">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Varaa datastrategiatapaaminen</h2>
+                <p class="section__subtitle">Tutkitaan yhdessä, miten interaktiodatan analyysi voi paljastaa mahdollisuuksia ja edistää SaaS-yrityksesi kasvua.</p>
+            </div>
+            <div class="schedule-meeting__embed">
+                <CalendlyEmbed elementId="cal-inline-index" calLink="aaltoyleva/kartoitustapaaminen" />
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Vastauksia interaktiodatan analyysiä koskeviin kysymyksiin</h2>
+                <p class="section__subtitle">Kaikki mitä sinun tarvitsee tietää käyttäjiesi käyttäytymisen ymmärtämisestä</p>
+            </div>
+            <div class="faq-items">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question-wrapper">
+                        <span class="faq-question">Miksi interaktiodatan analyysi on ratkaisevaa SaaS-tuotteille?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">SaaS-yrityksille interaktiodatan analyysi vaikuttaa suoraan liikevaihtoon tunnistamalla optimointimahdollisuuksia koko asiakaselinkaaren ajalla. Tilauspohjaisilla malleilla, sen ymmärtäminen, miten käyttäjät käyttävät tuotettasi auttaa parantamaan aktivointiasteita, lisäämään ominaisuuksien käyttöönottoa, parantamaan käyttäjätyytyväisyyttä ja vähentämään asiakaspoistumaa. Jopa pienet parannukset näissä mittareissa voivat vaikuttaa merkittävästi ARR:ään ja kasvutrajektoriin.</p>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Mitä analyysimenetelmiä käytätte ja milloin?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Käytämme useita metodologioita perustuen erityistavoitteisiisi. Konversio-optimointia varten käytämme suppilo-analyysiä, pudotuskohtien tunnistamista ja A/B-testien analyysiä. Sitoutumisen oivalluksia varten hyödynnämme ominaisuuksien käytön seurantaa, istuntoanalyysiä ja käyttäytymiskohorttien vertailua. Asiakaspysyvyyden parantamiseksi käytämme selviytymisanalyysiä, asiakasmenetysennustemallia ja ominaisuusvaikutusten arviointia. Jokainen lähestymistapa valitaan vastaamaan tärkeimpiin liiketoimintakysymyksiisi.</p>
+                </div>
+                <!-- FAQ Item 3 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Kuinka paljon historiatietoja tarvitaan merkitykselliseen analyysiin?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Useimpiin analyyseihin 3-6 kuukauden tiedot tarjoavat riittävän kontekstin mallien tunnistamiseen pysyen samalla relevantteina nykyiselle tuotteellesi. Kausiluonteisille yrityksille suosittelemme vähintään 12 kuukauden tietoja syklisten vaihteluiden huomioimiseksi. Minimitietovaatimukset riippuvat käyttäjämäärästäsi - korkean liikenteen tuotteet voivat tuottaa oivalluksia nopeammin kuin ne, joilla on vähemmän käyttäjiä. Voimme työskennellä sen kanssa, mitä sinulla on, samalla auttaen sinua toteuttamaan parempaa seurantaa tulevaa analyysiä varten.</p>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Mitä seurantatyökaluja käytätte?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Olemme työkaluneutraaleja ja kokeneita useimpien merkittävien analytiikka-alustojen kanssa, mukaan lukien Google Analytics, Mixpanel, Amplitude, Heap, Pendo ja Segment. Voimme työskennellä nykyisen toteutuksesi kanssa tai suositella sopivia työkaluja tarpeidesi mukaan. Erikoistuneita analyysejä varten saatamme käyttää lisätyökaluja kuten Hotjar lämpökarttoja ja istuntotallenteita varten, Fullstory käyttäjäturhautumisen havaitsemiseen tai räätälöityjä SQL-kyselyjä tuotetietokantaasi vastaan.</p>
+                </div>
+                <!-- FAQ Item 5 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Mikä on tyypillisen data-analyysiprojektin aikataulu?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Kohdennettu analyysi, joka tutkii tiettyjä käyttäjäpolkuja tai ominaisuuksia kestää tyypillisesti 2-3 viikkoa aloituksesta lopullisiin suosituksiin. Laajempi tuotelaajuinen analyysi vaatii yleensä 4-6 viikkoa. Aikataulu sisältää asennuksen ja datan validoinnin (1 viikko), analyysin (1-3 viikkoa) ja raportoinnin/suositusten kehittämisen (1 viikko). Jatkuvia analyysikumppanuuksia varten luomme säännöllisiä raportointi- ja oivallustoimitustahteja, jotka ovat linjassa kehityssyklisi kanssa.</p>
+                </div>
+                <!-- FAQ Item 6 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten esitätte analyysin löydökset?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Toimitamme oivallukset useissa muodoissa varmistaaksemme, että ne ovat toimintakelpoisia koko organisaatiossasi. Tähän sisältyy tyypillisesti interaktiiviset dashboardit jatkuvaa seurantaa varten, yksityiskohtaiset raportit metodologian ja löydösten kanssa, tiivistelmät johdolle ja erityiset suositukset priorisoituna potentiaalisen vaikutuksen ja toteutusvaivan mukaan. Keskitymme kertomaan tarinan datan takana pelkkien numeroiden esittämisen sijaan.</p>
+                </div>
+                <!-- FAQ Item 7 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Voitteko auttaa seurannan ja tapahtumien keräyksen toteuttamisessa?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Kyllä, tarjoamme seurannan toteuttamispalveluja kattavien seurantasuunnitelmien kehittämisestä analytiikkatyökalujen käytännön toteutukseen. Autamme määrittelemään, mitä tapahtumia ja ominaisuuksia seurata, luomaan skaalautuvia nimeämiskäytäntöjä ja varmistamaan tietojen laadun ja johdonmukaisuuden. Asiakkaille, joilla on teknisiä resursseja, voimme tarjota määrittelyt tiimisi toteutettavaksi; muille voimme hoitaa teknisen integraation suoraan.</p>
+                </div>
+                <!-- FAQ Item 8 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten mittaatte data-analyysin ROI:n?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Luomme selkeät ennen/jälkeen-mittarit, jotka on kytketty liiketoimintatavoitteisiisi. Yleiset ROI-mittarit sisältävät prosentuaaliset parannukset konversioasteissa, lisäykset ominaisuuksien käyttöönotossa, vähennykset time-to-value-arvossa, pienentyneet asiakaspoistuma-asteet ja korkeammat käyttäjäsitoutumismittarit. Seuraamme myös laadullisia hyötyjä, kuten nopeampaa päätöksentekoa ja kohdennetumpia tuotetiekarttoja. Jokaiselle toteutetulle suositukselle autamme sinua mittaamaan erityisen vaikutuksen osoittaaksemme selkeän tuoton analyysisijoituksellesi.</p>
+                </div>
+                <!-- FAQ Item 9 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Milloin meidän pitäisi toteuttaa interaktiodatan analyysi?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Ihanteelliset ajat analyysille ovat: 1) Kun julkaiset uusia ominaisuuksia mitataksesi käyttöönottoa ja vaikutusta, 2) Kun koet odottamattomia muutoksia avainmittareissa kuten konversiossa tai asiakaspoistumassa, 3) Ennen suuria uudelleensuunnitteluja lähtötasojen määrittämiseksi ja mahdollisuuksien tunnistamiseksi, 4) Kasvuvaiheissa hankinta- ja aktivointisuppiloiden optimoimiseksi ja 5) Säännöllisesti osana jatkuvia parannussyklejä. Menestyneimmät SaaS-yritykset integroivat analyysin jatkuvaksi toiminnaksi erillisten projektien sijaan.</p>
+                </div>
+                <!-- FAQ Item 10 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten käsittelette tietosuoja-asetuksia?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Noudatamme tiukasti GDPR:ää, CCPA:ta ja muita asiaan liittyviä tietosuojasäännöksiä. Työskentelemme anonymisoitujen tai pseudonymisoitujen tietojen kanssa aina kun mahdollista, toteutamme asianmukaiset tiedon pääsyn hallintamekanismit ja varmistamme, että kaikki analyysitoiminta noudattaa tietosuojakäytäntöjäsi ja käyttäjien suostumusmääräyksiä. Voimme auttaa tarkistamaan nykyiset tiedonkeruukäytäntösi vaatimustenmukaisuusongelmien varalta ja suositella yksityisyyttä säilyttäviä lähestymistapoja tarvitsemiesi oivallusten keräämiseen samalla suojaten käyttäjien yksityisyyttä.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</BaseLayout>
+
+<style>
+    .team-grid {
+        display: flex;
+        flex-direction: column; /* Stack vertically by default (mobile) */
+        align-items: center; /* Center items horizontally in column layout */
+        gap: var(--spacing-lg);
+    }
+
+    .team-member {
+        text-align: center; /* Ensure text inside member card is centered */
+    }
+
+    /* Apply row layout for medium screens and up */
+    @media (min-width: 768px) {
+        .team-grid {
+            flex-direction: row; /* Arrange side-by-side */
+            justify-content: center; /* Center items horizontally in row layout */
+        }
+    }
+</style> 
