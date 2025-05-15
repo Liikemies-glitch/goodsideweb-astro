@@ -81,9 +81,9 @@ export default defineConfig({
     '/miksi-rakentaisit-verkkopalvelun-wordpressilla/': '/fi/blog/miksi-rakentaisit-verkkopalvelun-wordpressillafi/',
     '/category/blog/': '/fi/blog/',
     '/digiprojektin-budjetointi/': '/fi/blog/digiprojektin-budjetointifi/',
-    '/palvelut/designops/': '/fi/services/',
+    '/palvelut/designops/': '/fi/services',
     '/miksi-ux-suunnitteluun-kannattaa-panostaa/': '/fi/blog/miksi-ux-suunnitteluun-kannattaa-panostaafi/',
-    '/design-ops/': '/fi/services/',
+    '/design-ops/': '/fi/services',
     '/kayttojarjestelmien-sota/': '/fi/blog/kayttojarjestelmien-sotafi/',
     '/ui-suunnittelijan-tyokalupakki/': '/fi/blog/ui-suunnittelijan-tyokalupakkifi/',
     '/tulevaisuuden-kayttoliittymat/': '/fi/blog/tulevaisuuden-kayttoliittymatfi/',
@@ -134,7 +134,8 @@ export default defineConfig({
     '/projektit/': '/fi/references/',
     '/palvelut/lisapalvelut/': '/fi/services/',
     '/category/blog/page/2/': '/fi/blog/',
-    '/suunnittelijan-rooli-ja-identiteetti-digitaalisessa-maailmassa/': '/fi/blog/suunnittelijan-rooli-ja-identiteetti-digitaalisessa-maailmassafi/'
+    '/suunnittelijan-rooli-ja-identiteetti-digitaalisessa-maailmassa/': '/fi/blog/suunnittelijan-rooli-ja-identiteetti-digitaalisessa-maailmassafi/',
+    '/palvelut/': '/fi/services'
   },
   vite: {
     plugins: [tailwindcss()]
