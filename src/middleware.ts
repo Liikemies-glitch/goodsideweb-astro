@@ -26,7 +26,7 @@ export const onRequest = defineMiddleware(async (context, next) => {
     const targetPath = `/${targetLocale}/`;
     
     console.log(`Middleware: Redirecting from '/' to '${targetPath}' based on URL parameters (redirectToEn: ${redirectToEn})`);
-    return redirect(targetPath, 307);
+    return redirect(targetPath, 301);
   }
 
   // 3. Ohjataan muut kieliprefiksittömät polut oletuskielelle
