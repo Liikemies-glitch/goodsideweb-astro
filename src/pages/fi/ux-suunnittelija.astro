@@ -11,8 +11,8 @@ import TeamSection from '../../components/TeamSection.astro';
 import ProblemSolutionSection from '../../components/ProblemSolutionSection.astro';
 import PricingSection from '../../components/PricingSection.astro';
 
-const pageTitle = "UX Designer ja käyttökokemussuunnittelu | The Good Side";
-const pageDescription = "Ammattitaitoinen UX Designer parantaa digitaalisten tuotteiden käytettävyyttä, nostaa konversioastetta ja lisää asiakastyytyväisyyttä. Kokeneet UX-suunnittelijat palveluksessasi.";
+const pageTitle = "UX-suunnittelija SaaS-yritykselle | Ulkoistettu UX-osaaja";
+const pageDescription = "Ulkoista tuotekehityksen UX-suunnittelu kokeneelle UX-suunnittelijalle ilman kokoaikaisen työntekijän kustannuksia. Paranna SaaS-tuotteesi käyttökokemusta ja kilpailukykyä.";
 
 // Fetch latest 6 blog posts - REMOVED
 // const latestPosts = (await getCollection('blog'))
@@ -31,11 +31,11 @@ const pageDescription = "Ammattitaitoinen UX Designer parantaa digitaalisten tuo
 <BaseLayout title={pageTitle} description={pageDescription}>
     <!-- Use HeroSection component -->
     <HeroSection
-        title="UX Designer, joka ymmärtää liiketoimintaasi."
-        paragraph="Kokeneet UX Designer -asiantuntijamme luovat intuitiivisia käyttökokemuksia, jotka tekevät tuotteestasi korvaamattoman – vähentävät asiakaspoistumaa ja nopeuttavat kasvua ilahduttaen samalla asiakkaitasi."
-        primaryButtonText="Varaa tapaaminen &rarr;"
+        title="SaaS-tuotteesi UX-suunnittelu ilman kokoaikaisen suunnittelijan palkkaamista"
+        paragraph="Tarjoamme SaaS-yrityksille kokeneen UX-suunnittelijan tuotetiimiinne joustavasti, ilman rekrytoinnin riskiä ja kuluja. Varmista kilpailukykyinen käyttökokemus ja nopeampi tuotekehitys ammattilaisen avulla."
+        primaryButtonText="Varaa ilmainen konsultaatio &rarr;"
         primaryButtonHref="/fi/contact"
-        secondaryButtonText="Näytä referenssit"
+        secondaryButtonText="Katso esimerkkejä"
         secondaryButtonHref="/fi/references"
         textOnly={true}
         paddingTop="6rem"
@@ -46,7 +46,7 @@ const pageDescription = "Ammattitaitoinen UX Designer parantaa digitaalisten tuo
     <!-- Logo Wall Section -->
     <section class="logo-wall">
         <div class="container">
-            <h2 class="logo-wall__title">UX Design asikkaitamme</h2>
+            <h2 class="logo-wall__title">SaaS-asiakkaitamme</h2>
             <div class="logo-wall__grid">
                 <!-- The logos are intentionally duplicated below -->
                 <!-- First set -->
@@ -131,21 +131,21 @@ const pageDescription = "Ammattitaitoinen UX Designer parantaa digitaalisten tuo
     <section class="problems">
         <div class="container">
             <div class="section__header">
-                <span class="section__tag">Kuulostaako tutulta?</span>
-                <h2 class="section__title">Ongelmia, joita UX Designer tyypillisesti ratkoo</h2>
+                <span class="section__tag">Tunnistatko nämä haasteet?</span>
+                <h2 class="section__title">Kun tuotetiimi yrittää paikata UX-suunnittelijan puutetta</h2>
             </div>
             <div class="problems__grid">
                 <article class="problem-card">
                     <h3>Liikaa ominaisuuksia</h3>
-                    <p>Liian monta ominaisuutta luo sekavan käyttöliittymän, joka turhauttaa käyttäjiä. UX Designer selkeyttää kokonaisuuden.</p>
+                    <p>Tuotteeseen lisätään jatkuvasti uutta, mutta käyttäjät kamppailevat perustoimintojen kanssa. Ilman ammattimaista UX-suunnittelijaa kokonaisuus jää sekavaksi.</p>
                 </article>
                 <article class="problem-card">
-                    <h3>Käyttäjäkato ilman palautetta</h3>
-                    <p>Käyttäjät lähtevät valittamatta, kun tuotteesi ei vastaa heidän odotuksiaan. Ammattitaitoinen UX Designer tunnistaa ongelmakohdat.</p>
+                    <h3>Käyttäjäkato</h3>
+                    <p>Käyttäjät kaikkoavat hiljaa, koska tuote ei ratkaise heidän ongelmiaan intuitiivisesti. Sisäinen tiimi ei ehdi tai osaa selvittää juurisyitä ilman UX-suunnittelijan panosta.</p>
                 </article>
                 <article class="problem-card">
-                    <h3>Tekniikkakeskeinen suunnittelu</h3>
-                    <p>Insinöörikeskeinen käyttöliittymä, joka hämmentää asiakkaita, vaikka olisikin toimiva. UX Designer kääntää tekniikan käyttäjälähtöiseksi.</p>
+                    <h3>Insinöörimäinen</h3>
+                    <p>Käyttöliittymä on suunniteltu teknisestä näkökulmasta, ei käyttäjän. Tämä karkottaa potentiaalisia asiakkaita, vaikka toiminnallisuus olisi kunnossa.</p>
                 </article>
             </div>
         </div>
@@ -154,8 +154,8 @@ const pageDescription = "Ammattitaitoinen UX Designer parantaa digitaalisten tuo
     <!-- Hire Us Section -->
     <section class="hire-us">
         <div class="container">
-            <h2 class="section__title">UX Designer palveluksessasi</h2>
-            <p class="section__subtitle">Ammattitaitoiset UX Designerit muuttavat tuotteesi kokemuksiksi, joista käyttäjät maksavat mielellään.</p>
+            <h2 class="section__title">Kokenut UX-suunnittelija SaaS-tuotetiimiisi – joustavasti</h2>
+            <p class="section__subtitle">Saat käyttöösi ammattitaitoisen UX-suunnittelijan, joka parantaa SaaS-tuotteesi käyttökokemusta ja kasvattaa asiakastyytyväisyyttä – ilman kokoaikaisen työntekijän sitoumuksia.</p>
             <div class="team-grid">
                 <div class="team-member">
                     <div class="team-member__image">
@@ -173,7 +173,7 @@ const pageDescription = "Ammattitaitoinen UX Designer parantaa digitaalisten tuo
                         </div>
                     </div>
                     <h3 class="team-member__name">Tuomas<br>Kaartoluoma</h3>
-                    <p class="team-member__title">UX Designer</p>
+                    <p class="team-member__title">UX-suunnittelija</p>
                 </div>
                 <div class="team-member">
                     <div class="team-member__image">
@@ -182,7 +182,7 @@ const pageDescription = "Ammattitaitoinen UX Designer parantaa digitaalisten tuo
                         </div>
                     </div>
                     <h3 class="team-member__name">Dũng<br>Nguyen</h3>
-                    <p class="team-member__title">UX Designer</p>
+                    <p class="team-member__title">UX-suunnittelija</p>
                 </div>
                 <div class="team-member">
                     <div class="team-member__image">
@@ -191,7 +191,7 @@ const pageDescription = "Ammattitaitoinen UX Designer parantaa digitaalisten tuo
                         </div>
                     </div>
                     <h3 class="team-member__name">Aksel<br>Suokas</h3>
-                    <p class="team-member__title">UX Designer</p>
+                    <p class="team-member__title">UX-suunnittelija</p>
                 </div>
             </div>
         </div>
@@ -200,37 +200,37 @@ const pageDescription = "Ammattitaitoinen UX Designer parantaa digitaalisten tuo
     <!-- Solution Intro Section -->
     <section class="solutions">
         <div class="container">
-            <h2 class="section__title">Miten UX Designer voi parantaa liiketoimintaasi</h2>
+            <h2 class="section__title">Miten ulkoistettu UX-suunnittelija tehostaa SaaS-liiketoimintaasi</h2>
             <div class="solutions__grid">
                 <article class="solution-card">
                     <div class="solution-card__image">
-                        <img src="/images/value-props/positiointi.webp" alt="UX Designer tutkimassa käyttäjäkokemusta">
+                        <img src="/images/value-props/positiointi.webp" alt="UX-suunnittelija tutkimassa käyttäjäkokemusta SaaS-tuotteessa">
                     </div>
                     <div class="solution-card__content">
                         <div class="solution-card__tags">
                             <span>Käytettävyys</span>
                             <span>Käyttäjätutkimus</span>
                         </div>
-                        <h3>Kitkaton käyttökokemus</h3>
-                        <p>UX Designer syventyy käyttäjätutkimukseen ja käyttäytymisanalyysiin suunnitellakseen käyttöliittymiä, jotka tuntuvat vaivattomilta ja intuitiivisilta. Poistamalla sekaannusta aiheuttavat tekijät vähennämme tukipyyntöjä ja lisäämme käyttäjätyytyväisyyttä.</p>
+                        <h3>Intuitiivinen käyttökokemus, ei arvailua</h3>
+                        <p>Sen sijaan, että tuotetiimi arvailee käyttäjien tarpeita, UX-suunnittelija tekee käyttäjätutkimusta ja suunnittelee käyttöliittymän, joka on aidosti helppokäyttöinen. Vähemmän tukipyyntöjä, tyytyväisemmät SaaS-asiakkaat.</p>
                     </div>
                 </article>
                 <article class="solution-card">
                     <div class="solution-card__image">
-                        <img src="/images/value-props/userjourney.webp" alt="UX Designer optimoimassa käyttäjäpolkuja">
+                        <img src="/images/value-props/userjourney.webp" alt="UX-suunnittelija optimoimassa SaaS-tuotteen käyttäjäpolkuja">
                     </div>
                     <div class="solution-card__content">
                         <div class="solution-card__tags">
                             <span>Asiakaskokemus</span>
                             <span>Konversio-optimointi</span>
                         </div>
-                        <h3>Konversio-optimoidut käyttäjäpolut</h3>
-                        <p>Ammattitaitoinen UX Designer muuttaa monimutkaiset prosessit sujuviksi, ohjatuiksi kokemuksiksi, jotka maksimoivat konversion joka vaiheessa. Datapohjainen lähestymistapamme tunnistaa ja poistaa pudotuskohdat, muuttaen yhä useammat kävijät maksaviksi asiakkaiksi.</p>
+                        <h3>Tehokkaat käyttäjäpolut, parempi konversio</h3>
+                        <p>Epäselvät käyttäjäpolut syövät konversiota. Kokenut UX-suunnittelija optimoi SaaS-tuotteesi kriittiset käyttäjäpolut datan pohjalta, muuttaen enemmän kokeilijoita maksaviksi asiakkaiksi.</p>
                     </div>
                 </article>
                 <article class="solution-card">
                     <div class="solution-card__image">
-                        <img src="/images/value-props/ui.webp" alt="UX Designer luomassa visuaalista käyttöliittymää" style="transform: scale(1.3);">
+                        <img src="/images/value-props/ui.webp" alt="UX-suunnittelija luomassa visuaalista käyttöliittymää SaaS-brändille" style="transform: scale(1.3);">
                     </div>
                     <div class="solution-card__content">
                         <div class="solution-card__tags">
@@ -238,8 +238,8 @@ const pageDescription = "Ammattitaitoinen UX Designer parantaa digitaalisten tuo
                             <span>Brändi</span>
                             <span>Sitoutuminen</span>
                         </div>
-                        <h3>Brändiä vahvistava visuaalinen ilme</h3>
-                        <p>UX Designerimme suunnittelevat visuaalisesti näyttäviä käyttöliittymiä, jotka vahvistavat brändisi ainutlaatuista persoonallisuutta samalla varmistaen toiminnallisuuden. Tämä luo mieleenpainuvia kokemuksia, jotka pitävät käyttäjät sitoutuneina ja rakentavat kestävää brändiuskollisuutta.</p>
+                        <h3>Brändiä tukeva ja selkeä käyttöliittymä</h3>
+                        <p>Satunnainen käyttöliittymäsuunnittelu heikentää brändiä. UX-suunnittelijamme luo SaaS-tuotteellesi visuaalisesti viimeistellyn ja brändisi mukaisen ilmeen, joka rakentaa luottamusta ja sitouttaa käyttäjiä.</p>
                     </div>
                 </article>
             </div>
@@ -252,8 +252,8 @@ const pageDescription = "Ammattitaitoinen UX Designer parantaa digitaalisten tuo
             <div class="testimonials__grid">
                  <div class="trustmary-widget">
                     <TrustmaryEmbed 
-                        title="Mitä asiakkaamme sanovat"
-                        subtitle="Todellisia tuloksia yrityksiltä kuten sinun"
+                        title="Mitä SaaS-asiakkaamme sanovat UX-suunnittelusta"
+                        subtitle="Todellisia tuloksia SaaS-yrityksiltä, jotka ulkoistivat UX-suunnittelun"
                     />
                 </div>
             </div>
@@ -262,38 +262,38 @@ const pageDescription = "Ammattitaitoinen UX Designer parantaa digitaalisten tuo
 
     <!-- Not For Everyone Section -->
     <NotForEveryone 
-        title="Palvelumme ei sovi kaikille"
-        subtitle="Emme ehkä ole oikea vaihtoehto jos..."
+        title="Milloin ulkoistettu UX-suunnittelija EI ole ratkaisu"
+        subtitle="Emme ehkä sovi, jos SaaS-yrityksesi..."
         leftColumnItems={[
-            "Haluat vain visuaalisia muutoksia ilman strategista UX Designer -työpanosta",
-            "Priorisoit nopeutta oikean UX-ratkaisun luomisen sijaan",
-            "Suosit kertaratkaisua jatkuvan käyttäjäkokemuksen optimoinnin sijaan"
+            "Etsii vain nopeaa visuaalista päivitystä ilman syvempää käyttökokemuksen analyysiä",
+            "Priorisoi ominaisuuksien määrää laadukkaan UX-suunnittelun sijaan",
+            "Uskoo tuotetiimin pystyvän hoitamaan UX-suunnittelun satunnaisesti oman työnsä ohella"
         ]}
         rightColumnItems={[
-            "Budjettisi UX Designer -palveluihin on alle 5 000 €",
-            "Olet varma käyttäjien tarpeista ilman validointidataa"
+            "Ei ole valmis investoimaan ammattimaiseen UX-suunnitteluun (alle 3000€/kk)",
+            "Luottaa oletuksiin käyttäjien tarpeista ilman ulkopuolista validointia"
         ]}
     />
 
     <!-- Problem/Solution Section (Using existing styles) -->
     <ProblemSolutionSection
-        title="UX-haasteet ja ratkaisumme"
-        subtitle="Yleisimmät UX-haasteet ja miten ratkaisemme ne."
+        title="SaaS-tuotteen UX-haasteet ja ratkaisumme"
+        subtitle="Yleisimmät haasteet, kun UX-suunnittelija puuttuu – ja miten korjaamme ne."
         items={[
             {
-                problemTitle: "Käyttäjien turhautuminen johtaa asiakaskatoon",
-                problemDescription: "Monimutkainen käyttöliittymä aiheuttaa hämmennystä, turhautumista ja lopulta asiakkaiden menettämistä. Tukipyynnöt lisääntyvät, kun käyttäjien sitoutuminen romahtaa.",
-                solutionDescription: "UX Designer yksinkertaistaa ja uudelleenrakentaa käyttöliittymäsi todellisen käyttäjäkäyttäytymisdatan perusteella, luoden intuitiivisia työnkulkuja, jotka tuntuvat luonnollisilta. Tulos: parantunut käyttäjätyytyväisyys, vähentynyt tukikuorma ja merkittävästi alhaisempi asiakaspoistuma."
+                problemTitle: "Käyttäjät turhautuvat ja vaihtavat kilpailijaan",
+                problemDescription: "Jos SaaS-tuotteesi käyttöliittymä on sekava, käyttäjät äänestävät jaloillaan. Tuotetiimin 'ihan ok' -ratkaisut eivät riitä kilpailluilla markkinoilla.",
+                solutionDescription: "Ulkoistettu UX-suunnittelija analysoi ja suunnittelee käyttäjäpolut ja käyttöliittymän datan pohjalta. Tuloksena intuitiivinen kokemus, joka vähentää asiakaspoistumaa ja parantaa SaaS-tuotteesi mainetta."
             },
             {
-                problemTitle: "Hukatut kehitysresurssit",
-                problemDescription: "Tiimisi rakentaa ominaisuuksia, joita käyttäjät harvoin käyttävät tai eivät löydä, tuhlaten arvokasta kehitysaikaa ja viivästyttäen kriittisiä parannuksia, jotka edistäisivät kasvua.",
-                solutionDescription: "UX Designer toteuttaa käyttäjäkeskeisiä suunnitteluprosesseja, jotka priorisoivat ominaisuuksia todellisten käyttäjätarpeiden ja liiketoimintavaikutusten perusteella. Näin jokainen kehitystunti luo maksimaalista arvoa ja käyttäjätyytyväisyyttä."
+                problemTitle: "Kehitysaikaa hukataan vääriin asioihin",
+                problemDescription: "Ilman selkeää UX-suuntaa tuotetiimi saattaa rakentaa ominaisuuksia, joita kukaan ei käytä tai jotka ratkaisevat vääriä ongelmia. Tämä on kallista ja hidastaa todellista kehitystä.",
+                solutionDescription: "UX-suunnittelija varmistaa käyttäjälähtöisen kehityksen. Priorisoimme ja validoimme ominaisuudet käyttäjätarpeiden ja liiketoimintahyötyjen mukaan, jotta jokainen kehitystunti tuottaa arvoa."
             },
             {
-                problemTitle: "Erottumaton tuotekokemus",
-                problemDescription: "Tuotteesi sulautuu kilpailijoiden joukkoon, siitä puuttuu selkeä persoonallisuus, eikä se luo tunnesidettä käyttäjien kanssa – tehden siitä helposti korvattavan.",
-                solutionDescription: "UX Designer -tiimimme suunnittelee mieleenpainuvan, brändiin sopivan käyttökokemuksen, joka erottaa tuotteesi markkinoilla. Harkittujen suunnitteluyksityiskohtien ja johdonmukaisen identiteetin avulla luomme kokemuksen, jota käyttäjät suosittelevat muillekin."
+                problemTitle: "Tuote ei erotu edukseen markkinoilla",
+                problemDescription: "Jos käyttökokemus on geneerinen tai kömpelö, SaaS-tuotteesi on vain yksi muiden joukossa. Asiakkailla ei ole syytä valita juuri sinun ratkaisuasi.",
+                solutionDescription: "Ammattitaitoinen UX-suunnittelija luo SaaS-tuotteellesi uniikin ja muistettavan käyttökokemuksen, joka on linjassa brändisi kanssa. Tämä on kilpailuetu, joka sitouttaa asiakkaita ja houkuttelee uusia."
             }
         ]}
     />
@@ -301,34 +301,34 @@ const pageDescription = "Ammattitaitoinen UX Designer parantaa digitaalisten tuo
     <!-- Pricing Section -->
     <PricingSection
         title="Hinnoittelumme"
-        subtitle="Investoi käyttökokemukseen varmistaaksesi kasvun"
+        subtitle="Investoi käyttökokemukseen, joka maksaa itsensä takaisin ilman rekrytoinnin riskiä."
         sectionId="hinnat"
         anchorId="hinnat-ankkuri"
         pricingOptions={[
             {
-                title: "UX Designer",
-                price: "110€/tunti",
-                description: "Yksittäinen UX Designer -asiantuntija palveluksessasi. Sopii erinomaisesti kohdennettuihin UX-projekteihin ja käytettävyystutkimuksiin.",
-                buttonText: "Ota yhteyttä &rarr;",
+                title: "Jatkuva UX-suunnittelu",
+                price: "alk. 6100€/kk",
+                description: "Osa-aikainen UX-suunnittelija SaaS-tuotetiimiinne (esim. 60h/kk). Jatkuvaa parantamista ja tukea tuotekehitykseen.",
+                buttonText: "Kysy lisää &rarr;",
                 buttonHref: "/fi/contact"
             },
             {
-                title: "UX Design tiimi",
-                price: "95€/tunti",
-                description: "Kokonaisvaltainen UX Design -tiimi, joka sisältää UX-strategin, UX Designerin ja UI-suunnittelijan. Ratkaisee monimutkaisimmatkin käyttökokemushaasteet.",
-                buttonText: "Ota yhteyttä &rarr;",
+                title: "UX-projekti",
+                price: "alkaen 5000€",
+                description: "Kohdennettu UX-projekti SaaS-tuotteellesi, esim. auditointi, prototyypin suunnittelu tai olemassa olevan ominaisuuden parantaminen. Selkeä laajuus ja aikataulu.",
+                buttonText: "Pyydä tarjous &rarr;",
                 buttonHref: "/fi/contact"
             }
         ]}
-        note="*Alle viisi miljoonaa euroa vaihtaville pienille yrityksille tarjoamme UX Designer -palveluitamme alennettuun hintaan 95€/tunti. Hinnat ovat verottomia (alv 0%)."
+        note="*Hinnat ovat arvonlisäverottomia (alv 0%). Räätälöimme palvelun aina SaaS-yrityksesi tarpeisiin sopivaksi."
     />
 
     <!-- Schedule Meeting Section -->
     <section class="schedule-meeting" id="schedule-meeting">
         <div class="container">
             <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
-                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Varaa tapaaminen asiantuntijan kanssa</h2>
-                <p class="section__subtitle">Keskustellaan, miten UX Designer voi parantaa tuotteesi käyttökokemusta, edistää yrityksesi kasvua ja lisätä asiakaspitoa</p>
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Varaa maksuton tapaaminen</h2>
+                <p class="section__subtitle">Käydään läpi, miten ulkoistettu UX-suunnittelija voi auttaa SaaS-yritystäsi parantamaan tuotteen käyttökokemusta ja saavuttamaan liiketoimintatavoitteet.</p>
             </div>
             <div class="schedule-meeting__embed">
                 <CalendlyEmbed elementId="cal-inline-ux" calLink="aaltoyleva/kartoitustapaaminen" />
@@ -340,89 +340,89 @@ const pageDescription = "Ammattitaitoinen UX Designer parantaa digitaalisten tuo
     <section class="faq-section" id="faq">
         <div class="container">
             <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
-                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">UX Designer FAQ</h2>
-                <p class="section__subtitle">Vastauksia yleisimpiin UX Designer -palveluihin liittyviin kysymyksiin</p>
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Usein kysytyt kysymykset: UX-suunnittelija SaaS-yritykselle</h2>
+                <p class="section__subtitle">Vastauksia yleisimpiin kysymyksiin ulkoistetun UX-suunnittelijan palkkaamisesta SaaS-tuotetiimiin.</p>
             </div>
             <div class="faq-items">
                 <!-- FAQ Item 1 -->
                 <div class="faq-item">
                     <div class="faq-question-wrapper">
-                        <span class="faq-question">Mitä UX Designer tekee käytännössä?</span>
+                        <span class="faq-question">Mitä hyötyä ulkoistetusta UX-suunnittelijasta on SaaS-yritykselle?</span>
                         <span class="faq-toggle">+</span>
                     </div>
-                    <p class="faq-answer">UX-suunnittelu tarkoittaa käyttäjäkokemuksen kokonaisvaltaista suunnittelua. Se kattaa tuotteen käyttöliittymän, informaatioarkkitehtuurin, vuorovaikutustavat ja visuaalisen ilmeen. Tavoitteena on luoda helppokäyttöinen, intuitiivinen ja miellyttävä kokemus, joka vastaa käyttäjien tarpeisiin ja auttaa heitä saavuttamaan tavoitteensa tehokkaasti.</p>
+                    <p class="faq-answer">Ulkoistettu UX-suunnittelija tuo SaaS-tuotetiimiin erikoisosaamista ilman kokoaikaisen työntekijän kustannuksia ja sitoutumista. Saat joustavasti ammattilaisen parantamaan tuotteesi käytettävyyttä, nostamaan konversioastetta ja vähentämään asiakaspoistumaa. Tämä on erityisen hyödyllistä, kun oma tiimi yrittää hoitaa UX-suunnittelua muiden töiden ohessa.</p>
                 </div>
                 <!-- FAQ Item 2 -->
                 <div class="faq-item">
                      <div class="faq-question-wrapper">
-                        <span class="faq-question">Miten UX Designer vaikuttaa liiketoimintaan?</span>
+                        <span class="faq-question">Eikö tuotetiimimme voi hoitaa UX-suunnittelun itse?</span>
                         <span class="faq-toggle">+</span>
                     </div>
-                    <p class="faq-answer">Ammattitaitoisen UX Designerin työ vaikuttaa suoraan tulokseen: konversioasteet kasvavat (usein 3-5x), asiakaspoistuma vähenee (tyypillisesti 10-30% parannus), asiakaskohtainen elinkaariarvoa kasvaa, tukikulut laskevat ja suosittelumarkkinointi tehostuu. Kilpailluilla markkinoilla UX Designerin luoma ylivoimainen käyttökokemus on usein tärkein erottava tekijä markkinajohtajien ja muiden välillä.</p>
+                    <p class="faq-answer">Vaikka tuotetiimillä (kehittäjät, tuoteomistajat) on arvokasta tietoa, UX-suunnittelu on oma erikoisalansa. Satunnainen tai epäsystemaattinen lähestymistapa johtaa usein heikompaan käyttökokemukseen, kalliisiin virheisiin ja hukattuihin mahdollisuuksiin. Kokenut UX-suunnittelija tuo prosessiin järjestelmällisyyttä, käyttäjätutkimusta ja testattua tietoa.</p>
                 </div>
                 <!-- FAQ Item 3 -->
                  <div class="faq-item">
                      <div class="faq-question-wrapper">
-                        <span class="faq-question">Kuinka kauan UX Designer -projekti tyypillisesti kestää?</span>
+                        <span class="faq-question">Kuinka nopeasti UX-suunnittelija voi aloittaa ja tuottaa tuloksia?</span>
                         <span class="faq-toggle">+</span>
                     </div>
-                    <p class="faq-answer">Aikataulut vaihtelevat projektin laajuuden mukaan. UX Designerin tekemä kohdennettu UX-auditointi suosituksineen kestää tyypillisesti 2-3 viikkoa. Kattava uudelleensuunnittelu, joka sisältää käyttäjätutkimuksen, käyttäjäpolkujen mallinnuksen, prototyypit ja UI-suunnittelun, vaatii yleensä 6-12 viikkoa. Monimutkaiset tuotteet useilla käyttäjärooleilla saattavat vaatia pidempiä ajanjaksoja varmistaakseen, että kaikki käyttötapaukset optimoidaan.</p>
+                    <p class="faq-answer">Ulkoistettu UX-suunnittelija voi tyypillisesti aloittaa nopeasti, usein 1-2 viikon sisällä sopimuksesta. Ensimmäiset konkreettiset parannusehdotukset ja havainnot saadaan yleensä jo ensimmäisten viikkojen aikana, esimerkiksi UX-auditoinnin tai pikaisen käyttäjätestauksen kautta. Laajempien muutosten, kuten käyttöliittymän uudelleensuunnittelun, aikataulu riippuu SaaS-tuotteen monimutkaisuudesta.</p>
                 </div>
                 <!-- FAQ Item 4 -->
                 <div class="faq-item">
                      <div class="faq-question-wrapper">
-                        <span class="faq-question">Milloin on oikea aika palkata UX Designer?</span>
+                        <span class="faq-question">Milloin on oikea hetki harkita ulkoistettua UX-suunnittelijaa SaaS-yritykselle?</span>
                         <span class="faq-toggle">+</span>
                     </div>
-                    <p class="faq-answer">Parhaat ajat palkata UX Designer ovat: 1) Ennen uusien ominaisuuksien tai tuotteiden kehittämistä varmistaaksesi, että ne vastaavat todellisia käyttäjätarpeita, 2) Kun mittarit osoittavat kasvavaa asiakaspoistumaa tai vähenevää sitoutumista, 3) Kun tukipyynnöt jatkuvasti korostavat käytettävyysongelmia, 4) Kun valmistaudut laajentumaan tai menet uusille markkinoille, tai 5) Kun tuotteesi on kasvanut orgaanisesti ilman strategista UX-suunnittelua.</p>
+                    <p class="faq-answer">Harkitse ulkoistettua UX-suunnittelijaa, kun: 1) SaaS-tuotteesi käyttäjämäärä kasvaa, mutta sitoutuminen tai konversio ei seuraa perässä. 2) Saat palautetta käytettävyysongelmista tai tukipyyntöjen määrä on korkea. 3) Tuotetiimillä ei ole aikaa tai erikoisosaamista keskittyä UX-suunnitteluun. 4) Haluat varmistaa, että uudet ominaisuudet suunnitellaan heti käyttäjälähtöisesti, välttäen kalliit korjausliikkeet myöhemmin.</p>
                 </div>
                 <!-- FAQ Item 5 -->
                  <div class="faq-item">
                      <div class="faq-question-wrapper">
-                        <span class="faq-question">Miten mittaatte UX Designer -työn tuloksia?</span>
+                        <span class="faq-question">Miten ulkoistetun UX-suunnittelijan työ mitataan?</span>
                         <span class="faq-toggle">+</span>
                     </div>
-                    <p class="faq-answer">Seuraamme sekä ennakoivia että jälkikäteisiä indikaattoreita. Ennakoivia indikaattoreita ovat tehtävien suoritusasteet, virheprosentit ja käyttäjätyytyväisyyspisteet testauksesta. Jälkikäteisiä liiketoimintamittareita, joita UX Designer voi parantaa, ovat konversioasteen parannukset, vähentynyt asiakaspoistuma, vähentyneet tukipyynnöt, lisääntynyt ominaisuuksien käyttöönotto ja NPS/CSAT-pisteet. Määritämme perustason mittaukset ennen muutoksia laskeaksemme sijoitetun pääoman tuoton tarkasti.</p>
+                    <p class="faq-answer">Mittaamme työn vaikuttavuutta konkreettisilla mittareilla, jotka sovitaan yhdessä SaaS-yrityksesi kanssa. Näitä voivat olla esimerkiksi: konversioasteen kasvu, käytettävyystestien onnistumisprosentti, tehtävien suoritusaikojen lyheneminen, asiakastyytyväisyyden (NPS/CSAT) paraneminen, tai tukipyyntöjen väheneminen tietyissä tuotteen osissa. Vertaamme tuloksia lähtötilanteeseen.</p>
                 </div>
                 <!-- FAQ Item 6 -->
                  <div class="faq-item">
                      <div class="faq-question-wrapper">
-                        <span class="faq-question">Miten UX Designer ja UI Designer eroavat toisistaan?</span>
+                        <span class="faq-question">Mitä eroa on UX-suunnittelulla ja UI-suunnittelulla SaaS-kontekstissa?</span>
                         <span class="faq-toggle">+</span>
                     </div>
-                    <p class="faq-answer">UI Designer (käyttöliittymäsuunnittelija) keskittyy visuaaliseen käyttöliittymään, mikä on olennainen osa laajempaa UX-suunnittelun kokonaisuutta. UX Designer määrittää, miten tuote toimii ja tuntuu tutkimuksen, käyttäjäpolkujen ja informaatioarkkitehtuurin kautta. UI Designer tuo tämän eloon visuaalisesti käyttöliittymäelementtien, typografian, värin ja asettelun avulla. Erinomaiset tuotteet vaativat huippuosaamista molemmilla alueilla, jotka toimivat harmoniassa.</p>
+                    <p class="faq-answer">UX-suunnittelija (käyttäjäkokemussuunnittelija) keskittyy SaaS-tuotteen toimivuuteen, loogisuuteen ja helppokäyttöisyyteen – miten käyttäjä saavuttaa tavoitteensa. UI-suunnittelija (käyttöliittymäsuunnittelija) vastaa tuotteen visuaalisesta ilmeestä ja tuntumasta. Ulkoistettu UX-suunnittelijamme voi kattaa molemmat osa-alueet tai keskittyä puhtaasti UX-strategiaan ja -tutkimukseen, riippuen SaaS-yrityksesi tarpeista.</p>
                 </div>
                 <!-- FAQ Item 7 -->
                  <div class="faq-item">
                      <div class="faq-question-wrapper">
-                        <span class="faq-question">Mitä UX Designer -tutkimusprosessi sisältää?</span>
+                        <span class="faq-question">Miten UX-suunnittelija tekee yhteistyötä SaaS-tuotetiimimme kanssa?</span>
                         <span class="faq-toggle">+</span>
                     </div>
-                    <p class="faq-answer">UX Designer yhdistää tutkimuksessaan kvalitatiivisia ja kvantitatiivisia menetelmiä räätälöitynä erityisiin tarpeisiisi ja rajoituksiisi. Tämä sisältää tyypillisesti käyttäjähaastatteluja keskeisten segmenttien kanssa, nykyisten työnkulkujen käytettävyystestausta, analytiikan tarkastelua, asiakastukiticketien analyysia, kilpailuvertailua ja huolellisesti suunniteltuja kyselyitä. UX Designer keskittyy selvittämään paitsi mitä käyttäjät tekevät, myös miksi he tekevät niin.</p>
+                    <p class="faq-answer">Ulkoistettu UX-suunnittelija toimii tiiviissä yhteistyössä tuoteomistajien, kehittäjien ja muiden sidosryhmien kanssa. Osallistumme säännöllisiin palavereihin, työpajoihin ja jaamme suunnitelmat ja tutkimustulokset selkeästi. Tavoitteena on saumaton integraatio tiimiinne, jotta UX-näkökulma on mukana kaikissa tuotekehityksen vaiheissa, ilman että se kuormittaa tiimiänne liikaa.</p>
                 </div>
                 <!-- FAQ Item 8 -->
                  <div class="faq-item">
                      <div class="faq-question-wrapper">
-                        <span class="faq-question">Suunnitteleeko UX Designer mobiili- ja responsiivisia kokemuksia?</span>
+                        <span class="faq-question">Tarjoatteko myös mobiili- ja responsiivista UX-suunnittelua SaaS-tuotteille?</span>
                         <span class="faq-toggle">+</span>
                     </div>
-                    <p class="faq-answer">Ehdottomasti. UX Designerimme suunnittelevat kaikille olennaisille alustoille ja näyttökoille, joita käyttäjäsi tarvitsevat. Tämä tarkoittaa usein responsiivisia verkkosovelluksia, omistautuneita mobiilikokemukksia ja toisinaan natiivisovelluksia. UX Designer lähestyy jokaista alustaa strategisesti, optimoiden kokemuksen tiettyyn kontekstiin samalla ylläpitäen johdonmukaisuutta kaikkien kosketuspisteiden välillä.</p>
+                    <p class="faq-answer">Kyllä, ehdottomasti. Monet SaaS-tuotteet vaativat saumattoman käyttökokemuksen kaikilla laitteilla. UX-suunnittelijamme varmistavat, että SaaS-tuotteesi on helppokäyttöinen ja tehokas niin desktopilla, tabletilla kuin mobiilissakin, oli kyseessä sitten responsiivinen verkkosovellus tai erillinen mobiilisovellus.</p>
                 </div>
                 <!-- FAQ Item 9 -->
                  <div class="faq-item">
                      <div class="faq-question-wrapper">
-                        <span class="faq-question">Miten UX Designer työskentelee kehitystiimien kanssa?</span>
+                        <span class="faq-question">Mitä jos meillä on jo jonkinlainen design-järjestelmä tai brändiohjeisto?</span>
                         <span class="faq-toggle">+</span>
                     </div>
-                    <p class="faq-answer">UX Designerimme ovat hinoneet prosessinsa toimiakseen saumattomasti ketterien tiimien kanssa. Työskentelemme tyypillisesti 1-2 sprinttiä kehityksen edellä, tarjoten validoituja suunnitelmia valmiina toteutukseen. UX Designer osallistuu olennaisiin tapahtumiin, tarjoaa yksityiskohtaisia määrittelyjä ja resursseja, ja on käytettävissä kysymyksiä varten kehityksen aikana. Toteutuksen jälkeen tarkistamme rakennetun tuotteen varmistaaksemme suunnittelun tarkkuuden ja ehdottaaksemme parannuksia.</p>
+                    <p class="faq-answer">Loistavaa! Ulkoistettu UX-suunnittelija hyödyntää olemassa olevaa design-järjestelmäänne ja brändiohjeistoanne varmistaakseen johdonmukaisuuden. Voimme myös auttaa kehittämään tai täydentämään design-järjestelmäänne, jotta se palvelee paremmin SaaS-tuotteen skaalautuvuutta ja ylläpidettävyyttä. Tavoitteena ei ole keksiä pyörää uudelleen, vaan parantaa olemassa olevaa.</p>
                 </div>
                 <!-- FAQ Item 10 -->
                  <div class="faq-item">
                      <div class="faq-question-wrapper">
-                        <span class="faq-question">Voiko UX Designer työskennellä olemassa olevan design-järjestelmän kanssa?</span>
+                        <span class="faq-question">Miten hinnoittelu toimii ulkoistetulle UX-suunnittelijalle? Onko se sitovaa?</span>
                         <span class="faq-toggle">+</span>
                     </div>
-                    <p class="faq-answer">Kyllä, UX Designereillamme on kokemusta vakiintuneiden design-järjestelmien kanssa työskentelystä. Voimme hyödyntää olemassa olevaa järjestelmääsi varmistaaksemme johdonmukaisuuden samalla ehdottaen parannuksia tarvittaessa. Jos järjestelmässäsi on aukkoja tai se kaipaa päivitystä, UX Designerimme voi auttaa laajentamaan ja kehittämään sitä. Yrityksille, joilla ei ole muodollista design-järjestelmää, voimme auttaa kehittämään sellaisen, joka skaalautuu tuotteesi kasvun mukana.</p>
+                    <p class="faq-answer">Tarjoamme joustavia hinnoittelumalleja SaaS-yrityksille. Yleisin on kuukausipohjainen sopimus, jossa sovittu tuntimäärä UX-suunnittelua (esim. 25h, 50h, 75h/kk). Tämä antaa jatkuvuutta ilman pitkää sitoutumista – sopimukset ovat tyypillisesti irtisanottavissa kuukauden varoitusajalla. Tarjoamme myös projektikohtaista hinnoittelua selkeästi rajattuihin tarpeisiin. Keskustellaan tarpeistanne, niin räätälöimme sopivan ratkaisun.</p>
                 </div>
             </div>
         </div>
