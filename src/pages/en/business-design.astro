@@ -1,0 +1,439 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import HeroSection from '../../components/HeroSection.astro';
+import TrustmaryEmbed from '../../components/TrustmaryEmbed.astro';
+import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
+import NotForEveryone from '../../components/NotForEveryone.astro';
+import LogoWall from '../../components/LogoWall.astro';
+import TeamSection from '../../components/TeamSection.astro';
+import ProblemSolutionSection from '../../components/ProblemSolutionSection.astro';
+import PricingSection from '../../components/PricingSection.astro';
+
+const pageTitle = "Business Design Services for Strategic Growth | The Good Side";
+const pageDescription = "Strategic business design services that align your product with market needs, optimize processes, and drive sustainable growth. Expert solutions for measurable business impact.";
+---
+<BaseLayout title={pageTitle} description={pageDescription}>
+    <!-- Use HeroSection component -->
+    <HeroSection
+        title="Strategic business design for sustainable growth."
+        paragraph="We create business-aligned solutions that enhance your market positioning, streamline operations, and drive measurable business outcomes that impact your bottom line."
+        primaryButtonText="Schedule a meeting &rarr;"
+        primaryButtonHref="/en/contact"
+        secondaryButtonText="View references"
+        secondaryButtonHref="/en/references"
+        textOnly={true}
+        paddingTop="6rem"
+        paddingBottom="3rem"
+        textAlign="center"
+    />
+
+    <!-- Logo Wall Section -->
+    <section class="logo-wall">
+        <div class="container">
+            <h2 class="logo-wall__title">Trusted by forward-thinking businesses</h2>
+            <div class="logo-wall__grid">
+                <!-- The logos are intentionally duplicated below -->
+                <!-- First set -->
+                <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+                 <!-- Second set (duplicate) -->
+                 <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problems">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Sound familiar?</span>
+                <h2 class="section__title">Business Challenges Affecting Growth</h2>
+            </div>
+            <div class="problems__grid">
+                <article class="problem-card">
+                    <h3>Misaligned strategy</h3>
+                    <p>Business goals disconnected from market needs, causing wasted resources and missed opportunities.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Process inefficiency</h3>
+                    <p>Operational bottlenecks and poor workflows reducing productivity and impacting profitability.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Weak market positioning</h3>
+                    <p>Unclear value proposition making it difficult to differentiate from competitors and attract customers.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Us Section -->
+    <section class="hire-us">
+        <div class="container">
+            <h2 class="section__title">Business Design Experts Who Drive Results</h2>
+            <p class="section__subtitle">Meet the team that transforms business challenges into strategic opportunities</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/mikki.webp" alt="Mikki Aalto-Ylevä" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Mikki<br>Aalto-Ylevä</h3>
+                    <p class="team-member__title">Business Strategist</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/tuomas.webp" alt="Tuomas Kaartoluoma" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Tuomas<br>Kaartoluoma</h3>
+                    <p class="team-member__title">Business Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/duncan.webp" alt="Dũng Nguyen" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Dũng<br>Nguyen</h3>
+                    <p class="team-member__title">Service Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/aksel.webp" alt="Aksel Suokas" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Aksel<br>Suokas</h3>
+                    <p class="team-member__title">Experience Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Intro Section -->
+    <section class="solutions">
+        <div class="container">
+            <h2 class="section__title">How Strategic Business Design Drives Growth</h2>
+            <div class="solutions__grid">
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/positiointi.webp" alt="Market Research and Business Strategy">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Market Analysis</span>
+                            <span>Strategic Planning</span>
+                        </div>
+                        <h3>Market-Aligned Business Strategy</h3>
+                        <p>We analyze market dynamics and customer needs to design business strategies that identify genuine opportunities. Our market-focused approach ensures your resources target high-impact areas for sustainable growth.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/userjourney.webp" alt="Business Process Design">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Process Optimization</span>
+                            <span>Operational Efficiency</span>
+                        </div>
+                        <h3>Streamlined Business Processes</h3>
+                        <p>We redesign core business processes to eliminate inefficiencies and bottlenecks. Our methodical approach identifies and removes friction points, reducing costs while improving quality and delivery speed.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/ui.webp" alt="Value Proposition Design" style="transform: scale(1.3);">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Value Proposition</span>
+                            <span>Differentiation</span>
+                            <span>Positioning</span>
+                        </div>
+                        <h3>Compelling Market Positioning</h3>
+                        <p>We craft distinct value propositions that separate your business from competitors. By highlighting your unique strengths and aligning with customer needs, we help you stand out in crowded markets and attract ideal customers.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials__grid">
+                 <div class="trustmary-widget">
+                    <TrustmaryEmbed 
+                        title="Hear it from our customers?"
+                        subtitle="Real results from companies like yours"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Not For Everyone Section -->
+    <NotForEveryone 
+        title="Our Approach Isn't For Everyone"
+        subtitle="We might not be the right fit if..."
+        leftColumnItems={[
+            "You want quick fixes without addressing root causes",
+            "You prioritize short-term gains over sustainable growth",
+            "You prefer generic solutions over tailored strategies"
+        ]}
+        rightColumnItems={[
+            "Your budget is below €5,000 for business improvements",
+            "You're certain about market needs without validation data"
+        ]}
+    />
+
+    <!-- Problem/Solution Section (Using existing styles) -->
+    <ProblemSolutionSection
+        title="Real Business Design Challenges We Solve"
+        subtitle="Common issues our clients face and how we transform them."
+        solutionTitle="Solution"
+        items={[
+            {
+                problemTitle: "Declining Market Share",
+                problemDescription: "Your product or service is losing ground to competitors as market demands shift. Traditional approaches no longer resonate with customers, and growth has stagnated.",
+                solutionDescription: "We analyze market trends and customer needs to redesign your value proposition and positioning. Our strategic business design approach refocuses your offerings on high-value market segments with clear differentiation that drives new growth."
+            },
+            {
+                problemTitle: "Operational Inefficiency",
+                problemDescription: "Your business processes have grown complex and inefficient over time, leading to increased costs, slower delivery, and reduced profit margins.",
+                solutionDescription: "We map and redesign core business workflows using proven business design methodologies. By eliminating redundancies and optimizing critical processes, we help reduce operational costs while improving quality and speed to market."
+            },
+            {
+                problemTitle: "Misaligned Business Model",
+                problemDescription: "Your business model doesn't effectively capture the value you create, resulting in pricing challenges, revenue leakage, and difficulties scaling profitably.",
+                solutionDescription: "We reimagine your business model to better align with customer value perception and market dynamics. Our strategic approach ensures sustainable revenue streams, optimized pricing structures, and scalable growth opportunities."
+            }
+        ]}
+    />
+
+    <!-- Pricing Section -->
+    <PricingSection
+        title="Ready to Transform Your Business?"
+        subtitle="Choose the engagement model that fits your needs."
+        sectionId="pricing"
+        anchorId="pricing-anchor"
+        pricingOptions={[
+            {
+                title: "Strategic Design Partner",
+                price: "€110/hour",
+                description: "Expert business design services tailored to transform your organization into a market-leading operation.",
+                buttonText: "Start your transformation &rarr;",
+                buttonHref: "/en/contact"
+            },
+            {
+                title: "Dedicated Growth Team",
+                price: "Let's talk",
+                description: "A comprehensive team of business designers, strategists, and growth specialists working together to accelerate your success.",
+                buttonText: "Get a customized plan &rarr;",
+                buttonHref: "/en/contact"
+            }
+        ]}
+        note="*For companies with annual revenue under five million euros, we offer our services at a discounted rate of €95/hour. Prices are tax exclusive (VAT 0%)."
+    />
+
+    <!-- Schedule Meeting Section -->
+    <section class="schedule-meeting" id="schedule-meeting">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Book a Meeting</h2>
+                <p class="section__subtitle">Discover how strategic business design can drive growth and efficiency for your organization.</p>
+            </div>
+            <div class="schedule-meeting__embed">
+                <CalendlyEmbed elementId="cal-inline-index" calLink="aaltoyleva/kartoitustapaaminen" />
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Business Design Questions Answered</h2>
+                <p class="section__subtitle">Everything you need to know about improving your business operations</p>
+            </div>
+            <div class="faq-items">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question-wrapper">
+                        <span class="faq-question">What exactly is business design?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Business design applies design thinking to business strategy and operations. It combines market analysis, customer insights, and strategic planning to create business models, processes, and value propositions that drive growth. Unlike traditional business consulting, business design focuses on innovation through deep understanding of customers and markets.</p>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How does business design impact company performance?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Strategic business design directly impacts key performance metrics through improved market positioning (typically 15-30% revenue growth), streamlined operations (20-40% efficiency gains), stronger value propositions (increased conversion rates of 25-50%), and better resource allocation. In competitive markets, comprehensive business design is often the difference between market leaders and followers.</p>
+                </div>
+                <!-- FAQ Item 3 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">What timeline should we expect for business design projects?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Timelines vary based on project scope. A focused business process redesign typically takes 3-4 weeks. A comprehensive business model transformation involving market research, strategy development, and implementation planning usually requires 8-12 weeks. Complex organizations with multiple business units may require longer timeframes to ensure alignment across all operations.</p>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">When is the right time to invest in business design?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">The best times to invest in business design are: 1) When entering new markets or launching new offerings, 2) When facing increased competition or market disruption, 3) When operational inefficiencies are impacting margins, 4) When growth has plateaued despite marketing efforts, or 5) When your business model hasn't been strategically evaluated in over two years.</p>
+                </div>
+                <!-- FAQ Item 5 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How do you measure the ROI of business design improvements?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">We track both leading and lagging indicators. Leading indicators include customer acquisition costs, sales cycle length, and operational efficiency metrics. Lagging business metrics include revenue growth, profit margin improvements, market share gains, and customer lifetime value increases. We establish baseline measurements before changes to accurately calculate ROI.</p>
+                </div>
+                <!-- FAQ Item 6 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How does business design differ from traditional consulting?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Business design brings a human-centered, iterative approach compared to traditional consulting's more analytical methods. We focus on understanding customer needs deeply, prototyping solutions before full implementation, and creating innovative rather than incremental improvements. Our collaborative process ensures solutions are both strategically sound and operationally practical.</p>
+                </div>
+                <!-- FAQ Item 7 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">What does your research process involve?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Our business design research combines market analysis and customer understanding. This typically includes competitive landscape assessment, customer interviews across segments, financial performance analysis, process observation, stakeholder workshops, and business model evaluation. We focus on identifying both immediate opportunities and structural advantages that create sustainable growth.</p>
+                </div>
+                <!-- FAQ Item 8 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Do you work with both startups and established companies?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Yes, we design business solutions for organizations at all stages. For startups, we focus on market validation, business model design, and scalable operations. For established companies, we typically address market repositioning, operational optimization, and innovation systems. While the approaches differ, both benefit from our strategic business design methodology.</p>
+                </div>
+                <!-- FAQ Item 9 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How do you ensure organizational adoption of business changes?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Successful implementation is built into our business design process from day one. We involve key stakeholders throughout, ensuring buy-in. We develop clear implementation roadmaps with prioritized initiatives, identify champions within your organization, create practical transition plans, and provide change management support during rollout. Our goal is sustainable change, not just theoretical recommendations.</p>
+                </div>
+                <!-- FAQ Item 10 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Can business design complement our internal capabilities?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Absolutely. We're skilled at augmenting your existing business functions with our specialized expertise. We can work alongside your strategy, operations, or innovation teams, filling capability gaps while transferring knowledge. Our collaborative approach means we adapt to your organization's needs, whether that's leading transformative initiatives or providing focused support in specific areas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</BaseLayout>
+
+<style>
+    .team-grid {
+        display: flex;
+        flex-direction: column; /* Stack vertically by default (mobile) */
+        align-items: center; /* Center items horizontally in column layout */
+        gap: var(--spacing-lg);
+    }
+
+    .team-member {
+        text-align: center; /* Ensure text inside member card is centered */
+    }
+
+    /* Apply row layout for medium screens and up */
+    @media (min-width: 768px) {
+        .team-grid {
+            flex-direction: row; /* Arrange side-by-side */
+            justify-content: center; /* Center items horizontally in row layout */
+        }
+    }
+</style> 

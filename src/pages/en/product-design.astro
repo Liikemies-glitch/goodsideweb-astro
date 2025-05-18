@@ -1,0 +1,439 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import HeroSection from '../../components/HeroSection.astro';
+import TrustmaryEmbed from '../../components/TrustmaryEmbed.astro';
+import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
+import NotForEveryone from '../../components/NotForEveryone.astro';
+import LogoWall from '../../components/LogoWall.astro';
+import TeamSection from '../../components/TeamSection.astro';
+import ProblemSolutionSection from '../../components/ProblemSolutionSection.astro';
+import PricingSection from '../../components/PricingSection.astro';
+
+const pageTitle = "Product Design for SaaS Companies | The Good Side";
+const pageDescription = "Elevate your SaaS product with strategic product design that enhances user experience, drives engagement, and increases market share. Expert design that delivers measurable results.";
+---
+<BaseLayout title={pageTitle} description={pageDescription}>
+    <!-- Use HeroSection component -->
+    <HeroSection
+        title="Product design that drives innovation and market leadership."
+        paragraph="We create exceptional product designs that make your SaaS solution stand out—enhancing usability, building brand loyalty, and delivering tangible business growth."
+        primaryButtonText="Schedule a meeting &rarr;"
+        primaryButtonHref="/en/contact"
+        secondaryButtonText="View references"
+        secondaryButtonHref="/en/references"
+        textOnly={true}
+        paddingTop="6rem"
+        paddingBottom="3rem"
+        textAlign="center"
+    />
+
+    <!-- Logo Wall Section -->
+    <section class="logo-wall">
+        <div class="container">
+            <h2 class="logo-wall__title">Trusted by forward-thinking SaaS companies</h2>
+            <div class="logo-wall__grid">
+                <!-- The logos are intentionally duplicated below -->
+                <!-- First set -->
+                <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+                 <!-- Second set (duplicate) -->
+                 <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problems">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Sound familiar?</span>
+                <h2 class="section__title">Product Design Challenges for SaaS</h2>
+            </div>
+            <div class="problems__grid">
+                <article class="problem-card">
+                    <h3>Confusing interfaces</h3>
+                    <p>Product complexity leading to high learning curves and user abandonment.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Market differentiation</h3>
+                    <p>Difficulty standing out in a crowded marketplace with similar-looking products.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Stalled adoption</h3>
+                    <p>Low feature adoption despite significant development investment.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Us Section -->
+    <section class="hire-us">
+        <div class="container">
+            <h2 class="section__title">Product Design Experts For SaaS Success</h2>
+            <p class="section__subtitle">Meet the team that transforms digital products into market leaders</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/mikki.webp" alt="Mikki Aalto-Ylevä" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Mikki<br>Aalto-Ylevä</h3>
+                    <p class="team-member__title">SaaS Strategist</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/tuomas.webp" alt="Tuomas Kaartoluoma" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Tuomas<br>Kaartoluoma</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/duncan.webp" alt="Dũng Nguyen" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Dũng<br>Nguyen</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/aksel.webp" alt="Aksel Suokas" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Aksel<br>Suokas</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Intro Section -->
+    <section class="solutions">
+        <div class="container">
+            <h2 class="section__title">How Strategic Product Design Drives SaaS Growth</h2>
+            <div class="solutions__grid">
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/positiointi.webp" alt="Product Design Process">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>User Research</span>
+                            <span>Product Strategy</span>
+                        </div>
+                        <h3>User-Centered Design Approach</h3>
+                        <p>We ground our product design in comprehensive user research to create solutions that truly resonate with your target audience. This evidence-based approach ensures your product meets real market needs and solves genuine user problems.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/userjourney.webp" alt="User Flows and Prototyping">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Interaction Design</span>
+                            <span>Usability</span>
+                        </div>
+                        <h3>Intuitive Product Experiences</h3>
+                        <p>We design product interfaces and flows that feel natural and effortless, dramatically reducing learning curves. Our iterative prototyping process helps identify and eliminate friction points before development, saving both time and resources.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/ui.webp" alt="Visual Design and Interface" style="transform: scale(1.3);">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Visual Design</span>
+                            <span>Brand</span>
+                            <span>Differentiation</span>
+                        </div>
+                        <h3>Distinctive Visual Identity</h3>
+                        <p>We craft visually compelling product interfaces that reinforce your brand while enhancing usability. This distinctive approach helps your product stand out in the market, creating immediate recognition and stronger emotional connections with users.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials__grid">
+                 <div class="trustmary-widget">
+                    <TrustmaryEmbed 
+                        title="What Our Clients Say"
+                        subtitle="Real outcomes from SaaS companies like yours"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Not For Everyone Section -->
+    <NotForEveryone 
+        title="Our Approach Isn't For Everyone"
+        subtitle="We might not be the right fit if..."
+        leftColumnItems={[
+            "You want visual changes without strategic research",
+            "You prioritize speed over creating the right solution",
+            "You prefer a one-time fix over ongoing optimization"
+        ]}
+        rightColumnItems={[
+            "Your budget is below €5,000 for product improvements",
+            "You're certain about user needs without validation data"
+        ]}
+    />
+
+    <!-- Problem/Solution Section (Using existing styles) -->
+    <ProblemSolutionSection
+        title="Real Product Design Challenges We Solve"
+        subtitle="Common issues our clients face and how we transform them."
+        solutionTitle="Solution"
+        items={[
+            {
+                problemTitle: "Inconsistent User Experience",
+                problemDescription: "Your product has grown organically with different design approaches, creating confusion and making it difficult for users to learn new features.",
+                solutionDescription: "We create unified design systems and consistent interaction patterns that make your entire product feel cohesive. This reduces cognitive load, accelerates user learning, and makes each new feature more discoverable and adoptable."
+            },
+            {
+                problemTitle: "Low Feature Adoption",
+                problemDescription: "You've invested heavily in new features that users ignore or underutilize, limiting your product's value perception and potential revenue growth.",
+                solutionDescription: "We design discoverable, intuitive features grounded in user needs and supported by clear onboarding. Our approach ensures new capabilities are not just used but valued, increasing both adoption rates and perceived product value."
+            },
+            {
+                problemTitle: "Market Differentiation",
+                problemDescription: "Your product looks and functions similarly to competitors, making it difficult to stand out and command premium pricing in a crowded market.",
+                solutionDescription: "We craft a distinctive product experience that highlights your unique value proposition through both visual design and interaction patterns. This creates a memorable product identity that attracts and retains users in competitive markets."
+            }
+        ]}
+    />
+
+    <!-- Pricing Section -->
+    <PricingSection
+        title="Ready to Transform Your Product?"
+        subtitle="Choose the engagement model that fits your needs."
+        sectionId="pricing"
+        anchorId="pricing-anchor"
+        pricingOptions={[
+            {
+                title: "Strategic Design Partner",
+                price: "€110/hour",
+                description: "Expert product design services tailored to transform your SaaS solution into a market-leading experience.",
+                buttonText: "Start your transformation &rarr;",
+                buttonHref: "/en/contact"
+            },
+            {
+                title: "Dedicated Growth Team",
+                price: "Let's talk",
+                description: "A comprehensive team of product designers and growth specialists working together to accelerate your SaaS success.",
+                buttonText: "Get a customized plan &rarr;",
+                buttonHref: "/en/contact"
+            }
+        ]}
+        note="*For companies with annual revenue under five million euros, we offer our services at a discounted rate of €95/hour. Prices are tax exclusive (VAT 0%)."
+    />
+
+    <!-- Schedule Meeting Section -->
+    <section class="schedule-meeting" id="schedule-meeting">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Book a Meeting</h2>
+                <p class="section__subtitle">Discover how strategic product design can enhance user experience and drive growth for your SaaS business.</p>
+            </div>
+            <div class="schedule-meeting__embed">
+                <CalendlyEmbed elementId="cal-inline-index" calLink="aaltoyleva/kartoitustapaaminen" />
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Product Design Questions Answered</h2>
+                <p class="section__subtitle">Everything you need to know about improving your SaaS product</p>
+            </div>
+            <div class="faq-items">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question-wrapper">
+                        <span class="faq-question">What exactly is product design for SaaS?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Product design for SaaS encompasses the complete process of creating digital products that meet user needs while achieving business goals. It combines user research, strategic thinking, interaction design, and visual execution to deliver an effective and cohesive product experience optimized for subscription-based software.</p>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How does product design impact SaaS business metrics?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Well-executed product design directly influences key SaaS metrics through higher conversion rates (typically 2-4x improvement), increased user engagement, reduced churn (10-30% improvement), and lower support costs. In today's competitive SaaS environment, exceptional product design is often the primary differentiator between market leaders and competitors.</p>
+                </div>
+                <!-- FAQ Item 3 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">What timeline should we expect for a product redesign?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Timelines depend on project scope. A focused product design audit typically takes 2-3 weeks. A comprehensive product redesign involving user research, mapping, prototyping, and UI design usually requires 8-12 weeks. Complex products with multiple user roles may require longer timeframes to ensure all use cases are optimized for maximum effectiveness.</p>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">When is the right time to invest in product design?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">The best times to invest in product design are: 1) Before developing new features to ensure market fit, 2) When metrics show increasing churn or poor adoption rates, 3) When competing in crowded markets where differentiation is crucial, 4) When preparing to scale or enter new markets, or 5) When your product has evolved without strategic design direction.</p>
+                </div>
+                <!-- FAQ Item 5 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How do you measure the ROI of product design improvements?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">We track both qualitative and quantitative metrics. These include task completion rates, feature adoption rates, usability testing results, conversion improvements, reduced churn percentages, decreased support volume, increased engagement metrics, and improved NPS/CSAT scores. We establish baseline measurements before making changes to accurately calculate ROI.</p>
+                </div>
+                <!-- FAQ Item 6 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">What's the difference between product design and UX design?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Product design encompasses the entire product development process including strategic direction, while UX design is a component focused specifically on user experience. Product design considers business objectives, technical constraints, and market positioning alongside user needs, creating a holistic approach that aligns all aspects of product creation and optimization.</p>
+                </div>
+                <!-- FAQ Item 7 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">What does your product design process involve?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Our process typically includes discovery (understanding business goals and user needs), definition (creating product requirements and success metrics), ideation (exploring multiple design directions), prototyping (creating interactive models), validation (testing with users), refinement, and implementation support. We adapt this framework based on your specific project needs and constraints.</p>
+                </div>
+                <!-- FAQ Item 8 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Do you design for multiple platforms?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Yes, we design for all relevant platforms your users need. For SaaS products, this typically includes responsive web applications, mobile experiences, and occasionally native applications. Our approach ensures a consistent product experience while optimizing for the specific capabilities and constraints of each platform.</p>
+                </div>
+                <!-- FAQ Item 9 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How do you work with development teams?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">We've refined our process to integrate smoothly with development teams. We typically work 1-2 sprints ahead of development, delivering validated designs with detailed specifications. We participate in relevant planning sessions, provide implementation guidance, and remain available for questions during development to ensure the design vision is executed correctly.</p>
+                </div>
+                <!-- FAQ Item 10 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How do design systems benefit product development?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Design systems create consistent user experiences, accelerate development, and reduce technical debt. By establishing reusable components and clear guidelines, they eliminate redundant work, ensure brand consistency, and allow teams to focus on solving unique problems rather than recreating basic elements. This results in faster development cycles and more cohesive product experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</BaseLayout>
+
+<style>
+    .team-grid {
+        display: flex;
+        flex-direction: column; /* Stack vertically by default (mobile) */
+        align-items: center; /* Center items horizontally in column layout */
+        gap: var(--spacing-lg);
+    }
+
+    .team-member {
+        text-align: center; /* Ensure text inside member card is centered */
+    }
+
+    /* Apply row layout for medium screens and up */
+    @media (min-width: 768px) {
+        .team-grid {
+            flex-direction: row; /* Arrange side-by-side */
+            justify-content: center; /* Center items horizontally in row layout */
+        }
+    }
+</style> 

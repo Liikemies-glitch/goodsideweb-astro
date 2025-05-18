@@ -1,0 +1,439 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import HeroSection from '../../components/HeroSection.astro';
+import TrustmaryEmbed from '../../components/TrustmaryEmbed.astro';
+import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
+import NotForEveryone from '../../components/NotForEveryone.astro';
+import LogoWall from '../../components/LogoWall.astro';
+import TeamSection from '../../components/TeamSection.astro';
+import ProblemSolutionSection from '../../components/ProblemSolutionSection.astro';
+import PricingSection from '../../components/PricingSection.astro';
+
+const pageTitle = "Service Design for SaaS Companies | The Good Side";
+const pageDescription = "Elevate your SaaS product with expert service design that improves customer journeys, enhances satisfaction, and creates seamless interactions across all touchpoints.";
+---
+<BaseLayout title={pageTitle} description={pageDescription}>
+    <!-- Use HeroSection component -->
+    <HeroSection
+        title="Service design that transforms your customer experience."
+        paragraph="We create holistic service frameworks that connect all touchpoints of your SaaS ecosystem—turning every interaction into a competitive advantage that drives retention and loyalty."
+        primaryButtonText="Schedule a meeting &rarr;"
+        primaryButtonHref="/en/contact"
+        secondaryButtonText="View references"
+        secondaryButtonHref="/en/references"
+        textOnly={true}
+        paddingTop="6rem"
+        paddingBottom="3rem"
+        textAlign="center"
+    />
+
+    <!-- Logo Wall Section -->
+    <section class="logo-wall">
+        <div class="container">
+            <h2 class="logo-wall__title">Trusted by leading SaaS companies</h2>
+            <div class="logo-wall__grid">
+                <!-- The logos are intentionally duplicated below -->
+                <!-- First set -->
+                <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+                 <!-- Second set (duplicate) -->
+                 <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problems">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Sound familiar?</span>
+                <h2 class="section__title">Service Design Challenges</h2>
+            </div>
+            <div class="problems__grid">
+                <article class="problem-card">
+                    <h3>Fragmented experiences</h3>
+                    <p>Disconnected touchpoints creating frustrating journeys for your customers.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Invisible pain points</h3>
+                    <p>Critical friction in your service that drives customers away silently.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Technical-focused design</h3>
+                    <p>Systems built for internal efficiency rather than customer satisfaction.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Us Section -->
+    <section class="hire-us">
+        <div class="container">
+            <h2 class="section__title">Service Design Experts for SaaS</h2>
+            <p class="section__subtitle">Meet the team that creates seamless experiences users value and recommend</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/mikki.webp" alt="Mikki Aalto-Ylevä" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Mikki<br>Aalto-Ylevä</h3>
+                    <p class="team-member__title">Service Strategist</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/tuomas.webp" alt="Tuomas Kaartoluoma" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Tuomas<br>Kaartoluoma</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/duncan.webp" alt="Dũng Nguyen" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Dũng<br>Nguyen</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/aksel.webp" alt="Aksel Suokas" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Aksel<br>Suokas</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Intro Section -->
+    <section class="solutions">
+        <div class="container">
+            <h2 class="section__title">How Strategic Service Design Elevates Your SaaS</h2>
+            <div class="solutions__grid">
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/positiointi.webp" alt="Service Blueprint and Research">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Service Blueprints</span>
+                            <span>Journey Mapping</span>
+                        </div>
+                        <h3>Cohesive User Journeys</h3>
+                        <p>We map and optimize every touchpoint in your service ecosystem, creating seamless transitions between channels and features. This holistic approach eliminates friction points and creates a cohesive experience that feels intentional.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/userjourney.webp" alt="Service Design and Customer Experience">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Customer Experience</span>
+                            <span>Service Integration</span>
+                        </div>
+                        <h3>End-to-End Service Innovation</h3>
+                        <p>We reimagine your entire service offering from first touch to ongoing support, aligning each element with user needs and business goals. This creates memorable experiences that differentiate your brand and drive loyalty.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/ui.webp" alt="Service Design Systems" style="transform: scale(1.3);">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Service Design Systems</span>
+                            <span>Scalability</span>
+                            <span>Integration</span>
+                        </div>
+                        <h3>Front-Stage and Back-Stage Alignment</h3>
+                        <p>We design services that balance customer-facing experiences with operational efficiency. This ensures that delightful customer interactions are sustainable and consistently delivered, without creating internal complexity.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials__grid">
+                 <div class="trustmary-widget">
+                    <TrustmaryEmbed 
+                        title="Hear it from our customers?"
+                        subtitle="Real results from companies like yours"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Not For Everyone Section -->
+    <NotForEveryone 
+        title="Our Approach Isn't For Everyone"
+        subtitle="We might not be the right fit if..."
+        leftColumnItems={[
+            "You want aesthetic changes without strategic service thinking",
+            "You prioritize quick fixes over cohesive experiences",
+            "You prefer a one-time project over service evolution"
+        ]}
+        rightColumnItems={[
+            "Your budget is below €5,000 for service improvements",
+            "You're certain about user journeys without validation data"
+        ]}
+    />
+
+    <!-- Problem/Solution Section (Using existing styles) -->
+    <ProblemSolutionSection
+        title="Real Service Design Challenges We Solve"
+        subtitle="Common issues our clients face and how we transform them."
+        solutionTitle="Solution"
+        items={[
+            {
+                problemTitle: "Disconnected Customer Journey",
+                problemDescription: "Your service touchpoints feel disjointed as customers move between channels, creating confusion and friction that leads to abandonment and decreased satisfaction.",
+                solutionDescription: "We create unified service blueprints that connect all touchpoints into a cohesive journey. By mapping the entire experience, we identify and eliminate friction points, creating a seamless flow that feels intentional and builds customer loyalty."
+            },
+            {
+                problemTitle: "Misaligned Service Priorities",
+                problemDescription: "Your team struggles to balance customer-facing improvements with operational realities, resulting in promising experiences that can't be consistently delivered.",
+                solutionDescription: "We develop service systems that align front-stage experiences with back-stage operations. This ensures that every customer-facing innovation is operationally sustainable and can scale without compromising quality or team wellbeing."
+            },
+            {
+                problemTitle: "Reactive Service Evolution",
+                problemDescription: "Your service improvements are driven by complaints rather than proactive design, leaving you constantly fixing problems instead of creating differentiated experiences.",
+                solutionDescription: "We implement a strategic service design approach that anticipates user needs and elevates experiences beyond functional adequacy. This shifts you from reactive fixes to proactive innovation that delights customers and stands out in the market."
+            }
+        ]}
+    />
+
+    <!-- Pricing Section -->
+    <PricingSection
+        title="Ready to Transform Your Service Experience?"
+        subtitle="Choose the engagement model that fits your needs."
+        sectionId="pricing"
+        anchorId="pricing-anchor"
+        pricingOptions={[
+            {
+                title: "Strategic Design Partner",
+                price: "€110/hour",
+                description: "Expert service design consultation tailored to transform your SaaS offering into a cohesive, memorable experience.",
+                buttonText: "Start your transformation &rarr;",
+                buttonHref: "/en/contact"
+            },
+            {
+                title: "Dedicated Growth Team",
+                price: "Let's talk",
+                description: "A comprehensive team of service designers, researchers, and strategists working together to elevate your entire customer experience.",
+                buttonText: "Get a customized plan &rarr;",
+                buttonHref: "/en/contact"
+            }
+        ]}
+        note="*For companies with annual revenue under five million euros, we offer our services at a discounted rate of €95/hour. Prices are tax exclusive (VAT 0%)."
+    />
+
+    <!-- Schedule Meeting Section -->
+    <section class="schedule-meeting" id="schedule-meeting">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Book a Meeting</h2>
+                <p class="section__subtitle">Discover how service design can create cohesive experiences that differentiate your SaaS and drive customer loyalty.</p>
+            </div>
+            <div class="schedule-meeting__embed">
+                <CalendlyEmbed elementId="cal-inline-index" calLink="aaltoyleva/kartoitustapaaminen" />
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Service Design Questions Answered</h2>
+                <p class="section__subtitle">Everything you need to know about improving your SaaS service experience</p>
+            </div>
+            <div class="faq-items">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question-wrapper">
+                        <span class="faq-question">What is service design for SaaS companies?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Service design for SaaS creates cohesive experiences across all customer touchpoints—from marketing to onboarding, core product use, support, and renewal. It aligns every interaction with user needs while ensuring operational feasibility. Unlike traditional UX design that focuses mainly on the product interface, service design encompasses the entire ecosystem surrounding your SaaS offering.</p>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How does service design impact business metrics?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Strategic service design drives significant improvements in customer retention (typically 15-40%), customer lifetime value, NPS scores, and operational efficiency. By creating seamless journeys across all touchpoints, service design reduces support costs, accelerates onboarding, increases feature adoption, and strengthens brand advocacy—all contributing directly to sustainable growth and profitability.</p>
+                </div>
+                <!-- FAQ Item 3 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">What does the service design process involve?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Our service design process begins with comprehensive research across customer segments, moving to journey mapping and service blueprinting that visualize the entire experience. We then identify opportunity areas, develop service concepts, prototype key interactions, and create implementation roadmaps. Throughout, we balance customer needs with operational realities and business goals, ensuring viable solutions.</p>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">When should we invest in service design?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">The ideal times to invest in service design are: 1) When planning significant growth or market expansion, 2) When customer journey metrics show inconsistency across touchpoints, 3) When teams are struggling to deliver consistent quality at scale, 4) During digital transformation initiatives, or 5) When you're facing increased competition and need to differentiate through superior experience.</p>
+                </div>
+                <!-- FAQ Item 5 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How do you measure service design success?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">We measure success through both experience metrics and business outcomes. Experience metrics include journey completion rates, cross-channel satisfaction consistency, and effort scores. Business metrics include reduced customer support volume, increased retention, higher cross-sell/upsell rates, improved operational efficiency, and increased customer lifetime value—all traceable to specific service improvements.</p>
+                </div>
+                <!-- FAQ Item 6 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How is service design different from UX design?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">While UX design primarily focuses on the product interface, service design takes a broader view of the entire customer journey across all touchpoints. Service design connects digital experiences with human interactions, organizational processes, and physical environments. It also explicitly considers the "backstage" operations that enable customer-facing experiences, ensuring concepts are both desirable and feasible.</p>
+                </div>
+                <!-- FAQ Item 7 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">What tools do you use for service design?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">We employ a versatile toolkit including service blueprints, journey maps, stakeholder maps, system diagrams, touchpoint matrices, service prototypes, and backstage-frontstage analysis frameworks. For collaborative design, we use facilitated workshops with cross-functional teams. These tools help visualize complex systems, identify opportunities, and align stakeholders around a shared vision of the desired service experience.</p>
+                </div>
+                <!-- FAQ Item 8 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How long does a service design project take?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Timeline varies based on scope and complexity. A focused service assessment with recommendations typically takes 3-4 weeks. A comprehensive service redesign involving research, journey mapping, concept development, and implementation planning usually requires 8-16 weeks. Implementation timelines depend on the changes required and your organization's capacity, but we structure work to deliver value incrementally.</p>
+                </div>
+                <!-- FAQ Item 9 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How do you handle integration with existing systems?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">We take a pragmatic approach that balances ideal experience with practical constraints. We start by understanding current systems and constraints, then design solutions that can be implemented incrementally. We identify quick wins that work within existing limitations while creating a longer-term evolution plan. Throughout implementation, we collaborate closely with development and operations teams to ensure solutions are technically feasible.</p>
+                </div>
+                <!-- FAQ Item 10 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Do you work with internal teams during service design?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Yes, collaborative design with your internal teams is essential to our approach. We engage stakeholders from across your organization—product, marketing, support, sales, operations—to ensure diverse perspectives are incorporated and to build ownership of the solutions. This collaborative process not only creates better service designs but also facilitates smoother implementation and builds service design capacity within your team.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</BaseLayout>
+
+<style>
+    .team-grid {
+        display: flex;
+        flex-direction: column; /* Stack vertically by default (mobile) */
+        align-items: center; /* Center items horizontally in column layout */
+        gap: var(--spacing-lg);
+    }
+
+    .team-member {
+        text-align: center; /* Ensure text inside member card is centered */
+    }
+
+    /* Apply row layout for medium screens and up */
+    @media (min-width: 768px) {
+        .team-grid {
+            flex-direction: row; /* Arrange side-by-side */
+            justify-content: center; /* Center items horizontally in row layout */
+        }
+    }
+</style> 

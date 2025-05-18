@@ -35,11 +35,15 @@ function getLocalizedPath(path: string): string {
 // Define service pages with their paths
 const servicePages = [
   { path: '/product-positioning', translationKey: 'footer.productPositioning' as keyof typeof ui[typeof defaultLang] },
+  { path: '/product-design', translationKey: 'footer.productDesign' as keyof typeof ui[typeof defaultLang] },
   { path: '/ux-design', translationKey: 'footer.uxDesign' as keyof typeof ui[typeof defaultLang] },
+  { path: '/ui-ux-design', translationKey: 'footer.uiUxDesign' as keyof typeof ui[typeof defaultLang] },
   { path: '/user-research', translationKey: 'footer.userResearch' as keyof typeof ui[typeof defaultLang] },
   { path: '/interaction-data-analysis', translationKey: 'footer.interactionDataAnalysis' as keyof typeof ui[typeof defaultLang] },
   { path: '/ux-designer', translationKey: 'footer.uxDesigner' as keyof typeof ui[typeof defaultLang] },
-  { path: '/saas-ux-designer', translationKey: 'footer.saasUxDesigner' as keyof typeof ui[typeof defaultLang] }
+  { path: '/saas-ux-designer', translationKey: 'footer.saasUxDesigner' as keyof typeof ui[typeof defaultLang] },
+  { path: '/business-design', translationKey: 'footer.businessDesign' as keyof typeof ui[typeof defaultLang] },
+  { path: '/service-design', translationKey: 'footer.serviceDesign' as keyof typeof ui[typeof defaultLang] }
   // Add new service pages here in the future
 ];
 ---

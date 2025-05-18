@@ -1,0 +1,438 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import HeroSection from '../../components/HeroSection.astro';
+import TrustmaryEmbed from '../../components/TrustmaryEmbed.astro';
+import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
+import NotForEveryone from '../../components/NotForEveryone.astro';
+import LogoWall from '../../components/LogoWall.astro';
+import TeamSection from '../../components/TeamSection.astro';
+import ProblemSolutionSection from '../../components/ProblemSolutionSection.astro';
+import PricingSection from '../../components/PricingSection.astro';
+
+const pageTitle = "Business Design SaaS-yrityksille | The Good Side";
+const pageDescription = "Tehokkaalla Business Designilla varmistat SaaS-tuotteesi liiketoiminnallisen kannattavuuden. Autamme luomaan kilpailukykyisiä ja käyttäjäkeskeisiä liiketoimintamalleja.";
+---
+<BaseLayout title={pageTitle} description={pageDescription}>
+    <!-- Use HeroSection component -->
+    <HeroSection
+        title="Business design, joka tuo tulosta."
+        paragraph="Autamme sinua suunnittelemaan liiketoimintasi, joka yhdistää käyttäjätarpeet ja kannattavan kasvun. Näin rakennat tuotteita, jotka menestyvät markkinoilla."
+        primaryButtonText="Sovi tapaaminen &rarr;"
+        primaryButtonHref="/fi/contact"
+        secondaryButtonText="Näytä referenssit"
+        secondaryButtonHref="/fi/references"
+        textOnly={true}
+        paddingTop="6rem"
+        paddingBottom="3rem"
+        textAlign="center"
+    />
+
+    <!-- Logo Wall Section -->
+    <section class="logo-wall">
+        <div class="container">
+            <h2 class="logo-wall__title">Business design osana menestystarinaa</h2>
+            <div class="logo-wall__grid">
+                <!-- The logos are intentionally duplicated below -->
+                <!-- First set -->
+                <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+                 <!-- Second set (duplicate) -->
+                 <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problems">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Kuulostaako tutulta?</span>
+                <h2 class="section__title">Business design haasteet</h2>
+            </div>
+            <div class="problems__grid">
+                <article class="problem-card">
+                    <h3>Epäselvä arvolupaus</h3>
+                    <p>SaaS-tuotteesi arvolupaus ei resonoi asiakkaiden kanssa, mikä johtaa heikkoon konversioon ja vaikeuksiin kommunikoida tuotteen hyötyjä selkeästi.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Tehoton hinnoittelu</h3>
+                    <p>Hinnoittelumallisi ei maksimoi asiakashankintaa tai tuottoa, mikä johtaa matalampiin tuloihin ja hitaampaan kasvuun.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Heikko tuote-markkina-sopivuus</h3>
+                    <p>Tuotteesi ei vastaa riittävän hyvin markkinan tarpeisiin, mikä johtaa korkeaan churniin ja hitaaseen käyttäjämäärän kasvuun.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Us Section -->
+    <section class="hire-us">
+        <div class="container">
+            <h2 class="section__title">Business design asiantuntijat</h2>
+            <p class="section__subtitle">Palkkaa meidät suunnittelemaan liiketoimintamalli, joka nostaa SaaS-tuotteesi uudelle tasolle.</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/mikki.webp" alt="Mikki Aalto-Ylevä" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Mikki<br>Aalto-Ylevä</h3>
+                    <p class="team-member__title">SaaS-spesialisti</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/tuomas.webp" alt="Tuomas Kaartoluoma" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Tuomas<br>Kaartoluoma</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/duncan.webp" alt="Dũng Nguyen" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Dũng<br>Nguyen</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/aksel.webp" alt="Aksel Suokas" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Aksel<br>Suokas</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Intro Section -->
+    <section class="solutions">
+        <div class="container">
+            <h2 class="section__title">Business design tuo liiketoimintahyödyt</h2>
+            <div class="solutions__grid">
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/positiointi.webp" alt="Arvolupaus ja Positiointi">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Arvolupaus</span>
+                            <span>Positiointi</span>
+                        </div>
+                        <h3>Selkeä arvolupaus ja tehokas positiointi</h3>
+                        <p>Kirkastamme tuotteesi arvolupauksen ja asetamme sen strategisesti markkinoille. Selkeä positiointi erottaa sinut kilpailijoista ja auttaa asiakkaitasi ymmärtämään, miksi juuri sinun tuotteesi ratkaisee heidän ongelmansa.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/userjourney.webp" alt="Liiketoimintamallit ja Hinnoittelu">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Liiketoimintamallit</span>
+                            <span>Hinnoittelustrategia</span>
+                        </div>
+                        <h3>Optimoidut liiketoimintamallit</h3>
+                        <p>Suunnittelemme ja optimoimme SaaS-liiketoimintamallisi ja hinnoittelustrategiasi. Luomme mallit, jotka maksimoivat asiakasarvon ja liiketoimintasi kannattavuuden, mikä johtaa korkeampaan keskimääräiseen asiakastuottoon.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/ui.webp" alt="Tuotekehitys ja Go-to-Market" style="transform: scale(1.3);">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Tuotekehitys</span>
+                            <span>Go-to-Market</span>
+                            <span>Kasvu</span>
+                        </div>
+                        <h3>Tehokas go-to-market strategia</h3>
+                        <p>Kehitämme tuotteellesi kokonaisvaltaisen go-to-market strategian, joka yhdistää käyttäjäkeskeisen tuotekehityksen ja tehokkaat myynti- ja markkinointikanavat. Tämä varmistaa nopean markkinapenetraation ja kestävän kasvun.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials__grid">
+                 <div class="trustmary-widget">
+                    <TrustmaryEmbed 
+                        title="Mitä asiakkaamme sanovat?"
+                        subtitle="Lue mitä asiakkaamme kertovat kokemuksistaan"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Not For Everyone Section -->
+    <NotForEveryone 
+        title="Palvelumme ei sovi kaikille"
+        subtitle="Emme ehkä ole oikea vaihtoehto jos..."
+        leftColumnItems={[
+            "Et ole valmis kyseenalaistamaan nykyistä liiketoimintamalliasi",
+            "Haluat vain nopean korjauksen ilman syvällistä strategista ajattelua",
+            "Et näe arvoa datapohjaisessa päätöksenteossa"
+        ]}
+        rightColumnItems={[
+            "Budjettisi on alle 5000€ business design -projektiin",
+            "Uskot, että markkinasi on jo täysin selvä eikä vaadi tutkimusta"
+        ]}
+    />
+
+    <!-- Problem/Solution Section (Using existing styles) -->
+    <ProblemSolutionSection
+        title="Business design haasteet"
+        subtitle="Yleisimmät business design haasteet ja miten autamme niissä."
+        items={[
+            {
+                problemTitle: "Epäselvä arvolupaus ja markkinapositio",
+                problemDescription: "SaaS-tuotteesi ei erotu kilpailijoista selkeästi ja asiakkailla on vaikeuksia ymmärtää, miksi valita juuri sinun tuotteesi. Tämä johtaa heikkoon konversioon ja pitkiin myyntisykleihin.",
+                solutionDescription: "Kehitämme selkeän ja houkuttelevan arvolupauksen sekä markkinaposition, jotka erottavat sinut kilpailijoista. Perustamme nämä todelliseen asiakasymmärrykseen ja markkinatutkimukseen, mikä parantaa konversiota ja lyhentää myyntisyklejä."
+            },
+            {
+                problemTitle: "Tehoton hinnoittelu ja kassavirta",
+                problemDescription: "Hinnoittelumallisi ei maksimoi tuottoa tai asiakashankintaa. Tämä johtaa matalampaan keskimääräiseen asiakastuottoon, heikompaan kassavirtaan ja vaikeuksiin skaalata kannattavasti.",
+                solutionDescription: "Suunnittelemme dataan perustuvan hinnoittelustrategian, joka optimoi tuottosi ja asiakashankinnan. Testaamme eri vaihtoehtoja löytääksemme parhaan mallin, joka maksimoi arvon sekä asiakkaillesi että liiketoiminnallesi."
+            },
+            {
+                problemTitle: "Heikko tuote-markkina-sopivuus ja korkea churn",
+                problemDescription: "Tuotteesi ei vastaa riittävän hyvin markkinan tarpeisiin, mikä johtaa heikkoon käyttäjätyytyväisyyteen, korkeaan asiakaspoistumaan ja hitaaseen kasvuun. Tuotekehitys ei perustu selkeään asiakasymmärrykseen.",
+                solutionDescription: "Toteutamme perusteellisen markkina- ja asiakastutkimuksen tunnistaaksemme todelliset tarpeet ja kipupisteet. Muotoilemme tuote- ja liiketoimintastrategian, joka ratkaisee nämä aidot ongelmat, parantaen asiakaspitoa ja nopeuttaen kasvua."
+            }
+        ]}
+    />
+
+    <!-- Pricing Section -->
+    <PricingSection
+        title="Valmiina skaalaamaan?"
+        subtitle="Tutustu hinnoitteluvaihtoehtoihimme."
+        sectionId="hinnat"
+        anchorId="hinnat-ankkuri"
+        pricingOptions={[
+            {
+                title: "Strateginen design-kumppani",
+                price: "110€/tunti",
+                description: "Asiantuntevaa SaaS-tuotteiden suunnittelua, joka auttaa tekemään tuotteestasi markkinajohtajan.",
+                buttonText: "Aloita kasvumatkasi &rarr;",
+                buttonHref: "/fi/contact"
+            },
+            {
+                title: "Strateginen kasvutiimi",
+                price: "Kysy tarjous",
+                description: "Sitoutunut tiimi SaaS-kasvun asiantuntijoita menestyksesi vauhdittamiseksi.",
+                buttonText: "Pyydä räätälöity suunnitelma &rarr;",
+                buttonHref: "/fi/contact"
+            }
+        ]}
+        note="*Alle viiden miljoonan euron liikevaihdon yrityksille tarjoamme palveluitamme alennettuun hintaan 95€/tunti. Hinnat ovat verottomia (alv 0%)."
+    />
+
+    <!-- Schedule Meeting Section -->
+    <section class="schedule-meeting" id="schedule-meeting">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Varaa tapaaminen</h2>
+                <p class="section__subtitle">Keskustellaan, miten business design voi auttaa SaaS-tuotettasi menestymään ja kasvamaan nopeammin.</p>
+            </div>
+            <div class="schedule-meeting__embed">
+                <CalendlyEmbed elementId="cal-inline-index" calLink="aaltoyleva/kartoitustapaaminen" />
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Usein kysytyt kysymykset</h2>
+                <p class="section__subtitle">Vastauksia yleisimpiin business designiin liittyviin kysymyksiin</p>
+            </div>
+            <div class="faq-items">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question-wrapper">
+                        <span class="faq-question">Mitä business design tarkoittaa SaaS-yritykselle?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Business design SaaS-yritykselle on liiketoimintamallien, arvolupausten ja strategioiden suunnittelua käyttäjäkeskeisellä lähestymistavalla. Se yhdistää liiketoiminnan tavoitteet ja käyttäjien tarpeet luodakseen kannattavia ja kestäviä SaaS-tuotteita ja -palveluita, jotka tuottavat arvoa sekä asiakkaille että yritykselle.</p>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miksi business design on tärkeää SaaS-yrityksille?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Business design on kriittistä SaaS-yrityksille, koska se auttaa luomaan liiketoimintamalleja, jotka ovat sekä käyttäjäystävällisiä että taloudellisesti kannattavia. Se varmistaa, että tuotteet ratkaisevat oikeita ongelmia, hinnoittelu on optimaalista, ja go-to-market strategiat ovat tehokkaita - kaikki nämä ovat elintärkeitä SaaS-yrityksen kasvulle ja menestykselle.</p>
+                </div>
+                <!-- FAQ Item 3 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Kuinka kauan business design -projekti tyypillisesti kestää?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Business design -projektin kesto vaihtelee sen laajuuden mukaan. Liiketoimintamallin tai hinnoittelustrategian uudistaminen voi kestää 4-8 viikkoa. Kokonaisvaltainen business design -prosessi, joka sisältää markkina-analyysin, arvolupauksen kehittämisen ja go-to-market strategian, kestää tyypillisesti 8-16 viikkoa.</p>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Milloin business designiin kannattaa panostaa?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Business designiin kannattaa panostaa erityisesti: 1) uutta SaaS-tuotetta tai merkittävää pivottia suunniteltaessa, 2) kun nykyinen liiketoimintamalli ei tuota haluttuja tuloksia, 3) kun tavoitellaan uusia markkinasegmenttejä, 4) kun hinnoittelustrategia kaipaa optimointia, tai 5) kun valmistaudutaan rahoituskierrokseen tai yrityskauppaan.</p>
+                </div>
+                <!-- FAQ Item 5 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten mittaatte business designin onnistumista?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Business designin onnistumista mitataan sekä kvantitatiivisilla että kvalitatiivisilla mittareilla. Näitä voivat olla esimerkiksi: asiakashankinnan kustannukset (CAC), keskimääräinen asiakastuotto (ARPU), konversio- ja aktivointiprosentit, asiakaspysyvyys ja NPS, tuottoennusteet sekä markkinapenetraation aste määritetyissä segmenteissä.</p>
+                </div>
+                <!-- FAQ Item 6 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten business design eroaa perinteisestä liiketoimintastrategiasta?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Business design yhdistää perinteisen liiketoimintastrategian käyttäjäkeskeiseen designajatteluun. Siinä missä perinteinen strategia keskittyy usein ensisijaisesti liiketoiminnan tavoitteisiin ja markkinatrendeihin, business design lähtee liikkeelle käyttäjien tarpeista ja hakee tasapainoa käyttäjäarvon ja liiketoiminta-arvon välille iteratiivisella prosessilla.</p>
+                </div>
+                <!-- FAQ Item 7 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Sisältyykö markkina-analyysi palveluihinne?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Kyllä, kattava markkina-analyysi on keskeinen osa business design -prosessiamme. Tutkimme kohdemarkkinaa, kilpailijakenttää, asiakassegmenttejä ja markkinatrendejä luodaksemme vahvan pohjan business design -ratkaisuille. Hyödynnämme sekä kvalitatiivisia että kvantitatiivisia tutkimusmenetelmiä.</p>
+                </div>
+                <!-- FAQ Item 8 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Soveltuuko business design eri kokoisille SaaS-yrityksille?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Kyllä, business design soveltuu kaikenkokoisille SaaS-yrityksille, mutta fokus vaihtelee. Startupit hyötyvät erityisesti tuote-markkina-sopivuuden löytämisestä ja selkeästä arvolupauksesta. Kasvuvaiheen yritykset taas usein kaipaavat skaalautuvia liiketoimintamalleja ja hinnoittelustrategioita. Vakiintuneet yritykset hyötyvät liiketoiminnan innovaatioista ja uusien markkinasegmenttien avaamisesta.</p>
+                </div>
+                <!-- FAQ Item 9 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Kuinka business design integroituu tuotekehitykseen?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Business design toimii sillanrakentajana liiketoimintatavoitteiden ja tuotekehityksen välillä. Se varmistaa, että kehitettävät ominaisuudet ja toiminnallisuudet ovat linjassa sekä käyttäjien tarpeiden että liiketoimintatavoitteiden kanssa. Tyypillisesti integroimme business designin tuotekehitykseen tiiviillä yhteistyöllä tuotejohdon ja kehitystiimin kanssa.</p>
+                </div>
+                <!-- FAQ Item 10 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten business design auttaa rahoituksen hankkimisessa?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Hyvin suunniteltu business design vahvistaa merkittävästi rahoituspositiotasi. Se tarjoaa selkeän ja houkuttelevan tarinan sijoittajille, osoittaa markkinamahdollisuuden koon, valitun strategian perustelut ja kasvupotentiaalin. Lisäksi se näyttää, että ymmärrät syvällisesti markkinasi, kilpailuympäristön ja liiketoimintamallin kannattavuuden, mikä lisää sijoittajien luottamusta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</BaseLayout>
+
+<style>
+    .team-grid {
+        display: flex;
+        flex-direction: column; /* Stack vertically by default (mobile) */
+        align-items: center; /* Center items horizontally in column layout */
+        gap: var(--spacing-lg);
+    }
+
+    .team-member {
+        text-align: center; /* Ensure text inside member card is centered */
+    }
+
+    /* Apply row layout for medium screens and up */
+    @media (min-width: 768px) {
+        .team-grid {
+            flex-direction: row; /* Arrange side-by-side */
+            justify-content: center; /* Center items horizontally in row layout */
+        }
+    }
+</style> 

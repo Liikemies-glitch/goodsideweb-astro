@@ -1,0 +1,439 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import HeroSection from '../../components/HeroSection.astro';
+import TrustmaryEmbed from '../../components/TrustmaryEmbed.astro';
+import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
+import NotForEveryone from '../../components/NotForEveryone.astro';
+import LogoWall from '../../components/LogoWall.astro';
+import TeamSection from '../../components/TeamSection.astro';
+import ProblemSolutionSection from '../../components/ProblemSolutionSection.astro';
+import PricingSection from '../../components/PricingSection.astro';
+
+const pageTitle = "Expert UI/UX Design Services | The Good Side";
+const pageDescription = "Elevate your product with professional UI/UX design that enhances user satisfaction and drives business growth. Data-driven design solutions for measurable results.";
+---
+<BaseLayout title={pageTitle} description={pageDescription}>
+    <!-- Use HeroSection component -->
+    <HeroSection
+        title="UI/UX design that converts and retains."
+        paragraph="We craft beautiful, intuitive interfaces with strategic user experiences that transform your product into a competitive advantage—boosting engagement and retention."
+        primaryButtonText="Schedule a meeting &rarr;"
+        primaryButtonHref="/en/contact"
+        secondaryButtonText="View references"
+        secondaryButtonHref="/en/references"
+        textOnly={true}
+        paddingTop="6rem"
+        paddingBottom="3rem"
+        textAlign="center"
+    />
+
+    <!-- Logo Wall Section -->
+    <section class="logo-wall">
+        <div class="container">
+            <h2 class="logo-wall__title">Trusted by leading tech companies</h2>
+            <div class="logo-wall__grid">
+                <!-- The logos are intentionally duplicated below -->
+                <!-- First set -->
+                <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+                 <!-- Second set (duplicate) -->
+                 <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problems">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Common challenges</span>
+                <h2 class="section__title">UI/UX Problems Hurting Growth</h2>
+            </div>
+            <div class="problems__grid">
+                <article class="problem-card">
+                    <h3>Confusing interfaces</h3>
+                    <p>Complicated design causing user frustration and high abandonment rates.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Inconsistent experience</h3>
+                    <p>Disjointed UI elements creating a fragmented user journey that erodes trust.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Form over function</h3>
+                    <p>Prioritizing aesthetics without considering usability and core user needs.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Us Section -->
+    <section class="hire-us">
+        <div class="container">
+            <h2 class="section__title">UI/UX Design Experts at Your Service</h2>
+            <p class="section__subtitle">Meet the team that transforms interfaces into compelling user experiences</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/mikki.webp" alt="Mikki Aalto-Ylevä" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Mikki<br>Aalto-Ylevä</h3>
+                    <p class="team-member__title">UX Strategist</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/tuomas.webp" alt="Tuomas Kaartoluoma" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Tuomas<br>Kaartoluoma</h3>
+                    <p class="team-member__title">UI Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/duncan.webp" alt="Dũng Nguyen" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Dũng<br>Nguyen</h3>
+                    <p class="team-member__title">UI/UX Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/aksel.webp" alt="Aksel Suokas" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Aksel<br>Suokas</h3>
+                    <p class="team-member__title">UX Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Intro Section -->
+    <section class="solutions">
+        <div class="container">
+            <h2 class="section__title">How UI/UX Design Drives Business Results</h2>
+            <div class="solutions__grid">
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/positiointi.webp" alt="UI/UX Research and Strategy">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>User Research</span>
+                            <span>UX Strategy</span>
+                        </div>
+                        <h3>Data-Driven Design Decisions</h3>
+                        <p>We base every design decision on solid user research and behavior analysis, ensuring your interface addresses actual user needs. This strategic approach reduces development waste and increases user satisfaction from day one.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/userjourney.webp" alt="User Journey Mapping">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>UI Design</span>
+                            <span>Interaction Design</span>
+                        </div>
+                        <h3>Intuitive Interface Systems</h3>
+                        <p>We create visually stunning interfaces that guide users naturally through your product. Our design systems maintain consistency across all touchpoints while providing the flexibility to evolve with your business needs.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/ui.webp" alt="UI/UX Implementation" style="transform: scale(1.3);">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Usability</span>
+                            <span>Conversion</span>
+                            <span>Retention</span>
+                        </div>
+                        <h3>Conversion-Optimized Experiences</h3>
+                        <p>We design experiences that not only look great but achieve business goals. Through strategic placement of UI elements, intuitive navigation patterns, and carefully crafted calls-to-action, we create interfaces that convert and retain users.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials__grid">
+                 <div class="trustmary-widget">
+                    <TrustmaryEmbed 
+                        title="UI/UX Success Stories"
+                        subtitle="See how our design expertise transforms businesses"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Not For Everyone Section -->
+    <NotForEveryone 
+        title="Our Approach Isn't For Everyone"
+        subtitle="We might not be the right fit if..."
+        leftColumnItems={[
+            "You want quick fixes without strategic thinking",
+            "You prioritize trendy designs over usability",
+            "You need a one-off project without ongoing optimization"
+        ]}
+        rightColumnItems={[
+            "Your budget is below €5,000 for UI/UX improvements",
+            "You already have all the user insights needed"
+        ]}
+    />
+
+    <!-- Problem/Solution Section (Using existing styles) -->
+    <ProblemSolutionSection
+        title="UI/UX Design Challenges We Solve"
+        subtitle="Real problems our clients face and our strategic approach to solving them."
+        solutionTitle="Solution"
+        items={[
+            {
+                problemTitle: "Low Conversion Rates",
+                problemDescription: "Your current design creates friction in the user journey, resulting in high bounce rates and low conversion metrics despite quality traffic.",
+                solutionDescription: "We implement conversion-focused UI/UX that guides users naturally toward desired actions. Our user-tested designs eliminate friction points, clarify value propositions, and optimize call-to-action elements to dramatically improve conversion rates."
+            },
+            {
+                problemTitle: "High User Abandonment",
+                problemDescription: "Users start using your product but quickly abandon it due to confusing interfaces, unclear navigation, or frustrating workflows.",
+                solutionDescription: "We redesign the core user flows based on behavior analysis and usability testing. Our intuitive navigation, clear visual hierarchy, and streamlined processes reduce cognitive load and keep users engaged throughout their journey."
+            },
+            {
+                problemTitle: "Design Inconsistency",
+                problemDescription: "Your product has grown without a cohesive design system, resulting in inconsistent visuals and interactions that confuse users and slow development.",
+                solutionDescription: "We create a comprehensive UI/UX design system with modular components, consistent patterns, and clear guidelines. This system improves user experience, speeds up development, and ensures quality as your product evolves."
+            }
+        ]}
+    />
+
+    <!-- Pricing Section -->
+    <PricingSection
+        title="UI/UX Design Investment"
+        subtitle="Tailored design solutions for your business needs."
+        sectionId="pricing"
+        anchorId="pricing-anchor"
+        pricingOptions={[
+            {
+                title: "UI/UX Design Partner",
+                price: "€110/hour",
+                description: "Comprehensive UI/UX design services tailored to create intuitive, beautiful, and high-converting digital experiences.",
+                buttonText: "Start your design journey &rarr;",
+                buttonHref: "/en/contact"
+            },
+            {
+                title: "Full-Service Design Team",
+                price: "Let's talk",
+                description: "A dedicated team of UI/UX specialists working collaboratively to transform your entire digital experience ecosystem.",
+                buttonText: "Get a custom proposal &rarr;",
+                buttonHref: "/en/contact"
+            }
+        ]}
+        note="*For companies with annual revenue under five million euros, we offer our services at a discounted rate of €95/hour. Prices are tax exclusive (VAT 0%)."
+    />
+
+    <!-- Schedule Meeting Section -->
+    <section class="schedule-meeting" id="schedule-meeting">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Book a Meeting</h2>
+                <p class="section__subtitle">Discuss your UI/UX design needs and discover how we can elevate your digital experience.</p>
+            </div>
+            <div class="schedule-meeting__embed">
+                <CalendlyEmbed elementId="cal-inline-index" calLink="aaltoyleva/kartoitustapaaminen" />
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">UI/UX Design FAQ</h2>
+                <p class="section__subtitle">Common questions about our UI/UX design services</p>
+            </div>
+            <div class="faq-items">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question-wrapper">
+                        <span class="faq-question">What's the difference between UI and UX design?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">UI (User Interface) design focuses on the visual elements users interact with—buttons, forms, typography, and layouts. UX (User Experience) design is broader, encompassing the entire user journey, including research, information architecture, and interaction patterns. While UI is about how things look, UX is about how things work. Our approach integrates both for cohesive digital experiences.</p>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How does UI/UX design impact business results?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Strategic UI/UX design directly influences key business metrics: increasing conversion rates by 200-400%, reducing bounce rates by 10-35%, decreasing support tickets by 20-50%, and improving customer retention by 15-30%. Design-driven companies consistently outperform competitors by delivering experiences that build trust, loyalty, and advocacy.</p>
+                </div>
+                <!-- FAQ Item 3 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">What does your UI/UX design process include?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Our process includes: 1) Research and discovery to understand users and business goals, 2) Information architecture and user flow mapping, 3) Wireframing and interactive prototyping, 4) Visual design and UI system development, 5) Usability testing and iteration, and 6) Implementation support and handoff to developers with detailed specifications.</p>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How long does a typical UI/UX design project take?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Project timelines vary based on scope. A focused interface redesign typically takes 4-6 weeks, while a comprehensive product redesign with extensive research may require 8-12 weeks. We also offer ongoing design partnerships where our team integrates with your product development cycle for continuous improvement and feature development.</p>
+                </div>
+                <!-- FAQ Item 5 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Do you create design systems?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Yes, we specialize in creating comprehensive design systems that include component libraries, style guides, interaction patterns, and documentation. These systems ensure consistency across your product, accelerate development, and provide a foundation for scaling your interface. For existing products, we can audit and enhance your current design system.</p>
+                </div>
+                <!-- FAQ Item 6 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How do you handle responsive design?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">We design with a responsive-first approach, ensuring optimal experiences across devices. Rather than simply scaling designs, we create adaptive layouts that consider each device's context and user behavior. Our designs include mobile, tablet, and desktop variations with appropriate interaction patterns for touch, mouse, and keyboard inputs.</p>
+                </div>
+                <!-- FAQ Item 7 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">What design tools do you use?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">We primarily use Figma for design, prototyping, and collaboration, which allows seamless feedback and version control. For specific needs, we also employ Sketch, Adobe Suite, Principle for advanced animations, and specialized research and testing tools. We can adapt to your existing toolchain if needed for better integration.</p>
+                </div>
+                <!-- FAQ Item 8 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How do you conduct user research?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Our research combines quantitative and qualitative methods including user interviews, usability testing, heatmap analysis, A/B testing, survey design, and analytics review. We focus on understanding both what users do and why they do it, uncovering insights that drive design decisions and prioritization.</p>
+                </div>
+                <!-- FAQ Item 9 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Do you work with development teams?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Absolutely. We provide detailed specifications, assets, and documentation for developers. We can join your development workflow, participate in handoff meetings, and provide ongoing support during implementation. Our designs account for technical constraints, and we work closely with engineers to ensure feasible solutions that don't compromise user experience.</p>
+                </div>
+                <!-- FAQ Item 10 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How do you measure design success?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">We establish clear KPIs at project start, ranging from usability metrics (task completion rates, time-on-task) to business metrics (conversion rates, retention, support volume). We conduct baseline measurements before design changes and track improvements post-implementation. For ongoing partnerships, we establish regular reporting on these metrics to continuously optimize the experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</BaseLayout>
+
+<style>
+    .team-grid {
+        display: flex;
+        flex-direction: column; /* Stack vertically by default (mobile) */
+        align-items: center; /* Center items horizontally in column layout */
+        gap: var(--spacing-lg);
+    }
+
+    .team-member {
+        text-align: center; /* Ensure text inside member card is centered */
+    }
+
+    /* Apply row layout for medium screens and up */
+    @media (min-width: 768px) {
+        .team-grid {
+            flex-direction: row; /* Arrange side-by-side */
+            justify-content: center; /* Center items horizontally in row layout */
+        }
+    }
+</style> 

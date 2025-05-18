@@ -1,0 +1,438 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import HeroSection from '../../components/HeroSection.astro';
+import TrustmaryEmbed from '../../components/TrustmaryEmbed.astro';
+import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
+import NotForEveryone from '../../components/NotForEveryone.astro';
+import LogoWall from '../../components/LogoWall.astro';
+import TeamSection from '../../components/TeamSection.astro';
+import ProblemSolutionSection from '../../components/ProblemSolutionSection.astro';
+import PricingSection from '../../components/PricingSection.astro';
+
+const pageTitle = "Product Design SaaS-yrityksille | The Good Side";
+const pageDescription = "Ammattimainen product design auttaa SaaS-yritystäsi luomaan kilpailukykyisiä tuotteita. Suunnittelemme SaaS-tuotteita, jotka vastaavat käyttäjien tarpeisiin ja liiketoimintatavoitteisiin.";
+---
+<BaseLayout title={pageTitle} description={pageDescription}>
+    <!-- Use HeroSection component -->
+    <HeroSection
+        title="Product design, joka varmistaa tuotteesi menestyksen."
+        paragraph="Autamme sinua suunnittelemaan tuotteen, joka täyttää asiakastarpeet, ratkaisee liiketoimintaongelmat ja tuo kilpailuetua markkinoilla. Tuloksena on tuote, jota asiakkaat rakastavat käyttää."
+        primaryButtonText="Sovi tapaaminen &rarr;"
+        primaryButtonHref="/fi/contact"
+        secondaryButtonText="Näytä referenssit"
+        secondaryButtonHref="/fi/references"
+        textOnly={true}
+        paddingTop="6rem"
+        paddingBottom="3rem"
+        textAlign="center"
+    />
+
+    <!-- Logo Wall Section -->
+    <section class="logo-wall">
+        <div class="container">
+            <h2 class="logo-wall__title">Product design osana menestystä</h2>
+            <div class="logo-wall__grid">
+                <!-- The logos are intentionally duplicated below -->
+                <!-- First set -->
+                <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+                 <!-- Second set (duplicate) -->
+                 <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problems">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Kuulostaako tutulta?</span>
+                <h2 class="section__title">Product design haasteet</h2>
+            </div>
+            <div class="problems__grid">
+                <article class="problem-card">
+                    <h3>Epäselvä tuotevisio</h3>
+                    <p>Tuotteesi kehittyy ilman selkeää visiota ja strategiaa, mikä johtaa hajanaiseen käyttökokemukseen ja vaikeuksiin kommunikoida tuotteen arvolupausta asiakkaille.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Tuoteomaksuminen</h3>
+                    <p>Käyttäjät eivät omaksu tuotettasi odotetulla tavalla, koska se ei vastaa heidän todellisia tarpeitaan tai on liian monimutkainen käyttää.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Kilpailusta erottautuminen</h3>
+                    <p>Tuotteesi ei erotu kilpailijoista riittävästi, mikä tekee myyntiprosessista vaikeampaa ja hidastaa kasvua markkinoilla.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Us Section -->
+    <section class="hire-us">
+        <div class="container">
+            <h2 class="section__title">Product design osaajat</h2>
+            <p class="section__subtitle">Palkkaa meidät suunnittelemaan tuote, joka menestyy markkinoilla ja kasvattaa liiketoimintaasi.</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/mikki.webp" alt="Mikki Aalto-Ylevä" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Mikki<br>Aalto-Ylevä</h3>
+                    <p class="team-member__title">SaaS-spesialisti</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/tuomas.webp" alt="Tuomas Kaartoluoma" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Tuomas<br>Kaartoluoma</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/duncan.webp" alt="Dũng Nguyen" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Dũng<br>Nguyen</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/aksel.webp" alt="Aksel Suokas" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Aksel<br>Suokas</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Intro Section -->
+    <section class="solutions">
+        <div class="container">
+            <h2 class="section__title">Miksi product design on tärkeää</h2>
+            <div class="solutions__grid">
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/positiointi.webp" alt="Käyttäjäkeskeinen tuotesuunnittelu">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Käyttäjätarpeet</span>
+                            <span>Markkina-analyysi</span>
+                        </div>
+                        <h3>Käyttäjien tarpeiden ymmärtäminen</h3>
+                        <p>Keskitymme käyttäjätutkimukseen ja markkina-analyysiin ymmärtääksemme asiakkaidesi todelliset tarpeet ja ongelmat. Suunnittelemme tuotteita, jotka vastaavat näihin tarpeisiin ja tarjoavat todellista arvoa käyttäjille.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/userjourney.webp" alt="Strateginen tuotesuunnittelu">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Tuotestrategia</span>
+                            <span>Tuotemäärittely</span>
+                        </div>
+                        <h3>Strateginen lähestymistapa</h3>
+                        <p>Kehitämme selkeän tuotestrategian, joka tukee liiketoimintatavoitteitasi ja erottuu kilpailijoista. Autamme priorisoimaan ominaisuudet, jotka tuovat eniten arvoa käyttäjille ja liiketoiminnallesi.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/ui.webp" alt="Käyttäjäkokemus ja käyttöliittymäsuunnittelu" style="transform: scale(1.3);">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>UX/UI Design</span>
+                            <span>Prototypointi</span>
+                            <span>Testaus</span>
+                        </div>
+                        <h3>Käyttäjäkokemus ja testaus</h3>
+                        <p>Suunnittelemme intuitiivisia käyttöliittymiä ja sujuvia käyttökokemuksia, jotka tekevät tuotteestasi helppokäyttöisen ja miellyttävän. Testaamme ja iteroimme ratkaisuja käyttäjäpalautteen perusteella varmistaaksemme parhaan tuloksen.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials__grid">
+                 <div class="trustmary-widget">
+                    <TrustmaryEmbed 
+                        title="Mitä asiakkaamme sanovat"
+                        subtitle="Lue mitä asiakkaamme kertovat kokemuksistaan tuotesuunnittelun parissa"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Not For Everyone Section -->
+    <NotForEveryone 
+        title="Palvelumme ei sovi kaikille"
+        subtitle="Emme ehkä ole oikea vaihtoehto jos..."
+        leftColumnItems={[
+            "Et ole valmis panostamaan käyttäjätutkimukseen",
+            "Haluat vain nopean 'kasvojenkohotuksen' ilman syvempää analyysiä",
+            "Et näe arvoa iteratiivisessa suunnitteluprosessissa"
+        ]}
+        rightColumnItems={[
+            "Budjettisi on alle 5000€ tuotesuunnitteluprojektiin",
+            "Uskot, että tiedät jo täsmälleen mitä käyttäjäsi tarvitsevat ilman testausta"
+        ]}
+    />
+
+    <!-- Problem/Solution Section (Using existing styles) -->
+    <ProblemSolutionSection
+        title="Product design haasteet"
+        subtitle="Yleisimmät tuotesuunnittelun haasteet ja miten autamme niissä."
+        items={[
+            {
+                problemTitle: "Epäselvä tuotekehityksen suunta",
+                problemDescription: "Ilman selkeää tuotestrategiaa kehitys kulkee usein eri suuntiin, keskittyy vääriin asioihin ja johtaa hajanaiseen tuotteeseen, joka ei vastaa käyttäjien tai liiketoiminnan tarpeita optimaalisesti.",
+                solutionDescription: "Luomme selkeän tuotevision ja -strategian, joka ohjaa kehitystä johdonmukaisesti. Määrittelemme tavoitteet, kohderyhmät ja arvolupauksen, joiden pohjalta tuotteen kehitystä voidaan priorisoida tehokkaasti."
+            },
+            {
+                problemTitle: "Käyttäjien tarpeiden ymmärtäminen",
+                problemDescription: "Tuotekehitys perustuu usein sisäisiin oletuksiin eikä todelliseen käyttäjäymmärrykseen. Tämä johtaa ominaisuuksiin, joita käyttäjät eivät tarvitse tai jotka eivät ratkaise heidän todellisia ongelmiaan.",
+                solutionDescription: "Toteutamme käyttäjätutkimusta ja -testausta käyttäjien todellisten tarpeiden ja käyttäytymisen ymmärtämiseksi. Hyödynnämme tätä tietoa suunnittelussa ja kehityksessä varmistaen, että tuote vastaa oikeisiin tarpeisiin."
+            },
+            {
+                problemTitle: "Kilpailijoista erottautuminen",
+                problemDescription: "Markkinoilla on paljon kilpailevia SaaS-tuotteita, jotka tarjoavat samankaltaisia ratkaisuja. Ilman selkeää erottautumisstrategiaa tuotteesi häviää kilpailussa ja sen on vaikea saavuttaa haluttuja kasvutavoitteita.",
+                solutionDescription: "Analysoimme markkinat ja kilpailijat löytääksemme erottautumismahdollisuudet. Suunnittelemme tuotteesi vahvojen ominaisuuksien ja ainutlaatuisten käyttökokemusten ympärille, jotka luovat selvän kilpailuedun markkinoilla."
+            }
+        ]}
+    />
+
+    <!-- Pricing Section -->
+    <PricingSection
+        title="Valmiina skaalaamaan?"
+        subtitle="Tutustu hinnoitteluvaihtoehtoihimme."
+        sectionId="hinnat"
+        anchorId="hinnat-ankkuri"
+        pricingOptions={[
+            {
+                title: "Strateginen design-kumppani",
+                price: "110€/tunti",
+                description: "Asiantuntevaa SaaS-tuotteiden suunnittelua, joka auttaa tekemään tuotteestasi markkinajohtajan.",
+                buttonText: "Aloita kasvumatkasi &rarr;",
+                buttonHref: "/fi/contact"
+            },
+            {
+                title: "Strateginen kasvutiimi",
+                price: "Kysy tarjous",
+                description: "Sitoutunut tiimi SaaS-kasvun asiantuntijoita menestyksesi vauhdittamiseksi.",
+                buttonText: "Pyydä räätälöity suunnitelma &rarr;",
+                buttonHref: "/fi/contact"
+            }
+        ]}
+        note="*Alle viiden miljoonan euron liikevaihdon yrityksille tarjoamme palveluitamme alennettuun hintaan 95€/tunti. Hinnat ovat verottomia (alv 0%)."
+    />
+
+    <!-- Schedule Meeting Section -->
+    <section class="schedule-meeting" id="schedule-meeting">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Varaa tapaaminen</h2>
+                <p class="section__subtitle">Keskustellaan, miten voimme auttaa tuotteesi suunnittelussa ja menestyksessä markkinoilla.</p>
+            </div>
+            <div class="schedule-meeting__embed">
+                <CalendlyEmbed elementId="cal-inline-index" calLink="aaltoyleva/kartoitustapaaminen" />
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Usein kysytyt kysymykset</h2>
+                <p class="section__subtitle">Vastauksia yleisimpiin product design -kysymyksiin</p>
+            </div>
+            <div class="faq-items">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question-wrapper">
+                        <span class="faq-question">Mitä product design tarkoittaa SaaS-yritykselle?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Product design SaaS-yritykselle tarkoittaa kokonaisvaltaista lähestymistapaa tuotteen suunnitteluun, joka yhdistää liiketoimintatavoitteet, käyttäjätarpeet ja teknisen toteutettavuuden. Se kattaa tuotestrategian, käyttäjäkokemuksen, käyttöliittymäsuunnittelun ja tuotteen toiminnallisuuksien määrittelyn.</p>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miksi product design on tärkeää SaaS-yritykselle?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Hyvä product design auttaa SaaS-yritystä erottumaan kilpailijoista, vastaamaan käyttäjien tarpeisiin, vähentämään kehityskuluja, nopeuttamaan markkinoille pääsyä ja parantamaan asiakasuskollisuutta. Se varmistaa, että tuote ratkaisee oikeita ongelmia ja tarjoaa aitoa arvoa käyttäjille.</p>
+                </div>
+                <!-- FAQ Item 3 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Kuinka kauan tyypillinen product design -projekti kestää?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Projektin kesto riippuu sen laajuudesta ja monimutkaisuudesta. Pienempi tuoteparannus voi kestää 3-6 viikkoa, kun taas kokonaan uuden tuotteen suunnittelu voi kestää 2-4 kuukautta. Määrittelemme aikataulun projektin alussa perustuen tavoitteisiin ja laajuuteen.</p>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten product design -prosessi etenee?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Prosessi alkaa tutkimusvaiheella, jossa selvitämme käyttäjätarpeet, markkinatilanteen ja liiketoimintatavoitteet. Seuraavaksi määrittelemme tuotestrategian ja konseptoimme erilaisia ratkaisuvaihtoehtoja. Jatkamme prototyyppien rakentamiseen ja testaamiseen, iteroimme palautteen perusteella ja lopulta tuotamme lopulliset suunnitelmat toteutusta varten.</p>
+                </div>
+                <!-- FAQ Item 5 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten mittaatte product designin onnistumista?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Onnistumista mitataan sekä käyttäjä- että liiketoimintamittareilla. Näitä voivat olla käyttäjien tyytyväisyys (NPS, CSAT), sitoutuminen (aktiiviset käyttäjät, käyttöaika), konversiot, asiakaspito, asiakashankinnan kustannukset ja asiakkaan elinkaaren arvo (LTV).</p>
+                </div>
+                <!-- FAQ Item 6 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten product design eroaa UX-suunnittelusta?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Product design on laajempi kokonaisuus, joka kattaa koko tuotteen suunnittelun liiketoiminnan ja käyttäjien näkökulmasta. UX-suunnittelu keskittyy erityisesti käyttäjäkokemukseen eli siihen, miten tuote tuntuu käytössä. Product designissa UX-suunnittelu on yksi tärkeä osa kokonaisuutta.</p>
+                </div>
+                <!-- FAQ Item 7 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten product design vaikuttaa tuotekehitykseen?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Hyvä product design ohjaa tuotekehitystä tekemään oikeita asioita oikeassa järjestyksessä. Se auttaa priorisoimaan ominaisuuksia, selkeyttää kehitystiimille mitä ollaan rakentamassa ja miksi, sekä vähentää uudelleentyöstöä tuomalla käyttäjien tarpeet jo aikaisen vaiheen suunnitteluun.</p>
+                </div>
+                <!-- FAQ Item 8 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Voiko olemassa olevaa tuotetta parantaa product designin avulla?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Kyllä, product design on erittäin hyödyllistä myös olemassa olevien tuotteiden kehittämisessä. Arvioimme nykyisen tuotteen vahvuudet ja heikkoudet, analysoimme käyttäjäpalautetta ja -dataa, sekä suunnittelemme parannuksia, jotka tekevät tuotteesta entistä käyttäjäystävällisemmän ja liiketoiminnallisesti tehokkaamman.</p>
+                </div>
+                <!-- FAQ Item 9 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Mitä hyötyä on ulkopuolisen product design -kumppanin käyttämisestä?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Ulkopuolinen kumppani tuo objektiivisen näkemyksen ja laajan kokemuksen eri toimialoilta ja tuotteista. Saat käyttöösi erikoistunutta osaamista ilman tarvetta rekrytoida kokonaista design-tiimiä. Kumppani pystyy myös nopeuttamaan prosessia, koska heillä on valmiit menetelmät ja työkalut tehokkaaseen suunnitteluun.</p>
+                </div>
+                <!-- FAQ Item 10 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten product design integroituu ketterään kehitykseen?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Product design integroituu luontevasti ketterään kehitykseen. Suunnittelutyö voidaan jakaa sprintteihin ja iteraatioihin, jotka tukevat kehitystiimin työtä. Tyypillisesti suunnittelu kulkee yhden tai kaksi sprinttiä kehityksen edellä, jotta kehittäjillä on aina selkeät suunnitelmat toteutettavaksi. Tärkeitä elementtejä ovat jatkuva kommunikaatio kehitystiimin kanssa ja nopea reagointi muuttuviin tarpeisiin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</BaseLayout>
+
+<style>
+    .team-grid {
+        display: flex;
+        flex-direction: column; /* Stack vertically by default (mobile) */
+        align-items: center; /* Center items horizontally in column layout */
+        gap: var(--spacing-lg);
+    }
+
+    .team-member {
+        text-align: center; /* Ensure text inside member card is centered */
+    }
+
+    /* Apply row layout for medium screens and up */
+    @media (min-width: 768px) {
+        .team-grid {
+            flex-direction: row; /* Arrange side-by-side */
+            justify-content: center; /* Center items horizontally in row layout */
+        }
+    }
+</style> 
