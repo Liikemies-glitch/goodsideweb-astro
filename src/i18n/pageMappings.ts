@@ -14,6 +14,7 @@ export const pageMappings: Record<string, string> = {
   'ux-suunnittelija': 'saas-ux-designer',
   'design-ux-ui': 'ui-ux-design',
   'palvelumuotoilu': 'service-design',
+  'kayttoliittymasuunnittelu': 'ui-design',
 
   // English to Finnish (reversed mappings for convenience)
   'product-positioning': 'tuotepositiointi',
@@ -24,6 +25,7 @@ export const pageMappings: Record<string, string> = {
   'saas-ux-designer': 'ux-suunnittelija',
   'ui-ux-design': 'design-ux-ui',
   'service-design': 'palvelumuotoilu',
+  'ui-design': 'kayttoliittymasuunnittelu',
 };
 
 /**

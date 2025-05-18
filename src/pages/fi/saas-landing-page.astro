@@ -1,0 +1,438 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import HeroSection from '../../components/HeroSection.astro';
+import TrustmaryEmbed from '../../components/TrustmaryEmbed.astro';
+import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
+import NotForEveryone from '../../components/NotForEveryone.astro';
+import LogoWall from '../../components/LogoWall.astro';
+import TeamSection from '../../components/TeamSection.astro';
+import ProblemSolutionSection from '../../components/ProblemSolutionSection.astro';
+import PricingSection from '../../components/PricingSection.astro';
+
+const pageTitle = "SaaS Landing Page -suunnittelu asiantuntijoilta | The Good Side";
+const pageDescription = "Suunnittelemme vaikuttavia SaaS landing pageja, jotka konvertoivat. Kasvata konversioita ammattilaisten suunnittelemilla laskeutumissivuilla.";
+---
+<BaseLayout title={pageTitle} description={pageDescription}>
+    <!-- Use HeroSection component -->
+    <HeroSection
+        title="Konvertoiva SaaS landing page kasvattaa liiketoimintaasi"
+        paragraph="Autamme sinua suunnittelemaan landing pagen, joka viestii arvolupauksesi selkeästi, herättää luottamusta ja muuntaa kävijät maksaviksi asiakkaiksi."
+        primaryButtonText="Sovi tapaaminen &rarr;"
+        primaryButtonHref="/fi/contact"
+        secondaryButtonText="Näytä referenssit"
+        secondaryButtonHref="/fi/references"
+        textOnly={true}
+        paddingTop="6rem"
+        paddingBottom="3rem"
+        textAlign="center"
+    />
+
+    <!-- Logo Wall Section -->
+    <section class="logo-wall">
+        <div class="container">
+            <h2 class="logo-wall__title">Vaikuttavat landing paget</h2>
+            <div class="logo-wall__grid">
+                <!-- The logos are intentionally duplicated below -->
+                <!-- First set -->
+                <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+                 <!-- Second set (duplicate) -->
+                 <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problems">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Kuulostaako tutulta?</span>
+                <h2 class="section__title">Landing page haasteet</h2>
+            </div>
+            <div class="problems__grid">
+                <article class="problem-card">
+                    <h3>Heikko konversio</h3>
+                    <p>Landing pagesi kerää kävijöitä, mutta liian harva jättää yhteystietonsa tai ostaa tuotteesi. Markkinointipanostukset valuvat hukkaan huonon konversioprosentin takia.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Epäselvä viestintä</h3>
+                    <p>Kävijät eivät ymmärrä nopeasti, mitä tuotteesi tekee ja miksi heidän pitäisi välittää. Arvolupaus ei välity selkeästi, mikä johtaa kävijöiden poistumiseen.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Heikko käyttökokemus</h3>
+                    <p>Sivustosi on hidas, sekava tai toimii huonosti mobiililaitteilla. Tämä vähentää luottamusta ja saa potentiaaliset asiakkaat siirtymään kilpailijoille.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Us Section -->
+    <section class="hire-us">
+        <div class="container">
+            <h2 class="section__title">Landing page ammattilaiset</h2>
+            <p class="section__subtitle">Palkkaa meidät suunnittelemaan landing page, joka konvertoi kävijät asiakkaiksi.</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/mikki.webp" alt="Mikki Aalto-Ylevä" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Mikki<br>Aalto-Ylevä</h3>
+                    <p class="team-member__title">SaaS-spesialisti</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/tuomas.webp" alt="Tuomas Kaartoluoma" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Tuomas<br>Kaartoluoma</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/duncan.webp" alt="Dũng Nguyen" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Dũng<br>Nguyen</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/aksel.webp" alt="Aksel Suokas" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Aksel<br>Suokas</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Intro Section -->
+    <section class="solutions">
+        <div class="container">
+            <h2 class="section__title">Tehokas landing page tuo tuloksia</h2>
+            <div class="solutions__grid">
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/positiointi.webp" alt="Konversio-optimoitu rakenne">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Konversio-optimointi</span>
+                            <span>UX-suunnittelu</span>
+                        </div>
+                        <h3>Konversio-optimoitu rakenne</h3>
+                        <p>Suunnittelemme landing pagesi psykologisiin periaatteisiin ja konversio-optimoinnin parhaisiin käytäntöihin perustuen. Jokaisella elementillä on tarkoitus ohjata kävijä kohti konversiota.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/userjourney.webp" alt="Selkeä arvolupaus">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Viestintä</span>
+                            <span>Copywriting</span>
+                        </div>
+                        <h3>Iskevä viestintä ja selkeä arvolupaus</h3>
+                        <p>Kiteytämme tuotteesi arvon selkeäksi ja houkuttelevaksi viestiksi. Kehitämme vakuuttavan copywritingin, joka resonoi kohderyhmäsi kanssa ja vastaa heidän ongelmiinsa ja tarpeisiinsa.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/ui.webp" alt="Ammattimainen design" style="transform: scale(1.3);">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Visuaalinen design</span>
+                            <span>Responsiivisuus</span>
+                            <span>Brändäys</span>
+                        </div>
+                        <h3>Vaikuttava design</h3>
+                        <p>Luomme visuaalisesti näyttävän ja brändisi mukaisen landing pagen, joka toimii täydellisesti kaikilla laitteilla. Hienostunut design herättää luottamusta ja korostaa ammattimaisuuttasi.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials__grid">
+                 <div class="trustmary-widget">
+                    <TrustmaryEmbed 
+                        title="Mitä asiakkaamme sanovat?"
+                        subtitle="Lue mitä asiakkaamme kertovat kokemuksistaan"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Not For Everyone Section -->
+    <NotForEveryone 
+        title="Palvelumme ei sovi kaikille"
+        subtitle="Emme ehkä ole oikea vaihtoehto jos..."
+        leftColumnItems={[
+            "Et ole valmis investoimaan laadukkaaseen landing pageen",
+            "Haluat vain nopean ja halvan ratkaisun ilman strategista ajattelua",
+            "Et usko design-prosessiin, joka perustuu tutkimukseen ja testaukseen"
+        ]}
+        rightColumnItems={[
+            "Budjettisi on alle 2000€ landing page -projektiin",
+            "Uskot, että tekninen toteutus on tärkeämpää kuin käyttäjäkokemus ja viestintä"
+        ]}
+    />
+
+    <!-- Problem/Solution Section (Using existing styles) -->
+    <ProblemSolutionSection
+        title="Landing page haasteet"
+        subtitle="Yleisimmät SaaS landing page -haasteet ja miten ratkaisemme ne."
+        items={[
+            {
+                problemTitle: "Korkea välitön poistumisprosentti",
+                problemDescription: "Kävijät poistuvat sivustoltasi nopeasti, eivätkä vieritä sivua alaspäin tai tutustu tarjontaasi. Markkinointipanoksesi menevät hukkaan, kun potentiaaliset asiakkaat eivät sitoudu sisältöösi.",
+                solutionDescription: "Suunnittelemme landing pageen vakuuttavan hero-osion, joka välittömästi kommunikoi arvolupauksesi ja herättää mielenkiinnon. Käytämme psykologisia periaatteita ja visuaalisia elementtejä pitääksemme kävijät sivustolla."
+            },
+            {
+                problemTitle: "Heikko konversioprosentti",
+                problemDescription: "Saat kävijöitä sivustollesi, mutta liian harva täyttää lomakkeen, tilaa uutiskirjeen tai ostaa tuotteesi. Tämä johtaa kalliiseen asiakashankintaan ja heikkoon ROI:hin markkinoinnissa.",
+                solutionDescription: "Optimoimme jokaisen sivun elementin ohjaamaan kävijät kohti konversiota. Käytämme tehokkaita call-to-actioneja, sosiaalisen todisteen elementtejä ja poistamme kaikki konversion esteet käyttäjän polulta."
+            },
+            {
+                problemTitle: "Epäselvä arvolupaus ja viestintä",
+                problemDescription: "Kävijät eivät ymmärrä nopeasti, mitä tarjoat ja miksi heidän pitäisi välittää. Tuotteesi edut ja erottautumistekijät jäävät epäselviksi, mikä vähentää kiinnostusta ja luottamusta.",
+                solutionDescription: "Kehitämme kristallinkirkkaan arvolupaukseen ja viestintästrategian, joka resonoi kohderyhmäsi kanssa. Järjestämme sisällön loogiseen järjestykseen, joka vie kävijän tietämättömyydestä ymmärrykseen ja lopulta toimintaan."
+            }
+        ]}
+    />
+
+    <!-- Pricing Section -->
+    <PricingSection
+        title="Valmiina kasvattamaan konversioita?"
+        subtitle="Tutustu hinnoitteluvaihtoehtoihimme."
+        sectionId="hinnat"
+        anchorId="hinnat-ankkuri"
+        pricingOptions={[
+            {
+                title: "Strateginen design-kumppani",
+                price: "110€/tunti",
+                description: "Asiantuntevaa SaaS-tuotteiden landing pagien suunnittelua, joka auttaa kasvattamaan konversioitasi ja liikevaihtoasi.",
+                buttonText: "Aloita kasvumatkasi &rarr;",
+                buttonHref: "/fi/contact"
+            },
+            {
+                title: "Strateginen kasvutiimi",
+                price: "Kysy tarjous",
+                description: "Sitoutunut tiimi SaaS-kasvun asiantuntijoita menestyksesi vauhdittamiseksi.",
+                buttonText: "Pyydä räätälöity suunnitelma &rarr;",
+                buttonHref: "/fi/contact"
+            }
+        ]}
+        note="*Alle viiden miljoonan euron liikevaihdon yrityksille tarjoamme palveluitamme alennettuun hintaan 95€/tunti. Hinnat ovat verottomia (alv 0%)."
+    />
+
+    <!-- Schedule Meeting Section -->
+    <section class="schedule-meeting" id="schedule-meeting">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Varaa tapaaminen</h2>
+                <p class="section__subtitle">Keskustellaan, miten voimme suunnitella konvertoivan SaaS landing pagen yrityksellesi</p>
+            </div>
+            <div class="schedule-meeting__embed">
+                <CalendlyEmbed elementId="cal-inline-index" calLink="aaltoyleva/kartoitustapaaminen" />
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Usein kysytyt kysymykset</h2>
+                <p class="section__subtitle">Vastauksia yleisimpiin SaaS landing page -kysymyksiin</p>
+            </div>
+            <div class="faq-items">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question-wrapper">
+                        <span class="faq-question">Miksi SaaS-yritys tarvitsee ammattimaisen landing pagen?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">SaaS-yrityksille landing page on usein ensikosketus potentiaalisiin asiakkaisiin. Hyvin suunniteltu landing page kommunikoi arvolupauksesi selkeästi, rakentaa luottamusta ja ohjaa kävijät konversioon. Heikosti suunniteltu sivu voi puolestaan karkottaa jopa 90% kävijöistä. Ammattimaisesti suunniteltu sivu maksaa itsensä nopeasti takaisin korkeampien konversioiden muodossa.</p>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Mitkä ovat tehokkaan SaaS landing pagen tärkeimmät elementit?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Tehokkaassa SaaS landing pagessa on selkeä arvolupaus, vakuuttavat testimoniaalit, intuitiivinen rakenne, tehokkaat call-to-actionit, laadukas visuaalinen design ja mobiiliresponsiivisuus. Myös tuotteen ominaisuuksien selkeä esittely, hinnoittelu, UKK-osio ja luottamusta herättävät elementit (kuten asiakaslogot) ovat tärkeitä konversion kannalta.</p>
+                </div>
+                <!-- FAQ Item 3 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Kuinka kauan landing page -projekti tyypillisesti kestää?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Tyypillinen SaaS landing page -projekti kestää noin 4-6 viikkoa. Tämä sisältää tutkimusvaiheen, strategian kehittämisen, wireframing-suunnittelun, visuaalisen designin, copywritingin ja palautekierrokset. Projektin laajuus voi vaikuttaa aikatauluun: yksinkertaisempi sivu voidaan toteuttaa nopeammin, kun taas monimutkaisemmat projektit vaativat enemmän aikaa.</p>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten mitatte landing pagen tehokkuutta?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Mittaamme landing pagen tehokkuutta useilla KPI:llä: konversioprosentti (primäärinen mittari), välitön poistumisprosentti, keskimääräinen sivulla vietetty aika, sivun scrollaamisen syvyys, CTA-klikkausprosentti ja lead-to-trial/trial-to-customer -konversiot. Käytämme työkaluja kuten Google Analytics, heatmapeja ja A/B-testausta datan keräämiseen ja analysointiin.</p>
+                </div>
+                <!-- FAQ Item 5 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Kuinka landing page eroaa tavallisesta verkkosivusta?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Landing page on suunniteltu yhtä tavoitetta varten: ohjaamaan kävijä tiettyyn toimintaan (kuten rekisteröitymiseen tai kokeiluversion tilaamiseen). Toisin kuin perinteinen verkkosivu, landing pagella on vähemmän navigaatiovaihtoehtoja, keskittyneempi viesti ja selkeä polku konversioon. Se on optimoitu maksimoimaan tietyn markkinointikampanjan tai käyttäjäpolun konversiot.</p>
+                </div>
+                <!-- FAQ Item 6 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten luotte tehokkaan call-to-actionin (CTA)?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Tehokas CTA on selkeä, toimintaan kehottava ja luo tunteen kiireellisyydestä. Suunnittelemme CTAt, jotka erottuvat visuaalisesti, ovat strategisesti sijoitettu sivulle ja käyttävät psykologisesti testattuja periaatteita. Varmistamme myös, että CTA:n teksti on arvokeskeinen ("Aloita ilmainen kokeilu" vs. "Lähetä") ja että sama CTA toistuu sivulla useissa eri kohdissa.</p>
+                </div>
+                <!-- FAQ Item 7 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Testaatteko landing pageja osana suunnitteluprosessia?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Kyllä, testaus on olennainen osa prosessiamme. Käytämme useita testausmenetelmiä: käytettävyystestaus prototyypeillä, A/B-testaus eri versioiden välillä, heatmap-analyysi käyttäjien käyttäytymisen seuraamiseksi ja konversioanalytiikka. Testaus mahdollistaa jatkuvan optimoinnin ja varmistaa, että lopullinen landing page perustuu dataan, ei vain oletuksiin.</p>
+                </div>
+                <!-- FAQ Item 8 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten optimoitte landing pagen mobiilikäyttäjille?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Mobiilioptimointi on kriittistä, sillä yhä useampi SaaS-käyttäjä selaa mobiililaitteilla. Suunnitteluprosessimme on mobile-first, jossa varmistamme nopean latautumisen, helpon navigoinnin, sopivan tekstikoon ja kosketusystävälliset elementit. Optimoimme kuvat ja muut resurssit, teemme CTAt helposti klikattaviksi mobiilissa ja testaamme sivun toimivuuden kaikilla yleisimmillä laitteilla.</p>
+                </div>
+                <!-- FAQ Item 9 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Kuinka tärkeä copywriting on landing pagella?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Copywriting on erittäin tärkeää - jopa 80% landing pagen tehokkuudesta voi riippua tekstisisällöstä. Hyvä copy viestii selkeästi arvolupauksesi, puhuttelee kohderyhmän kipupisteitä ja ohjaa lukijan toimintaan. Panostamme asiakaslähtöiseen copywritingiin, joka keskittyy hyötyihin ominaisuuksien sijaan ja käyttää vakuuttavia, psykologisesti testattuja periaatteita.</p>
+                </div>
+                <!-- FAQ Item 10 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Mitkä ovat yleisimmät virheet SaaS landing page -suunnittelussa?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Yleisimpiä virheitä ovat epäselvä arvolupaus, liian monta call-to-actionia, liikaa teknistä jargonia, informaation ylitarjonta, heikko mobiilikokemus ja luottamusta herättävien elementtien puute. Myös hitaasti latautuvat sivut, epäselvä copywriting, lomakkeet joissa on liikaa kenttiä ja riittämätön sosiaalinen todiste ovat yleisiä ongelmia, jotka heikentävät konversioita.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</BaseLayout>
+
+<style>
+    .team-grid {
+        display: flex;
+        flex-direction: column; /* Stack vertically by default (mobile) */
+        align-items: center; /* Center items horizontally in column layout */
+        gap: var(--spacing-lg);
+    }
+
+    .team-member {
+        text-align: center; /* Ensure text inside member card is centered */
+    }
+
+    /* Apply row layout for medium screens and up */
+    @media (min-width: 768px) {
+        .team-grid {
+            flex-direction: row; /* Arrange side-by-side */
+            justify-content: center; /* Center items horizontally in row layout */
+        }
+    }
+</style> 

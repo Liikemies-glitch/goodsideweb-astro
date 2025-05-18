@@ -1,0 +1,451 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import HeroSection from '../../components/HeroSection.astro';
+import TrustmaryEmbed from '../../components/TrustmaryEmbed.astro';
+import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
+import NotForEveryone from '../../components/NotForEveryone.astro';
+import LogoWall from '../../components/LogoWall.astro';
+import TeamSection from '../../components/TeamSection.astro';
+import ProblemSolutionSection from '../../components/ProblemSolutionSection.astro';
+import PricingSection from '../../components/PricingSection.astro';
+
+const pageTitle = "Käyttöliittymäsuunnittelu SaaS-yrityksille | The Good Side";
+const pageDescription = "Tehokasta käyttöliittymäsuunnittelua SaaS-yrityksille. Parannamme tuotteesi käyttökokemusta ja tuemme liiketoimintasi kasvua.";
+
+// Fetch latest 6 blog posts - REMOVED
+// const latestPosts = (await getCollection('blog'))
+// .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+// .slice(0, 6);
+
+// Helper function to format dates - REMOVED if only used for blog posts
+// function formatDate(date: Date): string {
+// return new Date(date).toLocaleDateString('fi-FI', {
+// year: 'numeric',
+// month: 'long',
+// day: 'numeric',
+// });
+// }
+---
+<BaseLayout title={pageTitle} description={pageDescription}>
+    <!-- Use HeroSection component -->
+    <HeroSection
+        title="Käyttöliittymä&shy;suunnittelua kasvaville SaaS-yrityksille"
+        paragraph="Luomme SaaS-yrityksille käyttöliittymiä, jotka parantavat asiakastyytyväisyyttä ja kasvattavat tulosta. Keskitymme intuitiiviseen ja tehokkaaseen suunnitteluun."
+        primaryButtonText="Sovi tapaaminen &rarr;"
+        primaryButtonHref="/fi/contact"
+        secondaryButtonText="Tutustu palveluihin"
+        secondaryButtonHref="#palvelut" 
+        textOnly={true}
+        paddingTop="6rem"
+        paddingBottom="3rem"
+        textAlign="center"
+    />
+
+    <!-- Logo Wall Section -->
+    <section class="logo-wall">
+        <div class="container">
+            <h2 class="logo-wall__title">Asiakkaitamme</h2>
+            <div class="logo-wall__grid">
+                <!-- The logos are intentionally duplicated below -->
+                <!-- First set -->
+                <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+                 <!-- Second set (duplicate) -->
+                 <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problems" id="palvelut">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Tunnistatko nämä?</span>
+                <h2 class="section__title">Kuulostaako tutulta?</h2>
+            </div>
+            <div class="problems__grid">
+                <article class="problem-card">
+                    <h3>Epäselvä käyttöliittymä</h3>
+                    <p>SaaS-tuotteesi käyttöliittymä on monimutkainen ja käyttäjät kamppailevat löytääkseen tarvitsemansa, mikä heikentää käyttökokemusta ja hidastaa adoptiota.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Korkea poistuvuus</h3>
+                    <p>Asiakkaat jättävät SaaS-palvelusi, koska sen käyttöliittymä ei ole intuitiivinen tai ei vastaa heidän tarpeitaan tehokkaasta työnkulusta.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Kehitys ilman käyttäjädataa</h3>
+                    <p>Käyttöliittymäsuunnittelu perustuu oletuksiin eikä käyttäjätutkimukseen, johtaen ratkaisuihin, jotka eivät palvele SaaS-käyttäjiä optimaalisesti.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Us Section -->
+    <section class="hire-us">
+        <div class="container">
+            <h2 class="section__title">Käyttöliittymä&shy;suunnittelun asiantuntijat</h2>
+            <p class="section__subtitle">Autamme SaaS-yrityksiä luomaan käyttöliittymiä, joita käyttäjät rakastavat ja jotka tuottavat tulosta.</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/mikki.webp" alt="Mikki Aalto-Ylevä" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Mikki<br>Aalto-Ylevä</h3>
+                    <p class="team-member__title">SaaS-spesialisti</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/tuomas.webp" alt="Tuomas Kaartoluoma" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Tuomas<br>Kaartoluoma</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/duncan.webp" alt="Dũng Nguyen" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Dũng<br>Nguyen</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/aksel.webp" alt="Aksel Suokas" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Aksel<br>Suokas</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Intro Section -->
+    <section class="solutions">
+        <div class="container">
+            <h2 class="section__title">Käyttöliittymä&shy;suunnittelu: Tuloksia tuottavat ratkaisut</h2>
+            <div class="solutions__grid">
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/positiointi.webp" alt="Käyttöliittymä auditointi ja käyttäjätutkimus SaaS-yrityksille">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Käytettävyys</span>
+                            <span>SaaS UI</span>
+                        </div>
+                        <h3>Selkeä ja tehokas käyttöliittymä</h3>
+                        <p>Analysoimme SaaS-tuotteesi nykyisen käyttöliittymän ja teemme käyttäjätutkimusta. Suunnittelemme käyttöliittymän, joka on helppokäyttöinen ja tukee SaaS-yrityksesi tavoitteita.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/userjourney.webp" alt="Käyttäjäpolkujen optimointi SaaS-tuotteille">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Asiakaskokemus</span>
+                            <span>Konversio</span>
+                        </div>
+                        <h3>Optimoidut käyttäjäpolut SaaS-tuotteessa</h3>
+                        <p>Muotoilemme SaaS-tuotteesi käyttäjäpolut loogisiksi ja tehokkaiksi. Prototyyppien avulla varmistamme toimivan käyttöliittymäsuunnittelun, joka parantaa konversioita.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/ui.webp" alt="Visuaalinen käyttöliittymäsuunnittelu SaaS-brändeille" style="transform: scale(1.3);">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>UI Design</span>
+                            <span>Brändi</span>
+                        </div>
+                        <h3>Vaikuttava visuaalinen ilme SaaS-tuotteellesi</h3>
+                        <p>Luomme SaaS-yrityksesi brändiä tukevan ja visuaalisesti miellyttävän käyttöliittymän. Johdonmukainen käyttöliittymäsuunnittelu vahvistaa luottamusta ja sitouttaa käyttäjiä.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials__grid">
+                 <div class="trustmary-widget">
+                    <TrustmaryEmbed 
+                        title="Mitä asiakkaamme sanovat?"
+                        subtitle="lue mitä asiakkaamme kertovat kokemuksistaan"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Not For Everyone Section -->
+    <NotForEveryone 
+        title="Palvelumme ei sovi kaikille"
+        subtitle="Emme ehkä ole oikea vaihtoehto jos..."
+        leftColumnItems={[
+            "Et ole valmis panostamaan käyttäjätutkimukseen",
+            "Haluat vain nopean 'kasvojenkohotuksen' ilman syvempää analyysiä",
+            "Et näe arvoa iteratiivisessa suunnitteluprosessissa"
+        ]}
+        rightColumnItems={[
+            "Budjettisi on alle 5000€ UX-projektiin", 
+            "Uskot, että tiedät jo täsmälleen mitä käyttäjäsi tarvitsevat ilman testausta"
+        ]}
+    />
+
+    <!-- Problem/Solution Section (Using existing styles) -->
+    <ProblemSolutionSection
+        title="Yleisimmät käyttöliittymä&shy;suunnittelun haasteet"
+        subtitle="Näin ratkaisemme SaaS-yritysten käyttöliittymäsuunnittelun kompastuskivet."
+        items={[
+            {
+                problemTitle: "Sekava käyttöliittymä ja korkea asiakaspoistuma",
+                problemDescription: "Jos SaaS-tuotteesi käyttöliittymä on epäselvä, käyttäjät turhautuvat. Tämä johtaa heikkoon käyttöönottoon, asiakaspalvelun ylikuormittumiseen ja asiakkaiden siirtymiseen kilpailijoille.",
+                solutionDescription: "Käyttäjätutkimuksen ja käytettävyystestauksen avulla tunnistamme SaaS-tuotteesi käyttöliittymän ongelmakohdat. Suunnittelemme intuitiivisen ja selkeän käyttöliittymän, joka parantaa käyttökokemusta."
+            },
+            {
+                problemTitle: "Tehoton tuotekehitys ja resurssien hukka",
+                problemDescription: "Ilman selkeää käyttöliittymäsuunnittelun prosessia ja käyttäjädataa, SaaS-tuotekehitys voi perustua oletuksiin. Tämä johtaa ominaisuuksien rakentamiseen, joita käyttäjät eivät tarvitse.",
+                solutionDescription: "Integroimme käyttöliittymäsuunnittelun osaksi SaaS-tuotekehitystänne. Datapohjainen suunnittelu varmistaa, että kehitetyt ominaisuudet tuottavat arvoa käyttäjille ja liiketoiminnalle."
+            },
+            {
+                problemTitle: "Heikko brändimielikuva ja erottautumisvaikeudet SaaS-markkinoilla",
+                problemDescription: "Vanhentunut tai epäjohdonmukainen käyttöliittymä voi heikentää SaaS-brändisi uskottavuutta. Tuotteesi ei erotu, ja asiakkaiden on vaikea sitoutua.",
+                solutionDescription: "Luomme modernin ja yhtenäisen käyttöliittymäsuunnittelun, joka on linjassa SaaS-brändisi kanssa. Vahvistamme brändi-identiteettiäsi ja autamme erottautumaan kilpailijoista."
+            }
+        ]}
+    />
+
+    <!-- Pricing Section -->
+    <PricingSection
+        title="Investointi käyttöliittymä&shy;suunnitteluun"
+        subtitle="Tutustu hinnoitteluumme"
+        sectionId="hinnat"
+        anchorId="hinnat-ankkuri"
+        pricingOptions={[
+            {
+                title: "UI-suunnittelija",
+                price: "110€/tunti",
+                description: "Asiantuntevaa SaaS-tuotteiden käyttöliittymäsuunnittelua, joka auttaa tekemään tuotteestasi käyttäjäystävällisemmän ja kilpailukykyisemmän.",
+                buttonText: "Käynnistä projekti &rarr;",
+                buttonHref: "/fi/contact"
+            },
+            {
+                title: "UI/UX tiimi",
+                price: "Kysy tarjous",
+                description: "Sitoutunut tiimi SaaS käyttöliittymäsuunnittelun asiantuntijoita tukemaan jatkuvaa kehitystänne.",
+                buttonText: "Pyydä kumppanuustarjous &rarr;",
+                buttonHref: "/fi/contact"
+            }
+        ]}
+        note="*Alle viiden miljoonan euron liikevaihdon yrityksille tarjoamme palveluitamme alennettuun hintaan 95€/tunti. Hinnat ovat verottomia (alv 0%)."
+    />
+
+    <!-- Schedule Meeting Section -->
+    <section class="schedule-meeting" id="schedule-meeting">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Varaa tapaaminen</h2>
+                <p class="section__subtitle">Keskustellaan, miten voimme auttaa SaaS-yritystäsi käyttöliittymäsuunnittelun avulla saavuttamaan parempia tuloksia.</p>
+            </div>
+            <div class="schedule-meeting__embed">
+                <CalendlyEmbed elementId="cal-inline-index" calLink="aaltoyleva/kartoitustapaaminen" />
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Usein kysyttyä käyttöliittymä&shy;suunnittelusta</h2>
+                <p class="section__subtitle">Vastauksia yleisimpiin kysymyksiin koskien käyttöliittymäsuunnittelua SaaS-yrityksille.</p>
+            </div>
+            <div class="faq-items">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question-wrapper">
+                        <span class="faq-question">Mitä käyttöliittymäsuunnittelu (UI) tarkoittaa SaaS-yritykselle?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Käyttöliittymäsuunnittelu (UI Design) SaaS-yritykselle keskittyy tuotteen visuaaliseen ilmeeseen ja interaktiivisiin elementteihin. Tavoitteena on luoda selkeä, houkutteleva ja helppokäyttöinen rajapinta, joka tukee käyttökokemusta (UX).</p>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miksi panostaa käyttöliittymäsuunnitteluun SaaS-tuotteessa?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Hyvin suunniteltu käyttöliittymä parantaa SaaS-tuotteesi käytettävyyttä, lisää asiakastyytyväisyyttä ja voi vähentää asiakaspoistumaa. Se tekee tuotteestasi ammattimaisemman ja kilpailukykyisemmän.</p>
+                </div>
+                <!-- FAQ Item 3 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten käyttöliittymäsuunnittelu eroaa UX-suunnittelusta?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">UX-suunnittelu kattaa koko käyttökokemuksen, kun taas käyttöliittymäsuunnittelu (UI) on sen osa, joka keskittyy visuaaliseen ja interaktiiviseen puoleen. Molemmat ovat tärkeitä SaaS-tuotteen menestykselle.</p>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Millaisia tuloksia voimme odottaa paremmasta käyttöliittymäsuunnittelusta?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Parempi käyttöliittymäsuunnittelu SaaS-tuotteessa voi johtaa mm. nopeampaan tehtävien suorittamiseen, vähempiin virheisiin, parempaan käyttäjäsitoutumiseen ja positiivisempaan brändimielikuvaan.</p>
+                </div>
+                <!-- FAQ Item 5 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Kuinka nopeasti käyttöliittymäsuunnittelun hyödyt näkyvät SaaS-yrityksessä?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Pienemmät parannukset voivat tuottaa tuloksia nopeasti, kun taas laajemmat uudistukset vaativat enemmän aikaa. Käyttäjäpalautteen ja analytiikan seuranta auttaa mittaamaan vaikutuksia.</p>
+                </div>
+                <!-- FAQ Item 6 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Onko teillä kokemusta juuri meidän toimialamme SaaS-käyttöliittymistä?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Olemme erikoistuneet SaaS-yritysten käyttöliittymäsuunnitteluun laajasti. Kerro meille lisää toimialastasi, niin voimme keskustella tarkemmin, miten voimme auttaa juuri teidän tarpeissanne.</p>
+                </div>
+                <!-- FAQ Item 7 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Mitä tietoja tarvitsette meiltä käyttöliittymäsuunnitteluprojektin aloittamiseksi?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Aluksi tarvitsemme tietoa SaaS-tuotteestanne, kohdeyleisöstänne, liiketoimintatavoitteistanne ja mahdollisista nykyisistä haasteista käyttöliittymän suhteen. Myös pääsy analytiikkaan ja olemassa oleviin brändimateriaaleihin on hyödyllistä.</p>
+                </div>
+                <!-- FAQ Item 8 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Voitteko auttaa myös olemassa olevan SaaS-käyttöliittymän parantamisessa?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Kyllä, teemme sekä uusien SaaS-käyttöliittymien suunnittelua että olemassa olevien parantamista ja modernisointia. Voimme aloittaa esimerkiksi käyttöliittymäauditoinnilla.</p>
+                </div>
+                <!-- FAQ Item 9 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Miten varmistatte, että käyttöliittymäsuunnittelu vastaa SaaS-käyttäjiemme tarpeita?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Käyttäjätutkimus, käyttäjätestaus ja jatkuva palaute ovat keskeinen osa prosessiamme. Varmistamme, että suunnitteluratkaisut perustuvat todelliseen käyttäjäymmärrykseen.</p>
+                </div>
+                <!-- FAQ Item 10 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Mitä jos tarvitsemme myös laajempaa UX-suunnittelua SaaS-tuotteellemme?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Tarjoamme kokonaisvaltaista UX- ja käyttöliittymäsuunnittelua SaaS-yrityksille. Voimme räätälöidä palvelukokonaisuuden tarpeidenne mukaan, kattaen kaiken strategisesta suunnittelusta toteutukseen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</BaseLayout>
+
+<style>
+    .team-grid {
+        display: flex;
+        flex-direction: column; /* Stack vertically by default (mobile) */
+        align-items: center; /* Center items horizontally in column layout */
+        gap: var(--spacing-lg);
+    }
+
+    .team-member {
+        text-align: center; /* Ensure text inside member card is centered */
+    }
+
+    /* Apply row layout for medium screens and up */
+    @media (min-width: 768px) {
+        .team-grid {
+            flex-direction: row; /* Arrange side-by-side */
+            justify-content: center; /* Center items horizontally in row layout */
+        }
+    }
+</style> 

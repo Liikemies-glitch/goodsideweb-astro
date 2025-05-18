@@ -1,0 +1,439 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import HeroSection from '../../components/HeroSection.astro';
+import TrustmaryEmbed from '../../components/TrustmaryEmbed.astro';
+import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
+import NotForEveryone from '../../components/NotForEveryone.astro';
+import LogoWall from '../../components/LogoWall.astro';
+import TeamSection from '../../components/TeamSection.astro';
+import ProblemSolutionSection from '../../components/ProblemSolutionSection.astro';
+import PricingSection from '../../components/PricingSection.astro';
+
+const pageTitle = "User Interface Design for SaaS Companies | The Good Side";
+const pageDescription = "Elevate your SaaS product with professional UI design that enhances visual appeal, improves usability, and creates a seamless experience for your users.";
+---
+<BaseLayout title={pageTitle} description={pageDescription}>
+    <!-- Use HeroSection component -->
+    <HeroSection
+        title="User interface design that captivates and converts."
+        paragraph="We craft intuitive and visually stunning UI that enhances user experience, builds brand credibility, and turns visitors into loyal customers."
+        primaryButtonText="Schedule a meeting &rarr;"
+        primaryButtonHref="/en/contact"
+        secondaryButtonText="View references"
+        secondaryButtonHref="/en/references"
+        textOnly={true}
+        paddingTop="6rem"
+        paddingBottom="3rem"
+        textAlign="center"
+    />
+
+    <!-- Logo Wall Section -->
+    <section class="logo-wall">
+        <div class="container">
+            <h2 class="logo-wall__title">Trusted by leading SaaS companies</h2>
+            <div class="logo-wall__grid">
+                <!-- The logos are intentionally duplicated below -->
+                <!-- First set -->
+                <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+                 <!-- Second set (duplicate) -->
+                 <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problems">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Sound familiar?</span>
+                <h2 class="section__title">UI Challenges Hindering Your SaaS</h2>
+            </div>
+            <div class="problems__grid">
+                <article class="problem-card">
+                    <h3>Inconsistent visuals</h3>
+                    <p>Disjointed interface elements creating a fragmented user experience.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Poor first impressions</h3>
+                    <p>Outdated design causing users to question your product's reliability.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Unclear visual hierarchy</h3>
+                    <p>Users struggling to navigate and find critical features due to poor visual cues.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Us Section -->
+    <section class="hire-us">
+        <div class="container">
+            <h2 class="section__title">UI Design Experts Who Deliver Results</h2>
+            <p class="section__subtitle">Meet the team that creates interfaces your users will love</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/mikki.webp" alt="Mikki Aalto-Ylevä" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Mikki<br>Aalto-Ylevä</h3>
+                    <p class="team-member__title">SaaS Strategist</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/tuomas.webp" alt="Tuomas Kaartoluoma" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Tuomas<br>Kaartoluoma</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/duncan.webp" alt="Dũng Nguyen" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Dũng<br>Nguyen</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/aksel.webp" alt="Aksel Suokas" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Aksel<br>Suokas</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Intro Section -->
+    <section class="solutions">
+        <div class="container">
+            <h2 class="section__title">How Strategic UI Design Elevates Your SaaS</h2>
+            <div class="solutions__grid">
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/positiointi.webp" alt="User Interface Analysis">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Visual Design</span>
+                            <span>Interface Audit</span>
+                        </div>
+                        <h3>Cohesive Visual Systems</h3>
+                        <p>We create unified design systems that ensure consistency across your entire interface. By implementing standardized components and visual language, we build user trust and streamline the product experience.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/userjourney.webp" alt="UI Flow Optimization">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Navigation Design</span>
+                            <span>Visual Hierarchy</span>
+                        </div>
+                        <h3>Intuitive Navigation Patterns</h3>
+                        <p>We design clear visual hierarchies and navigation systems that guide users naturally through your product. Strategic use of color, typography, and layout elements creates interfaces that feel effortless to use.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/ui.webp" alt="UI Design and Brand Identity" style="transform: scale(1.3);">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>UI Design</span>
+                            <span>Brand Expression</span>
+                            <span>Visual Identity</span>
+                        </div>
+                        <h3>Brand-Enhancing Visuals</h3>
+                        <p>We transform your brand values into compelling visual experiences that resonate with users. Our designs balance aesthetic appeal with functional clarity to create interfaces that both look professional and work flawlessly.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials__grid">
+                 <div class="trustmary-widget">
+                    <TrustmaryEmbed 
+                        title="Hear it from our customers?"
+                        subtitle="Real results from companies like yours"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Not For Everyone Section -->
+    <NotForEveryone 
+        title="Our Approach Isn't For Everyone"
+        subtitle="We might not be the right fit if..."
+        leftColumnItems={[
+            "You want cosmetic changes without strategic purpose",
+            "You value trends over usability and conversions",
+            "You expect instant results without testing"
+        ]}
+        rightColumnItems={[
+            "Your budget is below €5,000 for UI improvements",
+            "You're unwilling to involve real users in testing"
+        ]}
+    />
+
+    <!-- Problem/Solution Section (Using existing styles) -->
+    <ProblemSolutionSection
+        title="Real UI Design Challenges We Solve"
+        subtitle="Common issues our clients face and how we transform them."
+        solutionTitle="Solution"
+        items={[
+            {
+                problemTitle: "Visual Inconsistency Creating Confusion",
+                problemDescription: "Your interface uses inconsistent elements, colors, and patterns that create a disjointed experience, making users work harder to understand your product.",
+                solutionDescription: "We develop comprehensive UI design systems with standardized components that ensure visual consistency across your entire product, reducing cognitive load and making your interface instantly more intuitive."
+            },
+            {
+                problemTitle: "Poor Visual Hierarchy Burying Key Features",
+                problemDescription: "Your most important features and actions get lost among competing visual elements, causing users to miss critical functionality.",
+                solutionDescription: "We implement strategic visual hierarchy that guides users' attention to key actions and information through intentional use of contrast, size, color, and positioning to increase feature discovery and adoption."
+            },
+            {
+                problemTitle: "Dated Interface Undermining Credibility",
+                problemDescription: "Your outdated visual design creates impression gaps between your marketing promises and product reality, reducing trust and hampering conversion.",
+                solutionDescription: "We craft modern, professional interfaces that align with your brand position and meet contemporary user expectations, instantly elevating perceived value and building user confidence in your product."
+            }
+        ]}
+    />
+
+    <!-- Pricing Section -->
+    <PricingSection
+        title="Ready to Transform Your UI?"
+        subtitle="Choose the engagement model that fits your needs."
+        sectionId="pricing"
+        anchorId="pricing-anchor"
+        pricingOptions={[
+            {
+                title: "Strategic Design Partner",
+                price: "€110/hour",
+                description: "Expert UI design services tailored to elevate your SaaS product with professional, conversion-focused interfaces.",
+                buttonText: "Start your transformation &rarr;",
+                buttonHref: "/en/contact"
+            },
+            {
+                title: "Dedicated Growth Team",
+                price: "Let's talk",
+                description: "A comprehensive team of UI, UX, and growth specialists working together to accelerate your SaaS success.",
+                buttonText: "Get a customized plan &rarr;",
+                buttonHref: "/en/contact"
+            }
+        ]}
+        note="*For companies with annual revenue under five million euros, we offer our services at a discounted rate of €95/hour. Prices are tax exclusive (VAT 0%)."
+    />
+
+    <!-- Schedule Meeting Section -->
+    <section class="schedule-meeting" id="schedule-meeting">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Book a Meeting</h2>
+                <p class="section__subtitle">Discover how professional UI design can enhance your user interface and boost your SaaS metrics.</p>
+            </div>
+            <div class="schedule-meeting__embed">
+                <CalendlyEmbed elementId="cal-inline-index" calLink="aaltoyleva/kartoitustapaaminen" />
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">UI Design Questions Answered</h2>
+                <p class="section__subtitle">Everything you need to know about improving your SaaS interface</p>
+            </div>
+            <div class="faq-items">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question-wrapper">
+                        <span class="faq-question">What exactly is UI design for SaaS products?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">User Interface design for SaaS products focuses on creating the visual elements and interactions that users engage with. This includes everything from button styles and color schemes to typography, layouts, and visual feedback systems—all optimized specifically for subscription-based software products.</p>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How does UI design impact SaaS business metrics?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Professional UI design directly influences key SaaS metrics through increased conversion rates, improved feature adoption, higher engagement metrics, and stronger brand perception. A visually cohesive, intuitive interface reduces friction in the user journey, leading to higher customer satisfaction and retention.</p>
+                </div>
+                <!-- FAQ Item 3 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">What timeline should we expect for a UI redesign?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Timelines vary based on project scope. A focused UI enhancement typically takes 2-4 weeks. A comprehensive UI redesign with component system development usually requires 4-8 weeks. Complex products with multiple user roles or extensive feature sets may require longer timeframes to ensure consistent design implementation.</p>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How do you balance aesthetics with usability?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">We approach UI design with a "form follows function" philosophy. Every aesthetic decision serves a usability purpose—whether guiding attention, creating visual hierarchy, or providing feedback. We validate designs through user testing to ensure visual elements enhance rather than impede the user experience.</p>
+                </div>
+                <!-- FAQ Item 5 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">What is a UI design system and do we need one?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">A UI design system is a collection of reusable components and patterns guided by clear standards that ensure consistency throughout your product. For growing SaaS products, a design system becomes increasingly valuable as it accelerates development, ensures consistency, and creates a more cohesive user experience across your entire application.</p>
+                </div>
+                <!-- FAQ Item 6 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How do UI and UX design complement each other?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">While UX design focuses on the overall experience and how users accomplish tasks, UI design brings that experience to life visually. Great UI amplifies good UX decisions through visual hierarchy, intuitive patterns, and aesthetic appeal. The most successful products combine strategic UX thinking with polished UI execution.</p>
+                </div>
+                <!-- FAQ Item 7 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How do you maintain UI consistency across platforms?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">We create adaptable design systems that maintain your core brand identity while respecting platform-specific conventions. This balanced approach ensures users get a consistent experience that feels native to each platform. We document clear guidelines for how components translate across web, mobile, and desktop environments.</p>
+                </div>
+                <!-- FAQ Item 8 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Will you provide all the assets developers need?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Yes, we deliver comprehensive implementation packages that include all necessary design assets, specifications, and guidelines. Depending on your team's workflow, we can provide assets in various formats (Figma, Sketch, Adobe XD), create interactive prototypes, and provide detailed documentation to ensure smooth handoff to developers.</p>
+                </div>
+                <!-- FAQ Item 9 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How do you integrate with development teams?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">We adapt to your development workflow, providing designs in formats compatible with your tech stack. We typically stay available during implementation to answer questions, review builds, and ensure design fidelity. For teams using component libraries or frameworks like React, Vue, or Angular, we structure our designs to align with component-based architecture.</p>
+                </div>
+                <!-- FAQ Item 10 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How do you approach accessibility in UI design?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Accessibility is integrated into our design process from the start. We ensure sufficient color contrast, support keyboard navigation, design for screen readers, and follow WCAG guidelines. Accessible design not only serves users with disabilities but creates a better experience for everyone and helps meet legal requirements in many markets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</BaseLayout>
+
+<style>
+    .team-grid {
+        display: flex;
+        flex-direction: column; /* Stack vertically by default (mobile) */
+        align-items: center; /* Center items horizontally in column layout */
+        gap: var(--spacing-lg);
+    }
+
+    .team-member {
+        text-align: center; /* Ensure text inside member card is centered */
+    }
+
+    /* Apply row layout for medium screens and up */
+    @media (min-width: 768px) {
+        .team-grid {
+            flex-direction: row; /* Arrange side-by-side */
+            justify-content: center; /* Center items horizontally in row layout */
+        }
+    }
+</style> 

@@ -1,0 +1,438 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import HeroSection from '../../components/HeroSection.astro';
+import TrustmaryEmbed from '../../components/TrustmaryEmbed.astro';
+import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
+import NotForEveryone from '../../components/NotForEveryone.astro';
+import LogoWall from '../../components/LogoWall.astro';
+import TeamSection from '../../components/TeamSection.astro';
+import ProblemSolutionSection from '../../components/ProblemSolutionSection.astro';
+import PricingSection from '../../components/PricingSection.astro';
+
+const pageTitle = "High-Converting SaaS Landing Page Design | The Good Side";
+const pageDescription = "Create a SaaS landing page that converts visitors into customers. Our landing page designs focus on clear messaging, engaging UX, and proven conversion techniques.";
+---
+<BaseLayout title={pageTitle} description={pageDescription}>
+    <!-- Use HeroSection component -->
+    <HeroSection
+        title="SaaS landing pages that convert visitors into customers."
+        paragraph="We design high-performance SaaS landing pages that clearly communicate your value proposition, create trust, and drive qualified leads into your sales pipeline."
+        primaryButtonText="Schedule a meeting &rarr;"
+        primaryButtonHref="/en/contact"
+        secondaryButtonText="View references"
+        secondaryButtonHref="/en/references"
+        textOnly={true}
+        paddingTop="6rem"
+        paddingBottom="3rem"
+        textAlign="center"
+    />
+
+    <!-- Logo Wall Section -->
+    <section class="logo-wall">
+        <div class="container">
+            <h2 class="logo-wall__title">Trusted by leading SaaS companies</h2>
+            <div class="logo-wall__grid">
+                <!-- The logos are intentionally duplicated below -->
+                <!-- First set -->
+                <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+                 <!-- Second set (duplicate) -->
+                 <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                 <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problems">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Sound familiar?</span>
+                <h2 class="section__title">SaaS Landing Page Problems</h2>
+            </div>
+            <div class="problems__grid">
+                <article class="problem-card">
+                    <h3>Low conversion rates</h3>
+                    <p>Your landing page attracts traffic but fails to convert visitors into qualified leads.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Unclear messaging</h3>
+                    <p>Visitors leave confused about what your SaaS actually does and how it helps them.</p>
+                </article>
+                <article class="problem-card">
+                    <h3>Design-value mismatch</h3>
+                    <p>Your landing page design doesn't reflect the quality of your software solution.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Us Section -->
+    <section class="hire-us">
+        <div class="container">
+            <h2 class="section__title">SaaS Landing Page Experts</h2>
+            <p class="section__subtitle">Meet the team that creates high-converting landing pages for SaaS companies</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/mikki.webp" alt="Mikki Aalto-Ylevä" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Mikki<br>Aalto-Ylevä</h3>
+                    <p class="team-member__title">Conversion Strategist</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/tuomas.webp" alt="Tuomas Kaartoluoma" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Tuomas<br>Kaartoluoma</h3>
+                    <p class="team-member__title">UI Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/duncan.webp" alt="Dũng Nguyen" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Dũng<br>Nguyen</h3>
+                    <p class="team-member__title">Designer</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-4 border-4 border-secondary shadow-lg">
+                            <img src="/images/team/aksel.webp" alt="Aksel Suokas" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="team-member__name">Aksel<br>Suokas</h3>
+                    <p class="team-member__title">Copywriter</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Intro Section -->
+    <section class="solutions">
+        <div class="container">
+            <h2 class="section__title">SaaS Landing Page Elements That Convert</h2>
+            <div class="solutions__grid">
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/positiointi.webp" alt="Value Proposition Design">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Messaging</span>
+                            <span>Value Proposition</span>
+                        </div>
+                        <h3>Compelling Value Proposition</h3>
+                        <p>We craft clear, benefit-driven messaging that instantly communicates why your SaaS matters to visitors. Our research-backed approach ensures your value proposition resonates with your ideal customer profile and addresses their specific pain points.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/userjourney.webp" alt="Conversion Optimization">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Conversion Rate</span>
+                            <span>User Journey</span>
+                        </div>
+                        <h3>Strategic Conversion Paths</h3>
+                        <p>We design landing pages with clear, intuitive conversion paths that guide visitors toward taking action. Every element—from headlines to CTAs—works together to build confidence and create a seamless journey from interest to conversion.</p>
+                    </div>
+                </article>
+                <article class="solution-card">
+                    <div class="solution-card__image">
+                        <img src="/images/value-props/ui.webp" alt="Visual Design and Brand Consistency" style="transform: scale(1.3);">
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-card__tags">
+                            <span>Visual Design</span>
+                            <span>Trust Signals</span>
+                        </div>
+                        <h3>Trust-Building Design</h3>
+                        <p>We create professional, visually appealing landing pages that establish credibility through strategic use of social proof, testimonials, and trust signals. Our designs reflect your brand identity while optimizing for conversion and engagement.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials__grid">
+                 <div class="trustmary-widget">
+                    <TrustmaryEmbed 
+                        title="Hear it from our customers?"
+                        subtitle="Real results from companies like yours"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Not For Everyone Section -->
+    <NotForEveryone 
+        title="Our Approach Isn't For Everyone"
+        subtitle="We might not be the right fit if..."
+        leftColumnItems={[
+            "You want a template-based landing page without strategy",
+            "You prioritize flashy visuals over conversion principles",
+            "You need a quick solution without proper research"
+        ]}
+        rightColumnItems={[
+            "Your budget is below €5,000 for landing page design",
+            "You're unwilling to test and optimize after launch"
+        ]}
+    />
+
+    <!-- Problem/Solution Section (Using existing styles) -->
+    <ProblemSolutionSection
+        title="SaaS Landing Page Challenges Solved"
+        subtitle="Common landing page issues our clients face and how we transform them."
+        solutionTitle="Solution"
+        items={[
+            {
+                problemTitle: "Weak First Impression",
+                problemDescription: "Your current landing page fails to capture visitor attention in the crucial first few seconds, resulting in high bounce rates and missed conversion opportunities.",
+                solutionDescription: "We design above-the-fold experiences that instantly communicate your value proposition with compelling visuals and clear, benefit-focused messaging that resonates with your target audience and encourages further exploration."
+            },
+            {
+                problemTitle: "Confusing Value Proposition",
+                problemDescription: "Visitors struggle to understand what your SaaS does, who it's for, and why they should care—leading to poor engagement and conversion metrics.",
+                solutionDescription: "We craft crystal-clear messaging hierarchies that immediately communicate your unique value, supported by strategic visual elements that guide visitors through a logical narrative from problem to solution."
+            },
+            {
+                problemTitle: "Weak Call-to-Action Strategy",
+                problemDescription: "Your landing page lacks strategic CTAs or uses generic button text that fails to motivate action, resulting in lost conversion opportunities.",
+                solutionDescription: "We implement a data-driven CTA strategy with compelling action text, strategic placement, and visual design that creates clear conversion paths aligned with different visitor intentions and stages of awareness."
+            }
+        ]}
+    />
+
+    <!-- Pricing Section -->
+    <PricingSection
+        title="Ready for a High-Converting SaaS Landing Page?"
+        subtitle="Choose the engagement model that fits your needs."
+        sectionId="pricing"
+        anchorId="pricing-anchor"
+        pricingOptions={[
+            {
+                title: "Strategic Design Partner",
+                price: "€110/hour",
+                description: "Expert landing page design services tailored to create a high-converting entry point for your SaaS product.",
+                buttonText: "Start your transformation &rarr;",
+                buttonHref: "/en/contact"
+            },
+            {
+                title: "Dedicated Growth Team",
+                price: "Let's talk",
+                description: "A comprehensive team of designers, copywriters, and conversion specialists working together to maximize your landing page performance.",
+                buttonText: "Get a customized plan &rarr;",
+                buttonHref: "/en/contact"
+            }
+        ]}
+        note="*For companies with annual revenue under five million euros, we offer our services at a discounted rate of €95/hour. Prices are tax exclusive (VAT 0%)."
+    />
+
+    <!-- Schedule Meeting Section -->
+    <section class="schedule-meeting" id="schedule-meeting">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">Book a Meeting</h2>
+                <p class="section__subtitle">Discuss how a strategic SaaS landing page can increase your conversion rates and drive qualified leads.</p>
+            </div>
+            <div class="schedule-meeting__embed">
+                <CalendlyEmbed elementId="cal-inline-index" calLink="aaltoyleva/kartoitustapaaminen" />
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h2 class="section__title" style="color: #9C2043; font-weight: bold;">SaaS Landing Page FAQs</h2>
+                <p class="section__subtitle">Everything you need to know about creating high-converting SaaS landing pages</p>
+            </div>
+            <div class="faq-items">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question-wrapper">
+                        <span class="faq-question">What makes a SaaS landing page different from other landing pages?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">SaaS landing pages require specific strategies to effectively communicate complex software solutions in simple terms. They need to balance feature explanation with benefit-focused messaging, build trust through appropriate social proof, and create clear paths to both free trials and demos to accommodate different buyer preferences.</p>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How long does it take to create a high-converting SaaS landing page?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">A strategic SaaS landing page typically takes 3-4 weeks to complete. This includes audience research, messaging strategy development, wireframing, design, copywriting, and stakeholder reviews. Rush projects can sometimes be completed in 2 weeks, while more complex landing pages with custom illustrations or animations may require 5-6 weeks.</p>
+                </div>
+                <!-- FAQ Item 3 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">What conversion rates should I expect from a well-designed SaaS landing page?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">While conversion rates vary by industry, target audience, and traffic source, our SaaS landing pages typically achieve 3-8% conversion rates for demo requests and 7-15% for free trial signups. These rates often represent a 50-200% improvement over industry averages. Post-launch optimization can further increase these rates by 20-40%.</p>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Should my SaaS landing page focus on features or benefits?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">The most effective SaaS landing pages lead with clear, compelling benefits that address specific customer pain points, then strategically support these benefits with relevant features. We recommend a 70/30 balance of benefit-focused content to feature descriptions, with features presented as evidence that backs up your benefit claims.</p>
+                </div>
+                <!-- FAQ Item 5 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How much content should be on my SaaS landing page?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">Content length should match your specific goals, traffic sources, and software complexity. For complex B2B SaaS products, longer pages with comprehensive information often outperform shorter ones. For simpler products or highly qualified traffic, concise pages can be more effective. We design based on your specific user journey rather than arbitrary length rules.</p>
+                </div>
+                <!-- FAQ Item 6 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Do I need different landing pages for different audience segments?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">In most cases, yes. Different audience segments have distinct pain points, objections, and success metrics. Creating targeted landing pages for key segments (by industry, role, company size, etc.) typically delivers significantly higher conversion rates. We can help you identify which segments justify dedicated pages and how to prioritize their development.</p>
+                </div>
+                <!-- FAQ Item 7 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">What social proof elements work best on SaaS landing pages?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">The most effective social proof for SaaS landing pages includes specific, results-focused customer testimonials; relevant client logos; third-party review platform ratings; case studies with measurable outcomes; and integration partner logos. We strategically position these elements to overcome objections at key decision points throughout the page.</p>
+                </div>
+                <!-- FAQ Item 8 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">Should I include pricing on my SaaS landing page?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">The decision to include pricing depends on your sales model and target audience. For self-service SaaS with straightforward pricing, showing prices typically increases qualified conversions. For enterprise SaaS with complex or custom pricing, focusing on value demonstration before pricing discussions often works better. We can help determine the right approach for your specific situation.</p>
+                </div>
+                <!-- FAQ Item 9 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How do you optimize landing pages for both SEO and conversion?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">We balance SEO and conversion optimization by first building a strong conversion foundation, then layering in SEO elements like strategic keyword placement, semantic HTML structure, optimized meta elements, fast loading times, and mobile responsiveness. This approach ensures the page performs well both for users and search engines without sacrificing either goal.</p>
+                </div>
+                <!-- FAQ Item 10 -->
+                 <div class="faq-item">
+                     <div class="faq-question-wrapper">
+                        <span class="faq-question">How do you measure landing page performance after launch?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-answer">We track a comprehensive set of metrics including conversion rate, bounce rate, time on page, scroll depth, click-through rate on CTAs, form abandonment rate, and ultimately lead quality and sales conversion. We can set up analytics and heat mapping tools to gather this data and provide regular performance reports with optimization recommendations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</BaseLayout>
+
+<style>
+    .team-grid {
+        display: flex;
+        flex-direction: column; /* Stack vertically by default (mobile) */
+        align-items: center; /* Center items horizontally in column layout */
+        gap: var(--spacing-lg);
+    }
+
+    .team-member {
+        text-align: center; /* Ensure text inside member card is centered */
+    }
+
+    /* Apply row layout for medium screens and up */
+    @media (min-width: 768px) {
+        .team-grid {
+            flex-direction: row; /* Arrange side-by-side */
+            justify-content: center; /* Center items horizontally in row layout */
+        }
+    }
+</style> 
