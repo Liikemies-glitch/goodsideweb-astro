@@ -38,6 +38,7 @@ export const ui = {
     'footer.followUs': 'Seuraa meitä',
     'footer.contactUs': 'Ota yhteyttä',
     'footer.businessIdLabel': 'Y-tunnus: 3453506-2',
+    'footer.followUsLinkedIn': 'Seuraa meitä LinkedInissä.',
   },
   en: {
     'site.title': 'The Good Side',
@@ -71,5 +72,6 @@ export const ui = {
     'footer.followUs': 'Follow Us',
     'footer.contactUs': 'Contact Us',
     'footer.businessIdLabel': 'VAT Number: FI34535062',
+    'footer.followUsLinkedIn': 'Follow us on LinkedIn.',
   },
 } as const; 

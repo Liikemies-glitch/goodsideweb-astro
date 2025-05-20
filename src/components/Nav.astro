@@ -53,7 +53,7 @@ if (pathWithoutLocale === '') {
                 <li><a href={getRelativeLocaleUrl(lang, '/services')}>{t('nav.services')}</a></li>
                 <li><a href={getRelativeLocaleUrl(lang, '/references')}>{t('nav.references')}</a></li>
                 <li><a href={getRelativeLocaleUrl(lang, '/blog')}>{t('nav.blog')}</a></li>
-                <li><a href={getRelativeLocaleUrl(lang, '/#hinnat-ankkuri')}>{t('nav.pricing')}</a></li>
+                <li><a id="nav-pricing-link" href={getRelativeLocaleUrl(lang, '/#hinnat-ankkuri')}>{t('nav.pricing')}</a></li>
                 <li><a href={getRelativeLocaleUrl(lang, '/contact')} class="btn btn--primary">{t('nav.contactButton')}</a></li> 
             </ul>
         </div>
@@ -240,6 +240,48 @@ if (pathWithoutLocale === '') {
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
+        const lang = document.documentElement.lang;
+        const pricingAnchorId = lang === 'fi' ? 'hinnat-ankkuri' : 'pricing-anchor';
+        // const defaultPricingLink = lang === 'fi' ? getRelativeLocaleUrl(lang, '/#hinnat-ankkuri') : getRelativeLocaleUrl(lang, '/#pricing-anchor');
+        // The defaultPricingLink variable is not used, so it can be commented out or removed.
+
+        // Function to create relative locale URLs in client-side script
+        // Note: This is a simplified version. For full robustness, ensure this matches Astro's getRelativeLocaleUrl logic.
+        function getRelativeLocaleUrl(currentLang: string, path: string) {
+            if (currentLang === 'fi') { // Assuming 'fi' is the defaultLang
+                return path;
+            }
+            return `/${currentLang}${path}`;
+        }
+
+        // Desktop Pricing link adjustment
+        const desktopPricingLink = document.getElementById('nav-pricing-link');
+        if (desktopPricingLink) {
+            const pricingSection = document.getElementById(pricingAnchorId);
+            if (pricingSection) {
+                desktopPricingLink.setAttribute('href', '#' + pricingAnchorId);
+            } else {
+                // Ensure the default link is correctly set if section not on page
+                const baseHref = lang === 'fi' ? '/' : `/${lang}/`;
+                desktopPricingLink.setAttribute('href', baseHref + '#' + pricingAnchorId);
+            }
+        }
+
+        // Mobile Pricing link adjustment (No longer needed as the element is removed)
+        /*
+        const mobilePricingLink = document.getElementById('mobile-nav-pricing-link');
+        if (mobilePricingLink) {
+            const pricingSection = document.getElementById(pricingAnchorId);
+            if (pricingSection) {
+                mobilePricingLink.setAttribute('href', '#' + pricingAnchorId);
+            } else {
+                 // Ensure the default link is correctly set if section not on page
+                const baseHref = lang === 'fi' ? '/' : `/${lang}/`;
+                mobilePricingLink.setAttribute('href', baseHref + '#' + pricingAnchorId);
+            }
+        }
+        */
+
         // Override any existing event listeners by removing them
         const menuToggle = document.querySelector('.nav__toggle');
         const mobileMenu = document.querySelector('.mobile-menu');
