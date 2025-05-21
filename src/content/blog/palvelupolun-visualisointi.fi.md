@@ -1,6 +1,6 @@
 ---
 title: Service blueprint SaaS-tuotteen kehityksen tehostajana
-pubDate: '2024-09-24T06:39:02.000Z'
+pubDate: '2025-04-24T06:39:02.000Z'
 description: >-
   Service blueprint auttaa SaaS-yrityksiä visualisoimaan käyttäjäpolun kokonaisuutena, 
   tunnistamaan kehityskohteet ja parantamaan asiakaskokemusta systemaattisesti 

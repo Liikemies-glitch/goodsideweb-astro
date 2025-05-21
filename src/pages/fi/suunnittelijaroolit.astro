@@ -1,0 +1,575 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HeroSection from '../../components/HeroSection.astro';
+import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
+import LogoWall from '../../components/LogoWall.astro';
+import CaseStudySection from '../../components/CaseStudySection.astro';
+import BlogPreviewSection from '../../components/BlogPreviewSection.astro';
+
+const pageTitle = "SaaS-suunnittelijaroolit | The Good Side";
+const pageDescription = "Tutustu SaaS-tuotekehityksen kannalta kriittisiin suunnittelijarooleihin. Ulkoista suunnitteluosaaminen The Good Sidelle ja kiihdytä kasvua ilman kokoaikaisen suunnittelijan kustannuksia.";
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+    <!-- Hero Section -->
+    <HeroSection
+        title="Parhaat suunnittelija&shy;roolit SaaS-yrityksille"
+        paragraph="Asiantuntijuutemme SaaS-yritysten tarpeista on osoittanut, että nämä suunnittelijaroolit ovat kriittisiä kasvun kannalta. Tarjoamme osa-aikaisia huippuammattilaisia, jotka täydentävät tuotetiimiäsi ilman kokoaikaisen työntekijän kustannuksia."
+        primaryButtonText="Varaa ilmainen konsultaatio &rarr;"
+        primaryButtonHref="/fi/contact"
+        secondaryButtonText="Katso esimerkkejä"
+        secondaryButtonHref="/fi/references"
+        textOnly={true}
+        paddingTop="6rem"
+        paddingBottom="3rem"
+        textAlign="center"
+    />
+
+    <!-- Logo Wall Section -->
+    <section class="logo-wall">
+        <div class="container">
+            <h2 class="logo-wall__title">SaaS-asiakkaitamme</h2>
+            <div class="logo-wall__grid">
+                <!-- First set -->
+                <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+                <!-- Second set (duplicate) -->
+                <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="introduction">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="gradient-heading-lg">Suunnittelijat SaaS-kasvun kiihdyttäjinä</h2>
+                <p class="section__subtitle">Kokemuksemme suomalaisten SaaS-yritysten parissa on osoittanut, että oikeat suunnittelijaroolit ovat ratkaisevia kasvun kannalta. The Good Side tarjoaa näihin rooleihin osa-aikaisia huippuammattilaisia, jotka täydentävät tuotetiimiäsi ilman kokoaikaisen työntekijän kustannuksia.</p>
+            </div>
+            <div class="intro-box">
+                <p>Olemme tunnistaneet, että <strong>vain tiettyjä suunnittelijarooleja</strong> tarvitaan kasvuhakuisissa suomalaisissa SaaS-yrityksissä. Nämä suunnittelijat auttavat sinua:</p>
+                <ul class="intro-benefits">
+                    <li>Tehostamaan tuotekehitystä ja vähentämään korjauskierroksia</li>
+                    <li>Parantamaan käyttäjäkokemusta ja pidentämään asiakassuhteiden kestoa</li>
+                    <li>Kiihdyttämään kasvua selkeällä tuotepositioinnilla</li>
+                    <li>Vakuuttamaan sijoittajat ammattimaisella designillä</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Section -->
+    <CaseStudySection id="case-study-1" title="Kokemus suomalaisella SaaS-kentällä">
+        <p>Vuosien työskentely suomalaisten SaaS-yritysten parissa on opettanut meille, että vahva digitaalinen suunnittelu on kriittinen menestystekijä tuotekehityksessä. Erityisesti startup- ja kasvuvaiheen yrityksissä, joissa resurssit ovat rajalliset, oikeat suunnittelijavalinnat korostuvat.</p>
+        
+        <div class="quote-in-section">
+            <img src="/images/team/mikki.webp" alt="Mikki Aalto-Ylevä, The Good Side" class="quote-image">
+            <p class="quote-text">"Suomalainen SaaS-markkina tarvitsee erilaista suunnitteluosaamista kuin suuret yritykset. Olemme tunnistaneet, että tiettyjä suunnittelijarooleja tarvitaan erityisesti kasvuvaiheessa, kun rakennetaan kansainvälisesti kilpailukykyisiä tuotteita."</p>
+        </div>
+        
+        <p>Kokemuksemme pohjalta olemme kehittäneet mallin, jossa SaaS-yritys voi saada käyttöönsä juuri tarvitsemansa suunnitteluosaamisen ilman kokoaikaisen suunnittelijan kustannuksia ja rekrytointiriskiä.</p>
+    </CaseStudySection>
+
+    <!-- Designer Roles Section -->
+    <section class="designer-roles">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">SaaS-kasvun kiihdyttäjät</span>
+                <h2 class="gradient-heading-lg">SaaS-yrityksille relevantit suunnittelijaroolit</h2>
+                <p class="section__subtitle">Yksi vuoden aikana oppimistamme havainnoista on, että näiden roolien ymmärtäminen auttaa SaaS-johtajia tekemään parempia rekrytointipäätöksiä.</p>
+            </div>
+
+            <!-- Designer Role 1 -->
+            <div class="role-card">
+                <div class="role-info">
+                    <h3 class="role-title">UI/UX-suunnittelija</h3>
+                    <div class="role-description">
+                        <p>UI/UX-suunnittelija on monipuolinen osaaja, joka hallitsee sekä käyttöliittymä- että käyttäjäkokemussuunnittelun.</p>
+                        
+                        <h4>Keskeiset osaamiset:</h4>
+                        <ul>
+                            <li>Intuitiivisten käyttäjäpolkujen luonti asiakaskohtaisesti</li>
+                            <li>Hyvän suunnittelun periaatteiden soveltaminen (saavutettavuus, heuristiikat)</li>
+                            <li>Tehokas suunnittelutyökalujen käyttö</li>
+                            <li>Suunnittelupäätösten selkeä ja vaikuttava argumentointi johdolle</li>
+                            <li>Käyttäjätutkimusten toteuttaminen ja analysointi</li>
+                        </ul>
+                        
+                        <h4>Vaikutus SaaS-liiketoimintaan:</h4>
+                        <ul>
+                            <li>Tuotetiimin tuloksellisuuden paraneminen</li>
+                            <li>Strategisten ongelmien tunnistaminen ja ratkaiseminen</li>
+                            <li>Käyttäjäymmärryksen syventäminen käyttäjätutkimusten avulla</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="role-visual">
+                    <img src="/images/ui-ux-designer.svg" alt="UI/UX-suunnittelijan kuvaus" class="role-image">
+                </div>
+            </div>
+
+            <!-- Designer Role 2 -->
+            <div class="role-card role-card--reversed">
+                <div class="role-info">
+                    <h3 class="role-title">Fullstack-suunnittelija / Design Engineer</h3>
+                    <div class="role-description">
+                        <p>Fullstack-suunnittelija yhdistää UI/UX-osaamisen koodaustaitoihin, mikä tekee hänestä erityisen arvokkaan pienemmille SaaS-tiimeille.</p>
+                        
+                        <h4>Keskeiset osaamiset:</h4>
+                        <ul>
+                            <li>Kaikki UI/UX-suunnittelijan taidot</li>
+                            <li>Vahva visuaalisen ilmeen suunnitteluosaaminen</li>
+                            <li>Sujuva työskentely vektori- ja pikseligrafiikan parissa</li>
+                            <li>Web-teknologioiden koodaustaito (HTML, CSS, JavaScript)</li>
+                            <li>Prototypointi toimivaksi koodiksi</li>
+                        </ul>
+                        
+                        <h4>Vaikutus SaaS-liiketoimintaan:</h4>
+                        <ul>
+                            <li>Nopeampi siirtymä suunnittelusta toteutukseen</li>
+                            <li>Resurssitehokkuus pienemmissä tiimeissä</li>
+                            <li>Yhtenäinen käyttöliittymä läpi tuotteen</li>
+                        </ul>
+                        
+                        <p class="note">Suomessa on arviolta 4000 digitaalisten palveluiden suunnittelijaa, joista vain 5-10% täyttää Fullstack-suunnittelijan kriteerit. Noin 30-40% on yllä kuvatun mukaisia UI/UX-suunnittelijoita.</p>
+                    </div>
+                </div>
+                <div class="role-visual">
+                    <img src="/images/fullstack-designer.svg" alt="Fullstack-suunnittelijan kuvaus" class="role-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Section 2 -->
+    <CaseStudySection id="case-study-2" title="Suunnittelija&shy;rooleista käytännön hyötyä">
+        <p>Projektikokemuksemme perusteella oikein valitut suunnittelijaroolit voivat merkittävästi nopeuttaa SaaS-tuotteen kehitystä ja markkinoillepääsyä. Esimerkiksi eräs asiakkaamme pystyi vähentämään iteraatioiden määrää 30% UI/UX-suunnittelijan avulla.</p>
+        
+        <div class="quote-in-section">
+            <img src="/images/team/tuomas.webp" alt="Tuomas Kaartoluoma, The Good Side" class="quote-image">
+            <p class="quote-text">"Suunnittelijat toimivat SaaS-kehityksessä sillanrakentajina teknisen toteutuksen ja liiketoimintatavoitteiden välillä. He auttavat tekemään oikeita päätöksiä nopeammin ja vähentämään kalliita virheitä."</p>
+        </div>
+        
+        <p>Käytännössä suunnittelijan rooli on tunnistaa ja ratkaista ongelmat ennen kuin ne päätyvät koodiin. Tämä näkyy nopeampana kehityksenä, parempana käyttäjäkokemuksena ja selkeästi mitattavina liiketoimintahyötyinä.</p>
+    </CaseStudySection>
+
+    <!-- Why The Good Side Section -->
+    <section class="why-goodside">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Miksi The Good Side?</span>
+                <h2 class="gradient-heading-lg">Erikoistumme SaaS-yritysten tuotteiden suunnitteluun</h2>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5"></path>
+                            <path d="M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3>SaaS-erikoistuminen</h3>
+                    <p>Ymmärrämme SaaS-liiketoiminnan erityispiirteet ja käytämme tätä asiantuntemusta jokaisen projektin suunnittelussa.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="8" x2="12" y2="12"></line>
+                            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                        </svg>
+                    </div>
+                    <h3>Joustavat suunnittelijaresurssit</h3>
+                    <p>Tarjoamme suunnittelijat määräaikaisina resursseina ilman pitkää sitoutumista – säädä tarpeen mukaan.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="3" y1="9" x2="21" y2="9"></line>
+                            <line x1="9" y1="21" x2="9" y2="9"></line>
+                        </svg>
+                    </div>
+                    <h3>Kaupalliset tulokset</h3>
+                    <p>Keskitymme suunnitteluun, joka tuottaa mitattavia liiketoimintatuloksia: enemmän konversioita, parempi retentio ja korkeampi asiakastyytyväisyys.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Case Study Section -->
+    <CaseStudySection id="case-study-3" title="Oikean suunnittelija&shy;roolin merkitys SaaS-kasvulle">
+        <p>Työmme SaaS-yritysten parissa on osoittanut, että oikean suunnittelijaprofiilin valinta heijastuu suoraan keskeisiin KPI-mittareihin. Asiakkaidemme kohdalla olemme nähneet selkeän yhteyden käyttäjäkokemukseen panostamisen ja asiakaspidon välillä.</p>
+        
+        <div class="quote-in-section">
+            <img src="/images/team/mikki.webp" alt="Mikki Aalto-Ylevä, The Good Side" class="quote-image">
+            <p class="quote-text">"SaaS-yritysten kriittisimpiä mittareita ovat usein käyttäjien säilyvyys ja tuotteen käyttöaste. Näihin voidaan merkittävästi vaikuttaa sellaisella käyttöliittymäsuunnittelulla, joka tekee tuotteen arvon näkyväksi käyttäjälle jokaisella käyttökerralla."</p>
+        </div>
+        
+        <p>Kokemuksemme mukaan hyvä suunnittelija ei ainoastaan paranna käyttöliittymän ulkoasua, vaan myös osallistuu aktiivisesti strategiseen tuotekehitykseen. Tämä näkyy selkeästi parantuneessa käyttäjätyytyväisyydessä, alhaisemmassa tukipyyntöjen määrässä ja lopulta paremmassa tuottavuudessa.</p>
+    </CaseStudySection>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Haluatko lisätietoa suunnittelija&shy;rooleista?</h2>
+                <p>Varaa ilmainen 30 minuutin konsultaatio, jossa käymme läpi yrityksellesi sopivimmat suunnittelijaroolit ja miten voimme auttaa SaaS-tuotteesi käyttäjäkokemuksen parantamisessa.</p>
+                <a href="/fi/contact" class="btn btn--primary">Varaa ilmainen konsultaatio &rarr;</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Blog Preview Section -->
+    <BlogPreviewSection 
+        title="Tuoreimmat ajatuksemme SaaS-suunnittelusta" 
+        showAllPostsButtonText="Lue kaikki kirjoitukset →"
+        allPostsLink="/fi/blog"
+        readMoreText="Lue lisää →"
+        defaultArticleText="Lue artikkeli..."
+        language="fi"
+    />
+</BaseLayout>
+
+<style>
+    /* Introduction section */
+    .introduction {
+        padding: 5rem 0;
+        background-color: #f5f5f7; /* Apple-like light background */
+    }
+    
+    .intro-box {
+        background-color: white;
+        border-radius: 20px;
+        padding: 2.5rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        margin-top: 2rem;
+    }
+    
+    .intro-benefits {
+        margin-top: 1.5rem;
+        padding-left: 0;
+        list-style-type: none;
+    }
+    
+    .intro-benefits li {
+        margin-bottom: 0.75rem;
+        position: relative;
+        padding-left: 1.5rem;
+    }
+    
+    .intro-benefits li::before {
+        content: "•";
+        color: var(--primary-color);
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+    }
+    
+    /* Designer Roles Section */
+    .designer-roles {
+        padding: 5rem 0;
+    }
+    
+    .section__tag {
+        display: inline-block;
+        background-color: rgba(255, 0, 54, 0.1);
+        color: var(--primary-color);
+        font-size: 0.875rem;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .section__title {
+        font-size: 2.5rem;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+        font-weight: 600;
+    }
+    
+    .section__subtitle {
+        font-size: 1.25rem;
+        line-height: 1.5;
+        color: #666;
+        max-width: 800px;
+        margin-bottom: 3rem;
+    }
+    
+    .role-card {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 3rem;
+        margin-bottom: 5rem;
+        background-color: white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+    }
+    
+    .role-card--reversed {
+        grid-template-columns: 1fr 1.5fr;
+    }
+    
+    .role-card--reversed .role-info {
+        order: 2;
+    }
+    
+    .role-card--reversed .role-visual {
+        order: 1;
+    }
+    
+    .role-info {
+        padding: 3rem;
+    }
+    
+    .role-title {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+        font-weight: 600;
+    }
+    
+    .role-description p {
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+    }
+    
+    .role-description h4 {
+        font-size: 1.125rem;
+        margin-bottom: 1rem;
+        font-weight: 500;
+    }
+    
+    .role-description ul {
+        margin-bottom: 2rem;
+        padding-left: 1.5rem;
+    }
+    
+    .role-description li {
+        margin-bottom: 0.5rem;
+        position: relative;
+        padding-left: 0.5rem;
+    }
+    
+    .role-description .note {
+        font-size: 0.875rem;
+        color: #666;
+        font-style: italic;
+        margin-top: 2rem;
+        padding-top: 1rem;
+        border-top: 1px solid #eee;
+    }
+    
+    .role-visual {
+        background-color: #f5f5f7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+    }
+    
+    .role-image {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Why The Good Side Section */
+    .why-goodside {
+        padding: 5rem 0;
+        background-color: #f5f5f7;
+    }
+    
+    .benefits-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .benefit-card {
+        background-color: white;
+        border-radius: 16px;
+        padding: 2rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .benefit-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+    
+    .benefit-icon {
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 0, 54, 0.1);
+        border-radius: 12px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .benefit-icon svg {
+        width: 24px;
+        height: 24px;
+        color: var(--primary-color);
+    }
+    
+    .benefit-card h3 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+        font-weight: 600;
+    }
+    
+    .benefit-card p {
+        color: #666;
+        line-height: 1.6;
+    }
+    
+    /* Call to Action Section */
+    .cta-section {
+        padding: 5rem 0;
+        background: linear-gradient(120deg, var(--primary-color), var(--secondary-color));
+        color: white;
+    }
+    
+    .cta-content {
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    
+    .cta-content h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        font-weight: 600;
+    }
+    
+    .cta-content p {
+        font-size: 1.125rem;
+        margin-bottom: 2rem;
+        opacity: 0.9;
+    }
+    
+    .btn--primary {
+        background-color: white;
+        color: var(--primary-color);
+        padding: 0.75rem 1.5rem;
+        border-radius: 2rem;
+        font-weight: 500;
+        text-decoration: none;
+        display: inline-block;
+        transition: all 0.2s ease;
+    }
+    
+    .btn--primary:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 992px) {
+        .benefits-grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        
+        .role-card,
+        .role-card--reversed {
+            grid-template-columns: 1fr;
+        }
+        
+        .role-card--reversed .role-info,
+        .role-card--reversed .role-visual {
+            order: 0;
+        }
+        
+        .role-info {
+            padding: 2rem;
+        }
+    }
+
+    /* Ensure the tag in designer-roles section header is block-level to push heading below it */
+    .designer-roles .section__header .section__tag {
+      display: block;
+      width: -moz-fit-content; /* Firefox fallback */
+      width: fit-content;
+      /* The existing margin-bottom: 1rem on .section__tag from general styles will provide spacing */
+    }
+
+    /* Adjust margin below the main heading in designer-roles section for consistency */
+    .designer-roles .section__header .gradient-heading-lg {
+      margin-bottom: var(--spacing-lg); /* Match CaseStudySection title spacing */
+    }
+</style> 

@@ -1,6 +1,6 @@
 ---
 title: Mobiilisovelluksen UI/UX suunnittelu SaaS-tuotteille
-pubDate: '2024-07-23T16:41:31.000Z'
+pubDate: '2025-05-15T16:41:31.000Z'
 description: >-
   Tehokas mobiilisovelluksen käyttöliittymäsuunnittelu parantaa käyttäjäkokemusta ja nostaa konversiota. Tässä kattava opas SaaS-yrityksille, miten luoda käyttäjäystävällinen ja toimiva mobiilisovellus noudattaen parhaita UI/UX-käytäntöjä.
 author: Mikki Aalto-Ylevä

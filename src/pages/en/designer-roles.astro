@@ -1,0 +1,567 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HeroSection from '../../components/HeroSection.astro';
+import CalendlyEmbed from '../../components/CalendlyEmbed.astro';
+import LogoWall from '../../components/LogoWall.astro';
+import CaseStudySection from '../../components/CaseStudySection.astro';
+import BlogPreviewSection from '../../components/BlogPreviewSection.astro';
+
+const pageTitle = "SaaS Designer Roles | The Good Side";
+const pageDescription = "Discover the critical designer roles for SaaS product development. Outsource design expertise to The Good Side and accelerate growth without the cost of full-time designers.";
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+    <!-- Hero Section -->
+    <HeroSection
+        title="SaaS designer roles that accelerate growth"
+        paragraph="A year with Finnish SaaS decision-makers has shown that these designer roles are critical for growth. We offer part-time professionals who complement your product team without the cost of a full-time employee."
+        primaryButtonText="Book a free consultation &rarr;"
+        primaryButtonHref="/en/contact"
+        secondaryButtonText="See examples"
+        secondaryButtonHref="/en/references"
+        textOnly={true}
+        paddingTop="6rem"
+        paddingBottom="3rem"
+        textAlign="center"
+    />
+
+    <!-- Logo Wall Section -->
+    <section class="logo-wall">
+        <div class="container">
+            <h2 class="logo-wall__title">Our SaaS clients</h2>
+            <div class="logo-wall__grid">
+                <!-- First set -->
+                <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+                <!-- Second set (duplicate) -->
+                <div class="logo-item">
+                    <img src="/images/logos/eemel.png" alt="Eemel logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/gebwell-png.webp" alt="Gebwell logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/groweo-png.webp" alt="Groweo logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/seppo.webp" alt="Seppo.io logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/kamux-png.webp" alt="Kamux logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/materialistning-png.webp" alt="Materialistning logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/minnalearn-png.webp" alt="Minnalearn logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/prospectum.png" alt="Prospectum logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/elisa.webp" alt="Elisa logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/cumucore.webp" alt="Cumucore logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/evolver.webp" alt="Evolver logo">
+                </div>
+                <div class="logo-item">
+                    <img src="/images/logos/akamon.webp" alt="Akamon logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="introduction">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="gradient-heading-lg">Designers as SaaS growth accelerators</h2>
+                <p class="section__subtitle">Our experience with Finnish SaaS companies has shown that the right designer roles are crucial for growth. The Good Side offers part-time top professionals in these roles who complement your product team without the cost of a full-time employee.</p>
+            </div>
+            <div class="intro-box">
+                <p>We've identified that <strong>only certain designer roles</strong> are needed in growth-oriented Finnish SaaS companies. These designers help you:</p>
+                <ul class="intro-benefits">
+                    <li>Streamline product development and reduce revision cycles</li>
+                    <li>Improve user experience and extend customer relationship duration</li>
+                    <li>Accelerate growth with clear product positioning</li>
+                    <li>Convince investors with professional design</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Section -->
+    <CaseStudySection id="case-study-1" title="Experience in the Finnish SaaS field">
+        <p>Years of working with Finnish SaaS companies has taught us that strong digital design is a critical success factor in product development. Especially in startup and growth-stage companies with limited resources, the right designer choices become crucial.</p>
+        
+        <div class="quote-in-section">
+            <img src="/images/team/mikki.webp" alt="Mikki Aalto-Ylevä, The Good Side" class="quote-image">
+            <p class="quote-text">"The Finnish SaaS market needs different design expertise than international markets. We've identified that certain designer roles are particularly needed during the growth phase when building internationally competitive products."</p>
+        </div>
+        
+        <p>Based on our experience, we've developed a model where SaaS companies can access exactly the design expertise they need without the costs and recruitment risks of a full-time designer.</p>
+    </CaseStudySection>
+
+    <!-- Designer Roles Section -->
+    <section class="designer-roles">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">SaaS growth accelerators</span>
+                <h2 class="gradient-heading-lg">Designer roles relevant for the SaaS market</h2>
+                <p class="section__subtitle">One of the insights we've gained over the year is that understanding these roles helps SaaS leaders make better recruitment decisions.</p>
+            </div>
+
+            <!-- Designer Role 1 -->
+            <div class="role-card">
+                <div class="role-info">
+                    <h3 class="role-title">UI/UX Designer</h3>
+                    <div class="role-description">
+                        <p>A UI/UX designer is a versatile professional who masters both user interface and user experience design.</p>
+                        
+                        <h4>Core competencies:</h4>
+                        <ul>
+                            <li>Creating intuitive user journeys customized for each client</li>
+                            <li>Applying good design principles (accessibility, heuristics)</li>
+                            <li>Efficient use of design tools</li>
+                            <li>Clear and effective argumentation of design decisions to leadership</li>
+                            <li>Conducting and analyzing user research</li>
+                        </ul>
+                        
+                        <h4>Impact on SaaS business:</h4>
+                        <ul>
+                            <li>Improved product team performance</li>
+                            <li>Identifying and solving strategic problems</li>
+                            <li>Deepening user understanding through user research</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="role-visual">
+                    <img src="/images/ui-ux-designer.svg" alt="UI/UX Designer description" class="role-image">
+                </div>
+            </div>
+
+            <!-- Designer Role 2 -->
+            <div class="role-card role-card--reversed">
+                <div class="role-info">
+                    <h3 class="role-title">Fullstack Designer / Design Engineer</h3>
+                    <div class="role-description">
+                        <p>A Fullstack Designer combines UI/UX expertise with coding skills, making them particularly valuable for smaller SaaS teams.</p>
+                        
+                        <h4>Core competencies:</h4>
+                        <ul>
+                            <li>All UI/UX designer skills</li>
+                            <li>Strong visual design expertise</li>
+                            <li>Smooth work with vector and pixel graphics</li>
+                            <li>Coding skills in web technologies (HTML, CSS, JavaScript)</li>
+                            <li>Prototyping to working code</li>
+                        </ul>
+                        
+                        <h4>Impact on SaaS business:</h4>
+                        <ul>
+                            <li>Faster transition from design to implementation</li>
+                            <li>Resource efficiency in smaller teams</li>
+                            <li>Consistent user interface throughout the product</li>
+                        </ul>
+                        
+                        <p class="note">Finland has an estimated 4,000 digital service designers, of which only 5-10% meet the Fullstack Designer criteria. Approximately 30-40% are UI/UX designers as described above.</p>
+                    </div>
+                </div>
+                <div class="role-visual">
+                    <img src="/images/fullstack-designer.svg" alt="Fullstack Designer description" class="role-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Section 2 -->
+    <CaseStudySection id="case-study-2" title="Practical benefits of designer roles">
+        <p>Based on our project experience, correctly chosen designer roles can significantly speed up SaaS product development and time-to-market. For example, one of our clients was able to reduce the number of development cycles by 30% with the help of a UI/UX designer.</p>
+        
+        <div class="quote-in-section">
+            <img src="/images/team/tuomas.webp" alt="Tuomas Kaartoluoma, The Good Side" class="quote-image">
+            <p class="quote-text">"Designers serve as bridge builders between technical implementation and business goals in SaaS development. They help make the right decisions faster and reduce costly mistakes."</p>
+        </div>
+        
+        <p>In practice, a designer's role is to identify and solve problems before they end up in code. This results in faster development, better user experience, and clearly measurable business benefits.</p>
+    </CaseStudySection>
+
+    <!-- Why The Good Side Section -->
+    <section class="why-goodside">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Why The Good Side?</span>
+                <h2 class="gradient-heading-lg">We specialize in SaaS product development design</h2>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5"></path>
+                            <path d="M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3>SaaS specialization</h3>
+                    <p>We understand the specific characteristics of SaaS business and use this expertise in designing each project.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="8" x2="12" y2="12"></line>
+                            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                        </svg>
+                    </div>
+                    <h3>Flexible designer resources</h3>
+                    <p>We provide designers as temporary resources without long-term commitment - adjust according to your needs.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="3" y1="9" x2="21" y2="9"></line>
+                            <line x1="9" y1="21" x2="9" y2="9"></line>
+                        </svg>
+                    </div>
+                    <h3>Commercial results</h3>
+                    <p>We focus on design that delivers measurable business results: more conversions, better retention, and higher customer satisfaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Want to learn more about designer roles?</h2>
+                <p>Book a free 30-minute consultation where we'll go through the most suitable designer roles for your company and how we can help improve your SaaS product's user experience.</p>
+                <a href="/en/contact" class="btn btn--primary">Book a free consultation &rarr;</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Blog Preview Section -->
+    <BlogPreviewSection 
+        title="Our latest thoughts on SaaS design" 
+        showAllPostsButtonText="See all articles →"
+        allPostsLink="/en/blog"
+        readMoreText="Read more →"
+        defaultArticleText="Read article..."
+        language="en"
+    />
+</BaseLayout>
+
+<style>
+    /* Introduction section */
+    .introduction {
+        padding: 5rem 0;
+        background-color: #f5f5f7; /* Apple-like light background */
+    }
+    
+    .intro-box {
+        background-color: white;
+        border-radius: 20px;
+        padding: 2.5rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        margin-top: 2rem;
+    }
+    
+    .intro-benefits {
+        margin-top: 1.5rem;
+        padding-left: 0;
+        list-style-type: none;
+    }
+    
+    .intro-benefits li {
+        margin-bottom: 0.75rem;
+        position: relative;
+        padding-left: 1.5rem;
+    }
+    
+    .intro-benefits li::before {
+        content: "•";
+        color: var(--primary-color);
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+    }
+    
+    /* Designer Roles Section */
+    .designer-roles {
+        padding: 5rem 0;
+    }
+    
+    .section__tag {
+        display: inline-block;
+        background-color: rgba(255, 0, 54, 0.1);
+        color: var(--primary-color);
+        font-size: 0.875rem;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .section__title {
+        font-size: 2.5rem;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+        font-weight: 600;
+    }
+    
+    .section__subtitle {
+        font-size: 1.25rem;
+        line-height: 1.5;
+        color: #666;
+        max-width: 800px;
+        margin-bottom: 3rem;
+    }
+    
+    .role-card {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 3rem;
+        margin-bottom: 5rem;
+        background-color: white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+    }
+    
+    .role-card--reversed {
+        grid-template-columns: 1fr 1.5fr;
+    }
+    
+    .role-card--reversed .role-info {
+        order: 2;
+    }
+    
+    .role-card--reversed .role-visual {
+        order: 1;
+    }
+    
+    .role-info {
+        padding: 3rem;
+    }
+    
+    .role-title {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+        font-weight: 600;
+    }
+    
+    .role-description p {
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+    }
+    
+    .role-description h4 {
+        font-size: 1.125rem;
+        margin-bottom: 1rem;
+        font-weight: 500;
+    }
+    
+    .role-description ul {
+        margin-bottom: 2rem;
+        padding-left: 1.5rem;
+    }
+    
+    .role-description li {
+        margin-bottom: 0.5rem;
+        position: relative;
+        padding-left: 0.5rem;
+    }
+    
+    .role-description .note {
+        font-size: 0.875rem;
+        color: #666;
+        font-style: italic;
+        margin-top: 2rem;
+        padding-top: 1rem;
+        border-top: 1px solid #eee;
+    }
+    
+    .role-visual {
+        background-color: #f5f5f7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+    }
+    
+    .role-image {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Why The Good Side Section */
+    .why-goodside {
+        padding: 5rem 0;
+        background-color: #f5f5f7;
+    }
+    
+    .benefits-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .benefit-card {
+        background-color: white;
+        border-radius: 16px;
+        padding: 2rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .benefit-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+    
+    .benefit-icon {
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 0, 54, 0.1);
+        border-radius: 12px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .benefit-icon svg {
+        width: 24px;
+        height: 24px;
+        color: var(--primary-color);
+    }
+    
+    .benefit-card h3 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+        font-weight: 600;
+    }
+    
+    .benefit-card p {
+        color: #666;
+        line-height: 1.6;
+    }
+    
+    /* Call to Action Section */
+    .cta-section {
+        padding: 5rem 0;
+        background: linear-gradient(120deg, var(--primary-color), var(--secondary-color));
+        color: white;
+    }
+    
+    .cta-content {
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    
+    .cta-content h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        font-weight: 600;
+    }
+    
+    .cta-content p {
+        font-size: 1.125rem;
+        margin-bottom: 2rem;
+        opacity: 0.9;
+    }
+    
+    .btn--primary {
+        background-color: white;
+        color: var(--primary-color);
+        padding: 0.75rem 1.5rem;
+        border-radius: 2rem;
+        font-weight: 500;
+        text-decoration: none;
+        display: inline-block;
+        transition: all 0.2s ease;
+    }
+    
+    .btn--primary:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 992px) {
+        .benefits-grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        
+        .role-card,
+        .role-card--reversed {
+            grid-template-columns: 1fr;
+        }
+        
+        .role-card--reversed .role-info,
+        .role-card--reversed .role-visual {
+            order: 0;
+        }
+        
+        .role-info {
+            padding: 2rem;
+        }
+    }
+
+    /* Ensure the tag in designer-roles section header is block-level to push heading below it */
+    .designer-roles .section__header .section__tag {
+      display: block;
+      width: -moz-fit-content; /* Firefox fallback */
+      width: fit-content;
+    }
+
+    /* Adjust margin below the main heading in designer-roles section for consistency */
+    .designer-roles .section__header .gradient-heading-lg {
+      margin-bottom: var(--spacing-lg); /* Match CaseStudySection title spacing */
+    }
+
+    /* Adjust margin below the main heading in introduction section for consistency */
+    .introduction .section__header .gradient-heading-lg {
+      margin-bottom: var(--spacing-lg); /* Match CaseStudySection title spacing */
+    }
+</style> 

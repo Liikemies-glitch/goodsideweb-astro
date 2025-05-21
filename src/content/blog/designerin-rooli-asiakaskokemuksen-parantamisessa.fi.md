@@ -1,7 +1,7 @@
 ---
 title: "Design kasvattaa SaaS-yrityksen asiakaskokemusta"
 description: "Miten strateginen design vaikuttaa SaaS-yritysten asiakaskokemukseen ja kasvuun"
-pubDate: "2025-01-25"
+pubDate: "2024-12-25"
 heroImage: ../../assets/blog/images/designerin-rooli-asiakaskokemuksen-parantamisessa/featured.webp
 category: "design"
 tags: ["käyttäjäkokemus", "SaaS-kasvu", "asiakaspolut"]

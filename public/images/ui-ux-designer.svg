@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with subtle gradient -->
+  <rect width="400" height="300" rx="20" fill="url(#paint0_linear)" />
+  
+  <!-- UI/UX Designer illustration elements -->
+  <!-- Device frame -->
+  <rect x="100" y="50" width="200" height="150" rx="8" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2"/>
+  
+  <!-- UI wireframe elements -->
+  <rect x="120" y="80" width="80" height="10" rx="2" fill="#007AFF" opacity="0.6"/>
+  <rect x="120" y="100" width="160" height="6" rx="2" fill="#E0E0E0"/>
+  <rect x="120" y="114" width="160" height="6" rx="2" fill="#E0E0E0"/>
+  <rect x="120" y="128" width="120" height="6" rx="2" fill="#E0E0E0"/>
+  
+  <!-- Action button -->
+  <rect x="120" y="150" width="80" height="24" rx="12" fill="#007AFF"/>
+  <text x="140" y="166" font-family="Arial, sans-serif" font-size="12" fill="white">Action</text>
+  
+  <!-- UX flow arrows -->
+  <path d="M310 120 L340 120 L330 110 M340 120 L330 130" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M60 120 L90 120 L80 110 M90 120 L80 130" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Design elements -->
+  <circle cx="320" y="200" r="30" fill="#5E5CE6" opacity="0.6"/>
+  <circle cx="80" y="200" r="20" fill="#007AFF" opacity="0.6"/>
+  <circle cx="340" y="80" r="15" fill="#FF9500" opacity="0.6"/>
+  <circle cx="60" y="80" r="12" fill="#FF2D55" opacity="0.6"/>
+  
+  <!-- User figure simplified -->
+  <circle cx="200" y="230" r="20" fill="#007AFF"/>
+  <circle cx="200" y="205" r="10" fill="#FFFFFF"/>
+  
+  <!-- Grid dots for design reference -->
+  <circle cx="120" y="60" r="2" fill="#E0E0E0"/>
+  <circle cx="140" y="60" r="2" fill="#E0E0E0"/>
+  <circle cx="160" y="60" r="2" fill="#E0E0E0"/>
+  <circle cx="180" y="60" r="2" fill="#E0E0E0"/>
+  <circle cx="200" y="60" r="2" fill="#E0E0E0"/>
+  <circle cx="220" y="60" r="2" fill="#E0E0E0"/>
+  <circle cx="240" y="60" r="2" fill="#E0E0E0"/>
+  <circle cx="260" y="60" r="2" fill="#E0E0E0"/>
+  <circle cx="280" y="60" r="2" fill="#E0E0E0"/>
+  
+  <!-- Gradients definitions -->
+  <defs>
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="400" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F5F5F7"/>
+      <stop offset="1" stop-color="#E6E6EA"/>
+    </linearGradient>
+  </defs>
+</svg> 

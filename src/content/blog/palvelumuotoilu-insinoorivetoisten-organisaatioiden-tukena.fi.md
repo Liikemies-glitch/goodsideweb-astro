@@ -1,6 +1,6 @@
 ---
 title: Palvelumuotoilu insinöörivetoisten organisaatioiden tukena
-pubDate: '2024-06-21T13:01:44.000Z'
+pubDate: '2024-05-21T13:01:44.000Z'
 description: >-
   Tässä artikkelissa käsittelemme, miten palvelumuotoilu tukee insinöörivetoisia organisaatioita tasapainottamalla teknisen osaamisen käyttäjälähtöisellä ajattelulla. Käymme läpi käytännön keinoja, joilla palvelumuotoilun periaatteet auttavat teknologiakeskeisiä organisaatioita parantamaan asiakaskokemusta, yksinkertaistamaan monimutkaisuutta ja edistämään innovaatioita.
 author: Mikki Aalto-Ylevä

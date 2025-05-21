@@ -1,6 +1,6 @@
 ---
 title: 'Prototyypit tuotekehityksessä'
-pubDate: '2024-06-01T11:56:33.000Z'
+pubDate: '2025-05-01T11:56:33.000Z'
 description: >-
   Prototyypit ovat avain menestykseen tuotekehityksessä. Opi prototyyppien hyödyt,
   tyypit ja luomisprosessi. Tehosta innovaatioita ja minimoi riskit.

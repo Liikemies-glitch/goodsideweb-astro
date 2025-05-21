@@ -1,6 +1,6 @@
 ---
 title: Mitä on palvelumuotoilu
-pubDate: '2024-06-27T01:00:01.000Z'
+pubDate: '2025-04-27T01:00:01.000Z'
 description: >-
   Asiakaslähtöinen suunnittelumenetelmä, jossa keskitytään palveluiden
   kokonaisvaltaiseen suunnitteluun ja kehittämiseen

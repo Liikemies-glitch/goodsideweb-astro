@@ -12,6 +12,7 @@ import TeamSection from '../../components/TeamSection.astro';
 import ProblemSolutionSection from '../../components/ProblemSolutionSection.astro';
 import PricingSection from '../../components/PricingSection.astro';
 import FAQSection from '../../components/FAQSection.astro';
+import BlogPreviewSection from '../../components/BlogPreviewSection.astro';
 
 const pageTitle = "The Good Side | Strategic Partner for SaaS Product Teams";
 const pageDescription = "The Good Side - We help product teams build successful SaaS businesses by combining product strategy and design.";
@@ -391,53 +392,12 @@ function formatDate(date: Date): string {
     />
 
     <!-- Blog Preview Section -->
-    <section class="blog-preview" id="latest-posts">
-        <div class="container">
-            <div class="section__header" style="text-align: center; margin-bottom: var(--spacing-lg);">
-                <h2 class="section__title">Our latest thoughts</h2>
-            </div>
-            <div class="blog-grid">
-                {latestPosts.map(post => (
-                    <article class="blog-card">
-                        <a href={`/en/blog/${post.slug}/`} class="blog-card__link">
-                            {post.data.heroImage && (
-                               <div class="blog-card__image-container">
-                                 <Image
-                                   src={post.data.heroImage}
-                                   alt={post.data.heroImageAlt || post.data.title}
-                                   width={800}
-                                   height={450}
-                                   format="webp"
-                                   quality={80}
-                                   loading="lazy"
-                                   decoding="async"
-                                   class="blog-card__image"
-                                 />
-                               </div>
-                            )}
-                            <div class="blog-card__content">
-                                 {post.data.tags && post.data.tags.length > 0 && (
-                                    <div class="blog-card__tags">
-                                        {post.data.tags.map(tag => (
-                                            <span class="tag">{tag}</span>
-                                        ))}
-                                    </div>
-                                 )}
-                                <h3 class="blog-card__title">{post.data.title}</h3>
-                                <p class="blog-card__excerpt">{post.data.description || 'Read article...'}</p>
-                                <div class="blog-card__footer">
-                                    <span class="blog-card__readmore">Read more &rarr;</span>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-                ))}
-            </div>
-            <div style="text-align: center; margin-top: var(--spacing-lg);">
-                <a href="/en/blog" class="btn btn--secondary">Read all articles &rarr;</a>
-            </div>
-        </div>
-    </section>
+    <BlogPreviewSection 
+        title="Our latest thoughts" 
+        allPostsLink="/en/blog" 
+        showAllPostsButtonText="Read all articles →"
+        posts={latestPosts}
+    />
 
 </BaseLayout>
 

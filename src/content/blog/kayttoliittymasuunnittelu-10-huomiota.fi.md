@@ -1,6 +1,6 @@
 ---
 title: Käyttöliittymäsuunnittelun kymmenen keskeistä periaatetta
-pubDate: '2024-06-29T16:48:32.000Z'
+pubDate: '2024-03-29T16:48:32.000Z'
 description: >-
   SaaS-tuotteiden käyttöliittymäsuunnittelussa kriittisiä tekijöitä ovat käyttäjäkeskeisyys, selkeys, johdonmukaisuus ja visuaalinen hierarkia. Nämä kymmenen periaatetta auttavat luomaan käyttäjäystävällisiä sovelluksia, jotka tukevat liiketoiminnan kasvua.
 author: Mikki Aalto-Ylevä
@@ -8,7 +8,7 @@ tags:
   - UX
   - Käyttöliittymäsuunnittelu
   - SaaS-kasvu
-heroImage: ../../assets/blog/images/kayttoliittymasuunnittelu-10-huomiota/featured.webp
+heroImage: ../../assets/blog/images/kayttoliittymasuunnittelu-osana-kasvua/featured.webp
 heroImageAlt: Käyttöliittymäsuunnittelu - 10 huomiota
 ---
 
