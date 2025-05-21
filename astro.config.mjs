@@ -33,7 +33,7 @@ export default defineConfig({
     '/taydellinen-landing-page/': '/fi/blog/taydellisen-laskeutumissivun-suunnittelu/',
     '/nain-kehitat-sisaista-viestintaa/': '/fi/blog/nain-kehitat-sisaista-viestintaa/',
     '/design-thinking-menestyvien-organisaatioiden-salainen-ainesosa/': '/fi/blog/design-thinking-menestyvien-organisaatioiden-salainen-ainesosa/',
-    '/blog/jakob-nielsen-ja-kaytettavyyden-periaatteet/': '/fi/blog/jakob-nielsen-ja-kaytettavyyden-periaatteet/',
+    '/blog/jakob-nielsen-ja-kaytettavyyden-periaatteet/': '/fi/blog/jakob-nielsen-ja-kaytettavyyden-periaatteetfi/',
     '/ux-ja-uxr/': '/fi/blog/ux-ja-uxr/',
     '/mita-on-palvelumuotoilu/': '/fi/blog/mita-on-palvelumuotoilufi/',
     '/mobiilisovelluksen-ui-ux-suunnittelu/': '/fi/blog/mobiilisovelluksen-ui-ux-suunnittelufi/',
